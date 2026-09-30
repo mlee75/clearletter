@@ -1,0 +1,26 @@
+{
+  "letter_id": "syn_09",
+  "reviewer": "claude-draft",
+  "reviewed_at": "2026-09-30T12:37:58+00:00",
+  "letter_sha256": "8eddf63aee93ef84c19a67492cd30c2673a3b810180d9160b261a214c9c2a162",
+  "facts": {
+    "diagnoses": [
+      "Community-acquired pneumonia (chest infection) in the right lower lung"
+    ],
+    "medicines": [
+      "Amoxicillin 500 mg three times a day for 3 more days (5 days in total, including 2 in hospital)"
+    ],
+    "dates": [
+      "Last amoxicillin dose on 10 October 2026",
+      "Repeat chest X-ray in 6 weeks to check the infection has cleared",
+      "Tiredness may last several weeks; cough may last 3 to 6 weeks"
+    ],
+    "actions": [
+      "See your GP or call 111 if more short of breath, if the fever comes back, or if you cough up blood"
+    ],
+    "negatives": [
+      "You do not need to book the chest X-ray (the request has been sent)"
+    ]
+  },
+  "notes": "Drafted by Claude (Opus 5.5) from the letter text, at the author's request; awaiting review by the project author."
+}

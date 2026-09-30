@@ -1,0 +1,28 @@
+{
+  "letter_id": "syn_12",
+  "reviewer": "claude-draft",
+  "reviewed_at": "2026-09-30T12:37:58+00:00",
+  "letter_sha256": "40780ef8e45ebafe3aa4ff131e7a6557396ae8ef8b99981f7dcd1b63be8e162a",
+  "facts": {
+    "diagnoses": [
+      "Intestinal metaplasia: a change in the stomach lining; in a small number of people it can develop further over many years, so it is monitored"
+    ],
+    "medicines": [
+      "Continue omeprazole 20 mg once daily",
+      "Stop ibuprofen and other anti-inflammatory painkillers",
+      "Paracetamol can be used instead"
+    ],
+    "dates": [
+      "Gastroscopy and biopsies on 8 September 2026",
+      "Repeat gastroscopy in 3 years (around September 2029); the hospital will send the appointment"
+    ],
+    "actions": [],
+    "negatives": [
+      "No cancer (no evidence of malignancy)",
+      "Intestinal metaplasia is not cancer",
+      "No Helicobacter pylori infection",
+      "You do not need to do anything now about the repeat test"
+    ]
+  },
+  "notes": "Drafted by Claude (Opus 5.5) from the letter text, at the author's request; awaiting review by the project author."
+}

@@ -1,0 +1,36 @@
+{
+  "letter_id": "mts_3977",
+  "reviewer": "claude-draft",
+  "reviewed_at": "2026-09-30T12:37:58+00:00",
+  "letter_sha256": "9bfdce5d332e68a12d3730f907cd9cfad05ffd32b8bdf6b84feff601e272dc5a",
+  "facts": {
+    "diagnoses": [
+      "Heart failure (congestive heart failure) with fluid around the left lung (pleural effusion), drained",
+      "High blood pressure",
+      "Prostate cancer",
+      "High white cell count, thought to be caused by the steroids",
+      "Anaemia of chronic disease",
+      "Echo: ejection fraction 60% with diastolic dysfunction and narrowing near the aortic valve"
+    ],
+    "medicines": [
+      "Lasix 40 mg daily",
+      "Potassium chloride 10 mEq daily",
+      "Atenolol 25 mg daily",
+      "Aspirin 5 grains daily",
+      "Ditropan 5 mg twice a day",
+      "Colace 100 mg twice a day",
+      "Lisinopril was stopped"
+    ],
+    "dates": [
+      "Follow up in the office in 1 week"
+    ],
+    "actions": [
+      "Tell the doctor if fever or chills come back"
+    ],
+    "negatives": [
+      "Heart enzymes normal (no heart attack)",
+      "Oxygen levels on room air normal"
+    ]
+  },
+  "notes": "The letter says a beta-blocker WITH an ACE inhibitor was recommended, yet lisinopril (an ACE inhibitor) was stopped: an internal inconsistency to copy, not resolve. 'Aspirin 5 grains' must not be converted. Drafted by Claude (Opus 5.5) from the letter text, at the author's request; awaiting review by the project author."
+}

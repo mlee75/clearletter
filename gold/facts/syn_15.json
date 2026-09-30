@@ -1,0 +1,28 @@
+{
+  "letter_id": "syn_15",
+  "reviewer": "claude-draft",
+  "reviewed_at": "2026-09-30T12:37:58+00:00",
+  "letter_sha256": "97e9208696f8b7b6314886598fd227f802846b64a6ed77a3d0b423c2a86885af",
+  "facts": {
+    "diagnoses": [
+      "Possible small tear of the medial meniscus in the left knee (a tear cannot be excluded)",
+      "Mild wear and tear (early osteoarthritis) in the knee",
+      "A little fluid in the knee (small effusion)"
+    ],
+    "medicines": [],
+    "dates": [
+      "MRI on 1 September 2026",
+      "Review in the orthopaedic clinic in 3 months"
+    ],
+    "actions": [
+      "Referred for physiotherapy for 6 to 8 weeks",
+      "Continue normal activities as pain allows"
+    ],
+    "negatives": [
+      "No fracture",
+      "ACL (knee ligament) intact",
+      "Surgery is not planned at this stage"
+    ]
+  },
+  "notes": "Letter to GP, copy to patient. The tear is only possible. Drafted by Claude (Opus 5.5) from the letter text, at the author's request; awaiting review by the project author."
+}

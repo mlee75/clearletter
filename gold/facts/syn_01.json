@@ -1,0 +1,24 @@
+{
+  "letter_id": "syn_01",
+  "reviewer": "claude-draft",
+  "reviewed_at": "2026-09-30T12:37:58+00:00",
+  "letter_sha256": "91af2794515902ff4de87d08482996d1f46bb047d8fd364fbeaccb8724b74084",
+  "facts": {
+    "diagnoses": [],
+    "medicines": [],
+    "dates": [
+      "Echocardiogram on Tuesday 17 November 2026 at 10:40, Cardiac Investigations Unit, Level 2",
+      "The test takes about 45 minutes"
+    ],
+    "actions": [
+      "Bring a list of all the medicines you take",
+      "Arrive 15 minutes before the appointment time",
+      "If you cannot attend, call 01632 960 123 at least 48 hours before"
+    ],
+    "negatives": [
+      "You do not need to fast before the test",
+      "You do not need to stop any of your medicines"
+    ]
+  },
+  "notes": "Drafted by Claude (Opus 5.5) from the letter text, at the author's request; awaiting review by the project author."
+}

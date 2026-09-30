@@ -1,0 +1,26 @@
+{
+  "letter_id": "syn_13",
+  "reviewer": "claude-draft",
+  "reviewed_at": "2026-09-30T12:37:58+00:00",
+  "letter_sha256": "f3149e510635092fd0ad4398431b133d7b9eae121fdf9231760bea2fca3caf2c",
+  "facts": {
+    "diagnoses": [
+      "HbA1c 52 mmol/mol, which is in the range for type 2 diabetes (48 or above)"
+    ],
+    "medicines": [],
+    "dates": [
+      "HbA1c test on 29 September 2026",
+      "Repeat blood test with the practice nurse within the next 2 weeks"
+    ],
+    "actions": [
+      "Book the repeat blood test",
+      "Book an appointment with Dr Thompson after the second test"
+    ],
+    "negatives": [
+      "Diabetes has NOT been diagnosed yet; a second test is needed to confirm",
+      "You do not need to fast for the repeat test",
+      "Do not start any new diabetes medicine before speaking to the doctor"
+    ]
+  },
+  "notes": "Key trap: must not say 'you have diabetes'. Drafted by Claude (Opus 5.5) from the letter text, at the author's request; awaiting review by the project author."
+}

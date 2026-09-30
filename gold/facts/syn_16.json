@@ -1,0 +1,26 @@
+{
+  "letter_id": "syn_16",
+  "reviewer": "claude-draft",
+  "reviewed_at": "2026-09-30T12:37:58+00:00",
+  "letter_sha256": "531a803302507bd81352cfd9a6a19e7c7312d1223908ab10ea3b371583602a36",
+  "facts": {
+    "diagnoses": [
+      "INR 4.1 today (target 2.0 to 3.0): too high, blood is taking too long to clot"
+    ],
+    "medicines": [
+      "Do NOT take warfarin tonight (Monday 5 October 2026)",
+      "From Tuesday 6 October 2026: warfarin 4 mg each evening (previous dose 5 mg)",
+      "4 mg = one 3 mg tablet (blue) + one 1 mg tablet (brown)"
+    ],
+    "dates": [
+      "Next INR blood test on Monday 12 October 2026 at the Anticoagulation Clinic"
+    ],
+    "actions": [
+      "Bring your yellow warfarin book",
+      "Go to A&E or call 999 for heavy bleeding, blood in urine or stools, black stools, vomiting blood, or a severe headache",
+      "Contact the clinic on 01632 960 842 for minor bleeding such as nosebleeds or bleeding gums"
+    ],
+    "negatives": []
+  },
+  "notes": "Old dose (5 mg) must not be presented as the new dose. Drafted by Claude (Opus 5.5) from the letter text, at the author's request; awaiting review by the project author."
+}

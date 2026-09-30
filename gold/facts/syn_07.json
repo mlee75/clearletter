@@ -1,0 +1,31 @@
+{
+  "letter_id": "syn_07",
+  "reviewer": "claude-draft",
+  "reviewed_at": "2026-09-30T12:37:58+00:00",
+  "letter_sha256": "bb24ec889089addc8cbf73fc92cbb60654a0c355f82dc3b8eb136b81503d1cc2",
+  "facts": {
+    "diagnoses": [
+      "NSTEMI (a type of heart attack)",
+      "One narrowed artery treated with 1 stent (angiogram on 29 September 2026)"
+    ],
+    "medicines": [
+      "NEW: aspirin 75 mg once a day, long term",
+      "NEW: ticagrelor 90 mg twice a day for 12 months",
+      "NEW: atorvastatin 80 mg at night",
+      "NEW: ramipril 2.5 mg once a day",
+      "NEW: bisoprolol 1.25 mg once a day",
+      "NEW: GTN spray 400 micrograms, 1-2 sprays under the tongue when needed for chest pain",
+      "STOPPED: simvastatin 20 mg (replaced by atorvastatin)"
+    ],
+    "dates": [
+      "GP to check kidney blood tests (U&Es) in 2 weeks because ramipril was started",
+      "Cardiac rehabilitation team will contact you within 4 weeks"
+    ],
+    "actions": [
+      "Do not stop ticagrelor or aspirin without speaking to your cardiologist first (stopping early can cause the stent to block)",
+      "Chest pain: use the GTN spray; if the pain has not gone 5 minutes after the second dose, call 999"
+    ],
+    "negatives": []
+  },
+  "notes": "Drafted by Claude (Opus 5.5) from the letter text, at the author's request; awaiting review by the project author."
+}

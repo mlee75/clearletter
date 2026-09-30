@@ -1,0 +1,31 @@
+{
+  "letter_id": "syn_06",
+  "reviewer": "claude-draft",
+  "reviewed_at": "2026-09-30T12:37:58+00:00",
+  "letter_sha256": "b52085250dd4b8d9822cd0ff59ed3f4d351c771bab85cdac17a3c28e7b2f00e9",
+  "facts": {
+    "diagnoses": [
+      "Acute appendicitis",
+      "Keyhole operation to remove the appendix (laparoscopic appendicectomy) on 24 September 2026",
+      "Lab result on the appendix (histology) is still pending"
+    ],
+    "medicines": [
+      "Paracetamol 1 g four times a day when needed for pain, maximum 4 g in 24 hours",
+      "Ibuprofen 400 mg three times a day with food, for 5 days"
+    ],
+    "dates": [
+      "Clips removed by the practice nurse at the GP surgery on 6 October 2026",
+      "No heavy lifting for 4 weeks",
+      "You may shower from 28 September 2026"
+    ],
+    "actions": [
+      "Book the clip-removal appointment",
+      "Contact your GP or call 111 if temperature above 38°C, or a wound becomes red, swollen or leaks pus"
+    ],
+    "negatives": [
+      "There were no complications",
+      "No further action is needed unless the histology result is abnormal"
+    ]
+  },
+  "notes": "Pending histology must not be described as normal. Drafted by Claude (Opus 5.5) from the letter text, at the author's request; awaiting review by the project author."
+}

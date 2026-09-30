@@ -1,0 +1,27 @@
+{
+  "letter_id": "mts_3073",
+  "reviewer": "claude-draft",
+  "reviewed_at": "2026-09-30T12:37:58+00:00",
+  "letter_sha256": "a4f028ddc0a6bae892bdfa12c2c11ce15994db92739d706a546c6650efebf067",
+  "facts": {
+    "diagnoses": [
+      "Bulbar cerebral palsy and low muscle tone (hypotonia)",
+      "Significantly enlarged tonsils",
+      "Mouth breathing contributing to speech problems",
+      "Chronic allergic rhinitis with only partial relief",
+      "Allergy to penicillin"
+    ],
+    "medicines": [
+      "Flonase two sprays in each nostril once a day",
+      "Zyrtec 10 mg a day"
+    ],
+    "dates": [],
+    "actions": [
+      "Referred to ENT for an opinion on whether removing the tonsils would help mouth breathing, swallowing and speech"
+    ],
+    "negatives": [
+      "No decision on surgery yet (an opinion is being asked for)"
+    ]
+  },
+  "notes": "Drafted by Claude (Opus 5.5) from the letter text, at the author's request; awaiting review by the project author."
+}

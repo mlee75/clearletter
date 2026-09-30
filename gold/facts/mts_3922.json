@@ -1,0 +1,30 @@
+{
+  "letter_id": "mts_3922",
+  "reviewer": "claude-draft",
+  "reviewed_at": "2026-09-30T12:37:58+00:00",
+  "letter_sha256": "55dcf1660e1a1666ec9f20babdfb8c7ed18d76dfbcc3ae20e9d09122e822d95e",
+  "facts": {
+    "diagnoses": [
+      "Acute gastroenteritis, now resolved",
+      "Bleeding in the gut and long-term inflammation of the mesentery; cause unknown",
+      "Haemoglobin fell from 13.1 to 10.9; still blood in the stool at discharge"
+    ],
+    "medicines": [
+      "Restart home medicines: Prandin, Actos, Lipitor, Glucophage, Benicar and Advair",
+      "Prednisone taper over 4 weeks (GI recommendation)",
+      "Week 1: 15 mg by mouth for seven days (as written in the letter)",
+      "Week 2: 40 mg for 1 week",
+      "Week 3: 30 mg for 1 week",
+      "Then 20 mg for 1 week, then stop"
+    ],
+    "dates": [],
+    "actions": [],
+    "negatives": [
+      "Stool test negative for Clostridium difficile",
+      "Amylase, lipase, LDH, CRP and liver tests normal",
+      "Heart test (troponin) negative and ECG normal rhythm",
+      "No abdominal pain on the day of discharge"
+    ]
+  },
+  "notes": "The taper as written is inconsistent (15 mg, then 40, 30, 20; he was started on 60 mg in hospital): probably a transcription error. A faithful explanation copies it and suggests checking the schedule with the doctor; it must not silently 'correct' it. Drafted by Claude (Opus 5.5) from the letter text, at the author's request; awaiting review by the project author."
+}

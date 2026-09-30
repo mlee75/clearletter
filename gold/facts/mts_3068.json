@@ -1,0 +1,27 @@
+{
+  "letter_id": "mts_3068",
+  "reviewer": "claude-draft",
+  "reviewed_at": "2026-09-30T12:37:58+00:00",
+  "letter_sha256": "b15e253e502288b89188726f32a037f285a52dcb4c6b9a180da00e8e24e524f5",
+  "facts": {
+    "diagnoses": [
+      "9-month-old twin, born very slightly early",
+      "Probably fairly severe childhood asthma",
+      "On exam: some chest noises (scattered rhonchi) that cleared with coughing; otherwise healthy"
+    ],
+    "medicines": [
+      "Continue alternate-day steroids until completely free of symptoms on the days without steroids",
+      "Can be weaned down to as low as 1.5 milligrams (0.5 milliliters) on alternate days",
+      "Has used inhaled steroids and a bronchodilator; short burst of prednisolone then an alternate-day course"
+    ],
+    "dates": [],
+    "actions": [
+      "Mother encouraged to call the office with questions"
+    ],
+    "negatives": [
+      "No smoke exposure",
+      "He has avoided going into hospital"
+    ]
+  },
+  "notes": "Family history of asthma (father, uncle, sister). Question about consistency of medicines at the father's house. Drafted by Claude (Opus 5.5) from the letter text, at the author's request; awaiting review by the project author."
+}

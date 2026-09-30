@@ -1,0 +1,26 @@
+{
+  "letter_id": "syn_02",
+  "reviewer": "claude-draft",
+  "reviewed_at": "2026-09-30T12:37:58+00:00",
+  "letter_sha256": "d5db3202f76fd8b6ee2798fbecfb752b3390341a53fe8ecf7a981073c38a9222",
+  "facts": {
+    "diagnoses": [],
+    "medicines": [
+      "Stop iron tablets (ferrous sulphate) 7 days before the test",
+      "Continue all other medicines as normal",
+      "Take the bowel preparation (Moviprep) as described in the enclosed leaflet"
+    ],
+    "dates": [
+      "Colonoscopy on 3 December 2026 (written 03/12/2026) at 08:30, Endoscopy Unit, Ground Floor"
+    ],
+    "actions": [
+      "Day before the test: no solid food after 12:00 midday, clear fluids only",
+      "Nil by mouth from 06:30 on the day of the test, except small sips of water",
+      "If you have sedation, an adult must collect you and stay with you for 24 hours",
+      "Do not drive for 24 hours after sedation",
+      "To change the appointment, call 01632 960 214"
+    ],
+    "negatives": []
+  },
+  "notes": "03/12/2026 is a UK date: 3 December 2026, not 12 March. Drafted by Claude (Opus 5.5) from the letter text, at the author's request; awaiting review by the project author."
+}

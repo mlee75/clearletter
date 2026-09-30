@@ -1,0 +1,31 @@
+{
+  "letter_id": "mts_3980",
+  "reviewer": "claude-draft",
+  "reviewed_at": "2026-09-30T12:37:58+00:00",
+  "letter_sha256": "3b399793cd96975ce29365967d10eb85972479c4aedd774140b3cd49e4cbee42",
+  "facts": {
+    "diagnoses": [
+      "Complex open wound of the right leg with an MRSA skin infection (cellulitis)",
+      "Chronic pain",
+      "Smoking",
+      "History of hepatitis C",
+      "Mild cirrhosis on abdominal ultrasound",
+      "Leg swelling thought to be from poor vein circulation (chronic venostasis), likely partly from the liver"
+    ],
+    "medicines": [
+      "Doxycycline 100 mg by mouth twice a day for 10 days",
+      "Prescriptions for Percocet and OxyContin, to pick up at the office"
+    ],
+    "dates": [
+      "In hospital from 03/26/08; much better by 04/03/08",
+      "Follow-up in a couple of weeks"
+    ],
+    "actions": [
+      "Daily wound care",
+      "Wrap the leg with an Ace bandage (compression)",
+      "Advised to cut down smoking"
+    ],
+    "negatives": []
+  },
+  "notes": "US dates: 03/26/08 = 26 March 2008. Drafted by Claude (Opus 5.5) from the letter text, at the author's request; awaiting review by the project author."
+}

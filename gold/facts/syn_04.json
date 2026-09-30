@@ -1,0 +1,27 @@
+{
+  "letter_id": "syn_04",
+  "reviewer": "claude-draft",
+  "reviewed_at": "2026-09-30T12:37:58+00:00",
+  "letter_sha256": "fb2dece3b7c445d31054b48d06bbe13f39d570bce43d9e68d024739be8662115",
+  "facts": {
+    "diagnoses": [
+      "Invited to diabetic eye screening, which checks the back of the eyes for damage from diabetes (diabetic retinopathy)"
+    ],
+    "medicines": [],
+    "dates": [
+      "Book the appointment by 15 January 2027",
+      "The eye drops blur vision for 4 to 6 hours"
+    ],
+    "actions": [
+      "Call 01632 960 377 to book",
+      "Do not drive until your vision is back to normal",
+      "Bring sunglasses if you have them",
+      "Bring your glasses or contact lenses and a list of your medicines"
+    ],
+    "negatives": [
+      "This screening does not diagnose other eye problems",
+      "It does not replace the regular eye test at an optician"
+    ]
+  },
+  "notes": "Drafted by Claude (Opus 5.5) from the letter text, at the author's request; awaiting review by the project author."
+}

@@ -1,0 +1,28 @@
+{
+  "letter_id": "syn_17",
+  "reviewer": "claude-draft",
+  "reviewed_at": "2026-09-30T12:37:58+00:00",
+  "letter_sha256": "bc582b0e14223bc22d868b76c5bf0b3a7e849e999c90bbc0edaf9e558b168640",
+  "facts": {
+    "diagnoses": [
+      "Asthma flare-up (review on 30 September 2026)"
+    ],
+    "medicines": [
+      "Prednisolone (a steroid), 5 mg tablets, once a day in the morning with food",
+      "1 to 5 October 2026: 40 mg (8 tablets) each day",
+      "6 to 8 October 2026: 20 mg (4 tablets) each day",
+      "9 to 11 October 2026: 10 mg (2 tablets) each day",
+      "12 October 2026: stop prednisolone",
+      "Continue your usual inhalers"
+    ],
+    "dates": [
+      "Book a review with the asthma nurse within 2 weeks (by 14 October 2026)"
+    ],
+    "actions": [
+      "Carry the blue steroid card the pharmacy gives you",
+      "If breathing gets worse or the reliever inhaler does not help, call 999"
+    ],
+    "negatives": []
+  },
+  "notes": "Drafted by Claude (Opus 5.5) from the letter text, at the author's request; awaiting review by the project author."
+}

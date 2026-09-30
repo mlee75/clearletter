@@ -1,0 +1,29 @@
+{
+  "letter_id": "mts_3974",
+  "reviewer": "claude-draft",
+  "reviewed_at": "2026-09-30T12:37:58+00:00",
+  "letter_sha256": "f66ff021deb7ab92c8baa69a7f217da84a2475a9716212241a574a343efd2f16",
+  "facts": {
+    "diagnoses": [
+      "COPD with a flare of asthmatic bronchitis",
+      "Mechanical aortic valve since 2002, on long-term Coumadin",
+      "Has gone back to pipe smoking",
+      "Condition at discharge: guarded"
+    ],
+    "medicines": [
+      "Prednisone 20 mg three times a day for 2 days, then twice a day for 5 days, then once daily",
+      "Keflex 500 mg three times a day",
+      "Restart the other medicines taken before admission",
+      "Pneumococcal vaccine can be given before discharge"
+    ],
+    "dates": [
+      "Follow up in the office in 4-5 days"
+    ],
+    "actions": [],
+    "negatives": [
+      "Chest X-ray showed no heart failure (no CHF)",
+      "No complications"
+    ]
+  },
+  "notes": "Prednisone 'then one daily' has no end date and Keflex has no duration: neither may be invented. Drafted by Claude (Opus 5.5) from the letter text, at the author's request; awaiting review by the project author."
+}

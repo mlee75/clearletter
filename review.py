@@ -5,7 +5,7 @@ checks whether Claude's explanation kept every one of them. A human writes
 them (not Claude), so the test is not marking its own homework.
 
 Usage:
-    python review.py            review the next letter that has no facts yet
+    python review.py            go through every letter not yet reviewed by you
     python review.py status     show which letters are done
     python review.py syn_07     review (or redo) one specific letter
 
@@ -24,6 +24,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 MANIFEST = ROOT / "data" / "manifest.csv"
 GOLD_DIR = ROOT / "gold" / "facts"
+DRAFT_NOTE = "Drafted by Claude (Opus 5.5) from the letter text, at the author's request; awaiting review by the project author."
 
 # The kinds of fact we ask for, in order, with a hint shown while typing.
 CATEGORIES = [
@@ -43,6 +44,25 @@ def load_letters():
 
 def fact_path(letter_id):
     return GOLD_DIR / f"{letter_id}.json"
+
+
+def state(letter_id):
+    """'todo' (no facts), 'draft' (written by Claude, not yet checked) or 'done'."""
+    path = fact_path(letter_id)
+    if not path.exists():
+        return "todo"
+    return "draft" if json.loads(path.read_text(encoding="utf-8"))["reviewer"] == "claude-draft" else "done"
+
+
+def accept(letter_id, reviewer):
+    """Mark a draft as reviewed: the facts stay the same, your initials are recorded."""
+    path = fact_path(letter_id)
+    record = json.loads(path.read_text(encoding="utf-8"))
+    record["reviewer"] = reviewer
+    record["reviewed_at"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
+    record["notes"] = record["notes"].replace(DRAFT_NOTE, "Drafted by Claude; reviewed and accepted by " + reviewer + ".")
+    path.write_text(json.dumps(record, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    print(f"Accepted. {path.relative_to(ROOT)} now records you as the reviewer.")
 
 
 def show_letter(letter):
@@ -83,11 +103,21 @@ def ask_category(name, hint, letter):
 def review(letter, reviewer):
     """Show one letter, collect its facts, and save them if the reviewer confirms."""
     existing = fact_path(letter["letter_id"])
-    if existing.exists():
-        print(f"\nThis letter already has facts. Here they are; you are about to replace them:")
-        print(existing.read_text(encoding="utf-8"))
-
     text = show_letter(letter)
+    if existing.exists():
+        record = json.loads(existing.read_text(encoding="utf-8"))
+        print(f"\nExisting facts (reviewer: {record['reviewer']}):")
+        for name, items in record["facts"].items():
+            for item in items:
+                print(f"  {name:10} - {item}")
+        print(f"  notes: {record['notes']}")
+        choice = input("\n[a]ccept these as correct / [r]ewrite them yourself / [s]kip: ").strip().lower()
+        if choice == "a":
+            return accept(letter["letter_id"], reviewer)
+        if choice != "r":
+            print("Skipped. Nothing changed.")
+            return
+
     facts = {name: ask_category(name, hint, letter) for name, hint in CATEGORIES}
     notes = input("\nAny notes (ambiguities, things you were unsure about)? ").strip()
 
@@ -120,11 +150,12 @@ def review(letter, reviewer):
 
 
 def status(letters):
-    done = [l for l in letters if fact_path(l["letter_id"]).exists()]
-    print(f"\n{len(done)} of {len(letters)} letters reviewed\n")
+    states = {l["letter_id"]: state(l["letter_id"]) for l in letters}
+    counts = {s: list(states.values()).count(s) for s in ("done", "draft", "todo")}
+    print(f"\n{counts['done']} reviewed by you, {counts['draft']} Claude drafts to check, "
+          f"{counts['todo']} not started (of {len(letters)})\n")
     for l in letters:
-        mark = "done" if fact_path(l["letter_id"]).exists() else "  - "
-        print(f"  [{mark}] {l['letter_id']:9} {l['letter_type']:18} {l['tricky_features'][:45]}")
+        print(f"  [{states[l['letter_id']]:5}] {l['letter_id']:9} {l['letter_type']:18} {l['tricky_features'][:45]}")
 
 
 def main():
@@ -141,7 +172,7 @@ def main():
             print(f"No letter called {args[0]!r}. Run 'python review.py status' to see the ids.")
             return
     else:
-        chosen = [l for l in letters if not fact_path(l["letter_id"]).exists()]
+        chosen = [l for l in letters if state(l["letter_id"]) != "done"]
         if not chosen:
             print("All letters are reviewed. Well done.")
             return

@@ -1,0 +1,24 @@
+{
+  "letter_id": "syn_03",
+  "reviewer": "claude-draft",
+  "reviewed_at": "2026-09-30T12:37:58+00:00",
+  "letter_sha256": "73115120e5a4cd6e2b9f76d764b186e8d6b03d6067cfb0cd1db2cf7c8f7be08c",
+  "facts": {
+    "diagnoses": [],
+    "medicines": [],
+    "dates": [
+      "20-week (anomaly) scan on Monday 11 January 2027 at 14:15, Antenatal Clinic, Floor 1"
+    ],
+    "actions": [
+      "You may bring one adult with you",
+      "For a free interpreter, call at least 5 working days before",
+      "If bleeding, leaking fluid from the vagina or severe tummy pain before the appointment, call the Maternity Assessment Unit on 01632 960 456 straight away (open 24 hours)"
+    ],
+    "negatives": [
+      "The scan cannot find every problem",
+      "You do not need a full bladder",
+      "Children cannot come into the scan room"
+    ]
+  },
+  "notes": "Drafted by Claude (Opus 5.5) from the letter text, at the author's request; awaiting review by the project author."
+}

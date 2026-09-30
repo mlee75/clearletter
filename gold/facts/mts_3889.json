@@ -1,0 +1,29 @@
+{
+  "letter_id": "mts_3889",
+  "reviewer": "claude-draft",
+  "reviewed_at": "2026-09-30T12:37:58+00:00",
+  "letter_sha256": "67453d098f9b47ed44e92227e579d9c6dc10c6402f3d5b3ac2c938fd8a0c6f65",
+  "facts": {
+    "diagnoses": [
+      "Kidney infection (pyelonephritis), likely caused by a mucus plug blocking the Foley catheter in the ileal conduit",
+      "High blood pressure (hypertension)",
+      "Mild kidney impairment (renal insufficiency)",
+      "Anaemia, present for the past year",
+      "History of uterine cancer and an ileal conduit (urinary diversion)",
+      "Klebsiella bacteria in the urine, treatable with Bactrim"
+    ],
+    "medicines": [
+      "Bactrim by mouth",
+      "Ibuprofen from the pharmacy, two to three tablets three times a day, for the knee pain"
+    ],
+    "dates": [
+      "Further surgery scheduled on 08/07/2007",
+      "Follow up with Dr. Y in 7-10 days"
+    ],
+    "actions": [],
+    "negatives": [
+      "Right knee: no swelling in the joint (no effusion); the pain is not thought to come from inside the joint"
+    ]
+  },
+  "notes": "US date 08/07/2007 = 7 August 2007. Bactrim dose and duration are not stated: they must not be invented. Drafted by Claude (Opus 5.5) from the letter text, at the author's request; awaiting review by the project author."
+}

@@ -1,0 +1,26 @@
+{
+  "letter_id": "mts_3057",
+  "reviewer": "claude-draft",
+  "reviewed_at": "2026-09-30T12:37:58+00:00",
+  "letter_sha256": "dc3a373fe60e7ff904ede236dfb155d5a6a7f66efb3324481e048e5a5903ccee",
+  "facts": {
+    "diagnoses": [
+      "Continuing abdominal pain (lower abdomen, and on examination the whole right side)",
+      "Kidney scan (diuretic renal scan): both kidneys working well",
+      "Parents' question whether the pain comes from the gut is an appropriate consideration"
+    ],
+    "medicines": [
+      "Option to stop Detrol (parents feel the pain is worse since starting it)",
+      "Stay on MiraLax for the bowels"
+    ],
+    "dates": [],
+    "actions": [
+      "Referral to Pediatric Gastroenterology suggested",
+      "If no gut cause is found, the next step would be a camera test of the bladder to look for bladder abnormalities"
+    ],
+    "negatives": [
+      "Kidney scan showed no blockage (no evidence of obstruction)"
+    ]
+  },
+  "notes": "Letter between doctors about a child. Stopping Detrol is an option, not an instruction. Drafted by Claude (Opus 5.5) from the letter text, at the author's request; awaiting review by the project author."
+}

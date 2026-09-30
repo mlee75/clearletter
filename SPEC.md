@@ -117,8 +117,12 @@ pharmacist to explain it to you."
 
 - **40 letters:** 20 synthetic (5 appointment, 5 discharge, 5 test results, 5 medication
   change) and 20 from MTSamples (10 clinic letters, 10 discharge summaries).
-- **Written by a human** (the project author) with `python review.py`. Claude never
-  writes or suggests gold facts. This keeps the test independent of the thing being tested.
+- **Current status: drafted by Claude, pending human review.** The plan was for the project
+  author to write every fact with `python review.py`, so that the test stays independent of
+  the thing being tested. To save time, the author asked Claude to draft all 40 (406 facts,
+  marked `"reviewer": "claude-draft"`). That is a known weakness: a Claude model wrote the
+  answer key for a Claude model. The mitigation is that the author reviews each draft with
+  `python review.py <letter_id>`, and the eval report states how many facts are still drafts.
 - Stored one file per letter in `gold/facts/<letter_id>.json`, with a fingerprint of the
   letter text so that stale facts can be spotted if a letter is edited.
 

@@ -1,0 +1,24 @@
+{
+  "letter_id": "mts_3069",
+  "reviewer": "claude-draft",
+  "reviewed_at": "2026-09-30T12:37:58+00:00",
+  "letter_sha256": "a816d0a0c4346b0d08520760709e399a3c8c443d9c04ed7ddf51774175208759",
+  "facts": {
+    "diagnoses": [
+      "Dense cataracts in both eyes, causing the drop in vision",
+      "Vision 20/40 right eye, 20/50 left eye",
+      "Possible early Fuchs dystrophy (mild guttata)"
+    ],
+    "medicines": [],
+    "dates": [],
+    "actions": [
+      "Cataract surgery recommended and she agreed",
+      "First eye to be operated soon, then the other eye"
+    ],
+    "negatives": [
+      "No relative afferent pupillary defect",
+      "Back of the eye (vitreous, macula, vessels, periphery) normal"
+    ]
+  },
+  "notes": "Fuchs dystrophy is only possible. Drafted by Claude (Opus 5.5) from the letter text, at the author's request; awaiting review by the project author."
+}

@@ -1,0 +1,27 @@
+{
+  "letter_id": "mts_3899",
+  "reviewer": "claude-draft",
+  "reviewed_at": "2026-09-30T12:37:58+00:00",
+  "letter_sha256": "8de5a2fe862d97c4303b311ba0abc94acc4099e1bb5772bceaea6d5c2ce233a6",
+  "facts": {
+    "diagnoses": [
+      "Large nodular thyroid goitre causing symptoms",
+      "Whole thyroid removed (total thyroidectomy) on 09/22/08, went well"
+    ],
+    "medicines": [
+      "Vicodin for pain (prescription)",
+      "Synthroid thyroid hormone replacement (prescription)"
+    ],
+    "dates": [
+      "Went home on 09/25/08",
+      "Follow up in the surgical office within one week"
+    ],
+    "actions": [
+      "Follow the wound care instructions sheet"
+    ],
+    "negatives": [
+      "No fever at discharge"
+    ]
+  },
+  "notes": "Doses are not given in the letter and must not be invented. Drafted by Claude (Opus 5.5) from the letter text, at the author's request; awaiting review by the project author."
+}

@@ -1,0 +1,28 @@
+{
+  "letter_id": "mts_3061",
+  "reviewer": "claude-draft",
+  "reviewed_at": "2026-09-30T12:37:58+00:00",
+  "letter_sha256": "88e4b57a952cf90cb2cc8a8f855e98cc3246a7418e048b94e4d287f067511708",
+  "facts": {
+    "diagnoses": [
+      "Suspected seizures, seen in 2005; some doubt about the true nature of the episodes",
+      "No seizures for the past 2 1/2 years",
+      "Neurological examination normal",
+      "Dilantin level slightly low at 12.5"
+    ],
+    "medicines": [
+      "Currently taking Dilantin 300 mg daily",
+      "Patient wants to stop Dilantin; the decision is waiting for the neurologist's advice"
+    ],
+    "dates": [],
+    "actions": [
+      "Neurologist asked to advise whether Dilantin should continue",
+      "Probably a repeat EEG, arranged through the Health Center",
+      "Any lab tests through ABC Diagnostic, coordinated at the Health Center before scheduling"
+    ],
+    "negatives": [
+      "No decision has been made to stop Dilantin"
+    ]
+  },
+  "notes": "Must not tell the patient to stop Dilantin. Drafted by Claude (Opus 5.5) from the letter text, at the author's request; awaiting review by the project author."
+}

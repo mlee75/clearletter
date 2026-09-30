@@ -1,0 +1,32 @@
+{
+  "letter_id": "mts_3060",
+  "reviewer": "claude-draft",
+  "reviewed_at": "2026-09-30T12:37:58+00:00",
+  "letter_sha256": "d2d3073b8d52e87a3c0222d910dbe461754e93117bb0981a8ef1071806f46059",
+  "facts": {
+    "diagnoses": [
+      "Wilson's disease, diagnosed at age 14, treated with penicillamine",
+      "Episode of atrial fibrillation with a fast rate that returned to normal rhythm on its own",
+      "Echo: mild-to-moderate enlargement of the left upper heart chamber (left atrium); normal pumping (ejection fraction)",
+      "Cirrhosis was reported, but the liver diagnosis is in doubt (no liver biopsy has been done)"
+    ],
+    "medicines": [
+      "Penicillamine 250 mg by mouth four times a day",
+      "Metoprolol (Lopressor) 12.5 mg twice a day",
+      "Aspirin 325 mg once a day (given instead of Coumadin because of the liver concern)"
+    ],
+    "dates": [
+      "In normal rhythm when seen on 06/12/2008"
+    ],
+    "actions": [
+      "Referred for advice on long-term blood thinning (whether Coumadin is safe) and on rhythm control"
+    ],
+    "negatives": [
+      "No other significant heart valve problem",
+      "Liver blood tests (LFTs) normal",
+      "Copper level undetectable on the current penicillamine dose",
+      "No further treatment was needed when the rhythm returned to normal"
+    ]
+  },
+  "notes": "US date 06/12/2008 = 12 June 2008. The Coumadin question is open; the explanation must not say whether it will be started. Drafted by Claude (Opus 5.5) from the letter text, at the author's request; awaiting review by the project author."
+}

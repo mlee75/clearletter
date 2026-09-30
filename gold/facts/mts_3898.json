@@ -1,0 +1,29 @@
+{
+  "letter_id": "mts_3898",
+  "reviewer": "claude-draft",
+  "reviewed_at": "2026-09-30T12:37:58+00:00",
+  "letter_sha256": "afead53aec543f057ea1a6906fbd1202ae13fc108a517170e74235bb63c5fbd2",
+  "facts": {
+    "diagnoses": [
+      "Atypical pneumonia, suspected viral",
+      "Low oxygen levels (hypoxia)",
+      "Rheumatoid arthritis",
+      "Suspected mild adrenal insufficiency caused by the stress of the pneumonia",
+      "C. difficile stool test result still pending"
+    ],
+    "medicines": [
+      "Finish azithromycin (two pills left at home)",
+      "Continue prednisone at the increased dose of 20 mg (up from 5 mg per day)",
+      "Methotrexate 20 mg weekly is on hold; the rheumatologist will be asked whether to continue it",
+      "Remicade every eight weeks (last dose in June)"
+    ],
+    "dates": [
+      "Follow up with Dr. X in two to three days"
+    ],
+    "actions": [],
+    "negatives": [
+      "CT scan showed no specific focal problem"
+    ]
+  },
+  "notes": "Pending C. difficile result must not be called negative. Drafted by Claude (Opus 5.5) from the letter text, at the author's request; awaiting review by the project author."
+}

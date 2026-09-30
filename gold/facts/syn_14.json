@@ -1,0 +1,26 @@
+{
+  "letter_id": "syn_14",
+  "reviewer": "claude-draft",
+  "reviewed_at": "2026-09-30T12:37:58+00:00",
+  "letter_sha256": "8ca942b2f648aa34eebf13c8591b968f1d115ed85e5d49df6711a46fb79e11a2",
+  "facts": {
+    "diagnoses": [
+      "Recall after the screening mammogram on 16 September 2026: more tests are needed"
+    ],
+    "medicines": [],
+    "dates": [
+      "Appointment on Wednesday 7 October 2026 at 11:00, Breast Assessment Clinic, Eastmoor Hospital",
+      "The visit may take up to 4 hours"
+    ],
+    "actions": [
+      "You may have more mammograms, an ultrasound scan and, in some cases, a biopsy",
+      "Most results usually on the same day",
+      "You can bring a friend or family member",
+      "If you cannot come, call 01632 960 733 as soon as possible"
+    ],
+    "negatives": [
+      "Being called back does not mean you have cancer: about 4 in 5 women called back do not have breast cancer"
+    ]
+  },
+  "notes": "The '4 in 5' statistic must stay exact; no extra reassurance or alarm. Drafted by Claude (Opus 5.5) from the letter text, at the author's request; awaiting review by the project author."
+}

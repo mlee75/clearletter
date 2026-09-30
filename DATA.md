@@ -51,5 +51,12 @@ https://www.mtsamples.com. Accessed via Boyle, T. *Medical Transcriptions* (Kagg
 
 ## 3. Gold facts
 
-`gold/facts/*.json` are written by hand by the project author with `python review.py`.
-They are the author's own judgement and are released under the MIT licence.
+`gold/facts/*.json` hold the "must-keep facts" for each letter (406 facts across 40 letters),
+released under the MIT licence.
+
+**Provenance, stated plainly:** all 40 files were drafted by Claude (Opus 5.5), at the
+author's request, by reading each letter; no API was called. Each file says
+`"reviewer": "claude-draft"` until the author reviews it with `python review.py <letter_id>`,
+which records their initials instead. Because a Claude model wrote the answer key for a
+Claude model, results measured against unreviewed drafts should be read with that in mind.
+A script confirmed that every number in every fact appears in its letter.

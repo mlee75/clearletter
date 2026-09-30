@@ -1,0 +1,27 @@
+{
+  "letter_id": "syn_19",
+  "reviewer": "claude-draft",
+  "reviewed_at": "2026-09-30T12:37:58+00:00",
+  "letter_sha256": "003bbc9bb6fb59dbfc4b75b4d0be13aab9070d0843e7954ea2924ff80a82b186",
+  "facts": {
+    "diagnoses": [
+      "Several hypos (low blood sugar)",
+      "HbA1c 46 mmol/mol"
+    ],
+    "medicines": [
+      "STOP gliclazide 80 mg twice daily (it can cause hypos)",
+      "CONTINUE metformin 1 g twice daily with meals",
+      "START sitagliptin 100 mg once daily",
+      "Sick day rule: if vomiting, diarrhoea, or cannot eat or drink normally, stop metformin; restart 24 to 48 hours after eating and drinking normally again"
+    ],
+    "dates": [
+      "Clinic visit on 2 October 2026",
+      "Next appointment on Friday 13 November 2026 at 10:00"
+    ],
+    "actions": [
+      "Keep checking your blood sugar for the next 2 weeks and bring the readings to the next appointment"
+    ],
+    "negatives": []
+  },
+  "notes": "Drafted by Claude (Opus 5.5) from the letter text, at the author's request; awaiting review by the project author."
+}

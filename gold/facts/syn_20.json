@@ -1,0 +1,28 @@
+{
+  "letter_id": "syn_20",
+  "reviewer": "claude-draft",
+  "reviewed_at": "2026-09-30T12:37:58+00:00",
+  "letter_sha256": "6f25e862d9c350624907e1ad30bdccd11e9ea81b9fcbc21d54e3e1ebb32cba2d",
+  "facts": {
+    "diagnoses": [
+      "Antidepressant being changed because of side effects"
+    ],
+    "medicines": [
+      "From Monday 26 October 2026: reduce sertraline from 100 mg to 50 mg once daily for 7 days",
+      "On Monday 2 November 2026: stop sertraline",
+      "From Monday 2 November 2026: start mirtazapine 15 mg once daily at night"
+    ],
+    "dates": [
+      "Appointment on 19 October 2026",
+      "Next appointment on Monday 16 November 2026 at 14:00 with Nurse Obi"
+    ],
+    "actions": [
+      "Mirtazapine can make you sleepy: do not drive if you feel drowsy",
+      "Avoid alcohol",
+      "If you feel worse or have thoughts of harming yourself: contact the team on 01632 960 999 (Monday to Friday, 9:00 to 17:00)",
+      "At any time: NHS 111 (mental health option) or Samaritans 116 123; in an emergency, call 999"
+    ],
+    "negatives": []
+  },
+  "notes": "Drafted by Claude (Opus 5.5) from the letter text, at the author's request; awaiting review by the project author."
+}

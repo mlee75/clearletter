@@ -1,0 +1,30 @@
+{
+  "letter_id": "syn_10",
+  "reviewer": "claude-draft",
+  "reviewed_at": "2026-09-30T12:37:58+00:00",
+  "letter_sha256": "0370122edb459727ed6e2e4958ea0c5241a15bdf0997da8e54db51574986e284",
+  "facts": {
+    "diagnoses": [
+      "Gastroenteritis (tummy bug) with mild dehydration"
+    ],
+    "medicines": [
+      "Paracetamol oral suspension 120 mg/5 ml: give 7.5 ml, up to 4 times in 24 hours, at least 4 hours between doses",
+      "Oral rehydration solution (Dioralyte) can be used"
+    ],
+    "dates": [
+      "Diarrhoea usually stops within 5 to 7 days",
+      "Vomiting usually stops within 3 days"
+    ],
+    "actions": [
+      "Give small amounts of fluid often: 5 ml every 5 minutes if vomiting, then more as she keeps it down",
+      "Keep breastfeeding or giving her usual milk",
+      "Bring Lina back or call 111 if fewer than 4 wet nappies in 24 hours, very sleepy, blood in her poo, or cannot keep any fluids down",
+      "Call 999 if she is hard to wake up"
+    ],
+    "negatives": [
+      "Do not give anti-diarrhoea medicines to your child",
+      "No blood tests were needed"
+    ]
+  },
+  "notes": "Dose must stay 7.5 ml of the 120 mg/5 ml suspension; mixing up ml and mg is a dosage error. Drafted by Claude (Opus 5.5) from the letter text, at the author's request; awaiting review by the project author."
+}

@@ -1,0 +1,24 @@
+{
+  "letter_id": "mts_3058",
+  "reviewer": "claude-draft",
+  "reviewed_at": "2026-09-30T12:37:58+00:00",
+  "letter_sha256": "2a76cc49c878aa1bb840c203e6cd4d3192cc61ffc97a81d021746f7d21a5b9c6",
+  "facts": {
+    "diagnoses": [
+      "Vasectomy 10 years ago; vasectomy reversal almost two years ago failed",
+      "No sperm in the semen since the reversal (azoospermic)",
+      "Operative note suggests some sperm on the right side at the time of the reversal"
+    ],
+    "medicines": [],
+    "dates": [
+      "Sperm harvesting provisionally booked for a date that may change if a fresh specimen is needed"
+    ],
+    "actions": [
+      "He was interested in sperm harvesting and freezing (cryopreservation) before his wife's next ovulation induction",
+      "He now does not want this unless his wife's ovulation is confirmed, and may prefer a fresh specimen harvest",
+      "The urologist is waiting for the other doctor's plan before arranging the procedure"
+    ],
+    "negatives": []
+  },
+  "notes": "Dates in the source are placeholders (Month DD, YYYY): no real date may be invented. Drafted by Claude (Opus 5.5) from the letter text, at the author's request; awaiting review by the project author."
+}

@@ -1,0 +1,30 @@
+{
+  "letter_id": "syn_08",
+  "reviewer": "claude-draft",
+  "reviewed_at": "2026-09-30T12:37:58+00:00",
+  "letter_sha256": "d9b3853b4442b5b7b1158418a01be6ab6662c3c7e2cadb83d951bff8181903b1",
+  "facts": {
+    "diagnoses": [
+      "Fall at home with a knock to the head",
+      "Postural hypotension: blood pressure drops on standing (142/80 lying, 108/66 standing)"
+    ],
+    "medicines": [
+      "STOP amlodipine 10 mg (it may be making blood pressure drop on standing)",
+      "Continue all other medicines"
+    ],
+    "dates": [
+      "GP to recheck lying and standing blood pressure in 4 weeks"
+    ],
+    "actions": [
+      "Falls Prevention Clinic will write with an appointment",
+      "Stand up slowly; sit on the edge of the bed for a minute before standing",
+      "Call 999 or go to A&E if worsening headache, vomiting, confusion or drowsiness in the next few days"
+    ],
+    "negatives": [
+      "No loss of consciousness",
+      "Hip X-ray: no fracture",
+      "CT head: no bleeding inside the head"
+    ]
+  },
+  "notes": "Drafted by Claude (Opus 5.5) from the letter text, at the author's request; awaiting review by the project author."
+}

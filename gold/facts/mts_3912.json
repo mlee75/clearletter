@@ -1,0 +1,29 @@
+{
+  "letter_id": "mts_3912",
+  "reviewer": "claude-draft",
+  "reviewed_at": "2026-09-30T12:37:58+00:00",
+  "letter_sha256": "7c43f8ae94634ce457e10c9e39ce42508109a0f7b95ade323062d851fa2e54b5",
+  "facts": {
+    "diagnoses": [
+      "Right knee: the worn plastic (poly) part of an old knee replacement was exchanged",
+      "Stable at discharge"
+    ],
+    "medicines": [
+      "Coumadin 4 mg a day (INR 1.9 at discharge), with blood tests twice a week",
+      "Vicodin 5/500 mg, one to two tablets by mouth every 4-6 hours",
+      "Restart usual home medicines"
+    ],
+    "dates": [
+      "Follow up with Dr. ABC in two weeks"
+    ],
+    "actions": [
+      "Put as much weight on the right leg as is comfortable",
+      "Keep doing the physical therapy exercises",
+      "Regular diet",
+      "Call the office or go back to the emergency room for more redness, swelling, drainage, fever, or any concern about the operation site",
+      "Going home to the care of her son"
+    ],
+    "negatives": []
+  },
+  "notes": "Drafted by Claude (Opus 5.5) from the letter text, at the author's request; awaiting review by the project author."
+}

@@ -1,0 +1,27 @@
+{
+  "letter_id": "syn_05",
+  "reviewer": "claude-draft",
+  "reviewed_at": "2026-09-30T12:37:58+00:00",
+  "letter_sha256": "b1d45eef502ffa69dc7231f8cb8eb7c1777ad8ee3fcb9097caa0a337b498d320",
+  "facts": {
+    "diagnoses": [
+      "Asthma review for Yusuf (age 7)"
+    ],
+    "medicines": [
+      "Blue reliever inhaler: salbutamol",
+      "Brown preventer inhaler: beclometasone, keep giving it every day even when he is well"
+    ],
+    "dates": [
+      "OLD appointment on Monday 9 November 2026 is cancelled",
+      "NEW appointment on Monday 23 November 2026 at 09:15 with the Paediatric Asthma Nurse, Children's Outpatients, Blue Zone"
+    ],
+    "actions": [
+      "Bring all of Yusuf's inhalers",
+      "Bring his spacer",
+      "Bring his red book (personal child health record) if you have it",
+      "If the new time is not suitable, call 01632 960 588"
+    ],
+    "negatives": []
+  },
+  "notes": "Letter is addressed to a parent or carer. Drafted by Claude (Opus 5.5) from the letter text, at the author's request; awaiting review by the project author."
+}

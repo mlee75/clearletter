@@ -1,0 +1,24 @@
+{
+  "letter_id": "mts_3080",
+  "reviewer": "claude-draft",
+  "reviewed_at": "2026-09-30T12:37:58+00:00",
+  "letter_sha256": "e14eb9bd35308853556d8605ea574bd396165c9e673830ac6105ee9fb040cc91",
+  "facts": {
+    "diagnoses": [
+      "Cholesterol levels are abnormal (high enough that the doctor thinks treatment is the next step)",
+      "High cholesterol is usually linked to a higher risk of stroke and heart attack"
+    ],
+    "medicines": [
+      "The doctor recommends at least discussing medicine for high cholesterol",
+      "Diet is one option but usually gives limited reduction (about 15% with a strict diet)"
+    ],
+    "dates": [],
+    "actions": [
+      "Make or call for a follow-up appointment if interested in treatment",
+      "Contact the doctor with any questions",
+      "A copy of the lab results is enclosed"
+    ],
+    "negatives": []
+  },
+  "notes": "Conditional statements (if you are diabetic or have hypertension) must stay conditional. The Alzheimer's claim is in the letter; it may be repeated but not strengthened. Drafted by Claude (Opus 5.5) from the letter text, at the author's request; awaiting review by the project author."
+}

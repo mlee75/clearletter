@@ -1,0 +1,26 @@
+{
+  "letter_id": "syn_18",
+  "reviewer": "claude-draft",
+  "reviewed_at": "2026-09-30T12:37:58+00:00",
+  "letter_sha256": "d8852d1ffd4b774d09733b3ecefd9470b28498d745e54268499f962baa6c4f11",
+  "facts": {
+    "diagnoses": [
+      "TSH 7.8 mU/L (normal range 0.3 to 4.2): the levothyroxine dose is too low"
+    ],
+    "medicines": [
+      "Increase levothyroxine from 50 micrograms to 75 micrograms once daily",
+      "New prescription: take one 25 microgram tablet and one 50 microgram tablet every day",
+      "Take on an empty stomach, at least 30 minutes before breakfast or other medicines",
+      "Leave at least 4 hours between levothyroxine and iron or calcium tablets"
+    ],
+    "dates": [
+      "Thyroid blood test on 25 September 2026",
+      "Repeat thyroid blood test in 6 to 8 weeks (between 6 November and 20 November 2026)"
+    ],
+    "actions": [
+      "Collect the new prescription from your pharmacy"
+    ],
+    "negatives": []
+  },
+  "notes": "Drafted by Claude (Opus 5.5) from the letter text, at the author's request; awaiting review by the project author."
+}

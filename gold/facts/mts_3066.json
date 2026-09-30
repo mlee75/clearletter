@@ -1,0 +1,24 @@
+{
+  "letter_id": "mts_3066",
+  "reviewer": "claude-draft",
+  "reviewed_at": "2026-09-30T12:37:58+00:00",
+  "letter_sha256": "a7e9bebeab5e1f12f77dcaf6fa5c3e7f5ac9b975ee5aa26ead03e19b3e2d18b8",
+  "facts": {
+    "diagnoses": [
+      "Macular degeneration; photodynamic therapy (PDT) within the last year",
+      "With a small change to distance glasses: 20/70 right eye, 20/200 left eye",
+      "With +4 reading glasses she could read 0.5M (small) print",
+      "Excellent candidate for low vision help"
+    ],
+    "medicines": [],
+    "dates": [
+      "Return in two weeks to decide which reading glasses to prescribe"
+    ],
+    "actions": [
+      "Lent a pair of +4 reading glasses",
+      "Started fine-detailed reading practice"
+    ],
+    "negatives": []
+  },
+  "notes": "The current handheld magnifier gives only limited help. Drafted by Claude (Opus 5.5) from the letter text, at the author's request; awaiting review by the project author."
+}

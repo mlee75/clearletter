@@ -1,0 +1,30 @@
+{
+  "letter_id": "syn_11",
+  "reviewer": "claude-draft",
+  "reviewed_at": "2026-09-30T12:37:58+00:00",
+  "letter_sha256": "f81eb79bcb035d61fbeb9c690bf7df0f7f73327c564ddf3796fd66686240c454",
+  "facts": {
+    "diagnoses": [
+      "Vitamin D slightly low: 38 nmol/L (insufficient)"
+    ],
+    "medicines": [
+      "Buy vitamin D3 1,000 units (25 micrograms) and take one tablet daily"
+    ],
+    "dates": [
+      "Blood tests taken on 22 September 2026"
+    ],
+    "actions": [
+      "Call the surgery on 01632 960 610 with any questions"
+    ],
+    "negatives": [
+      "Full blood count normal",
+      "Kidney function normal",
+      "Liver function normal",
+      "Thyroid function normal",
+      "No further tests are needed",
+      "No appointment is needed",
+      "No prescription is needed for the vitamin D"
+    ]
+  },
+  "notes": "Mostly normal results: the explanation must not add worry. Drafted by Claude (Opus 5.5) from the letter text, at the author's request; awaiting review by the project author."
+}

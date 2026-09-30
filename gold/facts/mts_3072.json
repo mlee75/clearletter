@@ -1,0 +1,31 @@
+{
+  "letter_id": "mts_3072",
+  "reviewer": "claude-draft",
+  "reviewed_at": "2026-09-30T12:37:58+00:00",
+  "letter_sha256": "7f062c168b8b32721a7462da00a8e59f43057696ce798a39c18a35c2281fadae",
+  "facts": {
+    "diagnoses": [
+      "Intermittent painless bleeding from the back passage (rectal bleeding)",
+      "Chronic constipation",
+      "Haemorrhoids are the most likely diagnosis",
+      "Colon cancer and colon polyps need to be ruled out (not diagnosed)",
+      "History of high blood pressure, glaucoma and diabetes",
+      "Smokes about a pack a day for more than 25 years"
+    ],
+    "medicines": [
+      "Cardizem CD 240 mg",
+      "Eye drops"
+    ],
+    "dates": [],
+    "actions": [
+      "Needs a complete colonoscopy because of her age",
+      "Blood count (CBC) to check and monitor",
+      "Colonoscopy to be booked at Sample Hospital; the report will go to the referring doctor"
+    ],
+    "negatives": [
+      "No weight loss",
+      "No nausea or vomiting"
+    ]
+  },
+  "notes": "'Rule out cancer' must not become 'you have cancer' or 'you do not have cancer'. Drafted by Claude (Opus 5.5) from the letter text, at the author's request; awaiting review by the project author."
+}

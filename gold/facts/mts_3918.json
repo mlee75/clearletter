@@ -1,0 +1,39 @@
+{
+  "letter_id": "mts_3918",
+  "reviewer": "claude-draft",
+  "reviewed_at": "2026-09-30T12:37:58+00:00",
+  "letter_sha256": "0c9681413639b69a7f13ae9611c983edac82e7883c6131c2a1e13ddae81ea11a",
+  "facts": {
+    "diagnoses": [
+      "Bleeding from the upper gut (upper gastrointestinal bleed)",
+      "Anaemia: haemoglobin 8.9, stable at 10.7 after a blood transfusion",
+      "Upper endoscopy: erosive gastritis",
+      "Colonoscopy: diverticulosis and a polyp, which was removed",
+      "Also: atrial fibrillation, diabetes (not on insulin), high blood pressure, underactive thyroid, asthma"
+    ],
+    "medicines": [
+      "Do not take Coumadin for an extra three days after discharge (through the weekend), then restart",
+      "Feosol 325 mg daily",
+      "Multivitamin one daily",
+      "Protonix 40 mg twice a day",
+      "KCl 20 mEq daily",
+      "Lasix 40 mg twice a day",
+      "Atenolol 50 mg daily",
+      "Synthroid 80 mcg daily",
+      "Actos 30 mg daily",
+      "Mevacor 40 mg daily",
+      "Lisinopril 20 mg daily"
+    ],
+    "dates": [],
+    "actions": [
+      "Follow-up blood tests (CBC and INR) have been ordered",
+      "Follow-up with the primary doctor, GI and Cardiology",
+      "1800-calorie diabetic (ADA) diet",
+      "Activity as tolerated"
+    ],
+    "negatives": [
+      "No allergies"
+    ]
+  },
+  "notes": "The Coumadin hold-then-restart timing is the key instruction. Drafted by Claude (Opus 5.5) from the letter text, at the author's request; awaiting review by the project author."
+}

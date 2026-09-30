@@ -1,0 +1,32 @@
+{
+  "letter_id": "mts_3909",
+  "reviewer": "claude-draft",
+  "reviewed_at": "2026-09-30T12:37:58+00:00",
+  "letter_sha256": "6fe5ed9baeb3849f41e72e4d43167be1a6bc72b7292d7c52e65bf3e082aa71c5",
+  "facts": {
+    "diagnoses": [
+      "Kawasaki disease, getting better (resolving)",
+      "Fever and rash completely gone"
+    ],
+    "medicines": [
+      "High-dose aspirin 340 mg every 6 hours for 1 day",
+      "Then low-dose aspirin 40 mg once a day for 14 days",
+      "Prevacid 15 mg by mouth once a day, to protect the stomach from the aspirin"
+    ],
+    "dates": [
+      "See the primary doctor in 2 to 3 days",
+      "Heart scan (echo) follow-up with Cardiology in 4 to 6 weeks",
+      "No live virus vaccines for 11 months because of the IVIG treatment"
+    ],
+    "actions": [
+      "If he gets a rash or fever, see the primary care doctor as soon as possible",
+      "Normal activity and diet"
+    ],
+    "negatives": [
+      "Heart scan (echocardiogram) was negative",
+      "No conjunctivitis",
+      "No redness of the mouth and lips (mucous membranes)"
+    ]
+  },
+  "notes": "Child aged 14 months; letter should address the parent. Drafted by Claude (Opus 5.5) from the letter text, at the author's request; awaiting review by the project author."
+}
