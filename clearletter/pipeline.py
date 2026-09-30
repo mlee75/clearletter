@@ -14,12 +14,11 @@ import json
 import time
 from dataclasses import asdict, dataclass, field
 
-import anthropic
-
 from . import checks, fixed_text, prompts
-from .config import MAX_TOKENS, MODELS
+from .backends import make_backend
+from .config import MODELS
 from .schemas import ExtractedFacts, VerifierReport
-from .tools import find_terms_in_letter, glossary_lookup, readability, readability_check
+from .tools import find_terms_in_letter, readability
 
 LANGUAGE_NAMES = {"en": "English", "fr": "French", "es": "Spanish"}
 
@@ -32,6 +31,7 @@ class Refused(Exception):
 class Result:
     """Everything about one run: the output, and what was checked along the way."""
     model: str
+    backend: str
     language: str
     country: str
     use_verifier: bool
@@ -40,8 +40,8 @@ class Result:
     facts: dict = field(default_factory=dict)
     removed_ungrounded: list = field(default_factory=list)
     attempts: list = field(default_factory=list)
-    steps: list = field(default_factory=list)  # tokens and cost per API step
-    cost_usd: float = 0.0
+    steps: list = field(default_factory=list)  # tokens and cost per call to Claude
+    cost_usd: float = 0.0  # API list price (with the claude-code backend: what it WOULD cost)
     latency_s: float = 0.0
 
     def to_json(self):
@@ -49,39 +49,30 @@ class Result:
 
 
 class Pipeline:
-    def __init__(self, model="sonnet", client=None):
+    def __init__(self, model="sonnet", backend="api", client=None):
         self.model_name = model
-        self.cfg = MODELS[model]
-        self.client = client or anthropic.Anthropic()
+        self.backend = make_backend(backend, MODELS[model], client)
 
     # ---- bookkeeping ------------------------------------------------------
 
-    def _record(self, result, step, message):
-        """Add one API response's token use and cost to the result."""
-        if message.stop_reason == "refusal":
-            raise Refused(step)
-        usage = message.usage
-        cost = self.cfg.cost(usage.input_tokens, usage.output_tokens)
-        result.steps.append({
-            "step": step,
-            "input_tokens": usage.input_tokens,
-            "output_tokens": usage.output_tokens,
-            "cost_usd": round(cost, 5),
-        })
-        result.cost_usd += cost
+    def _record(self, result, step, calls):
+        """Add the token use and cost of one step's calls to the result."""
+        for call in calls:
+            if call["refused"]:
+                raise Refused(step)
+            result.steps.append({
+                "step": step,
+                "input_tokens": call["input_tokens"],
+                "output_tokens": call["output_tokens"],
+                "cost_usd": round(call["cost_usd"], 5),
+            })
+            result.cost_usd += call["cost_usd"]
 
     def _parse(self, result, step, system, user_text, schema):
-        """One API call whose answer must match `schema` (structured outputs)."""
-        message = self.client.messages.parse(
-            model=self.cfg.model_id,
-            max_tokens=MAX_TOKENS,
-            system=system,
-            messages=[{"role": "user", "content": user_text}],
-            output_format=schema,
-            **self.cfg.extra,
-        )
-        self._record(result, step, message)
-        return message.parsed_output
+        """One call to Claude whose answer must match `schema` (structured outputs)."""
+        parsed, calls = self.backend.structured(system, user_text, schema)
+        self._record(result, step, calls)
+        return parsed
 
     # ---- the three steps --------------------------------------------------
 
@@ -111,22 +102,9 @@ class Pipeline:
                 f"\n\nYour previous explanation:\n{previous}\n\n"
                 + prompts.REVISE.format(problems="\n".join(f"- {p}" for p in problems))
             )
-        # The tool runner lets Claude call our tools as many times as it needs,
-        # then returns its final answer. max_iterations stops endless loops.
-        runner = self.client.beta.messages.tool_runner(
-            model=self.cfg.model_id,
-            max_tokens=MAX_TOKENS,
-            system=system,
-            tools=[glossary_lookup, readability_check],
-            messages=[{"role": "user", "content": user_text}],
-            max_iterations=8,
-            **self.cfg.extra,
-        )
-        final = None
-        for message in runner:
-            self._record(result, "explain", message)
-            final = message
-        return "".join(block.text for block in final.content if block.type == "text").strip()
+        text, calls = self.backend.write_with_tools(system, user_text)
+        self._record(result, "explain", calls)
+        return text
 
     def verify(self, result, letter, explanation, language):
         system = prompts.VERIFY.format(language_name=LANGUAGE_NAMES[language])
@@ -136,7 +114,7 @@ class Pipeline:
     # ---- putting it together ---------------------------------------------
 
     def run(self, letter, language="en", country="uk", use_verifier=True, max_attempts=2):
-        result = Result(self.model_name, language, country, use_verifier)
+        result = Result(self.model_name, self.backend.name, language, country, use_verifier)
         start = time.monotonic()
         try:
             facts = self.extract(result, letter)

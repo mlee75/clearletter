@@ -53,6 +53,8 @@ VERIFY = """You are a careful safety reviewer. Compare a patient explanation wit
 
 The explanation is written in {language_name}; compare meaning, not wording. It is meant to be simpler than the letter: leaving out details that do not matter to the patient (ward names, reference numbers, clinical reasoning) is fine.
 
+The explanation always has five sections by design: what the letter says, what to do, dates and medicines, questions to ask your doctor, and when to get urgent help. The "questions to ask" section is expected: suggested questions are NOT added advice. Only flag a question if it suggests a diagnosis, risk or worry that is not in the letter. A sentence saying the letter lists no warning signs is also expected.
+
 List every problem of these kinds:
 - added: a medical fact, cause, risk, advice or reassurance that is not in the letter. General definitions of words that ARE in the letter are allowed.
 - dropped: something the patient needs that is missing (a diagnosis, a medicine, a date, an action, a warning sign).

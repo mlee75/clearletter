@@ -4,9 +4,14 @@ Examples:
     python run.py data/synthetic/syn_16.txt
     python run.py data/synthetic/syn_16.txt --lang fr --country uk --model haiku
     python run.py data/synthetic/syn_16.txt --no-verifier
+    python run.py data/synthetic/syn_16.txt --backend api     (needs an API key; billed)
 
-Every run is saved to outputs/ and its cost is added to outputs/spend_log.csv,
-so the total API spend is always known.
+Backends:
+    claude-code (default)  runs through your Claude subscription via `claude -p`. Not billed per token.
+    api                    runs through the Anthropic API with the key in .env. Billed per token.
+
+Every run is saved to outputs/ and logged in outputs/spend_log.csv, so the
+real API spend (api backend only) is always known.
 """
 
 import argparse
@@ -29,11 +34,13 @@ def log_spend(letter_path, result):
     with log.open("a", newline="") as f:
         writer = csv.writer(f)
         if is_new:
-            writer.writerow(["time", "letter", "model", "language", "verifier", "status", "cost_usd"])
-        writer.writerow([datetime.now(timezone.utc).isoformat(timespec="seconds"), letter_path,
-                         result.model, result.language, result.use_verifier, result.status, result.cost_usd])
+            writer.writerow(["time", "letter", "backend", "model", "language", "verifier", "status",
+                             "cost_usd", "billed"])
+        billed = result.backend == "api"
+        writer.writerow([datetime.now(timezone.utc).isoformat(timespec="seconds"), letter_path, result.backend,
+                         result.model, result.language, result.use_verifier, result.status, result.cost_usd, billed])
     with log.open() as f:
-        return sum(float(row["cost_usd"]) for row in csv.DictReader(f))
+        return sum(float(row["cost_usd"]) for row in csv.DictReader(f) if row["billed"] == "True")
 
 
 def main():
@@ -43,18 +50,22 @@ def main():
     parser.add_argument("--country", choices=COUNTRIES, default="uk")
     parser.add_argument("--model", choices=MODELS, default="sonnet")
     parser.add_argument("--no-verifier", action="store_true", help="skip step 3 (baseline for the eval)")
+    parser.add_argument("--backend", choices=["claude-code", "api"], default="claude-code")
     args = parser.parse_args()
 
-    if not os.environ.get("ANTHROPIC_API_KEY"):
-        raise SystemExit("No API key found. Copy .env.example to .env and paste your key into it.")
+    if args.backend == "api" and not os.environ.get("ANTHROPIC_API_KEY"):
+        raise SystemExit("No API key found. Copy .env.example to .env and paste your key into it, "
+                         "or use --backend claude-code.")
 
     letter = Path(args.letter).read_text(encoding="utf-8")
-    result = Pipeline(args.model).run(letter, args.lang, args.country, use_verifier=not args.no_verifier)
+    pipeline = Pipeline(args.model, backend=args.backend)
+    result = pipeline.run(letter, args.lang, args.country, use_verifier=not args.no_verifier)
 
     print(result.final_text)
     print("=" * 70)
-    print(f"Status: {result.status}   Model: {result.model}   "
-          f"Cost: ${result.cost_usd:.4f}   Time: {result.latency_s}s")
+    cost_label = "Cost" if result.backend == "api" else "API-equivalent cost (not charged)"
+    print(f"Status: {result.status}   Model: {result.model}   Backend: {result.backend}   "
+          f"{cost_label}: ${result.cost_usd:.4f}   Time: {result.latency_s}s")
     if result.removed_ungrounded:
         print(f"Grounding check removed {len(result.removed_ungrounded)} extracted item(s) not found in the letter.")
     for a in result.attempts:
@@ -70,7 +81,7 @@ def main():
     out.write_text(result.to_json(), encoding="utf-8")
     total = log_spend(args.letter, result)
     print(f"Saved: {out.relative_to(Path.cwd()) if out.is_relative_to(Path.cwd()) else out}")
-    print(f"Total API spend so far: ${total:.2f} of the $20 budget")
+    print(f"Real API spend so far: ${total:.2f} of the $20 budget")
 
 
 if __name__ == "__main__":

@@ -21,8 +21,17 @@ def normalise(text):
     return re.sub(r"\s+", " ", text).strip()
 
 
+def words(text):
+    """Only the words and numbers, lower case: " word word word ". Punctuation, bullets
+    and line breaks are ignored, so a quote that runs across two bullet points still matches."""
+    return " " + " ".join(re.findall(r"[a-z0-9]+", normalise(text))) + " "
+
+
 def quote_is_in_letter(quote, letter):
-    return bool(quote.strip()) and normalise(quote) in normalise(letter)
+    """True if every part of the quote appears, word for word, in the letter.
+    A quote may skip text with "..."; each part must still be found."""
+    parts = [part for part in re.split(r"\.\.\.|\u2026", quote) if words(part).strip()]
+    return bool(parts) and all(words(part) in words(letter) for part in parts)
 
 
 def remove_ungrounded(facts, letter):

@@ -170,3 +170,53 @@ def test_without_verifier_shows_first_draft_unchecked():
     result = run_fake([BAD_DRAFT], [], use_verifier=False)
     assert result.status == "not_verified"
     assert "5 mg" in result.final_text  # the baseline has no safety net: that is what the eval measures
+
+
+# ---- the Claude Code (subscription) backend, with a fake `claude` command ----
+
+import json as _json
+import os as _os
+
+from clearletter.backends import ClaudeCodeBackend
+from clearletter.config import MODELS
+
+
+class FakeProcess:
+    def __init__(self, payload):
+        self.stdout, self.stderr = _json.dumps(payload), ""
+
+
+def test_claude_code_backend_is_private_and_never_billed(monkeypatch):
+    monkeypatch.setenv("ANTHROPIC_API_KEY", "sk-test-not-real")
+    seen = {}
+
+    def fake_run(command, **kwargs):
+        seen["command"], seen["env"] = command, kwargs["env"]
+        return FakeProcess({"is_error": False, "stop_reason": "end_turn", "structured_output": make_facts().model_dump(),
+                            "usage": {"input_tokens": 900, "output_tokens": 300}, "total_cost_usd": 0.01})
+
+    backend = ClaudeCodeBackend(MODELS["sonnet"], runner=fake_run)
+    parsed, calls = backend.structured("system", "letter", ExtractedFacts)
+    assert parsed.medicines[0].name == "Warfarin"
+    assert "ANTHROPIC_API_KEY" not in seen["env"]  # can never fall back to API billing
+    cmd = seen["command"]
+    assert cmd[cmd.index("--tools") + 1] == ""  # no file, shell or web tools
+    assert cmd[cmd.index("--setting-sources") + 1] == ""  # none of the developer's settings or hooks
+    assert "--strict-mcp-config" in cmd and "--no-session-persistence" in cmd
+    assert cmd[cmd.index("--effort") + 1] == "medium"
+    assert calls[0]["input_tokens"] == 900
+
+
+def test_claude_code_backend_reports_refusal():
+    refusal = lambda command, **kw: FakeProcess({"is_error": True, "stop_reason": "refusal", "usage": {}})
+    parsed, calls = ClaudeCodeBackend(MODELS["haiku"], runner=refusal).structured("s", "u", ExtractedFacts)
+    assert parsed is None and calls[0]["refused"]
+
+
+def test_quote_can_span_bullet_points_but_cannot_be_invented():
+    quote = ("Do NOT take warfarin tonight (Monday 5 October 2026). From Tuesday 6 October 2026, "
+             "take 4 mg each evening.")
+    assert checks.quote_is_in_letter(quote, WARFARIN_LETTER)
+    assert checks.quote_is_in_letter("Your INR today ... is 4.1", WARFARIN_LETTER)
+    assert not checks.quote_is_in_letter("take 5 mg each evening from Tuesday", WARFARIN_LETTER)
+    assert not checks.quote_is_in_letter("...", WARFARIN_LETTER)

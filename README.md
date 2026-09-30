@@ -32,12 +32,21 @@ Why it is built this way: [docs/DECISIONS.md](docs/DECISIONS.md).
 ```bash
 python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
-cp .env.example .env        # then paste your Anthropic API key into .env
 python -m pytest -q         # offline tests: no API key needed, no cost
-python run.py data/synthetic/syn_16.txt --lang fr --country uk --model sonnet
 ```
 
-Each run prints its cost and adds it to `outputs/spend_log.csv`.
+Then choose how to reach Claude:
+
+```bash
+# On your own Claude subscription through Claude Code (no API key, no per-token bill)
+python run.py data/synthetic/syn_16.txt --lang fr --country uk --model sonnet
+
+# Or through the Anthropic API (put your key in .env first: cp .env.example .env)
+python run.py data/synthetic/syn_16.txt --backend api
+```
+
+Each run prints its cost (for the subscription backend: what it would cost on the API) and
+is logged in `outputs/spend_log.csv`. Why two backends: [D10](docs/DECISIONS.md).
 
 ## What is in this repository
 
@@ -51,6 +60,7 @@ Each run prints its cost and adds it to `outputs/spend_log.csv`.
 | `data/glossary.csv` | An open glossary of 90+ medical abbreviations |
 | `review.py` | Tool for writing the hand-made "must-keep facts" (the gold set) |
 | `clearletter/` | The pipeline: `pipeline.py` (the 3 steps), `prompts.py`, `schemas.py`, `checks.py`, `tools.py`, `fixed_text.py`, `config.py` |
+| `clearletter/backends.py` | Two ways to reach Claude: the API, or Claude Code on a subscription |
 | `run.py` | Explain one letter from the command line |
 | `tests/` | Offline tests using a fake Claude |
 

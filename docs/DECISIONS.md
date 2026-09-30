@@ -101,3 +101,34 @@ result.
 - No `temperature` setting: the newest models do not accept one.
 - The verifier uses the same model as the writer, so each model is tested on its own.
   A stronger verifier with a cheaper writer is a possible Phase 3 experiment.
+
+## D10. A second backend that runs on a Claude subscription
+
+**Choice:** besides the API backend, the pipeline can run every step through the Claude
+Code command line (`claude -p`) on the developer's own Claude subscription
+(`--backend claude-code`, now the default in `run.py`). The two custom tools are served to
+it by a small local MCP server (`clearletter/mcp_tools.py`), so both backends see the same
+tools and the same prompts.
+
+**Why:** to develop and evaluate without a per-token bill. The API backend stays the
+reference implementation, because a real product would use the API.
+
+**How it is kept clean and safe** (each point is covered by an offline test):
+- `--tools ""`: Claude Code's own file, shell and web tools are switched off.
+- `--setting-sources ""`, `--strict-mcp-config`, `--disable-slash-commands`: none of the
+  developer's personal settings, plugins, hooks, MCP servers or CLAUDE.md files are loaded.
+- `--system-prompt`: Claude Code's default instructions are replaced by ours.
+- `--no-session-persistence`: nothing is saved.
+- The API key is removed from the environment of each call, so a call can never fall
+  back to API billing by accident.
+
+**Trade-offs, stated honestly:**
+- Calls count against the subscription's usage limits, and each call starts a new Claude
+  Code process, so it is slow (about 3 to 4 minutes per letter with the verifier).
+- The cost column is what the same tokens *would* cost on the API at list price, as
+  reported by Claude Code. It includes Claude Code's own overhead (tool definitions, JSON
+  schema handling), so it overstates what the API backend would cost.
+- Claude Code turns on thinking for Haiku, while the API backend runs Haiku without it.
+  Each eval run uses one backend throughout, so comparisons inside a run stay fair.
+- This is for the developer's own use. A public demo must not let other people run on
+  the developer's subscription; a hosted demo needs the API backend and its own key.
