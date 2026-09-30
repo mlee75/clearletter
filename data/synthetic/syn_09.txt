@@ -1,0 +1,19 @@
+Eastmoor Hospital - Respiratory Ward Discharge Summary
+
+Patient: Mr Ibrahim Diallo
+Admitted: 05/10/2026   Discharged: 07/10/2026
+
+Diagnosis: Community-acquired pneumonia (chest infection), right lower lobe. CURB-65 score 1.
+
+Treatment in hospital: IV antibiotics for 1 day, then amoxicillin tablets.
+
+Medicines on discharge:
+- Amoxicillin 500 mg TDS. You have had 2 days of antibiotics in hospital. Take tablets for 3 more days to complete 5 days in total. Last dose on 10/10/2026.
+
+Follow-up: Repeat chest X-ray (CXR) in 6 weeks at the Radiology Department to check the infection has cleared. A request has been sent. You do not need to book it.
+
+You may feel tired for several weeks. Your cough may last 3 to 6 weeks.
+
+See your GP or call 111 if you become more short of breath (SOB), if your fever comes back, or if you cough up blood.
+
+Dr A. Mwangi, Respiratory Medicine

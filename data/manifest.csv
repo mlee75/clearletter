@@ -1,0 +1,41 @@
+letter_id,file,source,letter_type,tricky_features
+syn_01,data/synthetic/syn_01.txt,synthetic,appointment,abbreviations (OPD; Echo); negations (no fasting; no need to stop medicines); cancellation deadline 48h
+syn_02,data/synthetic/syn_02.txt,synthetic,appointment,UK date format 03/12/2026 (= 3 December); stop one medicine but continue others; NBM; timed fasting; no driving after sedation
+syn_03,data/synthetic/syn_03.txt,synthetic,appointment,limit of test (cannot find every problem); negation (no full bladder); genuine urgent warning signs already in letter; free interpreter
+syn_04,data/synthetic/syn_04.txt,synthetic,appointment,screening is not diagnosis; booking deadline; temporary no-driving rule (4 to 6 hours)
+syn_05,data/synthetic/syn_05.txt,synthetic,appointment,OLD vs NEW appointment date; letter addressed to a parent; two inhalers with colours; continue preventer daily
+syn_06,data/synthetic/syn_06.txt,synthetic,discharge,abbreviations (TTO; QDS; PRN; TDS); maximum daily dose; pending result (must not be called normal); clip removal date; letter-specific warning signs
+syn_07,data/synthetic/syn_07.txt,synthetic,discharge,many new medicines with doses; one medicine stopped and replaced; different durations (long term vs 12 months); micrograms; do-not-stop warning; timed 999 rule
+syn_08,data/synthetic/syn_08.txt,synthetic,discharge,negations (no fracture; no evidence of haemorrhage); stopped medicine; postural hypotension; blood pressure numbers; head-injury warning signs
+syn_09,data/synthetic/syn_09.txt,synthetic,discharge,antibiotic course arithmetic (2 days given + 3 more = 5 total); follow-up X-ray booked for the patient; abbreviations (CXR; SOB; IV)
+syn_10,data/synthetic/syn_10.txt,synthetic,discharge,child dose in ml vs mg (7.5 ml of 120 mg/5 ml); dose interval; negative instruction (no anti-diarrhoea medicine); wet-nappy threshold; 111 vs 999 rules
+syn_11,data/synthetic/syn_11.txt,synthetic,test_results,mostly normal results with one slightly low value; no further tests needed (must not add worry); units vs micrograms
+syn_12,data/synthetic/syn_12.txt,synthetic,test_results,negation (no evidence of malignancy); a condition that is explicitly not cancer; surveillance in 3 years; stop one painkiller and use another
+syn_13,data/synthetic/syn_13.txt,synthetic,test_results,uncertainty (no diagnosis yet); threshold vs result numbers; deadline within 2 weeks; do not start medicine
+syn_14,data/synthetic/syn_14.txt,synthetic,test_results,recall is not a diagnosis; statistic (4 in 5) must stay exact; no false reassurance and no alarm
+syn_15,data/synthetic/syn_15.txt,synthetic,test_results,hedged finding (possible tear; cannot be excluded); several negatives (no fracture; ACL intact); letter written to GP with copy to patient
+syn_16,data/synthetic/syn_16.txt,synthetic,medication_change,high-risk medicine (warfarin); skip tonight's dose; dose decrease 5 mg to 4 mg; tablet combination; next test date; two different urgency levels
+syn_17,data/synthetic/syn_17.txt,synthetic,medication_change,tapering schedule with date ranges; mg vs number of tablets; stop date; review deadline
+syn_18,data/synthetic/syn_18.txt,synthetic,medication_change,dose increase in micrograms (mcg); two tablets make the new dose; timing rules; retest window
+syn_19,data/synthetic/syn_19.txt,synthetic,medication_change,STOP vs CONTINUE vs START for three medicines; conditional sick-day rule; follow-up date
+syn_20,data/synthetic/syn_20.txt,synthetic,medication_change,cross-over schedule between two medicines; mental-health crisis contacts already in letter; driving and alcohol advice
+mts_3057,data/mtsamples/mts_3057.txt,mtsamples,clinic_letter,US clinical letter to another doctor
+mts_3058,data/mtsamples/mts_3058.txt,mtsamples,clinic_letter,US clinical letter to another doctor
+mts_3060,data/mtsamples/mts_3060.txt,mtsamples,clinic_letter,US clinical letter to another doctor
+mts_3061,data/mtsamples/mts_3061.txt,mtsamples,clinic_letter,US clinical letter to another doctor
+mts_3066,data/mtsamples/mts_3066.txt,mtsamples,clinic_letter,US clinical letter to another doctor
+mts_3068,data/mtsamples/mts_3068.txt,mtsamples,clinic_letter,US clinical letter to another doctor
+mts_3069,data/mtsamples/mts_3069.txt,mtsamples,clinic_letter,US clinical letter to another doctor
+mts_3072,data/mtsamples/mts_3072.txt,mtsamples,clinic_letter,US clinical letter to another doctor
+mts_3073,data/mtsamples/mts_3073.txt,mtsamples,clinic_letter,US clinical letter to another doctor
+mts_3080,data/mtsamples/mts_3080.txt,mtsamples,clinic_letter,letter written directly to a patient about a test result
+mts_3889,data/mtsamples/mts_3889.txt,mtsamples,discharge,US discharge summary
+mts_3898,data/mtsamples/mts_3898.txt,mtsamples,discharge,US discharge summary
+mts_3899,data/mtsamples/mts_3899.txt,mtsamples,discharge,US discharge summary
+mts_3909,data/mtsamples/mts_3909.txt,mtsamples,discharge,US discharge summary
+mts_3912,data/mtsamples/mts_3912.txt,mtsamples,discharge,US discharge summary
+mts_3918,data/mtsamples/mts_3918.txt,mtsamples,discharge,US discharge summary
+mts_3922,data/mtsamples/mts_3922.txt,mtsamples,discharge,US discharge summary
+mts_3974,data/mtsamples/mts_3974.txt,mtsamples,discharge,US discharge summary
+mts_3977,data/mtsamples/mts_3977.txt,mtsamples,discharge,US discharge summary
+mts_3980,data/mtsamples/mts_3980.txt,mtsamples,discharge,US discharge summary

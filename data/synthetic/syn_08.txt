@@ -1,0 +1,23 @@
+Northbridge General Hospital - Emergency Department and Acute Medicine
+
+Patient: Mrs Olga Petrenko, age 81
+Seen: 14/10/2026
+
+Reason for attendance: Fall at home. Hit head. No loss of consciousness.
+
+Investigations:
+- X-ray of the right hip: no fracture.
+- CT head: no evidence of intracranial haemorrhage (no bleeding inside the head).
+- Lying and standing BP: 142/80 lying, 108/66 standing. This shows postural hypotension (blood pressure drops when standing up).
+
+Plan:
+- STOP amlodipine 10 mg. It may be making your blood pressure drop when you stand.
+- Continue all other medicines.
+- Referred to the Falls Prevention Clinic. They will write to you with an appointment.
+- GP to recheck lying and standing blood pressure in 4 weeks.
+
+Advice: Stand up slowly. Sit on the edge of the bed for a minute before standing.
+
+If you develop a worsening headache, vomiting, confusion or drowsiness in the next few days, call 999 or go to A&E.
+
+Dr S. Kowalczyk, Acute Medicine

@@ -1,0 +1,27 @@
+St Aldric's Hospital - Cardiology Discharge Summary
+
+Patient: Mrs Grace Mensah
+Discharged: 02/10/2026
+
+Diagnosis: NSTEMI (a type of heart attack). Coronary angiogram on 29/09/2026: one narrowed artery, treated with 1 stent.
+
+Medicines - NEW:
+- Aspirin 75 mg OD (long term)
+- Ticagrelor 90 mg BD for 12 months
+- Atorvastatin 80 mg ON
+- Ramipril 2.5 mg OD
+- Bisoprolol 1.25 mg OD
+- GTN spray 400 micrograms, 1-2 sprays under the tongue PRN for chest pain
+
+Medicines - STOPPED:
+- Simvastatin 20 mg (replaced by atorvastatin)
+
+Do not stop ticagrelor or aspirin without speaking to your cardiologist first. Stopping them early can cause the stent to block.
+
+GP to check U&Es (kidney blood tests) in 2 weeks because ramipril has been started.
+
+Referred to cardiac rehabilitation. The team will contact you within 4 weeks.
+
+If you have chest pain, use your GTN spray. If the pain has not gone 5 minutes after the second dose, call 999.
+
+Dr P. Lindqvist, Cardiology

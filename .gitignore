@@ -1,0 +1,14 @@
+# Secrets: never commit your API key
+.env
+
+# Full MTSamples download (17 MB, not ours to redistribute in full)
+data/raw/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# macOS
+.DS_Store
