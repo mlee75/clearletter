@@ -12,3 +12,6 @@ venv/
 
 # macOS
 .DS_Store
+
+# Local run outputs and spend log
+outputs/
