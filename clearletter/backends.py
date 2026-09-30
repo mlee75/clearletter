@@ -118,6 +118,7 @@ class ClaudeCodeBackend:
             # by Claude Code. Nothing is charged: the subscription covers it.
             "cost_usd": data.get("total_cost_usd", 0.0),
             "refused": refused,
+            "turns": data.get("num_turns"),  # more than 1 means Claude used a tool
         }
         return data, record
 

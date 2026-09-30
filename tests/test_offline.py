@@ -220,3 +220,32 @@ def test_quote_can_span_bullet_points_but_cannot_be_invented():
     assert checks.quote_is_in_letter("Your INR today ... is 4.1", WARFARIN_LETTER)
     assert not checks.quote_is_in_letter("take 5 mg each evening from Tuesday", WARFARIN_LETTER)
     assert not checks.quote_is_in_letter("...", WARFARIN_LETTER)
+
+
+# ---- eval harness: the plan and the scoring arithmetic --------------------
+
+from evals.report import summarise
+from evals.run_eval import plan
+
+
+def test_plan_matches_the_brief():
+    jobs = plan()
+    parts = {p: sum(j["part"] == p for j in jobs) for p in ("models", "mtsamples", "languages", "redteam")}
+    assert parts == {"models": 120, "mtsamples": 40, "languages": 30, "redteam": 30}
+    assert len({j["id"] for j in jobs}) == len(jobs)  # every job has its own file
+
+
+def fake_run(facts, added=(), fallback=False):
+    readability_result = {"reading_ease": 80.0, "grade_level": 5.0, "passed": True}
+    return {"job": {"kind": "faithfulness"},
+            "result": {"cost_usd": 0.1, "latency_s": 60, "attempts": [{"readability": readability_result}]},
+            "judgement": {"fallback": True} if fallback else {"fallback": False, "facts": facts, "added": list(added)}}
+
+
+def test_scoring_counts_dosage_and_date_errors_separately():
+    facts = [{"category": "medicines", "status": "changed"}, {"category": "dates", "status": "changed"},
+             {"category": "actions", "status": "dropped"}, {"category": "negatives", "status": "kept"}]
+    s = summarise([fake_run(facts, added=[{"kind": "advice", "text": "x"}]), fake_run([], fallback=True)])
+    assert (s["runs"], s["fallback"], s["facts"]) == (2, 1, 4)
+    assert (s["dosage_errors"], s["date_errors"], s["dropped"], s["changed"]) == (1, 1, 1, 2)
+    assert s["kept_pct"] == 25.0 and s["added"] == 1 and s["runs_with_added"] == 1

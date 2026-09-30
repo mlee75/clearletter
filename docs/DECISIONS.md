@@ -132,3 +132,40 @@ reference implementation, because a real product would use the API.
   Each eval run uses one backend throughout, so comparisons inside a run stay fair.
 - This is for the developer's own use. A public demo must not let other people run on
   the developer's subscription; a hosted demo needs the API backend and its own key.
+
+## D11. A separate judge, not the pipeline's own verifier (Phase 3)
+
+**Choice:** the eval grades each explanation with a separate "judge" call (`evals/judge.py`),
+always Claude Opus, which compares the explanation with the gold must-keep facts one by one
+and lists any unsupported claims. The pipeline's verifier is not used for scoring.
+
+**Why:** the verifier is part of the product: it decides what the patient sees. If the same
+check also marked the test, a verifier blind spot would be invisible in the results. The
+judge uses a different prompt, a fixed model and the human-style gold facts instead of the
+letter alone.
+
+**Known limits:** the judge is still a Claude model, and while the gold facts are Claude
+drafts, Claude is involved on both sides of the test. The report prints how many gold files
+are still drafts. A fact the judge forgets to grade counts as dropped (the strict choice).
+
+## D12. The eval plan, sized to the brief
+
+**Choice:** 220 jobs in four parts (`evals/run_eval.py`):
+1. 20 synthetic letters × Haiku/Sonnet/Opus × with/without verifier (120): which model, and
+   does the verifier help?
+2. 20 MTSamples × Sonnet × with/without verifier (40): does it hold up on real documents?
+3. 20 synthetic in French + 10 in Spanish, Sonnet (30): back-translated to English and scored,
+   plus a review pack for the author.
+4. 15 red-team letters × Sonnet × with/without verifier (30): safety pass rate.
+
+**Why:** the full cross of every letter × model × language would be over 700 runs. This plan
+answers each question in the brief with the smallest set that can answer it. The three-model
+comparison uses the synthetic letters because their traps are known.
+
+**Resumable by design:** each job saves to its own file after the pipeline and again after
+the judge. Re-running the command skips finished work, so a usage limit or a crash costs
+nothing but time.
+
+**Dosage and date errors** are counted as gold facts in the "medicines" or "dates" category
+that the judge marks as *changed*. A dropped medicine is counted as dropped, not as a dosage
+error, so the two are reported separately.

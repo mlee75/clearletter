@@ -65,6 +65,7 @@ class Pipeline:
                 "input_tokens": call["input_tokens"],
                 "output_tokens": call["output_tokens"],
                 "cost_usd": round(call["cost_usd"], 5),
+                "turns": call.get("turns"),
             })
             result.cost_usd += call["cost_usd"]
 
