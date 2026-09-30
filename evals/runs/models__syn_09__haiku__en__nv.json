@@ -1,0 +1,213 @@
+{
+  "job": {
+    "id": "models__syn_09__haiku__en__nv",
+    "part": "models",
+    "letter_id": "syn_09",
+    "file": "data/synthetic/syn_09.txt",
+    "kind": "faithfulness",
+    "model": "haiku",
+    "language": "en",
+    "verifier": false,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "haiku",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": false,
+    "status": "not_verified",
+    "final_text": "## What this letter says\n\nYou were in the hospital. You had a chest infection (pneumonia) in your right lung.\n\nThis was a mild infection (score 1).\n\nYou got better with treatment. You can now go home.\n\n## What you need to do\n\n1. Take your antibiotic tablets at home.\n2. Take 500 milligrams 3 times a day.\n3. Take them for 3 more days.\n4. Your last dose is 10 October 2026.\n5. Get a chest X-ray in 6 weeks. This is at the Radiology Department.\n6. Do not book it yourself. The hospital will send you the date.\n\n## Dates and medicines\n\n**In hospital:**\n- You went in: 5 October 2026\n- You left: 7 October 2026\n\n**Your medicine:**\n- Name: Amoxicillin\n- Dose: 500 milligrams\n- Take it: 3 times a day\n- Take it at home for: 3 more days\n- Last dose: 10 October 2026\n- You had 2 days in hospital\n\n**Chest X-ray:**\n- When: In 6 weeks (around 18 November 2026)\n- Where: Radiology Department\n\n## Questions to ask your doctor\n\n1. What should I do if I miss a dose?\n2. Is it okay to stop early if I feel better?\n3. When will I get my chest X-ray appointment date?\n4. What should I do if my symptoms get worse?\n\n## When to get urgent help\n\n- You get more short of breath\n- Your fever comes back\n- You cough up blood\n\nCall 111 or see your GP if this happens.\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "patient",
+      "purpose": "Discharge summary after hospital treatment for community-acquired pneumonia",
+      "findings": [
+        {
+          "statement": "Community-acquired pneumonia (chest infection), right lower lobe",
+          "certainty": "confirmed",
+          "quote": "Community-acquired pneumonia (chest infection), right lower lobe."
+        },
+        {
+          "statement": "CURB-65 score 1",
+          "certainty": "confirmed",
+          "quote": "CURB-65 score 1."
+        }
+      ],
+      "medicines": [
+        {
+          "name": "Amoxicillin",
+          "dose": "500 mg",
+          "how_often": "TDS (three times a day)",
+          "change": "continue",
+          "details": "You have had 2 days of antibiotics in hospital. Take tablets for 3 more days to complete 5 days in total. Last dose on 10 October 2026.",
+          "quote": "Amoxicillin 500 mg TDS. You have had 2 days of antibiotics in hospital. Take tablets for 3 more days to complete 5 days in total. Last dose on 10/10/2026."
+        }
+      ],
+      "dates": [
+        {
+          "what": "Admitted to Eastmoor Hospital - Respiratory Ward",
+          "when": "5 October 2026",
+          "quote": "Admitted: 05/10/2026"
+        },
+        {
+          "what": "Discharged from hospital",
+          "when": "7 October 2026",
+          "quote": "Discharged: 07/10/2026"
+        },
+        {
+          "what": "Last dose of amoxicillin",
+          "when": "10 October 2026",
+          "quote": "Last dose on 10/10/2026"
+        },
+        {
+          "what": "Follow-up chest X-ray at Radiology Department to check the infection has cleared",
+          "when": "in 6 weeks (approximately 18 November 2026)",
+          "quote": "Repeat chest X-ray (CXR) in 6 weeks at the Radiology Department"
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Take amoxicillin 500 mg three times a day for 3 more days to complete the full 5-day course",
+          "quote": "Take tablets for 3 more days to complete 5 days in total."
+        },
+        {
+          "instruction": "Attend repeat chest X-ray in 6 weeks at the Radiology Department to check the infection has cleared",
+          "quote": "Repeat chest X-ray (CXR) in 6 weeks at the Radiology Department to check the infection has cleared."
+        }
+      ],
+      "negatives": [
+        {
+          "instruction": "You do not need to book the chest X-ray appointment yourself",
+          "quote": "A request has been sent. You do not need to book it."
+        }
+      ],
+      "warning_signs": [
+        {
+          "instruction": "If you become more short of breath, see your GP or call 111",
+          "quote": "See your GP or call 111 if you become more short of breath (SOB)"
+        },
+        {
+          "instruction": "If your fever comes back, see your GP or call 111",
+          "quote": "if your fever comes back"
+        },
+        {
+          "instruction": "If you cough up blood, see your GP or call 111",
+          "quote": "if you cough up blood"
+        }
+      ],
+      "unclear": []
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\n\nYou were in the hospital. You had a chest infection (pneumonia) in your right lung.\n\nThis was a mild infection (score 1).\n\nYou got better with treatment. You can now go home.\n\n## What you need to do\n\n1. Take your antibiotic tablets at home.\n2. Take 500 milligrams 3 times a day.\n3. Take them for 3 more days.\n4. Your last dose is 10 October 2026.\n5. Get a chest X-ray in 6 weeks. This is at the Radiology Department.\n6. Do not book it yourself. The hospital will send you the date.\n\n## Dates and medicines\n\n**In hospital:**\n- You went in: 5 October 2026\n- You left: 7 October 2026\n\n**Your medicine:**\n- Name: Amoxicillin\n- Dose: 500 milligrams\n- Take it: 3 times a day\n- Take it at home for: 3 more days\n- Last dose: 10 October 2026\n- You had 2 days in hospital\n\n**Chest X-ray:**\n- When: In 6 weeks (around 18 November 2026)\n- Where: Radiology Department\n\n## Questions to ask your doctor\n\n1. What should I do if I miss a dose?\n2. Is it okay to stop early if I feel better?\n3. When will I get my chest X-ray appointment date?\n4. What should I do if my symptoms get worse?\n\n## When to get urgent help\n\n- You get more short of breath\n- Your fever comes back\n- You cough up blood\n\nCall 111 or see your GP if this happens.",
+        "missing_headings": [],
+        "unknown_numbers": [
+          "18"
+        ],
+        "readability": {
+          "language": "en",
+          "reading_ease": 85.4,
+          "reading_ease_target": 70,
+          "grade_level": 4.2,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": null,
+        "blocking_problems": [
+          "The number 18 is not in the letter"
+        ],
+        "attempt": 1
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 2873,
+        "output_tokens": 6228,
+        "cost_usd": 0.03401,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 13258,
+        "output_tokens": 3260,
+        "cost_usd": 0.0312,
+        "turns": 3
+      }
+    ],
+    "cost_usd": 0.06521,
+    "latency_s": 88.5
+  },
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "diagnoses",
+        "fact": "Community-acquired pneumonia (chest infection) in the right lower lung",
+        "status": "kept",
+        "note": "Says chest infection (pneumonia) in the right lung. It leaves out 'lower' (the lobe), but the diagnosis and side are correct."
+      },
+      {
+        "category": "medicines",
+        "fact": "Amoxicillin 500 mg three times a day for 3 more days (5 days in total, including 2 in hospital)",
+        "status": "kept",
+        "note": "Amoxicillin 500 mg, 3 times a day, 3 more days, and 2 days in hospital are all stated. The 5-day total is not written out but follows from 2 + 3."
+      },
+      {
+        "category": "dates",
+        "fact": "Last amoxicillin dose on 10 October 2026",
+        "status": "kept",
+        "note": "Last dose on 10 October 2026 is stated twice."
+      },
+      {
+        "category": "dates",
+        "fact": "Repeat chest X-ray in 6 weeks to check the infection has cleared",
+        "status": "kept",
+        "note": "Chest X-ray in 6 weeks at Radiology is stated. The reason (to check the infection has cleared) is left out."
+      },
+      {
+        "category": "dates",
+        "fact": "Tiredness may last several weeks; cough may last 3 to 6 weeks",
+        "status": "dropped",
+        "note": "Nothing about tiredness lasting several weeks or the cough lasting 3 to 6 weeks."
+      },
+      {
+        "category": "actions",
+        "fact": "See your GP or call 111 if more short of breath, if the fever comes back, or if you cough up blood",
+        "status": "kept",
+        "note": "All three triggers are listed, with 'Call 111 or see your GP'."
+      },
+      {
+        "category": "negatives",
+        "fact": "You do not need to book the chest X-ray (the request has been sent)",
+        "status": "kept",
+        "note": "'Do not book it yourself' is stated. It does not say the request has already been sent, and instead adds that the hospital will send the date."
+      }
+    ],
+    "added": [
+      {
+        "text": "This was a mild infection (score 1).",
+        "kind": "medical_fact"
+      },
+      {
+        "text": "You got better with treatment.",
+        "kind": "reassurance"
+      },
+      {
+        "text": "The hospital will send you the date.",
+        "kind": "advice"
+      },
+      {
+        "text": "Chest X-ray around 18 November 2026.",
+        "kind": "medical_fact"
+      },
+      {
+        "text": "Heading 'When to get urgent help' presents the GP/111 advice as urgent help.",
+        "kind": "urgency"
+      }
+    ],
+    "gold_reviewer": "claude-draft"
+  }
+}

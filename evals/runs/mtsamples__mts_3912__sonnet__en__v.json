@@ -1,0 +1,297 @@
+{
+  "job": {
+    "id": "mtsamples__mts_3912__sonnet__en__v",
+    "part": "mtsamples",
+    "letter_id": "mts_3912",
+    "file": "data/mtsamples/mts_3912.txt",
+    "kind": "faithfulness",
+    "model": "sonnet",
+    "language": "en",
+    "verifier": true,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "sonnet",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": true,
+    "status": "ok",
+    "final_text": "## What this letter says\nYou came in with a painful right knee. You had a knee replacement (total knee arthroplasty) many years ago. The soreness and pain were slowly getting worse.\n\nAn X-ray showed the poly (the plastic part) was very worn out.\n\nYou had a poly exchange of the right knee. The doctors replaced the poly parts of the kneecap (patellar) and the shin (tibial).\n\nYou recovered well. You walked with a little help during physical therapy. Pain pills by mouth worked well for you. The anesthesia team removed the nerve block.\n\nYour condition on leaving the hospital is stable. Your INR was 1.9. INR is a blood test. It shows how long your blood takes to clot.\n\n## What you need to do\n1. Go home. Your son will care for you.\n2. Put weight on your right leg as much as feels OK (weight bear as tolerated).\n3. Keep doing your physical therapy exercises.\n4. Eat a regular diet.\n5. Take Coumadin and Vicodin as written below.\n6. Go for lab checks two times each week.\n7. See Dr. ABC in two weeks.\n8. Restart your home medicines.\n\n## Dates and medicines\n**Dates**\n- Lab checks (INR): two times each week while you take Coumadin.\n- Follow-up with Dr. ABC: in two weeks. The letter gives no exact date.\n\n**Medicines**\n- Coumadin: 4 mg (milligrams) a day. This is new. You go home on it because your INR was 1.9.\n- Vicodin 5/500 mg: take 1 to 2 tablets by mouth (p.o.) every 4 to 6 hours. This is new.\n- Home medicines: start them again. This is not a change. The letter does not say which ones.\n- The letter does not say how long you take Coumadin or Vicodin.\n\n## Questions to ask your doctor\n- Which of my home medicines should I restart?\n- How long do I take Coumadin and Vicodin?\n- What is a poly exchange?\n- What is the date and time of my visit with Dr. ABC?\n\n## When to get urgent help\nCall the office or go back to the emergency room if you have any of these:\n- More redness\n- Swelling\n- Drainage\n- Fever\n- Any worry about the operation or the cut (incision) site\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "doctor_copy_to_patient",
+      "purpose": "Discharge summary after a poly exchange (revision) of a right total knee replacement, with home medicine, activity and follow-up instructions.",
+      "findings": [
+        {
+          "statement": "Reason for admission: painful right knee after a total knee replacement many years ago, with gradually worsening soreness and pain.",
+          "certainty": "confirmed",
+          "quote": "Painful right knee status post total knee arthroplasty many years ago."
+        },
+        {
+          "statement": "X-ray showed the poly (plastic part) was significantly worn out.",
+          "certainty": "confirmed",
+          "quote": "X-ray showed that the poly seems to be worn out significantly in this area."
+        },
+        {
+          "statement": "Procedure performed: poly exchange of the right total knee, with replacement of the patellar and tibial poly components.",
+          "certainty": "confirmed",
+          "quote": "Poly exchange total knee, right."
+        },
+        {
+          "statement": "Condition on discharge is stable.",
+          "certainty": "confirmed",
+          "quote": "CONDITION ON DISCHARGE:\n  Stable."
+        },
+        {
+          "statement": "She recovered well, walked with minimal assistance with physical therapy, and did well on oral pain medicines. The nerve block was removed by anesthesia.",
+          "certainty": "confirmed",
+          "quote": "The patient recovered well after this."
+        },
+        {
+          "statement": "INR was 1.9 on discharge.",
+          "certainty": "confirmed",
+          "quote": "the INR was 1.9 on discharge"
+        }
+      ],
+      "medicines": [
+        {
+          "name": "Coumadin",
+          "dose": "4 mg",
+          "how_often": "a day",
+          "change": "start",
+          "details": "Discharged home on Coumadin because the INR was 1.9 on discharge; twice weekly lab checks.",
+          "quote": "The patient will be discharged home on Coumadin 4 mg a day as the INR was 1.9 on discharge with twice weekly lab checks."
+        },
+        {
+          "name": "Vicodin 5/500 mg",
+          "dose": "one to two tablets",
+          "how_often": "by mouth every 4 to 6 hours",
+          "change": "start",
+          "details": "Taken by mouth (p.o.), q.4-6h.",
+          "quote": "Vicodin 5/500 mg take one to two tablets p.o. q.4-6h."
+        },
+        {
+          "name": "Home medications",
+          "dose": "not stated",
+          "how_often": "not stated",
+          "change": "continue",
+          "details": "Resume home medications.",
+          "quote": "Resume home medications."
+        }
+      ],
+      "dates": [
+        {
+          "what": "Follow-up with Dr. ABC",
+          "when": "in two weeks",
+          "quote": "The patient is to follow up with Dr. ABC in two weeks."
+        },
+        {
+          "what": "Lab checks (INR) while on Coumadin",
+          "when": "twice weekly",
+          "quote": "with twice weekly lab checks"
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Go home to the care of her son.",
+          "quote": "The patient is to be discharged home to the care of the son."
+        },
+        {
+          "instruction": "Weight bear as tolerated on the right leg.",
+          "quote": "weight bear as tolerated right lower extremity."
+        },
+        {
+          "instruction": "Continue to do physical therapy exercises.",
+          "quote": "Continue to do physical therapy exercises."
+        },
+        {
+          "instruction": "Eat a regular diet.",
+          "quote": "Diet is regular."
+        },
+        {
+          "instruction": "Have lab checks twice weekly.",
+          "quote": "twice weekly lab checks"
+        },
+        {
+          "instruction": "Follow up with Dr. ABC in two weeks.",
+          "quote": "The patient is to follow up with Dr. ABC in two weeks."
+        }
+      ],
+      "negatives": [],
+      "warning_signs": [
+        {
+          "instruction": "Call the office or return to the emergency room for increased redness, swelling, drainage, fever, or any concerns about the operation or incision site.",
+          "quote": "Call the office or return to the emergency room for any concerns including increased redness, swelling, drainage, fever, or any concerns regarding operation or site of incision."
+        }
+      ],
+      "unclear": [
+        "Which home medications to resume is not listed.",
+        "Dr. ABC is a placeholder name; no contact details or exact appointment date given.",
+        "Duration of Coumadin and Vicodin not stated."
+      ]
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\nYou came in with a painful right knee. You had a knee replacement (total knee arthroplasty) many years ago. The soreness and pain were slowly getting worse.\n\nAn X-ray showed the poly (the plastic part) was very worn out.\n\nYou had a poly exchange of the right knee. The doctors replaced the poly parts of the kneecap (patellar) and the shin (tibial).\n\nYou recovered well. You walked with a little help during physical therapy. Pain pills by mouth worked well for you. The anesthesia team removed the nerve block.\n\nYour condition on leaving the hospital is stable. Your INR was 1.9. INR is a blood test. It shows how long your blood takes to clot.\n\n## What you need to do\n1. Go home. Your son will care for you.\n2. Put weight on your right leg as much as feels OK (weight bear as tolerated).\n3. Keep doing your physical therapy exercises.\n4. Eat a regular diet.\n5. Take Coumadin and Vicodin as written below.\n6. Go for lab checks two times each week.\n7. See Dr. ABC in two weeks.\n8. Restart your home medicines.\n\n## Dates and medicines\n**Dates**\n- Lab checks (INR): two times each week while you take Coumadin.\n- Follow-up with Dr. ABC: in two weeks. The letter gives no exact date.\n\n**Medicines**\n- Coumadin: 4 mg (milligrams) a day. This is new. You go home on it because your INR was 1.9.\n- Vicodin 5/500 mg: take 1 to 2 tablets by mouth (p.o.) every 4 to 6 hours. This is new.\n- Home medicines: start them again. This is not a change. The letter does not say which ones.\n- The letter does not say how long you take Coumadin or Vicodin.\n\n## Questions to ask your doctor\n- Which of my home medicines should I restart?\n- How long do I take Coumadin and Vicodin?\n- What is a poly exchange?\n- What is the date and time of my visit with Dr. ABC?\n\n## When to get urgent help\nCall the office or go back to the emergency room if you have any of these:\n- More redness\n- Swelling\n- Drainage\n- Fever\n- Any worry about the operation or the cut (incision) site",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 84.9,
+          "reading_ease_target": 70,
+          "grade_level": 3.6,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [
+            {
+              "kind": "added",
+              "severity": "minor",
+              "explanation_says": "INR is a blood test. It shows how long your blood takes to clot.",
+              "letter_says": "INR was 1.9 on discharge (no definition)",
+              "why": "General definition of a term in the letter; allowed, but not a problem."
+            },
+            {
+              "kind": "added",
+              "severity": "minor",
+              "explanation_says": "Coumadin ... This is new. Vicodin ... This is new.",
+              "letter_says": "Patient discharged home on Coumadin and Vicodin; no statement whether new",
+              "why": "The letter does not say the medicines are new. It is an assumption."
+            },
+            {
+              "kind": "added",
+              "severity": "minor",
+              "explanation_says": "Home medicines: start them again. This is not a change.",
+              "letter_says": "Resume home medications.",
+              "why": "'This is not a change' is an added claim. It is not in the letter."
+            },
+            {
+              "kind": "changed",
+              "severity": "minor",
+              "explanation_says": "You go home on Coumadin because your INR was 1.9.",
+              "letter_says": "Discharged on Coumadin 4 mg a day as the INR was 1.9 on discharge.",
+              "why": "This matches the letter. No real difference."
+            }
+          ],
+          "summary": "The explanation is largely faithful. The doses, frequencies, follow-up timing, warning signs and negations all match the letter. The only issues are minor: it calls the medicines 'new' and says home medicines are 'not a change', neither of which the letter states. Two of the entries in the list are not real problems, because the INR definition is allowed and the Coumadin/INR statement matches the letter."
+        },
+        "blocking_problems": [],
+        "attempt": 1
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 3530,
+        "output_tokens": 1509,
+        "cost_usd": 0.04309,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 13537,
+        "output_tokens": 1873,
+        "cost_usd": 0.07116,
+        "turns": 6
+      },
+      {
+        "step": "verify",
+        "input_tokens": 3576,
+        "output_tokens": 570,
+        "cost_usd": 0.02942,
+        "turns": 2
+      }
+    ],
+    "cost_usd": 0.14366,
+    "latency_s": 32.2
+  },
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "diagnoses",
+        "fact": "Right knee: the worn plastic (poly) part of an old knee replacement was exchanged",
+        "status": "kept",
+        "note": "Says the worn poly (plastic part) of the old right knee replacement was exchanged."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Stable at discharge",
+        "status": "kept",
+        "note": "Says the condition on leaving the hospital is stable."
+      },
+      {
+        "category": "medicines",
+        "fact": "Coumadin 4 mg a day (INR 1.9 at discharge), with blood tests twice a week",
+        "status": "kept",
+        "note": "Coumadin 4 mg a day, INR 1.9, lab checks two times each week."
+      },
+      {
+        "category": "medicines",
+        "fact": "Vicodin 5/500 mg, one to two tablets by mouth every 4-6 hours",
+        "status": "kept",
+        "note": "Vicodin 5/500 mg, 1 to 2 tablets by mouth every 4 to 6 hours."
+      },
+      {
+        "category": "medicines",
+        "fact": "Restart usual home medicines",
+        "status": "kept",
+        "note": "Says to restart home medicines."
+      },
+      {
+        "category": "dates",
+        "fact": "Follow up with Dr. ABC in two weeks",
+        "status": "kept",
+        "note": "Says to see Dr. ABC in two weeks."
+      },
+      {
+        "category": "actions",
+        "fact": "Put as much weight on the right leg as is comfortable",
+        "status": "kept",
+        "note": "Says to put weight on the right leg as much as feels OK."
+      },
+      {
+        "category": "actions",
+        "fact": "Keep doing the physical therapy exercises",
+        "status": "kept",
+        "note": "Says to keep doing the physical therapy exercises."
+      },
+      {
+        "category": "actions",
+        "fact": "Regular diet",
+        "status": "kept",
+        "note": "Says to eat a regular diet."
+      },
+      {
+        "category": "actions",
+        "fact": "Call the office or go back to the emergency room for more redness, swelling, drainage, fever, or any concern about the operation site",
+        "status": "kept",
+        "note": "Lists calling the office or going back to the ER for redness, swelling, drainage, fever, or any worry about the operation or incision site."
+      },
+      {
+        "category": "actions",
+        "fact": "Going home to the care of her son",
+        "status": "kept",
+        "note": "Says she goes home and her son will care for her."
+      }
+    ],
+    "added": [
+      {
+        "text": "Coumadin: ... This is new.",
+        "kind": "medical_fact"
+      },
+      {
+        "text": "Vicodin 5/500 mg: ... This is new.",
+        "kind": "medical_fact"
+      },
+      {
+        "text": "Lab checks (INR): two times each week while you take Coumadin.",
+        "kind": "advice"
+      }
+    ],
+    "gold_reviewer": "claude-draft"
+  }
+}

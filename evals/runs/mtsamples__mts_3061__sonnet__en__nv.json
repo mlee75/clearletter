@@ -1,0 +1,213 @@
+{
+  "job": {
+    "id": "mtsamples__mts_3061__sonnet__en__nv",
+    "part": "mtsamples",
+    "letter_id": "mts_3061",
+    "file": "data/mtsamples/mts_3061.txt",
+    "kind": "faithfulness",
+    "model": "sonnet",
+    "language": "en",
+    "verifier": false,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "sonnet",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": false,
+    "status": "not_verified",
+    "final_text": "## What this letter says\nThis letter is from one doctor to another doctor (Dr. CD). It asks Dr. CD to see you. The question is whether you should keep taking Dilantin.\n\nYou are a 19-year-old man. You saw Dr. CD in 2005 for suspected seizure activity. You have had no seizure episodes for 2 1/2 years. You have asked to stop Dilantin.\n\nThe 2005 note said there was some doubt about what your episodes really were. They took you to the emergency room. The note said to think again about your medicine.\n\nYour nerve exam (neurological exam) is normal. Your Dilantin level is slightly low at 12.5. The letter does not say the unit for this number.\n\nNo decision has been made yet.\n\n## What you need to do\n1. You are taking Dilantin 300 mg daily. No decision has been made to change it.\n2. Do not stop Dilantin on your own.\n3. Expect that your brain recording (EEG) will probably be repeated. It is not certain.\n4. Do not book any tests yourself. The Health Center must coordinate tests before they are scheduled.\n5. If lab tests are needed, the office uses ABC Diagnostic.\n\n## Dates and medicines\n- 2005: You saw Dr. CD for suspected seizure activity.\n- The letter has no date.\n\nMedicine:\n- Dilantin, 300 mg, daily. You take it now. No change so far. Dr. CD is asked if you should continue it.\n\n## Questions to ask your doctor\n- Should I keep taking Dilantin?\n- Do I need to repeat my EEG (brain recording)?\n- What does my Dilantin level of 12.5 mean?\n- Where do I go for any tests?\n\n## When to get urgent help\nThe letter does not list specific warning signs.\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "doctor_only",
+      "purpose": "A referral letter from one doctor to another (Dr. CD) asking for an evaluation and recommendation on whether the patient should continue Dilantin, since he has had no seizure episodes for 2 1/2 years and wants to stop it.",
+      "findings": [
+        {
+          "statement": "The patient is a 19-year-old male who was seen in 2005 for suspected seizure activity.",
+          "certainty": "possible",
+          "quote": "has seen you in 2005 for suspected seizure activity"
+        },
+        {
+          "statement": "He has had no seizure episodes for the past 2 1/2 years.",
+          "certainty": "confirmed",
+          "quote": "has been seizure episode free for the past 2 1/2 years"
+        },
+        {
+          "statement": "The 2005 note showed some discrepancy about the true nature of his episodes that took him to the emergency room, and there was consideration of reconsidering medication use.",
+          "certainty": "possible",
+          "quote": "there was some discrepancy as to the true nature of his episodes to the emergency room and there was consideration to reconsider medication use"
+        },
+        {
+          "statement": "His neurological physical exam is normal.",
+          "certainty": "confirmed",
+          "quote": "His physical exam, neurologically, is normal at this time."
+        },
+        {
+          "statement": "His Dilantin level is slightly low at 12.5.",
+          "certainty": "confirmed",
+          "quote": "His Dilantin level is slightly low at 12.5."
+        }
+      ],
+      "medicines": [
+        {
+          "name": "Dilantin",
+          "dose": "300 mg",
+          "how_often": "daily",
+          "change": "continue",
+          "details": "He is currently taking it. He has asked to come off it. The letter asks Dr. CD whether it should be continued. No decision has been made.",
+          "quote": "continuing on Dilantin 300 mg daily"
+        }
+      ],
+      "dates": [
+        {
+          "what": "Patient was previously seen by Dr. CD for suspected seizure activity",
+          "when": "2005",
+          "quote": "has seen you in 2005 for suspected seizure activity"
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Dr. CD is asked to evaluate the patient and recommend whether to continue Dilantin.",
+          "quote": "I will appreciate your evaluation and recommendation as to whether we need to continue the Dilantin at this time."
+        },
+        {
+          "instruction": "The EEG will probably need to be repeated. This should be coordinated through the Health Center.",
+          "quote": "I understand this will probably entail repeating his EEG and so please coordinate this through Health Center."
+        },
+        {
+          "instruction": "Any further testing should be coordinated at the Health Center before it is scheduled.",
+          "quote": "any further testing that is needed should be coordinated at Health Center prior to scheduling"
+        },
+        {
+          "instruction": "If any laboratory tests are needed, ABC Diagnostic is the lab the office uses.",
+          "quote": "If you require any laboratory, we use ABC Diagnostic"
+        }
+      ],
+      "negatives": [],
+      "warning_signs": [],
+      "unclear": [
+        "The unit for the Dilantin level of 12.5 is not stated.",
+        "The letter has no date, and the patient's name and address are placeholders.",
+        "Whether the EEG will be repeated is not certain; the letter says it will 'probably' be needed."
+      ]
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\nThis letter is from one doctor to another doctor (Dr. CD). It asks Dr. CD to see you. The question is whether you should keep taking Dilantin.\n\nYou are a 19-year-old man. You saw Dr. CD in 2005 for suspected seizure activity. You have had no seizure episodes for 2 1/2 years. You have asked to stop Dilantin.\n\nThe 2005 note said there was some doubt about what your episodes really were. They took you to the emergency room. The note said to think again about your medicine.\n\nYour nerve exam (neurological exam) is normal. Your Dilantin level is slightly low at 12.5. The letter does not say the unit for this number.\n\nNo decision has been made yet.\n\n## What you need to do\n1. You are taking Dilantin 300 mg daily. No decision has been made to change it.\n2. Do not stop Dilantin on your own.\n3. Expect that your brain recording (EEG) will probably be repeated. It is not certain.\n4. Do not book any tests yourself. The Health Center must coordinate tests before they are scheduled.\n5. If lab tests are needed, the office uses ABC Diagnostic.\n\n## Dates and medicines\n- 2005: You saw Dr. CD for suspected seizure activity.\n- The letter has no date.\n\nMedicine:\n- Dilantin, 300 mg, daily. You take it now. No change so far. Dr. CD is asked if you should continue it.\n\n## Questions to ask your doctor\n- Should I keep taking Dilantin?\n- Do I need to repeat my EEG (brain recording)?\n- What does my Dilantin level of 12.5 mean?\n- Where do I go for any tests?\n\n## When to get urgent help\nThe letter does not list specific warning signs.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 84.1,
+          "reading_ease_target": 70,
+          "grade_level": 3.4,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": null,
+        "blocking_problems": [],
+        "attempt": 1
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 3192,
+        "output_tokens": 1195,
+        "cost_usd": 0.03411,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 12069,
+        "output_tokens": 1748,
+        "cost_usd": 0.06364,
+        "turns": 5
+      }
+    ],
+    "cost_usd": 0.09775,
+    "latency_s": 27.3
+  },
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "diagnoses",
+        "fact": "Suspected seizures, seen in 2005; some doubt about the true nature of the episodes",
+        "status": "kept",
+        "note": "Suspected seizure activity in 2005 and doubt about the true nature of the episodes are both stated."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "No seizures for the past 2 1/2 years",
+        "status": "kept",
+        "note": "'No seizure episodes for 2 1/2 years.'"
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Neurological examination normal",
+        "status": "kept",
+        "note": "'Your nerve exam (neurological exam) is normal.'"
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Dilantin level slightly low at 12.5",
+        "status": "kept",
+        "note": "'Slightly low at 12.5.'"
+      },
+      {
+        "category": "medicines",
+        "fact": "Currently taking Dilantin 300 mg daily",
+        "status": "kept",
+        "note": "'Dilantin 300 mg daily.'"
+      },
+      {
+        "category": "medicines",
+        "fact": "Patient wants to stop Dilantin; the decision is waiting for the neurologist's advice",
+        "status": "kept",
+        "note": "Says the patient asked to stop, no decision has been made yet, and Dr. CD is being asked."
+      },
+      {
+        "category": "actions",
+        "fact": "Neurologist asked to advise whether Dilantin should continue",
+        "status": "kept",
+        "note": "'The question is whether you should keep taking Dilantin' / 'Dr. CD is asked if you should continue it.'"
+      },
+      {
+        "category": "actions",
+        "fact": "Probably a repeat EEG, arranged through the Health Center",
+        "status": "kept",
+        "note": "EEG will 'probably be repeated'; the Health Center coordinates tests. The link is general rather than EEG-specific, but it is covered."
+      },
+      {
+        "category": "actions",
+        "fact": "Any lab tests through ABC Diagnostic, coordinated at the Health Center before scheduling",
+        "status": "kept",
+        "note": "Lab tests use ABC Diagnostic; the Health Center must coordinate tests before they are scheduled."
+      },
+      {
+        "category": "negatives",
+        "fact": "No decision has been made to stop Dilantin",
+        "status": "kept",
+        "note": "'No decision has been made to change it.'"
+      }
+    ],
+    "added": [
+      {
+        "text": "Do not stop Dilantin on your own.",
+        "kind": "advice"
+      },
+      {
+        "text": "Do not book any tests yourself.",
+        "kind": "advice"
+      },
+      {
+        "text": "They took you to the emergency room.",
+        "kind": "medical_fact"
+      }
+    ],
+    "gold_reviewer": "claude-draft"
+  }
+}

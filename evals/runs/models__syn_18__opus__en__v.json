@@ -1,0 +1,217 @@
+{
+  "job": {
+    "id": "models__syn_18__opus__en__v",
+    "part": "models",
+    "letter_id": "syn_18",
+    "file": "data/synthetic/syn_18.txt",
+    "kind": "faithfulness",
+    "model": "opus",
+    "language": "en",
+    "verifier": true,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "opus",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": true,
+    "status": "ok",
+    "final_text": "## What this letter says\n\nYou had a blood test to check your thyroid. This is called a thyroid test (TFT). The test measured a hormone called TSH. Doctors measure it to check the thyroid.\n\nYour TSH was 7.8 mU/L. The normal range is 0.3 to 4.2.\n\nThis means your dose of levothyroxine is too low. So your doctor is making your dose bigger.\n\n## What you need to do\n\n1. Collect your new prescription from your pharmacy.\n2. Every day, take one 25 micrograms tablet and one 50 micrograms tablet of levothyroxine.\n3. Take levothyroxine on an empty stomach.\n4. Take it at least 30 minutes before breakfast or other medicines.\n5. Do not take levothyroxine at the same time as iron or calcium tablets.\n6. Leave at least 4 hours between levothyroxine and iron or calcium tablets.\n7. Have another thyroid blood test (TFT) between 6 November 2026 and 20 November 2026.\n8. Contact Riverside Medical Practice on 01632 960 610.\n\n## Dates and medicines\n\n**Dates**\n\n- 25 September 2026: the thyroid blood test (TFT) that gave this result.\n- Between 6 November 2026 and 20 November 2026: your next thyroid blood test (TFT). This is 6 to 8 weeks from now.\n\n**Medicine: levothyroxine**\n\n- Old dose: 50 micrograms.\n- New dose: 75 micrograms, once a day.\n- What changed: your dose has gone up.\n- How to take it: one 25 micrograms tablet and one 50 micrograms tablet each day.\n- Take it on an empty stomach.\n- Take it at least 30 minutes before breakfast or other medicines.\n- Keep it at least 4 hours apart from iron or calcium tablets.\n\n## Questions to ask your doctor\n\n- What is levothyroxine for?\n- What does my TSH result mean for me?\n- Where should I go for my next blood test?\n- What happens after my next blood test?\n\n## When to get urgent help\n\nThe letter does not list specific warning signs.\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "patient",
+      "purpose": "To tell you your thyroid blood test result, increase your levothyroxine dose, and ask you to have a repeat blood test.",
+      "findings": [
+        {
+          "statement": "Your thyroid blood test (TFT) showed your TSH is 7.8 mU/L. The normal range is 0.3 to 4.2.",
+          "certainty": "confirmed",
+          "quote": "your TSH is 7.8 mU/L (normal range 0.3 to 4.2)"
+        },
+        {
+          "statement": "This means your dose of levothyroxine is too low.",
+          "certainty": "confirmed",
+          "quote": "This means your dose of levothyroxine is too low."
+        }
+      ],
+      "medicines": [
+        {
+          "name": "levothyroxine",
+          "dose": "75 mcg",
+          "how_often": "once daily",
+          "change": "increase",
+          "details": "Old dose was 50 mcg. The new prescription is 25 mcg tablets and 50 mcg tablets. Take one of each every day. Take it on an empty stomach, at least 30 minutes before breakfast or other medicines.",
+          "quote": "Increase levothyroxine from 50 mcg (micrograms) to 75 mcg once daily."
+        }
+      ],
+      "dates": [
+        {
+          "what": "Thyroid blood test (TFT) that gave this result",
+          "when": "25 September 2026",
+          "quote": "Your thyroid blood test (TFT) on 25/09/2026"
+        },
+        {
+          "what": "Repeat TFT blood test, 6 to 8 weeks from now",
+          "when": "Between 6 November 2026 and 20 November 2026",
+          "quote": "between 6 November and 20 November 2026"
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Collect your new prescription from your pharmacy.",
+          "quote": "Your new prescription is ready to collect from your pharmacy."
+        },
+        {
+          "instruction": "Every day, take one 25 mcg tablet and one 50 mcg tablet of levothyroxine.",
+          "quote": "It is 25 mcg tablets and 50 mcg tablets: take one of each every day."
+        },
+        {
+          "instruction": "Take levothyroxine on an empty stomach, at least 30 minutes before breakfast or other medicines.",
+          "quote": "Take levothyroxine on an empty stomach, at least 30 minutes before breakfast or other medicines."
+        },
+        {
+          "instruction": "Leave at least 4 hours between levothyroxine and iron or calcium tablets.",
+          "quote": "Leave at least 4 hours between them."
+        },
+        {
+          "instruction": "Have a repeat TFT blood test between 6 November and 20 November 2026.",
+          "quote": "Please have a repeat TFT blood test in 6 to 8 weeks (between 6 November and 20 November 2026)."
+        },
+        {
+          "instruction": "Contact Riverside Medical Practice on 01632 960 610.",
+          "quote": "Riverside Medical Practice, 01632 960 610"
+        }
+      ],
+      "negatives": [
+        {
+          "instruction": "Do not take levothyroxine at the same time as iron or calcium tablets.",
+          "quote": "Do not take it at the same time as iron or calcium tablets."
+        }
+      ],
+      "warning_signs": [],
+      "unclear": []
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\n\nYou had a blood test to check your thyroid. This is called a thyroid test (TFT). The test measured a hormone called TSH. Doctors measure it to check the thyroid.\n\nYour TSH was 7.8 mU/L. The normal range is 0.3 to 4.2.\n\nThis means your dose of levothyroxine is too low. So your doctor is making your dose bigger.\n\n## What you need to do\n\n1. Collect your new prescription from your pharmacy.\n2. Every day, take one 25 micrograms tablet and one 50 micrograms tablet of levothyroxine.\n3. Take levothyroxine on an empty stomach.\n4. Take it at least 30 minutes before breakfast or other medicines.\n5. Do not take levothyroxine at the same time as iron or calcium tablets.\n6. Leave at least 4 hours between levothyroxine and iron or calcium tablets.\n7. Have another thyroid blood test (TFT) between 6 November 2026 and 20 November 2026.\n8. Contact Riverside Medical Practice on 01632 960 610.\n\n## Dates and medicines\n\n**Dates**\n\n- 25 September 2026: the thyroid blood test (TFT) that gave this result.\n- Between 6 November 2026 and 20 November 2026: your next thyroid blood test (TFT). This is 6 to 8 weeks from now.\n\n**Medicine: levothyroxine**\n\n- Old dose: 50 micrograms.\n- New dose: 75 micrograms, once a day.\n- What changed: your dose has gone up.\n- How to take it: one 25 micrograms tablet and one 50 micrograms tablet each day.\n- Take it on an empty stomach.\n- Take it at least 30 minutes before breakfast or other medicines.\n- Keep it at least 4 hours apart from iron or calcium tablets.\n\n## Questions to ask your doctor\n\n- What is levothyroxine for?\n- What does my TSH result mean for me?\n- Where should I go for my next blood test?\n- What happens after my next blood test?\n\n## When to get urgent help\n\nThe letter does not list specific warning signs.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 78.2,
+          "reading_ease_target": 70,
+          "grade_level": 4.7,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [
+            {
+              "kind": "advice",
+              "severity": "minor",
+              "explanation_says": "8. Contact Riverside Medical Practice on 01632 960 610.",
+              "letter_says": "The letter only gives the practice name and phone number at the end. It does not tell the patient to call.",
+              "why": "This turns a contact detail into an action the patient must take. It could lead to calls that aren't needed, but it doesn't change their treatment."
+            },
+            {
+              "kind": "date",
+              "severity": "minor",
+              "explanation_says": "Between 6 November 2026 and 20 November 2026 ... This is 6 to 8 weeks from now.",
+              "letter_says": "Please have a repeat TFT blood test in 6 to 8 weeks (between 6 November and 20 November 2026).",
+              "why": "The letter doesn't say when the 6 to 8 weeks starts, so 'from now' is an added reference point. The exact dates given are correct, so the effect is small."
+            }
+          ],
+          "summary": "The explanation matches the letter closely. The TSH result, the dose increase from 50 to 75 mcg, the two tablets (25 mcg and 50 mcg), how to take the medicine and when to repeat the test are all correct. There are two small problems. It tells the patient to contact the practice, which the letter doesn't ask for. It also says the next test is '6 to 8 weeks from now', but the letter doesn't say when the 6 to 8 weeks starts."
+        },
+        "blocking_problems": [],
+        "attempt": 1
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 3257,
+        "output_tokens": 1292,
+        "cost_usd": 0.03657,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 12154,
+        "output_tokens": 1764,
+        "cost_usd": 0.06446,
+        "turns": 5
+      },
+      {
+        "step": "verify",
+        "input_tokens": 3210,
+        "output_tokens": 682,
+        "cost_usd": 0.02873,
+        "turns": 2
+      }
+    ],
+    "cost_usd": 0.12976,
+    "latency_s": 38.3
+  },
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "diagnoses",
+        "fact": "TSH 7.8 mU/L (normal range 0.3 to 4.2): the levothyroxine dose is too low",
+        "status": "kept",
+        "note": "TSH 7.8 mU/L, normal range 0.3 to 4.2, dose too low: all stated."
+      },
+      {
+        "category": "medicines",
+        "fact": "Increase levothyroxine from 50 micrograms to 75 micrograms once daily",
+        "status": "kept",
+        "note": "Old dose 50 micrograms, new dose 75 micrograms once a day."
+      },
+      {
+        "category": "medicines",
+        "fact": "New prescription: take one 25 microgram tablet and one 50 microgram tablet every day",
+        "status": "kept",
+        "note": "One 25 microgram tablet and one 50 microgram tablet every day."
+      },
+      {
+        "category": "medicines",
+        "fact": "Take on an empty stomach, at least 30 minutes before breakfast or other medicines",
+        "status": "kept",
+        "note": "Empty stomach, at least 30 minutes before breakfast or other medicines."
+      },
+      {
+        "category": "medicines",
+        "fact": "Leave at least 4 hours between levothyroxine and iron or calcium tablets",
+        "status": "kept",
+        "note": "At least 4 hours between levothyroxine and iron or calcium tablets."
+      },
+      {
+        "category": "dates",
+        "fact": "Thyroid blood test on 25 September 2026",
+        "status": "kept",
+        "note": "25 September 2026 thyroid blood test."
+      },
+      {
+        "category": "dates",
+        "fact": "Repeat thyroid blood test in 6 to 8 weeks (between 6 November and 20 November 2026)",
+        "status": "kept",
+        "note": "Between 6 and 20 November 2026, 6 to 8 weeks."
+      },
+      {
+        "category": "actions",
+        "fact": "Collect the new prescription from your pharmacy",
+        "status": "kept",
+        "note": "Collect new prescription from pharmacy."
+      }
+    ],
+    "added": [
+      {
+        "text": "Contact Riverside Medical Practice on 01632 960 610.",
+        "kind": "advice"
+      }
+    ],
+    "gold_reviewer": "claude-draft"
+  }
+}

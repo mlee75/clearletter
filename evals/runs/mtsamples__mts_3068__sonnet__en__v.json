@@ -1,0 +1,267 @@
+{
+  "job": {
+    "id": "mtsamples__mts_3068__sonnet__en__v",
+    "part": "mtsamples",
+    "letter_id": "mts_3068",
+    "file": "data/mtsamples/mts_3068.txt",
+    "kind": "faithfulness",
+    "model": "sonnet",
+    "language": "en",
+    "verifier": true,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "sonnet",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": true,
+    "status": "fallback",
+    "final_text": "**We could not explain this letter safely. Please ask your doctor, nurse or pharmacist to explain it to you.**\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "doctor_copy_to_patient",
+      "purpose": "Clinic letter to the referring doctor about a 9-month-old boy with wheezing, cough and shortness of breath, likely asthma, and how to manage his alternate-day steroid.",
+      "findings": [
+        {
+          "statement": "Abc has had wheezing, cough and shortness of breath over the last several months.",
+          "certainty": "confirmed",
+          "quote": "He has been having problems with wheezing, cough and shortness of breath over the last several months."
+        },
+        {
+          "statement": "Cough has persisted despite treatment with inhaled steroids and bronchodilator.",
+          "certainty": "confirmed",
+          "quote": "Despite this, however; he has had persistent problems with a cough"
+        },
+        {
+          "statement": "On exam there were scattered rhonchi that cleared with coughing; otherwise healthy.",
+          "certainty": "confirmed",
+          "quote": "Abc had some scattered rhonchi which cleared with coughing but was otherwise healthy."
+        },
+        {
+          "statement": "Abc probably has fairly severe childhood asthma and has so far avoided hospitalization.",
+          "certainty": "possible",
+          "quote": "Abc probably does have fairly severe childhood asthma and fortunately has avoided hospitalization."
+        },
+        {
+          "statement": "Family history of asthma: father, uncle and older sister.",
+          "certainty": "confirmed",
+          "quote": "both Abc's father and uncle having problems with asthma as well as his older sister"
+        },
+        {
+          "statement": "There is a question about how consistently his medication is given at his father's house.",
+          "certainty": "possible",
+          "quote": "there has been a question about the consistency of his medication administration at his father's house"
+        }
+      ],
+      "medicines": [
+        {
+          "name": "Alternate day steroid (prednisolone)",
+          "dose": "1.5 milligrams (0.5 milliliters on alternate days)",
+          "how_often": "alternate days",
+          "change": "continue",
+          "details": "Continue until completely symptom free on the days off steroids; reasonable to keep weaning down to as low as this dose. Earlier dose not stated. The letter says a prolonged alternating day course was started; the drug is named as prednisolone for the short burst and 'alternate day steroids' for the course.",
+          "quote": "continue his alternate day steroids until he is completely symptom free on the days off steroids but it would be reasonable to continue to wean him down to as low as 1.5 milligrams (0.5 milliliters on alternate days)"
+        },
+        {
+          "name": "Inhaled steroids",
+          "dose": "not stated",
+          "how_often": "not stated",
+          "change": "continue",
+          "details": "Previously used by the referring doctor; the letter does not give a new instruction.",
+          "quote": "treated him aggressively with inhaled steroids and bronchodilator"
+        },
+        {
+          "name": "Bronchodilator",
+          "dose": "not stated",
+          "how_often": "not stated",
+          "change": "continue",
+          "details": "Previously used by the referring doctor; the letter does not give a new instruction.",
+          "quote": "treated him aggressively with inhaled steroids and bronchodilator"
+        }
+      ],
+      "dates": [],
+      "actions": [
+        {
+          "instruction": "Continue alternate day steroids until he is completely symptom free on the days off steroids; may continue to wean down to as low as 1.5 milligrams (0.5 milliliters on alternate days).",
+          "quote": "continue his alternate day steroids until he is completely symptom free on the days off steroids"
+        },
+        {
+          "instruction": "Abc's mother is encouraged to contact the clinic office, so questions can be answered by phone if necessary.",
+          "quote": "I have encouraged his mother to contact our office so that we can answer questions if necessary by phone."
+        }
+      ],
+      "negatives": [
+        {
+          "instruction": "No smoke exposure.",
+          "quote": "there is no smoke exposure"
+        }
+      ],
+      "warning_signs": [],
+      "unclear": [
+        "The patient's name, address and letter date are not given (placeholders only).",
+        "Exact current steroid dose and the duration of the weaning plan are not stated; only the lowest dose to wean to is given.",
+        "The letter says 'a short burst of prednisolone as well as a more prolonged alternating day course'; it does not name the drug for the alternate-day course."
+      ]
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\nThis letter is about your baby boy, Abc. He is 9 months old. The clinic wrote it to your doctor.\n\n- Abc has had wheezing, cough and shortness of breath for several months.\n- His cough has not gone away. He has had inhaled steroids and a bronchodilator.\n- The doctor listened to his chest. There were scattered rhonchi. They cleared when he coughed. He was otherwise healthy.\n- The doctor thinks Abc probably has fairly severe childhood asthma. This is not certain.\n- So far, he has not needed to stay in hospital.\n- His father, uncle and older sister have asthma.\n- There is no smoke exposure.\n- There is a question about how steadily his medicine is given at his father's house.\n\n## What you need to do\n1. Keep giving the alternate day steroid. Give it every second day.\n2. Keep going until Abc has no symptoms on the days off steroids.\n3. The dose can be lowered (weaned) as far as 1.5 milligrams (0.5 milliliters) on alternate days.\n4. You can phone the clinic office if you have questions.\n5. The letter gives no new instructions for the inhaled steroids or the bronchodilator.\n\n## Dates and medicines\nThe letter gives no dates.\n\n- **Alternate day steroid (prednisolone):** 1.5 milligrams (0.5 milliliters) on alternate days. No change. Keep going. The letter does not say his dose now. It does not say how long the weaning will take.\n- **Inhaled steroids:** dose and how often are not stated. No new instruction.\n- **Bronchodilator:** dose and how often are not stated. No new instruction.\n\n## Questions to ask your doctor\n- What dose of steroid is Abc taking now?\n- How long will the weaning take?\n- What are rhonchi?\n- How can we make sure his medicine is given the same way at both homes?\n\n## When to get urgent help\nThe letter does not list specific warning signs.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 81.4,
+          "reading_ease_target": 70,
+          "grade_level": 3.8,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [
+            {
+              "kind": "dosage",
+              "severity": "major",
+              "explanation_says": "Alternate day steroid (prednisolone): 1.5 milligrams (0.5 milliliters) on alternate days. No change. Keep going.",
+              "letter_says": "Continue alternate day steroids and wean down to as low as 1.5 mg (0.5 ml) on alternate days. The current dose is not stated.",
+              "why": "Presents the lowest weaning target as the current dose and says 'no change', which could lead to giving the wrong dose."
+            },
+            {
+              "kind": "changed",
+              "severity": "minor",
+              "explanation_says": "The dose can be lowered (weaned) as far as 1.5 milligrams... Keep giving the alternate day steroid.",
+              "letter_says": "It would be reasonable to continue to wean him down to as low as 1.5 mg.",
+              "why": "The letter says weaning is reasonable and optional, but the explanation puts it as an instruction. It also contradicts itself by saying 'No change'."
+            },
+            {
+              "kind": "added",
+              "severity": "minor",
+              "explanation_says": "The letter gives no new instructions for the inhaled steroids or the bronchodilator.",
+              "letter_says": "Nothing about continuing or stopping inhaled steroids or the bronchodilator.",
+              "why": "This is a statement about the letter's contents, and it is acceptable. However, 'No new instruction' implies they carry on, which the letter does not say."
+            },
+            {
+              "kind": "certainty",
+              "severity": "minor",
+              "explanation_says": "The doctor thinks Abc probably has fairly severe childhood asthma. This is not certain.",
+              "letter_says": "Abc probably does have fairly severe childhood asthma.",
+              "why": "'Probably' is kept, so this is largely faithful. The added 'not certain' is a mild emphasis."
+            },
+            {
+              "kind": "dropped",
+              "severity": "minor",
+              "explanation_says": "Abc has had wheezing, cough and shortness of breath for several months... no mention of the recent prednisolone short burst.",
+              "letter_says": "He was recently started on a short burst of prednisolone as well as the prolonged alternating day course.",
+              "why": "The recent short steroid burst is omitted. The mother was also reported to be fairly well versed in asthma management, and the mention of twin birth and mild prematurity is omitted."
+            }
+          ],
+          "summary": "The main problem is that the explanation gives 1.5 mg (0.5 ml) as the current alternate-day dose with \"No change\". In the letter, this is only the lowest dose he may be weaned down to, and the current dose is not stated. Its instruction to wean is also firmer than the letter's \"reasonable\". The other issues are minor omissions and emphasis."
+        },
+        "blocking_problems": [
+          "[dosage] Presents the lowest weaning target as the current dose and says 'no change', which could lead to giving the wrong dose. (explanation: 'Alternate day steroid (prednisolone): 1.5 milligrams (0.5 milliliters) on alternate days. No change. Keep going.'; letter: 'Continue alternate day steroids and wean down to as low as 1.5 mg (0.5 ml) on alternate days. The current dose is not stated.')"
+        ],
+        "attempt": 1
+      },
+      {
+        "explanation": "## What this letter says\nThis letter is about your baby boy, Abc. He is 9 months old. The clinic wrote it to your doctor.\n\n- Abc has had wheezing, cough and shortness of breath for several months.\n- His cough has not gone away. He has had inhaled steroids and a bronchodilator.\n- The doctor listened to his chest. There were scattered rhonchi. They cleared when he coughed. He was otherwise healthy.\n- The doctor thinks Abc probably has fairly severe childhood asthma. This is not certain.\n- So far, he has not needed to stay in hospital.\n- His father, uncle and older sister have asthma.\n- There is no smoke exposure.\n- There is a question about how steadily his medicine is given at his father's house.\n\n## What you need to do\n1. Keep giving the alternate day steroid (prednisolone). Give it every second day.\n2. Keep going until Abc has no symptoms on the days off steroids.\n3. The dose can be lowered (weaned) slowly. The lowest dose the letter mentions is 1.5 milligrams (0.5 milliliters) on alternate days.\n4. Do not change the dose on your own. The letter does not say his dose now.\n5. You can phone the clinic office if you have questions.\n6. The letter gives no new instructions for the inhaled steroids or the bronchodilator.\n\n## Dates and medicines\nThe letter gives no dates.\n\n- **Alternate day steroid (prednisolone):** Keep giving it on alternate days. The letter does not say his dose now. It does not say how long the weaning will take. It says the dose can be lowered to as low as 1.5 milligrams (0.5 milliliters) on alternate days.\n- **Inhaled steroids:** dose and how often are not stated. No new instruction.\n- **Bronchodilator:** dose and how often are not stated. No new instruction.\n\n## Questions to ask your doctor\n- What dose of steroid is Abc taking now?\n- How long will the weaning take?\n- What are rhonchi?\n- How can we make sure his medicine is given the same way at both homes?\n\n## When to get urgent help\nThe letter does not list specific warning signs.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 82.3,
+          "reading_ease_target": 70,
+          "grade_level": 3.7,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [
+            {
+              "kind": "changed",
+              "severity": "major",
+              "explanation_says": "Keep giving the alternate day steroid... Keep going until Abc has no symptoms on the days off steroids.",
+              "letter_says": "Continue alternate day steroids until completely symptom free on days off steroids, but it would be reasonable to continue to wean down to as low as 1.5 mg.",
+              "why": "The letter is a clinician's suggestion (\"prudent\", \"reasonable\"). The explanation turns it into firm instructions to the parent. It also blurs how the weaning fits with the symptom-free goal."
+            },
+            {
+              "kind": "advice",
+              "severity": "minor",
+              "explanation_says": "Do not change the dose on your own.",
+              "letter_says": "No such instruction.",
+              "why": "This is added treatment advice that the letter does not give."
+            },
+            {
+              "kind": "added",
+              "severity": "minor",
+              "explanation_says": "The letter gives no new instructions for the inhaled steroids or the bronchodilator.",
+              "letter_says": "Says nothing about continuing or changing inhaled treatments.",
+              "why": "This is a statement about the letter's content that is fine, but it may imply the inhaled medicines should continue unchanged. That is a mild reassurance."
+            },
+            {
+              "kind": "dropped",
+              "severity": "minor",
+              "explanation_says": "No mention that a short burst of prednisolone was also recently started.",
+              "letter_says": "He was recently started on both a short burst of prednisolone and a longer alternating-day course.",
+              "why": "Context about recent treatment is missing, though it does not change the action."
+            },
+            {
+              "kind": "dropped",
+              "severity": "minor",
+              "explanation_says": "No mention that the mother is fairly well versed in asthma management, or of the 45-minute review.",
+              "letter_says": "The majority of a 45-minute visit was spent reviewing asthma management, and the mother is fairly well versed.",
+              "why": "This is minor context that is omitted."
+            }
+          ],
+          "summary": "The explanation is mostly faithful. It has no dosage or date errors, and it says the asthma is uncertain. It turns the doctor's suggestions into firm instructions and adds a \"do not change the dose on your own\" warning that the letter does not contain. It also leaves out a few minor details."
+        },
+        "blocking_problems": [
+          "[changed] The letter is a clinician's suggestion (\"prudent\", \"reasonable\"). The explanation turns it into firm instructions to the parent. It also blurs how the weaning fits with the symptom-free goal. (explanation: 'Keep giving the alternate day steroid... Keep going until Abc has no symptoms on the days off steroids.'; letter: 'Continue alternate day steroids until completely symptom free on days off steroids, but it would be reasonable to continue to wean down to as low as 1.5 mg.')"
+        ],
+        "attempt": 2
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 3365,
+        "output_tokens": 1494,
+        "cost_usd": 0.04147,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 12954,
+        "output_tokens": 1547,
+        "cost_usd": 0.06192,
+        "turns": 5
+      },
+      {
+        "step": "verify",
+        "input_tokens": 3377,
+        "output_tokens": 924,
+        "cost_usd": 0.0349,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 10035,
+        "output_tokens": 1489,
+        "cost_usd": 0.0635,
+        "turns": 2
+      },
+      {
+        "step": "verify",
+        "input_tokens": 3437,
+        "output_tokens": 771,
+        "cost_usd": 0.03232,
+        "turns": 2
+      }
+    ],
+    "cost_usd": 0.23412,
+    "latency_s": 52.8
+  },
+  "judgement": {
+    "fallback": true
+  }
+}

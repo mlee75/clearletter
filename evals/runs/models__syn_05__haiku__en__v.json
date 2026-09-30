@@ -1,0 +1,179 @@
+{
+  "job": {
+    "id": "models__syn_05__haiku__en__v",
+    "part": "models",
+    "letter_id": "syn_05",
+    "file": "data/synthetic/syn_05.txt",
+    "kind": "faithfulness",
+    "model": "haiku",
+    "language": "en",
+    "verifier": true,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "haiku",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": true,
+    "status": "ok",
+    "final_text": "## What this letter says\n\nYusuf's asthma review on Monday 9 November 2026 has been cancelled. The clinic moved.\n\nHis new appointment is Monday 23 November 2026 at 09:15. A children's asthma nurse will see him. The appointment is at Children's Outpatients in the Blue Zone.\n\nKeep giving Yusuf his brown preventer inhaler every day. Give it even when he feels well.\n\n## What you need to do\n\n1. Bring all of Yusuf's inhalers. Bring his blue reliever inhaler and his brown preventer inhaler.\n2. Bring his spacer (a tube that helps medicine go into his lungs).\n3. Bring his red book (personal child health record), if you have it.\n4. If this time does not work for you, call 01632 960 588.\n\n## Dates and medicines\n\n**Medicines:**\n- Brown preventer inhaler (beclometasone): every day, even when well. Keep using it. The dose is not in the letter.\n\n**Dates:**\n- Old appointment (cancelled): Monday 9 November 2026\n- New appointment: Monday 23 November 2026 at 09:15, Children's Outpatients, Blue Zone\n\n## Questions to ask your doctor\n\n1. What dose of the brown preventer should Yusuf use?\n2. Can you show me the right way to use his inhalers?\n3. When do I use the blue reliever inhaler?\n\n## When to get urgent help\n\nThe letter does not list specific warning signs.\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "parent_or_carer",
+      "purpose": "Notification of cancelled asthma review appointment and new appointment date; reminder to continue preventer medication",
+      "findings": [],
+      "medicines": [
+        {
+          "name": "beclometasone",
+          "dose": "not specified in letter",
+          "how_often": "every day",
+          "change": "continue",
+          "details": "brown preventer inhaler; even when he is well",
+          "quote": "Please keep giving Yusuf his brown preventer inhaler every day, even when he is well."
+        }
+      ],
+      "dates": [
+        {
+          "what": "Asthma review appointment (cancelled)",
+          "when": "Monday 9 November 2026",
+          "quote": "Yusuf's asthma review appointment on Monday 9 November 2026 has been cancelled because the clinic has moved."
+        },
+        {
+          "what": "Asthma review appointment",
+          "when": "Monday 23 November 2026 at 09:15",
+          "quote": "His NEW appointment is on Monday 23 November 2026 at 09:15 with the Paediatric Asthma Nurse, Children's Outpatients, Blue Zone."
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Bring all of Yusuf's inhalers, including his blue reliever inhaler (salbutamol) and his brown preventer inhaler (beclometasone)",
+          "quote": "All of Yusuf's inhalers, including his blue reliever inhaler (salbutamol) and his brown preventer inhaler (beclometasone)"
+        },
+        {
+          "instruction": "Bring his spacer",
+          "quote": "His spacer"
+        },
+        {
+          "instruction": "Bring his personal child health record (red book), if you have it",
+          "quote": "His personal child health record (red book), if you have it"
+        },
+        {
+          "instruction": "If this new time is not suitable, call 01632 960 588",
+          "quote": "If this new time is not suitable, call 01632 960 588."
+        }
+      ],
+      "negatives": [],
+      "warning_signs": [],
+      "unclear": []
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\n\nYusuf's asthma review on Monday 9 November 2026 has been cancelled. The clinic moved.\n\nHis new appointment is Monday 23 November 2026 at 09:15. A children's asthma nurse will see him. The appointment is at Children's Outpatients in the Blue Zone.\n\nKeep giving Yusuf his brown preventer inhaler every day. Give it even when he feels well.\n\n## What you need to do\n\n1. Bring all of Yusuf's inhalers. Bring his blue reliever inhaler and his brown preventer inhaler.\n2. Bring his spacer (a tube that helps medicine go into his lungs).\n3. Bring his red book (personal child health record), if you have it.\n4. If this time does not work for you, call 01632 960 588.\n\n## Dates and medicines\n\n**Medicines:**\n- Brown preventer inhaler (beclometasone): every day, even when well. Keep using it. The dose is not in the letter.\n\n**Dates:**\n- Old appointment (cancelled): Monday 9 November 2026\n- New appointment: Monday 23 November 2026 at 09:15, Children's Outpatients, Blue Zone\n\n## Questions to ask your doctor\n\n1. What dose of the brown preventer should Yusuf use?\n2. Can you show me the right way to use his inhalers?\n3. When do I use the blue reliever inhaler?\n\n## When to get urgent help\n\nThe letter does not list specific warning signs.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 78.2,
+          "reading_ease_target": 70,
+          "grade_level": 4.9,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [],
+          "summary": "The explanation accurately represents the letter with no significant discrepancies. All key information (dates, appointments, medicines, items to bring, and action steps) is correctly conveyed. The questions section appropriately raises practical clarifications needed (dose, technique, timing) without introducing new diagnoses, risks, or worries. The note about absent warning signs is appropriate and expected."
+        },
+        "blocking_problems": [],
+        "attempt": 1
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 2747,
+        "output_tokens": 6137,
+        "cost_usd": 0.03343,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 12219,
+        "output_tokens": 2926,
+        "cost_usd": 0.02801,
+        "turns": 3
+      },
+      {
+        "step": "verify",
+        "input_tokens": 2637,
+        "output_tokens": 5878,
+        "cost_usd": 0.03203,
+        "turns": 2
+      }
+    ],
+    "cost_usd": 0.09346,
+    "latency_s": 138.4
+  },
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "diagnoses",
+        "fact": "Asthma review for Yusuf (age 7)",
+        "status": "kept",
+        "note": "Asthma review for Yusuf is stated; his age (7) is not mentioned, but nothing contradicts it."
+      },
+      {
+        "category": "medicines",
+        "fact": "Blue reliever inhaler: salbutamol",
+        "status": "dropped",
+        "note": "It mentions the blue reliever inhaler but never names it as salbutamol."
+      },
+      {
+        "category": "medicines",
+        "fact": "Brown preventer inhaler: beclometasone, keep giving it every day even when he is well",
+        "status": "kept",
+        "note": "Brown preventer inhaler (beclometasone), every day, even when he is well."
+      },
+      {
+        "category": "dates",
+        "fact": "OLD appointment on Monday 9 November 2026 is cancelled",
+        "status": "kept",
+        "note": "Monday 9 November 2026 appointment cancelled because the clinic moved."
+      },
+      {
+        "category": "dates",
+        "fact": "NEW appointment on Monday 23 November 2026 at 09:15 with the Paediatric Asthma Nurse, Children's Outpatients, Blue Zone",
+        "status": "kept",
+        "note": "Monday 23 November 2026 at 09:15, with a children's asthma nurse, Children's Outpatients, Blue Zone."
+      },
+      {
+        "category": "actions",
+        "fact": "Bring all of Yusuf's inhalers",
+        "status": "kept",
+        "note": "Bring all of Yusuf's inhalers."
+      },
+      {
+        "category": "actions",
+        "fact": "Bring his spacer",
+        "status": "kept",
+        "note": "Bring his spacer."
+      },
+      {
+        "category": "actions",
+        "fact": "Bring his red book (personal child health record) if you have it",
+        "status": "kept",
+        "note": "Bring red book (personal child health record) if you have it."
+      },
+      {
+        "category": "actions",
+        "fact": "If the new time is not suitable, call 01632 960 588",
+        "status": "kept",
+        "note": "If this time does not work, call 01632 960 588."
+      }
+    ],
+    "added": [],
+    "gold_reviewer": "claude-draft"
+  }
+}

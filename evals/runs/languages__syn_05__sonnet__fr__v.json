@@ -1,0 +1,200 @@
+{
+  "job": {
+    "id": "languages__syn_05__sonnet__fr__v",
+    "part": "languages",
+    "letter_id": "syn_05",
+    "file": "data/synthetic/syn_05.txt",
+    "kind": "faithfulness",
+    "model": "sonnet",
+    "language": "fr",
+    "verifier": true,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "sonnet",
+    "backend": "claude-code",
+    "language": "fr",
+    "country": "uk",
+    "use_verifier": true,
+    "status": "ok",
+    "final_text": "## Ce que dit cette lettre\nLe rendez-vous de Yusuf pour son asthme est annulé. La clinique a déménagé. Il y a un nouveau rendez-vous.\n\n## Ce que vous devez faire\n1. Ne venez pas le 9 novembre 2026. Ce rendez-vous est annulé.\n2. Venez au nouveau rendez-vous. Il a lieu le 23 novembre 2026 à 09:15.\n3. Apportez tous les inhalateurs de Yusuf. Apportez l'inhalateur bleu de secours (salbutamol). Apportez aussi l'inhalateur marron de fond (bécométhasone).\n4. Apportez sa chambre d'inhalation (spacer).\n5. Apportez son carnet de santé (red book), si vous l'avez.\n6. Si la nouvelle heure ne vous convient pas, appelez le bureau des rendez-vous des consultations pour enfants au 01632 960 588.\n7. Continuez à donner l'inhalateur marron de fond à Yusuf chaque jour, même quand il va bien.\n\n## Dates et médicaments\n- 9 novembre 2026 : ancien rendez-vous. Il est annulé, car la clinique a déménagé.\n- 23 novembre 2026 à 09:15 : nouveau rendez-vous. Vous verrez l'infirmière spécialisée en asthme de l'enfant. Le lieu est Children's Outpatients, Blue Zone.\n- Bécométhasone (inhalateur marron de fond) : la dose n'est pas indiquée dans la lettre. Donnez-le chaque jour, même quand Yusuf va bien. Rien ne change.\n- Salbutamol (inhalateur bleu de secours) : apportez-le au rendez-vous. La lettre ne donne pas de dose.\n\n## Questions à poser à votre médecin\n- Quelle est la dose de l'inhalateur marron de Yusuf ?\n- À quoi sert le spacer, et comment bien l'utiliser ?\n- Quelle est la différence entre l'inhalateur bleu et l'inhalateur marron ?\n\n## Quand obtenir de l'aide en urgence\nLa lettre ne donne pas de signes d'alerte particuliers.\n\nSi vous êtes inquiet et que ce n'est pas une urgence, appelez le NHS 111. En cas d'urgence, appelez le 999.\n\n---\n*Cette explication a été faite par un programme informatique pour vous aider à lire votre lettre. Elle peut contenir des erreurs. Elle ne remplace pas votre médecin, votre infirmier ou votre pharmacien. Suivez toujours la lettre et posez-leur vos questions si quelque chose n'est pas clair.*\n",
+    "facts": {
+      "reader": "parent_or_carer",
+      "purpose": "To tell the parent or carer that Yusuf's asthma review appointment has been cancelled and moved to a new date, what to bring, and to keep giving his preventer inhaler daily.",
+      "findings": [],
+      "medicines": [
+        {
+          "name": "beclometasone (brown preventer inhaler)",
+          "dose": "not stated",
+          "how_often": "every day, even when he is well",
+          "change": "continue",
+          "details": "Dose not given in the letter.",
+          "quote": "Please keep giving Yusuf his brown preventer inhaler every day, even when he is well."
+        }
+      ],
+      "dates": [
+        {
+          "what": "Old asthma review appointment (cancelled because the clinic has moved)",
+          "when": "9 November 2026",
+          "quote": "Yusuf's asthma review appointment on Monday 9 November 2026 has been cancelled because the clinic has moved."
+        },
+        {
+          "what": "NEW asthma review appointment at 09:15 with the Paediatric Asthma Nurse, Children's Outpatients, Blue Zone",
+          "when": "23 November 2026 at 09:15",
+          "quote": "His NEW appointment is on Monday 23 November 2026 at 09:15 with the Paediatric Asthma Nurse, Children's Outpatients, Blue Zone."
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Bring all of Yusuf's inhalers, including his blue reliever inhaler (salbutamol) and his brown preventer inhaler (beclometasone)",
+          "quote": "All of Yusuf's inhalers, including his blue reliever inhaler (salbutamol) and his brown preventer inhaler (beclometasone)"
+        },
+        {
+          "instruction": "Bring his spacer",
+          "quote": "His spacer"
+        },
+        {
+          "instruction": "Bring his personal child health record (red book), if you have it",
+          "quote": "His personal child health record (red book), if you have it"
+        },
+        {
+          "instruction": "If the new time is not suitable, call the Children's Outpatients Booking Office on 01632 960 588",
+          "quote": "If this new time is not suitable, call 01632 960 588."
+        },
+        {
+          "instruction": "Keep giving Yusuf his brown preventer inhaler every day, even when he is well",
+          "quote": "Please keep giving Yusuf his brown preventer inhaler every day, even when he is well."
+        }
+      ],
+      "negatives": [
+        {
+          "instruction": "The original appointment on 9 November 2026 has been cancelled; do not attend on that date",
+          "quote": "has been cancelled because the clinic has moved"
+        }
+      ],
+      "warning_signs": [],
+      "unclear": []
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## Ce que dit cette lettre\nLe rendez-vous de Yusuf pour son asthme est annulé. La clinique a déménagé. Il y a un nouveau rendez-vous.\n\n## Ce que vous devez faire\n1. Ne venez pas le 9 novembre 2026. Ce rendez-vous est annulé.\n2. Venez au nouveau rendez-vous. Il a lieu le 23 novembre 2026 à 09:15.\n3. Apportez tous les inhalateurs de Yusuf. Apportez l'inhalateur bleu de secours (salbutamol). Apportez aussi l'inhalateur marron de fond (bécométhasone).\n4. Apportez sa chambre d'inhalation (spacer).\n5. Apportez son carnet de santé (red book), si vous l'avez.\n6. Si la nouvelle heure ne vous convient pas, appelez le bureau des rendez-vous des consultations pour enfants au 01632 960 588.\n7. Continuez à donner l'inhalateur marron de fond à Yusuf chaque jour, même quand il va bien.\n\n## Dates et médicaments\n- 9 novembre 2026 : ancien rendez-vous. Il est annulé, car la clinique a déménagé.\n- 23 novembre 2026 à 09:15 : nouveau rendez-vous. Vous verrez l'infirmière spécialisée en asthme de l'enfant. Le lieu est Children's Outpatients, Blue Zone.\n- Bécométhasone (inhalateur marron de fond) : la dose n'est pas indiquée dans la lettre. Donnez-le chaque jour, même quand Yusuf va bien. Rien ne change.\n- Salbutamol (inhalateur bleu de secours) : apportez-le au rendez-vous. La lettre ne donne pas de dose.\n\n## Questions à poser à votre médecin\n- Quelle est la dose de l'inhalateur marron de Yusuf ?\n- À quoi sert le spacer, et comment bien l'utiliser ?\n- Quelle est la différence entre l'inhalateur bleu et l'inhalateur marron ?\n\n## Quand obtenir de l'aide en urgence\nLa lettre ne donne pas de signes d'alerte particuliers.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "fr",
+          "reading_ease": 79.4,
+          "reading_ease_target": 70,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [
+            {
+              "kind": "added",
+              "severity": "minor",
+              "explanation_says": "Bécométhasone... Donnez-le chaque jour, même quand Yusuf va bien. Rien ne change.",
+              "letter_says": "Please keep giving Yusuf his brown preventer inhaler every day, even when he is well.",
+              "why": "\"Rien ne change\" is a small added reassurance. The letter only says to keep giving the inhaler daily and does not comment on any other treatment changes."
+            }
+          ],
+          "summary": "The explanation is accurate. The dates, time, place, items to bring, phone number and the daily preventer instruction all match the letter. The only issue is the small added phrase \"Rien ne change\", which is minor."
+        },
+        "blocking_problems": [],
+        "attempt": 1
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 3118,
+        "output_tokens": 998,
+        "cost_usd": 0.02958,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 11458,
+        "output_tokens": 1802,
+        "cost_usd": 0.06313,
+        "turns": 5
+      },
+      {
+        "step": "verify",
+        "input_tokens": 3245,
+        "output_tokens": 418,
+        "cost_usd": 0.02373,
+        "turns": 2
+      }
+    ],
+    "cost_usd": 0.11644,
+    "latency_s": 26.0
+  },
+  "back_translation": "## What this letter says\nYusuf's appointment for his asthma is cancelled. The clinic has moved. There is a new appointment.\n\n## What you must do\n1. Do not come on 9 November 2026. This appointment is cancelled.\n2. Come to the new appointment. It takes place on 23 November 2026 at 09:15.\n3. Bring all of Yusuf's inhalers. Bring the blue reliever inhaler (salbutamol). Also bring the brown preventer inhaler (beclometasone).\n4. Bring his inhalation chamber (spacer).\n5. Bring his health record book (red book), if you have it.\n6. If the new time does not suit you, call the appointments office of the children's outpatient clinics on 01632 960 588.\n7. Keep giving Yusuf the brown preventer inhaler every day, even when he is well.\n\n## Dates and medicines\n- 9 November 2026: old appointment. It is cancelled, because the clinic has moved.\n- 23 November 2026 at 09:15: new appointment. You will see the children's asthma specialist nurse. The place is Children's Outpatients, Blue Zone.\n- Beclometasone (brown preventer inhaler): the dose is not stated in the letter. Give it every day, even when Yusuf is well. Nothing changes.\n- Salbutamol (blue reliever inhaler): bring it to the appointment. The letter does not give a dose.\n\n## Questions to ask your doctor\n- What is the dose of Yusuf's brown inhaler?\n- What is the spacer for, and how do you use it properly?\n- What is the difference between the blue inhaler and the brown inhaler?\n\n## When to get emergency help\nThe letter does not give any particular warning signs.",
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "diagnoses",
+        "fact": "Asthma review for Yusuf (age 7)",
+        "status": "kept",
+        "note": "Says the appointment is for Yusuf's asthma. The word 'review' and his age (7) are left out, but nothing is contradicted."
+      },
+      {
+        "category": "medicines",
+        "fact": "Blue reliever inhaler: salbutamol",
+        "status": "kept",
+        "note": "Blue reliever inhaler (salbutamol) is named."
+      },
+      {
+        "category": "medicines",
+        "fact": "Brown preventer inhaler: beclometasone, keep giving it every day even when he is well",
+        "status": "kept",
+        "note": "Brown preventer inhaler (beclometasone), keep giving it every day even when he is well: stated twice."
+      },
+      {
+        "category": "dates",
+        "fact": "OLD appointment on Monday 9 November 2026 is cancelled",
+        "status": "kept",
+        "note": "The 9 November 2026 appointment is cancelled. 'Monday' is left out but the date matches."
+      },
+      {
+        "category": "dates",
+        "fact": "NEW appointment on Monday 23 November 2026 at 09:15 with the Paediatric Asthma Nurse, Children's Outpatients, Blue Zone",
+        "status": "kept",
+        "note": "23 November 2026 at 09:15, with the children's asthma specialist nurse, at Children's Outpatients, Blue Zone. 'Monday' is left out but the date and time match."
+      },
+      {
+        "category": "actions",
+        "fact": "Bring all of Yusuf's inhalers",
+        "status": "kept",
+        "note": "Bring all of Yusuf's inhalers."
+      },
+      {
+        "category": "actions",
+        "fact": "Bring his spacer",
+        "status": "kept",
+        "note": "Bring his spacer."
+      },
+      {
+        "category": "actions",
+        "fact": "Bring his red book (personal child health record) if you have it",
+        "status": "kept",
+        "note": "Bring his red book (health record book), if you have it."
+      },
+      {
+        "category": "actions",
+        "fact": "If the new time is not suitable, call 01632 960 588",
+        "status": "kept",
+        "note": "If the new time does not suit you, call 01632 960 588."
+      }
+    ],
+    "added": [
+      {
+        "text": "Beclometasone ... Nothing changes.",
+        "kind": "reassurance"
+      }
+    ],
+    "gold_reviewer": "claude-draft"
+  }
+}

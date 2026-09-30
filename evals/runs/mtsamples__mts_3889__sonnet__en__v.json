@@ -1,0 +1,372 @@
+{
+  "job": {
+    "id": "mtsamples__mts_3889__sonnet__en__v",
+    "part": "mtsamples",
+    "letter_id": "mts_3889",
+    "file": "data/mtsamples/mts_3889.txt",
+    "kind": "faithfulness",
+    "model": "sonnet",
+    "language": "en",
+    "verifier": true,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "sonnet",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": true,
+    "status": "ok_after_retry",
+    "final_text": "## What this letter says\nYou were in hospital with a kidney infection (pyelonephritis). The likely cause was a thick plug of mucus in your Foley catheter (a thin tube that drains urine). The catheter is in your ileal conduit (a pouch made from bowel to drain urine). This cause is possible, not certain. Dr. X flushed the catheter with fluid (irrigated it).\n\nGerms called Klebsiella were found in your urine. They were sensitive to Bactrim. Your symptoms got better with antibiotics given into a vein (IV). You stayed stable.\n\nThe letter also lists high blood pressure (hypertension), mild kidney weakness (renal insufficiency), and low blood count (anemia). You have had the anemia for the past year.\n\nYou also had right knee pain. There was no sign of fluid in the knee (effusion). The knee was very tender over the tendon below the kneecap (patellar tendon). The doctors thought the pain was not a problem inside the joint. This is possible, not certain.\n\nThe letter says you were scheduled for further surgery on 08/07/2007.\n\n## What you need to do\n1. Take your Bactrim by mouth, as you were told at discharge.\n2. Use ibuprofen from the shop for your knee pain. Take two to three tablets, three times a day.\n3. See Dr. Y in 7 to 10 days.\n4. Plan for your further surgery on 08/07/2007. The letter does not say what surgery it is. Ask your doctor.\n5. Do not guess the Bactrim dose. The letter does not say it. Ask your doctor or pharmacist.\n\n## Dates and medicines\n- Follow-up with Dr. Y: in 7 to 10 days.\n- Further surgery: 08/07/2007. This could mean 8 July 2007 or 7 August 2007. The letter does not make clear which. The type of surgery is not stated.\n- Bactrim: new medicine. Taken by mouth. The dose, how often, and how long are not in the letter.\n- Ibuprofen (over the counter): new. Two to three tablets, three times a day, for right knee pain. The tablet strength is not in the letter.\n\n## Questions to ask your doctor\n- Is my surgery on 8 July 2007 or 7 August 2007? What surgery is it?\n- How much Bactrim should I take, how often, and for how long?\n- What strength of ibuprofen tablet should I buy?\n- Who are Dr. X and Dr. Y?\n\n## When to get urgent help\nThe letter does not list specific warning signs.\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "doctor_copy_to_patient",
+      "purpose": "Discharge summary after a hospital stay for a kidney infection (pyelonephritis), with antibiotic treatment, knee pain advice and follow-up.",
+      "findings": [
+        {
+          "statement": "Kidney infection (pyelonephritis), likely caused by a mucous plug in the Foley catheter in the ileal conduit",
+          "certainty": "possible",
+          "quote": "Pyelonephritis likely secondary to mucous plugging of indwelling Foley in the ileal conduit."
+        },
+        {
+          "statement": "A thick mucous plug was thought to be in the Foley catheter in the ileal conduit; it was irrigated by Dr. X",
+          "certainty": "possible",
+          "quote": "It was thought that there was a thick mucous plug in the Foley in the ileal conduit that was irrigated by Dr. X."
+        },
+        {
+          "statement": "Klebsiella bacteria were found in the urine and were sensitive to Bactrim",
+          "certainty": "confirmed",
+          "quote": "Klebsiella was isolated in this urine, which was sensitive to Bactrim"
+        },
+        {
+          "statement": "Symptoms improved with IV antibiotics and she stayed clinically stable",
+          "certainty": "confirmed",
+          "quote": "Her symptoms responded to IV antibiotics and she remained clinically stable."
+        },
+        {
+          "statement": "Hypertension",
+          "certainty": "confirmed",
+          "quote": "Hypertension."
+        },
+        {
+          "statement": "Mild renal insufficiency",
+          "certainty": "confirmed",
+          "quote": "Mild renal insufficiency."
+        },
+        {
+          "statement": "Anemia, present chronically over the past year",
+          "certainty": "confirmed",
+          "quote": "Anemia, which has been present chronically over the past year."
+        },
+        {
+          "statement": "Right knee pain with no sign of fluid (effusion) in the knee",
+          "certainty": "ruled_out",
+          "quote": "the right knee showed no sign of effusion"
+        },
+        {
+          "statement": "She was very tender to touch over the patellar tendon",
+          "certainty": "confirmed",
+          "quote": "She was exquisitely tender to touch of the patellar tendon."
+        },
+        {
+          "statement": "The knee pain was thought not to be a problem inside the joint",
+          "certainty": "possible",
+          "quote": "It was thought that this did not represent intraarticular process."
+        }
+      ],
+      "medicines": [
+        {
+          "name": "Bactrim",
+          "dose": "",
+          "how_often": "",
+          "change": "start",
+          "details": "Taken by mouth (p.o.) at discharge. Dose, frequency and length of course not stated in the letter.",
+          "quote": "she was discharged on p.o.  Bactrim"
+        },
+        {
+          "name": "Ibuprofen (over-the-counter)",
+          "dose": "two to three tabs",
+          "how_often": "three times a day",
+          "change": "start",
+          "details": "Advised for right knee pain. Tablet strength not stated.",
+          "quote": "She was advised to use ibuprofen over-the-counter two to three tabs t.i.d."
+        }
+      ],
+      "dates": [
+        {
+          "what": "Follow up with Dr. Y",
+          "when": "in 7-10 days",
+          "quote": "She is to follow up with Dr. Y in 7-10 days."
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Follow up with Dr. Y in 7-10 days",
+          "quote": "She is to follow up with Dr. Y in 7-10 days."
+        },
+        {
+          "instruction": "Use over-the-counter ibuprofen, two to three tablets three times a day, for the knee pain",
+          "quote": "She was advised to use ibuprofen over-the-counter two to three tabs t.i.d."
+        }
+      ],
+      "negatives": [
+        {
+          "instruction": "The right knee showed no sign of effusion (fluid)",
+          "quote": "the right knee showed no sign of effusion"
+        },
+        {
+          "instruction": "The knee pain was thought not to represent a problem inside the joint",
+          "quote": "this did not represent intraarticular process"
+        }
+      ],
+      "warning_signs": [],
+      "unclear": [
+        "The date 08/07/2007 for further surgery could be 8 July 2007 or 7 August 2007; the letter does not make clear which format it uses.",
+        "The type of further surgery scheduled is not stated.",
+        "Bactrim dose, how often to take it, and how long to take it are not stated.",
+        "Ibuprofen tablet strength is not stated.",
+        "Who Dr. X and Dr. Y are is not stated."
+      ]
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\nYou were in hospital with a kidney infection (pyelonephritis). The likely cause was a thick plug of mucus in your Foley catheter (a thin tube that drains urine). The catheter is in your ileal conduit (a pouch made from bowel to drain urine). This cause is possible, not certain. Dr. X flushed the catheter with fluid (irrigated it).\n\nGerms called Klebsiella were found in your urine. Bactrim can kill them. Your symptoms got better with antibiotics given into a vein (IV). You stayed stable.\n\nThe letter also lists high blood pressure (hypertension), mild kidney weakness (renal insufficiency), and low blood count (anemia). You have had the anemia for the past year.\n\nYou also had right knee pain. There was no sign of fluid in the knee (effusion). The knee was very tender over the tendon below the kneecap (patellar tendon). The doctors thought the pain was not a problem inside the joint. This is possible, not certain.\n\n## What you need to do\n1. Take your Bactrim by mouth, as you were told at discharge.\n2. Use ibuprofen from the shop for your knee pain. Take two to three tablets, three times a day.\n3. See Dr. Y in 7 to 10 days.\n4. Do not guess the Bactrim dose. The letter does not say it. Ask your doctor or pharmacist.\n\n## Dates and medicines\n- Follow-up with Dr. Y: in 7 to 10 days.\n- Bactrim: new medicine. Taken by mouth. The dose, how often, and how long are not in the letter.\n- Ibuprofen (over the counter): new. Two to three tablets, three times a day, for right knee pain. The tablet strength is not in the letter.\n\n## Questions to ask your doctor\n- How much Bactrim should I take, how often, and for how long?\n- What strength of ibuprofen tablet should I buy?\n- The letter mentions a date, 08/07/2007, for more surgery. What surgery is it, and which date is it?\n- Who are Dr. X and Dr. Y?\n\n## When to get urgent help\nThe letter does not list specific warning signs.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 81.4,
+          "reading_ease_target": 70,
+          "grade_level": 4.1,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [
+            {
+              "kind": "certainty",
+              "severity": "minor",
+              "explanation_says": "The likely cause was a thick plug of mucus... This cause is possible, not certain.",
+              "letter_says": "Pyelonephritis likely secondary to mucous plugging; also 'It was thought that there was a thick mucous plug'",
+              "why": "Letter says 'likely'; the explanation is fine on this, but the extra 'possible, not certain' is mild rewording. Acceptable."
+            },
+            {
+              "kind": "dropped",
+              "severity": "major",
+              "explanation_says": "Mentions the 08/07/2007 date only as a question; the 'What you need to do' and 'Dates' sections omit the further surgery.",
+              "letter_says": "She was scheduled on 08/07/2007 for further surgery.",
+              "why": "The scheduled surgery and its date are a key action/date for the patient, but are not listed in the action or date sections and are framed as unclear."
+            },
+            {
+              "kind": "added",
+              "severity": "minor",
+              "explanation_says": "Bactrim can kill them. / Bactrim: new medicine.",
+              "letter_says": "Klebsiella was isolated in this urine, which was sensitive to Bactrim",
+              "why": "'New medicine' is not stated; a minor inference."
+            },
+            {
+              "kind": "changed",
+              "severity": "minor",
+              "explanation_says": "The doctors thought the pain was not a problem inside the joint. This is possible, not certain.",
+              "letter_says": "It was thought that this did not represent intraarticular process.",
+              "why": "Adding 'possible, not certain' is consistent with 'thought', so minor."
+            },
+            {
+              "kind": "added",
+              "severity": "minor",
+              "explanation_says": "Take your Bactrim by mouth, as you were told at discharge.",
+              "letter_says": "She was discharged on p.o. Bactrim.",
+              "why": "The letter does not say the patient was told the dose at discharge, and the explanation also says the dose is not in the letter; slightly contradictory."
+            }
+          ],
+          "summary": "The explanation is largely faithful. The main problem is that the scheduled further surgery on 08/07/2007 is not in the action or date sections and is only raised as a question. There are a few minor wording issues: 'new medicine' and 'as you were told at discharge' are not in the letter."
+        },
+        "blocking_problems": [
+          "[dropped] The scheduled surgery and its date are a key action/date for the patient, but are not listed in the action or date sections and are framed as unclear. (explanation: \"Mentions the 08/07/2007 date only as a question; the 'What you need to do' and 'Dates' sections omit the further surgery.\"; letter: 'She was scheduled on 08/07/2007 for further surgery.')"
+        ],
+        "attempt": 1
+      },
+      {
+        "explanation": "## What this letter says\nYou were in hospital with a kidney infection (pyelonephritis). The likely cause was a thick plug of mucus in your Foley catheter (a thin tube that drains urine). The catheter is in your ileal conduit (a pouch made from bowel to drain urine). This cause is possible, not certain. Dr. X flushed the catheter with fluid (irrigated it).\n\nGerms called Klebsiella were found in your urine. They were sensitive to Bactrim. Your symptoms got better with antibiotics given into a vein (IV). You stayed stable.\n\nThe letter also lists high blood pressure (hypertension), mild kidney weakness (renal insufficiency), and low blood count (anemia). You have had the anemia for the past year.\n\nYou also had right knee pain. There was no sign of fluid in the knee (effusion). The knee was very tender over the tendon below the kneecap (patellar tendon). The doctors thought the pain was not a problem inside the joint. This is possible, not certain.\n\nThe letter says you were scheduled for further surgery on 08/07/2007.\n\n## What you need to do\n1. Take your Bactrim by mouth, as you were told at discharge.\n2. Use ibuprofen from the shop for your knee pain. Take two to three tablets, three times a day.\n3. See Dr. Y in 7 to 10 days.\n4. Plan for your further surgery on 08/07/2007. The letter does not say what surgery it is. Ask your doctor.\n5. Do not guess the Bactrim dose. The letter does not say it. Ask your doctor or pharmacist.\n\n## Dates and medicines\n- Follow-up with Dr. Y: in 7 to 10 days.\n- Further surgery: 08/07/2007. This could mean 8 July 2007 or 7 August 2007. The letter does not make clear which. The type of surgery is not stated.\n- Bactrim: new medicine. Taken by mouth. The dose, how often, and how long are not in the letter.\n- Ibuprofen (over the counter): new. Two to three tablets, three times a day, for right knee pain. The tablet strength is not in the letter.\n\n## Questions to ask your doctor\n- Is my surgery on 8 July 2007 or 7 August 2007? What surgery is it?\n- How much Bactrim should I take, how often, and for how long?\n- What strength of ibuprofen tablet should I buy?\n- Who are Dr. X and Dr. Y?\n\n## When to get urgent help\nThe letter does not list specific warning signs.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 81.3,
+          "reading_ease_target": 70,
+          "grade_level": 4.0,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [
+            {
+              "kind": "added",
+              "severity": "minor",
+              "explanation_says": "Ileal conduit (a pouch made from bowel to drain urine); Foley is a thin tube that drains urine.",
+              "letter_says": "Only names the ileal conduit and Foley; no definitions.",
+              "why": "General definitions of words in the letter are allowed; not a problem."
+            },
+            {
+              "kind": "certainty",
+              "severity": "minor",
+              "explanation_says": "The doctors thought the pain was not a problem inside the joint. This is possible, not certain.",
+              "letter_says": "It was thought that this did not represent intraarticular process.",
+              "why": "Hedging is consistent with 'it was thought'; fine."
+            },
+            {
+              "kind": "dropped",
+              "severity": "minor",
+              "explanation_says": "Explanation says Bactrim to be taken 'as you were told at discharge' and lists no mention of the exact schedule.",
+              "letter_says": "Discharged on p.o. Bactrim.",
+              "why": "Consistent with letter; no real omission."
+            },
+            {
+              "kind": "added",
+              "severity": "minor",
+              "explanation_says": "Ibuprofen 'from the shop'... 'Plan for your further surgery on 08/07/2007' and 'Who are Dr. X and Dr. Y?'",
+              "letter_says": "She was scheduled on 08/07/2007 for further surgery.",
+              "why": "The letter uses past tense ('was scheduled'), so the date may already be past; telling the patient to plan for it slightly overstates it as a future action. Minor."
+            },
+            {
+              "kind": "dropped",
+              "severity": "minor",
+              "explanation_says": "Does not mention the thick mucus plug being irrigated resolved the blockage or that the kidney/renal team was consulted.",
+              "letter_says": "Renal was consulted.",
+              "why": "Clinical detail that doesn't matter to the patient."
+            }
+          ],
+          "summary": "The explanation is faithful to the letter. It keeps the diagnoses, the uncertainty, the ibuprofen dose (2-3 tabs three times a day), the 7-10 day follow-up and the ambiguous 08/07/2007 date. It correctly notes that the Bactrim dose is missing and that no warning signs are listed. The only real wording issue is 'Plan for your further surgery', which treats a past-tense 'was scheduled' as an upcoming action. That is minor. The other entries above are not real problems."
+        },
+        "blocking_problems": [],
+        "attempt": 2
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 3325,
+        "output_tokens": 1914,
+        "cost_usd": 0.04955,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 8816,
+        "output_tokens": 1760,
+        "cost_usd": 0.06497,
+        "turns": 2
+      },
+      {
+        "step": "verify",
+        "input_tokens": 3363,
+        "output_tokens": 780,
+        "cost_usd": 0.03191,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 10644,
+        "output_tokens": 1911,
+        "cost_usd": 0.0756,
+        "turns": 2
+      },
+      {
+        "step": "verify",
+        "input_tokens": 3490,
+        "output_tokens": 824,
+        "cost_usd": 0.03381,
+        "turns": 2
+      }
+    ],
+    "cost_usd": 0.25584,
+    "latency_s": 61.8
+  },
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "diagnoses",
+        "fact": "Kidney infection (pyelonephritis), likely caused by a mucus plug blocking the Foley catheter in the ileal conduit",
+        "status": "kept",
+        "note": "Kidney infection likely caused by mucus plug in Foley in ileal conduit; stated as possible, not certain."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "High blood pressure (hypertension)",
+        "status": "kept",
+        "note": "High blood pressure (hypertension) is listed."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Mild kidney impairment (renal insufficiency)",
+        "status": "kept",
+        "note": "Mild kidney weakness (renal insufficiency) is listed."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Anaemia, present for the past year",
+        "status": "kept",
+        "note": "Anemia, present for the past year."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "History of uterine cancer and an ileal conduit (urinary diversion)",
+        "status": "dropped",
+        "note": "The ileal conduit is described, but the history of uterine cancer is never mentioned."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Klebsiella bacteria in the urine, treatable with Bactrim",
+        "status": "kept",
+        "note": "Klebsiella found in urine, sensitive to Bactrim."
+      },
+      {
+        "category": "medicines",
+        "fact": "Bactrim by mouth",
+        "status": "kept",
+        "note": "Take Bactrim by mouth."
+      },
+      {
+        "category": "medicines",
+        "fact": "Ibuprofen from the pharmacy, two to three tablets three times a day, for the knee pain",
+        "status": "kept",
+        "note": "Over-the-counter ibuprofen, two to three tablets three times a day, for knee pain."
+      },
+      {
+        "category": "dates",
+        "fact": "Further surgery scheduled on 08/07/2007",
+        "status": "kept",
+        "note": "Further surgery on 08/07/2007. The date is kept as written, with its ambiguity noted."
+      },
+      {
+        "category": "dates",
+        "fact": "Follow up with Dr. Y in 7-10 days",
+        "status": "kept",
+        "note": "See Dr. Y in 7 to 10 days."
+      },
+      {
+        "category": "negatives",
+        "fact": "Right knee: no swelling in the joint (no effusion); the pain is not thought to come from inside the joint",
+        "status": "kept",
+        "note": "No fluid in knee (effusion); pain not thought to be from inside the joint."
+      }
+    ],
+    "added": [
+      {
+        "text": "Bactrim: new medicine.",
+        "kind": "medical_fact"
+      },
+      {
+        "text": "Ibuprofen (over the counter): new.",
+        "kind": "medical_fact"
+      },
+      {
+        "text": "Do not guess the Bactrim dose. Ask your doctor or pharmacist.",
+        "kind": "advice"
+      }
+    ],
+    "gold_reviewer": "claude-draft"
+  }
+}

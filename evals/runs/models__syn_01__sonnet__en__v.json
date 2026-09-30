@@ -1,0 +1,204 @@
+{
+  "job": {
+    "id": "models__syn_01__sonnet__en__v",
+    "part": "models",
+    "letter_id": "syn_01",
+    "file": "data/synthetic/syn_01.txt",
+    "kind": "faithfulness",
+    "model": "sonnet",
+    "language": "en",
+    "verifier": true,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "sonnet",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": true,
+    "status": "ok_after_retry",
+    "final_text": "## What this letter says\nYou have a booked appointment for a heart scan (echocardiogram). It is an ultrasound scan of your heart. The scan takes about 45 minutes.\n\n## What you need to do\n1. Bring a list of all the medicines you take.\n2. Arrive 15 minutes before your appointment time.\n3. If you cannot come, call 01632 960 123. Call at least 48 hours before. Then the slot can go to another patient.\n4. Do not fast before the test. You do not need to fast.\n5. Do not stop any of your medicines.\n\n## Dates and medicines\n- Date: Tuesday 17 November 2026.\n- Time: 10:40.\n- Place: Cardiac Investigations Unit, Level 2.\n- Medicines: The letter does not name any medicines. You do not need to stop any of them.\n\n## Questions to ask your doctor\n- What will happen during the scan?\n- When will I get the result of the scan?\n- Who can I call if I have a question before the day?\n\n## When to get urgent help\nThe letter does not list specific warning signs.\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "patient",
+      "purpose": "To tell the patient about a booked echocardiogram (ultrasound scan of the heart) appointment and how to prepare for it.",
+      "findings": [],
+      "medicines": [],
+      "dates": [
+        {
+          "what": "Echocardiogram appointment at the Cardiac Investigations Unit, Level 2 (takes about 45 minutes; arrive 15 minutes early, i.e. by 10:25)",
+          "when": "17 November 2026 at 10:40",
+          "quote": "You have been booked for an echocardiogram on Tuesday 17 November 2026 at 10:40 in the Cardiac Investigations Unit, Level 2."
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Bring a list of all the medicines you take.",
+          "quote": "Please bring a list of all the medicines you take."
+        },
+        {
+          "instruction": "Arrive 15 minutes before your appointment time.",
+          "quote": "Please arrive 15 minutes before your appointment time."
+        },
+        {
+          "instruction": "If you cannot attend, call 01632 960 123 at least 48 hours before the appointment so the slot can be offered to another patient.",
+          "quote": "If you cannot attend, please call 01632 960 123 at least 48 hours before so that we can offer your slot to another patient."
+        }
+      ],
+      "negatives": [
+        {
+          "instruction": "You do not need to fast before the test.",
+          "quote": "You do not need to fast before this test."
+        },
+        {
+          "instruction": "You do not need to stop any of your medicines.",
+          "quote": "You do not need to stop any of your medicines."
+        }
+      ],
+      "warning_signs": [],
+      "unclear": []
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\nYou have a booked appointment for a heart scan (echocardiogram). It is an ultrasound scan of your heart. The scan takes about 45 minutes.\n\n## What you need to do\n1. Bring a list of all the medicines you take.\n2. Arrive 15 minutes early. That is by 10:25.\n3. If you cannot come, call 01632 960 123. Call at least 48 hours before. Then the slot can go to another patient.\n4. Do not fast before the test. You do not need to fast.\n5. Do not stop any of your medicines.\n\n## Dates and medicines\n- Date: Tuesday 17 November 2026.\n- Time: 10:40.\n- Place: Cardiac Investigations Unit, Level 2.\n- Medicines: The letter does not name any medicines. You do not need to stop any of them.\n\n## Questions to ask your doctor\n- What will happen during the scan?\n- When will I get the result of the scan?\n- Who can I call if I have a question before the day?\n\n## When to get urgent help\nThe letter does not list specific warning signs.",
+        "missing_headings": [],
+        "unknown_numbers": [
+          "25"
+        ],
+        "readability": {
+          "language": "en",
+          "reading_ease": 85.6,
+          "reading_ease_target": 70,
+          "grade_level": 3.4,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [],
+          "summary": "The explanation matches the letter. The date, time, place, duration, arrival time (10:25 is correct), phone number, 48-hour notice, no fasting, and continuing medicines are all accurate. No content was added, and nothing important was dropped or changed."
+        },
+        "blocking_problems": [
+          "The number 25 is not in the letter"
+        ],
+        "attempt": 1
+      },
+      {
+        "explanation": "## What this letter says\nYou have a booked appointment for a heart scan (echocardiogram). It is an ultrasound scan of your heart. The scan takes about 45 minutes.\n\n## What you need to do\n1. Bring a list of all the medicines you take.\n2. Arrive 15 minutes before your appointment time.\n3. If you cannot come, call 01632 960 123. Call at least 48 hours before. Then the slot can go to another patient.\n4. Do not fast before the test. You do not need to fast.\n5. Do not stop any of your medicines.\n\n## Dates and medicines\n- Date: Tuesday 17 November 2026.\n- Time: 10:40.\n- Place: Cardiac Investigations Unit, Level 2.\n- Medicines: The letter does not name any medicines. You do not need to stop any of them.\n\n## Questions to ask your doctor\n- What will happen during the scan?\n- When will I get the result of the scan?\n- Who can I call if I have a question before the day?\n\n## When to get urgent help\nThe letter does not list specific warning signs.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 84.1,
+          "reading_ease_target": 70,
+          "grade_level": 3.7,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [],
+          "summary": "The explanation matches the letter. The date, time, place, 45-minute duration, arrival 15 minutes early, 48-hour cancellation notice and phone number are all correct. It keeps the no-fasting and don't-stop-medicines statements. The questions section adds no new risks, and the note that the letter lists no warning signs is expected."
+        },
+        "blocking_problems": [],
+        "attempt": 2
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 3108,
+        "output_tokens": 686,
+        "cost_usd": 0.02326,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 6202,
+        "output_tokens": 942,
+        "cost_usd": 0.03586,
+        "turns": 2
+      },
+      {
+        "step": "verify",
+        "input_tokens": 2782,
+        "output_tokens": 257,
+        "cost_usd": 0.0168,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 7054,
+        "output_tokens": 893,
+        "cost_usd": 0.03845,
+        "turns": 2
+      },
+      {
+        "step": "verify",
+        "input_tokens": 2777,
+        "output_tokens": 182,
+        "cost_usd": 0.01526,
+        "turns": 2
+      }
+    ],
+    "cost_usd": 0.12963,
+    "latency_s": 43.6
+  },
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "dates",
+        "fact": "Echocardiogram on Tuesday 17 November 2026 at 10:40, Cardiac Investigations Unit, Level 2",
+        "status": "kept",
+        "note": "Date Tuesday 17 November 2026, time 10:40 and place Cardiac Investigations Unit, Level 2 are all given correctly."
+      },
+      {
+        "category": "dates",
+        "fact": "The test takes about 45 minutes",
+        "status": "kept",
+        "note": "Says the scan takes about 45 minutes."
+      },
+      {
+        "category": "actions",
+        "fact": "Bring a list of all the medicines you take",
+        "status": "kept",
+        "note": "Says to bring a list of all the medicines you take."
+      },
+      {
+        "category": "actions",
+        "fact": "Arrive 15 minutes before the appointment time",
+        "status": "kept",
+        "note": "Says to arrive 15 minutes before the appointment time."
+      },
+      {
+        "category": "actions",
+        "fact": "If you cannot attend, call 01632 960 123 at least 48 hours before",
+        "status": "kept",
+        "note": "Gives the number 01632 960 123 and says to call at least 48 hours before."
+      },
+      {
+        "category": "negatives",
+        "fact": "You do not need to fast before the test",
+        "status": "kept",
+        "note": "Says 'You do not need to fast.' It also says 'Do not fast before the test', which is stronger than the letter. That extra instruction is listed as added advice."
+      },
+      {
+        "category": "negatives",
+        "fact": "You do not need to stop any of your medicines",
+        "status": "kept",
+        "note": "The medicines section says 'You do not need to stop any of them.' The action list turns this into the order 'Do not stop any of your medicines', which is stronger than the letter. That extra instruction is listed as added advice."
+      }
+    ],
+    "added": [
+      {
+        "text": "Do not fast before the test. (The letter only says fasting is not needed. It does not forbid it.)",
+        "kind": "advice"
+      },
+      {
+        "text": "Do not stop any of your medicines. (The letter only says stopping them is not needed. It does not forbid it.)",
+        "kind": "advice"
+      }
+    ],
+    "gold_reviewer": "claude-draft"
+  }
+}

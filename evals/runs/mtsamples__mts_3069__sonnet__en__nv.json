@@ -1,0 +1,180 @@
+{
+  "job": {
+    "id": "mtsamples__mts_3069__sonnet__en__nv",
+    "part": "mtsamples",
+    "letter_id": "mts_3069",
+    "file": "data/mtsamples/mts_3069.txt",
+    "kind": "faithfulness",
+    "model": "sonnet",
+    "language": "en",
+    "verifier": false,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "sonnet",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": false,
+    "status": "not_verified",
+    "final_text": "## What this letter says\nThis letter is from your eye surgeon. It is written to your eye doctor (optometrist). It is about the check of both your eyes.\n\n- Your vision is 20/40 in the right eye. It is 20/50 in the left eye.\n- You have a dense cataract in each eye (3 to 4+ nuclear sclerotic).\n- Your loss of vision seems to be caused by the cataracts in both eyes.\n- You have mild guttata in both eyes. This may be early Fuchs dystrophy. It is only possible, not confirmed.\n- Your eye pressure is 12 mmHg in both eyes.\n- There is no relative afferent pupillary defect.\n- The vitreous, macula, vessels and edges of the eye look normal. The cup-to-disc ratio is 0.1 in both eyes.\n- The surgeon says you should do well with cataract surgery.\n\n## What you need to do\n1. The surgeon recommended cataract surgery. You agreed to have the first eye done shortly.\n2. Ask the surgeon's office when your surgery will be. The letter gives no date.\n\n## Dates and medicines\n- Surgery date for the first eye: not given. The letter only says \"shortly\".\n- The letter lists no medicines.\n- The surgeon will update your eye doctor after surgery on each eye.\n\n## Questions to ask your doctor\n- When will my first eye surgery be?\n- What are guttata, and what does \"possible early Fuchs dystrophy\" mean for me?\n- What will happen after surgery on each eye?\n\n## When to get urgent help\nThe letter does not list specific warning signs.\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "doctor_copy_to_patient",
+      "purpose": "Letter from eye surgeon to referring optometrist reporting the evaluation of both eyes for cataracts and recommending cataract surgery.",
+      "findings": [
+        {
+          "statement": "Vision is 20/40 in the right eye and 20/50 in the left eye.",
+          "certainty": "confirmed",
+          "quote": "the patient was seeing 20/40 in her right eye and 20/50 in the left eye"
+        },
+        {
+          "statement": "Dense cataract (3 to 4+ nuclear sclerotic) in each eye.",
+          "certainty": "confirmed",
+          "quote": "There is a dense 3 to 4+ nuclear sclerotic cataract in each eye."
+        },
+        {
+          "statement": "The vision decline appears to be caused by cataracts in both eyes.",
+          "certainty": "confirmed",
+          "quote": "It appears that Ms. ABC' visual decline is caused by bilateral cataracts."
+        },
+        {
+          "statement": "Mild guttata in both eyes, possibly early Fuchs dystrophy.",
+          "certainty": "possible",
+          "quote": "The patient also showed some mild guttata OU indicating possible early Fuchs dystrophy."
+        },
+        {
+          "statement": "Eye pressures are 12 mmHg in both eyes.",
+          "certainty": "confirmed",
+          "quote": "applanations are 12 mmHg bilaterally"
+        },
+        {
+          "statement": "No relative afferent pupillary defect.",
+          "certainty": "ruled_out",
+          "quote": "There is no relative afferent pupillary defect."
+        },
+        {
+          "statement": "Vitreous, macula, vessels and periphery appear within normal limits; cup-to-disc ratio 0.1 in both eyes.",
+          "certainty": "confirmed",
+          "quote": "The vitreous, macula, vessels, and periphery all appear within normal limits."
+        },
+        {
+          "statement": "The patient should do well with cataract surgery.",
+          "certainty": "confirmed",
+          "quote": "The patient should do well with cataract surgery"
+        }
+      ],
+      "medicines": [],
+      "dates": [],
+      "actions": [
+        {
+          "instruction": "Cataract surgery has been recommended and the patient agreed to proceed with the first eye shortly.",
+          "quote": "I have recommended this and she agreed to proceed with the first eye here shortly."
+        },
+        {
+          "instruction": "The surgeon will update the referring doctor as surgery is done on each eye.",
+          "quote": "I will keep you up to date of her progress and any new findings as we perform her surgery in each eye."
+        }
+      ],
+      "negatives": [
+        {
+          "instruction": "No relative afferent pupillary defect.",
+          "quote": "There is no relative afferent pupillary defect."
+        }
+      ],
+      "warning_signs": [],
+      "unclear": [
+        "The surgery date for the first eye is not given (only 'shortly').",
+        "The letter's date of birth is a placeholder (MM/DD/YYYY).",
+        "Abbreviations OU, conj, and AC are not in the glossary.",
+        "The sentence 'She would benefit from having removed' is missing a word (presumably the cataracts)."
+      ]
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\nThis letter is from your eye surgeon. It is written to your eye doctor (optometrist). It is about the check of both your eyes.\n\n- Your vision is 20/40 in the right eye. It is 20/50 in the left eye.\n- You have a dense cataract in each eye (3 to 4+ nuclear sclerotic).\n- Your loss of vision seems to be caused by the cataracts in both eyes.\n- You have mild guttata in both eyes. This may be early Fuchs dystrophy. It is only possible, not confirmed.\n- Your eye pressure is 12 mmHg in both eyes.\n- There is no relative afferent pupillary defect.\n- The vitreous, macula, vessels and edges of the eye look normal. The cup-to-disc ratio is 0.1 in both eyes.\n- The surgeon says you should do well with cataract surgery.\n\n## What you need to do\n1. The surgeon recommended cataract surgery. You agreed to have the first eye done shortly.\n2. Ask the surgeon's office when your surgery will be. The letter gives no date.\n\n## Dates and medicines\n- Surgery date for the first eye: not given. The letter only says \"shortly\".\n- The letter lists no medicines.\n- The surgeon will update your eye doctor after surgery on each eye.\n\n## Questions to ask your doctor\n- When will my first eye surgery be?\n- What are guttata, and what does \"possible early Fuchs dystrophy\" mean for me?\n- What will happen after surgery on each eye?\n\n## When to get urgent help\nThe letter does not list specific warning signs.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 79.4,
+          "reading_ease_target": 70,
+          "grade_level": 4.3,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": null,
+        "blocking_problems": [],
+        "attempt": 1
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 3333,
+        "output_tokens": 1142,
+        "cost_usd": 0.03418,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 12545,
+        "output_tokens": 1547,
+        "cost_usd": 0.0613,
+        "turns": 7
+      }
+    ],
+    "cost_usd": 0.09548,
+    "latency_s": 22.6
+  },
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "diagnoses",
+        "fact": "Dense cataracts in both eyes, causing the drop in vision",
+        "status": "kept",
+        "note": "States a dense cataract in each eye and that the vision loss seems caused by the cataracts."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Vision 20/40 right eye, 20/50 left eye",
+        "status": "kept",
+        "note": "20/40 right eye and 20/50 left eye, as in the letter."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Possible early Fuchs dystrophy (mild guttata)",
+        "status": "kept",
+        "note": "Mild guttata, possible early Fuchs dystrophy, with the uncertainty kept."
+      },
+      {
+        "category": "actions",
+        "fact": "Cataract surgery recommended and she agreed",
+        "status": "kept",
+        "note": "Says the surgeon recommended cataract surgery and she agreed."
+      },
+      {
+        "category": "actions",
+        "fact": "First eye to be operated soon, then the other eye",
+        "status": "kept",
+        "note": "First eye to be done shortly; the note about updates after surgery on each eye covers the second eye."
+      },
+      {
+        "category": "negatives",
+        "fact": "No relative afferent pupillary defect",
+        "status": "kept",
+        "note": "No relative afferent pupillary defect is stated."
+      },
+      {
+        "category": "negatives",
+        "fact": "Back of the eye (vitreous, macula, vessels, periphery) normal",
+        "status": "kept",
+        "note": "Vitreous, macula, vessels and periphery ('edges of the eye') are said to look normal."
+      }
+    ],
+    "added": [],
+    "gold_reviewer": "claude-draft"
+  }
+}

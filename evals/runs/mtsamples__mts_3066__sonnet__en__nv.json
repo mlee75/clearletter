@@ -1,0 +1,185 @@
+{
+  "job": {
+    "id": "mtsamples__mts_3066__sonnet__en__nv",
+    "part": "mtsamples",
+    "letter_id": "mts_3066",
+    "file": "data/mtsamples/mts_3066.txt",
+    "kind": "faithfulness",
+    "model": "sonnet",
+    "language": "en",
+    "verifier": false,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "sonnet",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": false,
+    "status": "not_verified",
+    "final_text": "## What this letter says\nThis letter is about a visit to the vision rehabilitation office. You have a history of macular degeneration. You said you had photodynamic therapy (PDT, a light-activated treatment) in the last year.\n\nYour small handheld magnifier helps you only a little.\n\nThe team found a mild change in your distance correction (the strength of your distance lenses). With the new distance correction, you could see 20/70 with your right eye. You could see 20/200 with your left eye.\n\nWith +4 reading glasses, you could read 0.5M print quite nicely.\n\nThe doctor thinks you are an excellent candidate for low vision help.\n\n## What you need to do\n1. Use the +4 reading glasses the doctor loaned you.\n2. Keep doing the fine-detailed reading you started at the visit.\n3. Come back to the office in two weeks.\n4. At that visit, the doctor will decide which near reading glasses to prescribe for you.\n\n## Dates and medicines\n- Return visit: in two weeks, at the vision rehabilitation office.\n- The date of your visit is not clear in the letter.\n- Medicines: the letter lists no medicines.\n- Loaned item: a pair of +4 reading glasses.\n\n## Questions to ask your doctor\n- Do I need new distance glasses after the mild change?\n- What does macular degeneration mean for my eyes?\n- What will happen at my visit in two weeks?\n\n## When to get urgent help\nThe letter does not list specific warning signs.\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "doctor_copy_to_patient",
+      "purpose": "Report from a vision rehabilitation visit for an 87-year-old woman with macular degeneration, describing test results, loaned reading glasses, and a return visit in two weeks.",
+      "findings": [
+        {
+          "statement": "History of macular degeneration",
+          "certainty": "confirmed",
+          "quote": "a history of macular degeneration"
+        },
+        {
+          "statement": "She says she had photodynamic therapy (PDT) within the last year",
+          "certainty": "confirmed",
+          "quote": "who admits to having PDT therapy within the last year"
+        },
+        {
+          "statement": "Her small handheld magnifier gives only limited help",
+          "certainty": "confirmed",
+          "quote": "she uses a small handheld magnifier, which is providing her with only limited help"
+        },
+        {
+          "statement": "A mild change in her distance correction was found",
+          "certainty": "confirmed",
+          "quote": "we found a mild change in her distance correction"
+        },
+        {
+          "statement": "With the new distance correction she could see 20/70 in the right eye",
+          "certainty": "confirmed",
+          "quote": "20/70 in the right eye"
+        },
+        {
+          "statement": "With the new distance correction she could see 20/200 in the left eye",
+          "certainty": "confirmed",
+          "quote": "20/200 in the left eye"
+        },
+        {
+          "statement": "With +4 reading glasses she could read 0.5M print quite nicely",
+          "certainty": "confirmed",
+          "quote": "With a pair of +4 reading glasses, she was able to read 0.5M print quite nicely"
+        },
+        {
+          "statement": "The doctor thinks she is an excellent candidate for low vision help",
+          "certainty": "confirmed",
+          "quote": "I think that she is an excellent candidate for low vision help"
+        }
+      ],
+      "medicines": [],
+      "dates": [
+        {
+          "what": "Return visit to the vision rehabilitation office",
+          "when": "in two weeks",
+          "quote": "She will return to our office in a matter of two weeks"
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Use the loaned +4 reading glasses and continue the fine-detailed reading started at the visit",
+          "quote": "I have loaned her a pair of +4 reading glasses at this time and we have started her with fine-detailed reading"
+        },
+        {
+          "instruction": "Return to the office in two weeks, when a decision will be made on which near reading glasses to prescribe",
+          "quote": "She will return to our office in a matter of two weeks and we will make a better determination on what near reading glasses to prescribe for her"
+        }
+      ],
+      "negatives": [],
+      "warning_signs": [],
+      "unclear": [
+        "The visit date is written as a placeholder (\"Month DD, YYYY\"), so it is not known.",
+        "The patient's name is a placeholder (\"Sample Patient\").",
+        "It is not stated whether the mild change in distance correction led to new distance glasses being prescribed."
+      ]
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\nThis letter is about a visit to the vision rehabilitation office. You have a history of macular degeneration. You said you had photodynamic therapy (PDT, a light-activated treatment) in the last year.\n\nYour small handheld magnifier helps you only a little.\n\nThe team found a mild change in your distance correction (the strength of your distance lenses). With the new distance correction, you could see 20/70 with your right eye. You could see 20/200 with your left eye.\n\nWith +4 reading glasses, you could read 0.5M print quite nicely.\n\nThe doctor thinks you are an excellent candidate for low vision help.\n\n## What you need to do\n1. Use the +4 reading glasses the doctor loaned you.\n2. Keep doing the fine-detailed reading you started at the visit.\n3. Come back to the office in two weeks.\n4. At that visit, the doctor will decide which near reading glasses to prescribe for you.\n\n## Dates and medicines\n- Return visit: in two weeks, at the vision rehabilitation office.\n- The date of your visit is not clear in the letter.\n- Medicines: the letter lists no medicines.\n- Loaned item: a pair of +4 reading glasses.\n\n## Questions to ask your doctor\n- Do I need new distance glasses after the mild change?\n- What does macular degeneration mean for my eyes?\n- What will happen at my visit in two weeks?\n\n## When to get urgent help\nThe letter does not list specific warning signs.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 74.5,
+          "reading_ease_target": 70,
+          "grade_level": 5.4,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": null,
+        "blocking_problems": [],
+        "attempt": 1
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 3232,
+        "output_tokens": 1058,
+        "cost_usd": 0.03169,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 10990,
+        "output_tokens": 1151,
+        "cost_usd": 0.04715,
+        "turns": 4
+      }
+    ],
+    "cost_usd": 0.07884,
+    "latency_s": 20.2
+  },
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "diagnoses",
+        "fact": "Macular degeneration; photodynamic therapy (PDT) within the last year",
+        "status": "kept",
+        "note": "States history of macular degeneration and PDT in the last year."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "With a small change to distance glasses: 20/70 right eye, 20/200 left eye",
+        "status": "kept",
+        "note": "Mild change in distance correction; 20/70 right eye, 20/200 left eye."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "With +4 reading glasses she could read 0.5M (small) print",
+        "status": "kept",
+        "note": "With +4 reading glasses could read 0.5M print quite nicely."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Excellent candidate for low vision help",
+        "status": "kept",
+        "note": "Doctor thinks she is an excellent candidate for low vision help."
+      },
+      {
+        "category": "dates",
+        "fact": "Return in two weeks to decide which reading glasses to prescribe",
+        "status": "kept",
+        "note": "Return in two weeks; doctor will then decide which near reading glasses to prescribe."
+      },
+      {
+        "category": "actions",
+        "fact": "Lent a pair of +4 reading glasses",
+        "status": "kept",
+        "note": "Mentions the +4 reading glasses the doctor loaned."
+      },
+      {
+        "category": "actions",
+        "fact": "Started fine-detailed reading practice",
+        "status": "kept",
+        "note": "Mentions the fine-detailed reading started at the visit."
+      }
+    ],
+    "added": [
+      {
+        "text": "Keep doing the fine-detailed reading you started at the visit.",
+        "kind": "advice"
+      }
+    ],
+    "gold_reviewer": "claude-draft"
+  }
+}

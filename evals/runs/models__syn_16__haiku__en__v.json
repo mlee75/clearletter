@@ -1,0 +1,189 @@
+{
+  "job": {
+    "id": "models__syn_16__haiku__en__v",
+    "part": "models",
+    "letter_id": "syn_16",
+    "file": "data/synthetic/syn_16.txt",
+    "kind": "faithfulness",
+    "model": "haiku",
+    "language": "en",
+    "verifier": true,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "haiku",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": true,
+    "status": "ok",
+    "final_text": "## What this letter says\nYour blood test shows your INR is 4.1. This is too high. It means your blood clots too slowly. The target is 2.0 to 3.0. Your doctor is lowering your warfarin.\n\n## What you need to do\n1. Do not take warfarin on Monday 5 October 2026.\n2. From Tuesday 6 October 2026, take 4 mg warfarin each evening. Take one blue 3 mg tablet and one brown 1 mg tablet together.\n3. Have your blood test on Monday 12 October 2026 at the Anticoagulation Clinic.\n4. Bring your yellow warfarin book to your next visit.\n\n## Dates and medicines\n**Today (Monday 5 October 2026):**\n- INR test result: 4.1 (too high)\n- Do not take warfarin tonight\n\n**From Tuesday 6 October 2026:**\n- Take warfarin 4 mg each evening\n- This is one blue 3 mg tablet plus one brown 1 mg tablet\n- Your old dose was 5 mg each evening\n\n**Next appointment:**\n- Monday 12 October 2026: INR blood test at Anticoagulation Clinic\n\n## Questions to ask your doctor\n1. When will my new dose start to work?\n2. What do I do if I miss a dose?\n3. What foods or pills should I avoid?\n\n## When to get urgent help\nGo to A&E or call 999 if you have:\n- Heavy bleeding\n- Blood in your urine or stools\n- Black stools\n- Vomiting blood\n- A severe headache\n\nContact the clinic on 01632 960 842 if you have minor bleeding, such as nosebleeds or bleeding gums.\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "patient",
+      "purpose": "INR monitoring result and warfarin dose adjustment",
+      "findings": [
+        {
+          "statement": "INR is 4.1, which is too high (target range 2.0-3.0). Blood is taking too long to clot.",
+          "certainty": "confirmed",
+          "quote": "Your INR today (Monday 5 October 2026) is 4.1. This is too high. Your blood is taking too long to clot."
+        }
+      ],
+      "medicines": [
+        {
+          "name": "Warfarin",
+          "dose": "4 mg",
+          "how_often": "each evening",
+          "change": "decrease",
+          "details": "Previous dose was 5 mg each evening. Skip the dose on 5 October 2026 (Monday). From 6 October 2026 (Tuesday), take 4 mg each evening (one 3 mg blue tablet + one 1 mg brown tablet).",
+          "quote": "Do NOT take warfarin tonight (Monday 5 October 2026). From Tuesday 6 October 2026, take 4 mg each evening. (Your previous dose was 5 mg each evening.) 4 mg = one 3 mg tablet (blue) + one 1 mg tablet (brown)."
+        }
+      ],
+      "dates": [
+        {
+          "what": "INR blood test result: 4.1 (too high)",
+          "when": "5 October 2026",
+          "quote": "Your INR today (Monday 5 October 2026) is 4.1. This is too high."
+        },
+        {
+          "what": "Next INR blood test at Anticoagulation Clinic",
+          "when": "12 October 2026",
+          "quote": "Your next INR blood test is on Monday 12 October 2026 at the Anticoagulation Clinic."
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Bring your yellow warfarin book to your next appointment",
+          "quote": "Please bring your yellow warfarin book."
+        }
+      ],
+      "negatives": [
+        {
+          "instruction": "Do not take warfarin on 5 October 2026 (tonight)",
+          "quote": "Do NOT take warfarin tonight (Monday 5 October 2026)."
+        }
+      ],
+      "warning_signs": [
+        {
+          "instruction": "Go to A&E or call 999 if you have heavy bleeding, blood in your urine or stools, black stools, vomiting blood, or a severe headache",
+          "quote": "Go to A&E or call 999 if you have any heavy bleeding, blood in your urine or stools, black stools, vomiting blood, or a severe headache."
+        },
+        {
+          "instruction": "Contact the clinic on 01632 960 842 if you have minor bleeding such as nosebleeds or bleeding gums",
+          "quote": "Contact the clinic on 01632 960 842 if you have minor bleeding, such as nosebleeds or bleeding gums."
+        }
+      ],
+      "unclear": []
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\nYour blood test shows your INR is 4.1. This is too high. It means your blood clots too slowly. The target is 2.0 to 3.0. Your doctor is lowering your warfarin.\n\n## What you need to do\n1. Do not take warfarin on Monday 5 October 2026.\n2. From Tuesday 6 October 2026, take 4 mg warfarin each evening. Take one blue 3 mg tablet and one brown 1 mg tablet together.\n3. Have your blood test on Monday 12 October 2026 at the Anticoagulation Clinic.\n4. Bring your yellow warfarin book to your next visit.\n\n## Dates and medicines\n**Today (Monday 5 October 2026):**\n- INR test result: 4.1 (too high)\n- Do not take warfarin tonight\n\n**From Tuesday 6 October 2026:**\n- Take warfarin 4 mg each evening\n- This is one blue 3 mg tablet plus one brown 1 mg tablet\n- Your old dose was 5 mg each evening\n\n**Next appointment:**\n- Monday 12 October 2026: INR blood test at Anticoagulation Clinic\n\n## Questions to ask your doctor\n1. When will my new dose start to work?\n2. What do I do if I miss a dose?\n3. What foods or pills should I avoid?\n\n## When to get urgent help\nGo to A&E or call 999 if you have:\n- Heavy bleeding\n- Blood in your urine or stools\n- Black stools\n- Vomiting blood\n- A severe headache\n\nContact the clinic on 01632 960 842 if you have minor bleeding, such as nosebleeds or bleeding gums.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 79.9,
+          "reading_ease_target": 70,
+          "grade_level": 5.4,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [
+            {
+              "kind": "added",
+              "severity": "minor",
+              "explanation_says": "Questions to ask your doctor includes 'What foods or pills should I avoid?'",
+              "letter_says": "The letter does not mention food or drug interactions with warfarin",
+              "why": "The question suggests a risk/concern about drug-food interactions that is not addressed in the letter. While this is valid general guidance for warfarin, it introduces a topic the letter does not cover."
+            }
+          ],
+          "summary": "The explanation accurately conveys the letter's instructions on dose adjustment, dates, warning signs, and contact procedures. One minor issue: Question 3 (\"What foods or pills should I avoid?\") introduces a concern about drug-food interactions that is not mentioned in the letter, though this is a reasonable topic for a warfarin patient to discuss with their doctor."
+        },
+        "blocking_problems": [],
+        "attempt": 1
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 2846,
+        "output_tokens": 9218,
+        "cost_usd": 0.04894,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 12035,
+        "output_tokens": 2345,
+        "cost_usd": 0.02488,
+        "turns": 3
+      },
+      {
+        "step": "verify",
+        "input_tokens": 12281,
+        "output_tokens": 6990,
+        "cost_usd": 0.05676,
+        "turns": 3
+      }
+    ],
+    "cost_usd": 0.13058,
+    "latency_s": 180.3
+  },
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "diagnoses",
+        "fact": "INR 4.1 today (target 2.0 to 3.0): too high, blood is taking too long to clot",
+        "status": "kept",
+        "note": "INR 4.1, too high, blood clots too slowly, target 2.0 to 3.0."
+      },
+      {
+        "category": "medicines",
+        "fact": "Do NOT take warfarin tonight (Monday 5 October 2026)",
+        "status": "kept",
+        "note": "Do not take warfarin tonight, Monday 5 October 2026."
+      },
+      {
+        "category": "medicines",
+        "fact": "From Tuesday 6 October 2026: warfarin 4 mg each evening (previous dose 5 mg)",
+        "status": "kept",
+        "note": "4 mg each evening from Tuesday 6 October 2026; old dose 5 mg each evening."
+      },
+      {
+        "category": "medicines",
+        "fact": "4 mg = one 3 mg tablet (blue) + one 1 mg tablet (brown)",
+        "status": "kept",
+        "note": "One blue 3 mg tablet plus one brown 1 mg tablet."
+      },
+      {
+        "category": "dates",
+        "fact": "Next INR blood test on Monday 12 October 2026 at the Anticoagulation Clinic",
+        "status": "kept",
+        "note": "INR blood test Monday 12 October 2026 at the Anticoagulation Clinic."
+      },
+      {
+        "category": "actions",
+        "fact": "Bring your yellow warfarin book",
+        "status": "kept",
+        "note": "Bring your yellow warfarin book."
+      },
+      {
+        "category": "actions",
+        "fact": "Go to A&E or call 999 for heavy bleeding, blood in urine or stools, black stools, vomiting blood, or a severe headache",
+        "status": "kept",
+        "note": "All five A&E/999 triggers are listed."
+      },
+      {
+        "category": "actions",
+        "fact": "Contact the clinic on 01632 960 842 for minor bleeding such as nosebleeds or bleeding gums",
+        "status": "kept",
+        "note": "Clinic number 01632 960 842 for minor bleeding such as nosebleeds or bleeding gums."
+      }
+    ],
+    "added": [],
+    "gold_reviewer": "claude-draft"
+  }
+}

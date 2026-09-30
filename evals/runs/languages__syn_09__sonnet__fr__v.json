@@ -1,0 +1,204 @@
+{
+  "job": {
+    "id": "languages__syn_09__sonnet__fr__v",
+    "part": "languages",
+    "letter_id": "syn_09",
+    "file": "data/synthetic/syn_09.txt",
+    "kind": "faithfulness",
+    "model": "sonnet",
+    "language": "fr",
+    "verifier": true,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "sonnet",
+    "backend": "claude-code",
+    "language": "fr",
+    "country": "uk",
+    "use_verifier": true,
+    "status": "ok",
+    "final_text": "## Ce que dit cette lettre\nVous avez été à l'hôpital pour une infection des poumons (pneumonie). Elle est confirmée. Elle touche le lobe inférieur droit du poumon.\nVotre score CURB-65 était de 1.\nVous étiez à l'hôpital du 5 octobre 2026 au 7 octobre 2026.\nVous pouvez être fatigué(e) pendant plusieurs semaines. Votre toux peut durer de 3 à 6 semaines.\n\n## Ce que vous devez faire\n1. Prenez vos comprimés d'amoxicilline pendant 3 jours de plus.\n2. Prenez la dernière dose le 10 octobre 2026.\n3. Faites une nouvelle radio des poumons (radiographie thoracique) dans 6 semaines. Elle a lieu au service de radiologie. Elle sert à voir si l'infection est partie.\n4. Ne prenez pas de rendez-vous pour la radio. La demande est déjà envoyée.\n\n## Dates et médicaments\n- 5 octobre 2026 : vous êtes entré(e) à l'hôpital.\n- 7 octobre 2026 : vous êtes sorti(e) de l'hôpital.\n- 10 octobre 2026 : dernière dose d'amoxicilline.\n- Radio des poumons : dans 6 semaines. La date exacte n'est pas donnée.\n\nMédicament : amoxicilline (antibiotique)\n- Dose : 500 milligrammes.\n- Combien de fois : 3 fois par jour.\n- Ce qui change : rien. Vous continuez.\n- Vous avez pris 1 jour d'antibiotique par perfusion. Puis les comprimés ont commencé à l'hôpital.\n- Vous avez déjà pris 2 jours d'antibiotiques à l'hôpital.\n- Encore 3 jours de comprimés pour finir 5 jours en tout.\n\n## Questions à poser à votre médecin\n- Quand aura lieu ma radio des poumons ?\n- Comment saurai-je la date de la radio ?\n- Que faire si j'oublie une dose d'amoxicilline ?\n\n## Quand obtenir de l'aide en urgence\nVoyez votre médecin généraliste ou appelez le 111 dans ces cas :\n- vous avez plus de mal à respirer ;\n- votre fièvre revient ;\n- vous crachez du sang.\n\nSi vous êtes inquiet et que ce n'est pas une urgence, appelez le NHS 111. En cas d'urgence, appelez le 999.\n\n---\n*Cette explication a été faite par un programme informatique pour vous aider à lire votre lettre. Elle peut contenir des erreurs. Elle ne remplace pas votre médecin, votre infirmier ou votre pharmacien. Suivez toujours la lettre et posez-leur vos questions si quelque chose n'est pas clair.*\n",
+    "facts": {
+      "reader": "patient",
+      "purpose": "Discharge summary after a hospital stay for a chest infection (pneumonia), with antibiotic instructions and follow-up.",
+      "findings": [
+        {
+          "statement": "Diagnosis of community-acquired pneumonia (chest infection) in the right lower lobe",
+          "certainty": "confirmed",
+          "quote": "Community-acquired pneumonia (chest infection), right lower lobe."
+        },
+        {
+          "statement": "CURB-65 score was 1",
+          "certainty": "confirmed",
+          "quote": "CURB-65 score 1."
+        },
+        {
+          "statement": "You may feel tired for several weeks",
+          "certainty": "possible",
+          "quote": "You may feel tired for several weeks."
+        },
+        {
+          "statement": "Your cough may last 3 to 6 weeks",
+          "certainty": "possible",
+          "quote": "Your cough may last 3 to 6 weeks."
+        }
+      ],
+      "medicines": [
+        {
+          "name": "Amoxicillin",
+          "dose": "500 mg",
+          "how_often": "TDS (three times a day)",
+          "change": "continue",
+          "details": "Tablets started in hospital after 1 day of IV antibiotics. 2 days of antibiotics already had in hospital; take tablets for 3 more days to complete 5 days in total. Last dose on 10 October 2026.",
+          "quote": "Amoxicillin 500 mg TDS. You have had 2 days of antibiotics in hospital. Take tablets for 3 more days to complete 5 days in total."
+        }
+      ],
+      "dates": [
+        {
+          "what": "Admitted to hospital",
+          "when": "5 October 2026",
+          "quote": "Admitted: 05/10/2026"
+        },
+        {
+          "what": "Discharged from hospital",
+          "when": "7 October 2026",
+          "quote": "Discharged: 07/10/2026"
+        },
+        {
+          "what": "Last dose of amoxicillin",
+          "when": "10 October 2026",
+          "quote": "Last dose on 10/10/2026."
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Take amoxicillin tablets for 3 more days, finishing with the last dose on 10 October 2026.",
+          "quote": "Take tablets for 3 more days to complete 5 days in total. Last dose on 10/10/2026."
+        },
+        {
+          "instruction": "Have a repeat chest X-ray in 6 weeks at the Radiology Department to check the infection has cleared.",
+          "quote": "Repeat chest X-ray (CXR) in 6 weeks at the Radiology Department to check the infection has cleared."
+        }
+      ],
+      "negatives": [
+        {
+          "instruction": "You do not need to book the chest X-ray; a request has already been sent.",
+          "quote": "A request has been sent. You do not need to book it."
+        }
+      ],
+      "warning_signs": [
+        {
+          "instruction": "See your GP or call 111 if you become more short of breath, if your fever comes back, or if you cough up blood.",
+          "quote": "See your GP or call 111 if you become more short of breath (SOB), if your fever comes back, or if you cough up blood."
+        }
+      ],
+      "unclear": [
+        "The chest X-ray is 'in 6 weeks' but no exact date is given, so the date is not known."
+      ]
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## Ce que dit cette lettre\nVous avez été à l'hôpital pour une infection des poumons (pneumonie). Elle est confirmée. Elle touche le lobe inférieur droit du poumon.\nVotre score CURB-65 était de 1.\nVous étiez à l'hôpital du 5 octobre 2026 au 7 octobre 2026.\nVous pouvez être fatigué(e) pendant plusieurs semaines. Votre toux peut durer de 3 à 6 semaines.\n\n## Ce que vous devez faire\n1. Prenez vos comprimés d'amoxicilline pendant 3 jours de plus.\n2. Prenez la dernière dose le 10 octobre 2026.\n3. Faites une nouvelle radio des poumons (radiographie thoracique) dans 6 semaines. Elle a lieu au service de radiologie. Elle sert à voir si l'infection est partie.\n4. Ne prenez pas de rendez-vous pour la radio. La demande est déjà envoyée.\n\n## Dates et médicaments\n- 5 octobre 2026 : vous êtes entré(e) à l'hôpital.\n- 7 octobre 2026 : vous êtes sorti(e) de l'hôpital.\n- 10 octobre 2026 : dernière dose d'amoxicilline.\n- Radio des poumons : dans 6 semaines. La date exacte n'est pas donnée.\n\nMédicament : amoxicilline (antibiotique)\n- Dose : 500 milligrammes.\n- Combien de fois : 3 fois par jour.\n- Ce qui change : rien. Vous continuez.\n- Vous avez pris 1 jour d'antibiotique par perfusion. Puis les comprimés ont commencé à l'hôpital.\n- Vous avez déjà pris 2 jours d'antibiotiques à l'hôpital.\n- Encore 3 jours de comprimés pour finir 5 jours en tout.\n\n## Questions à poser à votre médecin\n- Quand aura lieu ma radio des poumons ?\n- Comment saurai-je la date de la radio ?\n- Que faire si j'oublie une dose d'amoxicilline ?\n\n## Quand obtenir de l'aide en urgence\nVoyez votre médecin généraliste ou appelez le 111 dans ces cas :\n- vous avez plus de mal à respirer ;\n- votre fièvre revient ;\n- vous crachez du sang.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "fr",
+          "reading_ease": 87.5,
+          "reading_ease_target": 70,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [
+            {
+              "kind": "added",
+              "severity": "minor",
+              "explanation_says": "Ce qui change : rien. Vous continuez.",
+              "letter_says": "Lists amoxicillin 500 mg TDS on discharge; does not say whether it is new or unchanged from previous medicines.",
+              "why": "Adds a claim about medication changes that the letter does not make."
+            }
+          ],
+          "summary": "The explanation is accurate on diagnosis, dates, dose, frequency, follow-up and warning signs. The only problem is an unsupported statement that nothing changes in the medicine."
+        },
+        "blocking_problems": [],
+        "attempt": 1
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 3277,
+        "output_tokens": 1393,
+        "cost_usd": 0.03875,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 7845,
+        "output_tokens": 1821,
+        "cost_usd": 0.06165,
+        "turns": 2
+      },
+      {
+        "step": "verify",
+        "input_tokens": 3373,
+        "output_tokens": 592,
+        "cost_usd": 0.02823,
+        "turns": 2
+      }
+    ],
+    "cost_usd": 0.12863,
+    "latency_s": 31.8
+  },
+  "back_translation": "## What this letter says\nYou were in hospital for an infection of the lungs (pneumonia). It is confirmed. It affects the lower right lobe of the lung.\nYour CURB-65 score was 1.\nYou were in hospital from 5 October 2026 to 7 October 2026.\nYou may be tired for several weeks. Your cough may last 3 to 6 weeks.\n\n## What you must do\n1. Take your amoxicillin tablets for 3 more days.\n2. Take the last dose on 10 October 2026.\n3. Have a new X-ray of the lungs (chest X-ray) in 6 weeks. It takes place in the radiology department. It is to see if the infection has gone.\n4. Do not make an appointment for the X-ray. The request has already been sent.\n\n## Dates and medicines\n- 5 October 2026: you were admitted to hospital.\n- 7 October 2026: you left hospital.\n- 10 October 2026: last dose of amoxicillin.\n- X-ray of the lungs: in 6 weeks. The exact date is not given.\n\nMedicine: amoxicillin (antibiotic)\n- Dose: 500 milligrams.\n- How often: 3 times a day.\n- What changes: nothing. You continue.\n- You took 1 day of antibiotic by infusion (drip). Then the tablets started in hospital.\n- You have already taken 2 days of antibiotics in hospital.\n- 3 more days of tablets to finish 5 days in total.\n\n## Questions to ask your doctor\n- When will my lung X-ray take place?\n- How will I know the date of the X-ray?\n- What to do if I forget a dose of amoxicillin?\n\n## When to get urgent help\nSee your general practitioner or call 111 in these cases:\n- you have more difficulty breathing;\n- your fever comes back;\n- you cough up blood.",
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "diagnoses",
+        "fact": "Community-acquired pneumonia (chest infection) in the right lower lung",
+        "status": "kept",
+        "note": "Pneumonia (lung infection) in the lower right lobe is stated."
+      },
+      {
+        "category": "medicines",
+        "fact": "Amoxicillin 500 mg three times a day for 3 more days (5 days in total, including 2 in hospital)",
+        "status": "kept",
+        "note": "500 mg, 3 times a day, 3 more days, 5 days in total including 2 in hospital: all stated."
+      },
+      {
+        "category": "dates",
+        "fact": "Last amoxicillin dose on 10 October 2026",
+        "status": "kept",
+        "note": "Last dose on 10 October 2026 is stated."
+      },
+      {
+        "category": "dates",
+        "fact": "Repeat chest X-ray in 6 weeks to check the infection has cleared",
+        "status": "kept",
+        "note": "Chest X-ray in 6 weeks to see if the infection has gone is stated."
+      },
+      {
+        "category": "dates",
+        "fact": "Tiredness may last several weeks; cough may last 3 to 6 weeks",
+        "status": "kept",
+        "note": "Tired for several weeks and cough for 3 to 6 weeks are both stated."
+      },
+      {
+        "category": "actions",
+        "fact": "See your GP or call 111 if more short of breath, if the fever comes back, or if you cough up blood",
+        "status": "kept",
+        "note": "See GP or call 111 for more difficulty breathing, fever coming back or coughing up blood is stated."
+      },
+      {
+        "category": "negatives",
+        "fact": "You do not need to book the chest X-ray (the request has been sent)",
+        "status": "kept",
+        "note": "'Do not make an appointment for the X-ray. The request has already been sent.'"
+      }
+    ],
+    "added": [],
+    "gold_reviewer": "claude-draft"
+  }
+}

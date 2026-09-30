@@ -1,0 +1,163 @@
+{
+  "job": {
+    "id": "models__syn_03__haiku__en__v",
+    "part": "models",
+    "letter_id": "syn_03",
+    "file": "data/synthetic/syn_03.txt",
+    "kind": "faithfulness",
+    "model": "haiku",
+    "language": "en",
+    "verifier": true,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "haiku",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": true,
+    "status": "ok",
+    "final_text": "## What this letter says\n\nYou have an appointment for a 20-week anomaly scan.\n\nYou may bring one adult with you.\n\nYou do not need a full bladder for this scan.\n\nChildren cannot come into the scan room.\n\nThe scan cannot find every problem.\n\n## What you need to do\n\n1. Go to your appointment on Monday 11 January 2027 at 14:15.\n2. Go to the Antenatal Clinic, Floor 1.\n3. Call us at least 5 working days before if you need an interpreter.\n4. Do not bring children into the scan room.\n\n## Dates and medicines\n\nYour 20-week anomaly scan: Monday 11 January 2027 at 14:15 in the Antenatal Clinic, Floor 1.\n\nNo medicines are mentioned in this letter.\n\n## Questions to ask your doctor\n\n1. What does anomaly scan mean?\n2. How long will the appointment take?\n3. When will I get my results?\n4. What if I cannot come to this appointment?\n\n## When to get urgent help\n\nIf you have any of these before your appointment, call the Maternity Assessment Unit (MAU) on 01632 960 456 straight away:\n- any bleeding\n- leaking fluid from your vagina\n- severe tummy pain\n\nThis line is open 24 hours.\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "patient",
+      "purpose": "Information about your booked 20-week anomaly scan appointment",
+      "findings": [],
+      "medicines": [],
+      "dates": [
+        {
+          "what": "20-week scan (anomaly scan)",
+          "when": "Monday 11 January 2027 at 14:15 in the Antenatal Clinic, Floor 1",
+          "quote": "Your 20-week scan (anomaly scan) is booked for Monday 11 January 2027 at 14:15 in the Antenatal Clinic, Floor 1."
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Call at least 5 working days before your appointment if you need an interpreter",
+          "quote": "If an interpreter would help you, please call us at least 5 working days before your appointment and we will book one for free."
+        },
+        {
+          "instruction": "You may bring one adult with you",
+          "quote": "You may bring one adult with you."
+        }
+      ],
+      "negatives": [
+        {
+          "instruction": "You do not need a full bladder for this scan",
+          "quote": "You do not need a full bladder for this scan."
+        },
+        {
+          "instruction": "Children cannot come into the scan room",
+          "quote": "Children cannot come into the scan room."
+        },
+        {
+          "instruction": "The scan cannot find every problem",
+          "quote": "The scan cannot find every problem."
+        }
+      ],
+      "warning_signs": [
+        {
+          "instruction": "If you have any bleeding, leaking fluid from your vagina or severe tummy pain before your appointment, call the Maternity Assessment Unit (MAU) on 01632 960 456 straight away. This line is open 24 hours.",
+          "quote": "If you have any bleeding, leaking fluid from your vagina or severe tummy pain before your appointment, call the Maternity Assessment Unit (MAU) on 01632 960 456 straight away. This line is open 24 hours."
+        }
+      ],
+      "unclear": []
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\n\nYou have an appointment for a 20-week anomaly scan.\n\nYou may bring one adult with you.\n\nYou do not need a full bladder for this scan.\n\nChildren cannot come into the scan room.\n\nThe scan cannot find every problem.\n\n## What you need to do\n\n1. Go to your appointment on Monday 11 January 2027 at 14:15.\n2. Go to the Antenatal Clinic, Floor 1.\n3. Call us at least 5 working days before if you need an interpreter.\n4. Do not bring children into the scan room.\n\n## Dates and medicines\n\nYour 20-week anomaly scan: Monday 11 January 2027 at 14:15 in the Antenatal Clinic, Floor 1.\n\nNo medicines are mentioned in this letter.\n\n## Questions to ask your doctor\n\n1. What does anomaly scan mean?\n2. How long will the appointment take?\n3. When will I get my results?\n4. What if I cannot come to this appointment?\n\n## When to get urgent help\n\nIf you have any of these before your appointment, call the Maternity Assessment Unit (MAU) on 01632 960 456 straight away:\n- any bleeding\n- leaking fluid from your vagina\n- severe tummy pain\n\nThis line is open 24 hours.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 77.2,
+          "reading_ease_target": 70,
+          "grade_level": 5.2,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [],
+          "summary": "No significant problems found. The explanation accurately conveys all essential information from the letter: appointment date/time/location, what to bring, what to know about bladder preparation, where children cannot go, that the scan has limitations, when to call about an interpreter, and what emergency symptoms require immediate contact. All critical details—dates, phone numbers, locations—match precisely."
+        },
+        "blocking_problems": [],
+        "attempt": 1
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 2747,
+        "output_tokens": 7050,
+        "cost_usd": 0.038,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 14094,
+        "output_tokens": 4878,
+        "cost_usd": 0.04128,
+        "turns": 3
+      },
+      {
+        "step": "verify",
+        "input_tokens": 2563,
+        "output_tokens": 8194,
+        "cost_usd": 0.04353,
+        "turns": 2
+      }
+    ],
+    "cost_usd": 0.12281,
+    "latency_s": 186.2
+  },
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "dates",
+        "fact": "20-week (anomaly) scan on Monday 11 January 2027 at 14:15, Antenatal Clinic, Floor 1",
+        "status": "kept",
+        "note": "20-week anomaly scan, Monday 11 January 2027 at 14:15, Antenatal Clinic, Floor 1 are all stated."
+      },
+      {
+        "category": "actions",
+        "fact": "You may bring one adult with you",
+        "status": "kept",
+        "note": "Says 'You may bring one adult with you.'"
+      },
+      {
+        "category": "actions",
+        "fact": "For a free interpreter, call at least 5 working days before",
+        "status": "kept",
+        "note": "Says to call at least 5 working days before if you need an interpreter. It leaves out that the interpreter is free, but the action and timing are correct."
+      },
+      {
+        "category": "actions",
+        "fact": "If bleeding, leaking fluid from the vagina or severe tummy pain before the appointment, call the Maternity Assessment Unit on 01632 960 456 straight away (open 24 hours)",
+        "status": "kept",
+        "note": "Lists bleeding, leaking fluid from the vagina and severe tummy pain before the appointment, with a call to the MAU on 01632 960 456 straight away and the line open 24 hours."
+      },
+      {
+        "category": "negatives",
+        "fact": "The scan cannot find every problem",
+        "status": "kept",
+        "note": "Says 'The scan cannot find every problem.'"
+      },
+      {
+        "category": "negatives",
+        "fact": "You do not need a full bladder",
+        "status": "kept",
+        "note": "Says 'You do not need a full bladder for this scan.'"
+      },
+      {
+        "category": "negatives",
+        "fact": "Children cannot come into the scan room",
+        "status": "kept",
+        "note": "Says 'Children cannot come into the scan room.'"
+      }
+    ],
+    "added": [],
+    "gold_reviewer": "claude-draft"
+  }
+}

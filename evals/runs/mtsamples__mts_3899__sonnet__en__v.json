@@ -1,0 +1,252 @@
+{
+  "job": {
+    "id": "mtsamples__mts_3899__sonnet__en__v",
+    "part": "mtsamples",
+    "letter_id": "mts_3899",
+    "file": "data/mtsamples/mts_3899.txt",
+    "kind": "faithfulness",
+    "model": "sonnet",
+    "language": "en",
+    "verifier": true,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "sonnet",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": true,
+    "status": "ok_after_retry",
+    "final_text": "## What this letter says\nThis letter is from your hospital stay. You had an operation on your thyroid. The letter calls it a total thyroidectomy.\nYour diagnosis was a symptomatic thyroid goiter. The letter also calls it a large nodular goiter.\nYou did very well after the operation. You stayed stable.\nWhen you went home, you were eating well. You had no fever. Your vital signs were stable. Your pain was well controlled.\nYour wound was clean and dry. Your drain was removed.\n\n## What you need to do\n1. Go to the surgical office within one week after you left the hospital.\n2. Follow the wound care instructions on your routine wound care sheet.\n\n## Dates and medicines\n**Dates**\n- 22 September (09/22/08 in the letter): you had the total thyroidectomy.\n- 25 September (09/25/08 in the letter): you went home.\n- Within one week after 25 September: your visit at the surgical office.\n\n**Medicines**\n- Vicodin: new medicine for pain. The letter does not give the dose or how often to take it.\n- Synthroid (thyroid hormone): new medicine. It replaces thyroid hormone. You began it in the hospital on day 1 after the operation. You were given a prescription for it when you went home. The letter does not give the dose or how often to take it.\n\n## Questions to ask your doctor\n- How much Vicodin should I take, and how often?\n- How much Synthroid should I take, and how often?\n- What does a goiter mean?\n- What should I expect at my visit at the surgical office?\n\n## When to get urgent help\nThe letter does not list specific warning signs.\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "doctor_copy_to_patient",
+      "purpose": "Hospital discharge summary after total thyroidectomy for a symptomatic thyroid goiter.",
+      "findings": [
+        {
+          "statement": "Diagnosis: symptomatic thyroid goiter (large nodular goiter)",
+          "certainty": "confirmed",
+          "quote": "DISCHARGE DIAGNOSIS:  ,Symptomatic thyroid goiter."
+        },
+        {
+          "statement": "Total thyroidectomy was performed and she tolerated it very well and remained stable afterwards",
+          "certainty": "confirmed",
+          "quote": "which she tolerated very well and remained stable in the postoperative period"
+        },
+        {
+          "statement": "At discharge: tolerating diet, no fever, stable vital signs, good pain control",
+          "certainty": "confirmed",
+          "quote": "tolerating a diet well, having no fever, stable vital signs, and good pain control"
+        },
+        {
+          "statement": "The wound was clean and dry and the drain was removed",
+          "certainty": "confirmed",
+          "quote": "The wound was clean and dry.  The drain was removed."
+        }
+      ],
+      "medicines": [
+        {
+          "name": "Vicodin",
+          "dose": "not stated",
+          "how_often": "not stated",
+          "change": "start",
+          "details": "Prescribed for pain",
+          "quote": "She was given prescription for Vicodin for pain"
+        },
+        {
+          "name": "Synthroid (thyroid hormone)",
+          "dose": "not stated",
+          "how_often": "not stated",
+          "change": "start",
+          "details": "Thyroid hormone replacement, begun on postoperative day 1 in hospital; prescribed at discharge",
+          "quote": "Synthroid thyroid hormone"
+        }
+      ],
+      "dates": [
+        {
+          "what": "Total thyroidectomy performed",
+          "when": "22 September 2008",
+          "quote": "total thyroidectomy on 09/22/08"
+        },
+        {
+          "what": "Discharged home",
+          "when": "25 September 2008",
+          "quote": "stable for discharge home on 09/25/08"
+        },
+        {
+          "what": "Follow-up in the surgical office within one week after discharge",
+          "when": "within one week after 25 September 2008",
+          "quote": "follow up in the surgical office within one week after discharge"
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Follow up in the surgical office within one week after discharge",
+          "quote": "She was instructed to follow up in the surgical office within one week after discharge."
+        },
+        {
+          "instruction": "Follow the wound care instructions on the routine wound care sheet",
+          "quote": "the appropriate wound care instructions per my routine wound care sheet"
+        }
+      ],
+      "negatives": [],
+      "warning_signs": [],
+      "unclear": [
+        "Doses and how often to take Vicodin and Synthroid are not stated in the letter.",
+        "Dates are in US month/day/year format (09/22/08, 09/25/08), inferred because 22 and 25 cannot be months."
+      ]
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\nThis letter is from your hospital stay. You had an operation on your thyroid. The letter calls it a total thyroidectomy.\nYour diagnosis was a symptomatic thyroid goiter. The letter also calls it a large nodular goiter.\nYou did very well after the operation. You stayed stable.\nWhen you went home, you were eating well. You had no fever. Your vital signs were stable. Your pain was well controlled.\nYour wound was clean and dry. Your drain was removed.\n\n## What you need to do\n1. Go to the surgical office within one week after you left the hospital.\n2. Follow the wound care instructions on your routine wound care sheet.\n\n## Dates and medicines\n**Dates**\n- 22 September 2008: you had the total thyroidectomy.\n- 25 September 2008: you went home.\n- Within one week after 25 September 2008: your visit at the surgical office.\n\n**Medicines**\n- Vicodin: new medicine for pain. The letter does not give the dose or how often to take it.\n- Synthroid (thyroid hormone): new medicine. It replaces thyroid hormone. You began it in the hospital on day 1 after the operation. You were given a prescription for it when you went home. The letter does not give the dose or how often to take it.\n\n## Questions to ask your doctor\n- How much Vicodin should I take, and how often?\n- How much Synthroid should I take, and how often?\n- What does a goiter mean?\n- What should I expect at my visit at the surgical office?\n\n## When to get urgent help\nThe letter does not list specific warning signs.",
+        "missing_headings": [],
+        "unknown_numbers": [
+          "2008"
+        ],
+        "readability": {
+          "language": "en",
+          "reading_ease": 78.0,
+          "reading_ease_target": 70,
+          "grade_level": 4.5,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [],
+          "summary": "The explanation matches the letter. The diagnosis, the procedure, the dates (22 and 25 September 2008), the one-week follow-up, the wound care sheet, and both prescriptions (Vicodin and Synthroid) are all accurate. It correctly says the letter gives no doses and no warning signs. Nothing was added, and no needed details were dropped."
+        },
+        "blocking_problems": [
+          "The number 2008 is not in the letter"
+        ],
+        "attempt": 1
+      },
+      {
+        "explanation": "## What this letter says\nThis letter is from your hospital stay. You had an operation on your thyroid. The letter calls it a total thyroidectomy.\nYour diagnosis was a symptomatic thyroid goiter. The letter also calls it a large nodular goiter.\nYou did very well after the operation. You stayed stable.\nWhen you went home, you were eating well. You had no fever. Your vital signs were stable. Your pain was well controlled.\nYour wound was clean and dry. Your drain was removed.\n\n## What you need to do\n1. Go to the surgical office within one week after you left the hospital.\n2. Follow the wound care instructions on your routine wound care sheet.\n\n## Dates and medicines\n**Dates**\n- 22 September (09/22/08 in the letter): you had the total thyroidectomy.\n- 25 September (09/25/08 in the letter): you went home.\n- Within one week after 25 September: your visit at the surgical office.\n\n**Medicines**\n- Vicodin: new medicine for pain. The letter does not give the dose or how often to take it.\n- Synthroid (thyroid hormone): new medicine. It replaces thyroid hormone. You began it in the hospital on day 1 after the operation. You were given a prescription for it when you went home. The letter does not give the dose or how often to take it.\n\n## Questions to ask your doctor\n- How much Vicodin should I take, and how often?\n- How much Synthroid should I take, and how often?\n- What does a goiter mean?\n- What should I expect at my visit at the surgical office?\n\n## When to get urgent help\nThe letter does not list specific warning signs.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 77.9,
+          "reading_ease_target": 70,
+          "grade_level": 4.5,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [
+            {
+              "kind": "dropped",
+              "severity": "minor",
+              "explanation_says": "The 'What you need to do' section lists only the follow-up visit and the wound care instructions. It does not mention taking the medicines.",
+              "letter_says": "She was given prescriptions for Vicodin for pain and Synthroid thyroid hormone.",
+              "why": "The medicines appear in the medicines section, but the action list does not tell the patient to take them. The omission is small."
+            }
+          ],
+          "summary": "The explanation is accurate. Dates, diagnosis, procedure, medicines and follow-up all match the letter. The only problem is a minor one: the action list does not mention taking the prescribed medicines."
+        },
+        "blocking_problems": [],
+        "attempt": 2
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 3282,
+        "output_tokens": 1069,
+        "cost_usd": 0.03231,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 11951,
+        "output_tokens": 1413,
+        "cost_usd": 0.05634,
+        "turns": 6
+      },
+      {
+        "step": "verify",
+        "input_tokens": 3153,
+        "output_tokens": 392,
+        "cost_usd": 0.02247,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 8639,
+        "output_tokens": 1351,
+        "cost_usd": 0.0552,
+        "turns": 2
+      },
+      {
+        "step": "verify",
+        "input_tokens": 3171,
+        "output_tokens": 556,
+        "cost_usd": 0.0259,
+        "turns": 2
+      }
+    ],
+    "cost_usd": 0.19222,
+    "latency_s": 45.4
+  },
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "diagnoses",
+        "fact": "Large nodular thyroid goitre causing symptoms",
+        "status": "kept",
+        "note": "Says symptomatic thyroid goiter, also called a large nodular goiter."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Whole thyroid removed (total thyroidectomy) on 09/22/08, went well",
+        "status": "kept",
+        "note": "Says total thyroidectomy on 09/22/08 and that she did very well afterwards."
+      },
+      {
+        "category": "medicines",
+        "fact": "Vicodin for pain (prescription)",
+        "status": "kept",
+        "note": "Lists Vicodin for pain."
+      },
+      {
+        "category": "medicines",
+        "fact": "Synthroid thyroid hormone replacement (prescription)",
+        "status": "kept",
+        "note": "Lists a Synthroid thyroid hormone prescription given at discharge."
+      },
+      {
+        "category": "dates",
+        "fact": "Went home on 09/25/08",
+        "status": "kept",
+        "note": "Says she went home on 09/25/08."
+      },
+      {
+        "category": "dates",
+        "fact": "Follow up in the surgical office within one week",
+        "status": "kept",
+        "note": "Says to go to the surgical office within one week after leaving hospital."
+      },
+      {
+        "category": "actions",
+        "fact": "Follow the wound care instructions sheet",
+        "status": "kept",
+        "note": "Says to follow the routine wound care sheet."
+      },
+      {
+        "category": "negatives",
+        "fact": "No fever at discharge",
+        "status": "kept",
+        "note": "Says she had no fever when she went home."
+      }
+    ],
+    "added": [
+      {
+        "text": "Vicodin: new medicine for pain (the letter does not say whether Vicodin is new for her).",
+        "kind": "medical_fact"
+      }
+    ],
+    "gold_reviewer": "claude-draft"
+  }
+}

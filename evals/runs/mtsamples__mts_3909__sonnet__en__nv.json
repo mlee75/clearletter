@@ -1,0 +1,254 @@
+{
+  "job": {
+    "id": "mtsamples__mts_3909__sonnet__en__nv",
+    "part": "mtsamples",
+    "letter_id": "mts_3909",
+    "file": "data/mtsamples/mts_3909.txt",
+    "kind": "faithfulness",
+    "model": "sonnet",
+    "language": "en",
+    "verifier": false,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "sonnet",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": false,
+    "status": "not_verified",
+    "final_text": "## What this letter says\nYour son is 14 months old. He was in hospital for Kawasaki disease. The letter says it is getting better (resolving).\nHis fever and rash have completely gone. He has no red eyes (conjunctivitis). He has no redness of the mouth lining (mucous membranes).\nHe had IVIG two times. His fever came back within 12 hours of the first dose. It did not come back after the second dose.\nHis heart scan (echocardiogram) was negative.\nHe is calmer. He is eating and drinking well by mouth.\n\n## What you need to do\n1. See your primary doctor in 2 to 3 days.\n2. Go to the cardiology visit for a repeat heart scan (echo) in 4 to 6 weeks.\n3. Give the medicines as listed below.\n4. His activities and food and drink by mouth are \"ad-lib\" (as he wants).\n5. Do not give him any vaccine for less than 11 months because of the IVIG. This includes all live virus vaccines.\n6. The letter does not say if the 11 months starts now or from the IVIG. Please ask your doctor.\n\n## Dates and medicines\n**Dates**\n- In 2 to 3 days: follow-up with your primary doctor.\n- In 4 to 6 weeks: cardiology follow-up with an echo.\n\n**Medicines (all new)**\n- Aspirin, high dose: 340 milligrams, every 6 hours, for 1 day. Then switch to low dose aspirin.\n- Aspirin, low dose: 40 milligrams, once a day, for 14 days. Start it after the 1 day of high dose.\n- Prevacid: 15 milligrams, by mouth, once a day. It protects his stomach and bowel (GI) from the aspirin.\n\n## Questions to ask your doctor\n- What is IVIG, and why does it stop vaccines for 11 months?\n- Does the 11 months start now or from the IVIG?\n- What does the heart scan (echocardiogram) show, and what will the next one check?\n- Which day do I switch from high dose to low dose aspirin?\n\n## When to get urgent help\n- If he gets any rashes or any fevers, go to your primary care doctor as soon as possible.\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "parent_or_carer",
+      "purpose": "Discharge summary for a 14-month-old boy treated in hospital for Kawasaki disease, with medicines and follow-up instructions.",
+      "findings": [
+        {
+          "statement": "Discharge diagnosis: Kawasaki disease, resolving.",
+          "certainty": "confirmed",
+          "quote": "Kawasaki disease, resolving."
+        },
+        {
+          "statement": "Echocardiogram was negative.",
+          "certainty": "confirmed",
+          "quote": "Echocardiogram was also done, which was negative."
+        },
+        {
+          "statement": "Fever and rash have completely resolved.",
+          "certainty": "confirmed",
+          "quote": "Today, his fever and his rash have completely resolved."
+        },
+        {
+          "statement": "No conjunctivitis and no redness of mucous membranes now.",
+          "certainty": "confirmed",
+          "quote": "He does not have any conjunctivitis and no redness of mucous membranes."
+        },
+        {
+          "statement": "He received IVIG twice; fever returned within 12 hours of the first dose, and did not return after the second.",
+          "certainty": "confirmed",
+          "quote": "after second IVIG, he did not spike any more fever"
+        },
+        {
+          "statement": "He is calmer and eating and drinking well by mouth.",
+          "certainty": "confirmed",
+          "quote": "He is more calm and quite and taking good p.o."
+        }
+      ],
+      "medicines": [
+        {
+          "name": "Aspirin (high dose)",
+          "dose": "340 mg",
+          "how_often": "q.6h. for 1 day",
+          "change": "start",
+          "details": "High dose for 1 day, then switch to low dose aspirin.",
+          "quote": "Aspirin high dose 340 mg q.6h. for 1 day"
+        },
+        {
+          "name": "Aspirin (low dose)",
+          "dose": "40 mg",
+          "how_often": "q.d. for 14 days",
+          "change": "start",
+          "details": "Starts after the 1 day of high dose aspirin.",
+          "quote": "aspirin low dose 40 mg q.d. for 14 days"
+        },
+        {
+          "name": "Prevacid",
+          "dose": "15 mg",
+          "how_often": "p.o. once a day",
+          "change": "start",
+          "details": "To protect his GI (stomach and bowel) from the aspirin.",
+          "quote": "Prevacid also to prevent his GI from aspirin 15 mg p.o. once a day"
+        }
+      ],
+      "dates": [
+        {
+          "what": "Follow-up with primary doctor",
+          "when": "in 2 to 3 days",
+          "quote": "He will be followed by his primary doctor in 2 to 3 days."
+        },
+        {
+          "what": "Cardiology follow-up with echo",
+          "when": "in 4 to 6 weeks",
+          "quote": "Cardiology for echo followup in 4 to 6 weeks"
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "See primary doctor in 2 to 3 days.",
+          "quote": "He will be followed by his primary doctor in 2 to 3 days."
+        },
+        {
+          "instruction": "Attend cardiology for echo follow-up in 4 to 6 weeks.",
+          "quote": "Cardiology for echo followup in 4 to 6 weeks"
+        },
+        {
+          "instruction": "Activities and diet by mouth are as desired (ad-lib).",
+          "quote": "DISCHARGE ACTIVITIES:\n  Ad-lib."
+        }
+      ],
+      "negatives": [
+        {
+          "instruction": "Do not give any vaccine, including all live virus vaccines, for less than 11 months because of the IVIG.",
+          "quote": "instructed not to give any vaccine in less than 11 months because of IVIG, all the live virus vaccine"
+        }
+      ],
+      "warning_signs": [
+        {
+          "instruction": "If he gets any rashes or any fevers, go to the primary care doctor as soon as possible.",
+          "quote": "if he gets any rashes, any fevers, should go to primary care doctor as soon as possible"
+        }
+      ],
+      "unclear": [
+        "The vaccine instruction says \"not to give any vaccine in less than 11 months\"; it is not clear whether this means 11 months from now or from the IVIG, and the letter does not say.",
+        "q.6h. and q.d. are not in the glossary; they are read here as every 6 hours and once a day."
+      ]
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\nYour son is 14 months old. He was in hospital for Kawasaki disease. The letter says it is getting better (resolving).\nHis fever and rash have completely gone. He has no red eyes (conjunctivitis). He has no redness of the mouth lining (mucous membranes).\nHe had IVIG two times. His fever came back within 12 hours of the first dose. It did not come back after the second dose.\nHis heart scan (echocardiogram) was negative.\nHe is calmer. He is eating and drinking well by mouth.\n\n## What you need to do\n1. See your primary doctor in 2 to 3 days.\n2. Go to the cardiology visit for a repeat heart scan (echo) in 4 to 6 weeks.\n3. Give the medicines as listed below.\n4. His activities and food and drink by mouth are \"ad-lib\" (as he wants).\n5. Do not give him any vaccine for less than 11 months because of the IVIG. This includes all live virus vaccines.\n6. The letter does not say if the 11 months starts now or from the IVIG. Please ask your doctor.\n\n## Dates and medicines\n**Dates**\n- In 2 to 3 days: follow-up with your primary doctor.\n- In 4 to 6 weeks: cardiology follow-up with an echo.\n\n**Medicines (all new)**\n- Aspirin, high dose: 340 milligrams, every 6 hours, for 1 day. Then switch to low dose aspirin.\n- Aspirin, low dose: 40 milligrams, once a day, for 14 days. Start it after the 1 day of high dose.\n- Prevacid: 15 milligrams, by mouth, once a day. It protects his stomach and bowel (GI) from the aspirin.\n\n## Questions to ask your doctor\n- What is IVIG, and why does it stop vaccines for 11 months?\n- Does the 11 months start now or from the IVIG?\n- What does the heart scan (echocardiogram) show, and what will the next one check?\n- Which day do I switch from high dose to low dose aspirin?\n\n## When to get urgent help\n- If he gets any rashes or any fevers, go to your primary care doctor as soon as possible.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 83.9,
+          "reading_ease_target": 70,
+          "grade_level": 4.1,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": null,
+        "blocking_problems": [],
+        "attempt": 1
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 3541,
+        "output_tokens": 1480,
+        "cost_usd": 0.0426,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 14191,
+        "output_tokens": 1972,
+        "cost_usd": 0.07565,
+        "turns": 8
+      }
+    ],
+    "cost_usd": 0.11825,
+    "latency_s": 25.9
+  },
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "diagnoses",
+        "fact": "Kawasaki disease, getting better (resolving)",
+        "status": "kept",
+        "note": "Kawasaki disease, getting better (resolving)."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Fever and rash completely gone",
+        "status": "kept",
+        "note": "Fever and rash have completely gone."
+      },
+      {
+        "category": "medicines",
+        "fact": "High-dose aspirin 340 mg every 6 hours for 1 day",
+        "status": "kept",
+        "note": "340 mg every 6 hours for 1 day."
+      },
+      {
+        "category": "medicines",
+        "fact": "Then low-dose aspirin 40 mg once a day for 14 days",
+        "status": "kept",
+        "note": "40 mg once a day for 14 days, after the high dose."
+      },
+      {
+        "category": "medicines",
+        "fact": "Prevacid 15 mg by mouth once a day, to protect the stomach from the aspirin",
+        "status": "kept",
+        "note": "15 mg by mouth once a day, to protect the stomach/GI from aspirin."
+      },
+      {
+        "category": "dates",
+        "fact": "See the primary doctor in 2 to 3 days",
+        "status": "kept",
+        "note": "Primary doctor in 2 to 3 days."
+      },
+      {
+        "category": "dates",
+        "fact": "Heart scan (echo) follow-up with Cardiology in 4 to 6 weeks",
+        "status": "kept",
+        "note": "Cardiology echo follow-up in 4 to 6 weeks."
+      },
+      {
+        "category": "dates",
+        "fact": "No live virus vaccines for 11 months because of the IVIG treatment",
+        "status": "kept",
+        "note": "No vaccines for less than 11 months because of IVIG, including all live virus vaccines. This follows the letter's wording."
+      },
+      {
+        "category": "actions",
+        "fact": "If he gets a rash or fever, see the primary care doctor as soon as possible",
+        "status": "kept",
+        "note": "Rash or fever: go to the primary care doctor as soon as possible."
+      },
+      {
+        "category": "actions",
+        "fact": "Normal activity and diet",
+        "status": "kept",
+        "note": "Activities and diet are ad-lib (as he wants)."
+      },
+      {
+        "category": "negatives",
+        "fact": "Heart scan (echocardiogram) was negative",
+        "status": "kept",
+        "note": "Echocardiogram was negative."
+      },
+      {
+        "category": "negatives",
+        "fact": "No conjunctivitis",
+        "status": "kept",
+        "note": "No red eyes (conjunctivitis)."
+      },
+      {
+        "category": "negatives",
+        "fact": "No redness of the mouth and lips (mucous membranes)",
+        "status": "kept",
+        "note": "No redness of the mouth lining (mucous membranes)."
+      }
+    ],
+    "added": [
+      {
+        "text": "Medicines (all new)",
+        "kind": "medical_fact"
+      }
+    ],
+    "gold_reviewer": "claude-draft"
+  }
+}

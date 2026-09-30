@@ -1,0 +1,310 @@
+{
+  "job": {
+    "id": "mtsamples__mts_3061__sonnet__en__v",
+    "part": "mtsamples",
+    "letter_id": "mts_3061",
+    "file": "data/mtsamples/mts_3061.txt",
+    "kind": "faithfulness",
+    "model": "sonnet",
+    "language": "en",
+    "verifier": true,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "sonnet",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": true,
+    "status": "ok_after_retry",
+    "final_text": "## What this letter says\nYour doctor wrote to Dr. CD about you. You are 19 years old. You want to stop taking Dilantin. Your doctor asks Dr. CD to check you. Your doctor also asks for advice on whether you should keep taking it.\n\nThe letter says:\n- You were seen in 2005 for a possible seizure (suspected seizure activity).\n- You have had no seizure episodes for the past 2 1/2 years.\n- The 2005 note showed some doubt about what your episodes really were. It said doctors might reconsider the medicine.\n- Your nerve and brain check (neurological exam) is normal.\n- Your Dilantin level is slightly low at 12.5. The letter gives no unit or normal range.\n- You will probably need another EEG. An EEG is a recording of the brain's electrical activity.\n\nNo decision has been made about Dilantin.\n\n## What you need to do\n1. The letter does not tell you to stop or change Dilantin. No decision has been made.\n2. The letter asks Dr. CD to check you and give advice. It gives no date for this.\n3. Do not schedule a repeat EEG or other test before it is coordinated through the Health Center. The letter does not explain what the Health Center is.\n4. If blood tests are needed, the letter says to use ABC Diagnostic.\n\n## Dates and medicines\n- Dilantin: 300 mg, daily. You are taking it now. The letter does not change it. Dr. CD is asked to advise.\n- 2005: you were seen for a possible seizure.\n- The letter gives no date for the visit. It gives no appointment dates.\n\n## Questions to ask your doctor\n- Should I keep taking Dilantin?\n- Do I need another EEG? Who will set it up?\n- What does my Dilantin level of 12.5 mean?\n- What is the Health Center, and how do I reach it?\n\n## When to get urgent help\nThe letter does not list specific warning signs.\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "doctor_copy_to_patient",
+      "purpose": "A referring doctor asks Dr. CD to evaluate a 19-year-old man who wants to stop Dilantin, and to advise whether it should be continued. The letter also asks that any repeat EEG and testing be coordinated through the Health Center.",
+      "findings": [
+        {
+          "statement": "He was seen in 2005 for suspected seizure activity.",
+          "certainty": "possible",
+          "quote": "has seen you in 2005 for suspected seizure activity"
+        },
+        {
+          "statement": "He has had no seizure episodes for the past 2 1/2 years.",
+          "certainty": "confirmed",
+          "quote": "has been seizure episode free for the past 2 1/2 years"
+        },
+        {
+          "statement": "The 2005 note showed some discrepancy about the true nature of his episodes, and there was consideration of reconsidering medication use.",
+          "certainty": "possible",
+          "quote": "there was some discrepancy as to the true nature of his episodes to the emergency room and there was consideration to reconsider medication use"
+        },
+        {
+          "statement": "His neurological physical exam is normal.",
+          "certainty": "confirmed",
+          "quote": "His physical exam, neurologically, is normal at this time."
+        },
+        {
+          "statement": "His Dilantin level is slightly low at 12.5.",
+          "certainty": "confirmed",
+          "quote": "His Dilantin level is slightly low at 12.5."
+        },
+        {
+          "statement": "A repeat EEG will probably be needed.",
+          "certainty": "possible",
+          "quote": "I understand this will probably entail repeating his EEG"
+        }
+      ],
+      "medicines": [
+        {
+          "name": "Dilantin",
+          "dose": "300 mg",
+          "how_often": "daily",
+          "change": "continue",
+          "details": "He is currently taking it and has asked to come off it. The letter asks Dr. CD to advise whether to continue it. No decision has been made.",
+          "quote": "continuing on Dilantin 300 mg daily"
+        }
+      ],
+      "dates": [
+        {
+          "what": "He was seen by Dr. CD for suspected seizure activity",
+          "when": "2005",
+          "quote": "has seen you in 2005 for suspected seizure activity"
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Dr. CD is asked to evaluate him and recommend whether to continue Dilantin.",
+          "quote": "I will appreciate your evaluation and recommendation as to whether we need to continue the Dilantin at this time."
+        },
+        {
+          "instruction": "Coordinate any repeat EEG through the Health Center.",
+          "quote": "please coordinate this through Health Center"
+        },
+        {
+          "instruction": "If laboratory tests are needed, use ABC Diagnostic.",
+          "quote": "If you require any laboratory, we use ABC Diagnostic"
+        },
+        {
+          "instruction": "Coordinate any further testing through the Health Center before scheduling.",
+          "quote": "any further testing that is needed should be coordinated at Health Center prior to scheduling"
+        }
+      ],
+      "negatives": [],
+      "warning_signs": [],
+      "unclear": [
+        "The letter gives no unit or reference range for the Dilantin level of 12.5.",
+        "The letter gives no date for the visit (it says only \"today\") and no appointment dates.",
+        "The letter does not say whether Dilantin will be stopped or continued. It asks Dr. CD for a recommendation.",
+        "\"Health Center\" is not explained."
+      ]
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\nYour doctor wrote to Dr. CD about you. You are 19 years old. You want to stop taking Dilantin. Your doctor asks Dr. CD to see you. Your doctor wants advice on whether you should keep taking it.\n\nThe letter says:\n- You were seen in 2005 for a possible seizure (suspected seizure activity).\n- You have had no seizure episodes for the past 2 1/2 years.\n- The 2005 note showed some doubt about what your episodes really were. It said your doctors might reconsider the medicine.\n- Your nerve and brain check (neurological exam) is normal.\n- Your Dilantin level is slightly low at 12.5. The letter gives no unit or normal range.\n- You will probably need another EEG. An EEG is a recording of the brain's electrical activity.\n\nNo decision has been made about Dilantin.\n\n## What you need to do\n1. Keep taking Dilantin 300 mg daily for now. The letter says to continue it.\n2. Do not stop Dilantin until a doctor tells you to. No decision has been made.\n3. Expect that Dr. CD will see you and give advice.\n4. Do not book any repeat EEG or other test yourself. The letter says tests should be coordinated through the Health Center before they are scheduled.\n5. If blood tests are needed, the letter says to use ABC Diagnostic.\n\n## Dates and medicines\n- Dilantin: 300 mg, daily. The plan is to continue for now. You asked to come off it. Dr. CD is asked to advise.\n- 2005: you were seen by Dr. CD for a possible seizure.\n- The letter gives no date for this visit and no appointment dates.\n\n## Questions to ask your doctor\n- Should I keep taking Dilantin, or can I stop?\n- Do I need another EEG? Who will set it up?\n- What does my Dilantin level of 12.5 mean?\n- What is the Health Center, and how do I reach it?\n\n## When to get urgent help\nThe letter does not list specific warning signs.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 84.0,
+          "reading_ease_target": 70,
+          "grade_level": 3.6,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [
+            {
+              "kind": "advice",
+              "severity": "major",
+              "explanation_says": "Keep taking Dilantin 300 mg daily for now. The letter says to continue it. / Do not stop Dilantin until a doctor tells you to.",
+              "letter_says": "Patient is continuing on Dilantin 300 mg daily; the doctor asks Dr. CD whether to continue. The letter does not instruct the patient to continue or not stop.",
+              "why": "The explanation presents an instruction as coming from the letter, but the letter leaves the decision open and gives the patient no such instruction."
+            },
+            {
+              "kind": "changed",
+              "severity": "major",
+              "explanation_says": "Dr. CD saw you in 2005 for a possible seizure; Expect that Dr. CD will see you and give advice.",
+              "letter_says": "Thank you for seeing Mr. XYZ... who has seen you in 2005; the doctor asks for evaluation and recommendation.",
+              "why": "The letter does not say when Dr. CD will see the patient. 'Expect Dr. CD will see you' turns a request into a certainty."
+            },
+            {
+              "kind": "changed",
+              "severity": "minor",
+              "explanation_says": "The 2005 note showed some doubt... It said your doctors might reconsider the medicine.",
+              "letter_says": "There was some discrepancy as to the true nature of his episodes to the emergency room and there was consideration to reconsider medication use.",
+              "why": "The letter mentions a discrepancy in the emergency room accounts, and that reconsidering medication was considered. The explanation slightly changes this."
+            },
+            {
+              "kind": "dropped",
+              "severity": "minor",
+              "explanation_says": "Nothing about the Health Center coordinating the EEG was explained beyond 'do not book'.",
+              "letter_says": "Please coordinate the EEG through Health Center.",
+              "why": "The explanation says 'do not book yourself', which is an added instruction, and the letter's request is directed at Dr. CD, not the patient."
+            },
+            {
+              "kind": "added",
+              "severity": "minor",
+              "explanation_says": "If blood tests are needed, the letter says to use ABC Diagnostic.",
+              "letter_says": "If you require any laboratory, we use ABC Diagnostic.",
+              "why": "The instruction is directed at Dr. CD, not the patient."
+            }
+          ],
+          "summary": "The explanation adds instructions to the patient (keep taking Dilantin, don't stop, don't book tests) that the letter does not give. It also presents Dr. CD's visit as certain and slightly changes some details about the 2005 note. Other content matches the letter."
+        },
+        "blocking_problems": [
+          "[advice] The explanation presents an instruction as coming from the letter, but the letter leaves the decision open and gives the patient no such instruction. (explanation: 'Keep taking Dilantin 300 mg daily for now. The letter says to continue it. / Do not stop Dilantin until a doctor tells you to.'; letter: 'Patient is continuing on Dilantin 300 mg daily; the doctor asks Dr. CD whether to continue. The letter does not instruct the patient to continue or not stop.')",
+          "[changed] The letter does not say when Dr. CD will see the patient. 'Expect Dr. CD will see you' turns a request into a certainty. (explanation: 'Dr. CD saw you in 2005 for a possible seizure; Expect that Dr. CD will see you and give advice.'; letter: 'Thank you for seeing Mr. XYZ... who has seen you in 2005; the doctor asks for evaluation and recommendation.')"
+        ],
+        "attempt": 1
+      },
+      {
+        "explanation": "## What this letter says\nYour doctor wrote to Dr. CD about you. You are 19 years old. You want to stop taking Dilantin. Your doctor asks Dr. CD to check you. Your doctor also asks for advice on whether you should keep taking it.\n\nThe letter says:\n- You were seen in 2005 for a possible seizure (suspected seizure activity).\n- You have had no seizure episodes for the past 2 1/2 years.\n- The 2005 note showed some doubt about what your episodes really were. It said doctors might reconsider the medicine.\n- Your nerve and brain check (neurological exam) is normal.\n- Your Dilantin level is slightly low at 12.5. The letter gives no unit or normal range.\n- You will probably need another EEG. An EEG is a recording of the brain's electrical activity.\n\nNo decision has been made about Dilantin.\n\n## What you need to do\n1. The letter does not tell you to stop or change Dilantin. No decision has been made.\n2. The letter asks Dr. CD to check you and give advice. It gives no date for this.\n3. Do not schedule a repeat EEG or other test before it is coordinated through the Health Center. The letter does not explain what the Health Center is.\n4. If blood tests are needed, the letter says to use ABC Diagnostic.\n\n## Dates and medicines\n- Dilantin: 300 mg, daily. You are taking it now. The letter does not change it. Dr. CD is asked to advise.\n- 2005: you were seen for a possible seizure.\n- The letter gives no date for the visit. It gives no appointment dates.\n\n## Questions to ask your doctor\n- Should I keep taking Dilantin?\n- Do I need another EEG? Who will set it up?\n- What does my Dilantin level of 12.5 mean?\n- What is the Health Center, and how do I reach it?\n\n## When to get urgent help\nThe letter does not list specific warning signs.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 84.6,
+          "reading_ease_target": 70,
+          "grade_level": 3.5,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [
+            {
+              "kind": "changed",
+              "severity": "minor",
+              "explanation_says": "The 2005 note showed some doubt about what your episodes really were. It said doctors might reconsider the medicine.",
+              "letter_says": "Upon reviewing your 2005 note there was some discrepancy as to the true nature of his episodes to the emergency room and there was consideration to reconsider medication use.",
+              "why": "Broadly faithful, but 'It said doctors might reconsider' is slightly stronger than 'there was consideration'. Also the discrepancy concerned the episodes as reported to the emergency room. Minor wording."
+            },
+            {
+              "kind": "added",
+              "severity": "minor",
+              "explanation_says": "Do not schedule a repeat EEG or other test before it is coordinated through the Health Center.",
+              "letter_says": "please coordinate this through Health Center... any further testing that is needed should be coordinated at Health Center prior to scheduling.",
+              "why": "This is an instruction from the referring doctor to Dr. CD, not to the patient. The explanation frames it as a patient instruction, which is a small change of audience. It is largely consistent with the letter."
+            },
+            {
+              "kind": "changed",
+              "severity": "minor",
+              "explanation_says": "You will probably need another EEG.",
+              "letter_says": "I understand this will probably entail repeating his EEG",
+              "why": "The letter says the evaluation will probably involve repeating the EEG. This is close enough, but it is stated as a need rather than the doctor's expectation. Minor."
+            }
+          ],
+          "summary": "The explanation is largely faithful. It has only minor issues of wording and audience. It keeps the key facts: Dilantin 300 mg daily, 2 1/2 years seizure-free, level 12.5 (slightly low), normal neurological exam, probable repeat EEG, and that no decision has been made. There are no major errors."
+        },
+        "blocking_problems": [],
+        "attempt": 2
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 3191,
+        "output_tokens": 1222,
+        "cost_usd": 0.03464,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 11960,
+        "output_tokens": 1636,
+        "cost_usd": 0.06081,
+        "turns": 4
+      },
+      {
+        "step": "verify",
+        "input_tokens": 3191,
+        "output_tokens": 880,
+        "cost_usd": 0.03254,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 10071,
+        "output_tokens": 1670,
+        "cost_usd": 0.06828,
+        "turns": 2
+      },
+      {
+        "step": "verify",
+        "input_tokens": 3155,
+        "output_tokens": 662,
+        "cost_usd": 0.02789,
+        "turns": 2
+      }
+    ],
+    "cost_usd": 0.22416,
+    "latency_s": 51.7
+  },
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "diagnoses",
+        "fact": "Suspected seizures, seen in 2005; some doubt about the true nature of the episodes",
+        "status": "kept",
+        "note": "Says he was seen in 2005 for a possible seizure and that there was doubt about what the episodes really were."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "No seizures for the past 2 1/2 years",
+        "status": "kept",
+        "note": "Says there have been no seizure episodes for the past 2 1/2 years."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Neurological examination normal",
+        "status": "kept",
+        "note": "Says the neurological exam is normal."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Dilantin level slightly low at 12.5",
+        "status": "kept",
+        "note": "Says the Dilantin level is slightly low at 12.5."
+      },
+      {
+        "category": "medicines",
+        "fact": "Currently taking Dilantin 300 mg daily",
+        "status": "kept",
+        "note": "Says Dilantin 300 mg daily, currently being taken."
+      },
+      {
+        "category": "medicines",
+        "fact": "Patient wants to stop Dilantin; the decision is waiting for the neurologist's advice",
+        "status": "kept",
+        "note": "Says the patient wants to stop Dilantin and that advice is being sought from Dr. CD. It also says no decision has been made."
+      },
+      {
+        "category": "actions",
+        "fact": "Neurologist asked to advise whether Dilantin should continue",
+        "status": "kept",
+        "note": "Says the doctor asks Dr. CD for advice on whether to keep taking Dilantin."
+      },
+      {
+        "category": "actions",
+        "fact": "Probably a repeat EEG, arranged through the Health Center",
+        "status": "kept",
+        "note": "Says he will probably need another EEG and that it should be coordinated through the Health Center."
+      },
+      {
+        "category": "actions",
+        "fact": "Any lab tests through ABC Diagnostic, coordinated at the Health Center before scheduling",
+        "status": "kept",
+        "note": "Says to use ABC Diagnostic for lab work and that tests should be coordinated through the Health Center before scheduling. It says 'blood tests' where the letter says 'laboratory', which is a small narrowing but not a change in meaning."
+      },
+      {
+        "category": "negatives",
+        "fact": "No decision has been made to stop Dilantin",
+        "status": "kept",
+        "note": "Says outright that no decision has been made about Dilantin and that the letter does not tell him to stop or change it."
+      }
+    ],
+    "added": [],
+    "gold_reviewer": "claude-draft"
+  }
+}

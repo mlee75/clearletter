@@ -1,0 +1,270 @@
+{
+  "job": {
+    "id": "mtsamples__mts_3898__sonnet__en__v",
+    "part": "mtsamples",
+    "letter_id": "mts_3898",
+    "file": "data/mtsamples/mts_3898.txt",
+    "kind": "faithfulness",
+    "model": "sonnet",
+    "language": "en",
+    "verifier": true,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "sonnet",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": true,
+    "status": "ok",
+    "final_text": "## What this letter says\nYou were in hospital with a lung infection (pneumonia). Your oxygen was low (hypoxia). Your oxygen levels got better before you left.\n- The doctors think you may have a viral kind of pneumonia (atypical pneumonia). This is possible, not certain.\n- The lung specialist was not sure of the exact cause. A virus was the most likely cause.\n- A CT scan showed no specific problem in one area (no specific focal pathology).\n- Your fever broke 18 hours before you left. Your strength and health got better.\n- The doctors also suspect mild stress-induced adrenal insufficiency. This is possible, not certain.\n- You have rheumatoid arthritis.\n- Methotrexate is known on some occasions to cause pneumonitis.\n- A test for C. difficile toxin was ordered. The result is pending. This means it is not known yet.\n\n## What you need to do\n1. Finish your azithromycin. You have two pills left at home.\n2. Keep taking prednisone at the higher dose of 20 mg.\n3. See Dr. X in two to three days.\n4. Methotrexate was held. The letter does not say whether to restart it. Your doctors will ask your rheumatologist.\n\n## Dates and medicines\n- Follow up with Dr. X: in two to three days.\n- Last Remicade dose: June.\n- Azithromycin: keep taking it until it is finished. The letter gives no dose or how often.\n- Prednisone: 20 mg per day. Keep taking this higher dose. It was 5 mg per day before. The letter does not say how often to take the 20 mg.\n- Methotrexate: your usual dose is 20 mg every week. It was held this past Friday. The rheumatologist will be asked whether you should continue it.\n- Remicade: every eight weeks. The letter gives no change.\n\n## Questions to ask your doctor\n- When will I get the C. difficile toxin test result?\n- Should I take methotrexate again, and when will I know?\n- How often should I take prednisone 20 mg, and for how long?\n- When is my next Remicade dose?\n\n## When to get urgent help\nThe letter does not list specific warning signs.\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "doctor_copy_to_patient",
+      "purpose": "Discharge summary after a hospital stay for pneumonia with low oxygen levels, in a patient with rheumatoid arthritis.",
+      "findings": [
+        {
+          "statement": "Atypical pneumonia, suspected to be viral",
+          "certainty": "possible",
+          "quote": "Atypical pneumonia, suspected viral."
+        },
+        {
+          "statement": "Hypoxia (low oxygen levels) was a discharge diagnosis; oxygen saturations improved before discharge",
+          "certainty": "confirmed",
+          "quote": "O2 saturations improved"
+        },
+        {
+          "statement": "Rheumatoid arthritis",
+          "certainty": "confirmed",
+          "quote": "Rheumatoid arthritis."
+        },
+        {
+          "statement": "Mild stress-induced adrenal insufficiency is suspected",
+          "certainty": "possible",
+          "quote": "Suspected mild stress-induced adrenal insufficiency."
+        },
+        {
+          "statement": "CT scan showed no specific focal pathology",
+          "certainty": "confirmed",
+          "quote": "CT scan was performed and no specific focal pathology was seen."
+        },
+        {
+          "statement": "The pulmonologist was uncertain of the exact cause, but a viral cause was most highly suspected",
+          "certainty": "possible",
+          "quote": "viral etiology was most highly suspected"
+        },
+        {
+          "statement": "C. difficile toxin test result is pending at discharge",
+          "certainty": "pending",
+          "quote": "C. difficile toxin was ordered, although that is pending at the time of discharge."
+        },
+        {
+          "statement": "Methotrexate is known on some occasions to cause pneumonitis",
+          "certainty": "confirmed",
+          "quote": "Methotrexate is known on some occasions to cause pneumonitis."
+        },
+        {
+          "statement": "Fever broke 18 hours before discharge and overall strength and clinical status improved",
+          "certainty": "confirmed",
+          "quote": "Her fever broke 18 hours prior to discharge"
+        }
+      ],
+      "medicines": [
+        {
+          "name": "Azithromycin",
+          "dose": "",
+          "how_often": "",
+          "change": "continue",
+          "details": "Instructed to finish it. She has two pills left at home.",
+          "quote": "She was instructed to finish azithromycin.  She has two pills left at home."
+        },
+        {
+          "name": "Prednisone",
+          "dose": "20 mg",
+          "how_often": "per day",
+          "change": "continue",
+          "details": "Continue the increased dose; up from 5 mg per day.",
+          "quote": "She is to continue the increased dose of prednisone at 20 mg (up from 5 mg per day)."
+        },
+        {
+          "name": "Methotrexate",
+          "dose": "20 mg",
+          "how_often": "every week",
+          "change": "other",
+          "details": "Held this past Friday. The rheumatologist will be consulted on whether to continue it. Usual dose is 20 mg every week.",
+          "quote": "We will consult her rheumatologist as to whether to continue her methotrexate, which we held this past Friday."
+        },
+        {
+          "name": "Remicade",
+          "dose": "",
+          "how_often": "every eight weeks",
+          "change": "continue",
+          "details": "Last dose was in June. The letter gives no change to this medicine.",
+          "quote": "Remicade every eight weeks.  Her last dose of Remicade was in the month of June."
+        }
+      ],
+      "dates": [
+        {
+          "what": "Follow up with Dr. X",
+          "when": "in two to three days",
+          "quote": "She is to follow up with Dr. X in two to three days."
+        },
+        {
+          "what": "Last dose of Remicade",
+          "when": "June",
+          "quote": "Her last dose of Remicade was in the month of June."
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Finish the azithromycin",
+          "quote": "She was instructed to finish azithromycin."
+        },
+        {
+          "instruction": "Follow up with Dr. X in two to three days",
+          "quote": "She is to follow up with Dr. X in two to three days."
+        },
+        {
+          "instruction": "Continue prednisone at the increased dose of 20 mg",
+          "quote": "She is to continue the increased dose of prednisone at 20 mg"
+        }
+      ],
+      "negatives": [],
+      "warning_signs": [],
+      "unclear": [
+        "The letter gives no dose or frequency for azithromycin.",
+        "The letter does not say whether to restart methotrexate. The rheumatologist will be consulted.",
+        "The letter does not give an exact date for when methotrexate was held (\"this past Friday\") or for the discharge date.",
+        "Not stated how often or at what dose prednisone is to be taken beyond \"20 mg\" (the letter says \"per day\" only for the old 5 mg dose)."
+      ]
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\nYou were in hospital with a lung infection (pneumonia). Your oxygen was low (hypoxia). Your oxygen levels got better before you left.\n- The doctors think you may have a viral kind of pneumonia (atypical pneumonia). This is possible, not certain.\n- The lung specialist was not sure of the exact cause. A virus was the most likely cause.\n- A CT scan showed no specific problem in one area (no specific focal pathology).\n- Your fever broke 18 hours before you left. Your strength and health got better.\n- The doctors also suspect mild stress-induced adrenal insufficiency. This is possible, not certain.\n- You have rheumatoid arthritis.\n- Methotrexate is known on some occasions to cause pneumonitis.\n- A test for C. difficile toxin was ordered. The result is pending. This means it is not known yet.\n\n## What you need to do\n1. Finish your azithromycin. You have two pills left at home.\n2. Keep taking prednisone at the higher dose of 20 mg.\n3. See Dr. X in two to three days.\n4. Methotrexate was held. The letter does not say whether to restart it. Your doctors will ask your rheumatologist.\n\n## Dates and medicines\n- Follow up with Dr. X: in two to three days.\n- Last Remicade dose: June.\n- Azithromycin: keep taking it until it is finished. The letter gives no dose or how often.\n- Prednisone: 20 mg per day. Keep taking this higher dose. It was 5 mg per day before. The letter does not say how often to take the 20 mg.\n- Methotrexate: your usual dose is 20 mg every week. It was held this past Friday. The rheumatologist will be asked whether you should continue it.\n- Remicade: every eight weeks. The letter gives no change.\n\n## Questions to ask your doctor\n- When will I get the C. difficile toxin test result?\n- Should I take methotrexate again, and when will I know?\n- How often should I take prednisone 20 mg, and for how long?\n- When is my next Remicade dose?\n\n## When to get urgent help\nThe letter does not list specific warning signs.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 75.8,
+          "reading_ease_target": 70,
+          "grade_level": 4.5,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [
+            {
+              "kind": "added",
+              "severity": "minor",
+              "explanation_says": "A CT scan showed no specific problem in one area (no specific focal pathology).",
+              "letter_says": "CT scan was performed and no specific focal pathology was seen.",
+              "why": "\"In one area\" is a loose gloss that slightly changes the meaning. The letter says no specific focal (localized) abnormality was seen."
+            }
+          ],
+          "summary": "The explanation matches the letter closely. Doses, dates, uncertainty (suspected viral pneumonia, suspected adrenal insufficiency, pending C. difficile test) and the follow-up are all accurate. The only issue is a minor wording problem in how it describes the CT result."
+        },
+        "blocking_problems": [],
+        "attempt": 1
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 3687,
+        "output_tokens": 1598,
+        "cost_usd": 0.04613,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 14535,
+        "output_tokens": 2171,
+        "cost_usd": 0.08058,
+        "turns": 7
+      },
+      {
+        "step": "verify",
+        "input_tokens": 3695,
+        "output_tokens": 776,
+        "cost_usd": 0.03449,
+        "turns": 2
+      }
+    ],
+    "cost_usd": 0.16119,
+    "latency_s": 36.7
+  },
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "diagnoses",
+        "fact": "Atypical pneumonia, suspected viral",
+        "status": "kept",
+        "note": "Says possibly viral atypical pneumonia, not certain."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Low oxygen levels (hypoxia)",
+        "status": "kept",
+        "note": "Says oxygen was low (hypoxia)."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Rheumatoid arthritis",
+        "status": "kept",
+        "note": "Says rheumatoid arthritis."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Suspected mild adrenal insufficiency caused by the stress of the pneumonia",
+        "status": "kept",
+        "note": "Says suspected mild stress-induced adrenal insufficiency. It does not directly name the pneumonia as the stress, but this matches the letter's wording and keeps the uncertainty."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "C. difficile stool test result still pending",
+        "status": "kept",
+        "note": "Says the C. difficile toxin test result is pending."
+      },
+      {
+        "category": "medicines",
+        "fact": "Finish azithromycin (two pills left at home)",
+        "status": "kept",
+        "note": "Says to finish azithromycin, with two pills left at home."
+      },
+      {
+        "category": "medicines",
+        "fact": "Continue prednisone at the increased dose of 20 mg (up from 5 mg per day)",
+        "status": "kept",
+        "note": "Says to keep taking prednisone at 20 mg, up from 5 mg per day."
+      },
+      {
+        "category": "medicines",
+        "fact": "Methotrexate 20 mg weekly is on hold; the rheumatologist will be asked whether to continue it",
+        "status": "kept",
+        "note": "Says methotrexate 20 mg weekly was held and the rheumatologist will be asked whether to continue it."
+      },
+      {
+        "category": "medicines",
+        "fact": "Remicade every eight weeks (last dose in June)",
+        "status": "kept",
+        "note": "Says Remicade every eight weeks, last dose in June."
+      },
+      {
+        "category": "dates",
+        "fact": "Follow up with Dr. X in two to three days",
+        "status": "kept",
+        "note": "Says to see Dr. X in two to three days."
+      },
+      {
+        "category": "negatives",
+        "fact": "CT scan showed no specific focal problem",
+        "status": "kept",
+        "note": "Says the CT scan showed no specific focal problem."
+      }
+    ],
+    "added": [],
+    "gold_reviewer": "claude-draft"
+  }
+}

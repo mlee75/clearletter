@@ -1,0 +1,197 @@
+{
+  "job": {
+    "id": "languages__syn_18__sonnet__fr__v",
+    "part": "languages",
+    "letter_id": "syn_18",
+    "file": "data/synthetic/syn_18.txt",
+    "kind": "faithfulness",
+    "model": "sonnet",
+    "language": "fr",
+    "verifier": true,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "sonnet",
+    "backend": "claude-code",
+    "language": "fr",
+    "country": "uk",
+    "use_verifier": true,
+    "status": "ok",
+    "final_text": "## Ce que dit cette lettre\nVous avez fait une prise de sang pour la thyroïde (TFT) le 25 septembre 2026.\nVotre taux de TSH est de 7,8 mU/L. La normale est de 0,3 à 4,2.\nLa TSH est une hormone qui sert à contrôler la thyroïde.\nCela veut dire que votre dose de lévothyroxine est trop faible.\nVotre dose va donc augmenter.\nVous devez refaire une prise de sang.\n\n## Ce que vous devez faire\n1. Allez chercher votre nouvelle ordonnance de lévothyroxine à la pharmacie. Elle est prête.\n2. Prenez chaque jour 1 comprimé de 25 microgrammes et 1 comprimé de 50 microgrammes.\n3. Prenez la lévothyroxine à jeun. Attendez au moins 30 minutes avant le petit-déjeuner ou d'autres médicaments.\n4. Laissez au moins 4 heures entre la lévothyroxine et les comprimés de fer ou de calcium.\n5. Ne prenez pas la lévothyroxine en même temps que des comprimés de fer ou de calcium.\n6. Refaites une prise de sang de la thyroïde (TFT) dans 6 à 8 semaines.\n\n## Dates et médicaments\n- 25 septembre 2026 : date de votre prise de sang (TFT).\n- Du 6 novembre 2026 au 20 novembre 2026 : nouvelle prise de sang (TFT).\n- Lévothyroxine : 75 microgrammes, 1 fois par jour. La dose augmente.\n- Avant : 50 microgrammes.\n- Maintenant : 1 comprimé de 25 microgrammes et 1 comprimé de 50 microgrammes chaque jour.\n\n## Questions à poser à votre médecin\n- À quoi sert la lévothyroxine ?\n- Pourquoi ma dose doit-elle augmenter ?\n- Qui organise ma prochaine prise de sang ?\n\n## Quand obtenir de l'aide en urgence\nLa lettre ne donne pas de signes d'alerte particuliers.\n\nSi vous êtes inquiet et que ce n'est pas une urgence, appelez le NHS 111. En cas d'urgence, appelez le 999.\n\n---\n*Cette explication a été faite par un programme informatique pour vous aider à lire votre lettre. Elle peut contenir des erreurs. Elle ne remplace pas votre médecin, votre infirmier ou votre pharmacien. Suivez toujours la lettre et posez-leur vos questions si quelque chose n'est pas clair.*\n",
+    "facts": {
+      "reader": "patient",
+      "purpose": "To tell the patient her thyroid blood test shows her levothyroxine dose is too low, that the dose is being increased, and that she needs a repeat blood test.",
+      "findings": [
+        {
+          "statement": "TSH is 7.8 mU/L (normal range 0.3 to 4.2) on thyroid blood test (TFT).",
+          "certainty": "confirmed",
+          "quote": "showed that your TSH is 7.8 mU/L (normal range 0.3 to 4.2)"
+        },
+        {
+          "statement": "Your dose of levothyroxine is too low.",
+          "certainty": "confirmed",
+          "quote": "This means your dose of levothyroxine is too low."
+        }
+      ],
+      "medicines": [
+        {
+          "name": "Levothyroxine",
+          "dose": "75 mcg",
+          "how_often": "once daily",
+          "change": "increase",
+          "details": "Old dose was 50 mcg. New prescription is 25 mcg tablets and 50 mcg tablets: take one of each every day. Prescription is ready to collect from your pharmacy.",
+          "quote": "Increase levothyroxine from 50 mcg (micrograms) to 75 mcg once daily."
+        }
+      ],
+      "dates": [
+        {
+          "what": "Date of thyroid blood test (TFT)",
+          "when": "25 September 2026",
+          "quote": "Your thyroid blood test (TFT) on 25/09/2026"
+        },
+        {
+          "what": "Repeat TFT blood test due in 6 to 8 weeks, between these dates (start)",
+          "when": "6 November 2026",
+          "quote": "between 6 November and 20 November 2026"
+        },
+        {
+          "what": "Repeat TFT blood test due in 6 to 8 weeks, between these dates (end)",
+          "when": "20 November 2026",
+          "quote": "between 6 November and 20 November 2026"
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Collect your new levothyroxine prescription from your pharmacy.",
+          "quote": "Your new prescription is ready to collect from your pharmacy."
+        },
+        {
+          "instruction": "Take one 25 mcg tablet and one 50 mcg tablet every day.",
+          "quote": "take one of each every day"
+        },
+        {
+          "instruction": "Take levothyroxine on an empty stomach, at least 30 minutes before breakfast or other medicines.",
+          "quote": "Take levothyroxine on an empty stomach, at least 30 minutes before breakfast or other medicines."
+        },
+        {
+          "instruction": "Leave at least 4 hours between levothyroxine and iron or calcium tablets.",
+          "quote": "Leave at least 4 hours between them."
+        },
+        {
+          "instruction": "Have a repeat TFT blood test in 6 to 8 weeks.",
+          "quote": "Please have a repeat TFT blood test in 6 to 8 weeks"
+        }
+      ],
+      "negatives": [
+        {
+          "instruction": "Do not take levothyroxine at the same time as iron or calcium tablets.",
+          "quote": "Do not take it at the same time as iron or calcium tablets."
+        }
+      ],
+      "warning_signs": [],
+      "unclear": []
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## Ce que dit cette lettre\nVous avez fait une prise de sang pour la thyroïde (TFT) le 25 septembre 2026.\nVotre taux de TSH est de 7,8 mU/L. La normale est de 0,3 à 4,2.\nLa TSH est une hormone qui sert à contrôler la thyroïde.\nCela veut dire que votre dose de lévothyroxine est trop faible.\nVotre dose va donc augmenter.\nVous devez refaire une prise de sang.\n\n## Ce que vous devez faire\n1. Allez chercher votre nouvelle ordonnance de lévothyroxine à la pharmacie. Elle est prête.\n2. Prenez chaque jour 1 comprimé de 25 microgrammes et 1 comprimé de 50 microgrammes.\n3. Prenez la lévothyroxine à jeun. Attendez au moins 30 minutes avant le petit-déjeuner ou d'autres médicaments.\n4. Laissez au moins 4 heures entre la lévothyroxine et les comprimés de fer ou de calcium.\n5. Ne prenez pas la lévothyroxine en même temps que des comprimés de fer ou de calcium.\n6. Refaites une prise de sang de la thyroïde (TFT) dans 6 à 8 semaines.\n\n## Dates et médicaments\n- 25 septembre 2026 : date de votre prise de sang (TFT).\n- Du 6 novembre 2026 au 20 novembre 2026 : nouvelle prise de sang (TFT).\n- Lévothyroxine : 75 microgrammes, 1 fois par jour. La dose augmente.\n- Avant : 50 microgrammes.\n- Maintenant : 1 comprimé de 25 microgrammes et 1 comprimé de 50 microgrammes chaque jour.\n\n## Questions à poser à votre médecin\n- À quoi sert la lévothyroxine ?\n- Pourquoi ma dose doit-elle augmenter ?\n- Qui organise ma prochaine prise de sang ?\n\n## Quand obtenir de l'aide en urgence\nLa lettre ne donne pas de signes d'alerte particuliers.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "fr",
+          "reading_ease": 91.8,
+          "reading_ease_target": 70,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [],
+          "summary": "The explanation matches the letter. It gives the same TSH value and normal range. It gives the same dose change (50 mcg to 75 mcg once daily, as one 25 mcg tablet plus one 50 mcg tablet). The timing rules for levothyroxine, the 4-hour gap from iron or calcium, and the repeat test dates (6 to 20 November 2026) are also the same. The only omission is the practice phone number, which is minor. Nothing was added, and no warning signs were invented."
+        },
+        "blocking_problems": [],
+        "attempt": 1
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 3226,
+        "output_tokens": 1131,
+        "cost_usd": 0.0331,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 11823,
+        "output_tokens": 1907,
+        "cost_usd": 0.06583,
+        "turns": 5
+      },
+      {
+        "step": "verify",
+        "input_tokens": 3227,
+        "output_tokens": 461,
+        "cost_usd": 0.02444,
+        "turns": 2
+      }
+    ],
+    "cost_usd": 0.12337,
+    "latency_s": 29.1
+  },
+  "back_translation": "## What this letter says\nYou had a blood test for the thyroid (TFT) on 25 September 2026.\nYour TSH level is 7.8 mU/L. Normal is 0.3 to 4.2.\nTSH is a hormone that is used to control the thyroid.\nThis means that your dose of levothyroxine is too low.\nYour dose will therefore increase.\nYou must have another blood test.\n\n## What you must do\n1. Go and collect your new prescription for levothyroxine at the pharmacy. It is ready.\n2. Take each day 1 tablet of 25 micrograms and 1 tablet of 50 micrograms.\n3. Take the levothyroxine on an empty stomach. Wait at least 30 minutes before breakfast or other medicines.\n4. Leave at least 4 hours between the levothyroxine and iron or calcium tablets.\n5. Do not take the levothyroxine at the same time as iron or calcium tablets.\n6. Have another thyroid blood test (TFT) in 6 to 8 weeks.\n\n## Dates and medicines\n- 25 September 2026: date of your blood test (TFT).\n- From 6 November 2026 to 20 November 2026: new blood test (TFT).\n- Levothyroxine: 75 micrograms, 1 time per day. The dose increases.\n- Before: 50 micrograms.\n- Now: 1 tablet of 25 micrograms and 1 tablet of 50 micrograms each day.\n\n## Questions to ask your doctor\n- What is levothyroxine for?\n- Why must my dose increase?\n- Who organises my next blood test?\n\n## When to get urgent help\nThe letter does not give any particular warning signs.",
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "diagnoses",
+        "fact": "TSH 7.8 mU/L (normal range 0.3 to 4.2): the levothyroxine dose is too low",
+        "status": "kept",
+        "note": "States TSH 7.8 mU/L, normal range 0.3 to 4.2, and that the levothyroxine dose is too low."
+      },
+      {
+        "category": "medicines",
+        "fact": "Increase levothyroxine from 50 micrograms to 75 micrograms once daily",
+        "status": "kept",
+        "note": "Dates and medicines section: 75 micrograms once a day, up from 50 micrograms."
+      },
+      {
+        "category": "medicines",
+        "fact": "New prescription: take one 25 microgram tablet and one 50 microgram tablet every day",
+        "status": "kept",
+        "note": "One 25 microgram tablet and one 50 microgram tablet each day."
+      },
+      {
+        "category": "medicines",
+        "fact": "Take on an empty stomach, at least 30 minutes before breakfast or other medicines",
+        "status": "kept",
+        "note": "Empty stomach, at least 30 minutes before breakfast or other medicines. The wording 'Wait at least 30 minutes before' is a little awkward, but the meaning is the same."
+      },
+      {
+        "category": "medicines",
+        "fact": "Leave at least 4 hours between levothyroxine and iron or calcium tablets",
+        "status": "kept",
+        "note": "At least 4 hours between levothyroxine and iron or calcium tablets."
+      },
+      {
+        "category": "dates",
+        "fact": "Thyroid blood test on 25 September 2026",
+        "status": "kept",
+        "note": "Blood test on 25 September 2026."
+      },
+      {
+        "category": "dates",
+        "fact": "Repeat thyroid blood test in 6 to 8 weeks (between 6 November and 20 November 2026)",
+        "status": "kept",
+        "note": "Gives both the 6 to 8 weeks and the dates 6 to 20 November 2026."
+      },
+      {
+        "category": "actions",
+        "fact": "Collect the new prescription from your pharmacy",
+        "status": "kept",
+        "note": "Tells the reader to collect the new prescription from the pharmacy and says it is ready."
+      }
+    ],
+    "added": [],
+    "gold_reviewer": "claude-draft"
+  }
+}

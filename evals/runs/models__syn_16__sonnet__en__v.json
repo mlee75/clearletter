@@ -1,0 +1,200 @@
+{
+  "job": {
+    "id": "models__syn_16__sonnet__en__v",
+    "part": "models",
+    "letter_id": "syn_16",
+    "file": "data/synthetic/syn_16.txt",
+    "kind": "faithfulness",
+    "model": "sonnet",
+    "language": "en",
+    "verifier": true,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "sonnet",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": true,
+    "status": "ok",
+    "final_text": "## What this letter says\nYour blood test (INR) today, 5 October 2026, is 4.1. This is too high. Your blood is taking too long to clot.\nYour target INR range is 2.0 to 3.0.\nYour warfarin dose is changing.\n\n## What you need to do\n1. Do not take warfarin tonight, 5 October 2026.\n2. From 6 October 2026, take 4 mg each evening.\n3. Take 4 mg as one 3 mg tablet (blue) and one 1 mg tablet (brown).\n4. Go to your next INR blood test at the Anticoagulation Clinic. Bring your yellow warfarin book.\n5. Contact the clinic on 01632 960 842 if you have minor bleeding. Nosebleeds or bleeding gums are examples.\n\n## Dates and medicines\n- 5 October 2026: Do not take warfarin tonight. The dose is 0 mg.\n- 6 October 2026: Start warfarin 4 mg each evening. This is a decrease. Your old dose was 5 mg each evening.\n- 12 October 2026: Your next INR blood test, at the Anticoagulation Clinic.\n\n## Questions to ask your doctor\n- Why is my INR too high?\n- How will I know if my new dose is right?\n- What should I do if I have a nosebleed or bleeding gums?\n\n## When to get urgent help\nGo to A&E (the hospital emergency department) or call 999 if you have any of these:\n- heavy bleeding\n- blood in your urine or stools\n- black stools\n- vomiting blood\n- a severe headache\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "patient",
+      "purpose": "To tell Mr Clarke his INR is too high and give his new warfarin dose, next blood test and when to get help.",
+      "findings": [
+        {
+          "statement": "INR today (5 October 2026) is 4.1, which is too high; blood is taking too long to clot.",
+          "certainty": "confirmed",
+          "quote": "Your INR today (Monday 5 October 2026) is 4.1. This is too high. Your blood is taking too long to clot."
+        },
+        {
+          "statement": "Target INR range is 2.0 to 3.0.",
+          "certainty": "confirmed",
+          "quote": "Target INR range: 2.0 to 3.0"
+        }
+      ],
+      "medicines": [
+        {
+          "name": "Warfarin",
+          "dose": "0 mg (no dose)",
+          "how_often": "tonight, Monday 5 October 2026",
+          "change": "skip_dose",
+          "details": "Do not take warfarin on the evening of 5 October 2026.",
+          "quote": "Do NOT take warfarin tonight (Monday 5 October 2026)."
+        },
+        {
+          "name": "Warfarin",
+          "dose": "4 mg",
+          "how_often": "each evening, from Tuesday 6 October 2026",
+          "change": "decrease",
+          "details": "Previous dose was 5 mg each evening. 4 mg = one 3 mg tablet (blue) + one 1 mg tablet (brown).",
+          "quote": "From Tuesday 6 October 2026, take 4 mg each evening. (Your previous dose was 5 mg each evening.)"
+        }
+      ],
+      "dates": [
+        {
+          "what": "Do not take warfarin this evening",
+          "when": "5 October 2026",
+          "quote": "Do NOT take warfarin tonight (Monday 5 October 2026)."
+        },
+        {
+          "what": "New warfarin dose of 4 mg each evening starts",
+          "when": "6 October 2026",
+          "quote": "From Tuesday 6 October 2026, take 4 mg each evening."
+        },
+        {
+          "what": "Next INR blood test at the Anticoagulation Clinic",
+          "when": "12 October 2026",
+          "quote": "Your next INR blood test is on Monday 12 October 2026 at the Anticoagulation Clinic."
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Bring your yellow warfarin book to the INR blood test.",
+          "quote": "Please bring your yellow warfarin book."
+        },
+        {
+          "instruction": "Take 4 mg as one 3 mg tablet (blue) plus one 1 mg tablet (brown).",
+          "quote": "4 mg = one 3 mg tablet (blue) + one 1 mg tablet (brown)."
+        },
+        {
+          "instruction": "Contact the clinic on 01632 960 842 if you have minor bleeding, such as nosebleeds or bleeding gums.",
+          "quote": "Contact the clinic on 01632 960 842 if you have minor bleeding, such as nosebleeds or bleeding gums."
+        }
+      ],
+      "negatives": [
+        {
+          "instruction": "Do not take warfarin tonight (5 October 2026).",
+          "quote": "Do NOT take warfarin tonight (Monday 5 October 2026)."
+        }
+      ],
+      "warning_signs": [
+        {
+          "instruction": "Go to A&E or call 999 if you have any heavy bleeding, blood in your urine or stools, black stools, vomiting blood, or a severe headache.",
+          "quote": "Go to A&E or call 999 if you have any heavy bleeding, blood in your urine or stools, black stools, vomiting blood, or a severe headache."
+        }
+      ],
+      "unclear": []
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\nYour blood test (INR) today, 5 October 2026, is 4.1. This is too high. Your blood is taking too long to clot.\nYour target INR range is 2.0 to 3.0.\nYour warfarin dose is changing.\n\n## What you need to do\n1. Do not take warfarin tonight, 5 October 2026.\n2. From 6 October 2026, take 4 mg each evening.\n3. Take 4 mg as one 3 mg tablet (blue) and one 1 mg tablet (brown).\n4. Go to your next INR blood test at the Anticoagulation Clinic. Bring your yellow warfarin book.\n5. Contact the clinic on 01632 960 842 if you have minor bleeding. Nosebleeds or bleeding gums are examples.\n\n## Dates and medicines\n- 5 October 2026: Do not take warfarin tonight. The dose is 0 mg.\n- 6 October 2026: Start warfarin 4 mg each evening. This is a decrease. Your old dose was 5 mg each evening.\n- 12 October 2026: Your next INR blood test, at the Anticoagulation Clinic.\n\n## Questions to ask your doctor\n- Why is my INR too high?\n- How will I know if my new dose is right?\n- What should I do if I have a nosebleed or bleeding gums?\n\n## When to get urgent help\nGo to A&E (the hospital emergency department) or call 999 if you have any of these:\n- heavy bleeding\n- blood in your urine or stools\n- black stools\n- vomiting blood\n- a severe headache",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 84.4,
+          "reading_ease_target": 70,
+          "grade_level": 3.9,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [],
+          "summary": "The explanation matches the letter. It gets the INR of 4.1 and the 2.0 to 3.0 target right. It has no warfarin tonight, then 4 mg each evening from 6 October (down from 5 mg), made up of one 3 mg blue and one 1 mg brown tablet. It gives the 12 October test, the yellow book, the clinic number for minor bleeding, and the A&E/999 warning signs. Nothing is added, dropped or changed."
+        },
+        "blocking_problems": [],
+        "attempt": 1
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 3243,
+        "output_tokens": 1287,
+        "cost_usd": 0.05168
+      },
+      {
+        "step": "explain",
+        "input_tokens": 11738,
+        "output_tokens": 1329,
+        "cost_usd": 0.06386
+      },
+      {
+        "step": "verify",
+        "input_tokens": 3058,
+        "output_tokens": 301,
+        "cost_usd": 0.01989
+      }
+    ],
+    "cost_usd": 0.13543,
+    "latency_s": 32.6
+  },
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "diagnoses",
+        "fact": "INR 4.1 today (target 2.0 to 3.0): too high, blood is taking too long to clot",
+        "status": "kept",
+        "note": "INR 4.1 today, target 2.0–3.0, too high, blood taking too long to clot: all stated."
+      },
+      {
+        "category": "medicines",
+        "fact": "Do NOT take warfarin tonight (Monday 5 October 2026)",
+        "status": "kept",
+        "note": "Do not take warfarin tonight, 5 October 2026. The weekday is left out but the date matches."
+      },
+      {
+        "category": "medicines",
+        "fact": "From Tuesday 6 October 2026: warfarin 4 mg each evening (previous dose 5 mg)",
+        "status": "kept",
+        "note": "From 6 October 2026, 4 mg each evening; old dose 5 mg. The weekday is left out but the date matches."
+      },
+      {
+        "category": "medicines",
+        "fact": "4 mg = one 3 mg tablet (blue) + one 1 mg tablet (brown)",
+        "status": "kept",
+        "note": "One 3 mg blue tablet and one 1 mg brown tablet."
+      },
+      {
+        "category": "dates",
+        "fact": "Next INR blood test on Monday 12 October 2026 at the Anticoagulation Clinic",
+        "status": "kept",
+        "note": "Next INR test on 12 October 2026 at the Anticoagulation Clinic (in the dates section)."
+      },
+      {
+        "category": "actions",
+        "fact": "Bring your yellow warfarin book",
+        "status": "kept",
+        "note": "Bring your yellow warfarin book."
+      },
+      {
+        "category": "actions",
+        "fact": "Go to A&E or call 999 for heavy bleeding, blood in urine or stools, black stools, vomiting blood, or a severe headache",
+        "status": "kept",
+        "note": "A&E or 999 for all five listed symptoms."
+      },
+      {
+        "category": "actions",
+        "fact": "Contact the clinic on 01632 960 842 for minor bleeding such as nosebleeds or bleeding gums",
+        "status": "kept",
+        "note": "Contact the clinic on 01632 960 842 for minor bleeding, with nosebleeds and bleeding gums as examples."
+      }
+    ],
+    "added": [],
+    "gold_reviewer": "claude-draft"
+  }
+}

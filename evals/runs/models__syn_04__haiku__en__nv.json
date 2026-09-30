@@ -1,0 +1,187 @@
+{
+  "job": {
+    "id": "models__syn_04__haiku__en__nv",
+    "part": "models",
+    "letter_id": "syn_04",
+    "file": "data/synthetic/syn_04.txt",
+    "kind": "faithfulness",
+    "model": "haiku",
+    "language": "en",
+    "verifier": false,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "haiku",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": false,
+    "status": "not_verified",
+    "final_text": "Perfect! The explanation meets all readability requirements. Here's the final version for the patient:\n\n## What this letter says\nYou have diabetes. This letter invites you for an eye screening. The screening checks for damage to your eyes that diabetes can cause (diabetic retinopathy). Eye drops will help the doctor look inside your eyes.\n\nThis screening does not check for other eye problems. It does not replace your regular eye test at an optician.\n\n## What you need to do\n1. Call 01632 960 377 by 15 January 2027 to book your appointment.\n2. Bring your glasses or contact lenses.\n3. Bring sunglasses if you have them.\n4. Expect your vision to be blurred for 4 to 6 hours after the eye drops.\n5. Do not drive until your vision is back to normal.\n\n## Dates and medicines\nAppointment booking deadline: 15 January 2027\n\nNo medicines are listed in this letter.\n\n## Questions to ask your doctor\n- What will happen at the screening?\n- How long does the appointment take?\n- When will I get my results?\n- What should I do if I need other eye care?\n\n## When to get urgent help\nThe letter does not list specific warning signs.\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "patient",
+      "purpose": "Diabetic eye screening to check for damage caused by diabetes (diabetic retinopathy)",
+      "findings": [
+        {
+          "statement": "Patient has diabetes",
+          "certainty": "confirmed",
+          "quote": "You are invited for your diabetic eye screening"
+        }
+      ],
+      "medicines": [],
+      "dates": [
+        {
+          "what": "Deadline to book your appointment",
+          "when": "15 January 2027",
+          "quote": "Please book your appointment by 15 January 2027"
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Book your appointment by calling 01632 960 377",
+          "quote": "Please book your appointment by 15 January 2027 by calling 01632 960 377"
+        },
+        {
+          "instruction": "Bring your glasses or contact lenses",
+          "quote": "Bring your glasses or contact lenses"
+        },
+        {
+          "instruction": "Bring sunglasses if you have them",
+          "quote": "Bring sunglasses if you have them"
+        },
+        {
+          "instruction": "Your vision will be blurred for 4 to 6 hours after the eye drops",
+          "quote": "The drops will make your vision blurred for 4 to 6 hours"
+        }
+      ],
+      "negatives": [
+        {
+          "instruction": "Do not drive until your vision is back to normal",
+          "quote": "You must not drive until your vision is back to normal"
+        },
+        {
+          "instruction": "This screening does not diagnose other eye problems",
+          "quote": "It does not diagnose other eye problems"
+        },
+        {
+          "instruction": "This screening does not replace your regular eye test at an optician",
+          "quote": "it does not replace your regular eye test at an optician"
+        }
+      ],
+      "warning_signs": [],
+      "unclear": []
+    },
+    "removed_ungrounded": [
+      {
+        "list": "actions",
+        "item": {
+          "instruction": "Bring a list of your medicines",
+          "quote": "Bring a list of your medicines"
+        }
+      }
+    ],
+    "attempts": [
+      {
+        "explanation": "Perfect! The explanation meets all readability requirements. Here's the final version for the patient:\n\n## What this letter says\nYou have diabetes. This letter invites you for an eye screening. The screening checks for damage to your eyes that diabetes can cause (diabetic retinopathy). Eye drops will help the doctor look inside your eyes.\n\nThis screening does not check for other eye problems. It does not replace your regular eye test at an optician.\n\n## What you need to do\n1. Call 01632 960 377 by 15 January 2027 to book your appointment.\n2. Bring your glasses or contact lenses.\n3. Bring sunglasses if you have them.\n4. Expect your vision to be blurred for 4 to 6 hours after the eye drops.\n5. Do not drive until your vision is back to normal.\n\n## Dates and medicines\nAppointment booking deadline: 15 January 2027\n\nNo medicines are listed in this letter.\n\n## Questions to ask your doctor\n- What will happen at the screening?\n- How long does the appointment take?\n- When will I get my results?\n- What should I do if I need other eye care?\n\n## When to get urgent help\nThe letter does not list specific warning signs.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 75.7,
+          "reading_ease_target": 70,
+          "grade_level": 5.2,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": null,
+        "blocking_problems": [],
+        "attempt": 1
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 2714,
+        "output_tokens": 7271,
+        "cost_usd": 0.03907,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 7770,
+        "output_tokens": 2888,
+        "cost_usd": 0.0274,
+        "turns": 2
+      }
+    ],
+    "cost_usd": 0.06647,
+    "latency_s": 97.2
+  },
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "diagnoses",
+        "fact": "Invited to diabetic eye screening, which checks the back of the eyes for damage from diabetes (diabetic retinopathy)",
+        "status": "kept",
+        "note": "Invited for eye screening that checks for damage from diabetes (diabetic retinopathy)."
+      },
+      {
+        "category": "dates",
+        "fact": "Book the appointment by 15 January 2027",
+        "status": "kept",
+        "note": "Book by 15 January 2027."
+      },
+      {
+        "category": "dates",
+        "fact": "The eye drops blur vision for 4 to 6 hours",
+        "status": "kept",
+        "note": "Vision blurred for 4 to 6 hours after the drops."
+      },
+      {
+        "category": "actions",
+        "fact": "Call 01632 960 377 to book",
+        "status": "kept",
+        "note": "Call 01632 960 377 to book."
+      },
+      {
+        "category": "actions",
+        "fact": "Do not drive until your vision is back to normal",
+        "status": "kept",
+        "note": "Do not drive until your vision is back to normal."
+      },
+      {
+        "category": "actions",
+        "fact": "Bring sunglasses if you have them",
+        "status": "kept",
+        "note": "Bring sunglasses if you have them."
+      },
+      {
+        "category": "actions",
+        "fact": "Bring your glasses or contact lenses and a list of your medicines",
+        "status": "dropped",
+        "note": "Glasses or contact lenses are mentioned, but the instruction to bring a list of medicines is missing. The explanation instead says 'No medicines are listed in this letter', which could mislead the reader about this instruction."
+      },
+      {
+        "category": "negatives",
+        "fact": "This screening does not diagnose other eye problems",
+        "status": "kept",
+        "note": "'Does not check for other eye problems' keeps the meaning of 'does not diagnose other eye problems'."
+      },
+      {
+        "category": "negatives",
+        "fact": "It does not replace the regular eye test at an optician",
+        "status": "kept",
+        "note": "Does not replace the regular eye test at an optician."
+      }
+    ],
+    "added": [
+      {
+        "text": "Eye drops will help the doctor look inside your eyes.",
+        "kind": "medical_fact"
+      }
+    ],
+    "gold_reviewer": "claude-draft"
+  }
+}

@@ -1,0 +1,334 @@
+{
+  "job": {
+    "id": "mtsamples__mts_3977__sonnet__en__v",
+    "part": "mtsamples",
+    "letter_id": "mts_3977",
+    "file": "data/mtsamples/mts_3977.txt",
+    "kind": "faithfulness",
+    "model": "sonnet",
+    "language": "en",
+    "verifier": true,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "sonnet",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": true,
+    "status": "fallback",
+    "final_text": "**We could not explain this letter safely. Please ask your doctor, nurse or pharmacist to explain it to you.**\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "doctor_copy_to_patient",
+      "purpose": "Hospital discharge summary for a man admitted with congestive heart failure and fluid around the left lung, describing his treatment, discharge medicines and follow-up.",
+      "findings": [
+        {
+          "statement": "Admitted with congestive heart failure and fluid in the left chest (left pleural effusion)",
+          "certainty": "confirmed",
+          "quote": "Congestive heart failure (CHF) with left pleural effusion."
+        },
+        {
+          "statement": "Diagnoses at discharge: heart failure with pleural effusion, hypertension, prostate cancer, leukocytosis, anemia of chronic disease",
+          "certainty": "confirmed",
+          "quote": "5. Anemia of chronic disease."
+        },
+        {
+          "statement": "Free flowing fluid was seen in the left chest; a thoracentesis was done and he felt much better afterwards",
+          "certainty": "confirmed",
+          "quote": "The patient felt much better after the thoracentesis."
+        },
+        {
+          "statement": "Echocardiogram showed ejection fraction of 60% with diastolic dysfunction and periaortic stenosis with an opening of 1 cm3",
+          "certainty": "confirmed",
+          "quote": "ejection fraction of 60% with diastolic dysfunction and periaortic stenosis with an opening of 1 cm3"
+        },
+        {
+          "statement": "Adenosine sestamibi test in March 2000 showed a small fixed apical defect but no ischemia",
+          "certainty": "confirmed",
+          "quote": "with a small fixed apical defect, but no ischemia"
+        },
+        {
+          "statement": "Cardiac enzymes were negative",
+          "certainty": "ruled_out",
+          "quote": "Cardiac enzymes were negative."
+        },
+        {
+          "statement": "Glucose was high (182), attributed to several doses of Solu-Medrol given for bronchospasm",
+          "certainty": "confirmed",
+          "quote": "Glucose was elevated because of several doses of Solu-Medrol given to him because of bronchospams."
+        },
+        {
+          "statement": "White blood cell count 15,000 with a left shift, presumed due to corticosteroids",
+          "certainty": "possible",
+          "quote": "This was presumed due to the corticosteroids."
+        },
+        {
+          "statement": "Oxygen saturations on room air were normal and vital signs were stable",
+          "certainty": "confirmed",
+          "quote": "The patient's O2 saturations on room air were normal."
+        },
+        {
+          "statement": "Prognosis is guarded",
+          "certainty": "confirmed",
+          "quote": "PROGNOSIS:  ,Guarded."
+        },
+        {
+          "statement": "Details of the thoracentesis (volumes) are not known to the letter writer",
+          "certainty": "not_stated",
+          "quote": "I do not have the details of this, i.e."
+        }
+      ],
+      "medicines": [
+        {
+          "name": "Lasix (furosemide)",
+          "dose": "40 mg",
+          "how_often": "daily",
+          "change": "continue",
+          "details": "Given by IV in hospital; discharged on 40 mg daily",
+          "quote": "Lasix 40 mg daily"
+        },
+        {
+          "name": "Potassium chloride",
+          "dose": "10 mEq",
+          "how_often": "daily",
+          "change": "continue",
+          "details": "Klor-Con was given in hospital",
+          "quote": "potassium chloride 10 mEq daily"
+        },
+        {
+          "name": "Atenolol",
+          "dose": "25 mg",
+          "how_often": "daily",
+          "change": "start",
+          "details": "Beta-blocker recommended by Dr. Y",
+          "quote": "atenolol 25 mg daily"
+        },
+        {
+          "name": "Aspirin",
+          "dose": "5 grains",
+          "how_often": "daily",
+          "change": "continue",
+          "details": "",
+          "quote": "aspirin 5 grains daily"
+        },
+        {
+          "name": "Ditropan (oxybutynin)",
+          "dose": "5 mg",
+          "how_often": "b.i.d. (twice a day)",
+          "change": "continue",
+          "details": "",
+          "quote": "Ditropan 5 mg b.i.d."
+        },
+        {
+          "name": "Colace (docusate)",
+          "dose": "100 mg",
+          "how_often": "b.i.d. (twice a day)",
+          "change": "continue",
+          "details": "",
+          "quote": "Colace 100 mg b.i.d."
+        },
+        {
+          "name": "Lisinopril (Prinivil)",
+          "dose": "",
+          "how_often": "",
+          "change": "stop",
+          "details": "Discontinued because Dr. Y recommended a beta-blocker with an ACE inhibitor",
+          "quote": "therefore, the lisinopril was discontinued"
+        }
+      ],
+      "dates": [
+        {
+          "what": "Follow-up in the doctor's office",
+          "when": "in 1 week",
+          "quote": "He will be followed in my office in 1 week."
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Attend follow-up in the doctor's office in 1 week",
+          "quote": "He will be followed in my office in 1 week."
+        },
+        {
+          "instruction": "Notify the doctor if fever or chills recur",
+          "quote": "He is to notify if recurrent fever or chills."
+        }
+      ],
+      "negatives": [
+        {
+          "instruction": "No ischemia on the adenosine sestamibi test",
+          "quote": "but no ischemia"
+        },
+        {
+          "instruction": "No fluid was sent for routine studies",
+          "quote": "No fluid was sent for routine studies."
+        }
+      ],
+      "warning_signs": [
+        {
+          "instruction": "Notify the doctor if fever or chills recur",
+          "quote": "He is to notify if recurrent fever or chills."
+        }
+      ],
+      "unclear": [
+        "The letter's 'March 2000' date for the adenosine sestamibi test is a month and year only and appears to be before this admission; it is unclear when it relates to this stay.",
+        "'periaortic stenosis' is written as in the letter; the meaning is not explained.",
+        "Whether the atenolol is new or the discharge medicines are otherwise changed from home medicines is not stated beyond the lisinopril stop.",
+        "Aspirin dose '5 grains' is written as in the letter (no mg equivalent given).",
+        "The exact date of admission and discharge is not given."
+      ]
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\nThis letter is about your stay in hospital. You came in with heart failure (congestive heart failure). You also had fluid in the left side of your chest (left pleural effusion).\n\nDoctors saw free flowing fluid in your left chest. They did a thoracentesis. You felt much better after it. The letter does not have the details of the thoracentesis. No fluid was sent for routine studies.\n\nYour diagnoses at discharge were:\n- heart failure with pleural effusion\n- hypertension\n- prostate cancer\n- leukocytosis\n- anemia of chronic disease\n\nTest results:\n- Your heart scan (echocardiogram) showed an ejection fraction of 60%. It also showed diastolic dysfunction and periaortic stenosis with an opening of 1 cm3. The letter does not explain these words.\n- An adenosine sestamibi test in March 2000 showed a small fixed apical defect. It showed no ischemia. The letter does not say how this test relates to this stay.\n- Your cardiac enzymes were negative.\n- Your glucose was high (182). The letter says this was from several doses of Solu-Medrol. You were given it for bronchospasm.\n- Your white blood cell count was 15,000 with a left shift. The letter says this was presumed to be from corticosteroids. This is possible, not certain.\n- Your oxygen levels on room air were normal. Your vital signs were stable.\n\nThe letter says your prognosis is guarded.\n\n## What you need to do\n1. Go to the follow-up visit in your doctor's office in 1 week.\n2. Tell your doctor if fever or chills come back.\n3. Take atenolol, which is new.\n4. Do not take lisinopril (Prinivil). It was stopped.\n5. Keep taking your other medicines as listed below.\n\n## Dates and medicines\nDates:\n- Follow-up in the doctor's office: in 1 week.\n- The letter does not give the dates you came in or left hospital.\n\nMedicines:\n- Atenolol 25 mg, every day. This is a new medicine. It is a beta-blocker that Dr. Y recommended.\n- Lisinopril (Prinivil): STOP. It was stopped because Dr. Y recommended a beta-blocker with an ACE inhibitor.\n- Lasix (furosemide) 40 mg, every day. Continue. You had it by IV in hospital.\n- Potassium chloride 10 mEq, every day. Continue. You had Klor-Con in hospital.\n- Aspirin 5 grains, every day. Continue.\n- Ditropan (oxybutynin) 5 mg, twice a day. Continue.\n- Colace (docusate) 100 mg, twice a day. Continue.\n\nThe letter does not say if your home medicines changed in other ways.\n\n## Questions to ask your doctor\n1. What do diastolic dysfunction and periaortic stenosis mean for me?\n2. What does \"guarded\" prognosis mean for me?\n3. Can you explain the thoracentesis and what it did?\n4. Is my aspirin dose of 5 grains the same as the tablets I have?\n\n## When to get urgent help\nTell your doctor if fever or chills come back.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 71.4,
+          "reading_ease_target": 70,
+          "grade_level": 5.4,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [
+            {
+              "kind": "added",
+              "severity": "minor",
+              "explanation_says": "Keep taking your other medicines as listed; Aspirin, Ditropan, Colace \"Continue\"; \"You had Klor-Con in hospital\" / \"Continue\" for Lasix and potassium",
+              "letter_says": "Letter only lists discharge medications; does not say which are continued vs. new, except lisinopril discontinued",
+              "why": "Labeling medicines as 'continue' (home medicines) is an inference not stated in the letter; atenolol described as 'new' is also inferred, though reasonable."
+            },
+            {
+              "kind": "added",
+              "severity": "minor",
+              "explanation_says": "Atenolol ... is a beta-blocker",
+              "letter_says": "Dr. Y recommended a beta-blocker with an ACE inhibitor; discharge lists atenolol",
+              "why": "Atenolol being the beta-blocker is inferred; also the reason for stopping lisinopril is misstated (see below)."
+            },
+            {
+              "kind": "changed",
+              "severity": "major",
+              "explanation_says": "Lisinopril was stopped because Dr. Y recommended a beta-blocker with an ACE inhibitor.",
+              "letter_says": "Dr. Y recommended a beta-blocker with an ACE inhibitor; therefore, the lisinopril was discontinued.",
+              "why": "Letter is itself confusing, and the explanation repeats it without noting that an ACE inhibitor recommended yet lisinopril (an ACE inhibitor) stopped; also the letter's Prinivil and lisinopril are the same drug, which is fine. Patient may be confused about whether to take an ACE inhibitor."
+            },
+            {
+              "kind": "dropped",
+              "severity": "minor",
+              "explanation_says": "Urgent help section only says tell your doctor if fever or chills come back.",
+              "letter_says": "Prognosis guarded; heart failure",
+              "why": "No other warning signs in letter, so this is acceptable; however, the explanation does not mention that the pleural fluid was not sent for studies means cause unknown — minor."
+            }
+          ],
+          "summary": "The explanation is largely faithful. Minor inferences (medicines marked 'continue', atenolol as new beta-blocker) and a confusing lisinopril/ACE inhibitor rationale repeated without clarification are the main concerns."
+        },
+        "blocking_problems": [
+          "[changed] Letter is itself confusing, and the explanation repeats it without noting that an ACE inhibitor recommended yet lisinopril (an ACE inhibitor) stopped; also the letter's Prinivil and lisinopril are the same drug, which is fine. Patient may be confused about whether to take an ACE inhibitor. (explanation: 'Lisinopril was stopped because Dr. Y recommended a beta-blocker with an ACE inhibitor.'; letter: 'Dr. Y recommended a beta-blocker with an ACE inhibitor; therefore, the lisinopril was discontinued.')"
+        ],
+        "attempt": 1
+      },
+      {
+        "explanation": "## What this letter says\nThis letter is about your stay in hospital. You came in with heart failure (congestive heart failure). You also had fluid in the left side of your chest (left pleural effusion).\n\nDoctors saw free flowing fluid in your left chest. They did a fluid drain (thoracentesis). You felt much better after it. The letter writer does not have the details of the thoracentesis. No fluid was sent for routine studies.\n\nYour diagnoses at discharge were:\n- heart failure with pleural effusion\n- high blood pressure (hypertension)\n- prostate cancer\n- high white blood cell count (leukocytosis)\n- anemia of chronic disease\n\nTest results:\n- Your heart scan (echocardiogram) showed an ejection fraction of 60%. It also showed diastolic dysfunction and periaortic stenosis with an opening of 1 cm3. The letter does not explain these words.\n- An adenosine sestamibi test in March 2000 showed a small fixed apical defect. It showed no ischemia. The letter does not say how this test relates to this stay.\n- Your cardiac enzymes were negative.\n- Your glucose was high (182). The letter says this was from several doses of Solu-Medrol. You were given it for bronchospasm.\n- Your white blood cell count was 15,000 with a left shift. The letter says this was presumed to be from corticosteroids. This is possible, not certain.\n- Your oxygen levels on room air were normal. Your vital signs were stable.\n\nThe letter says your prognosis is guarded.\n\nThe letter is not clear about one medicine. Lisinopril (Prinivil) was stopped. The letter says Dr. Y recommended a beta-blocker with an ACE inhibitor. Then it says lisinopril was stopped because of this. The letter does not explain why. Ask your doctor about this.\n\n## What you need to do\n1. Go to the follow-up visit in your doctor's office in 1 week.\n2. Tell your doctor if fever or chills come back.\n3. Take atenolol 25 mg every day. The letter lists it as a new medicine.\n4. Do not take lisinopril (Prinivil). It was stopped.\n5. Ask your doctor if you should take any ACE inhibitor. The letter does not say.\n6. Keep taking your other medicines as listed below.\n\n## Dates and medicines\nDates:\n- Follow-up in the doctor's office: in 1 week.\n- The letter does not give the dates you came in or left hospital.\n\nMedicines:\n- Atenolol 25 mg, every day. New. Dr. Y recommended this beta-blocker.\n- Lisinopril (Prinivil): STOP. The letter says it was stopped because Dr. Y recommended a beta-blocker with an ACE inhibitor.\n- Lasix (furosemide) 40 mg, every day. Continue. You had it by IV in hospital.\n- Potassium chloride 10 mEq, every day. Continue. You had Klor-Con in hospital.\n- Aspirin 5 grains, every day. Continue.\n- Ditropan (oxybutynin) 5 mg, twice a day. Continue.\n- Colace (docusate) 100 mg, twice a day. Continue.\n\nThe letter does not say if your home medicines changed in other ways.\n\n## Questions to ask your doctor\n1. Why was lisinopril stopped? Should I take an ACE inhibitor or not?\n2. What do diastolic dysfunction and periaortic stenosis mean for me?\n3. What does \"guarded\" prognosis mean for me?\n4. Is my aspirin dose of 5 grains the same as the tablets I have?\n\n## When to get urgent help\nTell your doctor if fever or chills come back.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 72.7,
+          "reading_ease_target": 70,
+          "grade_level": 5.2,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [
+            {
+              "kind": "changed",
+              "severity": "major",
+              "explanation_says": "Lisinopril: STOP... Do not take lisinopril; Ask your doctor if you should take any ACE inhibitor. Atenolol is listed as a new medicine.",
+              "letter_says": "Dr. Y recommended a beta-blocker with an ACE inhibitor; therefore, the lisinopril was discontinued. Atenolol listed in discharge meds without saying new.",
+              "why": "Explanation says atenolol is 'new' (letter doesn't say so) and the lisinopril stop is a hospital decision, not a clear instruction; framing is partly invented, though it does flag the confusion."
+            },
+            {
+              "kind": "added",
+              "severity": "minor",
+              "explanation_says": "Continue (Lasix, potassium, aspirin, Ditropan, Colace) and 'Keep taking your other medicines'; 'You had Klor-Con in hospital'",
+              "letter_says": "Letter only lists these as discharge medications; does not say whether they are continued home medicines.",
+              "why": "'Continue' implies these were pre-existing medicines, which the letter does not state."
+            },
+            {
+              "kind": "added",
+              "severity": "minor",
+              "explanation_says": "Ask your doctor if you should take any ACE inhibitor. The letter does not say.",
+              "letter_says": "Letter says a beta-blocker with an ACE inhibitor was recommended.",
+              "why": "Somewhat contradicts the letter's recommendation; implies uncertainty about ACE inhibitor."
+            },
+            {
+              "kind": "dropped",
+              "severity": "minor",
+              "explanation_says": "Dropped: hospital treatments such as IV Lasix diuresis are only mentioned in the medicine list; nothing on the recommendation to follow up on the pleural effusion.",
+              "letter_says": "He has diuresed with IV Lasix; discharged home.",
+              "why": "Minor omission of context; also the explanation says the stay dates aren't given, which is fine."
+            },
+            {
+              "kind": "urgency",
+              "severity": "minor",
+              "explanation_says": "Tell your doctor if fever or chills come back.",
+              "letter_says": "He is to notify if recurrent fever or chills.",
+              "why": "Matches the letter; no urgent warning signs beyond this, but 'When to get urgent help' frames it accordingly. Fine."
+            }
+          ],
+          "summary": "The explanation is mostly faithful. Main concerns are that atenolol is labeled 'new' and the other medicines 'continue', neither of which the letter states, and the ACE inhibitor advice to ask the doctor slightly reframes the letter."
+        },
+        "blocking_problems": [
+          "[changed] Explanation says atenolol is 'new' (letter doesn't say so) and the lisinopril stop is a hospital decision, not a clear instruction; framing is partly invented, though it does flag the confusion. (explanation: 'Lisinopril: STOP... Do not take lisinopril; Ask your doctor if you should take any ACE inhibitor. Atenolol is listed as a new medicine.'; letter: 'Dr. Y recommended a beta-blocker with an ACE inhibitor; therefore, the lisinopril was discontinued. Atenolol listed in discharge meds without saying new.')"
+        ],
+        "attempt": 2
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 3824,
+        "output_tokens": 2041,
+        "cost_usd": 0.05608,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 16797,
+        "output_tokens": 2690,
+        "cost_usd": 0.09943,
+        "turns": 8
+      },
+      {
+        "step": "verify",
+        "input_tokens": 4131,
+        "output_tokens": 813,
+        "cost_usd": 0.03872,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 19910,
+        "output_tokens": 2927,
+        "cost_usd": 0.11247,
+        "turns": 4
+      },
+      {
+        "step": "verify",
+        "input_tokens": 4308,
+        "output_tokens": 895,
+        "cost_usd": 0.04177,
+        "turns": 2
+      }
+    ],
+    "cost_usd": 0.34848,
+    "latency_s": 74.0
+  },
+  "judgement": {
+    "fallback": true
+  }
+}

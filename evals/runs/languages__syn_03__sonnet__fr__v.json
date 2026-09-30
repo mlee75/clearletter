@@ -1,0 +1,184 @@
+{
+  "job": {
+    "id": "languages__syn_03__sonnet__fr__v",
+    "part": "languages",
+    "letter_id": "syn_03",
+    "file": "data/synthetic/syn_03.txt",
+    "kind": "faithfulness",
+    "model": "sonnet",
+    "language": "fr",
+    "verifier": true,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "sonnet",
+    "backend": "claude-code",
+    "language": "fr",
+    "country": "uk",
+    "use_verifier": true,
+    "status": "ok",
+    "final_text": "## Ce que dit cette lettre\nVotre échographie des 20 semaines (échographie morphologique) est prévue.\nCet examen regarde comment votre bébé grandit. Il cherche aussi certains problèmes physiques.\nL'examen ne peut pas trouver tous les problèmes.\n\n## Ce que vous devez faire\n1. Venez à votre rendez-vous à la date et à l'heure indiquées ci-dessous.\n2. Vous pouvez venir avec 1 adulte.\n3. Un interprète peut vous aider ? Appelez au moins 5 jours ouvrables avant le rendez-vous. Il sera réservé gratuitement.\n4. Ne venez pas avec des enfants dans la salle. Les enfants ne peuvent pas entrer dans la salle d'examen.\n5. Vous n'avez pas besoin d'avoir la vessie pleine pour cet examen.\n\n## Dates et médicaments\n- Date : lundi 11 janvier 2027.\n- Heure : 14:15.\n- Lieu : Antenatal Clinic (clinique prénatale), étage 1.\n- Médicaments : la lettre n'en cite aucun.\n\n## Questions à poser à votre médecin\n- Comment puis-je appeler pour réserver un interprète ?\n- Qui peut venir avec moi à l'examen ?\n- Que puis-je faire de mes enfants pendant l'examen ?\n\n## Quand obtenir de l'aide en urgence\nAvant votre rendez-vous, vous pouvez avoir un saignement, une perte de liquide par le vagin ou une forte douleur au ventre. Dans ce cas, appelez tout de suite la Maternity Assessment Unit (MAU, unité d'évaluation de la maternité) au 01632 960 456. La ligne est ouverte 24 heures sur 24.\n\nSi vous êtes inquiet et que ce n'est pas une urgence, appelez le NHS 111. En cas d'urgence, appelez le 999.\n\n---\n*Cette explication a été faite par un programme informatique pour vous aider à lire votre lettre. Elle peut contenir des erreurs. Elle ne remplace pas votre médecin, votre infirmier ou votre pharmacien. Suivez toujours la lettre et posez-leur vos questions si quelque chose n'est pas clair.*\n",
+    "facts": {
+      "reader": "patient",
+      "purpose": "To tell the patient the date, time and place of her 20-week anomaly scan and how to prepare and get help.",
+      "findings": [
+        {
+          "statement": "The scan checks how your baby is growing and looks for some physical conditions.",
+          "certainty": "confirmed",
+          "quote": "This scan checks how your baby is growing and looks for some physical conditions."
+        },
+        {
+          "statement": "The scan cannot find every problem.",
+          "certainty": "confirmed",
+          "quote": "The scan cannot find every problem."
+        }
+      ],
+      "medicines": [],
+      "dates": [
+        {
+          "what": "20-week scan (anomaly scan) at 14:15 in the Antenatal Clinic, Floor 1",
+          "when": "11 January 2027",
+          "quote": "Your 20-week scan (anomaly scan) is booked for Monday 11 January 2027 at 14:15 in the Antenatal Clinic, Floor 1."
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "You may bring one adult with you to the scan.",
+          "quote": "You may bring one adult with you."
+        },
+        {
+          "instruction": "If an interpreter would help, call at least 5 working days before your appointment and one will be booked for free.",
+          "quote": "If an interpreter would help you, please call us at least 5 working days before your appointment and we will book one for free."
+        }
+      ],
+      "negatives": [
+        {
+          "instruction": "You do not need a full bladder for this scan.",
+          "quote": "You do not need a full bladder for this scan."
+        },
+        {
+          "instruction": "Children cannot come into the scan room.",
+          "quote": "Children cannot come into the scan room."
+        }
+      ],
+      "warning_signs": [
+        {
+          "instruction": "If you have any bleeding, leaking fluid from your vagina or severe tummy pain before your appointment, call the Maternity Assessment Unit (MAU) on 01632 960 456 straight away. The line is open 24 hours.",
+          "quote": "If you have any bleeding, leaking fluid from your vagina or severe tummy pain before your appointment, call the Maternity Assessment Unit (MAU) on 01632 960 456 straight away."
+        }
+      ],
+      "unclear": []
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## Ce que dit cette lettre\nVotre échographie des 20 semaines (échographie morphologique) est prévue.\nCet examen regarde comment votre bébé grandit. Il cherche aussi certains problèmes physiques.\nL'examen ne peut pas trouver tous les problèmes.\n\n## Ce que vous devez faire\n1. Venez à votre rendez-vous à la date et à l'heure indiquées ci-dessous.\n2. Vous pouvez venir avec 1 adulte.\n3. Un interprète peut vous aider ? Appelez au moins 5 jours ouvrables avant le rendez-vous. Il sera réservé gratuitement.\n4. Ne venez pas avec des enfants dans la salle. Les enfants ne peuvent pas entrer dans la salle d'examen.\n5. Vous n'avez pas besoin d'avoir la vessie pleine pour cet examen.\n\n## Dates et médicaments\n- Date : lundi 11 janvier 2027.\n- Heure : 14:15.\n- Lieu : Antenatal Clinic (clinique prénatale), étage 1.\n- Médicaments : la lettre n'en cite aucun.\n\n## Questions à poser à votre médecin\n- Comment puis-je appeler pour réserver un interprète ?\n- Qui peut venir avec moi à l'examen ?\n- Que puis-je faire de mes enfants pendant l'examen ?\n\n## Quand obtenir de l'aide en urgence\nAvant votre rendez-vous, vous pouvez avoir un saignement, une perte de liquide par le vagin ou une forte douleur au ventre. Dans ce cas, appelez tout de suite la Maternity Assessment Unit (MAU, unité d'évaluation de la maternité) au 01632 960 456. La ligne est ouverte 24 heures sur 24.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "fr",
+          "reading_ease": 85.2,
+          "reading_ease_target": 70,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [
+            {
+              "kind": "changed",
+              "severity": "minor",
+              "explanation_says": "Appelez au moins 5 jours ouvrables avant le rendez-vous (no phone number or who to call specified; question 'Comment puis-je appeler' fine)",
+              "letter_says": "Please call us at least 5 working days before your appointment",
+              "why": "Consistent; no real problem. Minor: the explanation's 'Sections' ordering instructs 'dates ci-dessous' but that is fine."
+            },
+            {
+              "kind": "added",
+              "severity": "minor",
+              "explanation_says": "Ne venez pas avec des enfants dans la salle.",
+              "letter_says": "Children cannot come into the scan room.",
+              "why": "Slightly stronger phrasing as instruction but consistent with letter; not a meaningful change."
+            }
+          ],
+          "summary": "The explanation matches the letter on all key facts: date, time, place, the 5 working days for interpreter, one adult, no children in the room, no full bladder, and the urgent symptoms with the 24-hour MAU number. The two items listed are trivial and not real errors."
+        },
+        "blocking_problems": [],
+        "attempt": 1
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 3117,
+        "output_tokens": 845,
+        "cost_usd": 0.02651,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 7242,
+        "output_tokens": 1777,
+        "cost_usd": 0.05891,
+        "turns": 2
+      },
+      {
+        "step": "verify",
+        "input_tokens": 3084,
+        "output_tokens": 409,
+        "cost_usd": 0.02226,
+        "turns": 2
+      }
+    ],
+    "cost_usd": 0.10767,
+    "latency_s": 26.1
+  },
+  "back_translation": "## What this letter says\nYour 20-week scan (morphology scan) is scheduled.\nThis examination looks at how your baby is growing. It also looks for certain physical problems.\nThe examination cannot find all problems.\n\n## What you must do\n1. Come to your appointment on the date and at the time indicated below.\n2. You can come with 1 adult.\n3. An interpreter can help you? Call at least 5 working days before the appointment. It will be booked free of charge.\n4. Do not come with children into the room. Children cannot enter the examination room.\n5. You do not need to have a full bladder for this examination.\n\n## Dates and medicines\n- Date: Monday 11 January 2027.\n- Time: 14:15.\n- Place: Antenatal Clinic (prenatal clinic), floor 1.\n- Medicines: the letter does not mention any.\n\n## Questions to ask your doctor\n- How can I call to book an interpreter?\n- Who can come with me to the examination?\n- What can I do with my children during the examination?\n\n## When to get urgent help\nBefore your appointment, you may have bleeding, a loss of fluid through the vagina or a severe pain in the belly. In this case, call the Maternity Assessment Unit (MAU, maternity assessment unit) right away on 01632 960 456. The line is open 24 hours a day.",
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "dates",
+        "fact": "20-week (anomaly) scan on Monday 11 January 2027 at 14:15, Antenatal Clinic, Floor 1",
+        "status": "kept",
+        "note": "Date, time and place (Monday 11 January 2027, 14:15, Antenatal Clinic, floor 1) all match. The letter's name 'anomaly scan' is replaced by the equivalent term 'morphology scan'."
+      },
+      {
+        "category": "actions",
+        "fact": "You may bring one adult with you",
+        "status": "kept",
+        "note": "'You can come with 1 adult.'"
+      },
+      {
+        "category": "actions",
+        "fact": "For a free interpreter, call at least 5 working days before",
+        "status": "kept",
+        "note": "Says to call at least 5 working days before and that the interpreter is booked free of charge."
+      },
+      {
+        "category": "actions",
+        "fact": "If bleeding, leaking fluid from the vagina or severe tummy pain before the appointment, call the Maternity Assessment Unit on 01632 960 456 straight away (open 24 hours)",
+        "status": "kept",
+        "note": "Lists bleeding, fluid loss through the vagina and severe belly pain before the appointment, with a call to the MAU on 01632 960 456 right away, open 24 hours. It opens with the awkward 'you may have bleeding', but 'In this case' keeps it conditional."
+      },
+      {
+        "category": "negatives",
+        "fact": "The scan cannot find every problem",
+        "status": "kept",
+        "note": "'The examination cannot find all problems.'"
+      },
+      {
+        "category": "negatives",
+        "fact": "You do not need a full bladder",
+        "status": "kept",
+        "note": "'You do not need to have a full bladder.'"
+      },
+      {
+        "category": "negatives",
+        "fact": "Children cannot come into the scan room",
+        "status": "kept",
+        "note": "'Children cannot enter the examination room.'"
+      }
+    ],
+    "added": [],
+    "gold_reviewer": "claude-draft"
+  }
+}

@@ -1,0 +1,277 @@
+{
+  "job": {
+    "id": "mtsamples__mts_3060__sonnet__en__nv",
+    "part": "mtsamples",
+    "letter_id": "mts_3060",
+    "file": "data/mtsamples/mts_3060.txt",
+    "kind": "faithfulness",
+    "model": "sonnet",
+    "language": "en",
+    "verifier": false,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "sonnet",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": false,
+    "status": "not_verified",
+    "final_text": "## What this letter says\nYour doctor wrote to another doctor. The letter tells that doctor about you.\nYou have Wilson's disease. You were told this at age 14. You take penicillamine.\nYou had short breath, a fast heartbeat (palpitations) and chest discomfort. Doctors found atrial fibrillation with a rapid rate. You stayed in hospital and were watched.\nYour heart went back to normal sinus rhythm by itself. You needed no more treatment.\nAn echocardiogram showed mild-to-moderate left atrial enlargement. Your ejection fraction was normal. There was no other significant valve problem.\nDoctors in North Carolina were worried about cirrhosis. You have never had a liver biopsy. So this diagnosis is in doubt. Your liver status is not clear.\nYour liver tests (LFTs) stayed normal. Your copper level is undetectable on your penicillamine dose.\nYour rhythm was normal when your doctor saw you. You take metoprolol and aspirin with no trouble.\nYour atrial fibrillation may come and go (paroxysmal). This is only possible.\nCoumadin was not started. Liver doctors said to avoid it. They said your liver disease is questionable but significant.\nYour doctor asks the new doctor for advice. It is about long-term anticoagulation and rhythm control.\n\n## What you need to do\n1. Go to your visit with the new doctor. You will be seen soon.\n2. Keep taking your medicines as you do now. The letter says to continue all three.\n3. Do not start Coumadin on your own. It was not started.\n\n## Dates and medicines\nDate: 06/12/2008. Your doctor saw you then. Your rhythm was normal. The letter does not say if this is 6 December or 12 June.\n\nMedicines:\n- Penicillamine: 250 milligrams, by mouth, four times a day. Continue.\n- Metoprolol (Lopressor): 12.5 milligrams, twice a day. Continue. It was started at the North Carolina hospital. You do well on it.\n- Aspirin: 325 milligrams, once a day. Continue. It was started instead of Coumadin. This was due to the questionable significant liver disease.\n\n## Questions to ask your doctor\n- What are my options for long-term anticoagulation?\n- What are my options for rhythm control?\n- How can we learn more about my liver?\n\n## When to get urgent help\nThe letter does not list specific warning signs.\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "doctor_only",
+      "purpose": "Referral letter introducing the patient to another doctor, asking for advice on long-term anticoagulation and rhythm control after an episode of atrial fibrillation.",
+      "findings": [
+        {
+          "statement": "History of Wilson's disease, treated with penicillamine, diagnosed at age 14",
+          "certainty": "confirmed",
+          "quote": "He is a pleasant gentleman with a history of Wilson's disease.  It has been treated with penicillamine.  He was diagnosed with this at age 14."
+        },
+        {
+          "statement": "Found to be in atrial fibrillation with rapid rate after shortness of breath, palpitations and chest discomfort; admitted and observed",
+          "certainty": "confirmed",
+          "quote": "he was found to be in atrial fibrillation with rapid rate."
+        },
+        {
+          "statement": "Converted to normal sinus rhythm spontaneously and needed no further interventions",
+          "certainty": "confirmed",
+          "quote": "He converted to normal sinus rhythm spontaneously and so he required no further interventions."
+        },
+        {
+          "statement": "Echocardiogram showed mild-to-moderate left atrial enlargement",
+          "certainty": "confirmed",
+          "quote": "mild-to-moderate left atrial enlargement."
+        },
+        {
+          "statement": "Normal ejection fraction",
+          "certainty": "confirmed",
+          "quote": "Normal ejection fraction."
+        },
+        {
+          "statement": "No other significant valvular abnormality",
+          "certainty": "ruled_out",
+          "quote": "No other significant valvular abnormality."
+        },
+        {
+          "statement": "Cirrhosis was reported to physicians in North Carolina, but he has never had a liver biopsy, so the cirrhosis diagnosis is in doubt; status of liver disease is unclear",
+          "certainty": "possible",
+          "quote": "he has never had a liver biopsy, so his diagnosis of cirrhosis that they were concerned about in North Carolina is in doubt."
+        },
+        {
+          "statement": "Liver function tests have remained normal",
+          "certainty": "confirmed",
+          "quote": "His LFTs have remained normal"
+        },
+        {
+          "statement": "Copper level undetectable on current penicillamine dose",
+          "certainty": "confirmed",
+          "quote": "his copper level has been undetectable on his current dose of penicillamine."
+        },
+        {
+          "statement": "In normal sinus rhythm at the referring doctor's evaluation; tolerating metoprolol and aspirin without difficulty",
+          "certainty": "confirmed",
+          "quote": "He is in normal sinus rhythm as of my evaluation of him on 06/12/2008.  He is tolerating his metoprolol and aspirin without any difficulty."
+        },
+        {
+          "statement": "Atrial fibrillation may be paroxysmal (recurring)",
+          "certainty": "possible",
+          "quote": "his potentially paroxysmal atrial fibrillation"
+        }
+      ],
+      "medicines": [
+        {
+          "name": "penicillamine",
+          "dose": "250 mg",
+          "how_often": "four times a day",
+          "change": "continue",
+          "details": "Taken by mouth (p.o.).",
+          "quote": "penicillamine 250 mg p.o. four times a day"
+        },
+        {
+          "name": "metoprolol (Lopressor)",
+          "dose": "12.5 mg",
+          "how_often": "twice a day",
+          "change": "continue",
+          "details": "Started at the North Carolina hospital as Lopressor; tolerated well.",
+          "quote": "metoprolol 12.5 mg twice a day"
+        },
+        {
+          "name": "aspirin",
+          "dose": "325 mg",
+          "how_often": "once a day",
+          "change": "continue",
+          "details": "Started instead of Coumadin because of the questionable significant liver disease.",
+          "quote": "aspirin 325 mg a day"
+        }
+      ],
+      "dates": [
+        {
+          "what": "Referring doctor's evaluation; patient in normal sinus rhythm (date could be read as 6 December or 12 June, see unclear)",
+          "when": "06/12/2008",
+          "quote": "as of my evaluation of him on 06/12/2008"
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "The patient will be seen by the receiving doctor in the near future",
+          "quote": "my patient, A, who you will be seeing in the near future"
+        },
+        {
+          "instruction": "Receiving doctor is asked for input on long-term anticoagulation and on rhythm control",
+          "quote": "I would appreciate your input into the long term management of his anticoagulation and also any recommendations you would have about rhythm control."
+        }
+      ],
+      "negatives": [
+        {
+          "instruction": "Coumadin was not started; hepatology recommended avoiding it because of questionable significant liver disease",
+          "quote": "There was a recommendation to avoid Coumadin secondary to his questionable significant liver disease"
+        },
+        {
+          "instruction": "No further interventions were needed in hospital",
+          "quote": "he required no further interventions"
+        }
+      ],
+      "warning_signs": [],
+      "unclear": [
+        "The date 06/12/2008 is ambiguous (UK day/month vs US month/day); the letter uses US-style wording (e.g. Coumadin, Lopressor, Dear Doctor), but this is not confirmed, so the date is not resolved.",
+        "The name of the hospital is given only as being in Randolph, North Carolina; the exact question of Coumadin risk is left open by the letter."
+      ]
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\nYour doctor wrote to another doctor. The letter tells that doctor about you.\nYou have Wilson's disease. You were told this at age 14. You take penicillamine.\nYou had short breath, a fast heartbeat (palpitations) and chest discomfort. Doctors found atrial fibrillation with a rapid rate. You stayed in hospital and were watched.\nYour heart went back to normal sinus rhythm by itself. You needed no more treatment.\nAn echocardiogram showed mild-to-moderate left atrial enlargement. Your ejection fraction was normal. There was no other significant valve problem.\nDoctors in North Carolina were worried about cirrhosis. You have never had a liver biopsy. So this diagnosis is in doubt. Your liver status is not clear.\nYour liver tests (LFTs) stayed normal. Your copper level is undetectable on your penicillamine dose.\nYour rhythm was normal when your doctor saw you. You take metoprolol and aspirin with no trouble.\nYour atrial fibrillation may come and go (paroxysmal). This is only possible.\nCoumadin was not started. Liver doctors said to avoid it. They said your liver disease is questionable but significant.\nYour doctor asks the new doctor for advice. It is about long-term anticoagulation and rhythm control.\n\n## What you need to do\n1. Go to your visit with the new doctor. You will be seen soon.\n2. Keep taking your medicines as you do now. The letter says to continue all three.\n3. Do not start Coumadin on your own. It was not started.\n\n## Dates and medicines\nDate: 06/12/2008. Your doctor saw you then. Your rhythm was normal. The letter does not say if this is 6 December or 12 June.\n\nMedicines:\n- Penicillamine: 250 milligrams, by mouth, four times a day. Continue.\n- Metoprolol (Lopressor): 12.5 milligrams, twice a day. Continue. It was started at the North Carolina hospital. You do well on it.\n- Aspirin: 325 milligrams, once a day. Continue. It was started instead of Coumadin. This was due to the questionable significant liver disease.\n\n## Questions to ask your doctor\n- What are my options for long-term anticoagulation?\n- What are my options for rhythm control?\n- How can we learn more about my liver?\n\n## When to get urgent help\nThe letter does not list specific warning signs.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 68.6,
+          "reading_ease_target": 70,
+          "grade_level": 5.5,
+          "grade_target": 6,
+          "passed": false
+        },
+        "verifier": null,
+        "blocking_problems": [],
+        "attempt": 1
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 3667,
+        "output_tokens": 1827,
+        "cost_usd": 0.05055,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 31977,
+        "output_tokens": 4428,
+        "cost_usd": 0.15119,
+        "turns": 10
+      }
+    ],
+    "cost_usd": 0.20174,
+    "latency_s": 45.0
+  },
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "diagnoses",
+        "fact": "Wilson's disease, diagnosed at age 14, treated with penicillamine",
+        "status": "kept",
+        "note": "Wilson's disease, told at age 14, takes penicillamine."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Episode of atrial fibrillation with a fast rate that returned to normal rhythm on its own",
+        "status": "kept",
+        "note": "AF with rapid rate; went back to normal sinus rhythm by itself."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Echo: mild-to-moderate enlargement of the left upper heart chamber (left atrium); normal pumping (ejection fraction)",
+        "status": "kept",
+        "note": "Mild-to-moderate left atrial enlargement; normal ejection fraction."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Cirrhosis was reported, but the liver diagnosis is in doubt (no liver biopsy has been done)",
+        "status": "kept",
+        "note": "Says doctors were worried about cirrhosis, but the diagnosis is in doubt because he has never had a liver biopsy."
+      },
+      {
+        "category": "medicines",
+        "fact": "Penicillamine 250 mg by mouth four times a day",
+        "status": "kept",
+        "note": "250 mg by mouth four times a day."
+      },
+      {
+        "category": "medicines",
+        "fact": "Metoprolol (Lopressor) 12.5 mg twice a day",
+        "status": "kept",
+        "note": "Metoprolol (Lopressor) 12.5 mg twice a day."
+      },
+      {
+        "category": "medicines",
+        "fact": "Aspirin 325 mg once a day (given instead of Coumadin because of the liver concern)",
+        "status": "kept",
+        "note": "325 mg once a day, given instead of Coumadin because of the liver concern."
+      },
+      {
+        "category": "dates",
+        "fact": "In normal rhythm when seen on 06/12/2008",
+        "status": "kept",
+        "note": "Rhythm was normal when seen on 06/12/2008."
+      },
+      {
+        "category": "actions",
+        "fact": "Referred for advice on long-term blood thinning (whether Coumadin is safe) and on rhythm control",
+        "status": "kept",
+        "note": "Asks for advice on long-term anticoagulation and rhythm control."
+      },
+      {
+        "category": "negatives",
+        "fact": "No other significant heart valve problem",
+        "status": "kept",
+        "note": "No other significant valve problem."
+      },
+      {
+        "category": "negatives",
+        "fact": "Liver blood tests (LFTs) normal",
+        "status": "kept",
+        "note": "LFTs stayed normal."
+      },
+      {
+        "category": "negatives",
+        "fact": "Copper level undetectable on the current penicillamine dose",
+        "status": "kept",
+        "note": "Copper level undetectable on the current penicillamine dose."
+      },
+      {
+        "category": "negatives",
+        "fact": "No further treatment was needed when the rhythm returned to normal",
+        "status": "kept",
+        "note": "Needed no more treatment."
+      }
+    ],
+    "added": [
+      {
+        "text": "Keep taking your medicines as you do now. The letter says to continue all three. (plus 'Continue.' after each medicine)",
+        "kind": "advice"
+      },
+      {
+        "text": "Do not start Coumadin on your own.",
+        "kind": "advice"
+      },
+      {
+        "text": "They said your liver disease is questionable but significant.",
+        "kind": "medical_fact"
+      }
+    ],
+    "gold_reviewer": "claude-draft"
+  }
+}

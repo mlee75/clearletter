@@ -1,0 +1,188 @@
+{
+  "job": {
+    "id": "models__syn_18__sonnet__en__nv",
+    "part": "models",
+    "letter_id": "syn_18",
+    "file": "data/synthetic/syn_18.txt",
+    "kind": "faithfulness",
+    "model": "sonnet",
+    "language": "en",
+    "verifier": false,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "sonnet",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": false,
+    "status": "not_verified",
+    "final_text": "## What this letter says\nYou had a thyroid blood test (TFT) on 25 September 2026. A TFT is a blood test of the thyroid gland.\n\nYour TSH was 7.8 mU/L. The normal range is 0.3 to 4.2. TSH is a hormone measured to check the thyroid.\n\nThis means your dose of levothyroxine is too low. Your dose is being increased.\n\n## What you need to do\n1. Collect your new levothyroxine prescription from your pharmacy. It is ready now.\n2. Take one 25 micrograms tablet and one 50 micrograms tablet every day.\n3. Take levothyroxine on an empty stomach. Take it at least 30 minutes before breakfast or other medicines.\n4. Leave at least 4 hours between levothyroxine and iron or calcium tablets.\n5. Do not take levothyroxine at the same time as iron or calcium tablets.\n6. Have a repeat TFT blood test in 6 to 8 weeks.\n\n## Dates and medicines\n**Dates**\n- 25 September 2026: your thyroid blood test (TFT).\n- 6 November 2026: the earliest day for your repeat blood test (6 weeks).\n- 20 November 2026: the last day for your repeat blood test (8 weeks).\n\n**Medicine**\n- Levothyroxine: the dose goes up.\n- Old dose: 50 micrograms.\n- New dose: 75 micrograms, once daily.\n- You take one 25 micrograms tablet and one 50 micrograms tablet together every day.\n\n## Questions to ask your doctor\n- What is levothyroxine, and what does it do for me?\n- Where should I go for my repeat blood test?\n- What should I do if I forget a dose?\n\n## When to get urgent help\nThe letter does not list specific warning signs.\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "patient",
+      "purpose": "To tell the patient that her thyroid blood test shows her levothyroxine dose is too low, that the dose is being increased, and that she needs a repeat blood test.",
+      "findings": [
+        {
+          "statement": "TSH is 7.8 mU/L (normal range 0.3 to 4.2) on the thyroid blood test (TFT).",
+          "certainty": "confirmed",
+          "quote": "showed that your TSH is 7.8 mU/L (normal range 0.3 to 4.2)"
+        },
+        {
+          "statement": "Your dose of levothyroxine is too low.",
+          "certainty": "confirmed",
+          "quote": "This means your dose of levothyroxine is too low."
+        }
+      ],
+      "medicines": [
+        {
+          "name": "Levothyroxine",
+          "dose": "75 mcg",
+          "how_often": "once daily",
+          "change": "increase",
+          "details": "Old dose was 50 mcg. New prescription is one 25 mcg tablet and one 50 mcg tablet, taken together every day.",
+          "quote": "Increase levothyroxine from 50 mcg (micrograms) to 75 mcg once daily."
+        }
+      ],
+      "dates": [
+        {
+          "what": "Date of thyroid blood test (TFT)",
+          "when": "25 September 2026",
+          "quote": "Your thyroid blood test (TFT) on 25/09/2026"
+        },
+        {
+          "what": "Repeat TFT blood test window starts (6 weeks)",
+          "when": "6 November 2026",
+          "quote": "between 6 November and 20 November 2026"
+        },
+        {
+          "what": "Repeat TFT blood test window ends (8 weeks)",
+          "when": "20 November 2026",
+          "quote": "between 6 November and 20 November 2026"
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Collect your new levothyroxine prescription from your pharmacy.",
+          "quote": "Your new prescription is ready to collect from your pharmacy."
+        },
+        {
+          "instruction": "Take one 25 mcg tablet and one 50 mcg tablet every day.",
+          "quote": "take one of each every day"
+        },
+        {
+          "instruction": "Take levothyroxine on an empty stomach, at least 30 minutes before breakfast or other medicines.",
+          "quote": "Take levothyroxine on an empty stomach, at least 30 minutes before breakfast or other medicines."
+        },
+        {
+          "instruction": "Leave at least 4 hours between levothyroxine and iron or calcium tablets.",
+          "quote": "Leave at least 4 hours between them."
+        },
+        {
+          "instruction": "Have a repeat TFT blood test in 6 to 8 weeks.",
+          "quote": "Please have a repeat TFT blood test in 6 to 8 weeks"
+        }
+      ],
+      "negatives": [
+        {
+          "instruction": "Do not take levothyroxine at the same time as iron or calcium tablets.",
+          "quote": "Do not take it at the same time as iron or calcium tablets."
+        }
+      ],
+      "warning_signs": [],
+      "unclear": []
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\nYou had a thyroid blood test (TFT) on 25 September 2026. A TFT is a blood test of the thyroid gland.\n\nYour TSH was 7.8 mU/L. The normal range is 0.3 to 4.2. TSH is a hormone measured to check the thyroid.\n\nThis means your dose of levothyroxine is too low. Your dose is being increased.\n\n## What you need to do\n1. Collect your new levothyroxine prescription from your pharmacy. It is ready now.\n2. Take one 25 micrograms tablet and one 50 micrograms tablet every day.\n3. Take levothyroxine on an empty stomach. Take it at least 30 minutes before breakfast or other medicines.\n4. Leave at least 4 hours between levothyroxine and iron or calcium tablets.\n5. Do not take levothyroxine at the same time as iron or calcium tablets.\n6. Have a repeat TFT blood test in 6 to 8 weeks.\n\n## Dates and medicines\n**Dates**\n- 25 September 2026: your thyroid blood test (TFT).\n- 6 November 2026: the earliest day for your repeat blood test (6 weeks).\n- 20 November 2026: the last day for your repeat blood test (8 weeks).\n\n**Medicine**\n- Levothyroxine: the dose goes up.\n- Old dose: 50 micrograms.\n- New dose: 75 micrograms, once daily.\n- You take one 25 micrograms tablet and one 50 micrograms tablet together every day.\n\n## Questions to ask your doctor\n- What is levothyroxine, and what does it do for me?\n- Where should I go for my repeat blood test?\n- What should I do if I forget a dose?\n\n## When to get urgent help\nThe letter does not list specific warning signs.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 79.2,
+          "reading_ease_target": 70,
+          "grade_level": 4.5,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": null,
+        "blocking_problems": [],
+        "attempt": 1
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 3228,
+        "output_tokens": 1096,
+        "cost_usd": 0.03242,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 11507,
+        "output_tokens": 1490,
+        "cost_usd": 0.05634,
+        "turns": 5
+      }
+    ],
+    "cost_usd": 0.08875,
+    "latency_s": 23.9
+  },
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "diagnoses",
+        "fact": "TSH 7.8 mU/L (normal range 0.3 to 4.2): the levothyroxine dose is too low",
+        "status": "kept",
+        "note": "TSH 7.8 mU/L, normal range 0.3 to 4.2, and dose too low are all stated."
+      },
+      {
+        "category": "medicines",
+        "fact": "Increase levothyroxine from 50 micrograms to 75 micrograms once daily",
+        "status": "kept",
+        "note": "Old dose 50 micrograms and new dose 75 micrograms once daily are stated."
+      },
+      {
+        "category": "medicines",
+        "fact": "New prescription: take one 25 microgram tablet and one 50 microgram tablet every day",
+        "status": "kept",
+        "note": "Take one 25 microgram tablet and one 50 microgram tablet every day."
+      },
+      {
+        "category": "medicines",
+        "fact": "Take on an empty stomach, at least 30 minutes before breakfast or other medicines",
+        "status": "kept",
+        "note": "Take on an empty stomach, at least 30 minutes before breakfast or other medicines."
+      },
+      {
+        "category": "medicines",
+        "fact": "Leave at least 4 hours between levothyroxine and iron or calcium tablets",
+        "status": "kept",
+        "note": "Leave at least 4 hours between levothyroxine and iron or calcium tablets."
+      },
+      {
+        "category": "dates",
+        "fact": "Thyroid blood test on 25 September 2026",
+        "status": "kept",
+        "note": "Thyroid blood test (TFT) on 25 September 2026."
+      },
+      {
+        "category": "dates",
+        "fact": "Repeat thyroid blood test in 6 to 8 weeks (between 6 November and 20 November 2026)",
+        "status": "kept",
+        "note": "Repeat test in 6 to 8 weeks; the dates 6 November and 20 November 2026 are given in the dates section."
+      },
+      {
+        "category": "actions",
+        "fact": "Collect the new prescription from your pharmacy",
+        "status": "kept",
+        "note": "Collect the new prescription from your pharmacy; it is ready now."
+      }
+    ],
+    "added": [],
+    "gold_reviewer": "claude-draft"
+  }
+}

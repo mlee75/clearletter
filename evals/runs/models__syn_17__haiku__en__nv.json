@@ -1,0 +1,196 @@
+{
+  "job": {
+    "id": "models__syn_17__haiku__en__nv",
+    "part": "models",
+    "letter_id": "syn_17",
+    "file": "data/synthetic/syn_17.txt",
+    "kind": "faithfulness",
+    "model": "haiku",
+    "language": "en",
+    "verifier": false,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "haiku",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": false,
+    "status": "not_verified",
+    "final_text": "## What this letter says\nYou had a review for your asthma flare-up on 30 September 2026. Your doctor gave you steroid tablets called prednisolone. These tablets work in a special way. The dose gets smaller each week.\n\n## What you need to do\n1. Take your prednisolone tablets exactly as shown below.\n2. Take them once a day in the morning with food.\n3. Keep taking your usual inhalers.\n4. Carry the blue steroid card that the pharmacy gives you.\n5. Book a review with the asthma nurse within 2 weeks (by 14 October 2026).\n\n## Dates and medicines\n**Prednisolone tablets**\n- 1 October to 5 October 2026: Take 40 milligrams (8 tablets) each day\n- 6 October to 8 October 2026: Take 20 milligrams (4 tablets) each day\n- 9 October to 11 October 2026: Take 10 milligrams (2 tablets) each day\n- 12 October 2026: Stop taking the tablets\n\nTake them once a day in the morning with food.\n\n**Important date**:\nBook your asthma nurse review by 14 October 2026.\n\n## Questions to ask your doctor\n- Why do I take less medicine each week?\n- What should I do if I still have trouble breathing?\n- Why is the blue steroid card important?\n- How do I book my asthma nurse review?\n\n## When to get urgent help\nIf your breathing gets worse or your reliever inhaler does not help, get help urgently: call 999.\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "patient",
+      "purpose": "Prescription for prednisolone steroid tablets following asthma flare-up review, with tapering schedule",
+      "findings": [
+        {
+          "statement": "Patient has asthma flare-up",
+          "certainty": "confirmed",
+          "quote": "your asthma flare-up"
+        },
+        {
+          "statement": "Patient has been prescribed prednisolone steroid tablets",
+          "certainty": "confirmed",
+          "quote": "you have been prescribed prednisolone (a steroid) tablets"
+        }
+      ],
+      "medicines": [
+        {
+          "name": "prednisolone",
+          "dose": "40 mg",
+          "how_often": "once a day in the morning with food",
+          "change": "start",
+          "details": "Tapering dose schedule: 1 October to 5 October 2026: 40 mg (8 tablets) daily; 6 October to 8 October 2026: 20 mg (4 tablets) daily; 9 October to 11 October 2026: 10 mg (2 tablets) daily; 12 October 2026: stop",
+          "quote": "Please take your prednisolone once a day in the morning with food, as follows: - 1 Oct to 5 Oct 2026: 40 mg (8 tablets) each day - 6 Oct to 8 Oct 2026: 20 mg (4 tablets) each day - 9 Oct to 11 Oct 2026: 10 mg (2 tablets) each day - 12 Oct 2026: stop"
+        }
+      ],
+      "dates": [
+        {
+          "what": "Asthma flare-up review",
+          "when": "30 September 2026",
+          "quote": "your review for your asthma flare-up on 30/09/2026"
+        },
+        {
+          "what": "Book asthma nurse review by",
+          "when": "14 October 2026",
+          "quote": "within 2 weeks (by 14 October 2026)"
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Continue your usual inhalers",
+          "quote": "Continue your usual inhalers."
+        },
+        {
+          "instruction": "Carry the blue steroid card that the pharmacy gives you",
+          "quote": "Carry the blue steroid card that the pharmacy gives you."
+        },
+        {
+          "instruction": "Book a review with the asthma nurse within 2 weeks",
+          "quote": "Please book a review with the asthma nurse within 2 weeks"
+        }
+      ],
+      "negatives": [],
+      "warning_signs": [
+        {
+          "instruction": "If your breathing gets worse or your reliever inhaler does not help, get help urgently by calling 999",
+          "quote": "If your breathing gets worse or your reliever inhaler does not help, get help urgently: call 999."
+        }
+      ],
+      "unclear": []
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\nYou had a review for your asthma flare-up on 30 September 2026. Your doctor gave you steroid tablets called prednisolone. These tablets work in a special way. The dose gets smaller each week.\n\n## What you need to do\n1. Take your prednisolone tablets exactly as shown below.\n2. Take them once a day in the morning with food.\n3. Keep taking your usual inhalers.\n4. Carry the blue steroid card that the pharmacy gives you.\n5. Book a review with the asthma nurse within 2 weeks (by 14 October 2026).\n\n## Dates and medicines\n**Prednisolone tablets**\n- 1 October to 5 October 2026: Take 40 milligrams (8 tablets) each day\n- 6 October to 8 October 2026: Take 20 milligrams (4 tablets) each day\n- 9 October to 11 October 2026: Take 10 milligrams (2 tablets) each day\n- 12 October 2026: Stop taking the tablets\n\nTake them once a day in the morning with food.\n\n**Important date**:\nBook your asthma nurse review by 14 October 2026.\n\n## Questions to ask your doctor\n- Why do I take less medicine each week?\n- What should I do if I still have trouble breathing?\n- Why is the blue steroid card important?\n- How do I book my asthma nurse review?\n\n## When to get urgent help\nIf your breathing gets worse or your reliever inhaler does not help, get help urgently: call 999.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 75.1,
+          "reading_ease_target": 70,
+          "grade_level": 6.1,
+          "grade_target": 6,
+          "passed": false
+        },
+        "verifier": null,
+        "blocking_problems": [],
+        "attempt": 1
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 2796,
+        "output_tokens": 4070,
+        "cost_usd": 0.02315,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 17471,
+        "output_tokens": 5121,
+        "cost_usd": 0.04472,
+        "turns": 4
+      }
+    ],
+    "cost_usd": 0.06786,
+    "latency_s": 77.3
+  },
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "diagnoses",
+        "fact": "Asthma flare-up (review on 30 September 2026)",
+        "status": "kept",
+        "note": "Review for asthma flare-up on 30 September 2026 is stated."
+      },
+      {
+        "category": "medicines",
+        "fact": "Prednisolone (a steroid), 5 mg tablets, once a day in the morning with food",
+        "status": "dropped",
+        "note": "Prednisolone, the steroid, and once a day in the morning with food are all stated. The 5 mg tablet strength is never stated."
+      },
+      {
+        "category": "medicines",
+        "fact": "1 to 5 October 2026: 40 mg (8 tablets) each day",
+        "status": "kept",
+        "note": "1–5 October 2026: 40 mg (8 tablets) each day."
+      },
+      {
+        "category": "medicines",
+        "fact": "6 to 8 October 2026: 20 mg (4 tablets) each day",
+        "status": "kept",
+        "note": "6–8 October 2026: 20 mg (4 tablets) each day."
+      },
+      {
+        "category": "medicines",
+        "fact": "9 to 11 October 2026: 10 mg (2 tablets) each day",
+        "status": "kept",
+        "note": "9–11 October 2026: 10 mg (2 tablets) each day."
+      },
+      {
+        "category": "medicines",
+        "fact": "12 October 2026: stop prednisolone",
+        "status": "kept",
+        "note": "12 October 2026: stop taking the tablets."
+      },
+      {
+        "category": "medicines",
+        "fact": "Continue your usual inhalers",
+        "status": "kept",
+        "note": "'Keep taking your usual inhalers.'"
+      },
+      {
+        "category": "dates",
+        "fact": "Book a review with the asthma nurse within 2 weeks (by 14 October 2026)",
+        "status": "kept",
+        "note": "Book asthma nurse review within 2 weeks (by 14 October 2026)."
+      },
+      {
+        "category": "actions",
+        "fact": "Carry the blue steroid card the pharmacy gives you",
+        "status": "kept",
+        "note": "Carry the blue steroid card the pharmacy gives you."
+      },
+      {
+        "category": "actions",
+        "fact": "If breathing gets worse or the reliever inhaler does not help, call 999",
+        "status": "kept",
+        "note": "If breathing gets worse or reliever inhaler does not help, call 999."
+      }
+    ],
+    "added": [
+      {
+        "text": "The dose gets smaller each week.",
+        "kind": "medical_fact"
+      },
+      {
+        "text": "These tablets work in a special way.",
+        "kind": "medical_fact"
+      }
+    ],
+    "gold_reviewer": "claude-draft"
+  }
+}

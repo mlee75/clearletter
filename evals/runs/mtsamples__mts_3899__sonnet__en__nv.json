@@ -1,0 +1,202 @@
+{
+  "job": {
+    "id": "mtsamples__mts_3899__sonnet__en__nv",
+    "part": "mtsamples",
+    "letter_id": "mts_3899",
+    "file": "data/mtsamples/mts_3899.txt",
+    "kind": "faithfulness",
+    "model": "sonnet",
+    "language": "en",
+    "verifier": false,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "sonnet",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": false,
+    "status": "not_verified",
+    "final_text": "## What this letter says\nThis letter is from your hospital stay. You had a symptomatic thyroid goiter (large nodular goiter).\n\nYou had an operation to take out your thyroid (total thyroidectomy). It was done on 22 September 2008. You did very well after it. You stayed stable.\n\nYou went home on 25 September 2008. When you left:\n- You were eating well.\n- You had no fever.\n- Your vital signs were stable.\n- Your pain was well controlled.\n- Your wound was clean and dry.\n- Your drain was removed.\n\nIn the hospital, you needed pain medicine through a vein (intravenous narcotics).\n\n## What you need to do\n1. Go to the surgical office within 1 week after you left the hospital.\n2. Follow the wound care sheet you were given.\n\n## Dates and medicines\n**Dates**\n- 22 September 2008: your thyroid operation (total thyroidectomy).\n- 25 September 2008: you went home.\n- Within 1 week after 25 September 2008: your visit to the surgical office.\n\n**Medicines**\n- Vicodin: new. It is for pain. The letter does not say the dose or how often to take it.\n- Synthroid (thyroid hormone): new. It replaces thyroid hormone. You began it on day 1 after the operation. You were given a prescription for home. The letter does not say the dose or how often to take it.\n\nThe wound care steps are on a separate sheet. That sheet is not part of this letter.\n\n## Questions to ask your doctor\n1. How much Vicodin should I take, and how often?\n2. How much Synthroid should I take, and how often?\n3. Can you go over the wound care sheet with me?\n4. What is a goiter, and what does a thyroidectomy mean?\n\n## When to get urgent help\nThe letter does not list specific warning signs.\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "doctor_copy_to_patient",
+      "purpose": "Discharge summary after total thyroidectomy for a symptomatic thyroid goiter.",
+      "findings": [
+        {
+          "statement": "Diagnosis: symptomatic thyroid goiter (large nodular goiter)",
+          "certainty": "confirmed",
+          "quote": "DISCHARGE DIAGNOSIS:  ,Symptomatic thyroid goiter."
+        },
+        {
+          "statement": "Total thyroidectomy was performed and she tolerated it very well and remained stable afterwards",
+          "certainty": "confirmed",
+          "quote": "which she tolerated very well and remained stable in the postoperative period"
+        },
+        {
+          "statement": "At discharge: tolerating diet, no fever, stable vital signs, good pain control",
+          "certainty": "confirmed",
+          "quote": "tolerating a diet well, having no fever, stable vital signs, and good pain control"
+        },
+        {
+          "statement": "The wound was clean and dry and the drain was removed",
+          "certainty": "confirmed",
+          "quote": "The wound was clean and dry.  The drain was removed."
+        },
+        {
+          "statement": "Needed intravenous narcotics for pain control in hospital",
+          "certainty": "confirmed",
+          "quote": "She required intravenous narcotics for pain control."
+        }
+      ],
+      "medicines": [
+        {
+          "name": "Vicodin",
+          "dose": "not stated",
+          "how_often": "not stated",
+          "change": "start",
+          "details": "Prescribed for pain",
+          "quote": "She was given prescription for Vicodin for pain"
+        },
+        {
+          "name": "Synthroid (thyroid hormone)",
+          "dose": "not stated",
+          "how_often": "not stated",
+          "change": "start",
+          "details": "Thyroid hormone replacement, begun on postoperative day 1; prescription given for discharge",
+          "quote": "began on thyroid hormone replacement"
+        }
+      ],
+      "dates": [
+        {
+          "what": "Total thyroidectomy performed",
+          "when": "22 September 2008",
+          "quote": "total thyroidectomy on 09/22/08"
+        },
+        {
+          "what": "Discharged home",
+          "when": "25 September 2008",
+          "quote": "stable for discharge home on 09/25/08"
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Follow up in the surgical office within one week after discharge",
+          "quote": "She was instructed to follow up in the surgical office within one week after discharge."
+        },
+        {
+          "instruction": "Follow the wound care instructions given on the routine wound care sheet",
+          "quote": "the appropriate wound care instructions per my routine wound care sheet"
+        }
+      ],
+      "negatives": [],
+      "warning_signs": [],
+      "unclear": [
+        "The letter dates are in US format (09/22/08 is clearly month/day/year since 22 cannot be a month); 09/25/08 read the same way.",
+        "Doses and how often to take Vicodin and Synthroid are not stated.",
+        "Exact wound care instructions are on a separate sheet not included in the letter."
+      ]
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\nThis letter is from your hospital stay. You had a symptomatic thyroid goiter (large nodular goiter).\n\nYou had an operation to take out your thyroid (total thyroidectomy). It was done on 22 September 2008. You did very well after it. You stayed stable.\n\nYou went home on 25 September 2008. When you left:\n- You were eating well.\n- You had no fever.\n- Your vital signs were stable.\n- Your pain was well controlled.\n- Your wound was clean and dry.\n- Your drain was removed.\n\nIn the hospital, you needed pain medicine through a vein (intravenous narcotics).\n\n## What you need to do\n1. Go to the surgical office within 1 week after you left the hospital.\n2. Follow the wound care sheet you were given.\n\n## Dates and medicines\n**Dates**\n- 22 September 2008: your thyroid operation (total thyroidectomy).\n- 25 September 2008: you went home.\n- Within 1 week after 25 September 2008: your visit to the surgical office.\n\n**Medicines**\n- Vicodin: new. It is for pain. The letter does not say the dose or how often to take it.\n- Synthroid (thyroid hormone): new. It replaces thyroid hormone. You began it on day 1 after the operation. You were given a prescription for home. The letter does not say the dose or how often to take it.\n\nThe wound care steps are on a separate sheet. That sheet is not part of this letter.\n\n## Questions to ask your doctor\n1. How much Vicodin should I take, and how often?\n2. How much Synthroid should I take, and how often?\n3. Can you go over the wound care sheet with me?\n4. What is a goiter, and what does a thyroidectomy mean?\n\n## When to get urgent help\nThe letter does not list specific warning signs.",
+        "missing_headings": [],
+        "unknown_numbers": [
+          "2008"
+        ],
+        "readability": {
+          "language": "en",
+          "reading_ease": 81.4,
+          "reading_ease_target": 70,
+          "grade_level": 3.9,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": null,
+        "blocking_problems": [
+          "The number 2008 is not in the letter"
+        ],
+        "attempt": 1
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 3281,
+        "output_tokens": 1083,
+        "cost_usd": 0.03258,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 12067,
+        "output_tokens": 1776,
+        "cost_usd": 0.06482,
+        "turns": 6
+      }
+    ],
+    "cost_usd": 0.0974,
+    "latency_s": 25.1
+  },
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "diagnoses",
+        "fact": "Large nodular thyroid goitre causing symptoms",
+        "status": "kept",
+        "note": "Says symptomatic thyroid goiter (large nodular goiter)."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Whole thyroid removed (total thyroidectomy) on 09/22/08, went well",
+        "status": "kept",
+        "note": "Total thyroidectomy on 22 September 2008; did very well."
+      },
+      {
+        "category": "medicines",
+        "fact": "Vicodin for pain (prescription)",
+        "status": "kept",
+        "note": "Vicodin for pain, listed as a medicine."
+      },
+      {
+        "category": "medicines",
+        "fact": "Synthroid thyroid hormone replacement (prescription)",
+        "status": "kept",
+        "note": "Synthroid thyroid hormone, prescription given for home."
+      },
+      {
+        "category": "dates",
+        "fact": "Went home on 09/25/08",
+        "status": "kept",
+        "note": "Went home on 25 September 2008."
+      },
+      {
+        "category": "dates",
+        "fact": "Follow up in the surgical office within one week",
+        "status": "kept",
+        "note": "Go to surgical office within 1 week after leaving hospital."
+      },
+      {
+        "category": "actions",
+        "fact": "Follow the wound care instructions sheet",
+        "status": "kept",
+        "note": "Follow the wound care sheet you were given."
+      },
+      {
+        "category": "negatives",
+        "fact": "No fever at discharge",
+        "status": "kept",
+        "note": "'You had no fever' when you left."
+      }
+    ],
+    "added": [
+      {
+        "text": "Vicodin: new (letter does not say whether Vicodin is a new medicine)",
+        "kind": "medical_fact"
+      }
+    ],
+    "gold_reviewer": "claude-draft"
+  }
+}

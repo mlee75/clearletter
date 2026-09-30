@@ -1,0 +1,214 @@
+{
+  "job": {
+    "id": "languages__syn_15__sonnet__fr__v",
+    "part": "languages",
+    "letter_id": "syn_15",
+    "file": "data/synthetic/syn_15.txt",
+    "kind": "faithfulness",
+    "model": "sonnet",
+    "language": "fr",
+    "verifier": true,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "sonnet",
+    "backend": "claude-code",
+    "language": "fr",
+    "country": "uk",
+    "use_verifier": true,
+    "status": "ok",
+    "final_text": "## Ce que dit cette lettre\nCette lettre donne le résultat de votre IRM du genou gauche. L'IRM est un examen qui prend des images de l'intérieur du corps avec des aimants. Elle a été faite le 1 septembre 2026.\n\n- Il y a peut-être une petite déchirure du ménisque (partie arrière, côté intérieur du genou). On ne peut pas dire qu'il n'y en a pas.\n- Vous n'avez pas de fracture. Ce point est écarté.\n- Le ligament croisé antérieur (LCA) est intact.\n- Il y a une légère usure du genou, côté intérieur (arthrose débutante).\n- Il y a un peu de liquide dans le genou (épanchement articulaire).\n\nLa chirurgie n'est pas prévue à ce stade.\n\n## Ce que vous devez faire\n1. Allez à la kinésithérapie pendant 6 à 8 semaines. Le médecin a fait la demande.\n2. Allez à la consultation de contrôle en orthopédie dans 3 mois.\n3. Continuez vos activités normales, tant que la douleur le permet.\n\n## Dates et médicaments\n- 1 septembre 2026 : IRM du genou gauche.\n- 6 à 8 semaines : kinésithérapie.\n- Dans 3 mois : consultation de contrôle en orthopédie. La date exacte n'est pas donnée dans la lettre.\n- Médicaments : la lettre n'en cite aucun.\n\n## Questions à poser à votre médecin\n- Que veut dire « ménisque » ?\n- Que veut dire « arthrose » et « épanchement » ?\n- Comment saurai-je la date de ma consultation dans 3 mois ?\n\n## Quand obtenir de l'aide en urgence\nLa lettre ne donne pas de signes d'alerte particuliers.\n\nSi vous êtes inquiet et que ce n'est pas une urgence, appelez le NHS 111. En cas d'urgence, appelez le 999.\n\n---\n*Cette explication a été faite par un programme informatique pour vous aider à lire votre lettre. Elle peut contenir des erreurs. Elle ne remplace pas votre médecin, votre infirmier ou votre pharmacien. Suivez toujours la lettre et posez-leur vos questions si quelque chose n'est pas clair.*\n",
+    "facts": {
+      "reader": "doctor_copy_to_patient",
+      "purpose": "Report the MRI scan results of Mr Torres's left knee to his GP, with a copy to the patient, and set out the plan of physiotherapy and a clinic review.",
+      "findings": [
+        {
+          "statement": "Possible small tear of the posterior horn of the medial meniscus; a tear cannot be excluded.",
+          "certainty": "possible",
+          "quote": "Possible small tear of the posterior horn of the medial meniscus; a tear cannot be excluded."
+        },
+        {
+          "statement": "No fracture.",
+          "certainty": "ruled_out",
+          "quote": "No fracture."
+        },
+        {
+          "statement": "The anterior cruciate ligament (ACL) is intact.",
+          "certainty": "confirmed",
+          "quote": "Anterior cruciate ligament (ACL) intact."
+        },
+        {
+          "statement": "Mild degenerative changes in the medial compartment (early wear and tear, osteoarthritis).",
+          "certainty": "confirmed",
+          "quote": "Mild degenerative changes in the medial compartment (early wear and tear, osteoarthritis)."
+        },
+        {
+          "statement": "Small joint effusion (a little fluid in the knee).",
+          "certainty": "confirmed",
+          "quote": "Small joint effusion (a little fluid in the knee)."
+        }
+      ],
+      "medicines": [],
+      "dates": [
+        {
+          "what": "MRI of the left knee was performed",
+          "when": "1 September 2026",
+          "quote": "performed 01/09/2026"
+        },
+        {
+          "what": "Review in the orthopaedic clinic (no exact date given)",
+          "when": "in 3 months",
+          "quote": "I will review him in the orthopaedic clinic in 3 months."
+        },
+        {
+          "what": "Physiotherapy course length (referral made)",
+          "when": "6 to 8 weeks",
+          "quote": "I have referred Mr Torres for physiotherapy for 6 to 8 weeks."
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Attend physiotherapy for 6 to 8 weeks (referral made by the consultant).",
+          "quote": "I have referred Mr Torres for physiotherapy for 6 to 8 weeks."
+        },
+        {
+          "instruction": "Attend the orthopaedic clinic review in 3 months.",
+          "quote": "I will review him in the orthopaedic clinic in 3 months."
+        },
+        {
+          "instruction": "Continue normal activities as pain allows.",
+          "quote": "He can continue normal activities as pain allows."
+        }
+      ],
+      "negatives": [
+        {
+          "instruction": "Surgery is not planned at this stage.",
+          "quote": "Surgery is not planned at this stage."
+        },
+        {
+          "instruction": "No fracture was found.",
+          "quote": "No fracture."
+        }
+      ],
+      "warning_signs": [],
+      "unclear": [
+        "The date 01/09/2026 is read as 1 September 2026 (day/month/year) because the letter uses UK style. The letter does not state the format.",
+        "The exact date of the clinic review is not given, only \"in 3 months\"."
+      ]
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## Ce que dit cette lettre\nCette lettre donne le résultat de votre IRM du genou gauche. L'IRM est un examen qui prend des images de l'intérieur du corps avec des aimants. Elle a été faite le 1 septembre 2026.\n\n- Il y a peut-être une petite déchirure du ménisque (partie arrière, côté intérieur du genou). On ne peut pas dire qu'il n'y en a pas.\n- Vous n'avez pas de fracture. Ce point est écarté.\n- Le ligament croisé antérieur (LCA) est intact.\n- Il y a une légère usure du genou, côté intérieur (arthrose débutante).\n- Il y a un peu de liquide dans le genou (épanchement articulaire).\n\nLa chirurgie n'est pas prévue à ce stade.\n\n## Ce que vous devez faire\n1. Allez à la kinésithérapie pendant 6 à 8 semaines. Le médecin a fait la demande.\n2. Allez à la consultation de contrôle en orthopédie dans 3 mois.\n3. Continuez vos activités normales, tant que la douleur le permet.\n\n## Dates et médicaments\n- 1 septembre 2026 : IRM du genou gauche.\n- 6 à 8 semaines : kinésithérapie.\n- Dans 3 mois : consultation de contrôle en orthopédie. La date exacte n'est pas donnée dans la lettre.\n- Médicaments : la lettre n'en cite aucun.\n\n## Questions à poser à votre médecin\n- Que veut dire « ménisque » ?\n- Que veut dire « arthrose » et « épanchement » ?\n- Comment saurai-je la date de ma consultation dans 3 mois ?\n\n## Quand obtenir de l'aide en urgence\nLa lettre ne donne pas de signes d'alerte particuliers.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "fr",
+          "reading_ease": 89.1,
+          "reading_ease_target": 70,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [],
+          "summary": "The explanation matches the letter. It keeps the uncertain meniscus tear, the absence of a fracture, the intact ACL, the mild early osteoarthritis, the small effusion, no surgery planned, physiotherapy for 6 to 8 weeks, review in 3 months, and normal activities as pain allows. It gives the date, notes that no medicines are listed, and says no warning signs are given. Nothing is added, dropped or changed."
+        },
+        "blocking_problems": [],
+        "attempt": 1
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 3157,
+        "output_tokens": 1379,
+        "cost_usd": 0.03751,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 12571,
+        "output_tokens": 1812,
+        "cost_usd": 0.06708,
+        "turns": 7
+      },
+      {
+        "step": "verify",
+        "input_tokens": 3091,
+        "output_tokens": 436,
+        "cost_usd": 0.02286,
+        "turns": 2
+      }
+    ],
+    "cost_usd": 0.12744,
+    "latency_s": 29.9
+  },
+  "back_translation": "## What this letter says\nThis letter gives the result of your MRI of the left knee. The MRI is an examination that takes images of the inside of the body with magnets. It was done on 1 September 2026.\n\n- There is perhaps a small tear of the meniscus (back part, inner side of the knee). It cannot be said that there is not one.\n- You do not have a fracture. This point is ruled out.\n- The anterior cruciate ligament (ACL) is intact.\n- There is slight wear of the knee, inner side (early osteoarthritis).\n- There is a little fluid in the knee (joint effusion).\n\nSurgery is not planned at this stage.\n\n## What you must do\n1. Go to physiotherapy for 6 to 8 weeks. The doctor made the request.\n2. Go to the follow-up consultation in orthopaedics in 3 months.\n3. Continue your normal activities, as long as the pain allows it.\n\n## Dates and medicines\n- 1 September 2026: MRI of the left knee.\n- 6 to 8 weeks: physiotherapy.\n- In 3 months: follow-up consultation in orthopaedics. The exact date is not given in the letter.\n- Medicines: the letter does not mention any.\n\n## Questions to ask your doctor\n- What does \"meniscus\" mean?\n- What do \"osteoarthritis\" and \"effusion\" mean?\n- How will I know the date of my consultation in 3 months?\n\n## When to get help urgently\nThe letter does not give any particular warning signs.",
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "diagnoses",
+        "fact": "Possible small tear of the medial meniscus in the left knee (a tear cannot be excluded)",
+        "status": "kept",
+        "note": "Says there may be a small tear of the meniscus (back part, inner side) of the left knee, and that a tear cannot be ruled out."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Mild wear and tear (early osteoarthritis) in the knee",
+        "status": "kept",
+        "note": "Says there is slight wear on the inner side of the knee (early osteoarthritis)."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "A little fluid in the knee (small effusion)",
+        "status": "kept",
+        "note": "Says there is a little fluid in the knee (joint effusion)."
+      },
+      {
+        "category": "dates",
+        "fact": "MRI on 1 September 2026",
+        "status": "kept",
+        "note": "Gives the MRI date as 1 September 2026."
+      },
+      {
+        "category": "dates",
+        "fact": "Review in the orthopaedic clinic in 3 months",
+        "status": "kept",
+        "note": "Says there is a follow-up appointment in orthopaedics in 3 months."
+      },
+      {
+        "category": "actions",
+        "fact": "Referred for physiotherapy for 6 to 8 weeks",
+        "status": "kept",
+        "note": "Says to go to physiotherapy for 6 to 8 weeks, as requested by the doctor."
+      },
+      {
+        "category": "actions",
+        "fact": "Continue normal activities as pain allows",
+        "status": "kept",
+        "note": "Says to continue normal activities as long as the pain allows."
+      },
+      {
+        "category": "negatives",
+        "fact": "No fracture",
+        "status": "kept",
+        "note": "Says there is no fracture."
+      },
+      {
+        "category": "negatives",
+        "fact": "ACL (knee ligament) intact",
+        "status": "kept",
+        "note": "Says the ACL is intact."
+      },
+      {
+        "category": "negatives",
+        "fact": "Surgery is not planned at this stage",
+        "status": "kept",
+        "note": "Says surgery is not planned at this stage."
+      }
+    ],
+    "added": [],
+    "gold_reviewer": "claude-draft"
+  }
+}

@@ -1,0 +1,207 @@
+{
+  "job": {
+    "id": "models__syn_15__haiku__en__v",
+    "part": "models",
+    "letter_id": "syn_15",
+    "file": "data/synthetic/syn_15.txt",
+    "kind": "faithfulness",
+    "model": "haiku",
+    "language": "en",
+    "verifier": true,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "haiku",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": true,
+    "status": "ok",
+    "final_text": "## What this letter says\n\nYour MRI scan of your left knee was done on 1 September 2026.\n\nThe scan found:\n- Your knee's cushion [meniscus] might have a small tear. But the tear might not be there.\n- No broken bones.\n- Your knee ligament [ACL] is healthy.\n- Mild wear and tear in your knee.\n- A little fluid in your knee.\n\nSurgery is not planned at this time.\n\n## What you need to do\n\n1. Go to physiotherapy [exercises] for 6 to 8 weeks.\n2. Keep doing your normal activities if pain allows.\n3. Book an appointment at the orthopaedic clinic [bone and joint doctor]. This should be for 3 months from now.\n4. Attend that appointment.\n\n## Dates and medicines\n\n- MRI left knee performed: 1 September 2026\n- No medicines mentioned.\n\n## Questions to ask your doctor\n\n1. What exercises should I do in physiotherapy?\n2. When exactly should I book my clinic appointment?\n3. What should I do if my knee pain gets worse?\n4. Can the small tear heal without surgery?\n\n## When to get urgent help\n\nThe letter does not list specific warning signs.\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "doctor_copy_to_patient",
+      "purpose": "MRI results of left knee and management plan",
+      "findings": [
+        {
+          "statement": "Possible small tear of the posterior horn of the medial meniscus",
+          "certainty": "possible",
+          "quote": "Possible small tear of the posterior horn of the medial meniscus; a tear cannot be excluded"
+        },
+        {
+          "statement": "No fracture",
+          "certainty": "ruled_out",
+          "quote": "No fracture"
+        },
+        {
+          "statement": "ACL intact",
+          "certainty": "confirmed",
+          "quote": "Anterior cruciate ligament (ACL) intact"
+        },
+        {
+          "statement": "Mild degenerative changes in the medial compartment (early wear and tear, osteoarthritis)",
+          "certainty": "confirmed",
+          "quote": "Mild degenerative changes in the medial compartment (early wear and tear, osteoarthritis)"
+        },
+        {
+          "statement": "Small joint effusion (a little fluid in the knee)",
+          "certainty": "confirmed",
+          "quote": "Small joint effusion (a little fluid in the knee)"
+        }
+      ],
+      "medicines": [],
+      "dates": [
+        {
+          "what": "MRI left knee performed",
+          "when": "1 September 2026",
+          "quote": "MRI left knee, performed 01/09/2026"
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Attend physiotherapy for 6 to 8 weeks",
+          "quote": "I have referred Mr Torres for physiotherapy for 6 to 8 weeks"
+        },
+        {
+          "instruction": "Continue normal activities as pain allows",
+          "quote": "He can continue normal activities as pain allows"
+        },
+        {
+          "instruction": "Book and attend orthopaedic clinic review in 3 months",
+          "quote": "I will review him in the orthopaedic clinic in 3 months"
+        }
+      ],
+      "negatives": [
+        {
+          "instruction": "No fracture has been found",
+          "quote": "No fracture"
+        },
+        {
+          "instruction": "Surgery is not planned at this stage",
+          "quote": "Surgery is not planned at this stage"
+        }
+      ],
+      "warning_signs": [],
+      "unclear": []
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\n\nYour MRI scan of your left knee was done on 1 September 2026.\n\nThe scan found:\n- Your knee's cushion [meniscus] might have a small tear. But the tear might not be there.\n- No broken bones.\n- Your knee ligament [ACL] is healthy.\n- Mild wear and tear in your knee.\n- A little fluid in your knee.\n\nSurgery is not planned at this time.\n\n## What you need to do\n\n1. Go to physiotherapy [exercises] for 6 to 8 weeks.\n2. Keep doing your normal activities if pain allows.\n3. Book an appointment at the orthopaedic clinic [bone and joint doctor]. This should be for 3 months from now.\n4. Attend that appointment.\n\n## Dates and medicines\n\n- MRI left knee performed: 1 September 2026\n- No medicines mentioned.\n\n## Questions to ask your doctor\n\n1. What exercises should I do in physiotherapy?\n2. When exactly should I book my clinic appointment?\n3. What should I do if my knee pain gets worse?\n4. Can the small tear heal without surgery?\n\n## When to get urgent help\n\nThe letter does not list specific warning signs.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 83.9,
+          "reading_ease_target": 70,
+          "grade_level": 3.7,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [],
+          "summary": "The explanation accurately and clearly conveys the content of the letter without errors. All medical findings are correctly explained in plain language, all plan elements are included with correct dates and durations, no important information is dropped, and no new medical facts or risks are invented. The suggested questions are reasonable follow-ups to existing content and do not introduce new diagnoses or worries. The explanation is well-structured and suitable for patient understanding."
+        },
+        "blocking_problems": [],
+        "attempt": 1
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 2759,
+        "output_tokens": 3340,
+        "cost_usd": 0.01946,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 10141,
+        "output_tokens": 5022,
+        "cost_usd": 0.0427,
+        "turns": 2
+      },
+      {
+        "step": "verify",
+        "input_tokens": 2529,
+        "output_tokens": 8605,
+        "cost_usd": 0.04555,
+        "turns": 2
+      }
+    ],
+    "cost_usd": 0.10771,
+    "latency_s": 170.7
+  },
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "diagnoses",
+        "fact": "Possible small tear of the medial meniscus in the left knee (a tear cannot be excluded)",
+        "status": "kept",
+        "note": "Says the knee cushion (meniscus) might have a small tear but it might not be there, which keeps the uncertainty. It does not say 'medial', a minor anatomical detail."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Mild wear and tear (early osteoarthritis) in the knee",
+        "status": "kept",
+        "note": "'Mild wear and tear in your knee'. The word osteoarthritis is not used, but the meaning is kept."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "A little fluid in the knee (small effusion)",
+        "status": "kept",
+        "note": "'A little fluid in your knee.'"
+      },
+      {
+        "category": "dates",
+        "fact": "MRI on 1 September 2026",
+        "status": "kept",
+        "note": "MRI on 1 September 2026, stated twice."
+      },
+      {
+        "category": "dates",
+        "fact": "Review in the orthopaedic clinic in 3 months",
+        "status": "kept",
+        "note": "Orthopaedic clinic appointment in 3 months. It is wrongly framed as something the patient must book (see added claims)."
+      },
+      {
+        "category": "actions",
+        "fact": "Referred for physiotherapy for 6 to 8 weeks",
+        "status": "kept",
+        "note": "Physiotherapy for 6 to 8 weeks."
+      },
+      {
+        "category": "actions",
+        "fact": "Continue normal activities as pain allows",
+        "status": "kept",
+        "note": "'Keep doing your normal activities if pain allows.'"
+      },
+      {
+        "category": "negatives",
+        "fact": "No fracture",
+        "status": "kept",
+        "note": "'No broken bones.'"
+      },
+      {
+        "category": "negatives",
+        "fact": "ACL (knee ligament) intact",
+        "status": "kept",
+        "note": "'Your knee ligament [ACL] is healthy.'"
+      },
+      {
+        "category": "negatives",
+        "fact": "Surgery is not planned at this stage",
+        "status": "kept",
+        "note": "'Surgery is not planned at this time.'"
+      }
+    ],
+    "added": [
+      {
+        "text": "Book an appointment at the orthopaedic clinic for 3 months from now (the letter says the consultant will review him; it does not tell the patient to book)",
+        "kind": "advice"
+      }
+    ],
+    "gold_reviewer": "claude-draft"
+  }
+}

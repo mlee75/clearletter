@@ -1,0 +1,169 @@
+{
+  "job": {
+    "id": "languages__syn_03__sonnet__es__v",
+    "part": "languages",
+    "letter_id": "syn_03",
+    "file": "data/synthetic/syn_03.txt",
+    "kind": "faithfulness",
+    "model": "sonnet",
+    "language": "es",
+    "verifier": true,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "sonnet",
+    "backend": "claude-code",
+    "language": "es",
+    "country": "uk",
+    "use_verifier": true,
+    "status": "ok",
+    "final_text": "## Qué dice esta carta\nLa carta le da la fecha de su ecografía de la semana 20 (ecografía morfológica).\nEsta ecografía mira cómo crece su bebé. También busca algunos problemas físicos.\nLa ecografía no puede encontrar todos los problemas.\n\n## Qué tiene que hacer\n1. Vaya a su cita en la Clínica Prenatal (Antenatal Clinic), planta 1.\n2. Si un intérprete le ayuda, llame al menos 5 días laborables antes de la cita. Le darán un intérprete gratis.\n3. Puede llevar a 1 adulto con usted.\n4. No necesita la vejiga llena para esta ecografía.\n5. No lleve niños. Los niños no pueden entrar en la sala de la ecografía.\n\n## Fechas y medicamentos\n- Ecografía de la semana 20: lunes 11 de enero de 2027, a las 14:15.\n- Lugar: Clínica Prenatal (Antenatal Clinic), planta 1.\n- Medicamentos: la carta no menciona ninguno.\n\n## Preguntas para su médico\n- ¿Cómo puedo pedir un intérprete?\n- ¿Qué cosas busca esta ecografía?\n- ¿Qué pasa si la ecografía no encuentra un problema?\n\n## Cuándo pedir ayuda urgente\nAntes de su cita, llame a la Unidad de Evaluación de Maternidad (MAU) al 01632 960 456 de inmediato si tiene:\n- cualquier sangrado,\n- pérdida de líquido por la vagina,\n- dolor fuerte de barriga.\n\nLa línea está abierta las 24 horas.\n\nSi le preocupa algo y no es una emergencia, llame al NHS 111. En caso de emergencia, llame al 999.\n\n---\n*Esta explicación la ha hecho un programa informático para ayudarle a leer su carta. Puede contener errores. No sustituye a su médico, enfermero o farmacéutico. Siga siempre lo que dice la carta y pregúnteles si algo no está claro.*\n",
+    "facts": {
+      "reader": "patient",
+      "purpose": "To tell the patient the date, time and place of her 20-week anomaly scan and what to know before attending.",
+      "findings": [
+        {
+          "statement": "The scan checks how the baby is growing and looks for some physical conditions.",
+          "certainty": "confirmed",
+          "quote": "This scan checks how your baby is growing and looks for some physical conditions."
+        },
+        {
+          "statement": "The scan cannot find every problem.",
+          "certainty": "confirmed",
+          "quote": "The scan cannot find every problem."
+        }
+      ],
+      "medicines": [],
+      "dates": [
+        {
+          "what": "20-week (anomaly) scan at 14:15 in the Antenatal Clinic, Floor 1",
+          "when": "11 January 2027",
+          "quote": "Your 20-week scan (anomaly scan) is booked for Monday 11 January 2027 at 14:15 in the Antenatal Clinic, Floor 1."
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "If an interpreter would help, call at least 5 working days before the appointment and one will be booked for free.",
+          "quote": "If an interpreter would help you, please call us at least 5 working days before your appointment and we will book one for free."
+        },
+        {
+          "instruction": "You may bring one adult with you to the scan.",
+          "quote": "You may bring one adult with you."
+        }
+      ],
+      "negatives": [
+        {
+          "instruction": "You do not need a full bladder for this scan.",
+          "quote": "You do not need a full bladder for this scan."
+        },
+        {
+          "instruction": "Children cannot come into the scan room.",
+          "quote": "Children cannot come into the scan room."
+        }
+      ],
+      "warning_signs": [
+        {
+          "instruction": "If you have any bleeding, leaking fluid from your vagina or severe tummy pain before your appointment, call the Maternity Assessment Unit (MAU) on 01632 960 456 straight away. The line is open 24 hours.",
+          "quote": "If you have any bleeding, leaking fluid from your vagina or severe tummy pain before your appointment, call the Maternity Assessment Unit (MAU) on 01632 960 456 straight away."
+        }
+      ],
+      "unclear": []
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## Qué dice esta carta\nLa carta le da la fecha de su ecografía de la semana 20 (ecografía morfológica).\nEsta ecografía mira cómo crece su bebé. También busca algunos problemas físicos.\nLa ecografía no puede encontrar todos los problemas.\n\n## Qué tiene que hacer\n1. Vaya a su cita en la Clínica Prenatal (Antenatal Clinic), planta 1.\n2. Si un intérprete le ayuda, llame al menos 5 días laborables antes de la cita. Le darán un intérprete gratis.\n3. Puede llevar a 1 adulto con usted.\n4. No necesita la vejiga llena para esta ecografía.\n5. No lleve niños. Los niños no pueden entrar en la sala de la ecografía.\n\n## Fechas y medicamentos\n- Ecografía de la semana 20: lunes 11 de enero de 2027, a las 14:15.\n- Lugar: Clínica Prenatal (Antenatal Clinic), planta 1.\n- Medicamentos: la carta no menciona ninguno.\n\n## Preguntas para su médico\n- ¿Cómo puedo pedir un intérprete?\n- ¿Qué cosas busca esta ecografía?\n- ¿Qué pasa si la ecografía no encuentra un problema?\n\n## Cuándo pedir ayuda urgente\nAntes de su cita, llame a la Unidad de Evaluación de Maternidad (MAU) al 01632 960 456 de inmediato si tiene:\n- cualquier sangrado,\n- pérdida de líquido por la vagina,\n- dolor fuerte de barriga.\n\nLa línea está abierta las 24 horas.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "es",
+          "reading_ease": 85.4,
+          "reading_ease_target": 70,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [],
+          "summary": "The explanation matches the letter. The date, time, place, interpreter notice, companion rule, bladder note, warning signs, MAU number and 24-hour line are all correct. Nothing was added, dropped or changed."
+        },
+        "blocking_problems": [],
+        "attempt": 1
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 3117,
+        "output_tokens": 841,
+        "cost_usd": 0.02643,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 6790,
+        "output_tokens": 1305,
+        "cost_usd": 0.04603,
+        "turns": 2
+      },
+      {
+        "step": "verify",
+        "input_tokens": 3035,
+        "output_tokens": 330,
+        "cost_usd": 0.02026,
+        "turns": 2
+      }
+    ],
+    "cost_usd": 0.09272,
+    "latency_s": 25.5
+  },
+  "back_translation": "## What this letter says\nThe letter gives you the date of your 20-week scan (anomaly scan).\nThis scan looks at how your baby is growing. It also looks for some physical problems.\nThe scan cannot find all problems.\n\n## What you have to do\n1. Go to your appointment at the Prenatal Clinic (Antenatal Clinic), floor 1.\n2. If an interpreter helps you, call at least 5 working days before the appointment. They will give you a free interpreter.\n3. You can bring 1 adult with you.\n4. You do not need a full bladder for this scan.\n5. Do not bring children. Children cannot enter the scan room.\n\n## Dates and medicines\n- 20-week scan: Monday 11 January 2027, at 14:15.\n- Place: Prenatal Clinic (Antenatal Clinic), floor 1.\n- Medicines: the letter does not mention any.\n\n## Questions for your doctor\n- How can I ask for an interpreter?\n- What things does this scan look for?\n- What happens if the scan does not find a problem?\n\n## When to ask for urgent help\nBefore your appointment, call the Maternity Assessment Unit (MAU) on 01632 960 456 immediately if you have:\n- any bleeding,\n- loss of fluid from the vagina,\n- strong belly pain.\n\nThe line is open 24 hours.",
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "dates",
+        "fact": "20-week (anomaly) scan on Monday 11 January 2027 at 14:15, Antenatal Clinic, Floor 1",
+        "status": "kept",
+        "note": "Date, time, 20-week anomaly scan and Antenatal Clinic floor 1 all given ('Prenatal Clinic' is just a synonym)."
+      },
+      {
+        "category": "actions",
+        "fact": "You may bring one adult with you",
+        "status": "kept",
+        "note": "'You can bring 1 adult with you.'"
+      },
+      {
+        "category": "actions",
+        "fact": "For a free interpreter, call at least 5 working days before",
+        "status": "kept",
+        "note": "Call at least 5 working days before; interpreter is free."
+      },
+      {
+        "category": "actions",
+        "fact": "If bleeding, leaking fluid from the vagina or severe tummy pain before the appointment, call the Maternity Assessment Unit on 01632 960 456 straight away (open 24 hours)",
+        "status": "kept",
+        "note": "Bleeding, fluid loss from vagina, strong belly pain; MAU 01632 960 456 immediately; open 24 hours; before appointment."
+      },
+      {
+        "category": "negatives",
+        "fact": "The scan cannot find every problem",
+        "status": "kept",
+        "note": "'The scan cannot find all problems.'"
+      },
+      {
+        "category": "negatives",
+        "fact": "You do not need a full bladder",
+        "status": "kept",
+        "note": "'You do not need a full bladder for this scan.'"
+      },
+      {
+        "category": "negatives",
+        "fact": "Children cannot come into the scan room",
+        "status": "kept",
+        "note": "'Children cannot enter the scan room.'"
+      }
+    ],
+    "added": [],
+    "gold_reviewer": "claude-draft"
+  }
+}

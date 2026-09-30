@@ -1,0 +1,349 @@
+{
+  "job": {
+    "id": "mtsamples__mts_3977__sonnet__en__nv",
+    "part": "mtsamples",
+    "letter_id": "mts_3977",
+    "file": "data/mtsamples/mts_3977.txt",
+    "kind": "faithfulness",
+    "model": "sonnet",
+    "language": "en",
+    "verifier": false,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "sonnet",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": false,
+    "status": "not_verified",
+    "final_text": "## What this letter says\nThis letter is from your hospital stay. You were in hospital with congestive heart failure (CHF). You also had fluid in the left chest (pleural effusion).\n\n- Fluid was drained from your chest (thoracentesis). You felt much better after it.\n- No fluid was sent for routine studies.\n- The letter writer does not know the details or amounts of the drained fluid.\n- Your other diagnoses are hypertension, prostate cancer, a high white blood cell count (leukocytosis), and anemia of chronic disease.\n- A heart scan (echocardiogram) showed an ejection fraction of 60%. It also showed diastolic dysfunction and periaortic stenosis with an opening of 1 cm3. The letter does not explain these terms.\n- A heart test in March 2000 (adenosine sestamibi) showed a small fixed apical defect. It showed no ischemia.\n- Cardiac enzymes were negative.\n- Your white blood cell count was 15,000 with a left shift. The doctor thinks steroid medicine may have caused this. This is presumed, not certain.\n- Your glucose was 182. It was high because you had several doses of Solu-Medrol for bronchospasm.\n- Your PT/INR was 1.02. Your PTT was 31.3.\n- Your oxygen levels on room air were normal. Your vital signs were stable.\n- Your prognosis (the likely outcome) is guarded.\n\n## What you need to do\n1. Go to the doctor's office in 1 week.\n2. Take Lasix 40 mg every day.\n3. Take potassium chloride 10 mEq every day.\n4. Start atenolol 25 mg every day.\n5. Do not take lisinopril. It was stopped.\n6. Tell your doctor if you get a fever or chills again.\n\n## Dates and medicines\n**Date**\n- In 1 week: follow-up visit in the doctor's office.\n\n**Medicines**\n- Lasix (furosemide): 40 mg, every day. Continue. You had it by IV in hospital.\n- Potassium chloride: 10 mEq, every day. Continue.\n- Atenolol: 25 mg, every day. NEW. It is a beta-blocker that Dr. Y recommended.\n- Aspirin: 5 grains, every day. Continue.\n- Ditropan (oxybutynin): 5 mg, twice a day (b.i.d.). Continue.\n- Colace (docusate): 100 mg, twice a day (b.i.d.). Continue.\n- Lisinopril (Prinivil): STOPPED. Dr. Y recommended a beta-blocker with an ACE inhibitor. No ACE inhibitor is on your discharge list. The letter does not explain this.\n\n## Questions to ask your doctor\n- What do ejection fraction, diastolic dysfunction and periaortic stenosis mean for me?\n- Why was lisinopril stopped when no ACE inhibitor is on my list?\n- What does a guarded prognosis mean for me?\n- What will we check at my visit in 1 week?\n\n## When to get urgent help\nTell your doctor if you get a fever or chills again.\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "doctor_copy_to_patient",
+      "purpose": "Discharge summary after a hospital stay for congestive heart failure with fluid in the left chest (pleural effusion), listing hospital course, discharge medicines and follow-up.",
+      "findings": [
+        {
+          "statement": "Admitted with congestive heart failure with left pleural effusion",
+          "certainty": "confirmed",
+          "quote": "Congestive heart failure (CHF) with left pleural effusion."
+        },
+        {
+          "statement": "Diagnoses at discharge: heart failure with pleural effusion",
+          "certainty": "confirmed",
+          "quote": "Congestive heart failure (CHF) with pleural effusion."
+        },
+        {
+          "statement": "Diagnosis at discharge: hypertension",
+          "certainty": "confirmed",
+          "quote": "Hypertension."
+        },
+        {
+          "statement": "Diagnosis at discharge: prostate cancer",
+          "certainty": "confirmed",
+          "quote": "Prostate cancer."
+        },
+        {
+          "statement": "Diagnosis at discharge: leukocytosis (high white blood cell count)",
+          "certainty": "confirmed",
+          "quote": "Leukocytosis."
+        },
+        {
+          "statement": "Diagnosis at discharge: anemia of chronic disease",
+          "certainty": "confirmed",
+          "quote": "Anemia of chronic disease."
+        },
+        {
+          "statement": "Echocardiogram showed ejection fraction of 60% with diastolic dysfunction and periaortic stenosis with an opening of 1 cm3",
+          "certainty": "confirmed",
+          "quote": "This revealed an ejection fraction of 60% with diastolic dysfunction and periaortic stenosis with an opening of 1 cm3."
+        },
+        {
+          "statement": "Adenosine sestamibi in March 2000 showed a small fixed apical defect but no ischemia",
+          "certainty": "confirmed",
+          "quote": "with a small fixed apical defect, but no ischemia"
+        },
+        {
+          "statement": "Cardiac enzymes were negative/normal",
+          "certainty": "confirmed",
+          "quote": "Cardiac enzymes were negative."
+        },
+        {
+          "statement": "Free flowing fluid in the left chest; thoracentesis was done and the patient felt much better afterwards",
+          "certainty": "confirmed",
+          "quote": "The patient felt much better after the thoracentesis."
+        },
+        {
+          "statement": "Details/volumes of thoracentesis not known to the letter writer; no fluid sent for routine studies",
+          "certainty": "confirmed",
+          "quote": "No fluid was sent for routine studies."
+        },
+        {
+          "statement": "Glucose 182, elevated because of several doses of Solu-Medrol given for bronchospasm",
+          "certainty": "confirmed",
+          "quote": "Glucose was elevated because of several doses of Solu-Medrol given to him because of bronchospams."
+        },
+        {
+          "statement": "White blood cell count 15,000 with a left shift, presumed due to corticosteroids",
+          "certainty": "possible",
+          "quote": "This was presumed due to the corticosteroids."
+        },
+        {
+          "statement": "PT/INR 1.02, PTT 31.3",
+          "certainty": "confirmed",
+          "quote": "PT/INR is 1.02, PTT 31.3"
+        },
+        {
+          "statement": "Oxygen saturations on room air were normal",
+          "certainty": "confirmed",
+          "quote": "The patient's O2 saturations on room air were normal."
+        },
+        {
+          "statement": "Vital signs were stable",
+          "certainty": "confirmed",
+          "quote": "Vital signs were stable."
+        },
+        {
+          "statement": "Prognosis is guarded",
+          "certainty": "confirmed",
+          "quote": "PROGNOSIS:  ,Guarded."
+        }
+      ],
+      "medicines": [
+        {
+          "name": "Lasix (furosemide)",
+          "dose": "40 mg",
+          "how_often": "daily",
+          "change": "continue",
+          "details": "Given by IV in hospital; discharged on 40 mg daily",
+          "quote": "Lasix 40 mg daily"
+        },
+        {
+          "name": "Potassium chloride",
+          "dose": "10 mEq",
+          "how_often": "daily",
+          "change": "continue",
+          "details": "Klor-Con used in hospital",
+          "quote": "potassium chloride 10 mEq daily"
+        },
+        {
+          "name": "Atenolol",
+          "dose": "25 mg",
+          "how_often": "daily",
+          "change": "start",
+          "details": "Beta-blocker recommended by Dr. Y",
+          "quote": "atenolol 25 mg daily"
+        },
+        {
+          "name": "Aspirin",
+          "dose": "5 grains",
+          "how_often": "daily",
+          "change": "continue",
+          "details": "",
+          "quote": "aspirin 5 grains daily"
+        },
+        {
+          "name": "Ditropan (oxybutynin)",
+          "dose": "5 mg",
+          "how_often": "b.i.d. (twice a day)",
+          "change": "continue",
+          "details": "",
+          "quote": "Ditropan 5 mg b.i.d."
+        },
+        {
+          "name": "Colace (docusate)",
+          "dose": "100 mg",
+          "how_often": "b.i.d. (twice a day)",
+          "change": "continue",
+          "details": "",
+          "quote": "Colace 100 mg b.i.d."
+        },
+        {
+          "name": "Lisinopril (Prinivil)",
+          "dose": "",
+          "how_often": "",
+          "change": "stop",
+          "details": "Discontinued because Dr. Y recommended a beta-blocker with an ACE inhibitor; not in the discharge list",
+          "quote": "therefore, the lisinopril was discontinued"
+        }
+      ],
+      "dates": [
+        {
+          "what": "Follow-up in the doctor's office",
+          "when": "in 1 week",
+          "quote": "He will be followed in my office in 1 week."
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Attend follow-up in the doctor's office in 1 week",
+          "quote": "He will be followed in my office in 1 week."
+        },
+        {
+          "instruction": "Notify the doctor if recurrent fever or chills",
+          "quote": "He is to notify if recurrent fever or chills."
+        }
+      ],
+      "negatives": [],
+      "warning_signs": [
+        {
+          "instruction": "Notify if recurrent fever or chills",
+          "quote": "He is to notify if recurrent fever or chills."
+        }
+      ],
+      "unclear": [
+        "The adenosine sestamibi date 'March 2000' is a month and year only, with no day.",
+        "'Periaortic stenosis' and 'H&H 32.3/11.3' are as written in the letter; the letter gives no explanation.",
+        "Letter says lisinopril was stopped because a beta-blocker with an ACE inhibitor was recommended, yet no ACE inhibitor is on the discharge list; the letter does not explain this.",
+        "Aspirin '5 grains' is as written; the letter does not give mg.",
+        "Thoracentesis details/volumes not known to the letter writer."
+      ]
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\nThis letter is from your hospital stay. You were in hospital with congestive heart failure (CHF). You also had fluid in the left chest (pleural effusion).\n\n- Fluid was drained from your chest (thoracentesis). You felt much better after it.\n- No fluid was sent for routine studies.\n- The letter writer does not know the details or amounts of the drained fluid.\n- Your other diagnoses are hypertension, prostate cancer, a high white blood cell count (leukocytosis), and anemia of chronic disease.\n- A heart scan (echocardiogram) showed an ejection fraction of 60%. It also showed diastolic dysfunction and periaortic stenosis with an opening of 1 cm3. The letter does not explain these terms.\n- A heart test in March 2000 (adenosine sestamibi) showed a small fixed apical defect. It showed no ischemia.\n- Cardiac enzymes were negative.\n- Your white blood cell count was 15,000 with a left shift. The doctor thinks steroid medicine may have caused this. This is presumed, not certain.\n- Your glucose was 182. It was high because you had several doses of Solu-Medrol for bronchospasm.\n- Your PT/INR was 1.02. Your PTT was 31.3.\n- Your oxygen levels on room air were normal. Your vital signs were stable.\n- Your prognosis (the likely outcome) is guarded.\n\n## What you need to do\n1. Go to the doctor's office in 1 week.\n2. Take Lasix 40 mg every day.\n3. Take potassium chloride 10 mEq every day.\n4. Start atenolol 25 mg every day.\n5. Do not take lisinopril. It was stopped.\n6. Tell your doctor if you get a fever or chills again.\n\n## Dates and medicines\n**Date**\n- In 1 week: follow-up visit in the doctor's office.\n\n**Medicines**\n- Lasix (furosemide): 40 mg, every day. Continue. You had it by IV in hospital.\n- Potassium chloride: 10 mEq, every day. Continue.\n- Atenolol: 25 mg, every day. NEW. It is a beta-blocker that Dr. Y recommended.\n- Aspirin: 5 grains, every day. Continue.\n- Ditropan (oxybutynin): 5 mg, twice a day (b.i.d.). Continue.\n- Colace (docusate): 100 mg, twice a day (b.i.d.). Continue.\n- Lisinopril (Prinivil): STOPPED. Dr. Y recommended a beta-blocker with an ACE inhibitor. No ACE inhibitor is on your discharge list. The letter does not explain this.\n\n## Questions to ask your doctor\n- What do ejection fraction, diastolic dysfunction and periaortic stenosis mean for me?\n- Why was lisinopril stopped when no ACE inhibitor is on my list?\n- What does a guarded prognosis mean for me?\n- What will we check at my visit in 1 week?\n\n## When to get urgent help\nTell your doctor if you get a fever or chills again.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 70.8,
+          "reading_ease_target": 70,
+          "grade_level": 5.5,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": null,
+        "blocking_problems": [],
+        "attempt": 1
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 3827,
+        "output_tokens": 2257,
+        "cost_usd": 0.06043,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 18895,
+        "output_tokens": 3051,
+        "cost_usd": 0.1141,
+        "turns": 12
+      }
+    ],
+    "cost_usd": 0.17453,
+    "latency_s": 34.8
+  },
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "diagnoses",
+        "fact": "Heart failure (congestive heart failure) with fluid around the left lung (pleural effusion), drained",
+        "status": "kept",
+        "note": "CHF with fluid in left chest, drained by thoracentesis."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "High blood pressure",
+        "status": "kept",
+        "note": "Hypertension listed."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Prostate cancer",
+        "status": "kept",
+        "note": "Prostate cancer listed."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "High white cell count, thought to be caused by the steroids",
+        "status": "kept",
+        "note": "High white cell count, presumed due to steroids."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Anaemia of chronic disease",
+        "status": "kept",
+        "note": "Anemia of chronic disease listed."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Echo: ejection fraction 60% with diastolic dysfunction and narrowing near the aortic valve",
+        "status": "kept",
+        "note": "EF 60%, diastolic dysfunction, periaortic stenosis."
+      },
+      {
+        "category": "medicines",
+        "fact": "Lasix 40 mg daily",
+        "status": "kept",
+        "note": "Lasix 40 mg every day."
+      },
+      {
+        "category": "medicines",
+        "fact": "Potassium chloride 10 mEq daily",
+        "status": "kept",
+        "note": "Potassium chloride 10 mEq every day."
+      },
+      {
+        "category": "medicines",
+        "fact": "Atenolol 25 mg daily",
+        "status": "kept",
+        "note": "Atenolol 25 mg every day."
+      },
+      {
+        "category": "medicines",
+        "fact": "Aspirin 5 grains daily",
+        "status": "kept",
+        "note": "Aspirin 5 grains every day."
+      },
+      {
+        "category": "medicines",
+        "fact": "Ditropan 5 mg twice a day",
+        "status": "kept",
+        "note": "Ditropan 5 mg twice a day."
+      },
+      {
+        "category": "medicines",
+        "fact": "Colace 100 mg twice a day",
+        "status": "kept",
+        "note": "Colace 100 mg twice a day."
+      },
+      {
+        "category": "medicines",
+        "fact": "Lisinopril was stopped",
+        "status": "kept",
+        "note": "Lisinopril stopped."
+      },
+      {
+        "category": "dates",
+        "fact": "Follow up in the office in 1 week",
+        "status": "kept",
+        "note": "Office follow-up in 1 week."
+      },
+      {
+        "category": "actions",
+        "fact": "Tell the doctor if fever or chills come back",
+        "status": "kept",
+        "note": "Tell doctor if fever or chills return."
+      },
+      {
+        "category": "negatives",
+        "fact": "Heart enzymes normal (no heart attack)",
+        "status": "kept",
+        "note": "Cardiac enzymes negative."
+      },
+      {
+        "category": "negatives",
+        "fact": "Oxygen levels on room air normal",
+        "status": "kept",
+        "note": "Oxygen levels on room air normal."
+      }
+    ],
+    "added": [],
+    "gold_reviewer": "claude-draft"
+  }
+}

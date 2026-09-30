@@ -1,0 +1,257 @@
+{
+  "job": {
+    "id": "mtsamples__mts_3974__sonnet__en__v",
+    "part": "mtsamples",
+    "letter_id": "mts_3974",
+    "file": "data/mtsamples/mts_3974.txt",
+    "kind": "faithfulness",
+    "model": "sonnet",
+    "language": "en",
+    "verifier": true,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "sonnet",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": true,
+    "status": "ok",
+    "final_text": "## What this letter says\nYou were in hospital for a sudden chest problem (acute asthmatic bronchitis). It was on top of a long-term lung condition (COPD). COPD makes breathing hard.\n- Your chest x-ray did not show heart failure (CHF).\n- You got better with treatment. Your oxygen level improved. You could go home.\n- You had no complications in hospital.\n- Your condition when you left was \"guarded\".\n- You have gone back to pipe smoking in the past few months.\n- You have an artificial heart valve (aortic valve). It was put in during summer 2002. You take Coumadin long term.\n- Your blood tests showed: BUN 42, creatinine 1.7, hemoglobin 10.7, hematocrit 31.7.\n\n## What you need to do\n1. Take prednisone and Keflex as prescribed.\n2. Start your other medicines from before the hospital again.\n3. Go to your doctor's office 4-5 days after you leave hospital.\n\n## Dates and medicines\n- **Follow-up visit:** at the doctor's office, 4-5 days after discharge.\n- **Prednisone (new):** 20 mg, 3 times a day for 2 days. Then 2 times a day for 5 days. Then once a day. The letter does not say for how long you take it once a day.\n- **Keflex (new):** 500 mg, 3 times a day. The letter does not say how many days.\n- **Coumadin (continue):** The letter does not give the dose or how often.\n- **Your other medicines from before (continue):** The letter does not name them.\n- In hospital you had Solu-Medrol through a vein. Prednisone comes after that.\n- The letter says you can have a pneumococcal vaccine before you leave. It does not say if you had it.\n\n## Questions to ask your doctor\n- How long do I take prednisone once a day?\n- How many days do I take Keflex?\n- Which of my old medicines should I take, and what dose of Coumadin?\n- What do my blood test numbers mean?\n\n## When to get urgent help\nThe letter does not list specific warning signs.\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "doctor_copy_to_patient",
+      "purpose": "Hospital discharge summary for a 67-year-old man admitted with acute asthmatic bronchitis on top of long-standing COPD, with the discharge medicines and follow-up plan.",
+      "findings": [
+        {
+          "statement": "Admitted for acute asthmatic bronchitis on top of longstanding COPD",
+          "certainty": "confirmed",
+          "quote": "he was admitted for acute asthmatic bronchitis, superimposed upon longstanding COPD"
+        },
+        {
+          "statement": "Discharge diagnoses: COPD and acute asthmatic bronchitis",
+          "certainty": "confirmed",
+          "quote": "Chronic obstructive pulmonary disease and acute asthmatic bronchitis."
+        },
+        {
+          "statement": "Chest x-ray did not show heart failure (CHF)",
+          "certainty": "ruled_out",
+          "quote": "Chest x-ray did not show any CHF."
+        },
+        {
+          "statement": "Improved on treatment; oxygenation improved and he was able to go home",
+          "certainty": "confirmed",
+          "quote": "The patient's oxygenation improved and he was able to be discharged home."
+        },
+        {
+          "statement": "No complications during the stay",
+          "certainty": "confirmed",
+          "quote": "COMPLICATIONS: , None."
+        },
+        {
+          "statement": "Condition at discharge is guarded",
+          "certainty": "confirmed",
+          "quote": "DISCHARGE CONDITION: , Guarded."
+        },
+        {
+          "statement": "Has returned to pipe smoking over the past few months",
+          "certainty": "confirmed",
+          "quote": "over the past few months he has returned to pipe smoking"
+        },
+        {
+          "statement": "Has an artificial (mechanical) aortic valve and is on long-term Coumadin",
+          "certainty": "confirmed",
+          "quote": "Status post artificial aortic valve implantation in summer of 2002 and is on chronic Coumadin therapy."
+        },
+        {
+          "statement": "Blood tests: BUN 42, creatinine 1.7, hemoglobin 10.7, hematocrit 31.7",
+          "certainty": "confirmed",
+          "quote": "BUN 42, and creatinine 1.7.  Hemoglobin 10.7 and hematocrit 31.7."
+        }
+      ],
+      "medicines": [
+        {
+          "name": "Prednisone",
+          "dose": "20 mg",
+          "how_often": "3 times a day for 2 days, then 2 times a day for 5 days, then one daily",
+          "change": "start",
+          "details": "Tapering course after intravenous Solu-Medrol in hospital",
+          "quote": "Prednisone 20 mg 3 times a day for 2 days, 2 times a day for 5 days and then one daily"
+        },
+        {
+          "name": "Keflex",
+          "dose": "500 mg",
+          "how_often": "3 times a day",
+          "change": "start",
+          "details": "Duration not stated",
+          "quote": "Keflex 500 mg 3 times a day"
+        },
+        {
+          "name": "Other preadmission medications",
+          "dose": "not stated",
+          "how_often": "not stated",
+          "change": "continue",
+          "details": "Letter does not name them",
+          "quote": "to resume his other preadmission medication"
+        },
+        {
+          "name": "Coumadin",
+          "dose": "not stated",
+          "how_often": "not stated",
+          "change": "continue",
+          "details": "Mentioned as chronic therapy in past history; not named in the discharge plan",
+          "quote": "is on chronic Coumadin therapy"
+        }
+      ],
+      "dates": [
+        {
+          "what": "Follow-up visit in the doctor's office",
+          "when": "4-5 days after discharge",
+          "quote": "To follow up with me in the office in 4-5 days."
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Take prednisone and Keflex as prescribed",
+          "quote": "Prednisone 20 mg 3 times a day for 2 days, 2 times a day for 5 days and then one daily, Keflex 500 mg 3 times a day"
+        },
+        {
+          "instruction": "Resume other medicines taken before admission",
+          "quote": "to resume his other preadmission medication"
+        },
+        {
+          "instruction": "Follow up with the doctor in the office in 4-5 days",
+          "quote": "To follow up with me in the office in 4-5 days."
+        }
+      ],
+      "negatives": [],
+      "warning_signs": [],
+      "unclear": [
+        "Letter says he 'can be given a pneumococcal vaccination before discharge'; not stated whether it was given.",
+        "Names of the other preadmission medications are not given.",
+        "Length of the Keflex course is not stated.",
+        "Meaning of the 'one daily' step of the prednisone taper (how long) is not stated."
+      ]
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\nYou were in hospital for a sudden chest problem (acute asthmatic bronchitis). It was on top of a long-term lung condition (COPD). COPD makes breathing hard.\n- Your chest x-ray did not show heart failure (CHF).\n- You got better with treatment. Your oxygen level improved. You could go home.\n- You had no complications in hospital.\n- Your condition when you left was \"guarded\".\n- You have gone back to pipe smoking in the past few months.\n- You have an artificial heart valve (aortic valve). It was put in during summer 2002. You take Coumadin long term.\n- Your blood tests showed: BUN 42, creatinine 1.7, hemoglobin 10.7, hematocrit 31.7.\n\n## What you need to do\n1. Take prednisone and Keflex as prescribed.\n2. Start your other medicines from before the hospital again.\n3. Go to your doctor's office 4-5 days after you leave hospital.\n\n## Dates and medicines\n- **Follow-up visit:** at the doctor's office, 4-5 days after discharge.\n- **Prednisone (new):** 20 mg, 3 times a day for 2 days. Then 2 times a day for 5 days. Then once a day. The letter does not say for how long you take it once a day.\n- **Keflex (new):** 500 mg, 3 times a day. The letter does not say how many days.\n- **Coumadin (continue):** The letter does not give the dose or how often.\n- **Your other medicines from before (continue):** The letter does not name them.\n- In hospital you had Solu-Medrol through a vein. Prednisone comes after that.\n- The letter says you can have a pneumococcal vaccine before you leave. It does not say if you had it.\n\n## Questions to ask your doctor\n- How long do I take prednisone once a day?\n- How many days do I take Keflex?\n- Which of my old medicines should I take, and what dose of Coumadin?\n- What do my blood test numbers mean?\n\n## When to get urgent help\nThe letter does not list specific warning signs.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 83.5,
+          "reading_ease_target": 70,
+          "grade_level": 3.7,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [],
+          "summary": "The explanation matches the letter. The diagnoses, prednisone schedule, Keflex dose, Coumadin, follow-up in 4-5 days, the vaccine, the lab values and the \"guarded\" condition are all accurate. It adds no unsupported facts. It leaves out only minor details: the history of high blood pressure and high cholesterol, and the sodium and potassium values."
+        },
+        "blocking_problems": [],
+        "attempt": 1
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 3624,
+        "output_tokens": 1598,
+        "cost_usd": 0.04562,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 14516,
+        "output_tokens": 2040,
+        "cost_usd": 0.07771,
+        "turns": 8
+      },
+      {
+        "step": "verify",
+        "input_tokens": 3591,
+        "output_tokens": 780,
+        "cost_usd": 0.03374,
+        "turns": 2
+      }
+    ],
+    "cost_usd": 0.15707,
+    "latency_s": 40.4
+  },
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "diagnoses",
+        "fact": "COPD with a flare of asthmatic bronchitis",
+        "status": "kept",
+        "note": "Acute asthmatic bronchitis on top of long-term COPD."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Mechanical aortic valve since 2002, on long-term Coumadin",
+        "status": "kept",
+        "note": "Artificial aortic valve put in summer 2002, long-term Coumadin. The letter's 'mechanical click' fits 'artificial valve'."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Has gone back to pipe smoking",
+        "status": "kept",
+        "note": "Has gone back to pipe smoking in the past few months."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Condition at discharge: guarded",
+        "status": "kept",
+        "note": "Condition at discharge 'guarded'."
+      },
+      {
+        "category": "medicines",
+        "fact": "Prednisone 20 mg three times a day for 2 days, then twice a day for 5 days, then once daily",
+        "status": "kept",
+        "note": "20 mg 3 times a day for 2 days, then 2 times a day for 5 days, then once a day. Matches the letter."
+      },
+      {
+        "category": "medicines",
+        "fact": "Keflex 500 mg three times a day",
+        "status": "kept",
+        "note": "Keflex 500 mg 3 times a day."
+      },
+      {
+        "category": "medicines",
+        "fact": "Restart the other medicines taken before admission",
+        "status": "kept",
+        "note": "Start the medicines from before the hospital again."
+      },
+      {
+        "category": "medicines",
+        "fact": "Pneumococcal vaccine can be given before discharge",
+        "status": "kept",
+        "note": "Can have a pneumococcal vaccine before leaving. The explanation correctly says the letter doesn't confirm it was given."
+      },
+      {
+        "category": "dates",
+        "fact": "Follow up in the office in 4-5 days",
+        "status": "kept",
+        "note": "Doctor's office visit 4-5 days after discharge."
+      },
+      {
+        "category": "negatives",
+        "fact": "Chest X-ray showed no heart failure (no CHF)",
+        "status": "kept",
+        "note": "Chest x-ray did not show heart failure (CHF)."
+      },
+      {
+        "category": "negatives",
+        "fact": "No complications",
+        "status": "kept",
+        "note": "No complications in hospital."
+      }
+    ],
+    "added": [],
+    "gold_reviewer": "claude-draft"
+  }
+}

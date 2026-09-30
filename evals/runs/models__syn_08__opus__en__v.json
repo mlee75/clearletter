@@ -1,0 +1,282 @@
+{
+  "job": {
+    "id": "models__syn_08__opus__en__v",
+    "part": "models",
+    "letter_id": "syn_08",
+    "file": "data/synthetic/syn_08.txt",
+    "kind": "faithfulness",
+    "model": "opus",
+    "language": "en",
+    "verifier": true,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "opus",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": true,
+    "status": "ok_after_retry",
+    "final_text": "## What this letter says\nYou went to the hospital emergency department (Emergency Department). You fell at home. You hit your head. You did not pass out (no loss of consciousness).\n\nYou had an X-ray of your right hip. It showed no broken bone (no fracture).\n\nYou had a scan of your head (CT head). It showed no bleeding inside your head.\n\nYour blood pressure was checked lying down and again standing up. Lying down, it was 142/80. Standing up, it was 108/66. This means your blood pressure drops when you stand up (postural hypotension).\n\n## What you need to do\n1. Stop taking amlodipine 10 milligrams. It may be making your blood pressure drop when you stand.\n2. Keep taking all your other medicines.\n3. Stand up slowly.\n4. Sit on the edge of the bed for a minute before you stand.\n5. Wait for a letter from the Falls Prevention Clinic. You have been sent to them (referred). They will write to you with an appointment.\n6. Your family doctor (GP) will check your blood pressure again in 4 weeks. They will check it lying down and standing up.\n\n## Dates and medicines\n- 14 October 2026: you were seen in the Emergency Department.\n- In 4 weeks: your family doctor (GP) will check your blood pressure lying down and standing up. The letter does not give the exact date. It does not say who will arrange it.\n- Falls Prevention Clinic: the date is not known yet. The clinic will write to you.\n- Amlodipine 10 milligrams: stop taking it. The letter does not say how often you took it.\n- All other medicines: keep taking them as before.\n\n## Questions to ask your doctor\n- Who will arrange my blood pressure check in 4 weeks?\n- When will I hear from the Falls Prevention Clinic?\n- What will happen at the Falls Prevention Clinic?\n\n## When to get urgent help\nIn the next few days, call 999 or go to A&E (the hospital emergency department) if you get:\n- a headache that gets worse\n- vomiting (being sick)\n- confusion\n- drowsiness (feeling very sleepy)\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "patient",
+      "purpose": "Summary of an Emergency Department visit after a fall at home where the patient hit her head.",
+      "findings": [
+        {
+          "statement": "Fall at home, hit head, with no loss of consciousness.",
+          "certainty": "confirmed",
+          "quote": "Fall at home. Hit head. No loss of consciousness."
+        },
+        {
+          "statement": "X-ray of the right hip showed no fracture.",
+          "certainty": "ruled_out",
+          "quote": "X-ray of the right hip: no fracture."
+        },
+        {
+          "statement": "CT head scan showed no bleeding inside the head.",
+          "certainty": "ruled_out",
+          "quote": "CT head: no evidence of intracranial haemorrhage (no bleeding inside the head)."
+        },
+        {
+          "statement": "Blood pressure was 142/80 lying down and 108/66 standing, showing postural hypotension (blood pressure drops when standing up).",
+          "certainty": "confirmed",
+          "quote": "142/80 lying, 108/66 standing. This shows postural hypotension (blood pressure drops when standing up)."
+        }
+      ],
+      "medicines": [
+        {
+          "name": "amlodipine",
+          "dose": "10 mg",
+          "how_often": "not stated",
+          "change": "stop",
+          "details": "Stopped because it may be making blood pressure drop when standing.",
+          "quote": "STOP amlodipine 10 mg. It may be making your blood pressure drop when you stand."
+        },
+        {
+          "name": "All other medicines",
+          "dose": "not stated",
+          "how_often": "not stated",
+          "change": "continue",
+          "details": "Continue all other medicines as before.",
+          "quote": "Continue all other medicines."
+        }
+      ],
+      "dates": [
+        {
+          "what": "Seen in the Emergency Department",
+          "when": "14 October 2026",
+          "quote": "Seen: 14/10/2026"
+        },
+        {
+          "what": "GP to recheck lying and standing blood pressure",
+          "when": "In 4 weeks",
+          "quote": "GP to recheck lying and standing blood pressure in 4 weeks."
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Stop taking amlodipine 10 mg.",
+          "quote": "STOP amlodipine 10 mg."
+        },
+        {
+          "instruction": "Keep taking all other medicines.",
+          "quote": "Continue all other medicines."
+        },
+        {
+          "instruction": "You have been referred to the Falls Prevention Clinic. They will write to you with an appointment.",
+          "quote": "Referred to the Falls Prevention Clinic. They will write to you with an appointment."
+        },
+        {
+          "instruction": "Your family doctor (GP) will recheck your lying and standing blood pressure in 4 weeks.",
+          "quote": "GP to recheck lying and standing blood pressure in 4 weeks."
+        },
+        {
+          "instruction": "Stand up slowly. Sit on the edge of the bed for a minute before standing.",
+          "quote": "Stand up slowly. Sit on the edge of the bed for a minute before standing."
+        }
+      ],
+      "negatives": [
+        {
+          "instruction": "No broken bone in the right hip.",
+          "quote": "X-ray of the right hip: no fracture."
+        },
+        {
+          "instruction": "No bleeding inside the head was found on the CT scan.",
+          "quote": "no evidence of intracranial haemorrhage (no bleeding inside the head)"
+        },
+        {
+          "instruction": "You did not lose consciousness.",
+          "quote": "No loss of consciousness."
+        }
+      ],
+      "warning_signs": [
+        {
+          "instruction": "If you develop a worsening headache, vomiting, confusion or drowsiness in the next few days, call 999 or go to A&E (the hospital emergency department).",
+          "quote": "If you develop a worsening headache, vomiting, confusion or drowsiness in the next few days, call 999 or go to A&E."
+        }
+      ],
+      "unclear": [
+        "The letter does not say exactly who arranges the GP blood pressure recheck in 4 weeks, or the exact date.",
+        "The date of the Falls Prevention Clinic appointment is not yet known; the clinic will write with it."
+      ]
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\nYou went to the hospital emergency department (Emergency Department). You fell at home. You hit your head. You did not pass out (no loss of consciousness).\n\nYou had an X-ray of your right hip. It showed no broken bone (no fracture).\n\nYou had a scan of your head (CT head). It showed no bleeding inside your head.\n\nYour blood pressure was checked lying down and again standing up. Lying down, it was 142/80. Standing up, it was 108/66. This means your blood pressure drops when you stand up (postural hypotension).\n\n## What you need to do\n1. Stop taking amlodipine 10 milligrams. It may be making your blood pressure drop when you stand.\n2. Keep taking all your other medicines.\n3. Stand up slowly.\n4. Sit on the edge of the bed for 1 minute before you stand.\n5. Wait for a letter from the Falls Prevention Clinic. You have been sent to them (referred). They will write to you with an appointment.\n6. Your family doctor (GP) will check your blood pressure again in 4 weeks. They will check it lying down and standing up.\n\n## Dates and medicines\n- 14 October 2026: you were seen in the Emergency Department.\n- In 4 weeks: your family doctor (GP) will check your blood pressure lying down and standing up. The letter does not give the exact date. It does not say who will arrange it.\n- Falls Prevention Clinic: the date is not known yet. The clinic will write to you.\n- Amlodipine 10 milligrams: stop taking it. The letter does not say how often you took it.\n- All other medicines: keep taking them as before.\n\n## Questions to ask your doctor\n- Who will arrange my blood pressure check in 4 weeks?\n- When will I hear from the Falls Prevention Clinic?\n- What will happen at the Falls Prevention Clinic?\n\n## When to get urgent help\nIn the next few days, call 999 or go to A&E (the hospital emergency department) if you get:\n- a headache that gets worse\n- vomiting (being sick)\n- confusion\n- drowsiness (feeling very sleepy)",
+        "missing_headings": [],
+        "unknown_numbers": [
+          "1"
+        ],
+        "readability": {
+          "language": "en",
+          "reading_ease": 82.7,
+          "reading_ease_target": 70,
+          "grade_level": 4.1,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [],
+          "summary": "I found no problems. The explanation matches the letter on every point: the fall and head injury with no loss of consciousness; the normal hip X-ray and head CT; the blood pressure readings and what they mean (postural hypotension); stopping amlodipine 10 mg while continuing other medicines; the Falls Prevention Clinic referral; the GP blood pressure check in 4 weeks; the advice to stand up slowly; and the four warning signs with the 999/A&E instruction and the 'next few days' timeframe. The notes about details the letter leaves out (exact date of the GP check, who arranges it, how often amlodipine was taken) are accurate. The suggested questions don't raise any new diagnoses or risks."
+        },
+        "blocking_problems": [
+          "The number 1 is not in the letter"
+        ],
+        "attempt": 1
+      },
+      {
+        "explanation": "## What this letter says\nYou went to the hospital emergency department (Emergency Department). You fell at home. You hit your head. You did not pass out (no loss of consciousness).\n\nYou had an X-ray of your right hip. It showed no broken bone (no fracture).\n\nYou had a scan of your head (CT head). It showed no bleeding inside your head.\n\nYour blood pressure was checked lying down and again standing up. Lying down, it was 142/80. Standing up, it was 108/66. This means your blood pressure drops when you stand up (postural hypotension).\n\n## What you need to do\n1. Stop taking amlodipine 10 milligrams. It may be making your blood pressure drop when you stand.\n2. Keep taking all your other medicines.\n3. Stand up slowly.\n4. Sit on the edge of the bed for a minute before you stand.\n5. Wait for a letter from the Falls Prevention Clinic. You have been sent to them (referred). They will write to you with an appointment.\n6. Your family doctor (GP) will check your blood pressure again in 4 weeks. They will check it lying down and standing up.\n\n## Dates and medicines\n- 14 October 2026: you were seen in the Emergency Department.\n- In 4 weeks: your family doctor (GP) will check your blood pressure lying down and standing up. The letter does not give the exact date. It does not say who will arrange it.\n- Falls Prevention Clinic: the date is not known yet. The clinic will write to you.\n- Amlodipine 10 milligrams: stop taking it. The letter does not say how often you took it.\n- All other medicines: keep taking them as before.\n\n## Questions to ask your doctor\n- Who will arrange my blood pressure check in 4 weeks?\n- When will I hear from the Falls Prevention Clinic?\n- What will happen at the Falls Prevention Clinic?\n\n## When to get urgent help\nIn the next few days, call 999 or go to A&E (the hospital emergency department) if you get:\n- a headache that gets worse\n- vomiting (being sick)\n- confusion\n- drowsiness (feeling very sleepy)",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 82.7,
+          "reading_ease_target": 70,
+          "grade_level": 4.1,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [],
+          "summary": "I found no problems. The explanation matches the letter: the fall with a head injury and no loss of consciousness, the hip X-ray with no fracture, and the head CT with no bleeding. The blood pressure readings (142/80 lying down, 108/66 standing) and the finding that blood pressure drops on standing are correct. So are the instruction to stop amlodipine 10 mg (with the letter's 'may' wording kept), keeping all other medicines, the advice to stand up slowly, the Falls Prevention Clinic referral and the GP blood pressure recheck in 4 weeks. The urgent warning signs and the 999/A&E instruction are complete and no stronger or weaker than in the letter. The suggested questions don't raise any new diagnosis or risk."
+        },
+        "blocking_problems": [],
+        "attempt": 2
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 3311,
+        "output_tokens": 1489,
+        "cost_usd": 0.04094,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 9206,
+        "output_tokens": 2396,
+        "cost_usd": 0.08184,
+        "turns": 2
+      },
+      {
+        "step": "verify",
+        "input_tokens": 3283,
+        "output_tokens": 546,
+        "cost_usd": 0.02659,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 9899,
+        "output_tokens": 1547,
+        "cost_usd": 0.0644,
+        "turns": 2
+      },
+      {
+        "step": "verify",
+        "input_tokens": 3283,
+        "output_tokens": 531,
+        "cost_usd": 0.02629,
+        "turns": 2
+      }
+    ],
+    "cost_usd": 0.24007,
+    "latency_s": 66.3
+  },
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "diagnoses",
+        "fact": "Fall at home with a knock to the head",
+        "status": "kept",
+        "note": "Fell at home and hit head."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Postural hypotension: blood pressure drops on standing (142/80 lying, 108/66 standing)",
+        "status": "kept",
+        "note": "142/80 lying, 108/66 standing; postural hypotension explained."
+      },
+      {
+        "category": "medicines",
+        "fact": "STOP amlodipine 10 mg (it may be making blood pressure drop on standing)",
+        "status": "kept",
+        "note": "Stop amlodipine 10 mg, with the same reason."
+      },
+      {
+        "category": "medicines",
+        "fact": "Continue all other medicines",
+        "status": "kept",
+        "note": "Keep taking all other medicines."
+      },
+      {
+        "category": "dates",
+        "fact": "GP to recheck lying and standing blood pressure in 4 weeks",
+        "status": "kept",
+        "note": "GP to check lying and standing BP in 4 weeks."
+      },
+      {
+        "category": "actions",
+        "fact": "Falls Prevention Clinic will write with an appointment",
+        "status": "kept",
+        "note": "The clinic will write with an appointment."
+      },
+      {
+        "category": "actions",
+        "fact": "Stand up slowly; sit on the edge of the bed for a minute before standing",
+        "status": "kept",
+        "note": "Stand slowly; sit on the edge of the bed for a minute first."
+      },
+      {
+        "category": "actions",
+        "fact": "Call 999 or go to A&E if worsening headache, vomiting, confusion or drowsiness in the next few days",
+        "status": "kept",
+        "note": "Same four symptoms, same time frame and same action."
+      },
+      {
+        "category": "negatives",
+        "fact": "No loss of consciousness",
+        "status": "kept",
+        "note": "Did not pass out."
+      },
+      {
+        "category": "negatives",
+        "fact": "Hip X-ray: no fracture",
+        "status": "kept",
+        "note": "Right hip X-ray showed no fracture."
+      },
+      {
+        "category": "negatives",
+        "fact": "CT head: no bleeding inside the head",
+        "status": "kept",
+        "note": "CT head showed no bleeding."
+      }
+    ],
+    "added": [],
+    "gold_reviewer": "claude-draft"
+  }
+}

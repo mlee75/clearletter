@@ -1,0 +1,193 @@
+{
+  "job": {
+    "id": "languages__syn_04__sonnet__es__v",
+    "part": "languages",
+    "letter_id": "syn_04",
+    "file": "data/synthetic/syn_04.txt",
+    "kind": "faithfulness",
+    "model": "sonnet",
+    "language": "es",
+    "verifier": true,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "sonnet",
+    "backend": "claude-code",
+    "language": "es",
+    "country": "uk",
+    "use_verifier": true,
+    "status": "ok",
+    "final_text": "## Qué dice esta carta\nLa carta le invita a pedir una cita para una revisión de los ojos por diabetes (diabetic eye screening).\nLa carta explica qué esperar y qué llevar.\nEsta revisión no diagnostica otros problemas de los ojos.\nEsta revisión no sustituye su revisión de la vista habitual en la óptica.\n\n## Qué tiene que hacer\n1. Pida su cita llamando al 01632 960 377.\n2. Lleve sus gafas o sus lentes de contacto.\n3. Lleve una lista de sus medicamentos.\n4. Lleve gafas de sol, si las tiene.\n5. No conduzca hasta que su vista vuelva a la normalidad. Las gotas ponen la vista borrosa de 4 a 6 horas.\n\n## Fechas y medicamentos\n- Pida su cita antes del 15 de enero de 2027.\n- La carta no menciona medicamentos.\n\n## Preguntas para su médico\n- ¿Cuánto dura la cita?\n- ¿Puedo ir acompañado a la cita?\n- ¿Qué pasa si no puedo pedir la cita antes del 15 de enero de 2027?\n\n## Cuándo pedir ayuda urgente\nLa carta no menciona señales de alarma concretas.\n\nSi le preocupa algo y no es una emergencia, llame al NHS 111. En caso de emergencia, llame al 999.\n\n---\n*Esta explicación la ha hecho un programa informático para ayudarle a leer su carta. Puede contener errores. No sustituye a su médico, enfermero o farmacéutico. Siga siempre lo que dice la carta y pregúnteles si algo no está claro.*\n",
+    "facts": {
+      "reader": "patient",
+      "purpose": "Invitation to book a diabetic eye screening appointment, with what to expect and bring.",
+      "findings": [],
+      "medicines": [],
+      "dates": [
+        {
+          "what": "Book your appointment by this date",
+          "when": "15 January 2027",
+          "quote": "Please book your appointment by 15 January 2027 by calling 01632 960 377."
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Book your appointment by calling 01632 960 377.",
+          "quote": "Please book your appointment by 15 January 2027 by calling 01632 960 377."
+        },
+        {
+          "instruction": "Bring sunglasses if you have them.",
+          "quote": "Bring sunglasses if you have them."
+        },
+        {
+          "instruction": "Bring your glasses or contact lenses and a list of your medicines.",
+          "quote": "Bring your glasses or contact lenses and a list of your medicines."
+        }
+      ],
+      "negatives": [
+        {
+          "instruction": "Do not drive until your vision is back to normal (drops blur vision for 4 to 6 hours).",
+          "quote": "You must not drive until your vision is back to normal."
+        },
+        {
+          "instruction": "This screening does not diagnose other eye problems.",
+          "quote": "It does not diagnose other eye problems"
+        },
+        {
+          "instruction": "This screening does not replace your regular eye test at an optician.",
+          "quote": "it does not replace your regular eye test at an optician"
+        }
+      ],
+      "warning_signs": [],
+      "unclear": []
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## Qué dice esta carta\nLa carta le invita a pedir una cita para una revisión de los ojos por diabetes (diabetic eye screening).\nLa carta explica qué esperar y qué llevar.\nEsta revisión no diagnostica otros problemas de los ojos.\nEsta revisión no sustituye su revisión de la vista habitual en la óptica.\n\n## Qué tiene que hacer\n1. Pida su cita llamando al 01632 960 377.\n2. Lleve sus gafas o sus lentes de contacto.\n3. Lleve una lista de sus medicamentos.\n4. Lleve gafas de sol, si las tiene.\n5. No conduzca hasta que su vista vuelva a la normalidad. Las gotas ponen la vista borrosa de 4 a 6 horas.\n\n## Fechas y medicamentos\n- Pida su cita antes del 15 de enero de 2027.\n- La carta no menciona medicamentos.\n\n## Preguntas para su médico\n- ¿Cuánto dura la cita?\n- ¿Puedo ir acompañado a la cita?\n- ¿Qué pasa si no puedo pedir la cita antes del 15 de enero de 2027?\n\n## Cuándo pedir ayuda urgente\nLa carta no menciona señales de alarma concretas.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "es",
+          "reading_ease": 93.4,
+          "reading_ease_target": 70,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [
+            {
+              "kind": "date",
+              "severity": "minor",
+              "explanation_says": "Pida su cita antes del 15 de enero de 2027.",
+              "letter_says": "Please book your appointment by 15 January 2027",
+              "why": "\"By\" means on or before the 15th, while \"antes del\" can be read as excluding the 15th. The difference is slight."
+            },
+            {
+              "kind": "dropped",
+              "severity": "minor",
+              "explanation_says": "Only says \"Las gotas ponen la vista borrosa de 4 a 6 horas\" in the driving instruction, and never says that drops will be put in the eyes at the appointment.",
+              "letter_says": "We will put drops in your eyes. The drops will make your vision blurred for 4 to 6 hours.",
+              "why": "The explanation mentions the drops without first saying they will be given at the screening. The patient may not understand where the drops come from."
+            }
+          ],
+          "summary": "The explanation is faithful overall. The 4 to 6 hour blur, the driving warning, the phone number, the items to bring and the no-diagnosis and no-replacement statements all match the letter. I found only two minor problems. The \"antes del\" wording for the deadline is slightly ambiguous, and the explanation does not say the drops are given at the appointment."
+        },
+        "blocking_problems": [],
+        "attempt": 1
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 3068,
+        "output_tokens": 628,
+        "cost_usd": 0.02178,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 6209,
+        "output_tokens": 1048,
+        "cost_usd": 0.03804,
+        "turns": 2
+      },
+      {
+        "step": "verify",
+        "input_tokens": 2873,
+        "output_tokens": 746,
+        "cost_usd": 0.02729,
+        "turns": 2
+      }
+    ],
+    "cost_usd": 0.08711,
+    "latency_s": 24.0
+  },
+  "back_translation": "## What this letter says\nThe letter invites you to book an appointment for an eye check for diabetes (diabetic eye screening).\nThe letter explains what to expect and what to bring.\nThis check does not diagnose other eye problems.\nThis check does not replace your usual eye test at the optician.\n\n## What you need to do\n1. Book your appointment by calling 01632 960 377.\n2. Bring your glasses or your contact lenses.\n3. Bring a list of your medicines.\n4. Bring sunglasses, if you have them.\n5. Do not drive until your eyesight returns to normal. The drops make your eyesight blurry for 4 to 6 hours.\n\n## Dates and medicines\n- Book your appointment before 15 January 2027.\n- The letter does not mention medicines.\n\n## Questions for your doctor\n- How long does the appointment last?\n- Can I bring someone with me to the appointment?\n- What happens if I cannot book the appointment before 15 January 2027?\n\n## When to get urgent help\nThe letter does not mention specific warning signs.",
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "diagnoses",
+        "fact": "Invited to diabetic eye screening, which checks the back of the eyes for damage from diabetes (diabetic retinopathy)",
+        "status": "dropped",
+        "note": "It keeps the invitation to 'an eye check for diabetes (diabetic eye screening)'. It leaves out that the test checks the back of the eyes for damage caused by diabetes (diabetic retinopathy), which is the substance of this fact."
+      },
+      {
+        "category": "dates",
+        "fact": "Book the appointment by 15 January 2027",
+        "status": "kept",
+        "note": "'Book your appointment before 15 January 2027.' The letter says 'by', not 'before'. The meaning is essentially the same."
+      },
+      {
+        "category": "dates",
+        "fact": "The eye drops blur vision for 4 to 6 hours",
+        "status": "kept",
+        "note": "'The drops make your eyesight blurry for 4 to 6 hours.'"
+      },
+      {
+        "category": "actions",
+        "fact": "Call 01632 960 377 to book",
+        "status": "kept",
+        "note": "'Book your appointment by calling 01632 960 377.'"
+      },
+      {
+        "category": "actions",
+        "fact": "Do not drive until your vision is back to normal",
+        "status": "kept",
+        "note": "'Do not drive until your eyesight returns to normal.'"
+      },
+      {
+        "category": "actions",
+        "fact": "Bring sunglasses if you have them",
+        "status": "kept",
+        "note": "'Bring sunglasses, if you have them.'"
+      },
+      {
+        "category": "actions",
+        "fact": "Bring your glasses or contact lenses and a list of your medicines",
+        "status": "kept",
+        "note": "Items 2 and 3 in the action list cover the glasses or contact lenses and the list of medicines. However, the line 'The letter does not mention medicines' later contradicts this."
+      },
+      {
+        "category": "negatives",
+        "fact": "This screening does not diagnose other eye problems",
+        "status": "kept",
+        "note": "'This check does not diagnose other eye problems.'"
+      },
+      {
+        "category": "negatives",
+        "fact": "It does not replace the regular eye test at an optician",
+        "status": "kept",
+        "note": "'This check does not replace your usual eye test at the optician.'"
+      }
+    ],
+    "added": [
+      {
+        "text": "The letter does not mention medicines. (This is wrong: the letter asks the patient to bring a list of their medicines.)",
+        "kind": "medical_fact"
+      }
+    ],
+    "gold_reviewer": "claude-draft"
+  }
+}

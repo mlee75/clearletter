@@ -1,0 +1,212 @@
+{
+  "job": {
+    "id": "models__syn_18__haiku__en__v",
+    "part": "models",
+    "letter_id": "syn_18",
+    "file": "data/synthetic/syn_18.txt",
+    "kind": "faithfulness",
+    "model": "haiku",
+    "language": "en",
+    "verifier": true,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "haiku",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": true,
+    "status": "fallback",
+    "final_text": "**We could not explain this letter safely. Please ask your doctor, nurse or pharmacist to explain it to you.**\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "patient",
+      "purpose": "To inform about thyroid function test result and adjust levothyroxine dose",
+      "findings": [
+        {
+          "statement": "TSH is 7.8 mU/L with normal range 0.3 to 4.2",
+          "certainty": "confirmed",
+          "quote": "Your thyroid blood test (TFT) on 25/09/2026 showed that your TSH is 7.8 mU/L (normal range 0.3 to 4.2)"
+        },
+        {
+          "statement": "Current levothyroxine dose is too low",
+          "certainty": "confirmed",
+          "quote": "This means your dose of levothyroxine is too low"
+        }
+      ],
+      "medicines": [],
+      "dates": [
+        {
+          "what": "Thyroid blood test (TFT) performed",
+          "when": "25 September 2026",
+          "quote": "Your thyroid blood test (TFT) on 25/09/2026"
+        },
+        {
+          "what": "Repeat thyroid blood test (TFT) due",
+          "when": "between 6 November and 20 November 2026",
+          "quote": "Please have a repeat TFT blood test in 6 to 8 weeks (between 6 November and 20 November 2026)"
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Collect new levothyroxine prescription from your pharmacy",
+          "quote": "Your new prescription is ready to collect from your pharmacy"
+        },
+        {
+          "instruction": "Take levothyroxine on an empty stomach, at least 30 minutes before breakfast or other medicines",
+          "quote": "Take levothyroxine on an empty stomach, at least 30 minutes before breakfast or other medicines"
+        },
+        {
+          "instruction": "Leave at least 4 hours between levothyroxine and iron or calcium tablets",
+          "quote": "Leave at least 4 hours between them"
+        },
+        {
+          "instruction": "Have a repeat thyroid blood test (TFT) in 6 to 8 weeks, between 6 November and 20 November 2026",
+          "quote": "Please have a repeat TFT blood test in 6 to 8 weeks (between 6 November and 20 November 2026)"
+        }
+      ],
+      "negatives": [
+        {
+          "instruction": "Do not take levothyroxine at the same time as iron or calcium tablets",
+          "quote": "Do not take it at the same time as iron or calcium tablets"
+        }
+      ],
+      "warning_signs": [],
+      "unclear": []
+    },
+    "removed_ungrounded": [
+      {
+        "list": "medicines",
+        "item": {
+          "name": "Levothyroxine",
+          "dose": "75 mcg",
+          "how_often": "once daily",
+          "change": "increase",
+          "details": "Increased from 50 mcg. Comprises 25 mcg tablets and 50 mcg tablets: take one of each every day",
+          "quote": "Increase levothyroxine from 50 mcg (micrograms) to 75 mcg once daily. It is 25 mcg tablets and 50 mcg tablets: take one of each every day"
+        }
+      }
+    ],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\nYour thyroid blood test on 25 September 2026 shows a number called TSH. Your TSH is 7.8. Normal is 0.3 to 4.2. Your number is too high. This means your levothyroxine [thyroid medicine] dose is too low. Your doctor is increasing your dose.\n\n## What you need to do\n1. Get your new levothyroxine prescription from your pharmacy.\n2. Take levothyroxine on an empty stomach.\n3. Take it at least 30 minutes before breakfast or other medicines.\n4. Do not take levothyroxine with iron or calcium tablets.\n5. Leave at least 4 hours between levothyroxine and iron or calcium tablets.\n6. Have a repeat thyroid blood test between 6 November and 20 November 2026.\n\n## Dates and medicines\n- Thyroid blood test: 25 September 2026\n- Your TSH result: 7.8 mU/L (normal range 0.3 to 4.2 mU/L)\n- Levothyroxine: Your dose is being increased\n- Next blood test: between 6 November and 20 November 2026\n\n## Questions to ask your doctor\n- What is my new levothyroxine dose?\n- Why did my TSH level go too high?\n- When will I know if my new dose is working?\n\n## When to get urgent help\nThe letter does not list specific warning signs.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 75.5,
+          "reading_ease_target": 70,
+          "grade_level": 5.0,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [
+            {
+              "kind": "dosage",
+              "severity": "major",
+              "explanation_says": "Levothyroxine: Your dose is being increased. Get your new levothyroxine prescription from your pharmacy.",
+              "letter_says": "Increase levothyroxine from 50 mcg to 75 mcg once daily. Your new prescription is ready to collect from your pharmacy. It is 25 mcg tablets and 50 mcg tablets: take one of each every day.",
+              "why": "The explanation does not specify the new dose (75 mcg), the former dose (50 mcg), the frequency (once daily), or how the prescription is composed (one 25 mcg tablet and one 50 mcg tablet daily). The patient needs this information to collect and take their new prescription correctly."
+            }
+          ],
+          "summary": "One major problem found: the explanation fails to specify the new levothyroxine dose (75 mcg), how it is composed (25 mcg + 50 mcg tablets, one of each), or the frequency (once daily). This is critical information the patient needs to take their medication correctly."
+        },
+        "blocking_problems": [
+          "[dosage] The explanation does not specify the new dose (75 mcg), the former dose (50 mcg), the frequency (once daily), or how the prescription is composed (one 25 mcg tablet and one 50 mcg tablet daily). The patient needs this information to collect and take their new prescription correctly. (explanation: 'Levothyroxine: Your dose is being increased. Get your new levothyroxine prescription from your pharmacy.'; letter: 'Increase levothyroxine from 50 mcg to 75 mcg once daily. Your new prescription is ready to collect from your pharmacy. It is 25 mcg tablets and 50 mcg tablets: take one of each every day.')"
+        ],
+        "attempt": 1
+      },
+      {
+        "explanation": "I can see the safety problem. The facts JSON provided is incomplete—the \"medicines\" array is empty, but the letter clearly contains critical dosage information:\n- Previous dose: 50 micrograms\n- New dose: 75 micrograms  \n- Frequency: once daily\n- Prescription composition: one 25 microgram tablet and one 50 microgram tablet daily\n\nI'm instructed to write only from the facts provided in JSON, and not to add information from the letter itself. To fix this safety issue, I need you to provide the complete facts JSON with the missing medicine information included. \n\nCould you add the levothyroxine dosage details to the \"medicines\" array in the facts JSON? It should include:\n- Medicine name\n- Previous dose and frequency\n- New dose and frequency  \n- How to take it (the tablet combination)\n\nOnce you provide that, I'll rewrite the explanation with all the dosage details correctly included.",
+        "missing_headings": [
+          "What this letter says",
+          "What you need to do",
+          "Dates and medicines",
+          "Questions to ask your doctor",
+          "When to get urgent help"
+        ],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 36.4,
+          "reading_ease_target": 70,
+          "grade_level": 15.0,
+          "grade_target": 6,
+          "passed": false
+        },
+        "verifier": {
+          "problems": [
+            {
+              "kind": "dropped",
+              "severity": "major",
+              "explanation_says": "The explanation does not provide any patient-friendly explanation of the medical letter. Instead, it contains only a meta-comment about missing JSON data and requests that information be added.",
+              "letter_says": "The letter contains: TSH test result (7.8 mU/L, elevated), the reason for change (dose is too low), new dosage instructions (75 mcg as one 25 mcg tablet and one 50 mcg tablet daily), how to take levothyroxine (on empty stomach, 30 minutes before breakfast, not with iron/calcium, 4-hour gap), and follow-up test date range (6-8 weeks, between 6 November and 20 November 2026).",
+              "why": "A patient explanation is completely missing. No explanation of the diagnosis, no dosage information, no instructions on how to take the medicine, no follow-up date, and no guidance on precautions or when to seek help has been provided to the patient."
+            },
+            {
+              "kind": "added",
+              "severity": "major",
+              "explanation_says": "The text asks the user to provide complete facts in JSON format and says 'I'm instructed to write only from the facts provided in JSON, and not to add information from the letter itself.'",
+              "letter_says": "The letter contains the medical information directly; there is no mention of JSON facts or a constraint that explanations must only come from JSON data structures.",
+              "why": "The explanation introduces a procedural constraint (reliance on JSON facts) that does not exist in the letter. This confuses the patient about the source and nature of their medical information."
+            }
+          ],
+          "summary": "The provided text is not a patient explanation of the medical letter. It is a procedural meta-comment explaining that data is missing. No actual patient-friendly explanation has been provided, meaning the patient has no clear guidance on their diagnosis, dosage, how to take their medicine, timing of follow-up tests, or precautions. This is a critical gap."
+        },
+        "blocking_problems": [
+          "Missing heading: What this letter says",
+          "Missing heading: What you need to do",
+          "Missing heading: Dates and medicines",
+          "Missing heading: Questions to ask your doctor",
+          "Missing heading: When to get urgent help",
+          "[dropped] A patient explanation is completely missing. No explanation of the diagnosis, no dosage information, no instructions on how to take the medicine, no follow-up date, and no guidance on precautions or when to seek help has been provided to the patient. (explanation: 'The explanation does not provide any patient-friendly explanation of the medical letter. Instead, it contains only a meta-comment about missing JSON data and requests that information be added.'; letter: 'The letter contains: TSH test result (7.8 mU/L, elevated), the reason for change (dose is too low), new dosage instructions (75 mcg as one 25 mcg tablet and one 50 mcg tablet daily), how to take levothyroxine (on empty stomach, 30 minutes before breakfast, not with iron/calcium, 4-hour gap), and follow-up test date range (6-8 weeks, between 6 November and 20 November 2026).')",
+          "[added] The explanation introduces a procedural constraint (reliance on JSON facts) that does not exist in the letter. This confuses the patient about the source and nature of their medical information. (explanation: \"The text asks the user to provide complete facts in JSON format and says 'I'm instructed to write only from the facts provided in JSON, and not to add information from the letter itself.'\"; letter: 'The letter contains the medical information directly; there is no mention of JSON facts or a constraint that explanations must only come from JSON data structures.')"
+        ],
+        "attempt": 2
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 2842,
+        "output_tokens": 6045,
+        "cost_usd": 0.03307,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 15769,
+        "output_tokens": 4409,
+        "cost_usd": 0.0394,
+        "turns": 4
+      },
+      {
+        "step": "verify",
+        "input_tokens": 9868,
+        "output_tokens": 4874,
+        "cost_usd": 0.04147,
+        "turns": 3
+      },
+      {
+        "step": "explain",
+        "input_tokens": 3314,
+        "output_tokens": 819,
+        "cost_usd": 0.00741,
+        "turns": 1
+      },
+      {
+        "step": "verify",
+        "input_tokens": 6129,
+        "output_tokens": 2274,
+        "cost_usd": 0.0175,
+        "turns": 3
+      }
+    ],
+    "cost_usd": 0.13884,
+    "latency_s": 180.5
+  },
+  "judgement": {
+    "fallback": true
+  }
+}

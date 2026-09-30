@@ -7,8 +7,13 @@ Claude turns a medical letter into a faithful, plain-language explanation in the
 own language (English, French or Spanish). The core of the project is **safety evaluation**:
 showing that the explanation adds nothing, drops nothing and changes nothing.
 
-**Status:** Phases 1–2 of 5 are done (spec, gold-set tool, pipeline). Next: the eval
-harness (Phase 3). The full README with results comes in Phase 5.
+**Status:** Phases 1–3 of 5 are done (spec and gold set, pipeline, evaluation). Next: the
+Claude Skill (Phase 4), then the demo and the full README (Phase 5).
+
+**First evaluation (220 runs):** with Sonnet and the verifier, 99.5% of must-keep facts were
+preserved, with no dosage or date errors, at a reading age of about 9 to 10. But it still
+**added** unsupported claims in 4 of 20 letters (target: 0), and the causes are traced to
+the design. [What the evaluation found](evals/ANALYSIS.md) · [all results](evals/results.md)
 
 ## How it works
 
@@ -62,6 +67,8 @@ is logged in `outputs/spend_log.csv`. Why two backends: [D10](docs/DECISIONS.md)
 | `clearletter/` | The pipeline: `pipeline.py` (the 3 steps), `prompts.py`, `schemas.py`, `checks.py`, `tools.py`, `fixed_text.py`, `config.py` |
 | `clearletter/backends.py` | Two ways to reach Claude: the API, or Claude Code on a subscription |
 | `run.py` | Explain one letter from the command line |
+| `evals/` | Evaluation: judge, runner, report, 220 saved runs, [results](evals/results.md) and [analysis](evals/ANALYSIS.md) |
+| `data/redteam/` | 15 letters designed to tempt unsafe behaviour, with pass criteria |
 | `tests/` | Offline tests using a fake Claude |
 
 ## Licence

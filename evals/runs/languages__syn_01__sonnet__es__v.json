@@ -1,0 +1,197 @@
+{
+  "job": {
+    "id": "languages__syn_01__sonnet__es__v",
+    "part": "languages",
+    "letter_id": "syn_01",
+    "file": "data/synthetic/syn_01.txt",
+    "kind": "faithfulness",
+    "model": "sonnet",
+    "language": "es",
+    "verifier": true,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "sonnet",
+    "backend": "claude-code",
+    "language": "es",
+    "country": "uk",
+    "use_verifier": true,
+    "status": "ok_after_retry",
+    "final_text": "## Qué dice esta carta\nTiene una cita para una ecografía del corazón (echocardiogram). Es una prueba con imágenes del corazón. La cita es en la Unidad de Investigaciones Cardíacas (Cardiac Investigations Unit), en el piso 2. La prueba dura unos 45 minutos.\n\n## Qué tiene que hacer\n1. Llegue 15 minutos antes de la hora de su cita.\n2. Traiga una lista de todos los medicamentos que toma.\n3. Si no puede ir, llame al 01632 960 123. Llame al menos 48 horas antes. Así otro paciente puede usar su hora.\n4. No necesita estar en ayunas antes de esta prueba.\n5. No necesita dejar ningún medicamento.\n\n## Fechas y medicamentos\n- Cita: martes 17 de noviembre de 2026, a las 10:40.\n- La carta no menciona medicamentos nuevos. No hay cambios en sus medicamentos.\n\n## Preguntas para su médico\n- ¿Qué es un ecocardiograma (echocardiogram)?\n- ¿Cómo se hace la prueba?\n- ¿Qué debo llevar a la cita?\n\n## Cuándo pedir ayuda urgente\nLa carta no menciona señales de alarma concretas.\n\nSi le preocupa algo y no es una emergencia, llame al NHS 111. En caso de emergencia, llame al 999.\n\n---\n*Esta explicación la ha hecho un programa informático para ayudarle a leer su carta. Puede contener errores. No sustituye a su médico, enfermero o farmacéutico. Siga siempre lo que dice la carta y pregúnteles si algo no está claro.*\n",
+    "facts": {
+      "reader": "patient",
+      "purpose": "To tell the patient about a booked echocardiogram (ultrasound scan of the heart) appointment and how to prepare.",
+      "findings": [],
+      "medicines": [],
+      "dates": [
+        {
+          "what": "Echocardiogram appointment at the Cardiac Investigations Unit, Level 2 (takes about 45 minutes)",
+          "when": "17 November 2026 at 10:40",
+          "quote": "Tuesday 17 November 2026 at 10:40"
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Bring a list of all the medicines you take.",
+          "quote": "Please bring a list of all the medicines you take."
+        },
+        {
+          "instruction": "Arrive 15 minutes before your appointment time.",
+          "quote": "Please arrive 15 minutes before your appointment time."
+        },
+        {
+          "instruction": "If you cannot attend, call 01632 960 123 at least 48 hours before so the slot can be offered to another patient.",
+          "quote": "If you cannot attend, please call 01632 960 123 at least 48 hours before"
+        }
+      ],
+      "negatives": [
+        {
+          "instruction": "You do not need to fast before this test.",
+          "quote": "You do not need to fast before this test."
+        },
+        {
+          "instruction": "You do not need to stop any of your medicines.",
+          "quote": "You do not need to stop any of your medicines."
+        }
+      ],
+      "warning_signs": [],
+      "unclear": []
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## Qué dice esta carta\nTiene una cita para una ecografía del corazón (echocardiogram). Es una prueba con imágenes del corazón. La cita es en la Unidad de Investigaciones Cardíacas (Cardiac Investigations Unit), en el piso 2. La prueba dura unos 45 minutos.\n\n## Qué tiene que hacer\n1. Llegue 15 minutos antes de la hora de su cita.\n2. Traiga una lista de todos los medicamentos que toma.\n3. Si no puede ir, llame al 01632 960 123. Llame al menos 48 horas antes. Así otro paciente puede usar su hora.\n4. No necesita estar en ayunas antes de esta prueba.\n5. No necesita dejar ningún medicamento.\n\n## Fechas y medicamentos\n- Cita: martes 17 de noviembre de 2026, a las 10:40.\n- Llegue a las 10:25.\n- La carta no menciona medicamentos nuevos. No hay cambios en sus medicamentos.\n\n## Preguntas para su médico\n- ¿Qué es un ecocardiograma (echocardiogram)?\n- ¿Cómo se hace la prueba?\n- ¿Cuándo sabré el resultado?\n\n## Cuándo pedir ayuda urgente\nLa carta no menciona señales de alarma concretas.",
+        "missing_headings": [],
+        "unknown_numbers": [
+          "25"
+        ],
+        "readability": {
+          "language": "es",
+          "reading_ease": 89.0,
+          "reading_ease_target": 70,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [],
+          "summary": "The explanation matches the letter. The date (Tuesday 17 November 2026, 10:40), the arrival time (10:25, which is 15 minutes early), the location, the 45-minute duration, the phone number, the 48-hour cancellation notice, and the no-fasting and no-medicine-changes instructions are all correct. Nothing was added, and the suggested questions do not introduce new worries."
+        },
+        "blocking_problems": [
+          "The number 25 is not in the letter"
+        ],
+        "attempt": 1
+      },
+      {
+        "explanation": "## Qué dice esta carta\nTiene una cita para una ecografía del corazón (echocardiogram). Es una prueba con imágenes del corazón. La cita es en la Unidad de Investigaciones Cardíacas (Cardiac Investigations Unit), en el piso 2. La prueba dura unos 45 minutos.\n\n## Qué tiene que hacer\n1. Llegue 15 minutos antes de la hora de su cita.\n2. Traiga una lista de todos los medicamentos que toma.\n3. Si no puede ir, llame al 01632 960 123. Llame al menos 48 horas antes. Así otro paciente puede usar su hora.\n4. No necesita estar en ayunas antes de esta prueba.\n5. No necesita dejar ningún medicamento.\n\n## Fechas y medicamentos\n- Cita: martes 17 de noviembre de 2026, a las 10:40.\n- La carta no menciona medicamentos nuevos. No hay cambios en sus medicamentos.\n\n## Preguntas para su médico\n- ¿Qué es un ecocardiograma (echocardiogram)?\n- ¿Cómo se hace la prueba?\n- ¿Qué debo llevar a la cita?\n\n## Cuándo pedir ayuda urgente\nLa carta no menciona señales de alarma concretas.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "es",
+          "reading_ease": 89.1,
+          "reading_ease_target": 70,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [],
+          "summary": "The explanation matches the letter. The date and time (Tuesday 17 November 2026, 10:40), the location, the 45-minute duration, arriving 15 minutes early, bringing a medicine list, and the cancellation rule (call 01632 960 123 at least 48 hours ahead) are all correct. No fasting and no stopping medicines are both preserved. Nothing has been added, and the note that the letter lists no warning signs is expected."
+        },
+        "blocking_problems": [],
+        "attempt": 2
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 3110,
+        "output_tokens": 612,
+        "cost_usd": 0.02179,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 9175,
+        "output_tokens": 1093,
+        "cost_usd": 0.04611,
+        "turns": 3
+      },
+      {
+        "step": "verify",
+        "input_tokens": 2896,
+        "output_tokens": 320,
+        "cost_usd": 0.02348,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 7261,
+        "output_tokens": 1081,
+        "cost_usd": 0.04311,
+        "turns": 2
+      },
+      {
+        "step": "verify",
+        "input_tokens": 2884,
+        "output_tokens": 350,
+        "cost_usd": 0.01946,
+        "turns": 2
+      }
+    ],
+    "cost_usd": 0.15395,
+    "latency_s": 35.8
+  },
+  "back_translation": "## What this letter says\nYou have an appointment for an ultrasound of the heart (echocardiogram). It is a test with images of the heart. The appointment is in the Cardiac Investigations Unit (Cardiac Investigations Unit), on floor 2. The test lasts about 45 minutes.\n\n## What you have to do\n1. Arrive 15 minutes before the time of your appointment.\n2. Bring a list of all the medicines you take.\n3. If you cannot go, call 01632 960 123. Call at least 48 hours before. That way another patient can use your time slot.\n4. You do not need to be fasting before this test.\n5. You do not need to stop any medicine.\n\n## Dates and medicines\n- Appointment: Tuesday 17 November 2026, at 10:40.\n- The letter does not mention new medicines. There are no changes to your medicines.\n\n## Questions for your doctor\n- What is an echocardiogram (echocardiogram)?\n- How is the test done?\n- What should I bring to the appointment?\n\n## When to ask for urgent help\nThe letter does not mention specific warning signs.",
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "dates",
+        "fact": "Echocardiogram on Tuesday 17 November 2026 at 10:40, Cardiac Investigations Unit, Level 2",
+        "status": "kept",
+        "note": "Date, day, time (Tuesday 17 November 2026, 10:40) and location (Cardiac Investigations Unit, floor 2) are all there, split across two sections."
+      },
+      {
+        "category": "dates",
+        "fact": "The test takes about 45 minutes",
+        "status": "kept",
+        "note": "'The test lasts about 45 minutes.'"
+      },
+      {
+        "category": "actions",
+        "fact": "Bring a list of all the medicines you take",
+        "status": "kept",
+        "note": "'Bring a list of all the medicines you take.'"
+      },
+      {
+        "category": "actions",
+        "fact": "Arrive 15 minutes before the appointment time",
+        "status": "kept",
+        "note": "'Arrive 15 minutes before the time of your appointment.'"
+      },
+      {
+        "category": "actions",
+        "fact": "If you cannot attend, call 01632 960 123 at least 48 hours before",
+        "status": "kept",
+        "note": "Phone number and 'at least 48 hours before' both kept."
+      },
+      {
+        "category": "negatives",
+        "fact": "You do not need to fast before the test",
+        "status": "kept",
+        "note": "'You do not need to be fasting before this test.'"
+      },
+      {
+        "category": "negatives",
+        "fact": "You do not need to stop any of your medicines",
+        "status": "kept",
+        "note": "'You do not need to stop any medicine.'"
+      }
+    ],
+    "added": [
+      {
+        "text": "There are no changes to your medicines.",
+        "kind": "reassurance"
+      }
+    ],
+    "gold_reviewer": "claude-draft"
+  }
+}

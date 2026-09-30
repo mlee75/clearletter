@@ -1,0 +1,166 @@
+{
+  "job": {
+    "id": "models__syn_01__haiku__en__v",
+    "part": "models",
+    "letter_id": "syn_01",
+    "file": "data/synthetic/syn_01.txt",
+    "kind": "faithfulness",
+    "model": "haiku",
+    "language": "en",
+    "verifier": true,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "haiku",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": true,
+    "status": "ok",
+    "final_text": "## What this letter says\nYou have an appointment for a test called an echocardiogram. The letter tells you what to do before your appointment.\n\n## What you need to do\n1. Go to your echocardiogram appointment on 17 November 2026 at 10:40.\n2. Arrive 15 minutes before your appointment time.\n3. Bring a list of all the medicines you take.\n4. If you cannot attend, call 01632 960 123 at least 48 hours before your appointment.\n\nYou do not need to fast before this test. You do not need to stop any of your medicines.\n\n## Dates and medicines\n**Your appointment:** Tuesday 17 November 2026 at 10:40 for your echocardiogram.\n\nNo medicines are mentioned in this letter.\n\n## Questions to ask your doctor\n- What is an echocardiogram and what will it show?\n- How long will the test take?\n- When will I get the results?\n- Is there anything else I should bring to my appointment?\n\n## When to get urgent help\nThe letter does not list specific warning signs.\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "patient",
+      "purpose": "Appointment booking and instructions for echocardiogram",
+      "findings": [],
+      "medicines": [],
+      "dates": [
+        {
+          "what": "Echocardiogram appointment",
+          "when": "17 November 2026",
+          "quote": "You have been booked for an echocardiogram on Tuesday 17 November 2026 at 10:40"
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Arrive 15 minutes before your appointment time",
+          "quote": "Please arrive 15 minutes before your appointment time"
+        },
+        {
+          "instruction": "Bring a list of all the medicines you take",
+          "quote": "Please bring a list of all the medicines you take"
+        },
+        {
+          "instruction": "If you cannot attend, call 01632 960 123 at least 48 hours before",
+          "quote": "If you cannot attend, please call 01632 960 123 at least 48 hours before so that we can offer your slot to another patient"
+        }
+      ],
+      "negatives": [
+        {
+          "instruction": "You do not need to fast before this test",
+          "quote": "You do not need to fast before this test"
+        },
+        {
+          "instruction": "You do not need to stop any of your medicines",
+          "quote": "You do not need to stop any of your medicines"
+        }
+      ],
+      "warning_signs": [],
+      "unclear": []
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\nYou have an appointment for a test called an echocardiogram. The letter tells you what to do before your appointment.\n\n## What you need to do\n1. Go to your echocardiogram appointment on 17 November 2026 at 10:40.\n2. Arrive 15 minutes before your appointment time.\n3. Bring a list of all the medicines you take.\n4. If you cannot attend, call 01632 960 123 at least 48 hours before your appointment.\n\nYou do not need to fast before this test. You do not need to stop any of your medicines.\n\n## Dates and medicines\n**Your appointment:** Tuesday 17 November 2026 at 10:40 for your echocardiogram.\n\nNo medicines are mentioned in this letter.\n\n## Questions to ask your doctor\n- What is an echocardiogram and what will it show?\n- How long will the test take?\n- When will I get the results?\n- Is there anything else I should bring to my appointment?\n\n## When to get urgent help\nThe letter does not list specific warning signs.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 77.3,
+          "reading_ease_target": 70,
+          "grade_level": 5.0,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [
+            {
+              "kind": "dropped",
+              "severity": "minor",
+              "explanation_says": "The duration is not mentioned anywhere in the explanation",
+              "letter_says": "It takes about 45 minutes",
+              "why": "The test duration is a practical detail that helps patients plan their time and manage expectations, but it is missing from the explanation even though it appears in the letter"
+            }
+          ],
+          "summary": "The explanation accurately captures the key information and instructions from the letter. However, one practical detail is omitted: the test duration. The letter states the echocardiogram 'takes about 45 minutes,' but this is not mentioned in the explanation. This is a minor omission that doesn't affect what the patient needs to do but is helpful information for planning purposes.\"}\n"
+        },
+        "blocking_problems": [],
+        "attempt": 1
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 2747,
+        "output_tokens": 1467,
+        "cost_usd": 0.01008,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 9825,
+        "output_tokens": 1765,
+        "cost_usd": 0.01865,
+        "turns": 3
+      },
+      {
+        "step": "verify",
+        "input_tokens": 2498,
+        "output_tokens": 8264,
+        "cost_usd": 0.04382,
+        "turns": 2
+      }
+    ],
+    "cost_usd": 0.07255,
+    "latency_s": 124.8
+  },
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "dates",
+        "fact": "Echocardiogram on Tuesday 17 November 2026 at 10:40, Cardiac Investigations Unit, Level 2",
+        "status": "dropped",
+        "note": "Date, day and time (Tuesday 17 November 2026 at 10:40) are kept, but the location (Cardiac Investigations Unit, Level 2) is never mentioned. Part of the fact is missing."
+      },
+      {
+        "category": "dates",
+        "fact": "The test takes about 45 minutes",
+        "status": "dropped",
+        "note": "The explanation never says the test takes about 45 minutes. It even suggests asking the doctor how long the test will take."
+      },
+      {
+        "category": "actions",
+        "fact": "Bring a list of all the medicines you take",
+        "status": "kept",
+        "note": "'Bring a list of all the medicines you take.'"
+      },
+      {
+        "category": "actions",
+        "fact": "Arrive 15 minutes before the appointment time",
+        "status": "kept",
+        "note": "'Arrive 15 minutes before your appointment time.'"
+      },
+      {
+        "category": "actions",
+        "fact": "If you cannot attend, call 01632 960 123 at least 48 hours before",
+        "status": "kept",
+        "note": "'If you cannot attend, call 01632 960 123 at least 48 hours before your appointment.'"
+      },
+      {
+        "category": "negatives",
+        "fact": "You do not need to fast before the test",
+        "status": "kept",
+        "note": "'You do not need to fast before this test.'"
+      },
+      {
+        "category": "negatives",
+        "fact": "You do not need to stop any of your medicines",
+        "status": "kept",
+        "note": "'You do not need to stop any of your medicines.'"
+      }
+    ],
+    "added": [],
+    "gold_reviewer": "claude-draft"
+  }
+}

@@ -1,0 +1,241 @@
+{
+  "job": {
+    "id": "models__syn_20__opus__en__v",
+    "part": "models",
+    "letter_id": "syn_20",
+    "file": "data/synthetic/syn_20.txt",
+    "kind": "faithfulness",
+    "model": "opus",
+    "language": "en",
+    "verifier": true,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "opus",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": true,
+    "status": "ok",
+    "final_text": "## What this letter says\n\nYou had an appointment on 19 October 2026. At that visit, you agreed a plan. Your antidepressant medicine will change. This is because of side effects.\n\nYou will slowly stop sertraline. Then you will start a new medicine called mirtazapine.\n\nMirtazapine can make you sleepy. This is more likely when you first start it.\n\n## What you need to do\n\n1. From Monday 26 October 2026, take less sertraline. Take 50 milligrams once a day for 7 days.\n2. On Monday 2 November 2026, stop sertraline.\n3. From Monday 2 November 2026, start mirtazapine. Take 15 milligrams once a day at night.\n4. Do not drive if you feel sleepy (drowsy).\n5. Avoid alcohol. This means do not drink it.\n6. Go to your next appointment. It is on Monday 16 November 2026 at 14:00. It is with Nurse Obi.\n\n## Dates and medicines\n\n**Dates**\n- 19 October 2026: your last appointment. The change was agreed then.\n- Monday 26 October 2026: start the lower dose of sertraline.\n- Monday 2 November 2026: stop sertraline. Start mirtazapine.\n- Monday 16 November 2026 at 14:00: next appointment with Nurse Obi.\n\n**Medicines**\n- Sertraline: your old dose was 100 milligrams. From Monday 26 October 2026, take 50 milligrams once a day. Do this for 7 days.\n- Sertraline: stop on Monday 2 November 2026.\n- Mirtazapine: new medicine. Start on Monday 2 November 2026. Take 15 milligrams once a day at night.\n\n## Questions to ask your doctor\n\n- What does the word \"antidepressant\" mean?\n- What does \"side effects\" mean for me?\n- What should I do if I forget a dose?\n- How long might mirtazapine make me sleepy?\n\n## When to get urgent help\n\n- Do you feel worse? Do you have thoughts of harming yourself? Call the team on 01632 960 999. They are open Monday to Friday, 9:00 to 17:00.\n- At any time, you can call NHS 111. Choose the mental health option. Or call Samaritans on 116 123.\n- In an emergency, call 999.\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "patient",
+      "purpose": "To confirm the plan agreed at your appointment to switch your antidepressant from sertraline to mirtazapine because of side effects, and to give your next appointment.",
+      "findings": [
+        {
+          "statement": "Your antidepressant is being changed because of side effects.",
+          "certainty": "confirmed",
+          "quote": "we agreed to change your antidepressant because of side effects"
+        },
+        {
+          "statement": "Mirtazapine can make you sleepy, especially when you first start it.",
+          "certainty": "confirmed",
+          "quote": "Mirtazapine can make you sleepy, especially at the start."
+        }
+      ],
+      "medicines": [
+        {
+          "name": "sertraline",
+          "dose": "50 mg",
+          "how_often": "once daily for 7 days",
+          "change": "decrease",
+          "details": "Reduce from 100 mg to 50 mg starting Monday 26 October 2026, for 7 days. Previous dose was 100 mg.",
+          "quote": "From Monday 26 October 2026: reduce sertraline from 100 mg to 50 mg once daily for 7 days."
+        },
+        {
+          "name": "sertraline",
+          "dose": "",
+          "how_often": "",
+          "change": "stop",
+          "details": "Stop sertraline on Monday 2 November 2026.",
+          "quote": "On Monday 2 November 2026: stop sertraline."
+        },
+        {
+          "name": "mirtazapine",
+          "dose": "15 mg",
+          "how_often": "once daily at night",
+          "change": "start",
+          "details": "Start from Monday 2 November 2026.",
+          "quote": "From Monday 2 November 2026: start mirtazapine 15 mg once daily at night."
+        }
+      ],
+      "dates": [
+        {
+          "what": "Previous appointment, when the change was agreed",
+          "when": "19 October 2026",
+          "quote": "Following our appointment on 19/10/2026"
+        },
+        {
+          "what": "Start taking the lower dose of sertraline (50 mg)",
+          "when": "Monday 26 October 2026",
+          "quote": "From Monday 26 October 2026: reduce sertraline from 100 mg to 50 mg"
+        },
+        {
+          "what": "Stop sertraline",
+          "when": "Monday 2 November 2026",
+          "quote": "On Monday 2 November 2026: stop sertraline."
+        },
+        {
+          "what": "Start mirtazapine",
+          "when": "Monday 2 November 2026",
+          "quote": "From Monday 2 November 2026: start mirtazapine 15 mg once daily at night."
+        },
+        {
+          "what": "Next appointment with Nurse Obi",
+          "when": "Monday 16 November 2026 at 14:00",
+          "quote": "Your next appointment is on Monday 16 November 2026 at 14:00 with Nurse Obi."
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Take mirtazapine at night.",
+          "quote": "start mirtazapine 15 mg once daily at night"
+        },
+        {
+          "instruction": "Go to your next appointment with Nurse Obi on Monday 16 November 2026 at 14:00.",
+          "quote": "Your next appointment is on Monday 16 November 2026 at 14:00 with Nurse Obi."
+        }
+      ],
+      "negatives": [
+        {
+          "instruction": "Do not drive if you feel drowsy.",
+          "quote": "Do not drive if you feel drowsy."
+        },
+        {
+          "instruction": "Avoid alcohol.",
+          "quote": "Avoid alcohol."
+        }
+      ],
+      "warning_signs": [
+        {
+          "instruction": "If you feel worse, or have thoughts of harming yourself, contact the team on 01632 960 999 (Monday to Friday, 9:00 to 17:00).",
+          "quote": "If you feel worse, or you have thoughts of harming yourself, contact the team on 01632 960 999 (Monday to Friday, 9:00 to 17:00)."
+        },
+        {
+          "instruction": "At any time, call NHS 111 and choose the mental health option, or call Samaritans on 116 123.",
+          "quote": "At any time, you can call NHS 111 and choose the mental health option, or call Samaritans on 116 123."
+        },
+        {
+          "instruction": "In an emergency, call 999.",
+          "quote": "In an emergency, call 999."
+        }
+      ],
+      "unclear": []
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\n\nYou had an appointment on 19 October 2026. At that visit, you agreed a plan. Your antidepressant medicine will change. This is because of side effects.\n\nYou will slowly stop sertraline. Then you will start a new medicine called mirtazapine.\n\nMirtazapine can make you sleepy. This is more likely when you first start it.\n\n## What you need to do\n\n1. From Monday 26 October 2026, take less sertraline. Take 50 milligrams once a day for 7 days.\n2. On Monday 2 November 2026, stop sertraline.\n3. From Monday 2 November 2026, start mirtazapine. Take 15 milligrams once a day at night.\n4. Do not drive if you feel sleepy (drowsy).\n5. Avoid alcohol. This means do not drink it.\n6. Go to your next appointment. It is on Monday 16 November 2026 at 14:00. It is with Nurse Obi.\n\n## Dates and medicines\n\n**Dates**\n- 19 October 2026: your last appointment. The change was agreed then.\n- Monday 26 October 2026: start the lower dose of sertraline.\n- Monday 2 November 2026: stop sertraline. Start mirtazapine.\n- Monday 16 November 2026 at 14:00: next appointment with Nurse Obi.\n\n**Medicines**\n- Sertraline: your old dose was 100 milligrams. From Monday 26 October 2026, take 50 milligrams once a day. Do this for 7 days.\n- Sertraline: stop on Monday 2 November 2026.\n- Mirtazapine: new medicine. Start on Monday 2 November 2026. Take 15 milligrams once a day at night.\n\n## Questions to ask your doctor\n\n- What does the word \"antidepressant\" mean?\n- What does \"side effects\" mean for me?\n- What should I do if I forget a dose?\n- How long might mirtazapine make me sleepy?\n\n## When to get urgent help\n\n- Do you feel worse? Do you have thoughts of harming yourself? Call the team on 01632 960 999. They are open Monday to Friday, 9:00 to 17:00.\n- At any time, you can call NHS 111. Choose the mental health option. Or call Samaritans on 116 123.\n- In an emergency, call 999.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 82.3,
+          "reading_ease_target": 70,
+          "grade_level": 3.7,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [],
+          "summary": "The explanation matches the letter, and I found no problems. It correctly gives the reason for the change (side effects) and the medicine plan: sertraline goes from 100 mg to 50 mg once daily for 7 days from Monday 26 October 2026, stops on Monday 2 November 2026, and mirtazapine 15 mg once daily at night starts that same day. The sleepiness warning, the advice not to drive if drowsy and the advice to avoid alcohol are all included. The follow-up appointment is correct (Monday 16 November 2026 at 14:00 with Nurse Obi). The urgent help details are all correct: the team number and its hours, NHS 111 (mental health option), Samaritans on 116 123, and 999 in an emergency. The suggested questions do not add any new diagnoses or worries."
+        },
+        "blocking_problems": [],
+        "attempt": 1
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 3213,
+        "output_tokens": 1666,
+        "cost_usd": 0.0437,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 13380,
+        "output_tokens": 2051,
+        "cost_usd": 0.07401,
+        "turns": 4
+      },
+      {
+        "step": "verify",
+        "input_tokens": 3320,
+        "output_tokens": 485,
+        "cost_usd": 0.02567,
+        "turns": 2
+      }
+    ],
+    "cost_usd": 0.14338,
+    "latency_s": 50.1
+  },
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "diagnoses",
+        "fact": "Antidepressant being changed because of side effects",
+        "status": "kept",
+        "note": "States the antidepressant will change because of side effects."
+      },
+      {
+        "category": "medicines",
+        "fact": "From Monday 26 October 2026: reduce sertraline from 100 mg to 50 mg once daily for 7 days",
+        "status": "kept",
+        "note": "From Monday 26 October 2026, take 50 mg once a day for 7 days. The old dose of 100 mg is given in the Medicines section."
+      },
+      {
+        "category": "medicines",
+        "fact": "On Monday 2 November 2026: stop sertraline",
+        "status": "kept",
+        "note": "Stop sertraline on Monday 2 November 2026."
+      },
+      {
+        "category": "medicines",
+        "fact": "From Monday 2 November 2026: start mirtazapine 15 mg once daily at night",
+        "status": "kept",
+        "note": "Start mirtazapine 15 mg once a day at night from Monday 2 November 2026."
+      },
+      {
+        "category": "dates",
+        "fact": "Appointment on 19 October 2026",
+        "status": "kept",
+        "note": "Appointment on 19 October 2026."
+      },
+      {
+        "category": "dates",
+        "fact": "Next appointment on Monday 16 November 2026 at 14:00 with Nurse Obi",
+        "status": "kept",
+        "note": "Monday 16 November 2026 at 14:00 with Nurse Obi."
+      },
+      {
+        "category": "actions",
+        "fact": "Mirtazapine can make you sleepy: do not drive if you feel drowsy",
+        "status": "kept",
+        "note": "Says mirtazapine can make you sleepy and not to drive if you feel drowsy."
+      },
+      {
+        "category": "actions",
+        "fact": "Avoid alcohol",
+        "status": "kept",
+        "note": "Avoid alcohol."
+      },
+      {
+        "category": "actions",
+        "fact": "If you feel worse or have thoughts of harming yourself: contact the team on 01632 960 999 (Monday to Friday, 9:00 to 17:00)",
+        "status": "kept",
+        "note": "If you feel worse or have thoughts of harming yourself, call 01632 960 999, Monday to Friday, 9:00 to 17:00."
+      },
+      {
+        "category": "actions",
+        "fact": "At any time: NHS 111 (mental health option) or Samaritans 116 123; in an emergency, call 999",
+        "status": "kept",
+        "note": "NHS 111 (mental health option) or Samaritans 116 123 at any time, and 999 in an emergency."
+      }
+    ],
+    "added": [],
+    "gold_reviewer": "claude-draft"
+  }
+}

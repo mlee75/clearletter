@@ -1,0 +1,235 @@
+{
+  "job": {
+    "id": "mtsamples__mts_3080__sonnet__en__v",
+    "part": "mtsamples",
+    "letter_id": "mts_3080",
+    "file": "data/mtsamples/mts_3080.txt",
+    "kind": "faithfulness",
+    "model": "sonnet",
+    "language": "en",
+    "verifier": true,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "sonnet",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": true,
+    "status": "ok",
+    "final_text": "## What this letter says\nYour recent cholesterol test was abnormal. This is confirmed.\n\nYour levels are high. Your doctor thinks treatment is the next best step.\n\nAbnormal cholesterol is usually linked to a higher risk of stroke and heart attack.\n\nYou may have diabetes or hypertension. If so, your risk is higher again with high cholesterol (hypercholesterolemia).\n\nDiet only lowers cholesterol a little. With a strict diet, most people can lower it by about 15%.\n\nIf your cholesterol is moderately to severely high, diet is usually not the first treatment.\n\nMost high cholesterol comes from your genes. It does not depend on diet.\n\nNew research shows that treating high cholesterol can lower the risk of Alzheimer's disease.\n\nThere are several treatment options now.\n\n## What you need to do\n1. Read the copy of your lab results that came with the letter.\n2. Think about calling to make a follow-up appointment about your cholesterol.\n3. Make the appointment if you want treatment for high cholesterol.\n4. Contact your doctor if you have more questions.\n\n## Dates and medicines\n- The letter gives no dates. It only says the test was \"recently\".\n- The letter gives no date to book your visit by.\n- The letter names no medicine or treatment.\n\n## Questions to ask your doctor\n- What are my cholesterol and LDL numbers?\n- What treatment options are there for me?\n- Do diabetes or hypertension matter for me?\n- How soon should I come in?\n\n## When to get urgent help\nThe letter does not list specific warning signs.\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "patient",
+      "purpose": "To tell the patient that a recent cholesterol test was abnormal and to recommend they make a follow-up appointment to discuss treatment.",
+      "findings": [
+        {
+          "statement": "Recent cholesterol test results were abnormal.",
+          "certainty": "confirmed",
+          "quote": "The cholesterol levels were abnormal."
+        },
+        {
+          "statement": "The levels are high enough that the doctor thinks treatment (intervention) is the next best step.",
+          "certainty": "confirmed",
+          "quote": "your levels are high enough that I think intervention is the next best step"
+        },
+        {
+          "statement": "Abnormal cholesterol is usually associated with increased risk of stroke and heart attack.",
+          "certainty": "confirmed",
+          "quote": "These are usually associated with increased risk for stroke and heart attack."
+        },
+        {
+          "statement": "Diet gives only limited reduction in total and LDL cholesterol; with strict diet most patients can achieve about a 15% reduction.",
+          "certainty": "confirmed",
+          "quote": "Most of the time under strict diet patients can achieve a 15% reduction in cholesterol."
+        },
+        {
+          "statement": "If cholesterol is moderately to severely elevated, diet is usually not the first line of therapy.",
+          "certainty": "confirmed",
+          "quote": "If your cholesterol levels are moderate to severely elevated, usually diet is not the first line of therapy."
+        },
+        {
+          "statement": "Diabetes or hypertension, combined with high cholesterol, further increases risk.",
+          "certainty": "confirmed",
+          "quote": "If you are diabetic or have hypertension these two also increase your risk with the combination of hypercholesterolemia."
+        },
+        {
+          "statement": "Most elevated cholesterol comes from genetic background and is independent of diet.",
+          "certainty": "confirmed",
+          "quote": "Most of the time cholesterol that is elevated is from your genetic background and is independent of diet."
+        },
+        {
+          "statement": "New research shows treatment of high cholesterol can decrease the risk of developing Alzheimer's disease.",
+          "certainty": "confirmed",
+          "quote": "New research shows that treatment of high cholesterol can decrease your risk of developing Alzheimer’s disease."
+        },
+        {
+          "statement": "Several treatment options are available.",
+          "certainty": "confirmed",
+          "quote": "There are several treatment options available at this time."
+        }
+      ],
+      "medicines": [],
+      "dates": [],
+      "actions": [
+        {
+          "instruction": "Make an appointment if you are interested in treatment for high cholesterol.",
+          "quote": "I would like you to make an appointment, if you are interested in treatment for this."
+        },
+        {
+          "instruction": "Consider calling for a follow-up appointment about your cholesterol levels.",
+          "quote": "Please consider calling for a followup appointment concerning your cholesterol levels."
+        },
+        {
+          "instruction": "Contact the doctor if you have any further questions.",
+          "quote": "If you should have any further questions, please do not hesitate to contact me."
+        },
+        {
+          "instruction": "Review the enclosed copy of your lab results.",
+          "quote": "I am enclosing a copy of your lab results for your review."
+        }
+      ],
+      "negatives": [],
+      "warning_signs": [],
+      "unclear": [
+        "The letter does not give the actual cholesterol or LDL numbers; they are only in the enclosed lab results.",
+        "The letter does not name any specific treatment or medicine.",
+        "The letter does not say when the test was done (only 'Recently') or give a date to book the appointment by."
+      ]
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\nYour recent cholesterol test was abnormal. This is confirmed.\n\nYour levels are high. Your doctor thinks treatment is the next best step.\n\nAbnormal cholesterol is usually linked to a higher risk of stroke and heart attack.\n\nYou may have diabetes or hypertension. If so, your risk is higher again with high cholesterol (hypercholesterolemia).\n\nDiet only lowers cholesterol a little. With a strict diet, most people can lower it by about 15%.\n\nIf your cholesterol is moderately to severely high, diet is usually not the first treatment.\n\nMost high cholesterol comes from your genes. It does not depend on diet.\n\nNew research shows that treating high cholesterol can lower the risk of Alzheimer's disease.\n\nThere are several treatment options now.\n\n## What you need to do\n1. Read the copy of your lab results that came with the letter.\n2. Think about calling to make a follow-up appointment about your cholesterol.\n3. Make the appointment if you want treatment for high cholesterol.\n4. Contact your doctor if you have more questions.\n\n## Dates and medicines\n- The letter gives no dates. It only says the test was \"recently\".\n- The letter gives no date to book your visit by.\n- The letter names no medicine or treatment.\n\n## Questions to ask your doctor\n- What are my cholesterol and LDL numbers?\n- What treatment options are there for me?\n- Do diabetes or hypertension matter for me?\n- How soon should I come in?\n\n## When to get urgent help\nThe letter does not list specific warning signs.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 68.5,
+          "reading_ease_target": 70,
+          "grade_level": 5.9,
+          "grade_target": 6,
+          "passed": false
+        },
+        "verifier": {
+          "problems": [
+            {
+              "kind": "changed",
+              "severity": "minor",
+              "explanation_says": "You may have diabetes or hypertension. If so, your risk is higher again with high cholesterol.",
+              "letter_says": "If you are diabetic or have hypertension these two also increase your risk with the combination of hypercholesterolemia.",
+              "why": "Mostly consistent, but 'You may have diabetes' suggests the patient might have it; the letter is conditional. Minor wording."
+            },
+            {
+              "kind": "certainty",
+              "severity": "minor",
+              "explanation_says": "Most high cholesterol comes from your genes. It does not depend on diet.",
+              "letter_says": "Most of the time cholesterol that is elevated is from your genetic background and is independent of diet.",
+              "why": "The letter says 'most of the time'; the explanation's 'It does not depend on diet' is stated absolutely, which is a stronger claim."
+            },
+            {
+              "kind": "added",
+              "severity": "minor",
+              "explanation_says": "Your recent cholesterol test was abnormal. This is confirmed.",
+              "letter_says": "The cholesterol levels were abnormal.",
+              "why": "'This is confirmed' adds reassurance/certainty not in the letter (e.g., it may imply a repeat test)."
+            },
+            {
+              "kind": "dropped",
+              "severity": "minor",
+              "explanation_says": "Think about calling to make a follow-up appointment.",
+              "letter_says": "I would like you to make an appointment... I am recommending at least we discuss medical treatment.",
+              "why": "The doctor's recommendation to discuss medical treatment (medication) is softened; the explanation says no treatment is named, which is roughly right but 'medical treatment' is not conveyed."
+            }
+          ],
+          "summary": "The explanation is largely faithful. Minor issues: a slightly absolute statement on diet independence, an added 'This is confirmed', a wording nuance about diabetes/hypertension, and a softened recommendation to discuss medical treatment."
+        },
+        "blocking_problems": [],
+        "attempt": 1
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 3256,
+        "output_tokens": 1262,
+        "cost_usd": 0.03596,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 23944,
+        "output_tokens": 2657,
+        "cost_usd": 0.09565,
+        "turns": 7
+      },
+      {
+        "step": "verify",
+        "input_tokens": 3126,
+        "output_tokens": 682,
+        "cost_usd": 0.02806,
+        "turns": 2
+      }
+    ],
+    "cost_usd": 0.15966,
+    "latency_s": 34.5
+  },
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "diagnoses",
+        "fact": "Cholesterol levels are abnormal (high enough that the doctor thinks treatment is the next step)",
+        "status": "kept",
+        "note": "Says test was abnormal, levels high, and doctor thinks treatment is the next best step."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "High cholesterol is usually linked to a higher risk of stroke and heart attack",
+        "status": "kept",
+        "note": "Says abnormal cholesterol is usually linked to a higher risk of stroke and heart attack."
+      },
+      {
+        "category": "medicines",
+        "fact": "The doctor recommends at least discussing medicine for high cholesterol",
+        "status": "dropped",
+        "note": "Never says the doctor recommends at least discussing medical treatment. It even says 'The letter names no medicine or treatment.'"
+      },
+      {
+        "category": "medicines",
+        "fact": "Diet is one option but usually gives limited reduction (about 15% with a strict diet)",
+        "status": "kept",
+        "note": "Says diet lowers cholesterol only a little, about 15% with a strict diet. Diet is framed as one of several options."
+      },
+      {
+        "category": "actions",
+        "fact": "Make or call for a follow-up appointment if interested in treatment",
+        "status": "kept",
+        "note": "Tells the reader to call and make a follow-up appointment if they want treatment."
+      },
+      {
+        "category": "actions",
+        "fact": "Contact the doctor with any questions",
+        "status": "kept",
+        "note": "Tells the reader to contact the doctor with more questions."
+      },
+      {
+        "category": "actions",
+        "fact": "A copy of the lab results is enclosed",
+        "status": "kept",
+        "note": "Says a copy of the lab results came with the letter."
+      }
+    ],
+    "added": [
+      {
+        "text": "This is confirmed.",
+        "kind": "medical_fact"
+      },
+      {
+        "text": "You may have diabetes or hypertension.",
+        "kind": "medical_fact"
+      }
+    ],
+    "gold_reviewer": "claude-draft"
+  }
+}

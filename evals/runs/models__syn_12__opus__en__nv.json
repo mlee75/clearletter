@@ -1,0 +1,209 @@
+{
+  "job": {
+    "id": "models__syn_12__opus__en__nv",
+    "part": "models",
+    "letter_id": "syn_12",
+    "file": "data/synthetic/syn_12.txt",
+    "kind": "faithfulness",
+    "model": "opus",
+    "language": "en",
+    "verifier": false,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "opus",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": false,
+    "status": "not_verified",
+    "final_text": "## What this letter says\n\nThis letter gives the results of your camera test (gastroscopy). It also gives the results of your stomach biopsies. And it tells you the plan.\n\n- The biopsies show no cancer.\n- There is no sign of an infection called Helicobacter pylori.\n- The biopsies did show some changes. They are called intestinal metaplasia.\n- This is not cancer. It is a change in the lining of your stomach.\n- In a small number of people, it can change more over many years.\n- So the hospital will keep an eye on it.\n\n## What you need to do\n\n1. Keep taking omeprazole as before.\n2. Do not take ibuprofen. Do not take other anti-inflammatory painkillers. The letter says they can irritate the stomach.\n3. If you need a painkiller, you can take paracetamol instead.\n4. You do not need to do anything now about your next camera test. The hospital will send you an appointment.\n\n## Dates and medicines\n\nDates:\n- 8 September 2026: you had the camera test (gastroscopy). Biopsies were taken.\n- Around September 2029: your next camera test. This is in 3 years.\n\nMedicines:\n- Omeprazole, 20 milligrams, once a day. Keep taking it. No change.\n- Ibuprofen and other anti-inflammatory painkillers: stop taking them.\n- Paracetamol: you can use this instead, if you need a painkiller.\n\n## Questions to ask your doctor\n\n- What is a biopsy?\n- What does intestinal metaplasia mean for me?\n- How will you keep an eye on the change in my stomach?\n- Which painkillers are anti-inflammatory painkillers?\n\n## When to get urgent help\n\nThe letter does not list specific warning signs.\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "patient",
+      "purpose": "Results of your gastroscopy (camera test) and stomach biopsies, and the plan that follows.",
+      "findings": [
+        {
+          "statement": "The stomach biopsies show no cancer.",
+          "certainty": "ruled_out",
+          "quote": "The biopsies from your stomach show no evidence of malignancy (no cancer)."
+        },
+        {
+          "statement": "There is no sign of Helicobacter pylori infection.",
+          "certainty": "ruled_out",
+          "quote": "There is no sign of Helicobacter pylori infection."
+        },
+        {
+          "statement": "The biopsies showed changes called intestinal metaplasia. This is not cancer. It is a change in the lining of the stomach.",
+          "certainty": "confirmed",
+          "quote": "The biopsies did show some changes called intestinal metaplasia. This is not cancer. It is a change in the lining of the stomach."
+        },
+        {
+          "statement": "In a small number of people, intestinal metaplasia can develop further over many years, so the hospital will keep an eye on it.",
+          "certainty": "possible",
+          "quote": "In a small number of people it can develop further over many years, so we keep an eye on it."
+        }
+      ],
+      "medicines": [
+        {
+          "name": "Omeprazole",
+          "dose": "20 mg",
+          "how_often": "once daily",
+          "change": "continue",
+          "details": "Keep taking as before.",
+          "quote": "Continue omeprazole 20 mg once daily."
+        },
+        {
+          "name": "Ibuprofen and other anti-inflammatory painkillers",
+          "dose": "not stated",
+          "how_often": "not stated",
+          "change": "stop",
+          "details": "The letter says they can irritate the stomach. You can use paracetamol instead.",
+          "quote": "Stop taking ibuprofen and other anti-inflammatory painkillers. They can irritate the stomach."
+        }
+      ],
+      "dates": [
+        {
+          "what": "Gastroscopy and biopsies taken",
+          "when": "8 September 2026",
+          "quote": "biopsies taken on 08/09/2026"
+        },
+        {
+          "what": "Repeat gastroscopy in 3 years",
+          "when": "around September 2029",
+          "quote": "Repeat gastroscopy in 3 years (around September 2029)."
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "The hospital will send you an appointment for the repeat gastroscopy.",
+          "quote": "We will send you an appointment."
+        },
+        {
+          "instruction": "If you need a painkiller, you can use paracetamol instead of ibuprofen or other anti-inflammatory painkillers.",
+          "quote": "You can use paracetamol instead."
+        }
+      ],
+      "negatives": [
+        {
+          "instruction": "No cancer was found in the biopsies.",
+          "quote": "no evidence of malignancy (no cancer)"
+        },
+        {
+          "instruction": "Intestinal metaplasia is not cancer.",
+          "quote": "This is not cancer."
+        },
+        {
+          "instruction": "You do not need to do anything now about the repeat gastroscopy. The hospital will send you an appointment.",
+          "quote": "You do not need to do anything now."
+        }
+      ],
+      "warning_signs": [],
+      "unclear": []
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\n\nThis letter gives the results of your camera test (gastroscopy). It also gives the results of your stomach biopsies. And it tells you the plan.\n\n- The biopsies show no cancer.\n- There is no sign of an infection called Helicobacter pylori.\n- The biopsies did show some changes. They are called intestinal metaplasia.\n- This is not cancer. It is a change in the lining of your stomach.\n- In a small number of people, it can change more over many years.\n- So the hospital will keep an eye on it.\n\n## What you need to do\n\n1. Keep taking omeprazole as before.\n2. Do not take ibuprofen. Do not take other anti-inflammatory painkillers. The letter says they can irritate the stomach.\n3. If you need a painkiller, you can take paracetamol instead.\n4. You do not need to do anything now about your next camera test. The hospital will send you an appointment.\n\n## Dates and medicines\n\nDates:\n- 8 September 2026: you had the camera test (gastroscopy). Biopsies were taken.\n- Around September 2029: your next camera test. This is in 3 years.\n\nMedicines:\n- Omeprazole, 20 milligrams, once a day. Keep taking it. No change.\n- Ibuprofen and other anti-inflammatory painkillers: stop taking them.\n- Paracetamol: you can use this instead, if you need a painkiller.\n\n## Questions to ask your doctor\n\n- What is a biopsy?\n- What does intestinal metaplasia mean for me?\n- How will you keep an eye on the change in my stomach?\n- Which painkillers are anti-inflammatory painkillers?\n\n## When to get urgent help\n\nThe letter does not list specific warning signs.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 73.1,
+          "reading_ease_target": 70,
+          "grade_level": 5.1,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": null,
+        "blocking_problems": [],
+        "attempt": 1
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 3193,
+        "output_tokens": 1344,
+        "cost_usd": 0.0371,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 12873,
+        "output_tokens": 1782,
+        "cost_usd": 0.06798,
+        "turns": 7
+      }
+    ],
+    "cost_usd": 0.10508,
+    "latency_s": 32.2
+  },
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "diagnoses",
+        "fact": "Intestinal metaplasia: a change in the stomach lining; in a small number of people it can develop further over many years, so it is monitored",
+        "status": "kept",
+        "note": "Says it's a change in the stomach lining, can change more over many years in a small number of people, hospital will keep an eye on it."
+      },
+      {
+        "category": "medicines",
+        "fact": "Continue omeprazole 20 mg once daily",
+        "status": "kept",
+        "note": "Medicines section: omeprazole 20 milligrams once a day, keep taking it."
+      },
+      {
+        "category": "medicines",
+        "fact": "Stop ibuprofen and other anti-inflammatory painkillers",
+        "status": "kept",
+        "note": "Says to stop ibuprofen and other anti-inflammatory painkillers."
+      },
+      {
+        "category": "medicines",
+        "fact": "Paracetamol can be used instead",
+        "status": "kept",
+        "note": "Says paracetamol can be used instead."
+      },
+      {
+        "category": "dates",
+        "fact": "Gastroscopy and biopsies on 8 September 2026",
+        "status": "kept",
+        "note": "8 September 2026: camera test, and biopsies taken."
+      },
+      {
+        "category": "dates",
+        "fact": "Repeat gastroscopy in 3 years (around September 2029); the hospital will send the appointment",
+        "status": "kept",
+        "note": "Next camera test around September 2029, in 3 years; the hospital will send an appointment."
+      },
+      {
+        "category": "negatives",
+        "fact": "No cancer (no evidence of malignancy)",
+        "status": "kept",
+        "note": "Says the biopsies show no cancer."
+      },
+      {
+        "category": "negatives",
+        "fact": "Intestinal metaplasia is not cancer",
+        "status": "kept",
+        "note": "Says 'This is not cancer.'"
+      },
+      {
+        "category": "negatives",
+        "fact": "No Helicobacter pylori infection",
+        "status": "kept",
+        "note": "Says there is no sign of Helicobacter pylori infection."
+      },
+      {
+        "category": "negatives",
+        "fact": "You do not need to do anything now about the repeat test",
+        "status": "kept",
+        "note": "Says you do not need to do anything now about the next camera test."
+      }
+    ],
+    "added": [],
+    "gold_reviewer": "claude-draft"
+  }
+}

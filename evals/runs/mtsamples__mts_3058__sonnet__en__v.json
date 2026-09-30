@@ -1,0 +1,189 @@
+{
+  "job": {
+    "id": "mtsamples__mts_3058__sonnet__en__v",
+    "part": "mtsamples",
+    "letter_id": "mts_3058",
+    "file": "data/mtsamples/mts_3058.txt",
+    "kind": "faithfulness",
+    "model": "sonnet",
+    "language": "en",
+    "verifier": true,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "sonnet",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": true,
+    "status": "ok",
+    "final_text": "## What this letter says\nThis letter is from a specialist to another doctor. You are getting a copy. It is about your plan to collect sperm (sperm harvesting).\n\n- You had a vasectomy 10 years ago.\n- You had a vasectomy reversal almost two years ago at the University of Michigan. It failed.\n- You have had no sperm in your semen (azoospermic) since then.\n- The operation note suggests some sperm and sperm head may have been present on the right side. This is possible, not certain.\n- Your wife has had several tries at ovulation induction. They did not work. This seems to be because of some anatomic abnormality. This is not certain.\n- You may want a fresh specimen harvest instead of cryopreservation. This is possible, not certain.\n- In a recent phone call, you said you do not want sperm harvesting at all unless your wife's ovulation has been confirmed.\n\n## What you need to do\n1. The specialist has asked the other doctor to send the actual plan. Then the procedure can be arranged.\n2. The letter does not give you any other tasks.\n\n## Dates and medicines\n- The letter does not list any medicines.\n- The letter has a visit date and a harvesting date. Both are blank, so they cannot be given here.\n- The harvesting date may change if a fresh specimen is needed.\n\n## Questions to ask your doctor\n- What does azoospermic mean for me?\n- What is the difference between a fresh specimen harvest and cryopreservation?\n- When will the plan for my wife's ovulation induction be ready?\n- What is the date for my harvesting procedure?\n\n## When to get urgent help\nThe letter does not list specific warning signs.\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "doctor_copy_to_patient",
+      "purpose": "Letter from a specialist to another doctor about the patient's sperm harvesting plan after a failed vasectomy reversal, asking for the plan for his wife's ovulation induction so the procedure can be arranged.",
+      "findings": [
+        {
+          "statement": "Patient had a vasectomy 10 years ago.",
+          "certainty": "confirmed",
+          "quote": "describing a vasectomy 10 years ago"
+        },
+        {
+          "statement": "Vasectomy reversal done almost two years ago at the University of Michigan failed.",
+          "certainty": "confirmed",
+          "quote": "a failed vasectomy reversal done almost two years ago at the University of Michigan"
+        },
+        {
+          "statement": "He has had no sperm in his semen (azoospermic) since the reversal.",
+          "certainty": "confirmed",
+          "quote": "He has remained azoospermic postoperatively."
+        },
+        {
+          "statement": "The operative note suggests some sperm and sperm head were present on the right side at the time of the reversal.",
+          "certainty": "possible",
+          "quote": "The operative note suggests the presence of some sperm and sperm head on the right side at the time of the vasectomy reversal."
+        },
+        {
+          "statement": "Several attempts at ovulation induction for his wife have been unsuccessful, apparently due to some anatomic abnormality.",
+          "certainty": "possible",
+          "quote": "Apparently, several attempts at induction have been tried and due to some anatomic abnormality, they have been unsuccessful."
+        },
+        {
+          "statement": "He may be interested in a fresh specimen harvest rather than cryopreservation.",
+          "certainty": "possible",
+          "quote": "it appears then that he may be interested in a fresh specimen harvest"
+        }
+      ],
+      "medicines": [],
+      "dates": [],
+      "actions": [
+        {
+          "instruction": "The receiving doctor is asked to reply with the actual plan so the procedure can be arranged appropriately.",
+          "quote": "I look forward to hearing from you regarding the actual plan so that we can arrange our procedure appropriately."
+        }
+      ],
+      "negatives": [
+        {
+          "instruction": "He does not want sperm harvesting at all unless his wife's ovulation has been confirmed (per a recent phone call).",
+          "quote": "he does not want to do this at all unless his wife's ovulation has been confirmed"
+        }
+      ],
+      "warning_signs": [],
+      "unclear": [
+        "The visit date is written as 'Month DD, YYYY' (placeholder), so it cannot be given.",
+        "The scheduled harvesting date is written as 'Month DD, YYYY' (placeholder); it may change if a fresh specimen is required."
+      ]
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\nThis letter is from a specialist to another doctor. You are getting a copy. It is about your plan to collect sperm (sperm harvesting).\n\n- You had a vasectomy 10 years ago.\n- You had a vasectomy reversal almost two years ago at the University of Michigan. It failed.\n- You have had no sperm in your semen (azoospermic) since then.\n- The operation note suggests some sperm and sperm head may have been present on the right side. This is possible, not certain.\n- Your wife has had several tries at ovulation induction. They did not work. This seems to be because of some anatomic abnormality. This is not certain.\n- You may want a fresh specimen harvest instead of cryopreservation. This is possible, not certain.\n- In a recent phone call, you said you do not want sperm harvesting at all unless your wife's ovulation has been confirmed.\n\n## What you need to do\n1. The specialist has asked the other doctor to send the actual plan. Then the procedure can be arranged.\n2. The letter does not give you any other tasks.\n\n## Dates and medicines\n- The letter does not list any medicines.\n- The letter has a visit date and a harvesting date. Both are blank, so they cannot be given here.\n- The harvesting date may change if a fresh specimen is needed.\n\n## Questions to ask your doctor\n- What does azoospermic mean for me?\n- What is the difference between a fresh specimen harvest and cryopreservation?\n- When will the plan for my wife's ovulation induction be ready?\n- What is the date for my harvesting procedure?\n\n## When to get urgent help\nThe letter does not list specific warning signs.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 71.7,
+          "reading_ease_target": 70,
+          "grade_level": 5.7,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [
+            {
+              "kind": "certainty",
+              "severity": "minor",
+              "explanation_says": "In a recent phone call, you said you do not want sperm harvesting at all unless your wife's ovulation has been confirmed.",
+              "letter_says": "I recently received a phone call suggesting that he does not want to do this at all unless his wife's ovulation has been confirmed.",
+              "why": "The letter says the call 'suggested' this. The explanation states it as a definite statement by the patient."
+            },
+            {
+              "kind": "dropped",
+              "severity": "minor",
+              "explanation_says": "You may want a fresh specimen harvest instead of cryopreservation. (No mention that cryopreservation was requested at the visit or that the harvest is planned before the next ovulation induction.)",
+              "letter_says": "At the time that he left the office, he was asking for cryopreservation... interested in sperm harvesting and cryopreservation prior to the next attempted ovulation induction.",
+              "why": "The explanation leaves out that the patient's original request was cryopreservation, and that the plan is timed before the next ovulation induction. Both help explain why the plan is uncertain."
+            }
+          ],
+          "summary": "The explanation is mostly faithful. It has two minor problems: it states a phone call as certain when the letter only says it 'suggested' this, and it leaves out the original request for cryopreservation and the timing before the next ovulation induction."
+        },
+        "blocking_problems": [],
+        "attempt": 1
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 3256,
+        "output_tokens": 1003,
+        "cost_usd": 0.03078,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 11715,
+        "output_tokens": 1537,
+        "cost_usd": 0.05867,
+        "turns": 6
+      },
+      {
+        "step": "verify",
+        "input_tokens": 3154,
+        "output_tokens": 1034,
+        "cost_usd": 0.03532,
+        "turns": 2
+      }
+    ],
+    "cost_usd": 0.12477,
+    "latency_s": 29.4
+  },
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "diagnoses",
+        "fact": "Vasectomy 10 years ago; vasectomy reversal almost two years ago failed",
+        "status": "kept",
+        "note": "States vasectomy 10 years ago and a failed reversal almost two years ago."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "No sperm in the semen since the reversal (azoospermic)",
+        "status": "kept",
+        "note": "States no sperm in the semen (azoospermic) since the reversal."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Operative note suggests some sperm on the right side at the time of the reversal",
+        "status": "kept",
+        "note": "States the operation note suggests some sperm and sperm heads on the right side; the hedged wording matches the letter's 'suggests'."
+      },
+      {
+        "category": "dates",
+        "fact": "Sperm harvesting provisionally booked for a date that may change if a fresh specimen is needed",
+        "status": "kept",
+        "note": "Says a harvesting date was set (left blank in the letter) and may change if a fresh specimen is needed."
+      },
+      {
+        "category": "actions",
+        "fact": "He was interested in sperm harvesting and freezing (cryopreservation) before his wife's next ovulation induction",
+        "status": "dropped",
+        "note": "Never says he asked for harvesting and freezing (cryopreservation) before his wife's next ovulation induction. 'Instead of cryopreservation' only hints at the earlier plan."
+      },
+      {
+        "category": "actions",
+        "fact": "He now does not want this unless his wife's ovulation is confirmed, and may prefer a fresh specimen harvest",
+        "status": "kept",
+        "note": "Says he does not want harvesting unless his wife's ovulation is confirmed, and may prefer a fresh specimen."
+      },
+      {
+        "category": "actions",
+        "fact": "The urologist is waiting for the other doctor's plan before arranging the procedure",
+        "status": "kept",
+        "note": "Says the specialist asked the other doctor for the actual plan so the procedure can be arranged."
+      }
+    ],
+    "added": [],
+    "gold_reviewer": "claude-draft"
+  }
+}

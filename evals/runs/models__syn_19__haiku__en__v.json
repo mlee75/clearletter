@@ -1,0 +1,239 @@
+{
+  "job": {
+    "id": "models__syn_19__haiku__en__v",
+    "part": "models",
+    "letter_id": "syn_19",
+    "file": "data/synthetic/syn_19.txt",
+    "kind": "faithfulness",
+    "model": "haiku",
+    "language": "en",
+    "verifier": true,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "haiku",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": true,
+    "status": "ok_after_retry",
+    "final_text": "## What this letter says\n\nYou went to a diabetes clinic on 2 October 2026. The doctor looked at your blood sugar levels.\n\nYour blood sugar has been too low sometimes. This is called a hypo (low blood sugar). You have had several of these.\n\nYour HbA1c is 46 mmol/mol. This number shows how your blood sugar control is doing.\n\nThe doctor is changing your medicines because of the low blood sugars. One of your medicines can cause low blood sugar, so you need to stop taking it. You are starting a new medicine instead that usually does not cause low blood sugar.\n\n## What you need to do\n\n1. Stop taking gliclazide 80 milligrams twice daily. This medicine can cause hypos.\n\n2. Keep taking metformin 1 gram twice daily with your meals.\n\n3. Start taking sitagliptin 100 milligrams once daily. This does not usually cause hypos.\n\n4. Keep checking your blood sugar for the next 2 weeks.\n\n5. Bring your blood sugar readings to your next appointment.\n\n6. If you are very sick (vomiting, diarrhoea, or cannot eat or drink normally): stop taking metformin. Wait 24 to 48 hours after you are eating and drinking normally again. Then restart metformin.\n\n## Dates and medicines\n\n**Clinic visit**: 2 October 2026\n\n**Stop taking**: gliclazide 80 milligrams twice daily (it can cause hypos)\n\n**Continue taking**: metformin 1 gram twice daily with meals\n\n**Start taking**: sitagliptin 100 milligrams once daily (this does not usually cause hypos)\n\n**Next appointment**: Friday 13 November 2026 at 10:00\n\n## Questions to ask your doctor\n\n1. How will I know if sitagliptin is working well?\n\n2. Should I keep checking blood sugar the same way?\n\n3. What should I do if I forget to take a medicine?\n\n4. How long will I take sitagliptin for?\n\n## When to get urgent help\n\nThe letter does not list specific warning signs.\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "patient",
+      "purpose": "Changes to your diabetes medicines after your clinic visit",
+      "findings": [
+        {
+          "statement": "You have had several hypos (low blood sugar)",
+          "certainty": "confirmed",
+          "quote": "You told us you have had several hypos (low blood sugar)"
+        },
+        {
+          "statement": "Your HbA1c is 46 mmol/mol",
+          "certainty": "confirmed",
+          "quote": "your HbA1c is 46 mmol/mol"
+        }
+      ],
+      "medicines": [
+        {
+          "name": "gliclazide",
+          "dose": "80 mg",
+          "how_often": "twice daily",
+          "change": "stop",
+          "details": "It can cause hypos",
+          "quote": "STOP gliclazide 80 mg twice daily. It can cause hypos."
+        },
+        {
+          "name": "metformin",
+          "dose": "1 g",
+          "how_often": "twice daily with meals",
+          "change": "continue",
+          "details": "",
+          "quote": "CONTINUE metformin 1 g twice daily with meals."
+        },
+        {
+          "name": "sitagliptin",
+          "dose": "100 mg",
+          "how_often": "once daily",
+          "change": "start",
+          "details": "This does not usually cause hypos",
+          "quote": "START sitagliptin 100 mg once daily. This does not usually cause hypos."
+        }
+      ],
+      "dates": [
+        {
+          "what": "Clinic visit",
+          "when": "2 October 2026",
+          "quote": "clinic visit on 02/10/2026"
+        },
+        {
+          "what": "Next appointment",
+          "when": "13 November 2026 at 10:00",
+          "quote": "next appointment on Friday 13 November 2026 at 10:00"
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Keep checking your blood sugar for the next 2 weeks",
+          "quote": "Please keep checking your blood sugar for the next 2 weeks"
+        },
+        {
+          "instruction": "Bring your blood sugar readings to your next appointment",
+          "quote": "bring your readings to your next appointment"
+        },
+        {
+          "instruction": "Sick day rules: if you are vomiting, have diarrhoea, or cannot eat or drink normally, stop taking metformin. Restart it 24 to 48 hours after you are eating and drinking normally again.",
+          "quote": "Sick day rules: if you are vomiting, have diarrhoea, or cannot eat or drink normally, stop taking metformin. Restart it 24 to 48 hours after you are eating and drinking normally again."
+        }
+      ],
+      "negatives": [],
+      "warning_signs": [],
+      "unclear": []
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\n\nYou went to a diabetes clinic on 2 October 2026. The doctor looked at your blood sugar levels.\n\nYour blood sugar has been too low sometimes. This is called a hypo (low blood sugar). You have had several of these.\n\nYour HbA1c is 46 mmol/mol. This shows your average blood sugar over 3 months.\n\nThe doctor is changing your medicines because of the low blood sugars. One of your medicines can cause low blood sugar, so you need to stop taking it. You are starting a new medicine instead that usually does not cause low blood sugar.\n\n## What you need to do\n\n1. Stop taking gliclazide 80 milligrams twice daily. This medicine can cause hypos.\n\n2. Keep taking metformin 1 gram twice daily with your meals.\n\n3. Start taking sitagliptin 100 milligrams once daily. This does not usually cause hypos.\n\n4. Keep checking your blood sugar for the next 2 weeks.\n\n5. Bring your blood sugar readings to your next appointment.\n\n6. If you are very sick (vomiting, diarrhoea, or cannot eat or drink normally): stop taking metformin. Wait 24 to 48 hours after you are eating and drinking normally again. Then restart metformin.\n\n## Dates and medicines\n\n**Clinic visit**: 2 October 2026\n\n**Stop taking**: gliclazide 80 milligrams twice daily (it can cause hypos)\n\n**Continue taking**: metformin 1 gram twice daily with meals\n\n**Start taking**: sitagliptin 100 milligrams once daily (this does not usually cause hypos)\n\n**Next appointment**: Friday 13 November 2026 at 10:00\n\n## Questions to ask your doctor\n\n1. How will I know if sitagliptin is working well?\n\n2. Should I keep checking blood sugar the same way?\n\n3. What should I do if I forget to take a medicine?\n\n4. How long will I take sitagliptin for?\n\n## When to get urgent help\n\nThe letter does not list specific warning signs.",
+        "missing_headings": [],
+        "unknown_numbers": [
+          "3"
+        ],
+        "readability": {
+          "language": "en",
+          "reading_ease": 74.2,
+          "reading_ease_target": 70,
+          "grade_level": 5.7,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [],
+          "summary": "The explanation accurately reflects all medical facts, medicine names, doses, frequencies, dates, and guidance from the letter. No problems identified."
+        },
+        "blocking_problems": [
+          "The number 3 is not in the letter"
+        ],
+        "attempt": 1
+      },
+      {
+        "explanation": "## What this letter says\n\nYou went to a diabetes clinic on 2 October 2026. The doctor looked at your blood sugar levels.\n\nYour blood sugar has been too low sometimes. This is called a hypo (low blood sugar). You have had several of these.\n\nYour HbA1c is 46 mmol/mol. This number shows how your blood sugar control is doing.\n\nThe doctor is changing your medicines because of the low blood sugars. One of your medicines can cause low blood sugar, so you need to stop taking it. You are starting a new medicine instead that usually does not cause low blood sugar.\n\n## What you need to do\n\n1. Stop taking gliclazide 80 milligrams twice daily. This medicine can cause hypos.\n\n2. Keep taking metformin 1 gram twice daily with your meals.\n\n3. Start taking sitagliptin 100 milligrams once daily. This does not usually cause hypos.\n\n4. Keep checking your blood sugar for the next 2 weeks.\n\n5. Bring your blood sugar readings to your next appointment.\n\n6. If you are very sick (vomiting, diarrhoea, or cannot eat or drink normally): stop taking metformin. Wait 24 to 48 hours after you are eating and drinking normally again. Then restart metformin.\n\n## Dates and medicines\n\n**Clinic visit**: 2 October 2026\n\n**Stop taking**: gliclazide 80 milligrams twice daily (it can cause hypos)\n\n**Continue taking**: metformin 1 gram twice daily with meals\n\n**Start taking**: sitagliptin 100 milligrams once daily (this does not usually cause hypos)\n\n**Next appointment**: Friday 13 November 2026 at 10:00\n\n## Questions to ask your doctor\n\n1. How will I know if sitagliptin is working well?\n\n2. Should I keep checking blood sugar the same way?\n\n3. What should I do if I forget to take a medicine?\n\n4. How long will I take sitagliptin for?\n\n## When to get urgent help\n\nThe letter does not list specific warning signs.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 74.2,
+          "reading_ease_target": 70,
+          "grade_level": 5.7,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [],
+          "summary": "The explanation accurately reflects all key information from the letter: the correct medicines with correct dosages and frequencies, the proper dates, and complete sick day guidance. The structure and simplification for patient understanding are appropriate. No material discrepancies found."
+        },
+        "blocking_problems": [],
+        "attempt": 2
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 2817,
+        "output_tokens": 6981,
+        "cost_usd": 0.03772,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 7261,
+        "output_tokens": 2076,
+        "cost_usd": 0.02207,
+        "turns": 2
+      },
+      {
+        "step": "verify",
+        "input_tokens": 2766,
+        "output_tokens": 7951,
+        "cost_usd": 0.04252,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 7909,
+        "output_tokens": 1673,
+        "cost_usd": 0.02081,
+        "turns": 2
+      },
+      {
+        "step": "verify",
+        "input_tokens": 2769,
+        "output_tokens": 7604,
+        "cost_usd": 0.04079,
+        "turns": 2
+      }
+    ],
+    "cost_usd": 0.16391,
+    "latency_s": 258.4
+  },
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "diagnoses",
+        "fact": "Several hypos (low blood sugar)",
+        "status": "kept",
+        "note": "Says you have had several hypos (low blood sugar)."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "HbA1c 46 mmol/mol",
+        "status": "kept",
+        "note": "Gives HbA1c as 46 mmol/mol."
+      },
+      {
+        "category": "medicines",
+        "fact": "STOP gliclazide 80 mg twice daily (it can cause hypos)",
+        "status": "kept",
+        "note": "Stop gliclazide 80 mg twice daily because it can cause hypos."
+      },
+      {
+        "category": "medicines",
+        "fact": "CONTINUE metformin 1 g twice daily with meals",
+        "status": "kept",
+        "note": "Keep taking metformin 1 g twice daily with meals."
+      },
+      {
+        "category": "medicines",
+        "fact": "START sitagliptin 100 mg once daily",
+        "status": "kept",
+        "note": "Start sitagliptin 100 mg once daily."
+      },
+      {
+        "category": "medicines",
+        "fact": "Sick day rule: if vomiting, diarrhoea, or cannot eat or drink normally, stop metformin; restart 24 to 48 hours after eating and drinking normally again",
+        "status": "kept",
+        "note": "Sick day rule matches: the same triggers, stop metformin, then restart 24 to 48 hours after eating and drinking normally again."
+      },
+      {
+        "category": "dates",
+        "fact": "Clinic visit on 2 October 2026",
+        "status": "kept",
+        "note": "Clinic visit on 2 October 2026, which is the UK reading of 02/10/2026."
+      },
+      {
+        "category": "dates",
+        "fact": "Next appointment on Friday 13 November 2026 at 10:00",
+        "status": "kept",
+        "note": "Next appointment on Friday 13 November 2026 at 10:00."
+      },
+      {
+        "category": "actions",
+        "fact": "Keep checking your blood sugar for the next 2 weeks and bring the readings to the next appointment",
+        "status": "kept",
+        "note": "Keep checking blood sugar for 2 weeks and bring the readings to the next appointment."
+      }
+    ],
+    "added": [],
+    "gold_reviewer": "claude-draft"
+  }
+}

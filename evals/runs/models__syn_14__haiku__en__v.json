@@ -1,0 +1,192 @@
+{
+  "job": {
+    "id": "models__syn_14__haiku__en__v",
+    "part": "models",
+    "letter_id": "syn_14",
+    "file": "data/synthetic/syn_14.txt",
+    "kind": "faithfulness",
+    "model": "haiku",
+    "language": "en",
+    "verifier": true,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "haiku",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": true,
+    "status": "ok",
+    "final_text": "## What this letter says\nYou had a breast screening test (mammogram, which is a breast X-ray) on 16 September 2026. The clinic wants you to come back for more tests. This is called a recall. Being called back does not mean you have cancer. About 4 in 5 women who are called back do not have breast cancer.\n\n## What you need to do\n1. Go to your appointment at the Breast Assessment Clinic on 7 October 2026 at 11:00.\n2. Expect the visit to last up to 4 hours.\n3. You may need more mammograms, an ultrasound scan (a test using sound waves to look at your breast), and sometimes a biopsy (a small sample of tissue).\n4. You can bring a friend or family member with you.\n5. If you cannot go, call 01632 960 733 as soon as possible.\n\n## Dates and medicines\n- Mammogram (breast X-ray): 16 September 2026\n- Recall appointment at Breast Assessment Clinic, Eastmoor Hospital: 7 October 2026 at 11:00\n- No medicines listed.\n\n## Questions to ask your doctor\n- What tests will I have at the appointment?\n- Will I get results on the same day?\n- What happens after the tests?\n\n## When to get urgent help\nThe letter does not list specific warning signs.\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "patient",
+      "purpose": "Recall for additional breast screening tests following initial mammogram",
+      "findings": [
+        {
+          "statement": "Mammogram performed",
+          "certainty": "confirmed",
+          "quote": "Your recent breast screening mammogram (breast X-ray) on 16/09/2026"
+        },
+        {
+          "statement": "Called back for further breast screening tests",
+          "certainty": "confirmed",
+          "quote": "We need you to come back for more tests. This is called a recall."
+        }
+      ],
+      "medicines": [],
+      "dates": [
+        {
+          "what": "Initial mammogram",
+          "when": "16 September 2026",
+          "quote": "Your recent breast screening mammogram (breast X-ray) on 16/09/2026"
+        },
+        {
+          "what": "Recall appointment at Breast Assessment Clinic",
+          "when": "7 October 2026 at 11:00",
+          "quote": "We have booked an appointment for you on Wednesday 7 October 2026 at 11:00 at the Breast Assessment Clinic, Eastmoor Hospital."
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Attend appointment at Breast Assessment Clinic, Eastmoor Hospital on 7 October 2026 at 11:00",
+          "quote": "We have booked an appointment for you on Wednesday 7 October 2026 at 11:00 at the Breast Assessment Clinic, Eastmoor Hospital."
+        },
+        {
+          "instruction": "Further tests may include more mammograms, an ultrasound scan and, in some cases, a biopsy",
+          "quote": "At the appointment you may have more mammograms, an ultrasound scan and, in some cases, a biopsy (a small sample of tissue)."
+        },
+        {
+          "instruction": "Attend appointment may take up to 4 hours",
+          "quote": "The visit may take up to 4 hours."
+        },
+        {
+          "instruction": "You can bring a friend or family member to the appointment",
+          "quote": "You can bring a friend or family member with you."
+        },
+        {
+          "instruction": "If unable to attend, call 01632 960 733 as soon as possible",
+          "quote": "If you cannot come, please call 01632 960 733 as soon as possible."
+        }
+      ],
+      "negatives": [
+        {
+          "instruction": "Being called back does not mean you have cancer",
+          "quote": "Being called back does not mean that you have cancer. About 4 in 5 women who are called back do not have breast cancer."
+        }
+      ],
+      "warning_signs": [],
+      "unclear": []
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\nYou had a breast screening test (mammogram, which is a breast X-ray) on 16 September 2026. The clinic wants you to come back for more tests. This is called a recall. Being called back does not mean you have cancer. About 4 in 5 women who are called back do not have breast cancer.\n\n## What you need to do\n1. Go to your appointment at the Breast Assessment Clinic on 7 October 2026 at 11:00.\n2. Expect the visit to last up to 4 hours.\n3. You may need more mammograms, an ultrasound scan (a test using sound waves to look at your breast), and sometimes a biopsy (a small sample of tissue).\n4. You can bring a friend or family member with you.\n5. If you cannot go, call 01632 960 733 as soon as possible.\n\n## Dates and medicines\n- Mammogram (breast X-ray): 16 September 2026\n- Recall appointment at Breast Assessment Clinic, Eastmoor Hospital: 7 October 2026 at 11:00\n- No medicines listed.\n\n## Questions to ask your doctor\n- What tests will I have at the appointment?\n- Will I get results on the same day?\n- What happens after the tests?\n\n## When to get urgent help\nThe letter does not list specific warning signs.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 79.9,
+          "reading_ease_target": 70,
+          "grade_level": 5.3,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [
+            {
+              "kind": "dropped",
+              "severity": "minor",
+              "explanation_says": "The 'What you need to do' section states 'Expect the visit to last up to 4 hours' but does not mention that results will usually be available on the same day",
+              "letter_says": "You will usually get most of your results on the same day. The visit may take up to 4 hours.",
+              "why": "This timeline information is important for patient planning and expectation-setting. While it appears as a question later, the letter presents it as a probable fact that should be stated proactively rather than left as an uncertain question."
+            }
+          ],
+          "summary": "The explanation is accurate and covers the essential information from the letter well. There is one minor gap: the statement that patients will usually receive most results on the same day should be included in the main sections (such as \"What you need to do\") as a stated fact, rather than appearing only as a question to ask the doctor. This timing information helps patients plan their day and understand the likely outcome of their appointment."
+        },
+        "blocking_problems": [],
+        "attempt": 1
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 2743,
+        "output_tokens": 2753,
+        "cost_usd": 0.01651,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 6651,
+        "output_tokens": 1421,
+        "cost_usd": 0.01376,
+        "turns": 2
+      },
+      {
+        "step": "verify",
+        "input_tokens": 2588,
+        "output_tokens": 10803,
+        "cost_usd": 0.0566,
+        "turns": 2
+      }
+    ],
+    "cost_usd": 0.08687,
+    "latency_s": 148.6
+  },
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "diagnoses",
+        "fact": "Recall after the screening mammogram on 16 September 2026: more tests are needed",
+        "status": "kept",
+        "note": "States mammogram on 16 September 2026 and that the clinic wants her back for more tests, called a recall."
+      },
+      {
+        "category": "dates",
+        "fact": "Appointment on Wednesday 7 October 2026 at 11:00, Breast Assessment Clinic, Eastmoor Hospital",
+        "status": "kept",
+        "note": "Gives 7 October 2026 at 11:00, Breast Assessment Clinic, Eastmoor Hospital. It leaves out the weekday 'Wednesday', but the date, time and place all match."
+      },
+      {
+        "category": "dates",
+        "fact": "The visit may take up to 4 hours",
+        "status": "kept",
+        "note": "'Expect the visit to last up to 4 hours.'"
+      },
+      {
+        "category": "actions",
+        "fact": "You may have more mammograms, an ultrasound scan and, in some cases, a biopsy",
+        "status": "kept",
+        "note": "More mammograms, ultrasound scan, and 'sometimes' a biopsy, which matches 'in some cases'."
+      },
+      {
+        "category": "actions",
+        "fact": "Most results usually on the same day",
+        "status": "dropped",
+        "note": "Never says most results usually come on the same day. It only appears as a question to ask ('Will I get results on the same day?')."
+      },
+      {
+        "category": "actions",
+        "fact": "You can bring a friend or family member",
+        "status": "kept",
+        "note": "'You can bring a friend or family member with you.'"
+      },
+      {
+        "category": "actions",
+        "fact": "If you cannot come, call 01632 960 733 as soon as possible",
+        "status": "kept",
+        "note": "'If you cannot go, call 01632 960 733 as soon as possible.'"
+      },
+      {
+        "category": "negatives",
+        "fact": "Being called back does not mean you have cancer: about 4 in 5 women called back do not have breast cancer",
+        "status": "kept",
+        "note": "Keeps the 'does not mean you have cancer' statement and the 4 in 5 figure."
+      }
+    ],
+    "added": [],
+    "gold_reviewer": "claude-draft"
+  }
+}

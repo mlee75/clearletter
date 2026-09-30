@@ -1,0 +1,202 @@
+{
+  "job": {
+    "id": "models__syn_10__haiku__en__v",
+    "part": "models",
+    "letter_id": "syn_10",
+    "file": "data/synthetic/syn_10.txt",
+    "kind": "faithfulness",
+    "model": "haiku",
+    "language": "en",
+    "verifier": true,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "haiku",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": true,
+    "status": "fallback",
+    "final_text": "**We could not explain this letter safely. Please ask your doctor, nurse or pharmacist to explain it to you.**\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "parent_or_carer",
+      "purpose": "Discharge advice for managing gastroenteritis with mild dehydration at home",
+      "findings": [
+        {
+          "statement": "Gastroenteritis (tummy bug) with mild dehydration",
+          "certainty": "confirmed",
+          "quote": "Diagnosis: Gastroenteritis (tummy bug) with mild dehydration"
+        }
+      ],
+      "medicines": [
+        {
+          "name": "Paracetamol oral suspension",
+          "dose": "7.5 ml",
+          "how_often": "up to 4 times in 24 hours, at least 4 hours between doses",
+          "change": "start",
+          "details": "Strength is 120 mg/5 ml. For fever or discomfort.",
+          "quote": "For fever or discomfort: paracetamol oral suspension 120 mg/5 ml. Give 7.5 ml, up to 4 times in 24 hours. Leave at least 4 hours between doses."
+        }
+      ],
+      "dates": [
+        {
+          "what": "Seen at Northbridge Children's Assessment Unit",
+          "when": "20 October 2026",
+          "quote": "Seen: 20/10/2026"
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Give small amounts of fluid often: 5 ml every 5 minutes if she is vomiting, then more as she keeps it down",
+          "quote": "Give small amounts of fluid often: 5 ml every 5 minutes if she is vomiting, then more as she keeps it down"
+        },
+        {
+          "instruction": "Keep breastfeeding or giving her usual milk",
+          "quote": "Keep breastfeeding or giving her usual milk"
+        },
+        {
+          "instruction": "Oral rehydration solution (Dioralyte) can be used",
+          "quote": "Oral rehydration solution (Dioralyte) can be used"
+        }
+      ],
+      "negatives": [
+        {
+          "instruction": "Do not give anti-diarrhoea medicines to your child",
+          "quote": "Do not give anti-diarrhoea medicines to your child"
+        }
+      ],
+      "warning_signs": [
+        {
+          "instruction": "Bring Lina back or call 111 if she has fewer than 4 wet nappies in 24 hours",
+          "quote": "Bring Lina back or call 111 if she has fewer than 4 wet nappies in 24 hours"
+        },
+        {
+          "instruction": "Bring Lina back or call 111 if she is very sleepy",
+          "quote": "is very sleepy"
+        },
+        {
+          "instruction": "Bring Lina back or call 111 if she has blood in her poo",
+          "quote": "has blood in her poo"
+        },
+        {
+          "instruction": "Bring Lina back or call 111 if she cannot keep any fluids down",
+          "quote": "cannot keep any fluids down"
+        },
+        {
+          "instruction": "Call 999 if she is hard to wake up",
+          "quote": "Call 999 if she is hard to wake up"
+        }
+      ],
+      "unclear": []
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "Perfect! The readability check passed (Reading Ease 81.4, Grade 4.3). Here's the final explanation:\n\n## What this letter says\n\nYour child Lina was seen on 20 October 2026 at Northbridge Children's Assessment Unit. She has a tummy bug (gastroenteritis) with mild dehydration. This letter tells you how to care for her at home.\n\n## What you need to do\n\n1. Give small amounts of fluid often. If she is vomiting, give 5 millilitres every 5 minutes. Then give more as she keeps it down.\n2. Keep breastfeeding or giving her usual milk.\n3. You can use oral rehydration solution (Dioralyte).\n4. Give paracetamol if she has fever or discomfort.\n5. Do not give anti-diarrhoea medicines to your child.\n\n## Dates and medicines\n\n**Seen:** 20 October 2026 at Northbridge Children's Assessment Unit.\n\n**Paracetamol oral suspension:**\n- Dose: 7.5 millilitres by mouth.\n- Strength: 120 milligrams per 5 millilitres.\n- When: For fever or discomfort.\n- How often: Up to 4 times in 24 hours. Leave at least 4 hours between doses.\n\n## Questions to ask your doctor\n\n- When should I stop giving paracetamol?\n- How do I know if she is getting better?\n- Is there anything else I should watch for at home?\n\n## When to get urgent help\n\nBring her back or call 111 if she has fewer than 4 wet nappies in 24 hours.\n\nBring her back or call 111 if she is very sleepy.\n\nBring her back or call 111 if she has blood in her poo.\n\nBring her back or call 111 if she cannot keep any fluids down.\n\nCall 999 if she is hard to wake up.",
+        "missing_headings": [],
+        "unknown_numbers": [
+          "81"
+        ],
+        "readability": {
+          "language": "en",
+          "reading_ease": 80.0,
+          "reading_ease_target": 70,
+          "grade_level": 4.4,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [
+            {
+              "kind": "dropped",
+              "severity": "major",
+              "explanation_says": "No mention of how long diarrhoea or vomiting usually last",
+              "letter_says": "Diarrhoea usually stops within 5 to 7 days. Vomiting usually stops within 3 days.",
+              "why": "The patient needs to know the expected timeline for recovery to understand whether their child's symptoms are normal or concerning. Without this information, they cannot properly assess whether recovery is progressing as expected."
+            }
+          ],
+          "summary": "One major problem: the explanation omits the timeline information about how long diarrhoea (5-7 days) and vomiting (3 days) usually last. This is important for patient understanding of normal recovery."
+        },
+        "blocking_problems": [
+          "The number 81 is not in the letter",
+          "[dropped] The patient needs to know the expected timeline for recovery to understand whether their child's symptoms are normal or concerning. Without this information, they cannot properly assess whether recovery is progressing as expected. (explanation: 'No mention of how long diarrhoea or vomiting usually last'; letter: 'Diarrhoea usually stops within 5 to 7 days. Vomiting usually stops within 3 days.')"
+        ],
+        "attempt": 1
+      },
+      {
+        "explanation": "I need to clarify before rewriting: \n\nThe facts JSON you provided does not include the recovery timeline information (\"Diarrhoea usually stops within 5 to 7 days. Vomiting usually stops within 3 days\"). \n\nAccording to my safety rules, I can only write from the facts you gave me. I cannot add information that isn't in the facts JSON, even if it's in the actual letter.\n\nCould you please:\n1. **Add** those two statements about recovery timelines to the facts JSON under an appropriate section (perhaps as new \"actions\" items or under a new \"information\" section), OR\n2. **Confirm** that I should only work from the facts currently provided in the JSON\n\nOnce you clarify, I'll rewrite the explanation without my readability preamble and with all the facts from the letter included.",
+        "missing_headings": [
+          "What this letter says",
+          "What you need to do",
+          "Dates and medicines",
+          "Questions to ask your doctor",
+          "When to get urgent help"
+        ],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 51.3,
+          "reading_ease_target": 70,
+          "grade_level": 10.7,
+          "grade_target": 6,
+          "passed": false
+        },
+        "verifier": {
+          "problems": [],
+          "summary": "No patient explanation was provided for verification. The text labeled as \"explanation\" is a meta-question about the writing process, not a patient-friendly explanation of the discharge letter. Please provide the actual simplified explanation that should be compared against the Northbridge Children's Assessment Unit discharge advice letter dated 20/10/2026."
+        },
+        "blocking_problems": [
+          "Missing heading: What this letter says",
+          "Missing heading: What you need to do",
+          "Missing heading: Dates and medicines",
+          "Missing heading: Questions to ask your doctor",
+          "Missing heading: When to get urgent help"
+        ],
+        "attempt": 2
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 2870,
+        "output_tokens": 6111,
+        "cost_usd": 0.03342,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 11996,
+        "output_tokens": 6802,
+        "cost_usd": 0.05507,
+        "turns": 2
+      },
+      {
+        "step": "verify",
+        "input_tokens": 2835,
+        "output_tokens": 4252,
+        "cost_usd": 0.02409,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 3537,
+        "output_tokens": 1834,
+        "cost_usd": 0.01271,
+        "turns": 1
+      },
+      {
+        "step": "verify",
+        "input_tokens": 5652,
+        "output_tokens": 791,
+        "cost_usd": 0.00961,
+        "turns": 3
+      }
+    ],
+    "cost_usd": 0.13491,
+    "latency_s": 188.1
+  },
+  "judgement": {
+    "fallback": true
+  }
+}

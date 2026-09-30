@@ -74,21 +74,23 @@ def faithfulness_table(groups, label):
     return "\n".join(lines)
 
 
-def failure_examples(runs, limit=12):
-    """Concrete examples of what went wrong, most serious first."""
+def failure_examples(runs, limit=15):
+    """Concrete examples of what went wrong, most serious first:
+    changed doses and dates, then added advice/urgency/reassurance, then other problems."""
     rows = []
     for r in runs:
         j, job = r["judgement"], r["job"]
         if j.get("fallback") or job["kind"] != "faithfulness":
             continue
         where = f"{job['letter_id']} · {job['model']} · {job['language']} · {'verifier' if job['verifier'] else 'no verifier'}"
-        for a in j["added"]:
-            rows.append((0, where, f"**Added ({a['kind']})**: {a['text']}", r["path"]))
         for f in j["facts"]:
             if f["status"] == "changed":
-                rank = 1 if f["category"] in ("medicines", "dates") else 2
+                rank = 0 if f["category"] in ("medicines", "dates") else 3
                 rows.append((rank, where, f"**Changed [{f['category']}]**: {f['fact']} → {f['note']}", r["path"]))
-    rows.sort(key=lambda row: row[0])
+        for a in j["added"]:
+            rank = 2 if a["kind"] == "medical_fact" else 1
+            rows.append((rank, where, f"**Added ({a['kind']})**: {a['text']}", r["path"]))
+    rows.sort(key=lambda row: (row[0], row[1]))
     return rows[:limit]
 
 

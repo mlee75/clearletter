@@ -1,0 +1,250 @@
+{
+  "job": {
+    "id": "mtsamples__mts_3889__sonnet__en__nv",
+    "part": "mtsamples",
+    "letter_id": "mts_3889",
+    "file": "data/mtsamples/mts_3889.txt",
+    "kind": "faithfulness",
+    "model": "sonnet",
+    "language": "en",
+    "verifier": false,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "sonnet",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": false,
+    "status": "not_verified",
+    "final_text": "## What this letter says\nYou were in hospital with a kidney infection (pyelonephritis). The letter says a plug of mucus in your Foley catheter may have caused it. The catheter is in your ileal conduit. A doctor thought there was a thick plug. Dr. X flushed it out (irrigated it).\n\nYour symptoms got better with antibiotics through a vein (IV). You stayed stable.\n\nA germ called Klebsiella was found in your urine. The germ was sensitive to Bactrim.\n\nThe letter also lists these problems:\n- high blood pressure (hypertension)\n- mild renal insufficiency\n- anemia, which has been there for the past year\n- past uterine cancer and an ileal conduit urinary diversion\n\nYou had right knee pain. There was no sign of fluid (effusion) in the knee. It was very sore when touched on the patellar tendon. Doctors thought the pain did not come from inside the joint.\n\n## What you need to do\n1. See Dr. Y in 7-10 days.\n2. Take Bactrim by mouth after you leave hospital.\n3. Use ibuprofen from the pharmacy for the knee pain. Take two to three tablets, three times a day.\n\n## Dates and medicines\n- Follow-up with Dr. Y: in 7-10 days.\n- Further surgery: the letter says 08/07/2007. It could mean 8 July 2007 or 7 August 2007. The letter does not say which. It does not say what the surgery is for. Please check with your doctor.\n- Bactrim: new medicine. Taken by mouth. The letter does not give the dose or how often.\n- Ibuprofen (over the counter): new medicine. Two to three tablets, three times a day. The letter does not give the tablet strength.\n\n## Questions to ask your doctor\n- How much Bactrim should I take, and how often?\n- How long should I take Bactrim?\n- What strength of ibuprofen tablet should I buy?\n- What is the further surgery for, and on what date?\n\n## When to get urgent help\nThe letter does not list specific warning signs.\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "doctor_copy_to_patient",
+      "purpose": "Hospital discharge summary: admission for kidney infection (pyelonephritis), treatment given, and follow-up plan.",
+      "findings": [
+        {
+          "statement": "Pyelonephritis (kidney infection) was likely caused by a mucous plug in the Foley catheter in the ileal conduit.",
+          "certainty": "possible",
+          "quote": "Pyelonephritis likely secondary to mucous plugging of indwelling Foley in the ileal conduit."
+        },
+        {
+          "statement": "A thick mucous plug in the Foley in the ileal conduit was thought to be present and was irrigated by Dr. X.",
+          "certainty": "possible",
+          "quote": "It was thought that there was a thick mucous plug in the Foley in the ileal conduit that was irrigated by Dr. X."
+        },
+        {
+          "statement": "Symptoms responded to IV antibiotics and she remained clinically stable.",
+          "certainty": "confirmed",
+          "quote": "Her symptoms responded to IV antibiotics and she remained clinically stable."
+        },
+        {
+          "statement": "Klebsiella was found in the urine and was sensitive to Bactrim.",
+          "certainty": "confirmed",
+          "quote": "Klebsiella was isolated in this urine, which was sensitive to Bactrim"
+        },
+        {
+          "statement": "Discharge diagnosis of hypertension.",
+          "certainty": "confirmed",
+          "quote": "Hypertension."
+        },
+        {
+          "statement": "Discharge diagnosis of mild renal insufficiency.",
+          "certainty": "confirmed",
+          "quote": "Mild renal insufficiency."
+        },
+        {
+          "statement": "Anemia, present chronically over the past year.",
+          "certainty": "confirmed",
+          "quote": "Anemia, which has been present chronically over the past year."
+        },
+        {
+          "statement": "History of uterine cancer and ileal conduit urinary diversion.",
+          "certainty": "confirmed",
+          "quote": "History of uterine cancer and ileal conduit urinary diversion."
+        },
+        {
+          "statement": "She complained of right knee pain. The right knee showed no sign of effusion, but she was exquisitely tender to touch of the patellar tendon.",
+          "certainty": "confirmed",
+          "quote": "She also complained of right knee pain and the right knee showed no sign of effusion.  She was exquisitely tender to touch of the patellar tendon."
+        },
+        {
+          "statement": "The knee pain was thought not to represent a process inside the joint.",
+          "certainty": "possible",
+          "quote": "It was thought that this did not represent intraarticular process."
+        }
+      ],
+      "medicines": [
+        {
+          "name": "Bactrim",
+          "dose": "not stated",
+          "how_often": "not stated",
+          "change": "start",
+          "details": "Taken by mouth (p.o.) after discharge. Dose and frequency are not given in the letter.",
+          "quote": "she was discharged on p.o.  Bactrim"
+        },
+        {
+          "name": "Ibuprofen (over-the-counter)",
+          "dose": "two to three tabs",
+          "how_often": "three times a day",
+          "change": "start",
+          "details": "Tablet strength is not stated.",
+          "quote": "She was advised to use ibuprofen over-the-counter two to three tabs t.i.d."
+        }
+      ],
+      "dates": [
+        {
+          "what": "Follow up with Dr. Y",
+          "when": "in 7-10 days",
+          "quote": "She is to follow up with Dr. Y in 7-10 days."
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Follow up with Dr. Y in 7-10 days.",
+          "quote": "She is to follow up with Dr. Y in 7-10 days."
+        },
+        {
+          "instruction": "Use over-the-counter ibuprofen, two to three tablets three times a day, for the knee pain.",
+          "quote": "She was advised to use ibuprofen over-the-counter two to three tabs t.i.d."
+        }
+      ],
+      "negatives": [
+        {
+          "instruction": "No sign of fluid (effusion) in the right knee.",
+          "quote": "the right knee showed no sign of effusion"
+        },
+        {
+          "instruction": "The knee pain was thought not to come from inside the joint.",
+          "quote": "this did not represent intraarticular process"
+        }
+      ],
+      "warning_signs": [],
+      "unclear": [
+        "The date 08/07/2007 for further surgery could be 8 July 2007 or 7 August 2007. The letter does not say whether it uses UK or US date order. Quote: \"She was scheduled on 08/07/2007 for further surgery.\"",
+        "The letter gives no dose, frequency or duration for Bactrim.",
+        "The letter does not give the ibuprofen tablet strength.",
+        "The letter does not say what the further surgery is for."
+      ]
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\nYou were in hospital with a kidney infection (pyelonephritis). The letter says a plug of mucus in your Foley catheter may have caused it. The catheter is in your ileal conduit. A doctor thought there was a thick plug. Dr. X flushed it out (irrigated it).\n\nYour symptoms got better with antibiotics through a vein (IV). You stayed stable.\n\nA germ called Klebsiella was found in your urine. The germ was sensitive to Bactrim.\n\nThe letter also lists these problems:\n- high blood pressure (hypertension)\n- mild renal insufficiency\n- anemia, which has been there for the past year\n- past uterine cancer and an ileal conduit urinary diversion\n\nYou had right knee pain. There was no sign of fluid (effusion) in the knee. It was very sore when touched on the patellar tendon. Doctors thought the pain did not come from inside the joint.\n\n## What you need to do\n1. See Dr. Y in 7-10 days.\n2. Take Bactrim by mouth after you leave hospital.\n3. Use ibuprofen from the pharmacy for the knee pain. Take two to three tablets, three times a day.\n\n## Dates and medicines\n- Follow-up with Dr. Y: in 7-10 days.\n- Further surgery: the letter says 08/07/2007. It could mean 8 July 2007 or 7 August 2007. The letter does not say which. It does not say what the surgery is for. Please check with your doctor.\n- Bactrim: new medicine. Taken by mouth. The letter does not give the dose or how often.\n- Ibuprofen (over the counter): new medicine. Two to three tablets, three times a day. The letter does not give the tablet strength.\n\n## Questions to ask your doctor\n- How much Bactrim should I take, and how often?\n- How long should I take Bactrim?\n- What strength of ibuprofen tablet should I buy?\n- What is the further surgery for, and on what date?\n\n## When to get urgent help\nThe letter does not list specific warning signs.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 79.9,
+          "reading_ease_target": 70,
+          "grade_level": 4.3,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": null,
+        "blocking_problems": [],
+        "attempt": 1
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 3331,
+        "output_tokens": 1853,
+        "cost_usd": 0.04838,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 14240,
+        "output_tokens": 1965,
+        "cost_usd": 0.07531,
+        "turns": 7
+      }
+    ],
+    "cost_usd": 0.12369,
+    "latency_s": 29.7
+  },
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "diagnoses",
+        "fact": "Kidney infection (pyelonephritis), likely caused by a mucus plug blocking the Foley catheter in the ileal conduit",
+        "status": "changed",
+        "note": "Kidney infection, mucus plug and Foley in the ileal conduit are all there. But the letter says 'likely' and the explanation says 'may have caused it', which is less certain."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "High blood pressure (hypertension)",
+        "status": "kept",
+        "note": "High blood pressure (hypertension) is listed."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Mild kidney impairment (renal insufficiency)",
+        "status": "kept",
+        "note": "'Mild renal insufficiency' is listed, though the term is not explained in plain words."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Anaemia, present for the past year",
+        "status": "kept",
+        "note": "Anemia present for the past year is listed."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "History of uterine cancer and an ileal conduit (urinary diversion)",
+        "status": "kept",
+        "note": "Past uterine cancer and ileal conduit urinary diversion are listed."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Klebsiella bacteria in the urine, treatable with Bactrim",
+        "status": "kept",
+        "note": "Klebsiella in the urine, sensitive to Bactrim, is stated."
+      },
+      {
+        "category": "medicines",
+        "fact": "Bactrim by mouth",
+        "status": "kept",
+        "note": "Take Bactrim by mouth is stated."
+      },
+      {
+        "category": "medicines",
+        "fact": "Ibuprofen from the pharmacy, two to three tablets three times a day, for the knee pain",
+        "status": "kept",
+        "note": "Ibuprofen from the pharmacy, two to three tablets three times a day, for knee pain is stated."
+      },
+      {
+        "category": "dates",
+        "fact": "Further surgery scheduled on 08/07/2007",
+        "status": "kept",
+        "note": "Further surgery on 08/07/2007 is given. The explanation also notes the day/month order is unclear."
+      },
+      {
+        "category": "dates",
+        "fact": "Follow up with Dr. Y in 7-10 days",
+        "status": "kept",
+        "note": "See Dr. Y in 7-10 days is stated."
+      },
+      {
+        "category": "negatives",
+        "fact": "Right knee: no swelling in the joint (no effusion); the pain is not thought to come from inside the joint",
+        "status": "kept",
+        "note": "No fluid (effusion) in the knee, and pain not thought to come from inside the joint, are both stated."
+      }
+    ],
+    "added": [
+      {
+        "text": "Bactrim: new medicine.",
+        "kind": "medical_fact"
+      },
+      {
+        "text": "Ibuprofen (over the counter): new medicine.",
+        "kind": "medical_fact"
+      }
+    ],
+    "gold_reviewer": "claude-draft"
+  }
+}

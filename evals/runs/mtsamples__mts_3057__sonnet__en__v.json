@@ -1,0 +1,244 @@
+{
+  "job": {
+    "id": "mtsamples__mts_3057__sonnet__en__v",
+    "part": "mtsamples",
+    "letter_id": "mts_3057",
+    "file": "data/mtsamples/mts_3057.txt",
+    "kind": "faithfulness",
+    "model": "sonnet",
+    "language": "en",
+    "verifier": true,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "sonnet",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": true,
+    "status": "ok",
+    "final_text": "## What this letter says\nThis letter is from the Pediatric Urology Clinic. It is about your child's belly pain.\n\n- He still has belly pain (abdominal pain).\n- His kidney scan (diuretic renal scan) showed no sign of a blockage (obstruction).\n- The scan showed both kidneys work well (good differential function).\n- He says the pain is mostly low in the belly (suprapubic region).\n- When the doctor examined him, he said the pain was down his whole right side.\n- The pain could be from the gut (gastrointestinal). The doctor says this is a fair thing to think about. It is not confirmed.\n- Your child's parents feel the pain may be a bit worse since he started Detrol.\n\n## What you need to do\n1. Ask the clinic if you are unsure whether to stop Detrol. The doctor gave the parents the option to stop it first.\n2. Keep giving MiraLax for his bowels. Do not stop it.\n3. Expect a referral to Pediatric Gastroenterology for a check.\n4. If the gut check finds no problem, the next step would be a cystoscopy. The doctor would look into his bladder with a small camera (endoscope). This would check for bladder shape problems that could cause the pain.\n5. Contact the clinic doctor if you have any questions.\n\n## Dates and medicines\n- Dates: The letter gives no dates. It gives no appointment times for the gut referral or the bladder check.\n- Detrol: The dose and how often are not stated. The doctor gave the parents the option to stop it first. The letter does not say if they decided to stop.\n- MiraLax: The dose and how often are not stated. He should stay on it for his bowels.\n\n## Questions to ask your doctor\n- Should we stop Detrol now?\n- When will the Pediatric Gastroenterology visit happen?\n- What does the word \"suprapubic\" mean?\n- What would a cystoscopy involve, and when might it happen?\n\n## When to get urgent help\nThe letter does not list specific warning signs.\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "doctor_copy_to_patient",
+      "purpose": "Follow-up letter from Pediatric Urology Clinic to the referring doctor about a child's ongoing abdominal pain, test results, and next steps.",
+      "findings": [
+        {
+          "statement": "He continues to have abdominal pain.",
+          "certainty": "confirmed",
+          "quote": "He continues to have abdominal pain"
+        },
+        {
+          "statement": "Diuretic renal scan showed no evidence of obstruction.",
+          "certainty": "ruled_out",
+          "quote": "indicates no evidence of obstruction"
+        },
+        {
+          "statement": "Diuretic renal scan showed good differential function in both kidneys.",
+          "certainty": "confirmed",
+          "quote": "good differential function bilaterally"
+        },
+        {
+          "statement": "He says the pain is mainly in the lower abdomen (suprapubic region), but on physical examination he complained of pain through his entire right side.",
+          "certainty": "confirmed",
+          "quote": "on actual physical examination, he seems to complain of pain through his entire right side"
+        },
+        {
+          "statement": "The pain could be gastrointestinal in origin; the doctor says this is an appropriate consideration.",
+          "certainty": "possible",
+          "quote": "whether this could be gastrointestinal in origin and that is certainly an appropriate consideration"
+        },
+        {
+          "statement": "His parents feel his pain has been somewhat worse since he started Detrol.",
+          "certainty": "possible",
+          "quote": "since he has been on Detrol, his pain levels have been somewhat worse"
+        }
+      ],
+      "medicines": [
+        {
+          "name": "Detrol",
+          "dose": "not stated",
+          "how_often": "not stated",
+          "change": "stop",
+          "details": "The doctor gave the parents the option of stopping Detrol initially.",
+          "quote": "I have given them the option of stopping the Detrol initially"
+        },
+        {
+          "name": "MiraLax",
+          "dose": "not stated",
+          "how_often": "not stated",
+          "change": "continue",
+          "details": "To stay on it for management of his bowels.",
+          "quote": "I think he should stay on MiraLax for management of his bowels"
+        }
+      ],
+      "dates": [],
+      "actions": [
+        {
+          "instruction": "Refer him to Pediatric Gastroenterology for evaluation.",
+          "quote": "he be referred to Pediatric Gastroenterology for evaluation"
+        },
+        {
+          "instruction": "If no gastrointestinal abnormalities are found, the next step would be to look into his bladder with an endoscope (cystoscopy) to check for bladder anatomic abnormalities that could be causing the pain.",
+          "quote": "then the next step would be to endoscope his bladder"
+        },
+        {
+          "instruction": "Contact the clinic doctor with any questions.",
+          "quote": "If you have any questions, please feel free to contact me."
+        }
+      ],
+      "negatives": [
+        {
+          "instruction": "The renal scan showed no evidence of obstruction.",
+          "quote": "no evidence of obstruction"
+        }
+      ],
+      "warning_signs": [],
+      "unclear": [
+        "Detrol: the letter gives parents the option of stopping it but does not say whether they decided to stop.",
+        "No dates or appointment times are given for the gastroenterology referral or for any bladder endoscopy.",
+        "The letter gives no doses for Detrol or MiraLax."
+      ]
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\nThis letter is from the Pediatric Urology Clinic. It is about your child's belly pain.\n\n- He still has belly pain (abdominal pain).\n- His kidney scan (diuretic renal scan) showed no sign of a blockage (obstruction).\n- The scan showed both kidneys work well (good differential function).\n- He says the pain is mostly low in the belly (suprapubic region).\n- When the doctor examined him, he said the pain was down his whole right side.\n- The pain could be from the gut (gastrointestinal). The doctor says this is a fair thing to think about. It is not confirmed.\n- Your child's parents feel the pain may be a bit worse since he started Detrol.\n\n## What you need to do\n1. Ask the clinic if you are unsure whether to stop Detrol. The doctor gave the parents the option to stop it first.\n2. Keep giving MiraLax for his bowels. Do not stop it.\n3. Expect a referral to Pediatric Gastroenterology for a check.\n4. If the gut check finds no problem, the next step would be a cystoscopy. The doctor would look into his bladder with a small camera (endoscope). This would check for bladder shape problems that could cause the pain.\n5. Contact the clinic doctor if you have any questions.\n\n## Dates and medicines\n- Dates: The letter gives no dates. It gives no appointment times for the gut referral or the bladder check.\n- Detrol: The dose and how often are not stated. The doctor gave the parents the option to stop it first. The letter does not say if they decided to stop.\n- MiraLax: The dose and how often are not stated. He should stay on it for his bowels.\n\n## Questions to ask your doctor\n- Should we stop Detrol now?\n- When will the Pediatric Gastroenterology visit happen?\n- What does the word \"suprapubic\" mean?\n- What would a cystoscopy involve, and when might it happen?\n\n## When to get urgent help\nThe letter does not list specific warning signs.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 78.0,
+          "reading_ease_target": 70,
+          "grade_level": 4.8,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [
+            {
+              "kind": "changed",
+              "severity": "minor",
+              "explanation_says": "Ask the clinic if you are unsure whether to stop Detrol. The doctor gave the parents the option to stop it first.",
+              "letter_says": "I have given them the option of stopping the Detrol initially.",
+              "why": "Roughly consistent, but the explanation frames it as 'ask if unsure' and leaves the decision vague; minor advice wording."
+            },
+            {
+              "kind": "advice",
+              "severity": "minor",
+              "explanation_says": "Keep giving MiraLax for his bowels. Do not stop it.",
+              "letter_says": "I think he should stay on MiraLax for management of his bowels.",
+              "why": "'Do not stop it' is stronger than the letter's suggestion 'should stay on'."
+            },
+            {
+              "kind": "certainty",
+              "severity": "minor",
+              "explanation_says": "Expect a referral to Pediatric Gastroenterology for a check.",
+              "letter_says": "I would also suggest that he be referred to Pediatric Gastroenterology for evaluation.",
+              "why": "The letter suggests a referral. The explanation presents it as certain."
+            },
+            {
+              "kind": "added",
+              "severity": "minor",
+              "explanation_says": "The doctor would look into his bladder with a small camera (endoscope).",
+              "letter_says": "the next step would be to endoscope his bladder",
+              "why": "'Small camera' and the name 'cystoscopy' are not in the letter. They are general definitions, so this is low risk."
+            }
+          ],
+          "summary": "The explanation is largely faithful. It has only minor issues: a stronger 'do not stop' for MiraLax, a referral presented as certain, and a small elaboration on the endoscope. Nothing major was dropped or changed."
+        },
+        "blocking_problems": [],
+        "attempt": 1
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 3317,
+        "output_tokens": 1181,
+        "cost_usd": 0.03483,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 12584,
+        "output_tokens": 1782,
+        "cost_usd": 0.06661,
+        "turns": 6
+      },
+      {
+        "step": "verify",
+        "input_tokens": 3329,
+        "output_tokens": 609,
+        "cost_usd": 0.02822,
+        "turns": 2
+      }
+    ],
+    "cost_usd": 0.12966,
+    "latency_s": 31.1
+  },
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "diagnoses",
+        "fact": "Continuing abdominal pain (lower abdomen, and on examination the whole right side)",
+        "status": "kept",
+        "note": "Says he still has belly pain, mostly low in the belly, and on examination down his whole right side."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Kidney scan (diuretic renal scan): both kidneys working well",
+        "status": "kept",
+        "note": "Says the scan showed both kidneys work well (good differential function)."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Parents' question whether the pain comes from the gut is an appropriate consideration",
+        "status": "kept",
+        "note": "Says the pain could be from the gut and the doctor calls this a fair thing to think about. It adds 'not confirmed', which matches the letter."
+      },
+      {
+        "category": "medicines",
+        "fact": "Option to stop Detrol (parents feel the pain is worse since starting it)",
+        "status": "kept",
+        "note": "Says the doctor gave the option to stop Detrol first, and that the parents feel the pain is worse since he started it."
+      },
+      {
+        "category": "medicines",
+        "fact": "Stay on MiraLax for the bowels",
+        "status": "kept",
+        "note": "Says to keep giving MiraLax for his bowels."
+      },
+      {
+        "category": "actions",
+        "fact": "Referral to Pediatric Gastroenterology suggested",
+        "status": "kept",
+        "note": "Says to expect a referral to Pediatric Gastroenterology."
+      },
+      {
+        "category": "actions",
+        "fact": "If no gut cause is found, the next step would be a camera test of the bladder to look for bladder abnormalities",
+        "status": "kept",
+        "note": "Says that if the gut check finds no problem, the next step would be a cystoscopy with a camera to look for bladder shape problems."
+      },
+      {
+        "category": "negatives",
+        "fact": "Kidney scan showed no blockage (no evidence of obstruction)",
+        "status": "kept",
+        "note": "Says the kidney scan showed no sign of a blockage (obstruction)."
+      }
+    ],
+    "added": [
+      {
+        "text": "Ask the clinic if you are unsure whether to stop Detrol.",
+        "kind": "advice"
+      },
+      {
+        "text": "Contact the clinic doctor if you have any questions. (The letter invites the referring doctor to get in touch, not the family.)",
+        "kind": "advice"
+      }
+    ],
+    "gold_reviewer": "claude-draft"
+  }
+}

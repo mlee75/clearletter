@@ -1,0 +1,244 @@
+{
+  "job": {
+    "id": "models__syn_17__opus__en__v",
+    "part": "models",
+    "letter_id": "syn_17",
+    "file": "data/synthetic/syn_17.txt",
+    "kind": "faithfulness",
+    "model": "opus",
+    "language": "en",
+    "verifier": true,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "opus",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": true,
+    "status": "ok",
+    "final_text": "## What this letter says\n\nYou saw your care team on 30 September 2026. This was about your asthma flare-up.\n\nYou have a new medicine. It is called prednisolone. It is a steroid. It comes as tablets. Each tablet is 5 milligrams.\n\nYou take a high dose first. Then you take less. Then you stop.\n\n## What you need to do\n\n1. Take prednisolone once a day. Take it in the morning with food.\n2. Follow the dose plan below.\n3. Keep using your usual inhalers.\n4. The pharmacy will give you a blue steroid card. Carry this card with you.\n5. Book a check-up with the asthma nurse. Do this within 2 weeks. The latest date is 14 October 2026.\n\n## Dates and medicines\n\n**Dates**\n\n- 30 September 2026: you were seen for your asthma flare-up.\n- 14 October 2026: the latest date to see the asthma nurse.\n\n**Prednisolone (a steroid).** New medicine. Each tablet is 5 milligrams. Take it once a day, in the morning, with food.\n\n- 1 October to 5 October 2026: take 40 milligrams each day. This is 8 tablets.\n- 6 October to 8 October 2026: take 20 milligrams each day. This is 4 tablets.\n- 9 October to 11 October 2026: take 10 milligrams each day. This is 2 tablets.\n- 12 October 2026: stop taking prednisolone.\n\n**Your usual inhalers.** No change. Keep using them.\n\n## Questions to ask your doctor\n\n- What should I do if I forget a dose?\n- What will the asthma nurse check at my visit?\n- When do I need to show my blue steroid card?\n\n## When to get urgent help\n\nGet help urgently if:\n\n- your breathing gets worse, or\n- your reliever inhaler does not help.\n\nCall 999.\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "patient",
+      "purpose": "To tell you about a new prescription of prednisolone (a steroid) tablets for your asthma flare-up, and how to take them.",
+      "findings": [
+        {
+          "statement": "You were reviewed for an asthma flare-up.",
+          "certainty": "confirmed",
+          "quote": "Following your review for your asthma flare-up on 30/09/2026"
+        }
+      ],
+      "medicines": [
+        {
+          "name": "prednisolone (a steroid)",
+          "dose": "40 mg (8 tablets)",
+          "how_often": "once a day in the morning with food",
+          "change": "start",
+          "details": "Each tablet is 5 mg. Take 40 mg (8 tablets) each day from 1 October to 5 October 2026.",
+          "quote": "1 Oct to 5 Oct 2026: 40 mg (8 tablets) each day"
+        },
+        {
+          "name": "prednisolone (a steroid)",
+          "dose": "20 mg (4 tablets)",
+          "how_often": "once a day in the morning with food",
+          "change": "decrease",
+          "details": "Take 20 mg (4 tablets) each day from 6 October to 8 October 2026. Previous dose: 40 mg (8 tablets) each day.",
+          "quote": "6 Oct to 8 Oct 2026: 20 mg (4 tablets) each day"
+        },
+        {
+          "name": "prednisolone (a steroid)",
+          "dose": "10 mg (2 tablets)",
+          "how_often": "once a day in the morning with food",
+          "change": "decrease",
+          "details": "Take 10 mg (2 tablets) each day from 9 October to 11 October 2026. Previous dose: 20 mg (4 tablets) each day.",
+          "quote": "9 Oct to 11 Oct 2026: 10 mg (2 tablets) each day"
+        },
+        {
+          "name": "prednisolone (a steroid)",
+          "dose": "",
+          "how_often": "",
+          "change": "stop",
+          "details": "Stop on 12 October 2026. Previous dose: 10 mg (2 tablets) each day.",
+          "quote": "12 Oct 2026: stop"
+        },
+        {
+          "name": "usual inhalers",
+          "dose": "",
+          "how_often": "",
+          "change": "continue",
+          "details": "Keep using your usual inhalers.",
+          "quote": "Continue your usual inhalers."
+        }
+      ],
+      "dates": [
+        {
+          "what": "Review for asthma flare-up",
+          "when": "30 September 2026",
+          "quote": "review for your asthma flare-up on 30/09/2026"
+        },
+        {
+          "what": "Take prednisolone 40 mg (8 tablets) each day",
+          "when": "1 October 2026 to 5 October 2026",
+          "quote": "1 Oct to 5 Oct 2026: 40 mg (8 tablets) each day"
+        },
+        {
+          "what": "Take prednisolone 20 mg (4 tablets) each day",
+          "when": "6 October 2026 to 8 October 2026",
+          "quote": "6 Oct to 8 Oct 2026: 20 mg (4 tablets) each day"
+        },
+        {
+          "what": "Take prednisolone 10 mg (2 tablets) each day",
+          "when": "9 October 2026 to 11 October 2026",
+          "quote": "9 Oct to 11 Oct 2026: 10 mg (2 tablets) each day"
+        },
+        {
+          "what": "Stop prednisolone",
+          "when": "12 October 2026",
+          "quote": "12 Oct 2026: stop"
+        },
+        {
+          "what": "Latest date for review with the asthma nurse",
+          "when": "14 October 2026",
+          "quote": "by 14 October 2026"
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Take prednisolone once a day in the morning with food, following the dose plan.",
+          "quote": "Please take your prednisolone once a day in the morning with food"
+        },
+        {
+          "instruction": "Carry the blue steroid card that the pharmacy gives you.",
+          "quote": "Carry the blue steroid card that the pharmacy gives you."
+        },
+        {
+          "instruction": "Book a review with the asthma nurse within 2 weeks (by 14 October 2026).",
+          "quote": "Please book a review with the asthma nurse within 2 weeks (by 14 October 2026)."
+        }
+      ],
+      "negatives": [],
+      "warning_signs": [
+        {
+          "instruction": "If your breathing gets worse or your reliever inhaler does not help, get help urgently by calling 999.",
+          "quote": "If your breathing gets worse or your reliever inhaler does not help, get help urgently: call 999."
+        }
+      ],
+      "unclear": []
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\n\nYou saw your care team on 30 September 2026. This was about your asthma flare-up.\n\nYou have a new medicine. It is called prednisolone. It is a steroid. It comes as tablets. Each tablet is 5 milligrams.\n\nYou take a high dose first. Then you take less. Then you stop.\n\n## What you need to do\n\n1. Take prednisolone once a day. Take it in the morning with food.\n2. Follow the dose plan below.\n3. Keep using your usual inhalers.\n4. The pharmacy will give you a blue steroid card. Carry this card with you.\n5. Book a check-up with the asthma nurse. Do this within 2 weeks. The latest date is 14 October 2026.\n\n## Dates and medicines\n\n**Dates**\n\n- 30 September 2026: you were seen for your asthma flare-up.\n- 14 October 2026: the latest date to see the asthma nurse.\n\n**Prednisolone (a steroid).** New medicine. Each tablet is 5 milligrams. Take it once a day, in the morning, with food.\n\n- 1 October to 5 October 2026: take 40 milligrams each day. This is 8 tablets.\n- 6 October to 8 October 2026: take 20 milligrams each day. This is 4 tablets.\n- 9 October to 11 October 2026: take 10 milligrams each day. This is 2 tablets.\n- 12 October 2026: stop taking prednisolone.\n\n**Your usual inhalers.** No change. Keep using them.\n\n## Questions to ask your doctor\n\n- What should I do if I forget a dose?\n- What will the asthma nurse check at my visit?\n- When do I need to show my blue steroid card?\n\n## When to get urgent help\n\nGet help urgently if:\n\n- your breathing gets worse, or\n- your reliever inhaler does not help.\n\nCall 999.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 85.3,
+          "reading_ease_target": 70,
+          "grade_level": 3.2,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [],
+          "summary": "The explanation matches the letter. Nothing is missing, changed or added. It has the right date for the asthma flare-up review (30 September 2026). It says prednisolone is a 5 mg steroid tablet taken once a day in the morning with food. The dose plan is correct: 40 mg (8 tablets) from 1 to 5 October, 20 mg (4 tablets) from 6 to 8 October, 10 mg (2 tablets) from 9 to 11 October, then stop on 12 October. It also covers carrying on with the usual inhalers, carrying the blue steroid card and booking the asthma nurse review by 14 October 2026. The warning signs and the instruction to call 999 are kept as the letter gives them. The suggested questions don't raise any new diagnosis or risk."
+        },
+        "blocking_problems": [],
+        "attempt": 1
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 3201,
+        "output_tokens": 1772,
+        "cost_usd": 0.04572,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 8682,
+        "output_tokens": 1594,
+        "cost_usd": 0.06035,
+        "turns": 2
+      },
+      {
+        "step": "verify",
+        "input_tokens": 3147,
+        "output_tokens": 548,
+        "cost_usd": 0.02554,
+        "turns": 2
+      }
+    ],
+    "cost_usd": 0.13161,
+    "latency_s": 39.3
+  },
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "diagnoses",
+        "fact": "Asthma flare-up (review on 30 September 2026)",
+        "status": "kept",
+        "note": "Seen on 30 September 2026 for asthma flare-up."
+      },
+      {
+        "category": "medicines",
+        "fact": "Prednisolone (a steroid), 5 mg tablets, once a day in the morning with food",
+        "status": "kept",
+        "note": "Prednisolone, steroid, 5 mg tablets, once a day in the morning with food."
+      },
+      {
+        "category": "medicines",
+        "fact": "1 to 5 October 2026: 40 mg (8 tablets) each day",
+        "status": "kept",
+        "note": "1-5 Oct: 40 mg, 8 tablets each day."
+      },
+      {
+        "category": "medicines",
+        "fact": "6 to 8 October 2026: 20 mg (4 tablets) each day",
+        "status": "kept",
+        "note": "6-8 Oct: 20 mg, 4 tablets each day."
+      },
+      {
+        "category": "medicines",
+        "fact": "9 to 11 October 2026: 10 mg (2 tablets) each day",
+        "status": "kept",
+        "note": "9-11 Oct: 10 mg, 2 tablets each day."
+      },
+      {
+        "category": "medicines",
+        "fact": "12 October 2026: stop prednisolone",
+        "status": "kept",
+        "note": "12 Oct 2026: stop taking prednisolone."
+      },
+      {
+        "category": "medicines",
+        "fact": "Continue your usual inhalers",
+        "status": "kept",
+        "note": "Keep using your usual inhalers."
+      },
+      {
+        "category": "dates",
+        "fact": "Book a review with the asthma nurse within 2 weeks (by 14 October 2026)",
+        "status": "kept",
+        "note": "Book check-up with asthma nurse within 2 weeks, latest 14 October 2026."
+      },
+      {
+        "category": "actions",
+        "fact": "Carry the blue steroid card the pharmacy gives you",
+        "status": "kept",
+        "note": "Carry the blue steroid card the pharmacy gives you."
+      },
+      {
+        "category": "actions",
+        "fact": "If breathing gets worse or the reliever inhaler does not help, call 999",
+        "status": "kept",
+        "note": "Breathing worse or reliever not helping: get urgent help, call 999."
+      }
+    ],
+    "added": [],
+    "gold_reviewer": "claude-draft"
+  }
+}

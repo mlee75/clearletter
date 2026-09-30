@@ -1,0 +1,186 @@
+{
+  "job": {
+    "id": "languages__syn_04__sonnet__fr__v",
+    "part": "languages",
+    "letter_id": "syn_04",
+    "file": "data/synthetic/syn_04.txt",
+    "kind": "faithfulness",
+    "model": "sonnet",
+    "language": "fr",
+    "verifier": true,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "sonnet",
+    "backend": "claude-code",
+    "language": "fr",
+    "country": "uk",
+    "use_verifier": true,
+    "status": "ok",
+    "final_text": "## Ce que dit cette lettre\nCette lettre vous invite à prendre rendez-vous pour un examen des yeux. C'est le dépistage des yeux pour les personnes diabétiques.\nCet examen regarde le fond de l'œil. Il cherche des dégâts causés par le diabète (rétinopathie diabétique).\nCet examen est proposé chaque année à toutes les personnes diabétiques de 12 ans et plus.\nCet examen ne détecte pas les autres problèmes des yeux.\nIl ne remplace pas votre examen des yeux habituel chez l'opticien.\n\n## Ce que vous devez faire\n1. Prenez rendez-vous en appelant le 01632 960 377.\n2. Faites-le avant le 15 janvier 2027.\n3. Apportez des lunettes de soleil si vous en avez.\n4. Apportez vos lunettes ou vos lentilles de contact.\n5. Apportez aussi la liste de vos médicaments.\n6. Ne conduisez pas tant que votre vue n'est pas redevenue normale.\n\n## Dates et médicaments\n- Date limite pour prendre rendez-vous : 15 janvier 2027.\n- La lettre ne donne pas de date ni d'heure de rendez-vous. Vous devez le prendre vous-même.\n- Des gouttes rendent votre vue floue pendant 4 à 6 heures.\n- Médicaments : la lettre n'en cite aucun.\n\n## Questions à poser à votre médecin\n- Que se passe-t-il si je ne peux pas prendre rendez-vous avant le 15 janvier 2027 ?\n- Comment rentrer chez moi si ma vue est floue après les gouttes ?\n- Dois-je garder mon examen habituel chez l'opticien ?\n\n## Quand obtenir de l'aide en urgence\nLa lettre ne donne pas de signes d'alerte particuliers.\n\nSi vous êtes inquiet et que ce n'est pas une urgence, appelez le NHS 111. En cas d'urgence, appelez le 999.\n\n---\n*Cette explication a été faite par un programme informatique pour vous aider à lire votre lettre. Elle peut contenir des erreurs. Elle ne remplace pas votre médecin, votre infirmier ou votre pharmacien. Suivez toujours la lettre et posez-leur vos questions si quelque chose n'est pas clair.*\n",
+    "facts": {
+      "reader": "patient",
+      "purpose": "Invitation to book a yearly diabetic eye screening appointment.",
+      "findings": [
+        {
+          "statement": "Diabetic eye screening checks the back of the eyes for damage caused by diabetes (diabetic retinopathy).",
+          "certainty": "confirmed",
+          "quote": "It checks the back of the eyes for damage caused by diabetes (diabetic retinopathy)."
+        },
+        {
+          "statement": "The test is offered every year to everyone with diabetes aged 12 and over.",
+          "certainty": "confirmed",
+          "quote": "a test that everyone with diabetes aged 12 and over is offered every year"
+        }
+      ],
+      "medicines": [],
+      "dates": [
+        {
+          "what": "Book your appointment by this date",
+          "when": "15 January 2027",
+          "quote": "Please book your appointment by 15 January 2027 by calling 01632 960 377."
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Book your appointment by calling 01632 960 377.",
+          "quote": "Please book your appointment by 15 January 2027 by calling 01632 960 377."
+        },
+        {
+          "instruction": "Bring sunglasses if you have them.",
+          "quote": "Bring sunglasses if you have them."
+        },
+        {
+          "instruction": "Bring your glasses or contact lenses and a list of your medicines.",
+          "quote": "Bring your glasses or contact lenses and a list of your medicines."
+        }
+      ],
+      "negatives": [
+        {
+          "instruction": "The screening test does not diagnose other eye problems.",
+          "quote": "It does not diagnose other eye problems"
+        },
+        {
+          "instruction": "The screening does not replace your regular eye test at an optician.",
+          "quote": "it does not replace your regular eye test at an optician"
+        },
+        {
+          "instruction": "Do not drive until your vision is back to normal.",
+          "quote": "You must not drive until your vision is back to normal."
+        }
+      ],
+      "warning_signs": [],
+      "unclear": [
+        "The letter says drops will blur your vision for 4 to 6 hours, but gives no appointment date or time; you must book it yourself."
+      ]
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## Ce que dit cette lettre\nCette lettre vous invite à prendre rendez-vous pour un examen des yeux. C'est le dépistage des yeux pour les personnes diabétiques.\nCet examen regarde le fond de l'œil. Il cherche des dégâts causés par le diabète (rétinopathie diabétique).\nCet examen est proposé chaque année à toutes les personnes diabétiques de 12 ans et plus.\nCet examen ne détecte pas les autres problèmes des yeux.\nIl ne remplace pas votre examen des yeux habituel chez l'opticien.\n\n## Ce que vous devez faire\n1. Prenez rendez-vous en appelant le 01632 960 377.\n2. Faites-le avant le 15 janvier 2027.\n3. Apportez des lunettes de soleil si vous en avez.\n4. Apportez vos lunettes ou vos lentilles de contact.\n5. Apportez aussi la liste de vos médicaments.\n6. Ne conduisez pas tant que votre vue n'est pas redevenue normale.\n\n## Dates et médicaments\n- Date limite pour prendre rendez-vous : 15 janvier 2027.\n- La lettre ne donne pas de date ni d'heure de rendez-vous. Vous devez le prendre vous-même.\n- Des gouttes rendent votre vue floue pendant 4 à 6 heures.\n- Médicaments : la lettre n'en cite aucun.\n\n## Questions à poser à votre médecin\n- Que se passe-t-il si je ne peux pas prendre rendez-vous avant le 15 janvier 2027 ?\n- Comment rentrer chez moi si ma vue est floue après les gouttes ?\n- Dois-je garder mon examen habituel chez l'opticien ?\n\n## Quand obtenir de l'aide en urgence\nLa lettre ne donne pas de signes d'alerte particuliers.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "fr",
+          "reading_ease": 91.1,
+          "reading_ease_target": 70,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [],
+          "summary": "The explanation matches the letter. The booking deadline (15 January 2027), the phone number, the 4 to 6 hours of blurred vision from the drops, the driving restriction and the list of things to bring are all correct. The points about screening not replacing the optician's test and not finding other eye problems are also correct. Nothing was added, dropped or changed."
+        },
+        "blocking_problems": [],
+        "attempt": 1
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 3066,
+        "output_tokens": 811,
+        "cost_usd": 0.02542,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 6894,
+        "output_tokens": 1496,
+        "cost_usd": 0.05067,
+        "turns": 2
+      },
+      {
+        "step": "verify",
+        "input_tokens": 3085,
+        "output_tokens": 432,
+        "cost_usd": 0.02273,
+        "turns": 2
+      }
+    ],
+    "cost_usd": 0.09881,
+    "latency_s": 24.4
+  },
+  "back_translation": "## What this letter says\nThis letter invites you to make an appointment for an eye examination. It is the eye screening for people with diabetes.\nThis examination looks at the back of the eye. It looks for damage caused by diabetes (diabetic retinopathy).\nThis examination is offered every year to all people with diabetes aged 12 and over.\nThis examination does not detect other eye problems.\nIt does not replace your usual eye examination at the optician.\n\n## What you need to do\n1. Make an appointment by calling 01632 960 377.\n2. Do it before 15 January 2027.\n3. Bring sunglasses if you have any.\n4. Bring your glasses or your contact lenses.\n5. Also bring the list of your medicines.\n6. Do not drive until your vision has returned to normal.\n\n## Dates and medicines\n- Deadline for making an appointment: 15 January 2027.\n- The letter does not give an appointment date or time. You must make it yourself.\n- Drops make your vision blurry for 4 to 6 hours.\n- Medicines: the letter does not mention any.\n\n## Questions to ask your doctor\n- What happens if I cannot make an appointment before 15 January 2027?\n- How do I get home if my vision is blurry after the drops?\n- Should I keep my usual examination at the optician?\n\n## When to get urgent help\nThe letter does not give any particular warning signs.",
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "diagnoses",
+        "fact": "Invited to diabetic eye screening, which checks the back of the eyes for damage from diabetes (diabetic retinopathy)",
+        "status": "kept",
+        "note": "Says it is eye screening for people with diabetes that looks at the back of the eye for damage from diabetes (diabetic retinopathy)."
+      },
+      {
+        "category": "dates",
+        "fact": "Book the appointment by 15 January 2027",
+        "status": "kept",
+        "note": "Deadline for booking is given as 15 January 2027. 'Before' is used in one place, but the Dates section also calls it the deadline."
+      },
+      {
+        "category": "dates",
+        "fact": "The eye drops blur vision for 4 to 6 hours",
+        "status": "kept",
+        "note": "Says the drops make vision blurry for 4 to 6 hours."
+      },
+      {
+        "category": "actions",
+        "fact": "Call 01632 960 377 to book",
+        "status": "kept",
+        "note": "Says to call 01632 960 377 to book."
+      },
+      {
+        "category": "actions",
+        "fact": "Do not drive until your vision is back to normal",
+        "status": "kept",
+        "note": "Says not to drive until vision has returned to normal."
+      },
+      {
+        "category": "actions",
+        "fact": "Bring sunglasses if you have them",
+        "status": "kept",
+        "note": "Says to bring sunglasses if you have any."
+      },
+      {
+        "category": "actions",
+        "fact": "Bring your glasses or contact lenses and a list of your medicines",
+        "status": "kept",
+        "note": "Says to bring glasses or contact lenses and a list of medicines."
+      },
+      {
+        "category": "negatives",
+        "fact": "This screening does not diagnose other eye problems",
+        "status": "kept",
+        "note": "'Does not detect other eye problems' means the same as 'does not diagnose other eye problems'."
+      },
+      {
+        "category": "negatives",
+        "fact": "It does not replace the regular eye test at an optician",
+        "status": "kept",
+        "note": "Says it does not replace the usual eye examination at the optician."
+      }
+    ],
+    "added": [],
+    "gold_reviewer": "claude-draft"
+  }
+}

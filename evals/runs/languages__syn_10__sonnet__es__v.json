@@ -1,0 +1,249 @@
+{
+  "job": {
+    "id": "languages__syn_10__sonnet__es__v",
+    "part": "languages",
+    "letter_id": "syn_10",
+    "file": "data/synthetic/syn_10.txt",
+    "kind": "faithfulness",
+    "model": "sonnet",
+    "language": "es",
+    "verifier": true,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "sonnet",
+    "backend": "claude-code",
+    "language": "es",
+    "country": "uk",
+    "use_verifier": true,
+    "status": "ok",
+    "final_text": "## Qué dice esta carta\nLina tiene un virus de estómago (gastroenteritis). Tiene poca pérdida de líquidos (deshidratación leve).\nLina bebió bien en la unidad. Hizo pipí antes de irse a casa.\nNo hicieron análisis de sangre. No hacían falta.\nLa diarrea suele parar en 5 a 7 días. El vómito suele parar en 3 días.\n\n## Qué tiene que hacer\n1. Dé a Lina pequeñas cantidades de líquido, muchas veces.\n2. Si vomita, dé 5 mililitros cada 5 minutos. Luego dé más si lo retiene.\n3. Siga dándole el pecho o su leche de siempre.\n4. Puede usar suero de rehidratación oral (Dioralyte). La carta no dice la dosis.\n5. No dé a su hija medicinas contra la diarrea.\n\n## Fechas y medicamentos\n- Fecha de la visita: 20 de octubre de 2026.\n- Paracetamol en suspensión oral (120 miligramos por 5 mililitros). Es nuevo.\n  - Dosis: 7.5 mililitros.\n  - Hasta 4 veces en 24 horas.\n  - Deje al menos 4 horas entre dosis.\n  - Es para la fiebre o el malestar.\n- Suero de rehidratación oral (Dioralyte). Se puede usar. La carta no da dosis ni frecuencia.\n\n## Preguntas para su médico\n- ¿Cuánto líquido debo darle a Lina cuando ya no vomite?\n- ¿Cuánto Dioralyte debo darle y cada cuánto?\n- ¿Cuántos días puedo darle paracetamol?\n\n## Cuándo pedir ayuda urgente\n- Lleve a Lina de nuevo o llame al 111 si tiene menos de 4 pañales mojados en 24 horas.\n- Lo mismo si está muy dormida.\n- Lo mismo si tiene sangre en las heces.\n- Lo mismo si no retiene ningún líquido.\n- Llame al 999 si es difícil despertarla.\n\nSi le preocupa algo y no es una emergencia, llame al NHS 111. En caso de emergencia, llame al 999.\n\n---\n*Esta explicación la ha hecho un programa informático para ayudarle a leer su carta. Puede contener errores. No sustituye a su médico, enfermero o farmacéutico. Siga siempre lo que dice la carta y pregúnteles si algo no está claro.*\n",
+    "facts": {
+      "reader": "parent_or_carer",
+      "purpose": "Discharge advice for Lina after being seen for gastroenteritis with mild dehydration, explaining home care and when to seek help.",
+      "findings": [
+        {
+          "statement": "Lina has gastroenteritis (tummy bug) with mild dehydration.",
+          "certainty": "confirmed",
+          "quote": "Gastroenteritis (tummy bug) with mild dehydration."
+        },
+        {
+          "statement": "Lina drank well on the unit and passed urine before going home.",
+          "certainty": "confirmed",
+          "quote": "Lina drank well on the unit and passed urine before going home."
+        },
+        {
+          "statement": "No blood tests were needed.",
+          "certainty": "ruled_out",
+          "quote": "No blood tests were needed."
+        },
+        {
+          "statement": "Diarrhoea usually stops within 5 to 7 days.",
+          "certainty": "confirmed",
+          "quote": "Diarrhoea usually stops within 5 to 7 days."
+        },
+        {
+          "statement": "Vomiting usually stops within 3 days.",
+          "certainty": "confirmed",
+          "quote": "Vomiting usually stops within 3 days."
+        }
+      ],
+      "medicines": [
+        {
+          "name": "Paracetamol oral suspension 120 mg/5 ml",
+          "dose": "7.5 ml",
+          "how_often": "up to 4 times in 24 hours, at least 4 hours between doses",
+          "change": "start",
+          "details": "For fever or discomfort.",
+          "quote": "paracetamol oral suspension 120 mg/5 ml. Give 7.5 ml, up to 4 times in 24 hours. Leave at least 4 hours between doses."
+        },
+        {
+          "name": "Oral rehydration solution (Dioralyte)",
+          "dose": "not stated",
+          "how_often": "not stated",
+          "change": "other",
+          "details": "Can be used; the letter gives no dose.",
+          "quote": "Oral rehydration solution (Dioralyte) can be used."
+        }
+      ],
+      "dates": [
+        {
+          "what": "Date Lina was seen",
+          "when": "20 October 2026",
+          "quote": "Seen: 20/10/2026"
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Give small amounts of fluid often: 5 ml every 5 minutes if she is vomiting, then more as she keeps it down.",
+          "quote": "Give small amounts of fluid often: 5 ml every 5 minutes if she is vomiting, then more as she keeps it down."
+        },
+        {
+          "instruction": "Keep breastfeeding or giving her usual milk.",
+          "quote": "Keep breastfeeding or giving her usual milk."
+        }
+      ],
+      "negatives": [
+        {
+          "instruction": "Do not give anti-diarrhoea medicines to your child.",
+          "quote": "Do not give anti-diarrhoea medicines to your child."
+        }
+      ],
+      "warning_signs": [
+        {
+          "instruction": "Bring Lina back or call 111 if she has fewer than 4 wet nappies in 24 hours, is very sleepy, has blood in her poo or cannot keep any fluids down.",
+          "quote": "Bring Lina back or call 111 if she has fewer than 4 wet nappies in 24 hours, is very sleepy, has blood in her poo or cannot keep any fluids down."
+        },
+        {
+          "instruction": "Call 999 if she is hard to wake up.",
+          "quote": "Call 999 if she is hard to wake up."
+        }
+      ],
+      "unclear": []
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## Qué dice esta carta\nLina tiene un virus de estómago (gastroenteritis). Tiene poca pérdida de líquidos (deshidratación leve).\nLina bebió bien en la unidad. Hizo pipí antes de irse a casa.\nNo hicieron análisis de sangre. No hacían falta.\nLa diarrea suele parar en 5 a 7 días. El vómito suele parar en 3 días.\n\n## Qué tiene que hacer\n1. Dé a Lina pequeñas cantidades de líquido, muchas veces.\n2. Si vomita, dé 5 mililitros cada 5 minutos. Luego dé más si lo retiene.\n3. Siga dándole el pecho o su leche de siempre.\n4. Puede usar suero de rehidratación oral (Dioralyte). La carta no dice la dosis.\n5. No dé a su hija medicinas contra la diarrea.\n\n## Fechas y medicamentos\n- Fecha de la visita: 20 de octubre de 2026.\n- Paracetamol en suspensión oral (120 miligramos por 5 mililitros). Es nuevo.\n  - Dosis: 7.5 mililitros.\n  - Hasta 4 veces en 24 horas.\n  - Deje al menos 4 horas entre dosis.\n  - Es para la fiebre o el malestar.\n- Suero de rehidratación oral (Dioralyte). Se puede usar. La carta no da dosis ni frecuencia.\n\n## Preguntas para su médico\n- ¿Cuánto líquido debo darle a Lina cuando ya no vomite?\n- ¿Cuánto Dioralyte debo darle y cada cuánto?\n- ¿Cuántos días puedo darle paracetamol?\n\n## Cuándo pedir ayuda urgente\n- Lleve a Lina de nuevo o llame al 111 si tiene menos de 4 pañales mojados en 24 horas.\n- Lo mismo si está muy dormida.\n- Lo mismo si tiene sangre en las heces.\n- Lo mismo si no retiene ningún líquido.\n- Llame al 999 si es difícil despertarla.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "es",
+          "reading_ease": 90.4,
+          "reading_ease_target": 70,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [
+            {
+              "kind": "added",
+              "severity": "minor",
+              "explanation_says": "Lina tiene un virus de estómago (gastroenteritis).",
+              "letter_says": "Gastroenteritis (tummy bug) with mild dehydration.",
+              "why": "The letter does not say the cause is a virus. 'Tummy bug' is informal, and the explanation names a specific cause."
+            },
+            {
+              "kind": "added",
+              "severity": "minor",
+              "explanation_says": "Paracetamol en suspensión oral ... Es nuevo.",
+              "letter_says": "For fever or discomfort: paracetamol oral suspension 120 mg/5 ml. Give 7.5 ml...",
+              "why": "The letter does not say the paracetamol is a new medicine."
+            }
+          ],
+          "summary": "The explanation is accurate on doses, dates, negations and warning signs. It has two minor additions: it calls the illness a \"virus\", and it says the paracetamol is \"new\". Neither is in the letter."
+        },
+        "blocking_problems": [],
+        "attempt": 1
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 3261,
+        "output_tokens": 1389,
+        "cost_usd": 0.03854,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 8024,
+        "output_tokens": 1878,
+        "cost_usd": 0.0637,
+        "turns": 2
+      },
+      {
+        "step": "verify",
+        "input_tokens": 3327,
+        "output_tokens": 576,
+        "cost_usd": 0.02752,
+        "turns": 2
+      }
+    ],
+    "cost_usd": 0.12976,
+    "latency_s": 32.5
+  },
+  "back_translation": "## What this letter says\nLina has a stomach virus (gastroenteritis). She has a small loss of fluids (mild dehydration).\nLina drank well in the unit. She did a wee before going home.\nThey did not do blood tests. They were not needed.\nThe diarrhoea usually stops in 5 to 7 days. The vomiting usually stops in 3 days.\n\n## What you have to do\n1. Give Lina small amounts of fluid, many times.\n2. If she vomits, give 5 millilitres every 5 minutes. Then give more if she keeps it down.\n3. Keep breastfeeding her or giving her usual milk.\n4. You can use oral rehydration solution (Dioralyte). The letter does not say the dose.\n5. Do not give your daughter medicines against diarrhoea.\n\n## Dates and medicines\n- Date of the visit: 20 October 2026.\n- Paracetamol oral suspension (120 milligrams per 5 millilitres). It is new.\n  - Dose: 7.5 millilitres.\n  - Up to 4 times in 24 hours.\n  - Leave at least 4 hours between doses.\n  - It is for fever or discomfort.\n- Oral rehydration solution (Dioralyte). It can be used. The letter does not give a dose or frequency.\n\n## Questions for your doctor\n- How much fluid should I give Lina once she is no longer vomiting?\n- How much Dioralyte should I give her and how often?\n- For how many days can I give her paracetamol?\n\n## When to seek urgent help\n- Bring Lina back or call 111 if she has fewer than 4 wet nappies in 24 hours.\n- The same if she is very sleepy.\n- The same if she has blood in her stools.\n- The same if she does not keep down any fluid.\n- Call 999 if she is hard to wake up.",
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "diagnoses",
+        "fact": "Gastroenteritis (tummy bug) with mild dehydration",
+        "status": "kept",
+        "note": "Gastroenteritis with mild dehydration stated (though described as a 'stomach virus')."
+      },
+      {
+        "category": "medicines",
+        "fact": "Paracetamol oral suspension 120 mg/5 ml: give 7.5 ml, up to 4 times in 24 hours, at least 4 hours between doses",
+        "status": "kept",
+        "note": "120 mg/5 ml, 7.5 ml, up to 4 times in 24 hours, at least 4 hours apart: all match."
+      },
+      {
+        "category": "medicines",
+        "fact": "Oral rehydration solution (Dioralyte) can be used",
+        "status": "kept",
+        "note": "Dioralyte can be used."
+      },
+      {
+        "category": "dates",
+        "fact": "Diarrhoea usually stops within 5 to 7 days",
+        "status": "kept",
+        "note": "Diarrhoea usually stops in 5 to 7 days."
+      },
+      {
+        "category": "dates",
+        "fact": "Vomiting usually stops within 3 days",
+        "status": "kept",
+        "note": "Vomiting usually stops in 3 days."
+      },
+      {
+        "category": "actions",
+        "fact": "Give small amounts of fluid often: 5 ml every 5 minutes if vomiting, then more as she keeps it down",
+        "status": "kept",
+        "note": "Small amounts often; 5 ml every 5 minutes if vomiting, then more if she keeps it down."
+      },
+      {
+        "category": "actions",
+        "fact": "Keep breastfeeding or giving her usual milk",
+        "status": "kept",
+        "note": "Keep breastfeeding or usual milk."
+      },
+      {
+        "category": "actions",
+        "fact": "Bring Lina back or call 111 if fewer than 4 wet nappies in 24 hours, very sleepy, blood in her poo, or cannot keep any fluids down",
+        "status": "kept",
+        "note": "All four return/111 triggers listed."
+      },
+      {
+        "category": "actions",
+        "fact": "Call 999 if she is hard to wake up",
+        "status": "kept",
+        "note": "Call 999 if hard to wake up."
+      },
+      {
+        "category": "negatives",
+        "fact": "Do not give anti-diarrhoea medicines to your child",
+        "status": "kept",
+        "note": "Do not give anti-diarrhoea medicines."
+      },
+      {
+        "category": "negatives",
+        "fact": "No blood tests were needed",
+        "status": "kept",
+        "note": "Blood tests not done and not needed."
+      }
+    ],
+    "added": [
+      {
+        "text": "Lina has a stomach virus (the letter says gastroenteritis/tummy bug, not that it is viral).",
+        "kind": "medical_fact"
+      },
+      {
+        "text": "Paracetamol oral suspension 'is new'.",
+        "kind": "medical_fact"
+      }
+    ],
+    "gold_reviewer": "claude-draft"
+  }
+}

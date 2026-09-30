@@ -1,0 +1,243 @@
+{
+  "job": {
+    "id": "mtsamples__mts_3072__sonnet__en__nv",
+    "part": "mtsamples",
+    "letter_id": "mts_3072",
+    "file": "data/mtsamples/mts_3072.txt",
+    "kind": "faithfulness",
+    "model": "sonnet",
+    "language": "en",
+    "verifier": false,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "sonnet",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": false,
+    "status": "not_verified",
+    "final_text": "## What this letter says\nA specialist saw you. The letter went to your doctor. You have bleeding from your rectum (rectal bleeding). It comes and goes. It does not hurt. You have not lost weight.\n\nYou are often constipated. Your blood pressure is 130/70. Your heart rate is 75. Your breathing rate is 16. Your belly is soft and not tender. You were not in acute distress.\n\nThe specialist wants to rule out some things. These are colon cancer and colon polyps. Both are possible. Hemorrhoids are the most likely cause. This is also only possible. Nothing is confirmed yet.\n\nYou told the specialist about some things you do not have. You have no weight loss. You have a good appetite. You have no nausea, no vomiting, no night sweats, no fevers and no chills. You have no allergies.\n\n## What you need to do\n1. Have a complete colonoscopy. It will be scheduled at Sample Hospital.\n2. Have a blood test called a CBC (complete blood count). It counts blood cells. The letter says it needs to be checked and monitored.\n3. Do not stop your medicines. The letter does not change them.\n\n## Dates and medicines\n- Dates: the letter gives no date for the colonoscopy. It gives no date for the CBC.\n- Cardizem CD: 240 milligrams. Keep taking it. No change. The letter does not say how often you take it.\n- Eye drops: keep using them. No change. The letter does not give the name or dose.\n\nThe letter is not clear about your past health. It lists high blood pressure and glaucoma in one place. It lists high blood pressure and diabetes in another.\n\n## Questions to ask your doctor\n1. When will my colonoscopy be? When will my CBC be?\n2. What is a colonoscopy? What will happen?\n3. What are hemorrhoids and polyps?\n4. How often should I take Cardizem CD?\n\n## When to get urgent help\nThe letter does not list specific warning signs.\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "doctor_copy_to_patient",
+      "purpose": "Specialist letter to the referring doctor after seeing the patient for intermittent rectal bleeding, recommending a colonoscopy and a blood count check.",
+      "findings": [
+        {
+          "statement": "Intermittent rectal bleeding, painless, with no weight loss",
+          "certainty": "confirmed",
+          "quote": "presenting with painless rectal bleeding not associated with any weight loss"
+        },
+        {
+          "statement": "Chronically constipated",
+          "certainty": "confirmed",
+          "quote": "The patient is chronically constipated."
+        },
+        {
+          "statement": "Colon cancer needs to be ruled out",
+          "certainty": "possible",
+          "quote": "Rule out colon cancer."
+        },
+        {
+          "statement": "Colon polyps need to be ruled out",
+          "certainty": "possible",
+          "quote": "Rule out colon polyps."
+        },
+        {
+          "statement": "Hemorrhoids are the most likely diagnosis",
+          "certainty": "possible",
+          "quote": "Rule out hemorrhoids, which is the most likely diagnosis."
+        },
+        {
+          "statement": "Blood pressure 130/70, heart rate 75, respirations 16; abdomen soft and non-tender; no acute distress",
+          "certainty": "confirmed",
+          "quote": "blood pressure is 130/70 with a heart rate of 75 and respirations of 16"
+        }
+      ],
+      "medicines": [
+        {
+          "name": "Cardizem CD",
+          "dose": "240-mg",
+          "how_often": "",
+          "change": "continue",
+          "details": "Listed as a current medicine; the letter does not say how often it is taken and does not change it.",
+          "quote": "The patient takes Cardizem CD 240-mg."
+        },
+        {
+          "name": "Eye drops",
+          "dose": "",
+          "how_often": "",
+          "change": "continue",
+          "details": "Listed as a current medicine; name and dose not given.",
+          "quote": "The patient also takes eye drops."
+        }
+      ],
+      "dates": [],
+      "actions": [
+        {
+          "instruction": "Have a complete colonoscopy, which will be scheduled at Sample Hospital",
+          "quote": "the patient will need to have a complete colonoscopy exam"
+        },
+        {
+          "instruction": "Have a CBC (complete blood count) blood test check and monitor",
+          "quote": "The patient will also need to have a CBC check and monitor."
+        }
+      ],
+      "negatives": [
+        {
+          "instruction": "No weight loss, and good appetite",
+          "quote": "The patient denies any weight loss, does have a good appetite"
+        },
+        {
+          "instruction": "No nausea, vomiting, night sweats, fevers or chills",
+          "quote": "The patient denies any nausea, any vomiting, any night sweats, any fevers or any chills."
+        },
+        {
+          "instruction": "No allergies",
+          "quote": "The patient denies any allergies."
+        }
+      ],
+      "warning_signs": [],
+      "unclear": [
+        "The letter gives no date for the colonoscopy or the CBC.",
+        "The history lists hypertension and glaucoma in one place and hypertension and diabetes in another; the letter is inconsistent.",
+        "How often Cardizem CD is taken is not stated."
+      ]
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\nA specialist saw you. The letter went to your doctor. You have bleeding from your rectum (rectal bleeding). It comes and goes. It does not hurt. You have not lost weight.\n\nYou are often constipated. Your blood pressure is 130/70. Your heart rate is 75. Your breathing rate is 16. Your belly is soft and not tender. You were not in acute distress.\n\nThe specialist wants to rule out some things. These are colon cancer and colon polyps. Both are possible. Hemorrhoids are the most likely cause. This is also only possible. Nothing is confirmed yet.\n\nYou told the specialist about some things you do not have. You have no weight loss. You have a good appetite. You have no nausea, no vomiting, no night sweats, no fevers and no chills. You have no allergies.\n\n## What you need to do\n1. Have a complete colonoscopy. It will be scheduled at Sample Hospital.\n2. Have a blood test called a CBC (complete blood count). It counts blood cells. The letter says it needs to be checked and monitored.\n3. Do not stop your medicines. The letter does not change them.\n\n## Dates and medicines\n- Dates: the letter gives no date for the colonoscopy. It gives no date for the CBC.\n- Cardizem CD: 240 milligrams. Keep taking it. No change. The letter does not say how often you take it.\n- Eye drops: keep using them. No change. The letter does not give the name or dose.\n\nThe letter is not clear about your past health. It lists high blood pressure and glaucoma in one place. It lists high blood pressure and diabetes in another.\n\n## Questions to ask your doctor\n1. When will my colonoscopy be? When will my CBC be?\n2. What is a colonoscopy? What will happen?\n3. What are hemorrhoids and polyps?\n4. How often should I take Cardizem CD?\n\n## When to get urgent help\nThe letter does not list specific warning signs.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 88.8,
+          "reading_ease_target": 70,
+          "grade_level": 2.5,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": null,
+        "blocking_problems": [],
+        "attempt": 1
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 3861,
+        "output_tokens": 1129,
+        "cost_usd": 0.03814,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 12111,
+        "output_tokens": 1597,
+        "cost_usd": 0.06087,
+        "turns": 6
+      }
+    ],
+    "cost_usd": 0.09901,
+    "latency_s": 21.9
+  },
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "diagnoses",
+        "fact": "Intermittent painless bleeding from the back passage (rectal bleeding)",
+        "status": "kept",
+        "note": "Says the rectal bleeding comes and goes and does not hurt."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Chronic constipation",
+        "status": "kept",
+        "note": "'You are often constipated.'"
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Haemorrhoids are the most likely diagnosis",
+        "status": "kept",
+        "note": "Says hemorrhoids are the most likely cause."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Colon cancer and colon polyps need to be ruled out (not diagnosed)",
+        "status": "kept",
+        "note": "Says the specialist wants to rule out colon cancer and polyps, and nothing is confirmed."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "History of high blood pressure, glaucoma and diabetes",
+        "status": "kept",
+        "note": "Lists high blood pressure, glaucoma and diabetes, and points out that the letter is inconsistent."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Smokes about a pack a day for more than 25 years",
+        "status": "dropped",
+        "note": "Smoking history is not mentioned."
+      },
+      {
+        "category": "medicines",
+        "fact": "Cardizem CD 240 mg",
+        "status": "kept",
+        "note": "Cardizem CD 240 milligrams."
+      },
+      {
+        "category": "medicines",
+        "fact": "Eye drops",
+        "status": "kept",
+        "note": "Eye drops are mentioned."
+      },
+      {
+        "category": "actions",
+        "fact": "Needs a complete colonoscopy because of her age",
+        "status": "dropped",
+        "note": "The complete colonoscopy is mentioned, but not the reason ('because of her age'). Marked dropped because that part of the fact is missing."
+      },
+      {
+        "category": "actions",
+        "fact": "Blood count (CBC) to check and monitor",
+        "status": "kept",
+        "note": "CBC to be checked and monitored."
+      },
+      {
+        "category": "actions",
+        "fact": "Colonoscopy to be booked at Sample Hospital; the report will go to the referring doctor",
+        "status": "dropped",
+        "note": "Scheduling at Sample Hospital is kept, but it never says the full report will be sent to the referring doctor. Marked dropped because that part of the fact is missing."
+      },
+      {
+        "category": "negatives",
+        "fact": "No weight loss",
+        "status": "kept",
+        "note": "Says she has not lost weight."
+      },
+      {
+        "category": "negatives",
+        "fact": "No nausea or vomiting",
+        "status": "kept",
+        "note": "Says no nausea and no vomiting."
+      }
+    ],
+    "added": [
+      {
+        "text": "Do not stop your medicines. The letter does not change them.",
+        "kind": "advice"
+      },
+      {
+        "text": "Cardizem CD: Keep taking it. No change.",
+        "kind": "advice"
+      },
+      {
+        "text": "Eye drops: keep using them. No change.",
+        "kind": "advice"
+      }
+    ],
+    "gold_reviewer": "claude-draft"
+  }
+}

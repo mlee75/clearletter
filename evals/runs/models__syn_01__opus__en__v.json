@@ -1,0 +1,162 @@
+{
+  "job": {
+    "id": "models__syn_01__opus__en__v",
+    "part": "models",
+    "letter_id": "syn_01",
+    "file": "data/synthetic/syn_01.txt",
+    "kind": "faithfulness",
+    "model": "opus",
+    "language": "en",
+    "verifier": true,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "opus",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": true,
+    "status": "ok",
+    "final_text": "## What this letter says\n\nThis letter is about an appointment for you. You will have a scan of your heart. The scan uses sound waves to make pictures (echocardiogram). The scan takes about 45 minutes.\n\n## What you need to do\n\n1. Bring a list of all the medicines you take.\n2. Get there 15 minutes before your appointment time.\n3. If you cannot come, call 01632 960 123. Call at least 48 hours before the appointment.\n4. You do not need to stop eating or drinking before the test (fast).\n5. You do not need to stop any of your medicines.\n\n## Dates and medicines\n\n- Tuesday 17 November 2026 at 10:40: your heart scan (echocardiogram).\n- Place: Cardiac Investigations Unit, Level 2, Northbridge General Hospital.\n- The letter does not list any medicines or changes to medicines.\n\n## Questions to ask your doctor\n\n- Why do I need this heart scan?\n- What will happen during the scan?\n- When and how will I get the results?\n\n## When to get urgent help\n\nThe letter does not list specific warning signs.\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "patient",
+      "purpose": "Appointment letter for an echocardiogram (an ultrasound scan of the heart).",
+      "findings": [],
+      "medicines": [],
+      "dates": [
+        {
+          "what": "Echocardiogram at 10:40 in the Cardiac Investigations Unit, Level 2, Northbridge General Hospital",
+          "when": "Tuesday 17 November 2026",
+          "quote": "You have been booked for an echocardiogram on Tuesday 17 November 2026 at 10:40 in the Cardiac Investigations Unit, Level 2."
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Bring a list of all the medicines you take.",
+          "quote": "Please bring a list of all the medicines you take."
+        },
+        {
+          "instruction": "Arrive 15 minutes before your appointment time.",
+          "quote": "Please arrive 15 minutes before your appointment time."
+        },
+        {
+          "instruction": "If you cannot attend, call 01632 960 123 at least 48 hours before the appointment.",
+          "quote": "If you cannot attend, please call 01632 960 123 at least 48 hours before"
+        },
+        {
+          "instruction": "The scan takes about 45 minutes.",
+          "quote": "It takes about 45 minutes."
+        }
+      ],
+      "negatives": [
+        {
+          "instruction": "You do not need to fast (go without food or drink) before this test.",
+          "quote": "You do not need to fast before this test."
+        },
+        {
+          "instruction": "You do not need to stop any of your medicines.",
+          "quote": "You do not need to stop any of your medicines."
+        }
+      ],
+      "warning_signs": [],
+      "unclear": []
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\n\nThis letter is about an appointment for you. You will have a scan of your heart. The scan uses sound waves to make pictures (echocardiogram). The scan takes about 45 minutes.\n\n## What you need to do\n\n1. Bring a list of all the medicines you take.\n2. Get there 15 minutes before your appointment time.\n3. If you cannot come, call 01632 960 123. Call at least 48 hours before the appointment.\n4. You do not need to stop eating or drinking before the test (fast).\n5. You do not need to stop any of your medicines.\n\n## Dates and medicines\n\n- Tuesday 17 November 2026 at 10:40: your heart scan (echocardiogram).\n- Place: Cardiac Investigations Unit, Level 2, Northbridge General Hospital.\n- The letter does not list any medicines or changes to medicines.\n\n## Questions to ask your doctor\n\n- Why do I need this heart scan?\n- What will happen during the scan?\n- When and how will I get the results?\n\n## When to get urgent help\n\nThe letter does not list specific warning signs.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 78.7,
+          "reading_ease_target": 70,
+          "grade_level": 4.7,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [],
+          "summary": "I found no problems: the explanation matches the letter. The date and time (Tuesday 17 November 2026 at 10:40) and the place (Cardiac Investigations Unit, Level 2) are correct. So are the scan length (about 45 minutes), arriving 15 minutes early and the phone number (01632 960 123). The instruction to cancel at least 48 hours before is also correct. Both 'no' statements are kept: the patient does not need to fast and does not need to stop any medicines. Explaining an echo as a scan that uses sound waves is a plain definition of a word in the letter, so it is allowed. The suggested questions do not add any new diagnosis or worry. Leaving out that a cancelled slot goes to another patient is fine because the patient does not need that detail."
+        },
+        "blocking_problems": [],
+        "attempt": 1
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 3142,
+        "output_tokens": 775,
+        "cost_usd": 0.04063,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 6231,
+        "output_tokens": 849,
+        "cost_usd": 0.04485,
+        "turns": 2
+      },
+      {
+        "step": "verify",
+        "input_tokens": 2815,
+        "output_tokens": 413,
+        "cost_usd": 0.03077,
+        "turns": 2
+      }
+    ],
+    "cost_usd": 0.11625,
+    "latency_s": 26.3
+  },
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "dates",
+        "fact": "Echocardiogram on Tuesday 17 November 2026 at 10:40, Cardiac Investigations Unit, Level 2",
+        "status": "kept",
+        "note": "Tuesday 17 November 2026 at 10:40, Cardiac Investigations Unit, Level 2 are all stated."
+      },
+      {
+        "category": "dates",
+        "fact": "The test takes about 45 minutes",
+        "status": "kept",
+        "note": "Says the scan takes about 45 minutes."
+      },
+      {
+        "category": "actions",
+        "fact": "Bring a list of all the medicines you take",
+        "status": "kept",
+        "note": "Says to bring a list of all the medicines you take."
+      },
+      {
+        "category": "actions",
+        "fact": "Arrive 15 minutes before the appointment time",
+        "status": "kept",
+        "note": "Says to get there 15 minutes before the appointment time."
+      },
+      {
+        "category": "actions",
+        "fact": "If you cannot attend, call 01632 960 123 at least 48 hours before",
+        "status": "kept",
+        "note": "Gives the number 01632 960 123 and says to call at least 48 hours before."
+      },
+      {
+        "category": "negatives",
+        "fact": "You do not need to fast before the test",
+        "status": "kept",
+        "note": "Says you do not need to stop eating or drinking (fast) before the test."
+      },
+      {
+        "category": "negatives",
+        "fact": "You do not need to stop any of your medicines",
+        "status": "kept",
+        "note": "Says you do not need to stop any of your medicines."
+      }
+    ],
+    "added": [],
+    "gold_reviewer": "claude-draft"
+  }
+}

@@ -1,0 +1,224 @@
+{
+  "job": {
+    "id": "models__syn_16__opus__en__v",
+    "part": "models",
+    "letter_id": "syn_16",
+    "file": "data/synthetic/syn_16.txt",
+    "kind": "faithfulness",
+    "model": "opus",
+    "language": "en",
+    "verifier": true,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "opus",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": true,
+    "status": "ok",
+    "final_text": "## What this letter says\n\nThis letter is from the Anticoagulation Clinic. It gives your blood test result. It also gives your new warfarin dose.\n\nYou had a blood clotting test (INR) on Monday 5 October 2026. This test shows how long your blood takes to clot. Your result is 4.1. This is too high. The target is 2.0 to 3.0. Your blood is taking too long to clot. So your warfarin dose is going down.\n\n## What you need to do\n\n1. Do not take warfarin tonight, Monday 5 October 2026.\n2. From Tuesday 6 October 2026, take 4 milligrams of warfarin each evening.\n3. To make 4 milligrams, take 2 tablets together. Take one 3 milligram tablet (blue). Add one 1 milligram tablet (brown).\n4. Do not go back to your old dose of 5 milligrams.\n5. Go to your next blood test (INR) on Monday 12 October 2026. It is at the Anticoagulation Clinic.\n6. Bring your yellow warfarin book to the test.\n\n## Dates and medicines\n\n**Dates**\n\n- Monday 5 October 2026: test day. Do not take warfarin this evening.\n- Tuesday 6 October 2026: start your new dose of 4 milligrams each evening.\n- Monday 12 October 2026: next blood test (INR) at the Anticoagulation Clinic.\n\n**Medicines**\n\n- Warfarin, Monday 5 October 2026: take none. Skip this evening's dose.\n- Warfarin, from Tuesday 6 October 2026: 4 milligrams each evening. This is a lower dose.\n- Your old dose was 5 milligrams each evening.\n- 4 milligrams = one 3 milligram tablet (blue) + one 1 milligram tablet (brown).\n\n## Questions to ask your doctor\n\n- What is warfarin for in my case?\n- What does \"anticoagulation\" mean?\n- What should I do if I forget a dose?\n- What time should I come to the clinic on Monday 12 October 2026?\n\n## When to get urgent help\n\nGo to A&E (the hospital emergency department) or call 999 if you have:\n\n- heavy bleeding\n- blood in your urine (pee) or stools (poo)\n- black stools (poo)\n- vomiting (being sick) blood\n- a severe headache\n\nCall the clinic on 01632 960 842 if you have minor bleeding. For example, nosebleeds or bleeding gums.\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "patient",
+      "purpose": "Anticoagulation clinic letter giving your INR result and your new warfarin dose.",
+      "findings": [
+        {
+          "statement": "Your INR today is 4.1, which is too high. The target range is 2.0 to 3.0.",
+          "certainty": "confirmed",
+          "quote": "Your INR today (Monday 5 October 2026) is 4.1. This is too high."
+        },
+        {
+          "statement": "Your blood is taking too long to clot.",
+          "certainty": "confirmed",
+          "quote": "Your blood is taking too long to clot."
+        }
+      ],
+      "medicines": [
+        {
+          "name": "Warfarin",
+          "dose": "none tonight",
+          "how_often": "skip tonight's dose (Monday 5 October 2026)",
+          "change": "skip_dose",
+          "details": "Do not take warfarin on the evening of Monday 5 October 2026.",
+          "quote": "Do NOT take warfarin tonight (Monday 5 October 2026)."
+        },
+        {
+          "name": "Warfarin",
+          "dose": "4 mg",
+          "how_often": "each evening",
+          "change": "decrease",
+          "details": "Starts Tuesday 6 October 2026. Previous dose was 5 mg each evening. 4 mg = one 3 mg tablet (blue) + one 1 mg tablet (brown).",
+          "quote": "From Tuesday 6 October 2026, take 4 mg each evening. (Your previous dose was 5 mg each evening.)"
+        }
+      ],
+      "dates": [
+        {
+          "what": "INR test result day; skip warfarin tonight",
+          "when": "Monday 5 October 2026",
+          "quote": "Do NOT take warfarin tonight (Monday 5 October 2026)."
+        },
+        {
+          "what": "Start new warfarin dose of 4 mg each evening",
+          "when": "Tuesday 6 October 2026",
+          "quote": "From Tuesday 6 October 2026, take 4 mg each evening."
+        },
+        {
+          "what": "Next INR blood test at the Anticoagulation Clinic",
+          "when": "Monday 12 October 2026",
+          "quote": "Your next INR blood test is on Monday 12 October 2026 at the Anticoagulation Clinic."
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Make 4 mg by taking one 3 mg tablet (blue) and one 1 mg tablet (brown).",
+          "quote": "4 mg = one 3 mg tablet (blue) + one 1 mg tablet (brown)."
+        },
+        {
+          "instruction": "Go to your next INR blood test on Monday 12 October 2026 at the Anticoagulation Clinic.",
+          "quote": "Your next INR blood test is on Monday 12 October 2026 at the Anticoagulation Clinic."
+        },
+        {
+          "instruction": "Bring your yellow warfarin book to the test.",
+          "quote": "Please bring your yellow warfarin book."
+        }
+      ],
+      "negatives": [
+        {
+          "instruction": "Do not take warfarin tonight (Monday 5 October 2026).",
+          "quote": "Do NOT take warfarin tonight (Monday 5 October 2026)."
+        },
+        {
+          "instruction": "Do not go back to your old dose of 5 mg. Your new dose is 4 mg each evening.",
+          "quote": "(Your previous dose was 5 mg each evening.)"
+        }
+      ],
+      "warning_signs": [
+        {
+          "instruction": "Go to A&E or call 999 if you have heavy bleeding, blood in your urine or stools, black stools, vomiting blood, or a severe headache.",
+          "quote": "Go to A&E or call 999 if you have any heavy bleeding, blood in your urine or stools, black stools, vomiting blood, or a severe headache."
+        },
+        {
+          "instruction": "Call the clinic on 01632 960 842 if you have minor bleeding, such as nosebleeds or bleeding gums.",
+          "quote": "Contact the clinic on 01632 960 842 if you have minor bleeding, such as nosebleeds or bleeding gums."
+        }
+      ],
+      "unclear": []
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\n\nThis letter is from the Anticoagulation Clinic. It gives your blood test result. It also gives your new warfarin dose.\n\nYou had a blood clotting test (INR) on Monday 5 October 2026. This test shows how long your blood takes to clot. Your result is 4.1. This is too high. The target is 2.0 to 3.0. Your blood is taking too long to clot. So your warfarin dose is going down.\n\n## What you need to do\n\n1. Do not take warfarin tonight, Monday 5 October 2026.\n2. From Tuesday 6 October 2026, take 4 milligrams of warfarin each evening.\n3. To make 4 milligrams, take 2 tablets together. Take one 3 milligram tablet (blue). Add one 1 milligram tablet (brown).\n4. Do not go back to your old dose of 5 milligrams.\n5. Go to your next blood test (INR) on Monday 12 October 2026. It is at the Anticoagulation Clinic.\n6. Bring your yellow warfarin book to the test.\n\n## Dates and medicines\n\n**Dates**\n\n- Monday 5 October 2026: test day. Do not take warfarin this evening.\n- Tuesday 6 October 2026: start your new dose of 4 milligrams each evening.\n- Monday 12 October 2026: next blood test (INR) at the Anticoagulation Clinic.\n\n**Medicines**\n\n- Warfarin, Monday 5 October 2026: take none. Skip this evening's dose.\n- Warfarin, from Tuesday 6 October 2026: 4 milligrams each evening. This is a lower dose.\n- Your old dose was 5 milligrams each evening.\n- 4 milligrams = one 3 milligram tablet (blue) + one 1 milligram tablet (brown).\n\n## Questions to ask your doctor\n\n- What is warfarin for in my case?\n- What does \"anticoagulation\" mean?\n- What should I do if I forget a dose?\n- What time should I come to the clinic on Monday 12 October 2026?\n\n## When to get urgent help\n\nGo to A&E (the hospital emergency department) or call 999 if you have:\n\n- heavy bleeding\n- blood in your urine (pee) or stools (poo)\n- black stools (poo)\n- vomiting (being sick) blood\n- a severe headache\n\nCall the clinic on 01632 960 842 if you have minor bleeding. For example, nosebleeds or bleeding gums.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 76.6,
+          "reading_ease_target": 70,
+          "grade_level": 4.9,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [
+            {
+              "kind": "advice",
+              "severity": "minor",
+              "explanation_says": "Do not go back to your old dose of 5 milligrams.",
+              "letter_says": "From Tuesday 6 October 2026, take 4 mg each evening. (Your previous dose was 5 mg each evening.)",
+              "why": "The letter does not give this as an instruction. It is a fair reading of the new dose, but saying it as a firm rule with no end date could confuse the patient if the clinic changes the dose after the INR test on 12 October."
+            }
+          ],
+          "summary": "The explanation matches the letter. The INR value, target range, skipped dose on 5 October, new 4 mg dose from 6 October, tablet mix, next test date, yellow book, emergency warning signs and clinic phone number are all correct. There is one minor problem: it adds a firm instruction not to go back to the old 5 mg dose, which the letter does not say."
+        },
+        "blocking_problems": [],
+        "attempt": 1
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 3278,
+        "output_tokens": 1426,
+        "cost_usd": 0.03942,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 13605,
+        "output_tokens": 2126,
+        "cost_usd": 0.07695,
+        "turns": 6
+      },
+      {
+        "step": "verify",
+        "input_tokens": 3382,
+        "output_tokens": 552,
+        "cost_usd": 0.0275,
+        "turns": 2
+      }
+    ],
+    "cost_usd": 0.14387,
+    "latency_s": 41.2
+  },
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "diagnoses",
+        "fact": "INR 4.1 today (target 2.0 to 3.0): too high, blood is taking too long to clot",
+        "status": "kept",
+        "note": "INR 4.1, target 2.0 to 3.0, too high, blood taking too long to clot: all stated."
+      },
+      {
+        "category": "medicines",
+        "fact": "Do NOT take warfarin tonight (Monday 5 October 2026)",
+        "status": "kept",
+        "note": "Do not take warfarin tonight, Monday 5 October 2026."
+      },
+      {
+        "category": "medicines",
+        "fact": "From Tuesday 6 October 2026: warfarin 4 mg each evening (previous dose 5 mg)",
+        "status": "kept",
+        "note": "4 mg each evening from Tuesday 6 October 2026; old dose 5 mg each evening."
+      },
+      {
+        "category": "medicines",
+        "fact": "4 mg = one 3 mg tablet (blue) + one 1 mg tablet (brown)",
+        "status": "kept",
+        "note": "One 3 mg blue tablet plus one 1 mg brown tablet."
+      },
+      {
+        "category": "dates",
+        "fact": "Next INR blood test on Monday 12 October 2026 at the Anticoagulation Clinic",
+        "status": "kept",
+        "note": "Next INR test Monday 12 October 2026 at the Anticoagulation Clinic."
+      },
+      {
+        "category": "actions",
+        "fact": "Bring your yellow warfarin book",
+        "status": "kept",
+        "note": "Bring your yellow warfarin book."
+      },
+      {
+        "category": "actions",
+        "fact": "Go to A&E or call 999 for heavy bleeding, blood in urine or stools, black stools, vomiting blood, or a severe headache",
+        "status": "kept",
+        "note": "A&E or 999 for all five listed symptoms."
+      },
+      {
+        "category": "actions",
+        "fact": "Contact the clinic on 01632 960 842 for minor bleeding such as nosebleeds or bleeding gums",
+        "status": "kept",
+        "note": "Call clinic on 01632 960 842 for minor bleeding such as nosebleeds or bleeding gums."
+      }
+    ],
+    "added": [
+      {
+        "text": "Do not go back to your old dose of 5 milligrams.",
+        "kind": "advice"
+      }
+    ],
+    "gold_reviewer": "claude-draft"
+  }
+}

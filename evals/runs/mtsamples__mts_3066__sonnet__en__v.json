@@ -1,0 +1,195 @@
+{
+  "job": {
+    "id": "mtsamples__mts_3066__sonnet__en__v",
+    "part": "mtsamples",
+    "letter_id": "mts_3066",
+    "file": "data/mtsamples/mts_3066.txt",
+    "kind": "faithfulness",
+    "model": "sonnet",
+    "language": "en",
+    "verifier": true,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "sonnet",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": true,
+    "status": "ok",
+    "final_text": "## What this letter says\nThis letter is about a visit to the vision rehabilitation office. You want help with household chores and reading small print.\n\n- You have a history of macular degeneration.\n- You say you had photodynamic therapy (PDT, a light-activated treatment) in the last year.\n- Your small handheld magnifier gives you only limited help.\n- Your distance glasses need a mild change. With the change, you could see 20/70 in the right eye. You could see 20/200 in the left eye.\n- With +4 reading glasses, you could read 0.5M print quite nicely.\n- The doctor thinks you are an excellent candidate for low vision help.\n\n## What you need to do\n1. Come back to the vision rehabilitation office in two weeks. The doctor will then decide which near reading glasses to prescribe.\n2. Use the +4 reading glasses the doctor loaned to you.\n3. Keep doing the fine-detailed reading you started at the visit.\n\n## Dates and medicines\n- Return visit: in two weeks.\n- The date of your visit is not clear in the letter.\n- Medicines: the letter lists no medicines.\n- Glasses: a pair of +4 reading glasses was loaned to you. The letter does not say if you keep them after the return visit.\n\n## Questions to ask your doctor\n- Do I keep the +4 reading glasses, or do I give them back?\n- What does macular degeneration mean for my sight?\n- What does low vision help include?\n- Can you help me with my household chores?\n\n## When to get urgent help\nThe letter does not list specific warning signs.\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "doctor_copy_to_patient",
+      "purpose": "Report from a vision rehabilitation visit for an 87-year-old woman with macular degeneration who wants help with household chores and reading small print.",
+      "findings": [
+        {
+          "statement": "History of macular degeneration.",
+          "certainty": "confirmed",
+          "quote": "a history of macular degeneration"
+        },
+        {
+          "statement": "She reports having photodynamic therapy (PDT) within the last year.",
+          "certainty": "confirmed",
+          "quote": "who admits to having PDT therapy within the last year"
+        },
+        {
+          "statement": "Her small handheld magnifier gives her only limited help.",
+          "certainty": "confirmed",
+          "quote": "which is providing her with only limited help"
+        },
+        {
+          "statement": "Mild change in her distance correction; she could see 20/70 in the right eye and 20/200 in the left eye.",
+          "certainty": "confirmed",
+          "quote": "a mild change in her distance correction, which allowed her the ability to see 20/70 in the right eye and 20/200 in the left eye"
+        },
+        {
+          "statement": "With +4 reading glasses she could read 0.5M print quite nicely.",
+          "certainty": "confirmed",
+          "quote": "With a pair of +4 reading glasses, she was able to read 0.5M print quite nicely"
+        },
+        {
+          "statement": "The doctor thinks she is an excellent candidate for low vision help.",
+          "certainty": "confirmed",
+          "quote": "I think that she is an excellent candidate for low vision help."
+        }
+      ],
+      "medicines": [],
+      "dates": [
+        {
+          "what": "Return visit to the vision rehabilitation office",
+          "when": "in two weeks",
+          "quote": "She will return to our office in a matter of two weeks"
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Return to the office in two weeks so the doctor can decide which near reading glasses to prescribe.",
+          "quote": "She will return to our office in a matter of two weeks and we will make a better determination on what near reading glasses to prescribe for her."
+        },
+        {
+          "instruction": "Use the loaned +4 reading glasses and continue the fine-detailed reading started at the visit.",
+          "quote": "I have loaned her a pair of +4 reading glasses at this time and we have started her with fine-detailed reading."
+        }
+      ],
+      "negatives": [],
+      "warning_signs": [],
+      "unclear": [
+        "The visit date is given as the placeholder 'Month DD, YYYY', so the actual date is not known.",
+        "The patient's name is a placeholder ('Sample Patient').",
+        "The letter does not say whether the +4 reading glasses are only on loan until the return visit or whether she keeps them."
+      ]
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\nThis letter is about a visit to the vision rehabilitation office. You want help with household chores and reading small print.\n\n- You have a history of macular degeneration.\n- You say you had photodynamic therapy (PDT, a light-activated treatment) in the last year.\n- Your small handheld magnifier gives you only limited help.\n- Your distance glasses need a mild change. With the change, you could see 20/70 in the right eye. You could see 20/200 in the left eye.\n- With +4 reading glasses, you could read 0.5M print quite nicely.\n- The doctor thinks you are an excellent candidate for low vision help.\n\n## What you need to do\n1. Come back to the vision rehabilitation office in two weeks. The doctor will then decide which near reading glasses to prescribe.\n2. Use the +4 reading glasses the doctor loaned to you.\n3. Keep doing the fine-detailed reading you started at the visit.\n\n## Dates and medicines\n- Return visit: in two weeks.\n- The date of your visit is not clear in the letter.\n- Medicines: the letter lists no medicines.\n- Glasses: a pair of +4 reading glasses was loaned to you. The letter does not say if you keep them after the return visit.\n\n## Questions to ask your doctor\n- Do I keep the +4 reading glasses, or do I give them back?\n- What does macular degeneration mean for my sight?\n- What does low vision help include?\n- Can you help me with my household chores?\n\n## When to get urgent help\nThe letter does not list specific warning signs.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 77.8,
+          "reading_ease_target": 70,
+          "grade_level": 4.8,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [
+            {
+              "kind": "advice",
+              "severity": "minor",
+              "explanation_says": "Use the +4 reading glasses the doctor loaned to you. Keep doing the fine-detailed reading you started at the visit.",
+              "letter_says": "I have loaned her a pair of +4 reading glasses and we have started her with fine-detailed reading.",
+              "why": "The letter does not tell the patient to keep using the glasses or continue the reading at home. It only says they were loaned and the reading was started."
+            },
+            {
+              "kind": "changed",
+              "severity": "minor",
+              "explanation_says": "You say you had photodynamic therapy (PDT, a light-activated treatment) in the last year.",
+              "letter_says": "who admits to having PDT therapy within the last year",
+              "why": "The letter does not spell out PDT. The expansion is a general definition, which is allowed, so this is only a minor wording difference."
+            }
+          ],
+          "summary": "The explanation is largely faithful. The visit date, the two-week return, the +4 glasses, the visual acuities and the 0.5M print are all correct. The only issue is a minor added instruction to keep using the loaned glasses and to keep doing the reading, which the letter does not state."
+        },
+        "blocking_problems": [],
+        "attempt": 1
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 3231,
+        "output_tokens": 994,
+        "cost_usd": 0.0304,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 11272,
+        "output_tokens": 1365,
+        "cost_usd": 0.05302,
+        "turns": 5
+      },
+      {
+        "step": "verify",
+        "input_tokens": 3082,
+        "output_tokens": 437,
+        "cost_usd": 0.0228,
+        "turns": 2
+      }
+    ],
+    "cost_usd": 0.10623,
+    "latency_s": 23.9
+  },
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "diagnoses",
+        "fact": "Macular degeneration; photodynamic therapy (PDT) within the last year",
+        "status": "kept",
+        "note": "Says she has a history of macular degeneration and reports PDT in the last year."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "With a small change to distance glasses: 20/70 right eye, 20/200 left eye",
+        "status": "kept",
+        "note": "Mild change to distance glasses; 20/70 right eye, 20/200 left eye."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "With +4 reading glasses she could read 0.5M (small) print",
+        "status": "kept",
+        "note": "Could read 0.5M print with +4 reading glasses."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Excellent candidate for low vision help",
+        "status": "kept",
+        "note": "Says the doctor thinks she is an excellent candidate for low vision help."
+      },
+      {
+        "category": "dates",
+        "fact": "Return in two weeks to decide which reading glasses to prescribe",
+        "status": "kept",
+        "note": "Return in two weeks, when the doctor will decide which near reading glasses to prescribe."
+      },
+      {
+        "category": "actions",
+        "fact": "Lent a pair of +4 reading glasses",
+        "status": "kept",
+        "note": "A pair of +4 reading glasses was loaned to her."
+      },
+      {
+        "category": "actions",
+        "fact": "Started fine-detailed reading practice",
+        "status": "kept",
+        "note": "Fine-detailed reading was started at the visit."
+      }
+    ],
+    "added": [],
+    "gold_reviewer": "claude-draft"
+  }
+}

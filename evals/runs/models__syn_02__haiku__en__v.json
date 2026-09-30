@@ -1,0 +1,205 @@
+{
+  "job": {
+    "id": "models__syn_02__haiku__en__v",
+    "part": "models",
+    "letter_id": "syn_02",
+    "file": "data/synthetic/syn_02.txt",
+    "kind": "faithfulness",
+    "model": "haiku",
+    "language": "en",
+    "verifier": true,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "haiku",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": true,
+    "status": "fallback",
+    "final_text": "**We could not explain this letter safely. Please ask your doctor, nurse or pharmacist to explain it to you.**\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "patient",
+      "purpose": "Colonoscopy appointment on 3 December 2026 with pre-procedure preparation instructions",
+      "findings": [],
+      "medicines": [
+        {
+          "name": "Ferrous sulphate (iron tablets)",
+          "dose": "not stated in letter",
+          "how_often": "not stated in letter",
+          "change": "stop",
+          "details": "Stop 7 days before the colonoscopy appointment",
+          "quote": "Stop taking your iron tablets (ferrous sulphate) 7 days before the test."
+        },
+        {
+          "name": "Moviprep",
+          "dose": "as per enclosed leaflet",
+          "how_often": "as per enclosed leaflet",
+          "change": "start",
+          "details": "Bowel preparation for colonoscopy",
+          "quote": "Take the bowel preparation (Moviprep) as described in the enclosed leaflet."
+        }
+      ],
+      "dates": [
+        {
+          "what": "Colonoscopy appointment",
+          "when": "3 December 2026 at 08:30",
+          "quote": "Your colonoscopy is booked for 03/12/2026 at 08:30."
+        },
+        {
+          "what": "Stop eating solid food, clear fluids only",
+          "when": "from 2 December 2026 at 12:00",
+          "quote": "The day before the test, eat nothing solid after 12:00 (midday). You can drink clear fluids only."
+        },
+        {
+          "what": "Nil by mouth (NBM) except small sips of water",
+          "when": "from 3 December 2026 at 06:30",
+          "quote": "Nil by mouth (NBM) from 06:30 on the day of the test, except small sips of water."
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Continue all your other medicines as normal",
+          "quote": "Continue all your other medicines as normal."
+        },
+        {
+          "instruction": "Report to the Endoscopy Unit, Ground Floor",
+          "quote": "Please report to the Endoscopy Unit, Ground Floor."
+        },
+        {
+          "instruction": "If you have sedation, arrange for an adult to collect you and stay with you for 24 hours",
+          "quote": "If you have sedation, an adult must collect you and stay with you for 24 hours."
+        }
+      ],
+      "negatives": [
+        {
+          "instruction": "You must not drive for 24 hours after sedation",
+          "quote": "You must not drive for 24 hours after sedation."
+        }
+      ],
+      "warning_signs": [],
+      "unclear": []
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\nYour doctor has scheduled a colonoscopy (a procedure to look inside your bowel) for you. This letter tells you how to prepare. You need to take a bowel-cleaning medicine called Moviprep. You need to stop taking your iron tablets. You also need to drink only clear fluids the day before the test, and not eat or drink the morning of the test.\n\n## What you need to do\n1. Stop taking your iron tablets (ferrous sulphate) 7 days before your colonoscopy appointment.\n2. Take the bowel preparation medicine (Moviprep) as described in the leaflet that came with this letter.\n3. On 2 December 2026, eat nothing solid after 12:00 (midday). You can drink clear fluids only.\n4. On 3 December 2026, do not eat or drink anything from 06:30 onwards, except small sips of water.\n5. Continue taking all your other medicines as normal.\n6. Go to the Endoscopy Unit on the Ground Floor.\n7. If you are having sedation, ask an adult to collect you and stay with you for 24 hours.\n8. Do not drive for 24 hours after sedation.\n\n## Dates and medicines\n**Colonoscopy appointment:** 3 December 2026 at 08:30\n\n**Iron tablets (ferrous sulphate):** Stop taking them 7 days before your appointment.\n\n**Moviprep (bowel preparation):** Take it as described in the enclosed leaflet.\n\n**Food and drink schedule:**\n- From 12:00 on 2 December 2026: Stop eating solid food. Drink clear fluids only.\n- From 06:30 on 3 December 2026: No food or drink except small sips of water.\n\n## Questions to ask your doctor\n1. What time should I stop taking my iron tablets?\n2. What counts as a \"clear fluid\"?\n3. Will I need sedation for the colonoscopy?\n4. What should I do if I have a medical problem the day of my appointment?\n\n## When to get urgent help\nThe letter does not list specific warning signs.",
+        "missing_headings": [],
+        "unknown_numbers": [
+          "2"
+        ],
+        "readability": {
+          "language": "en",
+          "reading_ease": 73.8,
+          "reading_ease_target": 70,
+          "grade_level": 5.9,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [
+            {
+              "kind": "changed",
+              "severity": "major",
+              "explanation_says": "If you are having sedation, ask an adult to collect you and stay with you for 24 hours.",
+              "letter_says": "If you have sedation, an adult must collect you and stay with you for 24 hours.",
+              "why": "The change from 'must collect' (requirement) to 'ask to collect' (request) weakens this from a mandatory condition to an optional action. This could lead the patient to think they don't have to arrange collection or could opt out, when the letter makes clear it is required if they receive sedation."
+            },
+            {
+              "kind": "added",
+              "severity": "minor",
+              "explanation_says": "Questions section includes: 'What should I do if I have a medical problem the day of my appointment?'",
+              "letter_says": "The letter does not mention medical problems or complications.",
+              "why": "This question introduces a risk/worry scenario (having a medical problem) that is not discussed anywhere in the letter. The letter covers preparation and sedation safety, but does not mention potential medical emergencies or complications."
+            },
+            {
+              "kind": "dropped",
+              "severity": "minor",
+              "explanation_says": "No mention of how to change the appointment or contact details provided.",
+              "letter_says": "To change your appointment call 01632 960 214.",
+              "why": "The letter provides a phone number for rescheduling, but the explanation omits this actionable information entirely. A patient who needs to reschedule would have no guidance on how to do so."
+            }
+          ],
+          "summary": "Three problems found. Most significantly, the explanation weakens a mandatory safety requirement (arranging adult collection after sedation) by changing 'must' to 'ask', which could affect patient behavior. Additionally, a question suggests a medical complication scenario not mentioned in the letter, and the phone number for rescheduling is omitted."
+        },
+        "blocking_problems": [
+          "The number 2 is not in the letter",
+          "[changed] The change from 'must collect' (requirement) to 'ask to collect' (request) weakens this from a mandatory condition to an optional action. This could lead the patient to think they don't have to arrange collection or could opt out, when the letter makes clear it is required if they receive sedation. (explanation: 'If you are having sedation, ask an adult to collect you and stay with you for 24 hours.'; letter: 'If you have sedation, an adult must collect you and stay with you for 24 hours.')"
+        ],
+        "attempt": 1
+      },
+      {
+        "explanation": "## What this letter says\nYour doctor has scheduled a colonoscopy (a procedure to look inside your bowel) for you. This letter tells you how to prepare. You need to take a bowel-cleaning medicine called Moviprep. You need to stop taking your iron tablets. You also need to drink only clear fluids the day before the test, and not eat or drink the morning of the test.\n\n## What you need to do\n1. Stop taking your iron tablets (ferrous sulphate) 7 days before your colonoscopy appointment.\n2. Take the bowel preparation medicine (Moviprep) as described in the leaflet that came with this letter.\n3. The day before your colonoscopy, eat nothing solid after 12:00 (midday). You can drink clear fluids only.\n4. On 3 December 2026, do not eat or drink anything from 06:30 onwards, except small sips of water.\n5. Continue taking all your other medicines as normal.\n6. Go to the Endoscopy Unit on the Ground Floor.\n7. If you have sedation, an adult must collect you and stay with you for 24 hours.\n8. You must not drive for 24 hours after sedation.\n\n## Dates and medicines\n**Colonoscopy appointment:** 3 December 2026 at 08:30\n\n**Iron tablets (ferrous sulphate):** Stop taking them 7 days before your appointment.\n\n**Moviprep (bowel preparation):** Take it as described in the enclosed leaflet.\n\n**Food and drink schedule:**\n- The day before your colonoscopy: Stop eating solid food after 12:00 (midday). Drink clear fluids only.\n- From 06:30 on 3 December 2026: No food or drink except small sips of water.\n\n## Questions to ask your doctor\n1. What time should I stop taking my iron tablets?\n2. What counts as a \"clear fluid\"?\n3. Will I need sedation for the colonoscopy?\n4. What should I do if I have a medical problem the day of my appointment?\n\n## When to get urgent help\nThe letter does not list specific warning signs.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 73.7,
+          "reading_ease_target": 70,
+          "grade_level": 6.0,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [
+            {
+              "kind": "dropped",
+              "severity": "major",
+              "explanation_says": "The phone number to change the appointment is not mentioned in any section of the explanation.",
+              "letter_says": "To change your appointment call 01632 960 214.",
+              "why": "The patient needs to know how to reschedule if necessary. This is explicit practical information in the letter that should be communicated in the explanation."
+            }
+          ],
+          "summary": "One major problem found: the explanation omits the phone number (01632 960 214) to change the appointment, which is essential practical information explicitly provided in the letter. All other content accurately reflects the letter's instructions on colonoscopy preparation, fasting schedules, medication management, and sedation guidance."
+        },
+        "blocking_problems": [
+          "[dropped] The patient needs to know how to reschedule if necessary. This is explicit practical information in the letter that should be communicated in the explanation. (explanation: 'The phone number to change the appointment is not mentioned in any section of the explanation.'; letter: 'To change your appointment call 01632 960 214.')"
+        ],
+        "attempt": 2
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 2771,
+        "output_tokens": 7311,
+        "cost_usd": 0.03933,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 7054,
+        "output_tokens": 1995,
+        "cost_usd": 0.02131,
+        "turns": 2
+      },
+      {
+        "step": "verify",
+        "input_tokens": 13727,
+        "output_tokens": 8632,
+        "cost_usd": 0.06782,
+        "turns": 3
+      },
+      {
+        "step": "explain",
+        "input_tokens": 10139,
+        "output_tokens": 3762,
+        "cost_usd": 0.03563,
+        "turns": 2
+      },
+      {
+        "step": "verify",
+        "input_tokens": 11844,
+        "output_tokens": 6443,
+        "cost_usd": 0.05311,
+        "turns": 3
+      }
+    ],
+    "cost_usd": 0.21719,
+    "latency_s": 276.2
+  },
+  "judgement": {
+    "fallback": true
+  }
+}

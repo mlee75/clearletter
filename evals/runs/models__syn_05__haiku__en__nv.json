@@ -1,0 +1,175 @@
+{
+  "job": {
+    "id": "models__syn_05__haiku__en__nv",
+    "part": "models",
+    "letter_id": "syn_05",
+    "file": "data/synthetic/syn_05.txt",
+    "kind": "faithfulness",
+    "model": "haiku",
+    "language": "en",
+    "verifier": false,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "haiku",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": false,
+    "status": "not_verified",
+    "final_text": "## What this letter says\nThe clinic changed when Yusuf's appointment is. His old appointment on Monday 9 November 2026 is cancelled. His new appointment is Monday 23 November 2026 at 09:15.\n\nYusuf has asthma. Keep giving him his brown preventer inhaler (beclometasone) every day, even when he feels well.\n\n## What you need to do\n1. Note the new date and time: Monday 23 November 2026 at 09:15.\n2. Bring Yusuf's blue reliever inhaler (salbutamol).\n3. Bring Yusuf's brown preventer inhaler (beclometasone).\n4. Bring his spacer.\n5. Bring his red book if you have it.\n6. If this time does not work for you, call 01632 960 588.\n\n## Dates and medicines\n**Appointment changed:**\n- Old appointment (cancelled): Monday 9 November 2026\n- New appointment: Monday 23 November 2026 at 09:15\n\n**Brown preventer inhaler (beclometasone):**\n- How often: Every day\n- Keep giving this medicine\n- Keep giving it even when Yusuf is well\n\n**Blue reliever inhaler (salbutamol):**\n- Bring this to the appointment\n\n## Questions to ask your doctor\n1. What do I do if this time does not work?\n2. Will you check how Yusuf uses his inhalers?\n3. Is Yusuf's asthma getting better?\n\n## When to get urgent help\nThe letter does not list specific warning signs.\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "parent_or_carer",
+      "purpose": "To notify of appointment change for asthma review and provide instructions for attending",
+      "findings": [
+        {
+          "statement": "Yusuf has asthma",
+          "certainty": "confirmed",
+          "quote": "Yusuf's asthma review appointment"
+        }
+      ],
+      "medicines": [
+        {
+          "name": "brown preventer inhaler (beclometasone)",
+          "dose": "not specified",
+          "how_often": "every day",
+          "change": "continue",
+          "details": "even when he is well",
+          "quote": "Please keep giving Yusuf his brown preventer inhaler every day, even when he is well."
+        }
+      ],
+      "dates": [
+        {
+          "what": "Cancelled asthma review appointment",
+          "when": "Monday 9 November 2026",
+          "quote": "Yusuf's asthma review appointment on Monday 9 November 2026 has been cancelled"
+        },
+        {
+          "what": "New asthma review appointment",
+          "when": "Monday 23 November 2026 at 09:15",
+          "quote": "His NEW appointment is on Monday 23 November 2026 at 09:15"
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Bring all of Yusuf's inhalers (blue reliever salbutamol and brown preventer beclometasone)",
+          "quote": "All of Yusuf's inhalers, including his blue reliever inhaler (salbutamol) and his brown preventer inhaler (beclometasone)"
+        },
+        {
+          "instruction": "Bring his spacer",
+          "quote": "His spacer"
+        },
+        {
+          "instruction": "Bring his personal child health record (red book) if you have it",
+          "quote": "His personal child health record (red book), if you have it"
+        },
+        {
+          "instruction": "If the new appointment time is not suitable, call 01632 960 588",
+          "quote": "If this new time is not suitable, call 01632 960 588."
+        }
+      ],
+      "negatives": [],
+      "warning_signs": [],
+      "unclear": []
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\nThe clinic changed when Yusuf's appointment is. His old appointment on Monday 9 November 2026 is cancelled. His new appointment is Monday 23 November 2026 at 09:15.\n\nYusuf has asthma. Keep giving him his brown preventer inhaler (beclometasone) every day, even when he feels well.\n\n## What you need to do\n1. Note the new date and time: Monday 23 November 2026 at 09:15.\n2. Bring Yusuf's blue reliever inhaler (salbutamol).\n3. Bring Yusuf's brown preventer inhaler (beclometasone).\n4. Bring his spacer.\n5. Bring his red book if you have it.\n6. If this time does not work for you, call 01632 960 588.\n\n## Dates and medicines\n**Appointment changed:**\n- Old appointment (cancelled): Monday 9 November 2026\n- New appointment: Monday 23 November 2026 at 09:15\n\n**Brown preventer inhaler (beclometasone):**\n- How often: Every day\n- Keep giving this medicine\n- Keep giving it even when Yusuf is well\n\n**Blue reliever inhaler (salbutamol):**\n- Bring this to the appointment\n\n## Questions to ask your doctor\n1. What do I do if this time does not work?\n2. Will you check how Yusuf uses his inhalers?\n3. Is Yusuf's asthma getting better?\n\n## When to get urgent help\nThe letter does not list specific warning signs.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 73.5,
+          "reading_ease_target": 70,
+          "grade_level": 5.9,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": null,
+        "blocking_problems": [],
+        "attempt": 1
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 2748,
+        "output_tokens": 7789,
+        "cost_usd": 0.04169,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 13984,
+        "output_tokens": 3836,
+        "cost_usd": 0.03484,
+        "turns": 3
+      }
+    ],
+    "cost_usd": 0.07653,
+    "latency_s": 111.2
+  },
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "diagnoses",
+        "fact": "Asthma review for Yusuf (age 7)",
+        "status": "dropped",
+        "note": "Says 'Yusuf has asthma' but never says the appointment is an asthma review, and leaves out his age (7)."
+      },
+      {
+        "category": "medicines",
+        "fact": "Blue reliever inhaler: salbutamol",
+        "status": "kept",
+        "note": "Blue reliever inhaler (salbutamol) is named."
+      },
+      {
+        "category": "medicines",
+        "fact": "Brown preventer inhaler: beclometasone, keep giving it every day even when he is well",
+        "status": "kept",
+        "note": "Brown preventer inhaler (beclometasone), every day, even when he is well."
+      },
+      {
+        "category": "dates",
+        "fact": "OLD appointment on Monday 9 November 2026 is cancelled",
+        "status": "kept",
+        "note": "Old appointment on Monday 9 November 2026 is cancelled."
+      },
+      {
+        "category": "dates",
+        "fact": "NEW appointment on Monday 23 November 2026 at 09:15 with the Paediatric Asthma Nurse, Children's Outpatients, Blue Zone",
+        "status": "dropped",
+        "note": "Date and time (Monday 23 November 2026, 09:15) are right, but it leaves out the Paediatric Asthma Nurse and the place (Children's Outpatients, Blue Zone)."
+      },
+      {
+        "category": "actions",
+        "fact": "Bring all of Yusuf's inhalers",
+        "status": "kept",
+        "note": "Lists both inhalers named in the letter (blue and brown) to bring. Doesn't say 'all' inhalers, but in effect covers it."
+      },
+      {
+        "category": "actions",
+        "fact": "Bring his spacer",
+        "status": "kept",
+        "note": "Bring his spacer."
+      },
+      {
+        "category": "actions",
+        "fact": "Bring his red book (personal child health record) if you have it",
+        "status": "kept",
+        "note": "Bring his red book if you have it."
+      },
+      {
+        "category": "actions",
+        "fact": "If the new time is not suitable, call 01632 960 588",
+        "status": "kept",
+        "note": "If the time does not work, call 01632 960 588."
+      }
+    ],
+    "added": [],
+    "gold_reviewer": "claude-draft"
+  }
+}
