@@ -1,0 +1,230 @@
+{
+  "job": {
+    "id": "languages__syn_11__sonnet__fr__v",
+    "part": "languages",
+    "letter_id": "syn_11",
+    "file": "data/synthetic/syn_11.txt",
+    "kind": "faithfulness",
+    "model": "sonnet",
+    "language": "fr",
+    "verifier": true,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "sonnet",
+    "backend": "claude-code",
+    "language": "fr",
+    "country": "uk",
+    "use_verifier": true,
+    "status": "ok",
+    "final_text": "## Ce que dit cette lettre\nLe médecin a regardé vos résultats de prises de sang.\nVotre numération sanguine (FBC) est normale.\nVotre fonction des reins (U&E) est normale.\nVotre fonction du foie (LFT) est normale.\nVotre fonction de la thyroïde (TFT) est normale.\nVotre vitamine D est à 38 nmol/L. C'est un peu bas (insuffisant).\nAucun autre examen n'est nécessaire.\n\n## Ce que vous devez faire\n1. Le cabinet vous conseille d'acheter de la vitamine D3 : 1 000 unités (25 microgrammes).\n2. Prenez 1 comprimé par jour.\n3. Vous pouvez l'acheter en pharmacie ou au supermarché.\n4. Vous n'avez pas besoin d'ordonnance.\n5. Vous n'avez pas besoin de prendre rendez-vous.\n6. Si vous avez des questions, appelez le cabinet au 01632 960 610.\n\n## Dates et médicaments\n- Prises de sang faites le 22 septembre 2026.\n- Vitamine D3 : 1 000 unités (25 microgrammes), 1 comprimé par jour.\n\n## Questions à poser à votre médecin\n- Pendant combien de temps dois-je prendre la vitamine D3 ?\n- Quelle marque de vitamine D3 dois-je choisir ?\n- Mon taux de vitamine D sera-t-il revérifié ?\n\n## Quand obtenir de l'aide en urgence\nLa lettre ne donne pas de signes d'alerte particuliers.\n\nSi vous êtes inquiet et que ce n'est pas une urgence, appelez le NHS 111. En cas d'urgence, appelez le 999.\n\n---\n*Cette explication a été faite par un programme informatique pour vous aider à lire votre lettre. Elle peut contenir des erreurs. Elle ne remplace pas votre médecin, votre infirmier ou votre pharmacien. Suivez toujours la lettre et posez-leur vos questions si quelque chose n'est pas clair.*\n",
+    "facts": {
+      "reader": "patient",
+      "purpose": "To tell the patient her blood test results are normal apart from a slightly low vitamin D, and to recommend buying a vitamin D3 supplement.",
+      "findings": [
+        {
+          "statement": "Full blood count (FBC) is normal",
+          "certainty": "stated",
+          "quote": "Full blood count (FBC): normal"
+        },
+        {
+          "statement": "Kidney function (U&E) is normal",
+          "certainty": "stated",
+          "quote": "Kidney function (U&E): normal"
+        },
+        {
+          "statement": "Liver function (LFT) is normal",
+          "certainty": "stated",
+          "quote": "Liver function (LFT): normal"
+        },
+        {
+          "statement": "Thyroid function (TFT) is normal",
+          "certainty": "stated",
+          "quote": "Thyroid function (TFT): normal"
+        },
+        {
+          "statement": "Vitamin D is 38 nmol/L, which is slightly low (insufficient)",
+          "certainty": "stated",
+          "quote": "Vitamin D: 38 nmol/L. This is slightly low (insufficient)."
+        },
+        {
+          "statement": "The doctor has reviewed the results",
+          "certainty": "stated",
+          "quote": "The doctor has reviewed these results."
+        }
+      ],
+      "medicines": [
+        {
+          "name": "vitamin D3",
+          "dose": "1,000 units (25 micrograms)",
+          "how_often": "one tablet daily",
+          "change": "not_stated",
+          "details": "Recommended that you buy it yourself from a pharmacy or supermarket. No prescription needed.",
+          "quote": "we recommend that you buy vitamin D3 1,000 units (25 micrograms) and take one tablet daily"
+        }
+      ],
+      "dates": [
+        {
+          "what": "Blood tests taken",
+          "when": "22 September 2026",
+          "quote": "taken on 22/09/2026"
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Buy vitamin D3 1,000 units (25 micrograms) and take one tablet daily. You can buy it from a pharmacy or supermarket.",
+          "quote": "we recommend that you buy vitamin D3 1,000 units (25 micrograms) and take one tablet daily"
+        },
+        {
+          "instruction": "If you have any questions, call the surgery on 01632 960 610.",
+          "quote": "If you have any questions, please call the surgery on 01632 960 610."
+        }
+      ],
+      "negatives": [
+        {
+          "instruction": "No further tests are needed.",
+          "quote": "No further tests are needed."
+        },
+        {
+          "instruction": "You do not need a prescription for the vitamin D.",
+          "quote": "You do not need a prescription."
+        },
+        {
+          "instruction": "You do not need to make an appointment.",
+          "quote": "You do not need to make an appointment."
+        }
+      ],
+      "warning_signs": [],
+      "unclear": []
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## Ce que dit cette lettre\nLe médecin a regardé vos résultats de prises de sang.\nVotre numération sanguine (FBC) est normale.\nVotre fonction des reins (U&E) est normale.\nVotre fonction du foie (LFT) est normale.\nVotre fonction de la thyroïde (TFT) est normale.\nVotre vitamine D est à 38 nmol/L. C'est un peu bas (insuffisant).\nAucun autre examen n'est nécessaire.\n\n## Ce que vous devez faire\n1. Le cabinet vous conseille d'acheter de la vitamine D3 : 1 000 unités (25 microgrammes).\n2. Prenez 1 comprimé par jour.\n3. Vous pouvez l'acheter en pharmacie ou au supermarché.\n4. Vous n'avez pas besoin d'ordonnance.\n5. Vous n'avez pas besoin de prendre rendez-vous.\n6. Si vous avez des questions, appelez le cabinet au 01632 960 610.\n\n## Dates et médicaments\n- Prises de sang faites le 22 septembre 2026.\n- Vitamine D3 : 1 000 unités (25 microgrammes), 1 comprimé par jour.\n\n## Questions à poser à votre médecin\n- Pendant combien de temps dois-je prendre la vitamine D3 ?\n- Quelle marque de vitamine D3 dois-je choisir ?\n- Mon taux de vitamine D sera-t-il revérifié ?\n\n## Quand obtenir de l'aide en urgence\nLa lettre ne donne pas de signes d'alerte particuliers.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "fr",
+          "reading_ease": 86.3,
+          "reading_ease_target": 70,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [
+            {
+              "kind": "advice",
+              "severity": "minor",
+              "explanation_says": "Prenez 1 comprimé par jour. (as an imperative step under 'what you must do'; also 'Vous pouvez l'acheter')",
+              "letter_says": "We recommend that you buy vitamin D3 1,000 units and take one tablet daily.",
+              "why": "The letter recommends; the explanation's imperative is close to a recommendation and matches the letter's meaning. Wording difference only.",
+              "real_difference": false
+            }
+          ],
+          "summary": "The explanation matches the letter. The test results, the dose (1,000 units / 25 micrograms, one tablet daily), the date (22 September 2026), the no-prescription and no-appointment statements, and the phone number are all correct. The suggested questions are acceptable and add no new risks. The only item is a wording difference (\"Prenez\" versus \"we recommend\"), which does not change the meaning."
+        },
+        "blocking_problems": [],
+        "attempt": 1
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 3259,
+        "output_tokens": 1018,
+        "cost_usd": 0.01218,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 12261,
+        "output_tokens": 1425,
+        "cost_usd": 0.02851,
+        "turns": 6
+      },
+      {
+        "step": "verify",
+        "input_tokens": 3205,
+        "output_tokens": 359,
+        "cost_usd": 0.01062,
+        "turns": 2
+      }
+    ],
+    "cost_usd": 0.05131,
+    "latency_s": 26.2
+  },
+  "back_translation": "## What this letter says\nThe doctor has looked at your blood test results.\nYour blood count (FBC) is normal.\nYour kidney function (U&E) is normal.\nYour liver function (LFT) is normal.\nYour thyroid function (TFT) is normal.\nYour vitamin D is at 38 nmol/L. This is a little low (insufficient).\nNo other tests are needed.\n\n## What you need to do\n1. The practice advises you to buy vitamin D3: 1,000 units (25 micrograms).\n2. Take 1 tablet per day.\n3. You can buy it at a pharmacy or at the supermarket.\n4. You do not need a prescription.\n5. You do not need to make an appointment.\n6. If you have any questions, call the practice on 01632 960 610.\n\n## Dates and medicines\n- Blood tests done on 22 September 2026.\n- Vitamin D3: 1,000 units (25 micrograms), 1 tablet per day.\n\n## Questions to ask your doctor\n- For how long should I take the vitamin D3?\n- Which brand of vitamin D3 should I choose?\n- Will my vitamin D level be checked again?\n\n## When to get help urgently\nThe letter does not give any particular warning signs.",
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "diagnoses",
+        "fact": "Vitamin D slightly low: 38 nmol/L (insufficient)",
+        "status": "kept",
+        "note": "38 nmol/L, a little low (insufficient)"
+      },
+      {
+        "category": "medicines",
+        "fact": "Buy vitamin D3 1,000 units (25 micrograms) and take one tablet daily",
+        "status": "kept",
+        "note": "Vitamin D3 1,000 units (25 micrograms), 1 tablet per day"
+      },
+      {
+        "category": "dates",
+        "fact": "Blood tests taken on 22 September 2026",
+        "status": "kept",
+        "note": "22 September 2026"
+      },
+      {
+        "category": "actions",
+        "fact": "Call the surgery on 01632 960 610 with any questions",
+        "status": "kept",
+        "note": "Call the practice on 01632 960 610"
+      },
+      {
+        "category": "negatives",
+        "fact": "Full blood count normal",
+        "status": "kept",
+        "note": "Blood count normal"
+      },
+      {
+        "category": "negatives",
+        "fact": "Kidney function normal",
+        "status": "kept",
+        "note": "Kidney function normal"
+      },
+      {
+        "category": "negatives",
+        "fact": "Liver function normal",
+        "status": "kept",
+        "note": "Liver function normal"
+      },
+      {
+        "category": "negatives",
+        "fact": "Thyroid function normal",
+        "status": "kept",
+        "note": "Thyroid function normal"
+      },
+      {
+        "category": "negatives",
+        "fact": "No further tests are needed",
+        "status": "kept",
+        "note": "No other tests are needed"
+      },
+      {
+        "category": "negatives",
+        "fact": "No appointment is needed",
+        "status": "kept",
+        "note": "No appointment needed"
+      },
+      {
+        "category": "negatives",
+        "fact": "No prescription is needed for the vitamin D",
+        "status": "kept",
+        "note": "No prescription needed"
+      }
+    ],
+    "added": [],
+    "gold_reviewer": "claude-draft"
+  }
+}

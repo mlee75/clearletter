@@ -1,0 +1,247 @@
+{
+  "job": {
+    "id": "mtsamples__mts_3909__sonnet__en__nv",
+    "part": "mtsamples",
+    "letter_id": "mts_3909",
+    "file": "data/mtsamples/mts_3909.txt",
+    "kind": "faithfulness",
+    "model": "sonnet",
+    "language": "en",
+    "verifier": false,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "sonnet",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": false,
+    "status": "not_verified",
+    "final_text": "## What this letter says\nYour son is 14 months old. He was in hospital for Kawasaki disease. The letter says the disease is resolving.\nHe was treated with high dose aspirin and IVIG. His fever came back within 12 hours of the first IVIG. The IVIG was given again. After the second IVIG, he had no more fever.\nToday his fever and rash have completely gone. He has no conjunctivitis (red eyes). He has no redness of the mucous membranes. He is more calm and quiet. He is eating and drinking well.\nHis echocardiogram (heart scan) was negative.\n\n## What you need to do\n1. Give the medicines listed below.\n2. If he gets any rash or any fever, go to his primary care doctor as soon as possible.\n3. Do not give any vaccine for less than 11 months because of the IVIG. This includes all live virus vaccines.\n4. He can be as active as he wants. He can eat and drink as he wants.\n\n## Dates and medicines\n- His primary doctor will see him in 2 to 3 days.\n- Cardiology (heart doctor) will do a follow-up echo in 4 to 6 weeks.\n\nMedicines:\n- Aspirin, high dose: 340 milligrams every 6 hours for 1 day.\n- Then aspirin, low dose: 40 milligrams once a day for 14 days.\n- Prevacid: 15 milligrams by mouth once a day. It is to protect his stomach and bowel (GI) from the aspirin. The letter does not say how long he takes it.\n\n## Questions to ask your doctor\n- What does IVIG mean?\n- What does the echocardiogram show, and what will the next one check?\n- How long should he take Prevacid?\n- When does the 11 months for vaccines start?\n\n## When to get urgent help\n- Any rash or any fever: go to his primary care doctor as soon as possible.\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "parent_or_carer",
+      "purpose": "Discharge summary for a 14-month-old boy treated in hospital for Kawasaki disease, with medicines and follow-up plans.",
+      "findings": [
+        {
+          "statement": "Discharge diagnosis: Kawasaki disease, resolving.",
+          "certainty": "stated",
+          "quote": "Kawasaki disease, resolving."
+        },
+        {
+          "statement": "Echocardiogram was negative.",
+          "certainty": "stated",
+          "quote": "Echocardiogram was also done, which was negative."
+        },
+        {
+          "statement": "He was treated with high dose aspirin and IVIG; fever returned within 12 hours of the first IVIG, IVIG was repeated, and after the second IVIG he had no more fever.",
+          "certainty": "stated",
+          "quote": "after second IVIG, he did not spike any more fever"
+        },
+        {
+          "statement": "Fever and rash have completely resolved.",
+          "certainty": "stated",
+          "quote": "Today, his fever and his rash have completely resolved."
+        },
+        {
+          "statement": "No conjunctivitis and no redness of mucous membranes.",
+          "certainty": "stated",
+          "quote": "He does not have any conjunctivitis and no redness of mucous membranes."
+        },
+        {
+          "statement": "He is more calm and quiet and taking good oral intake.",
+          "certainty": "stated",
+          "quote": "He is more calm and quite and taking good p.o."
+        }
+      ],
+      "medicines": [
+        {
+          "name": "Aspirin (high dose)",
+          "dose": "340 mg",
+          "how_often": "q.6h. (every 6 hours) for 1 day",
+          "change": "not_stated",
+          "details": "Followed by low dose aspirin.",
+          "quote": "Aspirin high dose 340 mg q.6h. for 1 day"
+        },
+        {
+          "name": "Aspirin (low dose)",
+          "dose": "40 mg",
+          "how_often": "q.d. (once a day) for 14 days",
+          "change": "not_stated",
+          "details": "Starts after the 1 day of high dose aspirin.",
+          "quote": "then aspirin low dose 40 mg q.d. for 14 days"
+        },
+        {
+          "name": "Prevacid",
+          "dose": "15 mg",
+          "how_often": "p.o. once a day",
+          "change": "not_stated",
+          "details": "Given to prevent his GI (stomach/bowel) from aspirin.",
+          "quote": "Prevacid also to prevent his GI from aspirin 15 mg p.o. once a day"
+        }
+      ],
+      "dates": [
+        {
+          "what": "Follow-up with primary doctor",
+          "when": "in 2 to 3 days",
+          "quote": "He will be followed by his primary doctor in 2 to 3 days."
+        },
+        {
+          "what": "Cardiology follow-up with echo",
+          "when": "in 4 to 6 weeks",
+          "quote": "Cardiology for echo followup in 4 to 6 weeks"
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Go to the primary care doctor as soon as possible if he gets any rashes or any fevers.",
+          "quote": "if he gets any rashes, any fevers, should go to primary care doctor as soon as possible"
+        },
+        {
+          "instruction": "Activity as desired (ad-lib) and diet by mouth as desired (ad-lib).",
+          "quote": "DISCHARGE ACTIVITIES:\n  Ad-lib."
+        }
+      ],
+      "negatives": [
+        {
+          "instruction": "Do not give any vaccine for less than 11 months because of IVIG, including all live virus vaccines.",
+          "quote": "instructed not to give any vaccine in less than 11 months because of IVIG, all the live virus vaccine"
+        }
+      ],
+      "warning_signs": [
+        {
+          "instruction": "Any rashes or any fevers: go to primary care doctor as soon as possible.",
+          "quote": "if he gets any rashes, any fevers, should go to primary care doctor as soon as possible"
+        }
+      ],
+      "unclear": [
+        "The letter says not to give vaccines 'in less than 11 months' because of IVIG; it is unclear whether this means 11 months from now or another time point.",
+        "The letter does not say whether the aspirin and Prevacid are new medicines; the Prevacid course length is not stated.",
+        "'q.6h.' and 'q.d.' are not in the glossary; read here as every 6 hours and once a day."
+      ]
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\nYour son is 14 months old. He was in hospital for Kawasaki disease. The letter says the disease is resolving.\nHe was treated with high dose aspirin and IVIG. His fever came back within 12 hours of the first IVIG. The IVIG was given again. After the second IVIG, he had no more fever.\nToday his fever and rash have completely gone. He has no conjunctivitis (red eyes). He has no redness of the mucous membranes. He is more calm and quiet. He is eating and drinking well.\nHis echocardiogram (heart scan) was negative.\n\n## What you need to do\n1. Give the medicines listed below.\n2. If he gets any rash or any fever, go to his primary care doctor as soon as possible.\n3. Do not give any vaccine for less than 11 months because of the IVIG. This includes all live virus vaccines.\n4. He can be as active as he wants. He can eat and drink as he wants.\n\n## Dates and medicines\n- His primary doctor will see him in 2 to 3 days.\n- Cardiology (heart doctor) will do a follow-up echo in 4 to 6 weeks.\n\nMedicines:\n- Aspirin, high dose: 340 milligrams every 6 hours for 1 day.\n- Then aspirin, low dose: 40 milligrams once a day for 14 days.\n- Prevacid: 15 milligrams by mouth once a day. It is to protect his stomach and bowel (GI) from the aspirin. The letter does not say how long he takes it.\n\n## Questions to ask your doctor\n- What does IVIG mean?\n- What does the echocardiogram show, and what will the next one check?\n- How long should he take Prevacid?\n- When does the 11 months for vaccines start?\n\n## When to get urgent help\n- Any rash or any fever: go to his primary care doctor as soon as possible.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 81.8,
+          "reading_ease_target": 70,
+          "grade_level": 4.2,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": null,
+        "blocking_problems": [],
+        "attempt": 1
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 3448,
+        "output_tokens": 1503,
+        "cost_usd": 0.01726,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 13321,
+        "output_tokens": 1478,
+        "cost_usd": 0.03309,
+        "turns": 5
+      }
+    ],
+    "cost_usd": 0.05035,
+    "latency_s": 22.2
+  },
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "diagnoses",
+        "fact": "Kawasaki disease, getting better (resolving)",
+        "status": "kept",
+        "note": "Says Kawasaki disease and that the letter calls it resolving."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Fever and rash completely gone",
+        "status": "kept",
+        "note": "'Today his fever and rash have completely gone.'"
+      },
+      {
+        "category": "medicines",
+        "fact": "High-dose aspirin 340 mg every 6 hours for 1 day",
+        "status": "kept",
+        "note": "Aspirin high dose 340 mg every 6 hours for 1 day."
+      },
+      {
+        "category": "medicines",
+        "fact": "Then low-dose aspirin 40 mg once a day for 14 days",
+        "status": "kept",
+        "note": "Then low-dose aspirin 40 mg once a day for 14 days."
+      },
+      {
+        "category": "medicines",
+        "fact": "Prevacid 15 mg by mouth once a day, to protect the stomach from the aspirin",
+        "status": "kept",
+        "note": "Prevacid 15 mg by mouth once a day to protect the stomach/GI from aspirin."
+      },
+      {
+        "category": "dates",
+        "fact": "See the primary doctor in 2 to 3 days",
+        "status": "kept",
+        "note": "Primary doctor in 2 to 3 days."
+      },
+      {
+        "category": "dates",
+        "fact": "Heart scan (echo) follow-up with Cardiology in 4 to 6 weeks",
+        "status": "kept",
+        "note": "Cardiology follow-up echo in 4 to 6 weeks."
+      },
+      {
+        "category": "dates",
+        "fact": "No live virus vaccines for 11 months because of the IVIG treatment",
+        "status": "kept",
+        "note": "Says no vaccines for 11 months because of IVIG, including all live virus vaccines. This follows the letter's own wording; it is broader than the fact but still covers live vaccines."
+      },
+      {
+        "category": "actions",
+        "fact": "If he gets a rash or fever, see the primary care doctor as soon as possible",
+        "status": "kept",
+        "note": "Any rash or fever: go to the primary care doctor as soon as possible."
+      },
+      {
+        "category": "actions",
+        "fact": "Normal activity and diet",
+        "status": "kept",
+        "note": "Can be as active as he wants and eat and drink as he wants."
+      },
+      {
+        "category": "negatives",
+        "fact": "Heart scan (echocardiogram) was negative",
+        "status": "kept",
+        "note": "Echocardiogram (heart scan) was negative."
+      },
+      {
+        "category": "negatives",
+        "fact": "No conjunctivitis",
+        "status": "kept",
+        "note": "He has no conjunctivitis."
+      },
+      {
+        "category": "negatives",
+        "fact": "No redness of the mouth and lips (mucous membranes)",
+        "status": "kept",
+        "note": "No redness of the mucous membranes."
+      }
+    ],
+    "added": [],
+    "gold_reviewer": "claude-draft"
+  },
+  "reused_from": "v2"
+}

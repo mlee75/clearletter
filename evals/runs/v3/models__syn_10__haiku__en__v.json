@@ -1,0 +1,206 @@
+{
+  "job": {
+    "id": "models__syn_10__haiku__en__v",
+    "part": "models",
+    "letter_id": "syn_10",
+    "file": "data/synthetic/syn_10.txt",
+    "kind": "faithfulness",
+    "model": "haiku",
+    "language": "en",
+    "verifier": true,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "haiku",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": true,
+    "status": "fallback",
+    "final_text": "**We could not explain this letter safely. Please ask your doctor, nurse or pharmacist to explain it to you.**\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "parent_or_carer",
+      "purpose": "Discharge advice for gastroenteritis with mild dehydration",
+      "findings": [
+        {
+          "statement": "Lina has gastroenteritis (tummy bug) with mild dehydration",
+          "certainty": "stated",
+          "quote": "Gastroenteritis (tummy bug) with mild dehydration."
+        },
+        {
+          "statement": "Lina drank well on the unit",
+          "certainty": "stated",
+          "quote": "Lina drank well on the unit"
+        },
+        {
+          "statement": "Lina passed urine before going home",
+          "certainty": "stated",
+          "quote": "passed urine before going home"
+        },
+        {
+          "statement": "No blood tests were needed",
+          "certainty": "stated",
+          "quote": "No blood tests were needed."
+        }
+      ],
+      "medicines": [
+        {
+          "name": "Oral rehydration solution (Dioralyte)",
+          "dose": "not specified in letter",
+          "how_often": "not specified in letter",
+          "change": "not_stated",
+          "details": "Optional - can be used alongside breastfeeding or usual milk. Follow product instructions for dosing.",
+          "quote": "Oral rehydration solution (Dioralyte) can be used."
+        },
+        {
+          "name": "paracetamol oral suspension",
+          "dose": "7.5 ml",
+          "how_often": "up to 4 times in 24 hours",
+          "change": "not_stated",
+          "details": "For fever or discomfort. Leave at least 4 hours between doses. Concentration: 120 mg/5 ml.",
+          "quote": "paracetamol oral suspension 120 mg/5 ml. Give 7.5 ml, up to 4 times in 24 hours. Leave at least 4 hours between doses."
+        }
+      ],
+      "dates": [
+        {
+          "what": "Seen at Northbridge Children's Assessment Unit",
+          "when": "20 October 2026",
+          "quote": "Seen: 20/10/2026"
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Give small amounts of fluid often: 5 ml every 5 minutes if she is vomiting, then more as she keeps it down",
+          "quote": "Give small amounts of fluid often: 5 ml every 5 minutes if she is vomiting, then more as she keeps it down."
+        },
+        {
+          "instruction": "Keep breastfeeding or giving her usual milk",
+          "quote": "Keep breastfeeding or giving her usual milk."
+        }
+      ],
+      "negatives": [
+        {
+          "instruction": "Do not give anti-diarrhoea medicines to your child",
+          "quote": "Do not give anti-diarrhoea medicines to your child."
+        }
+      ],
+      "warning_signs": [
+        {
+          "instruction": "Bring Lina back or call 111 if she has fewer than 4 wet nappies in 24 hours, is very sleepy, has blood in her poo, or cannot keep any fluids down",
+          "quote": "Bring Lina back or call 111 if she has fewer than 4 wet nappies in 24 hours, is very sleepy, has blood in her poo or cannot keep any fluids down."
+        },
+        {
+          "instruction": "Call 999 if she is hard to wake up",
+          "quote": "Call 999 if she is hard to wake up."
+        }
+      ],
+      "unclear": []
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\n\nLina has a tummy bug (gastroenteritis) with mild dehydration. She was seen at Northbridge Children's Assessment Unit.\n\nAt the unit, Lina drank well. She passed urine. No blood tests were done.\n\n## What you need to do\n\n1. Give small amounts of fluid often. If she is sick, give 5 ml every 5 minutes. Give more as she keeps it down.\n2. Keep breastfeeding or give her usual milk.\n3. Do not give anti-diarrhoea medicine.\n4. You can give a special drink (Dioralyte) alongside breastfeeding or milk. Follow the packet instructions.\n5. You can give paracetamol if she has a fever or pain. See medicines below for the dose.\n\n## Dates and medicines\n\n**Visit:**\n- 20 October 2026 at Northbridge Children's Assessment Unit\n\n**Medicines:**\n\nParacetamol (liquid):\n- Dose: 7.5 ml\n- How often: up to 4 times in 24 hours\n- Wait at least 4 hours between doses\n- Strength: 120 mg in 5 ml\n\nDioralyte (special drink):\n- Can use it (this is optional)\n- Follow the packet for how much to give\n\n## Questions to ask your doctor\n\n1. How will I know if Lina is getting enough fluid?\n2. When can Lina go back to normal food?\n3. How long will the tummy bug last?\n4. What other warning signs should I watch for?\n\n## When to get urgent help\n\nBring Lina back or call 111 if she:\n- has fewer than 4 wet nappies in 24 hours\n- is very sleepy\n- has blood in her poo\n- cannot keep any fluids down\n\nCall 999 if she is hard to wake up.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 79.0,
+          "reading_ease_target": 70,
+          "grade_level": 5.1,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [
+            {
+              "kind": "advice",
+              "severity": "minor",
+              "explanation_says": "Follow the packet instructions (for Dioralyte) — appears in both 'What you need to do' section as 'Follow the packet instructions' and in 'Dates and medicines' section as 'Follow the packet for how much to give'",
+              "letter_says": "Oral rehydration solution (Dioralyte) can be used. Keep breastfeeding or giving her usual milk.",
+              "why": "The explanation adds instructions to follow packet instructions for Dioralyte, but the letter does not specify how to use it — only that it can be used. The letter leaves dosing to the family or to reading the product packaging, rather than explicitly directing the patient to consult the packet.",
+              "real_difference": true
+            }
+          ],
+          "summary": "The explanation adds instructions to follow packet instructions for Dioralyte in two places, which the letter does not explicitly state. The letter only says Dioralyte 'can be used', without specifying that parents should follow packet instructions. This is a minor addition of practical advice. The rest of the explanation accurately reflects the letter's diagnosis, observations, treatment plan, medicines, doses, and warning signs.\""
+        },
+        "blocking_problems": [
+          "[advice] The explanation adds instructions to follow packet instructions for Dioralyte, but the letter does not specify how to use it — only that it can be used. The letter leaves dosing to the family or to reading the product packaging, rather than explicitly directing the patient to consult the packet. (explanation: \"Follow the packet instructions (for Dioralyte) — appears in both 'What you need to do' section as 'Follow the packet instructions' and in 'Dates and medicines' section as 'Follow the packet for how much to give'\"; letter: 'Oral rehydration solution (Dioralyte) can be used. Keep breastfeeding or giving her usual milk.')"
+        ],
+        "attempt": 1
+      },
+      {
+        "explanation": "## What this letter says\n\nLina has a tummy bug (gastroenteritis) with mild dehydration. She was seen at Northbridge Children's Assessment Unit on 20 October 2026.\n\nAt the unit, Lina drank well and passed urine. No blood tests were done.\n\n## What you need to do\n\n1. Give small amounts of fluid often. If she is sick, give 5 ml every 5 minutes. Give more as she keeps it down.\n2. Keep breastfeeding or give her usual milk.\n3. Do not give anti-diarrhoea medicine.\n4. You can give a special drink (Dioralyte).\n\n## Dates and medicines\n\n**Visit:**\n- 20 October 2026 at Northbridge Children's Assessment Unit\n\n**Medicines:**\n\nParacetamol (liquid):\n- Dose: 7.5 ml\n- How often: up to 4 times in 24 hours\n- Wait at least 4 hours between doses\n- Strength: 120 mg in 5 ml\n\nDioralyte (special drink):\n- Can use it (this is optional)\n\n## Questions to ask your doctor\n\n1. How will I know if Lina is getting enough fluid?\n2. When can Lina go back to normal food?\n3. How long will the tummy bug last?\n\n## When to get urgent help\n\nBring Lina back or call 111 if she:\n- has fewer than 4 wet nappies in 24 hours\n- is very sleepy\n- has blood in her poo\n- cannot keep any fluids down\n\nCall 999 if she is hard to wake up.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 77.6,
+          "reading_ease_target": 70,
+          "grade_level": 5.6,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [
+            {
+              "kind": "dropped",
+              "severity": "major",
+              "explanation_says": "No mention of expected duration of symptoms",
+              "letter_says": "Diarrhoea usually stops within 5 to 7 days. Vomiting usually stops within 3 days.",
+              "why": "The patient needs to know the expected timeline for symptom resolution to understand what is normal and when symptoms might be prolonged or concerning. This prognostic information guides expectations and decisions about when further evaluation may be needed.",
+              "real_difference": true
+            }
+          ],
+          "summary": "One significant omission: the expected duration of symptoms (5–7 days for diarrhoea, 3 days for vomiting) is stated in the letter but missing from the explanation. This is important prognostic information that helps parents understand what to expect and when symptoms warrant concern."
+        },
+        "blocking_problems": [
+          "[dropped] The patient needs to know the expected timeline for symptom resolution to understand what is normal and when symptoms might be prolonged or concerning. This prognostic information guides expectations and decisions about when further evaluation may be needed. (explanation: 'No mention of expected duration of symptoms'; letter: 'Diarrhoea usually stops within 5 to 7 days. Vomiting usually stops within 3 days.')"
+        ],
+        "attempt": 2
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 2973,
+        "output_tokens": 8479,
+        "cost_usd": 0.04537,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 21670,
+        "output_tokens": 4245,
+        "cost_usd": 0.04019,
+        "turns": 4
+      },
+      {
+        "step": "verify",
+        "input_tokens": 3010,
+        "output_tokens": 6847,
+        "cost_usd": 0.03725,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 9758,
+        "output_tokens": 2454,
+        "cost_usd": 0.02789,
+        "turns": 2
+      },
+      {
+        "step": "verify",
+        "input_tokens": 13886,
+        "output_tokens": 8175,
+        "cost_usd": 0.06568,
+        "turns": 3
+      }
+    ],
+    "cost_usd": 0.21638,
+    "latency_s": 258.2
+  },
+  "judgement": {
+    "fallback": true
+  }
+}

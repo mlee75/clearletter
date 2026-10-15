@@ -27,40 +27,33 @@ Children's Assessment Unit
 ## Explanation shown to the patient
 
 ## Ce que dit cette lettre
-Lina a été vue le 20 octobre 2026.
-Elle a un "tummy bug" (gastroenteritis), avec une légère déshydratation (mild dehydration).
+Lina a une gastroentérite (un microbe du ventre). Elle a aussi une légère déshydratation.
 Lina a bien bu à l'unité. Elle a fait pipi avant de rentrer à la maison.
-Il n'y avait pas besoin de prises de sang.
+Elle n'a pas eu besoin de prises de sang.
 La diarrhée s'arrête en général en 5 à 7 jours.
 Les vomissements s'arrêtent en général en 3 jours.
 
 ## Ce que vous devez faire
 1. Donnez à Lina de petites quantités de liquide, souvent.
-2. Si elle vomit, donnez 5 ml toutes les 5 minutes. Ensuite, donnez plus, si elle garde le liquide.
+2. Si elle vomit : 5 ml toutes les 5 minutes. Ensuite, donnez plus si elle garde le liquide.
 3. Continuez l'allaitement ou son lait habituel.
-4. Vous pouvez utiliser une solution de réhydratation orale (Dioralyte).
-5. Pour la fièvre ou l'inconfort, donnez du paracétamol. Suivez la dose ci-dessous.
-6. Ne donnez pas de médicament contre la diarrhée à votre enfant.
+4. Ne donnez pas de médicaments contre la diarrhée à votre enfant.
 
 ## Dates et médicaments
-- Date : Lina a été vue le 20 octobre 2026.
-- Paracétamol en suspension buvable (paracetamol oral suspension) 120 mg/5 ml. C'est nouveau.
-  - Dose : 7.5 ml.
-  - Combien de fois : jusqu'à 4 fois en 24 heures.
-  - Attendez au moins 4 heures entre deux doses.
-  - Pour la fièvre ou l'inconfort.
-- Solution de réhydratation orale (Dioralyte) : vous pouvez l'utiliser.
+- Date de la visite : 20 octobre 2026.
+- Paracétamol, suspension buvable 120 mg/5 ml : 7,5 ml, jusqu'à 4 fois en 24 heures. Attendez au moins 4 heures entre deux doses. C'est pour la fièvre ou la gêne.
+- Solution de réhydratation orale (Dioralyte) : vous pouvez l'utiliser. C'est une option.
 
 ## Questions à poser à votre médecin
-- Quelle quantité de liquide Lina doit-elle boire après avoir arrêté de vomir ?
-- Que veut dire "gastroenteritis" pour Lina ?
-- Que veut dire "mild dehydration" ?
+- Combien de liquide Lina doit-elle boire après les premiers vomissements ?
+- Quand dois-je la ramener si elle ne va pas mieux ?
+- La solution Dioralyte est-elle une bonne option pour Lina ?
 
 ## Quand obtenir de l'aide en urgence
 - Ramenez Lina ou appelez le 111 si elle a moins de 4 couches mouillées en 24 heures.
-- Faites de même si elle est très endormie.
-- Faites de même si elle a du sang dans ses selles.
-- Faites de même si elle ne garde aucun liquide.
+- Faites-le aussi si elle est très endormie.
+- Faites-le aussi si elle a du sang dans ses selles.
+- Faites-le aussi si elle ne garde aucun liquide.
 - Appelez le 999 si elle est difficile à réveiller.
 
 Si vous êtes inquiet et que ce n'est pas une urgence, appelez le NHS 111. En cas d'urgence, appelez le 999.
@@ -72,38 +65,31 @@ Si vous êtes inquiet et que ce n'est pas une urgence, appelez le NHS 111. En ca
 ## Back-translation to English (by Claude, used by the judge)
 
 ## What this letter says
-Lina was seen on 20 October 2026.
-She has a "tummy bug" (gastroenteritis), with a slight dehydration (mild dehydration).
+Lina has gastroenteritis (a tummy germ). She also has mild dehydration.
 Lina drank well at the unit. She did a wee before going home.
-There was no need for blood tests.
+She did not need blood tests.
 The diarrhoea usually stops in 5 to 7 days.
 The vomiting usually stops in 3 days.
 
-## What you must do
+## What you need to do
 1. Give Lina small amounts of fluid, often.
-2. If she vomits, give 5 ml every 5 minutes. Then, give more, if she keeps the fluid down.
+2. If she vomits: 5 ml every 5 minutes. Then, give more if she keeps the fluid down.
 3. Continue breastfeeding or her usual milk.
-4. You can use an oral rehydration solution (Dioralyte).
-5. For fever or discomfort, give paracetamol. Follow the dose below.
-6. Do not give your child medicine for diarrhoea.
+4. Do not give your child medicines for diarrhoea.
 
 ## Dates and medicines
-- Date: Lina was seen on 20 October 2026.
-- Paracetamol oral suspension (paracetamol oral suspension) 120 mg/5 ml. This is new.
-  - Dose: 7.5 ml.
-  - How many times: up to 4 times in 24 hours.
-  - Wait at least 4 hours between two doses.
-  - For fever or discomfort.
-- Oral rehydration solution (Dioralyte): you can use it.
+- Date of the visit: 20 October 2026.
+- Paracetamol, oral suspension 120 mg/5 ml: 7.5 ml, up to 4 times in 24 hours. Wait at least 4 hours between two doses. It is for fever or discomfort.
+- Oral rehydration solution (Dioralyte): you can use it. It is an option.
 
 ## Questions to ask your doctor
-- How much fluid should Lina drink after she has stopped vomiting?
-- What does "gastroenteritis" mean for Lina?
-- What does "mild dehydration" mean?
+- How much fluid should Lina drink after the first vomiting?
+- When should I bring her back if she is not getting better?
+- Is the Dioralyte solution a good option for Lina?
 
-## When to get urgent help
+## When to get help urgently
 - Bring Lina back or call 111 if she has fewer than 4 wet nappies in 24 hours.
-- Do the same if she is very sleepy.
-- Do the same if she has blood in her stools.
-- Do the same if she does not keep down any fluid.
+- Also do this if she is very sleepy.
+- Also do this if she has blood in her stools.
+- Also do this if she keeps no fluid down.
 - Call 999 if she is difficult to wake.

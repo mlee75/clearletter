@@ -1,0 +1,301 @@
+{
+  "job": {
+    "id": "models__syn_08__haiku__en__v",
+    "part": "models",
+    "letter_id": "syn_08",
+    "file": "data/synthetic/syn_08.txt",
+    "kind": "faithfulness",
+    "model": "haiku",
+    "language": "en",
+    "verifier": true,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "haiku",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": true,
+    "status": "ok_after_retry",
+    "final_text": "## What this letter says\n\nYou fell at home and hit your head on 14 October 2026. You did not lose consciousness (you did not pass out).\n\nTests showed:\n- Your hip is not broken\n- There is no bleeding inside your head\n- When you lie down, your blood pressure is 142/80\n- When you stand up, your blood pressure is 108/66\n\n## What you need to do\n\n1. Stop taking amlodipine 10 mg. It may be making your blood pressure drop when you stand.\n2. Continue taking all your other medicines.\n3. Sit on the edge of the bed for a minute before standing.\n4. Stand up slowly.\n5. Wait for a letter from the Falls Prevention Clinic. They will give you an appointment.\n6. Your GP will check your blood pressure again in 4 weeks. They will check it lying down and standing up.\n\n## Dates and medicines\n\n**14 October 2026** – You were seen at the Emergency Department\n\n**Amlodipine 10 mg** – Stop taking this. It may be making your blood pressure drop when you stand.\n\n## Questions to ask your doctor\n\n1. Why is my blood pressure changing when I stand up?\n2. What should I do if I feel dizzy when I stand?\n3. What will the Falls Prevention Clinic help me with?\n\n## When to get urgent help\n\nIf you develop a worsening headache, vomiting, confusion or drowsiness in the next few days, call 999 or go to A&E.\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "patient",
+      "purpose": "Assessment of fall at home with head injury; ruling out serious injuries; management plan to prevent future falls and manage blood pressure",
+      "findings": [
+        {
+          "statement": "Fall at home with head injury",
+          "certainty": "stated",
+          "quote": "Fall at home. Hit head."
+        },
+        {
+          "statement": "No loss of consciousness",
+          "certainty": "stated",
+          "quote": "No loss of consciousness."
+        },
+        {
+          "statement": "Blood pressure lying 142/80, standing 108/66",
+          "certainty": "stated",
+          "quote": "142/80 lying, 108/66 standing"
+        },
+        {
+          "statement": "Postural hypotension (blood pressure drops when standing up)",
+          "certainty": "stated",
+          "quote": "This shows postural hypotension (blood pressure drops when standing up)"
+        },
+        {
+          "statement": "No fracture of right hip on X-ray",
+          "certainty": "ruled_out",
+          "quote": "no fracture"
+        },
+        {
+          "statement": "No evidence of intracranial haemorrhage on CT head",
+          "certainty": "ruled_out",
+          "quote": "no evidence of intracranial haemorrhage (no bleeding inside the head)"
+        }
+      ],
+      "medicines": [
+        {
+          "name": "amlodipine",
+          "dose": "10 mg",
+          "how_often": "not_stated",
+          "change": "stop",
+          "details": "It may be making your blood pressure drop when you stand",
+          "quote": "STOP amlodipine 10 mg. It may be making your blood pressure drop when you stand."
+        }
+      ],
+      "dates": [
+        {
+          "what": "Seen at Emergency Department",
+          "when": "14 October 2026",
+          "quote": "Seen: 14/10/2026"
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Stand up slowly",
+          "quote": "Stand up slowly."
+        },
+        {
+          "instruction": "Sit on the edge of the bed for a minute before standing",
+          "quote": "Sit on the edge of the bed for a minute before standing."
+        },
+        {
+          "instruction": "Await appointment letter from the Falls Prevention Clinic",
+          "quote": "Referred to the Falls Prevention Clinic. They will write to you with an appointment."
+        },
+        {
+          "instruction": "Your GP will recheck your lying and standing blood pressure in 4 weeks",
+          "quote": "GP to recheck lying and standing blood pressure in 4 weeks."
+        }
+      ],
+      "negatives": [
+        {
+          "instruction": "No fracture of the right hip",
+          "quote": "no fracture"
+        },
+        {
+          "instruction": "No evidence of intracranial haemorrhage (no bleeding inside the head)",
+          "quote": "no evidence of intracranial haemorrhage (no bleeding inside the head)"
+        }
+      ],
+      "warning_signs": [
+        {
+          "instruction": "If you develop a worsening headache, vomiting, confusion or drowsiness in the next few days, call 999 or go to A&E",
+          "quote": "If you develop a worsening headache, vomiting, confusion or drowsiness in the next few days, call 999 or go to A&E."
+        }
+      ],
+      "unclear": []
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\n\nYou fell at home and hit your head on 14 October 2026. You did not lose consciousness (you did not pass out).\n\nTests showed:\n- Your hip is not broken\n- There is no bleeding inside your head\n- Your blood pressure drops when you stand up (this is called postural hypotension)\n\nWhen you lie down, your blood pressure was 142/80.\nWhen you stand up, it was 108/66.\nThe big drop may have caused your fall.\n\n## What you need to do\n\n1. Stop taking amlodipine 10 mg. It may be making your blood pressure drop when you stand.\n2. Sit on the edge of the bed for a minute before standing.\n3. Stand up slowly.\n4. Wait for a letter from the Falls Prevention Clinic. They will give you an appointment.\n5. Your GP will check your blood pressure again in 4 weeks. They will check it lying down and standing up.\n\n## Dates and medicines\n\n**14 October 2026** – You were seen at the Emergency Department\n\n**Amlodipine 10 mg** – Stop taking this. It may be making your blood pressure drop when you stand.\n\n## Questions to ask your doctor\n\n1. Why is my blood pressure dropping when I stand up?\n2. Will stopping amlodipine help prevent another fall?\n3. What should I do if I feel dizzy when I stand?\n4. What will the Falls Prevention Clinic help me with?\n\n## When to get urgent help\n\nIf you develop a worsening headache, vomiting, confusion or drowsiness in the next few days, call 999 or go to A&E.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 86.9,
+          "reading_ease_target": 70,
+          "grade_level": 4.0,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [
+            {
+              "kind": "added",
+              "severity": "major",
+              "explanation_says": "The big drop may have caused your fall.",
+              "letter_says": "Reports the fall and separately reports postural hypotension, but does not state that the fall was caused by the blood pressure drop.",
+              "why": "The explanation provides a causal explanation for why the fall happened. The letter reports both the fall and the postural hypotension as separate findings without connecting them causally. A patient could reasonably read the letter without understanding that the BP drop may have caused the fall.",
+              "real_difference": true
+            },
+            {
+              "kind": "added",
+              "severity": "major",
+              "explanation_says": "Question 2: 'Will stopping amlodipine help prevent another fall?'",
+              "letter_says": "Says to stop amlodipine because it may be causing the blood pressure drop; refers to Falls Prevention Clinic. Does not state that stopping amlodipine will help prevent another fall or that the original fall was caused by the blood pressure drop.",
+              "why": "The question assumes a causal mechanism (stopping the medicine will help prevent future falls) based on an assumed but unstated cause of the original fall (the BP drop caused the fall). The letter tells the patient to stop the medicine but does not explicitly say this will prevent future falls.",
+              "real_difference": true
+            },
+            {
+              "kind": "added",
+              "severity": "minor",
+              "explanation_says": "Question 3: 'What should I do if I feel dizzy when I stand?'",
+              "letter_says": "Does not mention dizziness. Advises standing slowly and sitting briefly before standing, but does not name dizziness as a potential symptom.",
+              "why": "The question assumes the patient might experience dizziness when standing. Dizziness is not mentioned in the letter, even though it is a common symptom of postural hypotension. The question suggests a worry or symptom that is not explicitly stated in the letter.",
+              "real_difference": true
+            },
+            {
+              "kind": "dropped",
+              "severity": "major",
+              "explanation_says": "Does not mention continuing other medicines.",
+              "letter_says": "Continue all other medicines.",
+              "why": "The letter explicitly instructs the patient to continue all other medicines while stopping amlodipine. This is an important action that belongs in the explanation's 'What you need to do' section. The explanation mentions stopping amlodipine but omits the instruction to continue other medicines.",
+              "real_difference": true
+            }
+          ],
+          "summary": "The explanation adds causal claims not in the letter (that the blood pressure drop may have caused the fall, and that stopping amlodipine will help prevent another fall), introduces dizziness as a potential symptom without the letter mentioning it, and most importantly drops the explicit instruction to continue all other medicines. The first three issues relate to implied causation and symptoms not stated in the letter; the fourth is an omission of explicit guidance."
+        },
+        "blocking_problems": [
+          "[added] The explanation provides a causal explanation for why the fall happened. The letter reports both the fall and the postural hypotension as separate findings without connecting them causally. A patient could reasonably read the letter without understanding that the BP drop may have caused the fall. (explanation: 'The big drop may have caused your fall.'; letter: 'Reports the fall and separately reports postural hypotension, but does not state that the fall was caused by the blood pressure drop.')",
+          "[added] The question assumes a causal mechanism (stopping the medicine will help prevent future falls) based on an assumed but unstated cause of the original fall (the BP drop caused the fall). The letter tells the patient to stop the medicine but does not explicitly say this will prevent future falls. (explanation: \"Question 2: 'Will stopping amlodipine help prevent another fall?'\"; letter: 'Says to stop amlodipine because it may be causing the blood pressure drop; refers to Falls Prevention Clinic. Does not state that stopping amlodipine will help prevent another fall or that the original fall was caused by the blood pressure drop.')",
+          "[dropped] The letter explicitly instructs the patient to continue all other medicines while stopping amlodipine. This is an important action that belongs in the explanation's 'What you need to do' section. The explanation mentions stopping amlodipine but omits the instruction to continue other medicines. (explanation: 'Does not mention continuing other medicines.'; letter: 'Continue all other medicines.')"
+        ],
+        "attempt": 1
+      },
+      {
+        "explanation": "## What this letter says\n\nYou fell at home and hit your head on 14 October 2026. You did not lose consciousness (you did not pass out).\n\nTests showed:\n- Your hip is not broken\n- There is no bleeding inside your head\n- When you lie down, your blood pressure is 142/80\n- When you stand up, your blood pressure is 108/66\n\n## What you need to do\n\n1. Stop taking amlodipine 10 mg. It may be making your blood pressure drop when you stand.\n2. Continue taking all your other medicines.\n3. Sit on the edge of the bed for a minute before standing.\n4. Stand up slowly.\n5. Wait for a letter from the Falls Prevention Clinic. They will give you an appointment.\n6. Your GP will check your blood pressure again in 4 weeks. They will check it lying down and standing up.\n\n## Dates and medicines\n\n**14 October 2026** – You were seen at the Emergency Department\n\n**Amlodipine 10 mg** – Stop taking this. It may be making your blood pressure drop when you stand.\n\n## Questions to ask your doctor\n\n1. Why is my blood pressure changing when I stand up?\n2. What should I do if I feel dizzy when I stand?\n3. What will the Falls Prevention Clinic help me with?\n\n## When to get urgent help\n\nIf you develop a worsening headache, vomiting, confusion or drowsiness in the next few days, call 999 or go to A&E.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 85.6,
+          "reading_ease_target": 70,
+          "grade_level": 4.4,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [],
+          "summary": "The explanation accurately reflects all information in the letter. The five required sections are present and complete. Medical facts, dates, medicines, and urgent warning signs all match the letter. The suggested questions are reasonable follow-ups on topics covered in the letter, and no new diagnoses, risks, or worries are introduced that aren't implied by the clinical scenario described."
+        },
+        "blocking_problems": [],
+        "attempt": 2
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 2959,
+        "output_tokens": 8127,
+        "cost_usd": 0.04359,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 11767,
+        "output_tokens": 5746,
+        "cost_usd": 0.04906,
+        "turns": 2
+      },
+      {
+        "step": "verify",
+        "input_tokens": 2898,
+        "output_tokens": 11483,
+        "cost_usd": 0.06031,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 14729,
+        "output_tokens": 7327,
+        "cost_usd": 0.06213,
+        "turns": 2
+      },
+      {
+        "step": "verify",
+        "input_tokens": 2864,
+        "output_tokens": 10189,
+        "cost_usd": 0.05381,
+        "turns": 2
+      }
+    ],
+    "cost_usd": 0.26891,
+    "latency_s": 359.3
+  },
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "diagnoses",
+        "fact": "Fall at home with a knock to the head",
+        "status": "kept",
+        "note": "'You fell at home and hit your head on 14 October 2026.'"
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Postural hypotension: blood pressure drops on standing (142/80 lying, 108/66 standing)",
+        "status": "kept",
+        "note": "Gives both readings (142/80 lying, 108/66 standing) and says blood pressure drops when standing. It never uses the term 'postural hypotension' or says the readings show that diagnosis, but the content is there."
+      },
+      {
+        "category": "medicines",
+        "fact": "STOP amlodipine 10 mg (it may be making blood pressure drop on standing)",
+        "status": "kept",
+        "note": "Stop amlodipine 10 mg, with the same reason ('may be' making blood pressure drop on standing). Same dose and same certainty."
+      },
+      {
+        "category": "medicines",
+        "fact": "Continue all other medicines",
+        "status": "kept",
+        "note": "'Continue taking all your other medicines.'"
+      },
+      {
+        "category": "dates",
+        "fact": "GP to recheck lying and standing blood pressure in 4 weeks",
+        "status": "kept",
+        "note": "GP will recheck blood pressure lying down and standing up in 4 weeks."
+      },
+      {
+        "category": "actions",
+        "fact": "Falls Prevention Clinic will write with an appointment",
+        "status": "kept",
+        "note": "Wait for a letter from the Falls Prevention Clinic, which will give an appointment."
+      },
+      {
+        "category": "actions",
+        "fact": "Stand up slowly; sit on the edge of the bed for a minute before standing",
+        "status": "kept",
+        "note": "Both parts kept: stand up slowly, and sit on the edge of the bed for a minute before standing (order swapped)."
+      },
+      {
+        "category": "actions",
+        "fact": "Call 999 or go to A&E if worsening headache, vomiting, confusion or drowsiness in the next few days",
+        "status": "kept",
+        "note": "Same four symptoms, same timeframe, and the same instruction to call 999 or go to A&E."
+      },
+      {
+        "category": "negatives",
+        "fact": "No loss of consciousness",
+        "status": "kept",
+        "note": "'You did not lose consciousness (you did not pass out).'"
+      },
+      {
+        "category": "negatives",
+        "fact": "Hip X-ray: no fracture",
+        "status": "kept",
+        "note": "'Your hip is not broken.' Says this simply and doesn't mention the X-ray, but the meaning is the same."
+      },
+      {
+        "category": "negatives",
+        "fact": "CT head: no bleeding inside the head",
+        "status": "kept",
+        "note": "'There is no bleeding inside your head.' Doesn't mention the CT scan, but the meaning is the same."
+      }
+    ],
+    "added": [],
+    "gold_reviewer": "claude-draft"
+  }
+}

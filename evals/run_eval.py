@@ -5,7 +5,7 @@
     python -m evals.run_eval --letters syn_16   run only some letters (a pilot)
     python -m evals.run_eval --dry-run          list what would run
 
-Each job is saved to evals/runs/<job_id>.json as soon as it finishes, in two
+Each job is saved to evals/runs/<pipeline version>/<job_id>.json as soon as it finishes, in two
 stages (pipeline, then judge). Running the command again skips finished work,
 so an interrupted run (for example a usage limit) simply carries on.
 """
@@ -19,12 +19,37 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import asdict
 from pathlib import Path
 
+from clearletter import PIPELINE_VERSION
 from clearletter.pipeline import Pipeline
 
 from .judge import Judge
 
 ROOT = Path(__file__).resolve().parent.parent
-RUNS = ROOT / "evals" / "runs"
+# Each pipeline version gets its own folder, so v1 and v2 results never mix.
+RUNS = ROOT / "evals" / "runs" / PIPELINE_VERSION
+
+# When a new version only changes the verifier, runs WITHOUT the verifier go
+# through identical code, so their results are copied from the earlier version
+# (marked "reused_from") instead of being run again. v3 changed only the verifier.
+REUSE_NO_VERIFIER_FROM = {"v3": "v2"}
+
+
+def reuse_unchanged(jobs):
+    source = REUSE_NO_VERIFIER_FROM.get(PIPELINE_VERSION)
+    if not source:
+        return 0
+    copied = 0
+    for job in jobs:
+        old = ROOT / "evals" / "runs" / source / f"{job['id']}.json"
+        new = RUNS / f"{job['id']}.json"
+        if job["verifier"] or new.exists() or not old.exists():
+            continue
+        record = json.loads(old.read_text())
+        if "judgement" in record:
+            record["reused_from"] = source
+            new.write_text(json.dumps(record, indent=2, ensure_ascii=False))
+            copied += 1
+    return copied
 BACKEND = "claude-code"
 
 
@@ -115,7 +140,7 @@ def run_job(job, judge):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--only", choices=["models", "mtsamples", "languages", "redteam"])
+    parser.add_argument("--only", help="comma-separated parts: models, mtsamples, languages, redteam")
     parser.add_argument("--letters", help="comma-separated letter ids, for a pilot")
     parser.add_argument("--models", help="comma-separated models to include")
     parser.add_argument("--workers", type=int, default=3, help="jobs run at the same time")
@@ -124,7 +149,7 @@ def main():
 
     jobs = plan()
     if args.only:
-        jobs = [j for j in jobs if j["part"] == args.only]
+        jobs = [j for j in jobs if j["part"] in args.only.split(",")]
     if args.letters:
         wanted = set(args.letters.split(","))
         jobs = [j for j in jobs if j["letter_id"] in wanted]
@@ -132,12 +157,18 @@ def main():
         wanted = set(args.models.split(","))
         jobs = [j for j in jobs if j["model"] in wanted]
 
+    RUNS.mkdir(parents=True, exist_ok=True)
+    if not args.dry_run:
+        copied = reuse_unchanged(jobs)
+        if copied:
+            print(f"Reused {copied} no-verifier runs from {REUSE_NO_VERIFIER_FROM[PIPELINE_VERSION]} (same code path)")
+
     def finished(job):
         path = RUNS / f"{job['id']}.json"
         return path.exists() and "judgement" in json.loads(path.read_text())
 
     todo = [j for j in jobs if not finished(j)]
-    print(f"{len(jobs)} jobs planned, {len(jobs) - len(todo)} already done, {len(todo)} to run", flush=True)
+    print(f"Pipeline {PIPELINE_VERSION}: {len(jobs)} jobs planned, {len(jobs) - len(todo)} already done, {len(todo)} to run", flush=True)
     if args.dry_run:
         for j in todo:
             print("  ", j["id"])

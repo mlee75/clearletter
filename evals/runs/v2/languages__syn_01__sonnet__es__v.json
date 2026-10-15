@@ -1,0 +1,165 @@
+{
+  "job": {
+    "id": "languages__syn_01__sonnet__es__v",
+    "part": "languages",
+    "letter_id": "syn_01",
+    "file": "data/synthetic/syn_01.txt",
+    "kind": "faithfulness",
+    "model": "sonnet",
+    "language": "es",
+    "verifier": true,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "sonnet",
+    "backend": "claude-code",
+    "language": "es",
+    "country": "uk",
+    "use_verifier": true,
+    "status": "ok",
+    "final_text": "## Qué dice esta carta\nEsta carta es una cita para una ecografía del corazón (ecocardiograma).\n\n## Qué tiene que hacer\n1. Llegue 15 minutos antes de la hora de su cita.\n2. Traiga una lista de todos los medicamentos que toma.\n3. Si no puede ir, llame al 01632 960 123. Llame al menos 48 horas antes. Así otro paciente puede usar su hora.\n4. No necesita estar en ayunas para esta prueba.\n5. No necesita dejar de tomar ninguno de sus medicamentos.\n\n## Fechas y medicamentos\n- Fecha de la cita: martes 17 de noviembre de 2026, a las 10:40.\n- Lugar: Unidad de Investigaciones Cardíacas, Nivel 2.\n- Medicamentos: la carta no da una lista de medicamentos.\n\n## Preguntas para su médico\n1. ¿Cuánto dura la prueba?\n2. ¿Cuándo sabré el resultado?\n3. ¿Puedo ir acompañado a la cita?\n\n## Cuándo pedir ayuda urgente\nLa carta no menciona señales de alarma concretas.\n\nSi le preocupa algo y no es una emergencia, llame al NHS 111. En caso de emergencia, llame al 999.\n\n---\n*Esta explicación la ha hecho un programa informático para ayudarle a leer su carta. Puede contener errores. No sustituye a su médico, enfermero o farmacéutico. Siga siempre lo que dice la carta y pregúnteles si algo no está claro.*\n",
+    "facts": {
+      "reader": "patient",
+      "purpose": "Appointment letter for an echocardiogram (ultrasound scan of the heart).",
+      "findings": [],
+      "medicines": [],
+      "dates": [
+        {
+          "what": "Echocardiogram appointment at 10:40 in the Cardiac Investigations Unit, Level 2",
+          "when": "17 November 2026",
+          "quote": "You have been booked for an echocardiogram on Tuesday 17 November 2026 at 10:40 in the Cardiac Investigations Unit, Level 2."
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Bring a list of all the medicines you take.",
+          "quote": "Please bring a list of all the medicines you take."
+        },
+        {
+          "instruction": "Arrive 15 minutes before your appointment time.",
+          "quote": "Please arrive 15 minutes before your appointment time."
+        },
+        {
+          "instruction": "If you cannot attend, call 01632 960 123 at least 48 hours before so the slot can be offered to another patient.",
+          "quote": "If you cannot attend, please call 01632 960 123 at least 48 hours before so that we can offer your slot to another patient."
+        }
+      ],
+      "negatives": [
+        {
+          "instruction": "You do not need to fast before this test.",
+          "quote": "You do not need to fast before this test."
+        },
+        {
+          "instruction": "You do not need to stop any of your medicines.",
+          "quote": "You do not need to stop any of your medicines."
+        }
+      ],
+      "warning_signs": [],
+      "unclear": []
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## Qué dice esta carta\nEsta carta es una cita para una ecografía del corazón (ecocardiograma).\n\n## Qué tiene que hacer\n1. Llegue 15 minutos antes de la hora de su cita.\n2. Traiga una lista de todos los medicamentos que toma.\n3. Si no puede ir, llame al 01632 960 123. Llame al menos 48 horas antes. Así otro paciente puede usar su hora.\n4. No necesita estar en ayunas para esta prueba.\n5. No necesita dejar de tomar ninguno de sus medicamentos.\n\n## Fechas y medicamentos\n- Fecha de la cita: martes 17 de noviembre de 2026, a las 10:40.\n- Lugar: Unidad de Investigaciones Cardíacas, Nivel 2.\n- Medicamentos: la carta no da una lista de medicamentos.\n\n## Preguntas para su médico\n1. ¿Cuánto dura la prueba?\n2. ¿Cuándo sabré el resultado?\n3. ¿Puedo ir acompañado a la cita?\n\n## Cuándo pedir ayuda urgente\nLa carta no menciona señales de alarma concretas.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "es",
+          "reading_ease": 89.0,
+          "reading_ease_target": 70,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [
+            {
+              "kind": "dropped",
+              "severity": "minor",
+              "explanation_says": "Question 1 asks how long the test lasts; the duration is not stated in the explanation.",
+              "letter_says": "An echo takes about 45 minutes.",
+              "why": "The duration is in the letter but is left out, and the explanation tells the patient to ask about it instead. The patient could plan around it."
+            }
+          ],
+          "summary": "The explanation is accurate on the date, time, place, arrival time, cancellation notice, phone number, fasting and medicines. The only problem is that it leaves out the 45-minute duration and suggests asking about it. This is minor."
+        },
+        "blocking_problems": [],
+        "attempt": 1
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 3016,
+        "output_tokens": 635,
+        "cost_usd": 0.0082,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 6428,
+        "output_tokens": 1157,
+        "cost_usd": 0.02572,
+        "turns": 3
+      },
+      {
+        "step": "verify",
+        "input_tokens": 2768,
+        "output_tokens": 264,
+        "cost_usd": 0.01259,
+        "turns": 2
+      }
+    ],
+    "cost_usd": 0.04652,
+    "latency_s": 26.2
+  },
+  "back_translation": "## What this letter says\nThis letter is an appointment for an ultrasound of the heart (echocardiogram).\n\n## What you have to do\n1. Arrive 15 minutes before the time of your appointment.\n2. Bring a list of all the medicines you take.\n3. If you cannot go, call 01632 960 123. Call at least 48 hours before. That way another patient can use your time slot.\n4. You do not need to be fasting for this test.\n5. You do not need to stop taking any of your medicines.\n\n## Dates and medicines\n- Date of the appointment: Tuesday 17 November 2026, at 10:40.\n- Place: Cardiac Investigations Unit, Level 2.\n- Medicines: the letter does not give a list of medicines.\n\n## Questions for your doctor\n1. How long does the test last?\n2. When will I know the result?\n3. Can I go accompanied to the appointment?\n\n## When to ask for urgent help\nThe letter does not mention specific warning signs.",
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "dates",
+        "fact": "Echocardiogram on Tuesday 17 November 2026 at 10:40, Cardiac Investigations Unit, Level 2",
+        "status": "kept",
+        "note": "Date, time and place given: Tuesday 17 November 2026, 10:40, Cardiac Investigations Unit, Level 2."
+      },
+      {
+        "category": "dates",
+        "fact": "The test takes about 45 minutes",
+        "status": "dropped",
+        "note": "The 45-minute length is missing. The explanation only suggests asking the doctor how long the test lasts."
+      },
+      {
+        "category": "actions",
+        "fact": "Bring a list of all the medicines you take",
+        "status": "kept",
+        "note": "Says to bring a list of all the medicines you take."
+      },
+      {
+        "category": "actions",
+        "fact": "Arrive 15 minutes before the appointment time",
+        "status": "kept",
+        "note": "Says to arrive 15 minutes before the appointment."
+      },
+      {
+        "category": "actions",
+        "fact": "If you cannot attend, call 01632 960 123 at least 48 hours before",
+        "status": "kept",
+        "note": "Gives the phone number and the 'at least 48 hours before' rule."
+      },
+      {
+        "category": "negatives",
+        "fact": "You do not need to fast before the test",
+        "status": "kept",
+        "note": "Says you do not need to be fasting."
+      },
+      {
+        "category": "negatives",
+        "fact": "You do not need to stop any of your medicines",
+        "status": "kept",
+        "note": "Says you do not need to stop any of your medicines."
+      }
+    ],
+    "added": [],
+    "gold_reviewer": "claude-draft"
+  }
+}

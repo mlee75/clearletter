@@ -21,31 +21,33 @@ Mr J. Osei, Consultant Orthopaedic Surgeon
 ## Explanation shown to the patient
 
 ## Ce que dit cette lettre
-Cette lettre donne le résultat de votre IRM du genou gauche. L'IRM est un examen qui prend des images de l'intérieur du corps avec des aimants. Elle a été faite le 1 septembre 2026.
+Cette lettre donne les résultats de votre IRM (une image détaillée de l'intérieur du corps) du genou gauche. L'IRM a eu lieu le 1 septembre 2026. Le médecin spécialiste a écrit à votre médecin généraliste. Vous recevez une copie.
 
+Voici les résultats :
 - Il y a peut-être une petite déchirure du ménisque (partie arrière, côté intérieur du genou). On ne peut pas dire qu'il n'y en a pas.
-- Vous n'avez pas de fracture. Ce point est écarté.
+- Il n'y a pas de fracture.
 - Le ligament croisé antérieur (LCA) est intact.
-- Il y a une légère usure du genou, côté intérieur (arthrose débutante).
-- Il y a un peu de liquide dans le genou (épanchement articulaire).
+- Il y a une usure légère à l'intérieur du genou (arthrose débutante).
+- Il y a un peu de liquide dans le genou (épanchement).
 
-La chirurgie n'est pas prévue à ce stade.
+Une opération n'est pas prévue pour le moment.
 
 ## Ce que vous devez faire
-1. Allez à la kinésithérapie pendant 6 à 8 semaines. Le médecin a fait la demande.
-2. Allez à la consultation de contrôle en orthopédie dans 3 mois.
-3. Continuez vos activités normales, tant que la douleur le permet.
+1. Le médecin spécialiste vous a envoyé en kinésithérapie pour 6 à 8 semaines. La lettre ne donne pas de date de rendez-vous.
+2. Vous pouvez continuer vos activités normales, selon ce que la douleur permet.
+3. Le médecin spécialiste vous verra à la consultation d'orthopédie dans 3 mois. La lettre ne donne pas de date exacte.
 
 ## Dates et médicaments
-- 1 septembre 2026 : IRM du genou gauche.
-- 6 à 8 semaines : kinésithérapie.
-- Dans 3 mois : consultation de contrôle en orthopédie. La date exacte n'est pas donnée dans la lettre.
-- Médicaments : la lettre n'en cite aucun.
+- IRM du genou gauche : 1 septembre 2026.
+- Kinésithérapie : 6 à 8 semaines. Pas de date donnée.
+- Consultation d'orthopédie : dans 3 mois. Pas de date exacte.
+- Médicaments : la lettre n'en indique aucun.
 
 ## Questions à poser à votre médecin
-- Que veut dire « ménisque » ?
-- Que veut dire « arthrose » et « épanchement » ?
-- Comment saurai-je la date de ma consultation dans 3 mois ?
+- Que veut dire « déchirure possible du ménisque » pour moi ?
+- Que veulent dire « arthrose » et « épanchement » ?
+- Quand aura lieu mon premier rendez-vous de kinésithérapie ?
+- Quelle est la date de ma consultation dans 3 mois ?
 
 ## Quand obtenir de l'aide en urgence
 La lettre ne donne pas de signes d'alerte particuliers.
@@ -59,31 +61,33 @@ Si vous êtes inquiet et que ce n'est pas une urgence, appelez le NHS 111. En ca
 ## Back-translation to English (by Claude, used by the judge)
 
 ## What this letter says
-This letter gives the result of your MRI of the left knee. The MRI is an examination that takes images of the inside of the body with magnets. It was done on 1 September 2026.
+This letter gives the results of your MRI (a detailed image of the inside of the body) of the left knee. The MRI took place on 1 September 2026. The specialist doctor wrote to your general practitioner. You are receiving a copy.
 
+Here are the results:
 - There is perhaps a small tear of the meniscus (back part, inner side of the knee). It cannot be said that there is not one.
-- You do not have a fracture. This point is ruled out.
+- There is no fracture.
 - The anterior cruciate ligament (ACL) is intact.
-- There is slight wear of the knee, inner side (early osteoarthritis).
-- There is a little fluid in the knee (joint effusion).
+- There is slight wear on the inside of the knee (early osteoarthritis).
+- There is a little fluid in the knee (effusion).
 
-Surgery is not planned at this stage.
+An operation is not planned for the moment.
 
 ## What you must do
-1. Go to physiotherapy for 6 to 8 weeks. The doctor made the request.
-2. Go to the follow-up consultation in orthopaedics in 3 months.
-3. Continue your normal activities, as long as the pain allows it.
+1. The specialist doctor has sent you to physiotherapy for 6 to 8 weeks. The letter does not give an appointment date.
+2. You can continue your normal activities, according to what the pain allows.
+3. The specialist doctor will see you at the orthopaedic consultation in 3 months. The letter does not give an exact date.
 
 ## Dates and medicines
-- 1 September 2026: MRI of the left knee.
-- 6 to 8 weeks: physiotherapy.
-- In 3 months: follow-up consultation in orthopaedics. The exact date is not given in the letter.
-- Medicines: the letter does not mention any.
+- MRI of the left knee: 1 September 2026.
+- Physiotherapy: 6 to 8 weeks. No date given.
+- Orthopaedic consultation: in 3 months. No exact date.
+- Medicines: the letter does not indicate any.
 
 ## Questions to ask your doctor
-- What does "meniscus" mean?
+- What does "possible tear of the meniscus" mean for me?
 - What do "osteoarthritis" and "effusion" mean?
-- How will I know the date of my consultation in 3 months?
+- When will my first physiotherapy appointment take place?
+- What is the date of my consultation in 3 months?
 
 ## When to get help urgently
 The letter does not give any particular warning signs.

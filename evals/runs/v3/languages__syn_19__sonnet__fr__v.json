@@ -1,0 +1,271 @@
+{
+  "job": {
+    "id": "languages__syn_19__sonnet__fr__v",
+    "part": "languages",
+    "letter_id": "syn_19",
+    "file": "data/synthetic/syn_19.txt",
+    "kind": "faithfulness",
+    "model": "sonnet",
+    "language": "fr",
+    "verifier": true,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "sonnet",
+    "backend": "claude-code",
+    "language": "fr",
+    "country": "uk",
+    "use_verifier": true,
+    "status": "ok_after_retry",
+    "final_text": "## Ce que dit cette lettre\nVous avez eu plusieurs hypos (baisses du sucre dans le sang). Votre HbA1c est à 46 mmol/mol.\nLe gliclazide peut causer des hypos. La sitagliptine ne cause pas d'habitude des hypos.\nVos médicaments contre le diabète changent après votre visite à la clinique.\n\n## Ce que vous devez faire\n1. Continuez à mesurer votre sucre dans le sang pendant les 2 prochaines semaines.\n2. Apportez vos résultats à votre prochain rendez-vous.\n3. Si vous vomissez, avez la diarrhée, ou ne pouvez pas manger ou boire normalement : arrêtez la metformine.\n4. Reprenez la metformine 24 à 48 heures après avoir recommencé à manger et à boire normalement.\n\n## Dates et médicaments\n- Visite à la clinique : 2 octobre 2026.\n- Prochain rendez-vous : vendredi 13 novembre 2026 à 10:00. Apportez vos résultats de sucre dans le sang.\n\nMédicaments :\n- Gliclazide 80 mg, 2 fois par jour : ARRÊTEZ ce médicament. Il peut causer des hypos.\n- Metformine 1 g, 2 fois par jour pendant les repas : CONTINUEZ ce médicament.\n- Sitagliptine 100 mg, 1 fois par jour : COMMENCEZ ce médicament.\n\n## Questions à poser à votre médecin\n- Qu'est-ce qu'une hypo, exactement ?\n- Que veut dire mon résultat d'HbA1c à 46 mmol/mol ?\n- Comment bien noter mes résultats de sucre dans le sang ?\n\n## Quand obtenir de l'aide en urgence\nLa lettre ne donne pas de signes d'alerte particuliers.\n\nSi vous êtes inquiet et que ce n'est pas une urgence, appelez le NHS 111. En cas d'urgence, appelez le 999.\n\n---\n*Cette explication a été faite par un programme informatique pour vous aider à lire votre lettre. Elle peut contenir des erreurs. Elle ne remplace pas votre médecin, votre infirmier ou votre pharmacien. Suivez toujours la lettre et posez-leur vos questions si quelque chose n'est pas clair.*\n",
+    "facts": {
+      "reader": "patient",
+      "purpose": "To tell the patient about changes to his diabetes medicines after his clinic visit, because of hypos.",
+      "findings": [
+        {
+          "statement": "The patient has had several hypos (low blood sugar).",
+          "certainty": "stated",
+          "quote": "You told us you have had several hypos (low blood sugar)"
+        },
+        {
+          "statement": "HbA1c is 46 mmol/mol.",
+          "certainty": "stated",
+          "quote": "your HbA1c is 46 mmol/mol"
+        },
+        {
+          "statement": "Gliclazide can cause hypos.",
+          "certainty": "stated",
+          "quote": "It can cause hypos."
+        },
+        {
+          "statement": "Sitagliptin does not usually cause hypos.",
+          "certainty": "stated",
+          "quote": "This does not usually cause hypos."
+        }
+      ],
+      "medicines": [
+        {
+          "name": "gliclazide",
+          "dose": "80 mg",
+          "how_often": "twice daily",
+          "change": "stop",
+          "details": "Stop taking. It can cause hypos.",
+          "quote": "STOP gliclazide 80 mg twice daily."
+        },
+        {
+          "name": "metformin",
+          "dose": "1 g",
+          "how_often": "twice daily with meals",
+          "change": "continue",
+          "details": "Sick day rules apply: stop if vomiting, have diarrhoea, or cannot eat or drink normally; restart 24 to 48 hours after eating and drinking normally again.",
+          "quote": "CONTINUE metformin 1 g twice daily with meals."
+        },
+        {
+          "name": "sitagliptin",
+          "dose": "100 mg",
+          "how_often": "once daily",
+          "change": "start",
+          "details": "",
+          "quote": "START sitagliptin 100 mg once daily."
+        }
+      ],
+      "dates": [
+        {
+          "what": "Clinic visit",
+          "when": "2 October 2026",
+          "quote": "after your clinic visit on 02/10/2026"
+        },
+        {
+          "what": "Next appointment (bring blood sugar readings)",
+          "when": "13 November 2026 at 10:00",
+          "quote": "your next appointment on Friday 13 November 2026 at 10:00"
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Keep checking your blood sugar for the next 2 weeks.",
+          "quote": "Please keep checking your blood sugar for the next 2 weeks"
+        },
+        {
+          "instruction": "Bring your blood sugar readings to your next appointment.",
+          "quote": "bring your readings to your next appointment"
+        },
+        {
+          "instruction": "If you are vomiting, have diarrhoea, or cannot eat or drink normally, stop taking metformin. Restart it 24 to 48 hours after you are eating and drinking normally again.",
+          "quote": "if you are vomiting, have diarrhoea, or cannot eat or drink normally, stop taking metformin. Restart it 24 to 48 hours after you are eating and drinking normally again."
+        }
+      ],
+      "negatives": [],
+      "warning_signs": [],
+      "unclear": []
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## Ce que dit cette lettre\nVous avez eu plusieurs hypos (baisses du sucre dans le sang). Votre HbA1c est à 46 mmol/mol. L'HbA1c est un test de sang. Il montre le sucre moyen dans le sang sur les 2 à 3 derniers mois.\nLe gliclazide peut causer des hypos. La sitagliptine ne cause pas d'habitude des hypos.\nVos médicaments contre le diabète changent après votre visite à la clinique.\n\n## Ce que vous devez faire\n1. Continuez à mesurer votre sucre dans le sang pendant les 2 prochaines semaines.\n2. Apportez vos résultats à votre prochain rendez-vous.\n3. Si vous vomissez, avez la diarrhée, ou ne pouvez pas manger ou boire normalement : arrêtez la metformine.\n4. Reprenez la metformine 24 à 48 heures après avoir recommencé à manger et à boire normalement.\n\n## Dates et médicaments\n- Visite à la clinique : 2 octobre 2026.\n- Prochain rendez-vous : vendredi 13 novembre 2026 à 10:00. Apportez vos résultats de sucre dans le sang.\n\nMédicaments :\n- Gliclazide 80 mg, 2 fois par jour : ARRÊTEZ ce médicament. Il peut causer des hypos.\n- Metformine 1 g, 2 fois par jour pendant les repas : CONTINUEZ ce médicament.\n- Sitagliptine 100 mg, 1 fois par jour : COMMENCEZ ce médicament.\n\n## Questions à poser à votre médecin\n- Qu'est-ce qu'une hypo, exactement ?\n- Que veut dire mon résultat d'HbA1c à 46 mmol/mol ?\n- Comment bien noter mes résultats de sucre dans le sang ?\n\n## Quand obtenir de l'aide en urgence\nLa lettre ne donne pas de signes d'alerte particuliers.",
+        "missing_headings": [],
+        "unknown_numbers": [
+          "3"
+        ],
+        "readability": {
+          "language": "fr",
+          "reading_ease": 84.8,
+          "reading_ease_target": 70,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [
+            {
+              "kind": "added",
+              "severity": "minor",
+              "explanation_says": "L'HbA1c est un test de sang. Il montre le sucre moyen dans le sang sur les 2 à 3 derniers mois.",
+              "letter_says": "HbA1c is 46 mmol/mol (no definition given).",
+              "why": "General definition of a term that is in the letter; allowed. The 2-3 month timeframe is standard and not a patient-specific claim.",
+              "real_difference": false
+            },
+            {
+              "kind": "advice",
+              "severity": "minor",
+              "explanation_says": "Continuez à mesurer votre sucre dans le sang... Apportez vos résultats.",
+              "letter_says": "Please keep checking your blood sugar for the next 2 weeks and bring your readings.",
+              "why": "Matches the letter.",
+              "real_difference": false
+            },
+            {
+              "kind": "changed",
+              "severity": "minor",
+              "explanation_says": "Metformine 1 g, 2 fois par jour pendant les repas",
+              "letter_says": "metformin 1 g twice daily with meals",
+              "why": "'Pendant les repas' matches 'with meals'. No difference.",
+              "real_difference": false
+            }
+          ],
+          "summary": "The explanation matches the letter. Doses, dates, the medicine changes (stop, continue, start) and the sick day rules are all correct. The only added content is a standard definition of HbA1c, which is allowed. No real problems found."
+        },
+        "blocking_problems": [
+          "The number 3 is not in the letter"
+        ],
+        "attempt": 1
+      },
+      {
+        "explanation": "## Ce que dit cette lettre\nVous avez eu plusieurs hypos (baisses du sucre dans le sang). Votre HbA1c est à 46 mmol/mol.\nLe gliclazide peut causer des hypos. La sitagliptine ne cause pas d'habitude des hypos.\nVos médicaments contre le diabète changent après votre visite à la clinique.\n\n## Ce que vous devez faire\n1. Continuez à mesurer votre sucre dans le sang pendant les 2 prochaines semaines.\n2. Apportez vos résultats à votre prochain rendez-vous.\n3. Si vous vomissez, avez la diarrhée, ou ne pouvez pas manger ou boire normalement : arrêtez la metformine.\n4. Reprenez la metformine 24 à 48 heures après avoir recommencé à manger et à boire normalement.\n\n## Dates et médicaments\n- Visite à la clinique : 2 octobre 2026.\n- Prochain rendez-vous : vendredi 13 novembre 2026 à 10:00. Apportez vos résultats de sucre dans le sang.\n\nMédicaments :\n- Gliclazide 80 mg, 2 fois par jour : ARRÊTEZ ce médicament. Il peut causer des hypos.\n- Metformine 1 g, 2 fois par jour pendant les repas : CONTINUEZ ce médicament.\n- Sitagliptine 100 mg, 1 fois par jour : COMMENCEZ ce médicament.\n\n## Questions à poser à votre médecin\n- Qu'est-ce qu'une hypo, exactement ?\n- Que veut dire mon résultat d'HbA1c à 46 mmol/mol ?\n- Comment bien noter mes résultats de sucre dans le sang ?\n\n## Quand obtenir de l'aide en urgence\nLa lettre ne donne pas de signes d'alerte particuliers.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "fr",
+          "reading_ease": 81.8,
+          "reading_ease_target": 70,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [],
+          "summary": "The explanation matches the letter. The medicines and doses are correct: stop gliclazide 80 mg twice daily, continue metformin 1 g twice daily with meals, and start sitagliptin 100 mg once daily. The sick day rules and the 24 to 48 hour restart are correct. So are the 2 weeks of blood sugar checks, the visit date of 2 October 2026, and the appointment on Friday 13 November 2026 at 10:00. The questions to ask add no new risks. The statement that the letter gives no warning signs is accurate. Leaving out the clinic phone number is a minor omission and I did not list it."
+        },
+        "blocking_problems": [],
+        "attempt": 2
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 3275,
+        "output_tokens": 1253,
+        "cost_usd": 0.01453,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 12225,
+        "output_tokens": 1626,
+        "cost_usd": 0.03064,
+        "turns": 4
+      },
+      {
+        "step": "verify",
+        "input_tokens": 3386,
+        "output_tokens": 505,
+        "cost_usd": 0.0128,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 9680,
+        "output_tokens": 1587,
+        "cost_usd": 0.03192,
+        "turns": 2
+      },
+      {
+        "step": "verify",
+        "input_tokens": 3348,
+        "output_tokens": 594,
+        "cost_usd": 0.01354,
+        "turns": 2
+      }
+    ],
+    "cost_usd": 0.10344,
+    "latency_s": 51.5
+  },
+  "back_translation": "## What this letter says\nYou have had several hypos (drops in blood sugar). Your HbA1c is at 46 mmol/mol.\nGliclazide can cause hypos. Sitagliptin does not usually cause hypos.\nYour diabetes medicines are changing after your visit to the clinic.\n\n## What you must do\n1. Continue to measure your blood sugar for the next 2 weeks.\n2. Bring your results to your next appointment.\n3. If you vomit, have diarrhoea, or cannot eat or drink normally: stop the metformin.\n4. Restart the metformin 24 to 48 hours after having started eating and drinking normally again.\n\n## Dates and medicines\n- Visit to the clinic: 2 October 2026.\n- Next appointment: Friday 13 November 2026 at 10:00. Bring your blood sugar results.\n\nMedicines:\n- Gliclazide 80 mg, 2 times a day: STOP this medicine. It can cause hypos.\n- Metformin 1 g, 2 times a day during meals: CONTINUE this medicine.\n- Sitagliptin 100 mg, 1 time a day: START this medicine.\n\n## Questions to ask your doctor\n- What is a hypo, exactly?\n- What does my HbA1c result of 46 mmol/mol mean?\n- How do I properly record my blood sugar results?\n\n## When to get help urgently\nThe letter does not give any particular warning signs.",
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "diagnoses",
+        "fact": "Several hypos (low blood sugar)",
+        "status": "kept",
+        "note": "Several hypos (drops in blood sugar) stated."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "HbA1c 46 mmol/mol",
+        "status": "kept",
+        "note": "HbA1c 46 mmol/mol stated."
+      },
+      {
+        "category": "medicines",
+        "fact": "STOP gliclazide 80 mg twice daily (it can cause hypos)",
+        "status": "kept",
+        "note": "Stop gliclazide 80 mg twice daily; can cause hypos."
+      },
+      {
+        "category": "medicines",
+        "fact": "CONTINUE metformin 1 g twice daily with meals",
+        "status": "kept",
+        "note": "Continue metformin 1 g twice daily during meals."
+      },
+      {
+        "category": "medicines",
+        "fact": "START sitagliptin 100 mg once daily",
+        "status": "kept",
+        "note": "Start sitagliptin 100 mg once daily."
+      },
+      {
+        "category": "medicines",
+        "fact": "Sick day rule: if vomiting, diarrhoea, or cannot eat or drink normally, stop metformin; restart 24 to 48 hours after eating and drinking normally again",
+        "status": "kept",
+        "note": "Sick day rule and 24–48 hour restart both stated."
+      },
+      {
+        "category": "dates",
+        "fact": "Clinic visit on 2 October 2026",
+        "status": "kept",
+        "note": "Clinic visit 2 October 2026."
+      },
+      {
+        "category": "dates",
+        "fact": "Next appointment on Friday 13 November 2026 at 10:00",
+        "status": "kept",
+        "note": "Friday 13 November 2026 at 10:00."
+      },
+      {
+        "category": "actions",
+        "fact": "Keep checking your blood sugar for the next 2 weeks and bring the readings to the next appointment",
+        "status": "kept",
+        "note": "Measure blood sugar for 2 weeks and bring results to the appointment."
+      }
+    ],
+    "added": [],
+    "gold_reviewer": "claude-draft"
+  }
+}

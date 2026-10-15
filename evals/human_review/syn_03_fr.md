@@ -23,30 +23,30 @@ Antenatal Clinic Team
 ## Explanation shown to the patient
 
 ## Ce que dit cette lettre
-Votre échographie des 20 semaines (échographie morphologique) est prévue.
+Cette lettre vous donne la date, l'heure et le lieu de votre échographie des 20 semaines (échographie morphologique).
+
 Cet examen regarde comment votre bébé grandit. Il cherche aussi certains problèmes physiques.
-L'examen ne peut pas trouver tous les problèmes.
+
+L'échographie ne peut pas trouver tous les problèmes.
 
 ## Ce que vous devez faire
-1. Venez à votre rendez-vous à la date et à l'heure indiquées ci-dessous.
-2. Vous pouvez venir avec 1 adulte.
-3. Un interprète peut vous aider ? Appelez au moins 5 jours ouvrables avant le rendez-vous. Il sera réservé gratuitement.
-4. Ne venez pas avec des enfants dans la salle. Les enfants ne peuvent pas entrer dans la salle d'examen.
-5. Vous n'avez pas besoin d'avoir la vessie pleine pour cet examen.
+1. Si un interprète peut vous aider, appelez la clinique au moins 5 jours ouvrables avant le rendez-vous. Elle en réservera un gratuitement.
+2. Vous pouvez venir avec un adulte. Un seul adulte est possible.
+3. Vous n'avez pas besoin d'avoir la vessie pleine pour cet examen.
+4. Les enfants ne peuvent pas entrer dans la salle d'échographie.
 
 ## Dates et médicaments
-- Date : lundi 11 janvier 2027.
-- Heure : 14:15.
-- Lieu : Antenatal Clinic (clinique prénatale), étage 1.
+- Échographie des 20 semaines : lundi 11 janvier 2027 à 14:15. Elle a lieu à la Clinique prénatale (Antenatal Clinic), étage 1.
+- Pour réserver un interprète gratuit : appelez au moins 5 jours ouvrables avant le 11 janvier 2027.
 - Médicaments : la lettre n'en cite aucun.
 
 ## Questions à poser à votre médecin
-- Comment puis-je appeler pour réserver un interprète ?
-- Qui peut venir avec moi à l'examen ?
-- Que puis-je faire de mes enfants pendant l'examen ?
+- Que va-t-on regarder pendant l'échographie ?
+- Que veut dire "l'échographie ne trouve pas tous les problèmes" ?
+- Comment puis-je réserver un interprète ?
 
 ## Quand obtenir de l'aide en urgence
-Avant votre rendez-vous, vous pouvez avoir un saignement, une perte de liquide par le vagin ou une forte douleur au ventre. Dans ce cas, appelez tout de suite la Maternity Assessment Unit (MAU, unité d'évaluation de la maternité) au 01632 960 456. La ligne est ouverte 24 heures sur 24.
+Avant votre rendez-vous, vous pouvez avoir un saignement, une fuite de liquide par le vagin ou une forte douleur au ventre. Dans ce cas, appelez tout de suite l'unité d'évaluation de la maternité (Maternity Assessment Unit, MAU) au 01632 960 456. La ligne est ouverte 24 heures sur 24.
 
 Si vous êtes inquiet et que ce n'est pas une urgence, appelez le NHS 111. En cas d'urgence, appelez le 999.
 
@@ -57,27 +57,27 @@ Si vous êtes inquiet et que ce n'est pas une urgence, appelez le NHS 111. En ca
 ## Back-translation to English (by Claude, used by the judge)
 
 ## What this letter says
-Your 20-week scan (morphology scan) is scheduled.
+This letter gives you the date, the time and the place of your 20-week ultrasound (morphology ultrasound).
+
 This examination looks at how your baby is growing. It also looks for certain physical problems.
-The examination cannot find all problems.
+
+The ultrasound cannot find all problems.
 
 ## What you must do
-1. Come to your appointment on the date and at the time indicated below.
-2. You can come with 1 adult.
-3. An interpreter can help you? Call at least 5 working days before the appointment. It will be booked free of charge.
-4. Do not come with children into the room. Children cannot enter the examination room.
-5. You do not need to have a full bladder for this examination.
+1. If an interpreter can help you, call the clinic at least 5 working days before the appointment. It will book one free of charge.
+2. You can come with an adult. Only one adult is possible.
+3. You do not need to have a full bladder for this examination.
+4. Children cannot enter the ultrasound room.
 
 ## Dates and medicines
-- Date: Monday 11 January 2027.
-- Time: 14:15.
-- Place: Antenatal Clinic (prenatal clinic), floor 1.
+- 20-week ultrasound: Monday 11 January 2027 at 14:15. It takes place at the Antenatal Clinic (Antenatal Clinic), floor 1.
+- To book a free interpreter: call at least 5 working days before 11 January 2027.
 - Medicines: the letter does not mention any.
 
 ## Questions to ask your doctor
-- How can I call to book an interpreter?
-- Who can come with me to the examination?
-- What can I do with my children during the examination?
+- What will be looked at during the ultrasound?
+- What does "the ultrasound does not find all problems" mean?
+- How can I book an interpreter?
 
-## When to get urgent help
-Before your appointment, you may have bleeding, a loss of fluid through the vagina or a severe pain in the belly. In this case, call the Maternity Assessment Unit (MAU, maternity assessment unit) right away on 01632 960 456. The line is open 24 hours a day.
+## When to get emergency help
+Before your appointment, you may have bleeding, a leak of fluid from the vagina or a strong pain in the belly. In this case, call straight away the maternity assessment unit (Maternity Assessment Unit, MAU) on 01632 960 456. The line is open 24 hours a day.

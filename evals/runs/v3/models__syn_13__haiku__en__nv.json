@@ -1,0 +1,172 @@
+{
+  "job": {
+    "id": "models__syn_13__haiku__en__nv",
+    "part": "models",
+    "letter_id": "syn_13",
+    "file": "data/synthetic/syn_13.txt",
+    "kind": "faithfulness",
+    "model": "haiku",
+    "language": "en",
+    "verifier": false,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "haiku",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": false,
+    "status": "not_verified",
+    "final_text": "## What this letter says\n\nYour blood test on 29 September 2026 showed a result of 52 mmol/mol.\n\nA result of 48 mmol/mol or above may mean type 2 diabetes (a condition where your body has trouble managing blood sugar).\n\nBecause you do not have any symptoms right now, the doctor needs another blood test to be sure.\n\nThe doctor has not made a diagnosis yet.\n\n## What you need to do\n\n1. Book a repeat blood test with the practice nurse within the next 2 weeks.\n2. After this test, book an appointment with Dr Thompson to discuss the result.\n3. Do not start any new medicine for diabetes before you have spoken to the doctor.\n\nNote: You do not need to fast (stop eating) before this test.\n\n## Dates and medicines\n\n- Blood test: 29 September 2026 - result was 52 mmol/mol\n- No medicines listed in this letter.\n\n## Questions to ask your doctor\n\n1. What does my HbA1c result mean exactly?\n2. When will I get the result of my second blood test?\n3. What happens if the second test shows a result of 48 mmol/mol or above?\n\n## When to get urgent help\n\nThe letter does not list specific warning signs.\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "patient",
+      "purpose": "Informing patient about HbA1c blood test result and requesting follow-up testing to confirm diabetes diagnosis",
+      "findings": [
+        {
+          "statement": "HbA1c result is 52 mmol/mol",
+          "certainty": "stated",
+          "quote": "Your HbA1c result from 29/09/2026 is 52 mmol/mol."
+        },
+        {
+          "statement": "Type 2 diabetes is possible",
+          "certainty": "possible",
+          "quote": "A result of 48 mmol/mol or above is in the range for type 2 diabetes."
+        },
+        {
+          "statement": "Patient does not have symptoms",
+          "certainty": "stated",
+          "quote": "Because you do not have symptoms, we need a second test to confirm whether you have diabetes."
+        },
+        {
+          "statement": "No diagnosis of diabetes has been made",
+          "certainty": "stated",
+          "quote": "We have not made a diagnosis yet."
+        }
+      ],
+      "medicines": [],
+      "dates": [
+        {
+          "what": "HbA1c blood test",
+          "when": "29 September 2026",
+          "quote": "Your HbA1c result from 29/09/2026 is 52 mmol/mol."
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Book a repeat blood test with the practice nurse within the next 2 weeks",
+          "quote": "Please book a repeat blood test with the practice nurse within the next 2 weeks."
+        },
+        {
+          "instruction": "Book an appointment with Dr Thompson after the second test to discuss the result",
+          "quote": "Please also book an appointment with Dr Thompson after the second test to discuss the result."
+        }
+      ],
+      "negatives": [
+        {
+          "instruction": "Do not start any new medicine for diabetes before you have spoken to the doctor",
+          "quote": "Do not start any new medicine for diabetes before you have spoken to the doctor."
+        },
+        {
+          "instruction": "You do not need to fast for this test",
+          "quote": "You do not need to fast for this test."
+        }
+      ],
+      "warning_signs": [],
+      "unclear": []
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\n\nYour blood test on 29 September 2026 showed a result of 52 mmol/mol.\n\nA result of 48 mmol/mol or above may mean type 2 diabetes (a condition where your body has trouble managing blood sugar).\n\nBecause you do not have any symptoms right now, the doctor needs another blood test to be sure.\n\nThe doctor has not made a diagnosis yet.\n\n## What you need to do\n\n1. Book a repeat blood test with the practice nurse within the next 2 weeks.\n2. After this test, book an appointment with Dr Thompson to discuss the result.\n3. Do not start any new medicine for diabetes before you have spoken to the doctor.\n\nNote: You do not need to fast (stop eating) before this test.\n\n## Dates and medicines\n\n- Blood test: 29 September 2026 - result was 52 mmol/mol\n- No medicines listed in this letter.\n\n## Questions to ask your doctor\n\n1. What does my HbA1c result mean exactly?\n2. When will I get the result of my second blood test?\n3. What happens if the second test shows a result of 48 mmol/mol or above?\n\n## When to get urgent help\n\nThe letter does not list specific warning signs.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 76.8,
+          "reading_ease_target": 70,
+          "grade_level": 5.8,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": null,
+        "blocking_problems": [],
+        "attempt": 1
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 2855,
+        "output_tokens": 5355,
+        "cost_usd": 0.02963,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 6799,
+        "output_tokens": 1531,
+        "cost_usd": 0.01445,
+        "turns": 2
+      }
+    ],
+    "cost_usd": 0.04408,
+    "latency_s": 64.3
+  },
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "diagnoses",
+        "fact": "HbA1c 52 mmol/mol, which is in the range for type 2 diabetes (48 or above)",
+        "status": "kept",
+        "note": "Gives 52 mmol/mol and says 48 or above may mean type 2 diabetes. That matches 'in the range for' and keeps the uncertainty the letter has, since no diagnosis has been made."
+      },
+      {
+        "category": "dates",
+        "fact": "HbA1c test on 29 September 2026",
+        "status": "kept",
+        "note": "Test date given as 29 September 2026."
+      },
+      {
+        "category": "dates",
+        "fact": "Repeat blood test with the practice nurse within the next 2 weeks",
+        "status": "kept",
+        "note": "Repeat blood test with the practice nurse within the next 2 weeks."
+      },
+      {
+        "category": "actions",
+        "fact": "Book the repeat blood test",
+        "status": "kept",
+        "note": "'Book a repeat blood test' is listed as an action."
+      },
+      {
+        "category": "actions",
+        "fact": "Book an appointment with Dr Thompson after the second test",
+        "status": "kept",
+        "note": "Book an appointment with Dr Thompson after this test to discuss the result."
+      },
+      {
+        "category": "negatives",
+        "fact": "Diabetes has NOT been diagnosed yet; a second test is needed to confirm",
+        "status": "kept",
+        "note": "Says the doctor has not made a diagnosis yet and needs another blood test to be sure."
+      },
+      {
+        "category": "negatives",
+        "fact": "You do not need to fast for the repeat test",
+        "status": "kept",
+        "note": "Says you do not need to fast before this test (the repeat test)."
+      },
+      {
+        "category": "negatives",
+        "fact": "Do not start any new diabetes medicine before speaking to the doctor",
+        "status": "kept",
+        "note": "Says not to start any new diabetes medicine before speaking to the doctor."
+      }
+    ],
+    "added": [],
+    "gold_reviewer": "claude-draft"
+  },
+  "reused_from": "v2"
+}

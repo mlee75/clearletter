@@ -26,31 +26,30 @@ Endoscopy Nursing Team
 ## Explanation shown to the patient
 
 ## Ce que dit cette lettre
-Cette lettre vous donne la date de votre coloscopie (colonoscopy). Elle dit où aller. Elle explique comment vous préparer.
-Votre examen est le 3 décembre 2026 à 08:30. Il a lieu à l'hôpital St Aldric's. Présentez-vous à l'Endoscopy Unit, au rez-de-chaussée.
-On pourrait vous proposer une sédation (sedation). Ce n'est pas sûr que vous en aurez une.
+Cette lettre vous donne un rendez-vous pour une coloscopie (colonoscopy). Elle explique aussi comment vous préparer.
+
+Vous pourriez avoir une sédation (sedation). Ce n'est pas sûr. Demandez à votre médecin ce que c'est.
 
 ## Ce que vous devez faire
-1. Présentez-vous à l'Endoscopy Unit, au rez-de-chaussée.
-2. Arrêtez vos comprimés de fer (sulfate ferreux) 7 jours avant l'examen.
-3. N'arrêtez pas vos autres médicaments. Continuez-les comme d'habitude.
-4. La veille de l'examen, ne mangez rien de solide après 12:00 (midi). Buvez seulement des liquides clairs.
-5. Prenez la préparation pour l'intestin (Moviprep) comme dit dans la notice jointe.
-6. Le jour de l'examen, ne mangez rien et ne buvez rien à partir de 06:30. Vous pouvez prendre de petites gorgées d'eau.
-7. Si vous avez une sédation, un adulte doit venir vous chercher. Il doit rester avec vous pendant 24 heures.
-8. Ne conduisez pas pendant 24 heures après la sédation.
-9. Pour changer votre rendez-vous, appelez le 01632 960 214.
+1. Présentez-vous au service d'endoscopie (Endoscopy Unit), au rez-de-chaussée.
+2. La veille de l'examen, ne mangez rien de solide après 12:00 (midi). Vous pouvez boire seulement des liquides clairs.
+3. Le jour de l'examen, dès 06:30, ne mangez et ne buvez rien (NBM). Vous pouvez prendre de petites gorgées d'eau.
+4. Prenez la préparation intestinale (Moviprep) comme le décrit la notice jointe.
+5. Arrêtez vos comprimés de fer (sulfate de fer, ferrous sulphate) 7 jours avant l'examen.
+6. Si vous avez une sédation, un adulte doit venir vous chercher. Cet adulte doit rester avec vous pendant 24 heures.
+7. Ne conduisez pas pendant 24 heures après la sédation.
+8. Pour changer votre rendez-vous, appelez le 01632 960 214.
 
 ## Dates et médicaments
-- 3 décembre 2026 à 08:30 : coloscopie à l'hôpital St Aldric's, Endoscopy Unit, rez-de-chaussée.
-- Comprimés de fer (sulfate ferreux) : dose et fréquence non indiquées. Arrêtez 7 jours avant l'examen.
-- Tous vos autres médicaments : dose et fréquence non indiquées. Continuez comme d'habitude.
-- Préparation pour l'intestin (Moviprep) : la dose est dans la notice jointe. Fréquence non indiquée. C'est un nouveau médicament à prendre.
+- Coloscopie : le 3 décembre 2026, à 08:30. Lieu : service d'endoscopie, rez-de-chaussée, hôpital St Aldric's.
+- Comprimés de fer (sulfate de fer) : dose non indiquée. Arrêtez 7 jours avant l'examen.
+- Tous vos autres médicaments : continuez comme d'habitude.
+- Préparation intestinale (Moviprep) : dose comme dans la notice jointe. La lettre ne dit pas à quelle heure la prendre.
 
 ## Questions à poser à votre médecin
 - Est-ce que j'aurai une sédation ?
-- Que veut dire coloscopie ?
-- Que veut dire sédation ?
+- À quelle heure dois-je prendre le Moviprep ?
+- Qu'est-ce qu'une coloscopie ?
 
 ## Quand obtenir de l'aide en urgence
 La lettre ne donne pas de signes d'alerte particuliers.
@@ -64,31 +63,30 @@ Si vous êtes inquiet et que ce n'est pas une urgence, appelez le NHS 111. En ca
 ## Back-translation to English (by Claude, used by the judge)
 
 ## What this letter says
-This letter gives you the date of your colonoscopy (colonoscopy). It says where to go. It explains how to prepare yourself.
-Your examination is on 3 December 2026 at 08:30. It takes place at St Aldric's hospital. Present yourself at the Endoscopy Unit, on the ground floor.
-You might be offered sedation (sedation). It is not certain that you will have one.
+This letter gives you an appointment for a colonoscopy (colonoscopy). It also explains how to prepare yourself.
+
+You might have a sedation (sedation). This is not certain. Ask your doctor what it is.
 
 ## What you must do
-1. Present yourself at the Endoscopy Unit, on the ground floor.
-2. Stop your iron tablets (ferrous sulfate) 7 days before the examination.
-3. Do not stop your other medicines. Continue them as usual.
-4. The day before the examination, do not eat anything solid after 12:00 (noon). Drink only clear liquids.
-5. Take the bowel preparation (Moviprep) as said in the enclosed leaflet.
-6. On the day of the examination, do not eat anything and do not drink anything from 06:30. You may take small sips of water.
-7. If you have sedation, an adult must come to pick you up. They must stay with you for 24 hours.
-8. Do not drive for 24 hours after the sedation.
-9. To change your appointment, call 01632 960 214.
+1. Go to the endoscopy department (Endoscopy Unit), on the ground floor.
+2. The day before the examination, do not eat anything solid after 12:00 (noon). You may drink only clear liquids.
+3. On the day of the examination, from 06:30, do not eat or drink anything (NBM). You may take small sips of water.
+4. Take the bowel preparation (Moviprep) as described in the enclosed leaflet.
+5. Stop your iron tablets (iron sulphate, ferrous sulphate) 7 days before the examination.
+6. If you have a sedation, an adult must come to pick you up. This adult must stay with you for 24 hours.
+7. Do not drive for 24 hours after the sedation.
+8. To change your appointment, call 01632 960 214.
 
 ## Dates and medicines
-- 3 December 2026 at 08:30: colonoscopy at St Aldric's hospital, Endoscopy Unit, ground floor.
-- Iron tablets (ferrous sulfate): dose and frequency not indicated. Stop 7 days before the examination.
-- All your other medicines: dose and frequency not indicated. Continue as usual.
-- Bowel preparation (Moviprep): the dose is in the enclosed leaflet. Frequency not indicated. It is a new medicine to take.
+- Colonoscopy: on 3 December 2026, at 08:30. Place: endoscopy department, ground floor, St Aldric's hospital.
+- Iron tablets (iron sulphate): dose not indicated. Stop 7 days before the examination.
+- All your other medicines: continue as usual.
+- Bowel preparation (Moviprep): dose as in the enclosed leaflet. The letter does not say at what time to take it.
 
 ## Questions to ask your doctor
-- Will I have sedation?
-- What does colonoscopy mean?
-- What does sedation mean?
+- Will I have a sedation?
+- At what time must I take the Moviprep?
+- What is a colonoscopy?
 
-## When to get help urgently
+## When to get urgent help
 The letter does not give any particular warning signs.

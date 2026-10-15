@@ -27,23 +27,26 @@ Cardiology Booking Team
 ## Explanation shown to the patient
 
 ## Qué dice esta carta
-Tiene una cita para una ecografía del corazón (echocardiogram). Es una prueba con imágenes del corazón. La cita es en la Unidad de Investigaciones Cardíacas (Cardiac Investigations Unit), en el piso 2. La prueba dura unos 45 minutos.
+Esta carta es una cita para una ecografía del corazón (echocardiogram).
+La prueba dura unos 45 minutos.
 
 ## Qué tiene que hacer
-1. Llegue 15 minutos antes de la hora de su cita.
-2. Traiga una lista de todos los medicamentos que toma.
-3. Si no puede ir, llame al 01632 960 123. Llame al menos 48 horas antes. Así otro paciente puede usar su hora.
-4. No necesita estar en ayunas antes de esta prueba.
-5. No necesita dejar ningún medicamento.
+1. Vaya a la Unidad de Investigaciones Cardíacas (Cardiac Investigations Unit), Nivel 2.
+2. Llegue 15 minutos antes de la hora de su cita.
+3. Traiga una lista de todos los medicamentos que toma.
+4. Si no puede ir, llame al 01632 960 123. Llame al menos 48 horas antes. Así otro paciente puede usar su hora.
+5. No necesita estar en ayunas para esta prueba.
+6. No necesita dejar de tomar ninguno de sus medicamentos.
 
 ## Fechas y medicamentos
-- Cita: martes 17 de noviembre de 2026, a las 10:40.
-- La carta no menciona medicamentos nuevos. No hay cambios en sus medicamentos.
+- Cita: martes 17 de noviembre de 2026 a las 10:40.
+- Lugar: Unidad de Investigaciones Cardíacas, Nivel 2.
+- La carta no menciona medicamentos concretos.
 
 ## Preguntas para su médico
 - ¿Qué es un ecocardiograma (echocardiogram)?
-- ¿Cómo se hace la prueba?
-- ¿Qué debo llevar a la cita?
+- ¿Cómo es la prueba?
+- ¿Qué pasa si no puedo ir a la cita?
 
 ## Cuándo pedir ayuda urgente
 La carta no menciona señales de alarma concretas.
@@ -57,23 +60,26 @@ Si le preocupa algo y no es una emergencia, llame al NHS 111. En caso de emergen
 ## Back-translation to English (by Claude, used by the judge)
 
 ## What this letter says
-You have an appointment for an ultrasound of the heart (echocardiogram). It is a test with images of the heart. The appointment is in the Cardiac Investigations Unit (Cardiac Investigations Unit), on floor 2. The test lasts about 45 minutes.
+This letter is an appointment for an ultrasound of the heart (echocardiogram).
+The test lasts about 45 minutes.
 
 ## What you have to do
-1. Arrive 15 minutes before the time of your appointment.
-2. Bring a list of all the medicines you take.
-3. If you cannot go, call 01632 960 123. Call at least 48 hours before. That way another patient can use your time slot.
-4. You do not need to be fasting before this test.
-5. You do not need to stop any medicine.
+1. Go to the Cardiac Investigations Unit (Cardiac Investigations Unit), Level 2.
+2. Arrive 15 minutes before the time of your appointment.
+3. Bring a list of all the medicines you take.
+4. If you cannot go, call 01632 960 123. Call at least 48 hours before. That way another patient can use your time slot.
+5. You do not need to be fasting for this test.
+6. You do not need to stop taking any of your medicines.
 
 ## Dates and medicines
-- Appointment: Tuesday 17 November 2026, at 10:40.
-- The letter does not mention new medicines. There are no changes to your medicines.
+- Appointment: Tuesday 17 November 2026 at 10:40.
+- Place: Cardiac Investigations Unit, Level 2.
+- The letter does not mention specific medicines.
 
 ## Questions for your doctor
 - What is an echocardiogram (echocardiogram)?
-- How is the test done?
-- What should I bring to the appointment?
+- What is the test like?
+- What happens if I cannot go to the appointment?
 
 ## When to ask for urgent help
 The letter does not mention specific warning signs.

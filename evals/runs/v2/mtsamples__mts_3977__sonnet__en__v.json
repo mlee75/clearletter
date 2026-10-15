@@ -1,0 +1,396 @@
+{
+  "job": {
+    "id": "mtsamples__mts_3977__sonnet__en__v",
+    "part": "mtsamples",
+    "letter_id": "mts_3977",
+    "file": "data/mtsamples/mts_3977.txt",
+    "kind": "faithfulness",
+    "model": "sonnet",
+    "language": "en",
+    "verifier": true,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "sonnet",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": true,
+    "status": "ok",
+    "final_text": "## What this letter says\nThis letter is from your hospital stay. You had heart failure (congestive heart failure). You also had fluid in the left side of your chest (left pleural effusion).\n\nThe fluid was drained with a needle (thoracentesis). You felt much better after that. No fluid was sent for routine tests.\n\nA heart ultrasound (echocardiogram) showed an ejection fraction of 60%. It also showed diastolic dysfunction. It also showed periaortic stenosis with an opening of 1 cm3.\n\nA heart test in March 2000 (adenosine sestamibi) showed a small fixed apical defect. It showed no ischemia. Your heart enzymes were negative. Your liver tests were unremarkable. Your oxygen levels in room air were normal. Your vital signs were stable.\n\nYour sugar (glucose) was 182 at discharge. It was high because you had several doses of Solu-Medrol for bronchospasm. Your white blood cell count was 15,000. The doctor thinks this was due to steroid medicine (corticosteroids). This is a presumed cause.\n\nYour diagnoses at discharge are:\n- heart failure with pleural effusion\n- high blood pressure (hypertension)\n- prostate cancer\n- a high white cell count (leukocytosis)\n- anemia of chronic disease\n\nThe letter says your outlook (prognosis) is guarded.\n\n## What you need to do\n1. Tell the doctor if you get recurrent fever or chills. The letter does not say who to tell or how.\n2. The doctor will see you in the office in 1 week.\n\n## Dates and medicines\n**Dates**\n- Follow-up in the doctor's office: in 1 week.\n- Heart test (adenosine sestamibi): March 2000.\n\n**Medicines at discharge**\n- Lasix (furosemide) 40 mg, daily.\n- Potassium chloride 10 mEq, daily.\n- Atenolol 25 mg, daily.\n- Aspirin 5 grains, daily.\n- Ditropan (oxybutynin) 5 mg, twice a day.\n- Colace (docusate) 100 mg, twice a day.\n\n**Stopped**\n- Lisinopril (Prinivil) was stopped. Dr. Y recommended a beta-blocker with an ACE inhibitor.\n\n## Questions to ask your doctor\n- What does \"guarded\" mean for me?\n- Why was lisinopril stopped?\n- Who do I call if I get fever or chills?\n- What will happen at my visit in 1 week?\n\n## When to get urgent help\nThe letter lists one warning sign: recurrent fever or chills. Notify the doctor if this happens.\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "doctor_copy_to_patient",
+      "purpose": "Discharge summary after hospital admission for congestive heart failure with fluid in the left chest, listing diagnoses, hospital course, discharge medicines and follow-up.",
+      "findings": [
+        {
+          "statement": "Diagnosis at admission: congestive heart failure with left pleural effusion",
+          "certainty": "stated",
+          "quote": "Congestive heart failure (CHF) with left pleural effusion."
+        },
+        {
+          "statement": "Diagnosis at discharge: congestive heart failure with pleural effusion",
+          "certainty": "stated",
+          "quote": "Congestive heart failure (CHF) with pleural effusion."
+        },
+        {
+          "statement": "Diagnosis at discharge: hypertension",
+          "certainty": "stated",
+          "quote": "Hypertension."
+        },
+        {
+          "statement": "Diagnosis at discharge: prostate cancer",
+          "certainty": "stated",
+          "quote": "Prostate cancer."
+        },
+        {
+          "statement": "Diagnosis at discharge: leukocytosis",
+          "certainty": "stated",
+          "quote": "Leukocytosis."
+        },
+        {
+          "statement": "Diagnosis at discharge: anemia of chronic disease",
+          "certainty": "stated",
+          "quote": "Anemia of chronic disease."
+        },
+        {
+          "statement": "He had free flowing fluid in his left chest",
+          "certainty": "stated",
+          "quote": "He did have free flowing fluid in his left chest."
+        },
+        {
+          "statement": "Thoracentesis was done (radiology consultation obtained) and the patient felt much better afterwards; details such as volumes are not known to the writer; no fluid was sent for routine studies",
+          "certainty": "stated",
+          "quote": "The patient felt much better after the thoracentesis."
+        },
+        {
+          "statement": "Echocardiogram showed ejection fraction of 60% with diastolic dysfunction and periaortic stenosis with an opening of 1 cm3",
+          "certainty": "stated",
+          "quote": "This revealed an ejection fraction of 60% with diastolic dysfunction and periaortic stenosis with an opening of 1 cm3."
+        },
+        {
+          "statement": "Adenosine sestamibi in March 2000 showed a small fixed apical defect but no ischemia",
+          "certainty": "stated",
+          "quote": "with a small fixed apical defect, but no ischemia."
+        },
+        {
+          "statement": "Cardiac enzymes were negative/normal",
+          "certainty": "stated",
+          "quote": "Cardiac enzymes were negative."
+        },
+        {
+          "statement": "Glucose 182 at discharge, elevated because of several doses of Solu-Medrol given for bronchospasm",
+          "certainty": "stated",
+          "quote": "Glucose was elevated because of several doses of Solu-Medrol given to him because of bronchospams."
+        },
+        {
+          "statement": "White blood cell count 15,000 with a left shift, presumed due to corticosteroids",
+          "certainty": "possible",
+          "quote": "This was presumed due to the corticosteroids."
+        },
+        {
+          "statement": "Discharge labs: sodium 134, potassium 4.2, chloride 99, CO2 26, BUN 17, creatinine 1.0, magnesium 1.8, calcium 8.1, PT/INR 1.02, PTT 31.3, platelets 352,000, MCV 99",
+          "certainty": "stated",
+          "quote": "Sodium 134, potassium 4.2, chloride 99, CO2 26, glucose 182, BUN 17, and creatinine 1.0."
+        },
+        {
+          "statement": "Liver enzymes were unremarkable",
+          "certainty": "stated",
+          "quote": "Liver enzymes were unremarkable."
+        },
+        {
+          "statement": "O2 saturations on room air were normal",
+          "certainty": "stated",
+          "quote": "The patient's O2 saturations on room air were normal."
+        },
+        {
+          "statement": "Vital signs were stable",
+          "certainty": "stated",
+          "quote": "Vital signs were stable."
+        },
+        {
+          "statement": "Prognosis is guarded",
+          "certainty": "stated",
+          "quote": "PROGNOSIS:  ,Guarded."
+        }
+      ],
+      "medicines": [
+        {
+          "name": "Lasix (furosemide)",
+          "dose": "40 mg",
+          "how_often": "daily",
+          "change": "not_stated",
+          "details": "Given by IV during the admission to diurese",
+          "quote": "Lasix 40 mg daily"
+        },
+        {
+          "name": "potassium chloride",
+          "dose": "10 mEq",
+          "how_often": "daily",
+          "change": "not_stated",
+          "details": "Klor-Con was given in hospital",
+          "quote": "potassium chloride 10 mEq daily"
+        },
+        {
+          "name": "atenolol",
+          "dose": "25 mg",
+          "how_often": "daily",
+          "change": "not_stated",
+          "details": "Dr. Y recommended a beta-blocker with an ACE inhibitor",
+          "quote": "atenolol 25 mg daily"
+        },
+        {
+          "name": "aspirin",
+          "dose": "5 grains",
+          "how_often": "daily",
+          "change": "not_stated",
+          "details": "",
+          "quote": "aspirin 5 grains daily"
+        },
+        {
+          "name": "Ditropan (oxybutynin)",
+          "dose": "5 mg",
+          "how_often": "twice a day",
+          "change": "not_stated",
+          "details": "",
+          "quote": "Ditropan 5 mg b.i.d."
+        },
+        {
+          "name": "Colace (docusate)",
+          "dose": "100 mg",
+          "how_often": "twice a day",
+          "change": "not_stated",
+          "details": "",
+          "quote": "Colace 100 mg b.i.d."
+        },
+        {
+          "name": "lisinopril (Prinivil)",
+          "dose": "not stated",
+          "how_often": "not stated",
+          "change": "stop",
+          "details": "Discontinued because Dr. Y recommended a beta-blocker with an ACE inhibitor",
+          "quote": "therefore, the lisinopril was discontinued"
+        }
+      ],
+      "dates": [
+        {
+          "what": "Follow-up in the doctor's office",
+          "when": "in 1 week",
+          "quote": "He will be followed in my office in 1 week."
+        },
+        {
+          "what": "Adenosine sestamibi test",
+          "when": "March 2000",
+          "quote": "An adenosine sestamibi was done in March 2000"
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Notify the doctor if recurrent fever or chills",
+          "quote": "He is to notify if recurrent fever or chills."
+        }
+      ],
+      "negatives": [
+        {
+          "instruction": "No ischemia on the adenosine sestamibi test",
+          "quote": "but no ischemia"
+        },
+        {
+          "instruction": "No fluid was sent for routine studies",
+          "quote": "No fluid was sent for routine studies."
+        }
+      ],
+      "warning_signs": [
+        {
+          "instruction": "Recurrent fever or chills: notify",
+          "quote": "He is to notify if recurrent fever or chills."
+        }
+      ],
+      "unclear": [
+        "Letter does not say who to notify or how for recurrent fever or chills (presumably the writer's office).",
+        "Aspirin dose given as '5 grains' (as written).",
+        "'periaortic stenosis' is as written in the letter.",
+        "H&H 32.3/11.3 is given without explanation.",
+        "Letter says the patient was placed on Prinivil, but also that lisinopril was discontinued; it does not say whether Prinivil was stopped at discharge (it is not on the discharge list)."
+      ]
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\nThis letter is from your hospital stay. You had heart failure (congestive heart failure). You also had fluid in the left side of your chest (left pleural effusion).\n\nThe fluid was drained with a needle (thoracentesis). You felt much better after that. No fluid was sent for routine tests.\n\nA heart ultrasound (echocardiogram) showed an ejection fraction of 60%. It also showed diastolic dysfunction. It also showed periaortic stenosis with an opening of 1 cm3.\n\nA heart test in March 2000 (adenosine sestamibi) showed a small fixed apical defect. It showed no ischemia. Your heart enzymes were negative. Your liver tests were unremarkable. Your oxygen levels in room air were normal. Your vital signs were stable.\n\nYour sugar (glucose) was 182 at discharge. It was high because you had several doses of Solu-Medrol for bronchospasm. Your white blood cell count was 15,000. The doctor thinks this was due to steroid medicine (corticosteroids). This is a presumed cause.\n\nYour diagnoses at discharge are:\n- heart failure with pleural effusion\n- high blood pressure (hypertension)\n- prostate cancer\n- a high white cell count (leukocytosis)\n- anemia of chronic disease\n\nThe letter says your outlook (prognosis) is guarded.\n\n## What you need to do\n1. Tell the doctor if you get recurrent fever or chills. The letter does not say who to tell or how.\n2. The doctor will see you in the office in 1 week.\n\n## Dates and medicines\n**Dates**\n- Follow-up in the doctor's office: in 1 week.\n- Heart test (adenosine sestamibi): March 2000.\n\n**Medicines at discharge**\n- Lasix (furosemide) 40 mg, daily.\n- Potassium chloride 10 mEq, daily.\n- Atenolol 25 mg, daily.\n- Aspirin 5 grains, daily.\n- Ditropan (oxybutynin) 5 mg, twice a day.\n- Colace (docusate) 100 mg, twice a day.\n\n**Stopped**\n- Lisinopril (Prinivil) was stopped. Dr. Y recommended a beta-blocker with an ACE inhibitor.\n\n## Questions to ask your doctor\n- What does \"guarded\" mean for me?\n- Why was lisinopril stopped?\n- Who do I call if I get fever or chills?\n- What will happen at my visit in 1 week?\n\n## When to get urgent help\nThe letter lists one warning sign: recurrent fever or chills. Notify the doctor if this happens.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 70.6,
+          "reading_ease_target": 70,
+          "grade_level": 5.6,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [
+            {
+              "kind": "dropped",
+              "severity": "minor",
+              "explanation_says": "The fluid was drained with a needle (thoracentesis). No details about missing volumes.",
+              "letter_says": "Radiology consultation was obtained for thoracentesis... I do not have the details of this, i.e. the volumes.",
+              "why": "Minor omission; the explanation also implies the drainage was done, which the letter implies via 'felt much better after the thoracentesis'. Acceptable but details unknown are not stated."
+            },
+            {
+              "kind": "added",
+              "severity": "minor",
+              "explanation_says": "Lisinopril (Prinivil) was stopped. Dr. Y recommended a beta-blocker with an ACE inhibitor.",
+              "letter_says": "Dr. Y recommended a beta-blocker with an ACE inhibitor; therefore, the lisinopril was discontinued.",
+              "why": "The letter's reasoning is confusing, but the explanation's version matches it; the causal link 'therefore' is dropped, leaving it unclear. Also atenolol is not called new, which is fine."
+            },
+            {
+              "kind": "dropped",
+              "severity": "minor",
+              "explanation_says": "Sugar 182 and WBC 15,000 explained; no mention of left shift, anemia values (H&H 32.3/11.3, MCV 99), sodium 134, calcium 8.1.",
+              "letter_says": "Sodium 134, calcium 8.1, H&H 32.3/11.3, platelets 352,000, MCV 99, white cell count with left shift.",
+              "why": "Other lab values omitted; likely not essential to the patient."
+            }
+          ],
+          "summary": "The explanation is largely faithful. Doses, dates, follow-up, warning sign (fever or chills), prognosis and the presumed steroid cause of the high white count all match the letter. Only minor omissions or unclear points remain: the missing thoracentesis details, the unclear reasoning for stopping lisinopril, and some lab values that were left out."
+        },
+        "blocking_problems": [],
+        "attempt": 1
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 3732,
+        "output_tokens": 2465,
+        "cost_usd": 0.03375,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 11337,
+        "output_tokens": 2115,
+        "cost_usd": 0.04458,
+        "turns": 2
+      },
+      {
+        "step": "verify",
+        "input_tokens": 3889,
+        "output_tokens": 700,
+        "cost_usd": 0.01952,
+        "turns": 2
+      }
+    ],
+    "cost_usd": 0.09785,
+    "latency_s": 37.1
+  },
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "diagnoses",
+        "fact": "Heart failure (congestive heart failure) with fluid around the left lung (pleural effusion), drained",
+        "status": "kept",
+        "note": "Heart failure with left pleural effusion, drained by thoracentesis."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "High blood pressure",
+        "status": "kept",
+        "note": "High blood pressure (hypertension) listed."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Prostate cancer",
+        "status": "kept",
+        "note": "Prostate cancer listed."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "High white cell count, thought to be caused by the steroids",
+        "status": "kept",
+        "note": "High white cell count (leukocytosis), 15,000, presumed due to corticosteroids."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Anaemia of chronic disease",
+        "status": "kept",
+        "note": "Anemia of chronic disease listed."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Echo: ejection fraction 60% with diastolic dysfunction and narrowing near the aortic valve",
+        "status": "kept",
+        "note": "EF 60%, diastolic dysfunction, periaortic stenosis all stated (in letter wording)."
+      },
+      {
+        "category": "medicines",
+        "fact": "Lasix 40 mg daily",
+        "status": "kept",
+        "note": "Lasix 40 mg daily."
+      },
+      {
+        "category": "medicines",
+        "fact": "Potassium chloride 10 mEq daily",
+        "status": "kept",
+        "note": "Potassium chloride 10 mEq daily."
+      },
+      {
+        "category": "medicines",
+        "fact": "Atenolol 25 mg daily",
+        "status": "kept",
+        "note": "Atenolol 25 mg daily."
+      },
+      {
+        "category": "medicines",
+        "fact": "Aspirin 5 grains daily",
+        "status": "kept",
+        "note": "Aspirin 5 grains daily."
+      },
+      {
+        "category": "medicines",
+        "fact": "Ditropan 5 mg twice a day",
+        "status": "kept",
+        "note": "Ditropan 5 mg twice a day."
+      },
+      {
+        "category": "medicines",
+        "fact": "Colace 100 mg twice a day",
+        "status": "kept",
+        "note": "Colace 100 mg twice a day."
+      },
+      {
+        "category": "medicines",
+        "fact": "Lisinopril was stopped",
+        "status": "kept",
+        "note": "Lisinopril (Prinivil) was stopped."
+      },
+      {
+        "category": "dates",
+        "fact": "Follow up in the office in 1 week",
+        "status": "kept",
+        "note": "Office follow-up in 1 week."
+      },
+      {
+        "category": "actions",
+        "fact": "Tell the doctor if fever or chills come back",
+        "status": "kept",
+        "note": "Tell the doctor if recurrent fever or chills."
+      },
+      {
+        "category": "negatives",
+        "fact": "Heart enzymes normal (no heart attack)",
+        "status": "kept",
+        "note": "Heart enzymes were negative."
+      },
+      {
+        "category": "negatives",
+        "fact": "Oxygen levels on room air normal",
+        "status": "kept",
+        "note": "Oxygen levels on room air were normal."
+      }
+    ],
+    "added": [],
+    "gold_reviewer": "claude-draft"
+  }
+}

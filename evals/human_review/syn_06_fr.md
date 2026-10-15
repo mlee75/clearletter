@@ -30,38 +30,40 @@ Dr H. Adeyemi, Surgical Registrar
 ## Explanation shown to the patient
 
 ## Ce que dit cette lettre
-Vous aviez une appendicite aiguë (acute appendicitis). C'est confirmé.
-Vous avez eu une opération par petites incisions (appendicectomie par cœlioscopie). Le 24 septembre 2026, on a enlevé votre appendice. Il n'y a pas eu de complications.
+Vous aviez une appendicite aiguë (acute appendicitis).
+On a retiré votre appendice par une petite opération (appendicectomie par cœlioscopie).
+L'opération a eu lieu le 24 septembre 2026. Il n'y a pas eu de complications.
 Vous avez 3 petites plaies. Elles sont fermées avec des agrafes.
-Le résultat de l'examen de l'appendice en laboratoire (histology) n'est pas encore connu. Il sera envoyé à vous et à votre médecin de famille (GP). La lettre ne donne pas de date.
-Aucune autre action n'est nécessaire pour ce résultat, sauf s'il est anormal.
+Le résultat de l'examen de l'appendice en laboratoire (histologie) n'est pas encore connu.
+La lettre dit que ce résultat sera envoyé à vous et à votre médecin généraliste. Elle ne donne pas de date.
+Aucune autre action n'est nécessaire, sauf si le résultat est anormal.
 
 ## Ce que vous devez faire
-1. Prenez rendez-vous avec l'infirmière de votre cabinet médical (GP). C'est pour retirer les agrafes le 6 octobre 2026.
-2. Prenez l'ibuprofène pendant un repas.
-3. Ne prenez pas plus de 4 g de paracétamol en 24 heures.
-4. Ne soulevez pas d'objets lourds pendant 4 semaines.
+1. Prenez rendez-vous chez votre médecin généraliste. L'infirmière du cabinet doit retirer les agrafes le 6 octobre 2026. La lettre ne dit pas si ce rendez-vous a été pris.
+2. Vous pouvez prendre une douche à partir du 28 septembre 2026.
+3. Ne soulevez pas de charges lourdes pendant 4 semaines.
 
 ## Dates et médicaments
 **Dates**
 - 24 septembre 2026 : entrée à l'hôpital et opération.
 - 26 septembre 2026 : sortie de l'hôpital.
-- 28 septembre 2026 : vous pouvez prendre une douche à partir de ce jour.
-- 6 octobre 2026 : retrait des agrafes par l'infirmière, chez votre médecin de famille.
+- 28 septembre 2026 : vous pouvez prendre une douche.
+- 6 octobre 2026 : retrait des agrafes par l'infirmière du cabinet de votre médecin.
 
-**Médicaments** (nouveaux, à emporter de l'hôpital)
-- Paracétamol : 1 g, 4 fois par jour (QDS), seulement si besoin, contre la douleur. Maximum 4 g en 24 heures. Nouveau.
-- Ibuprofène : 400 mg, 3 fois par jour (TDS), pendant un repas, pendant 5 jours. Nouveau.
+**Médicaments**
+- Paracétamol : 1 gramme, jusqu'à 4 fois par jour, seulement si besoin, contre la douleur. Maximum : 4 grammes en 24 heures.
+- Ibuprofène : 400 milligrammes, 3 fois par jour, pendant les repas, pendant 5 jours.
 
 ## Questions à poser à votre médecin
-- Quand aurai-je le résultat de l'examen en laboratoire (histology) ?
-- Que signifie ce mot, histology ?
+- Mes agrafes ont-elles été retirées, ou dois-je encore prendre rendez-vous ?
+- Quand aurai-je le résultat de l'histologie ?
 - Comment saurai-je si le résultat est anormal ?
 
 ## Quand obtenir de l'aide en urgence
-Contactez votre médecin de famille (GP) ou appelez le 111 dans ces cas :
-- Vous avez une température supérieure à 38°C.
-- Une plaie devient rouge, gonflée ou laisse couler du pus.
+Contactez votre médecin généraliste ou appelez le 111 dans ces cas :
+- vous avez plus de 38°C de température ;
+- une plaie devient rouge ou gonflée ;
+- une plaie laisse couler du pus.
 
 Si vous êtes inquiet et que ce n'est pas une urgence, appelez le NHS 111. En cas d'urgence, appelez le 999.
 
@@ -72,35 +74,37 @@ Si vous êtes inquiet et que ce n'est pas une urgence, appelez le NHS 111. En ca
 ## Back-translation to English (by Claude, used by the judge)
 
 ## What this letter says
-You had acute appendicitis (acute appendicitis). It is confirmed.
-You had an operation through small incisions (laparoscopic appendicectomy). On 24 September 2026, your appendix was removed. There were no complications.
+You had acute appendicitis (acute appendicitis).
+Your appendix was removed by a small operation (laparoscopic appendicectomy).
+The operation took place on 24 September 2026. There were no complications.
 You have 3 small wounds. They are closed with staples.
-The result of the laboratory examination of the appendix (histology) is not yet known. It will be sent to you and to your family doctor (GP). The letter does not give a date.
-No other action is needed for this result, unless it is abnormal.
+The result of the laboratory examination of the appendix (histology) is not yet known.
+The letter says that this result will be sent to you and to your general practitioner. It does not give a date.
+No other action is necessary, unless the result is abnormal.
 
 ## What you must do
-1. Make an appointment with the nurse at your medical practice (GP). It is to remove the staples on 6 October 2026.
-2. Take the ibuprofen during a meal.
-3. Do not take more than 4 g of paracetamol in 24 hours.
-4. Do not lift heavy objects for 4 weeks.
+1. Make an appointment with your general practitioner. The practice nurse must remove the staples on 6 October 2026. The letter does not say whether this appointment has been made.
+2. You may take a shower from 28 September 2026.
+3. Do not lift heavy loads for 4 weeks.
 
 ## Dates and medicines
 **Dates**
 - 24 September 2026: admission to hospital and operation.
 - 26 September 2026: discharge from hospital.
-- 28 September 2026: you can take a shower from this day.
-- 6 October 2026: removal of the staples by the nurse, at your family doctor's.
+- 28 September 2026: you may take a shower.
+- 6 October 2026: removal of the staples by the nurse at your doctor's practice.
 
-**Medicines** (new, to take home from the hospital)
-- Paracetamol: 1 g, 4 times a day (QDS), only if needed, for pain. Maximum 4 g in 24 hours. New.
-- Ibuprofen: 400 mg, 3 times a day (TDS), during a meal, for 5 days. New.
+**Medicines**
+- Paracetamol: 1 gram, up to 4 times a day, only if needed, for pain. Maximum: 4 grams in 24 hours.
+- Ibuprofen: 400 milligrams, 3 times a day, with meals, for 5 days.
 
 ## Questions to ask your doctor
-- When will I get the result of the laboratory examination (histology)?
-- What does this word, histology, mean?
+- Have my staples been removed, or do I still need to make an appointment?
+- When will I get the histology result?
 - How will I know if the result is abnormal?
 
 ## When to get urgent help
-Contact your family doctor (GP) or call 111 in these cases:
-- You have a temperature above 38°C.
-- A wound becomes red, swollen or leaks pus.
+Contact your general practitioner or call 111 in these cases:
+- you have a temperature of more than 38°C;
+- a wound becomes red or swollen;
+- a wound leaks pus.

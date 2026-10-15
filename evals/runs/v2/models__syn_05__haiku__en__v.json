@@ -1,0 +1,187 @@
+{
+  "job": {
+    "id": "models__syn_05__haiku__en__v",
+    "part": "models",
+    "letter_id": "syn_05",
+    "file": "data/synthetic/syn_05.txt",
+    "kind": "faithfulness",
+    "model": "haiku",
+    "language": "en",
+    "verifier": true,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "haiku",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": true,
+    "status": "fallback",
+    "final_text": "**We could not explain this letter safely. Please ask your doctor, nurse or pharmacist to explain it to you.**\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "parent_or_carer",
+      "purpose": "Notification of asthma review appointment change and new appointment details",
+      "findings": [],
+      "medicines": [
+        {
+          "name": "beclometasone (brown preventer inhaler)",
+          "dose": "not stated",
+          "how_often": "every day",
+          "change": "continue",
+          "details": "Continue even when Yusuf is well",
+          "quote": "Please keep giving Yusuf his brown preventer inhaler every day, even when he is well"
+        },
+        {
+          "name": "salbutamol (blue reliever inhaler)",
+          "dose": "not stated",
+          "how_often": "not stated",
+          "change": "not_stated",
+          "details": "To be brought to appointment",
+          "quote": "his blue reliever inhaler (salbutamol)"
+        }
+      ],
+      "dates": [
+        {
+          "what": "Asthma review appointment (cancelled)",
+          "when": "Monday 9 November 2026",
+          "quote": "Yusuf's asthma review appointment on Monday 9 November 2026 has been cancelled"
+        },
+        {
+          "what": "Asthma review appointment with Paediatric Asthma Nurse, Children's Outpatients, Blue Zone",
+          "when": "Monday 23 November 2026 at 09:15",
+          "quote": "His NEW appointment is on Monday 23 November 2026 at 09:15 with the Paediatric Asthma Nurse"
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Bring all of Yusuf's inhalers, including his blue reliever inhaler (salbutamol) and his brown preventer inhaler (beclometasone)",
+          "quote": "All of Yusuf's inhalers, including his blue reliever inhaler (salbutamol) and his brown preventer inhaler (beclometasone)"
+        },
+        {
+          "instruction": "Bring his spacer",
+          "quote": "His spacer"
+        },
+        {
+          "instruction": "Bring his personal child health record (red book), if you have it",
+          "quote": "His personal child health record (red book), if you have it"
+        },
+        {
+          "instruction": "Call 01632 960 588 if the new time is not suitable",
+          "quote": "If this new time is not suitable, call 01632 960 588"
+        }
+      ],
+      "negatives": [
+        {
+          "instruction": "Do not stop the brown preventer inhaler even when Yusuf is well",
+          "quote": "Please keep giving Yusuf his brown preventer inhaler every day, even when he is well"
+        }
+      ],
+      "warning_signs": [],
+      "unclear": []
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\nYusuf's asthma appointment has changed. The old one is cancelled. Here is the new date and time.\n\n## What you need to do\n1. Bring both of Yusuf's inhalers - the blue reliever (salbutamol) and the brown preventer (beclometasone).\n2. Bring his spacer.\n3. Bring his red book (child health record), if you have it.\n4. Give Yusuf his brown preventer inhaler every day. Do not stop it, even when he is well.\n5. Call 01632 960 588 if the new time does not work for you.\n\n## Dates and medicines\n**Old appointment (now cancelled):** Monday 9 November 2026\n\n**New appointment:** Monday 23 November 2026 at 09:15\nWith the Paediatric Asthma Nurse at Children's Outpatients, Blue Zone\n\n**Beclometasone (brown preventer inhaler):** Keep giving every day. Do not stop, even when Yusuf is well.\n\n**Salbutamol (blue reliever inhaler):** Bring to the appointment.\n\n## Questions to ask your doctor\n1. What will you check at the asthma review?\n2. What should we do if Yusuf has an asthma attack before the appointment?\n3. Can you give us directions to Children's Outpatients, Blue Zone?\n\n## When to get urgent help\nThe letter does not list specific warning signs.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 78.2,
+          "reading_ease_target": 70,
+          "grade_level": 5.0,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [
+            {
+              "kind": "added",
+              "severity": "major",
+              "explanation_says": "Parents should ask: 'What should we do if Yusuf has an asthma attack before the appointment?'",
+              "letter_says": "The letter does not mention asthma attacks, emergencies, or what to do in case of deterioration",
+              "why": "The question introduces a medical risk (asthma attack) and suggests parents need guidance about emergency management. Neither is addressed in the letter, which is solely about an appointment change and continuing current medication. This extends the explanation's scope beyond what the letter covers and introduces a worry not warranted by the letter itself."
+            }
+          ],
+          "summary": "One problem found. The explanation correctly notes the letter lists no warning signs, but then contradicts this by suggesting a question about what to do if Yusuf has an asthma attack—a medical risk and emergency scenario not mentioned in the letter. This introduces a worry beyond the letter's scope (appointment change)."
+        },
+        "blocking_problems": [
+          "[added] The question introduces a medical risk (asthma attack) and suggests parents need guidance about emergency management. Neither is addressed in the letter, which is solely about an appointment change and continuing current medication. This extends the explanation's scope beyond what the letter covers and introduces a worry not warranted by the letter itself. (explanation: \"Parents should ask: 'What should we do if Yusuf has an asthma attack before the appointment?'\"; letter: 'The letter does not mention asthma attacks, emergencies, or what to do in case of deterioration')"
+        ],
+        "attempt": 1
+      },
+      {
+        "explanation": "## What this letter says\nYusuf's asthma appointment has changed. The old one is cancelled. Here is the new date and time.\n\n## What you need to do\n1. Bring both of Yusuf's inhalers - the blue reliever (salbutamol) and the brown preventer (beclometasone).\n2. Bring his spacer.\n3. Bring his red book (child health record), if you have it.\n4. Give Yusuf his brown preventer inhaler every day. Do not stop it, even when he is well.\n5. Call 01632 960 588 if the new time does not work for you.\n\n## Dates and medicines\n**Old appointment (now cancelled):** Monday 9 November 2026\n\n**New appointment:** Monday 23 November 2026 at 09:15\nWith the Paediatric Asthma Nurse at Children's Outpatients, Blue Zone\n\n**Beclometasone (brown preventer inhaler):** Keep giving every day. Do not stop, even when Yusuf is well.\n\n**Salbutamol (blue reliever inhaler):** Bring to the appointment.\n\n## Questions to ask your doctor\n1. What will happen at the asthma review appointment?\n2. Is there anything else we should prepare for the appointment?\n\n## When to get urgent help\nThe letter does not list specific warning signs.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 76.7,
+          "reading_ease_target": 70,
+          "grade_level": 5.2,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [
+            {
+              "kind": "changed",
+              "severity": "major",
+              "explanation_says": "Bring both of Yusuf's inhalers - the blue reliever (salbutamol) and the brown preventer (beclometasone).",
+              "letter_says": "Please bring: All of Yusuf's inhalers, including his blue reliever inhaler (salbutamol) and his brown preventer inhaler (beclometasone)",
+              "why": "The letter says 'all' inhalers, using 'including' language that suggests these are examples from a potentially larger set. The explanation narrows this to 'both,' implying exactly two inhalers exist. If Yusuf has other inhalers, a parent reading 'both' may not bring them—a safety issue at an asthma review appointment."
+            }
+          ],
+          "summary": "One major problem found: the explanation limits \"all of Yusuf's inhalers\" to \"both\" inhalers, potentially omitting other inhalers if they exist. This could affect the completeness of what is brought to the asthma review appointment."
+        },
+        "blocking_problems": [
+          "[changed] The letter says 'all' inhalers, using 'including' language that suggests these are examples from a potentially larger set. The explanation narrows this to 'both,' implying exactly two inhalers exist. If Yusuf has other inhalers, a parent reading 'both' may not bring them—a safety issue at an asthma review appointment. (explanation: \"Bring both of Yusuf's inhalers - the blue reliever (salbutamol) and the brown preventer (beclometasone).\"; letter: \"Please bring: All of Yusuf's inhalers, including his blue reliever inhaler (salbutamol) and his brown preventer inhaler (beclometasone)\")"
+        ],
+        "attempt": 2
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 2847,
+        "output_tokens": 6161,
+        "cost_usd": 0.03365,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 23449,
+        "output_tokens": 8500,
+        "cost_usd": 0.06815,
+        "turns": 3
+      },
+      {
+        "step": "verify",
+        "input_tokens": 11873,
+        "output_tokens": 6650,
+        "cost_usd": 0.05426,
+        "turns": 3
+      },
+      {
+        "step": "explain",
+        "input_tokens": 10599,
+        "output_tokens": 3840,
+        "cost_usd": 0.03684,
+        "turns": 2
+      },
+      {
+        "step": "verify",
+        "input_tokens": 9716,
+        "output_tokens": 4594,
+        "cost_usd": 0.03969,
+        "turns": 3
+      }
+    ],
+    "cost_usd": 0.23259,
+    "latency_s": 283.2
+  },
+  "judgement": {
+    "fallback": true
+  }
+}

@@ -1,0 +1,283 @@
+{
+  "job": {
+    "id": "mtsamples__mts_3072__sonnet__en__v",
+    "part": "mtsamples",
+    "letter_id": "mts_3072",
+    "file": "data/mtsamples/mts_3072.txt",
+    "kind": "faithfulness",
+    "model": "sonnet",
+    "language": "en",
+    "verifier": true,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "sonnet",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": true,
+    "status": "ok",
+    "final_text": "## What this letter says\nA specialist saw you because you have had bleeding from the rectum (rectal bleeding) that comes and goes. The letter went to your doctor.\n\nThe bleeding is painless. You have not lost weight. You are often constipated.\n\nThe specialist wants to rule out three things. This means checking if they are the cause:\n- colon cancer (possible, not known)\n- colon polyps (possible, not known)\n- hemorrhoids (possible). The letter says this is the most likely cause.\n\nThe letter also says:\n- Your blood pressure was 130/70. Your heart rate was 75. Your breathing rate was 16.\n- Your belly was soft and not tender. You were not in distress.\n- You have no weight loss, no nausea and no vomiting. Your appetite is good.\n- You have no night sweats, no fevers and no chills.\n- You have no allergies.\n- You smoke about a pack a day. You have done this for more than 25 years.\n\n## What you need to do\n1. You will need a full colonoscopy because of your age.\n2. You will need a CBC (complete blood count) check and monitoring. A CBC is a blood test that counts blood cells.\n3. You will be scheduled for the colonoscopy at Sample Hospital. The letter does not say who will book it.\n\nThe specialist will send the full colonoscopy report to your doctor's office.\n\n## Dates and medicines\nDates: The letter gives no date or time for the colonoscopy or the CBC.\n\nMedicines:\n- Cardizem CD, 240 milligrams. It is listed as a medicine you take now. The letter does not say how often.\n- Eye drops. The letter does not name them or say how often.\n\n## Questions to ask your doctor\n1. When will my colonoscopy and CBC be?\n2. What is a colonoscopy?\n3. Who will book my colonoscopy at Sample Hospital?\n4. The letter lists glaucoma in one place and diabetes in another. Which is right for me?\n\n## When to get urgent help\nThe letter does not list specific warning signs.\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "doctor_copy_to_patient",
+      "purpose": "Letter from a specialist to the referring doctor after seeing the patient for intermittent rectal bleeding, setting out the possible causes and the tests needed (colonoscopy and CBC).",
+      "findings": [
+        {
+          "statement": "Referred for evaluation of intermittent rectal bleeding",
+          "certainty": "stated",
+          "quote": "referred to me to be evaluated for intermittent rectal bleeding"
+        },
+        {
+          "statement": "Painless rectal bleeding without weight loss; chronically constipated",
+          "certainty": "stated",
+          "quote": "presenting with painless rectal bleeding not associated with any weight loss"
+        },
+        {
+          "statement": "Colon cancer needs to be ruled out",
+          "certainty": "possible",
+          "quote": "Rule out colon cancer."
+        },
+        {
+          "statement": "Colon polyps need to be ruled out",
+          "certainty": "possible",
+          "quote": "Rule out colon polyps."
+        },
+        {
+          "statement": "Hemorrhoids need to be ruled out; this is the most likely diagnosis",
+          "certainty": "possible",
+          "quote": "Rule out hemorrhoids, which is the most likely diagnosis."
+        },
+        {
+          "statement": "Blood pressure 130/70, heart rate 75, respirations 16; abdomen soft and non-tender; no distress",
+          "certainty": "stated",
+          "quote": "blood pressure is 130/70 with a heart rate of 75 and respirations of 16"
+        },
+        {
+          "statement": "Past history includes hypertension and glaucoma (impression section mentions hypertension and diabetes)",
+          "certainty": "stated",
+          "quote": "Significant for hypertension and diabetes."
+        },
+        {
+          "statement": "Smokes about a pack a day for more than 25 years",
+          "certainty": "stated",
+          "quote": "The patient smokes about a pack a day for more than 25 years."
+        }
+      ],
+      "medicines": [
+        {
+          "name": "Cardizem CD",
+          "dose": "240-mg",
+          "how_often": "",
+          "change": "not_stated",
+          "details": "Listed as a current medication",
+          "quote": "The patient takes Cardizem CD 240-mg."
+        },
+        {
+          "name": "Eye drops",
+          "dose": "",
+          "how_often": "",
+          "change": "not_stated",
+          "details": "Type not stated",
+          "quote": "The patient also takes eye drops."
+        }
+      ],
+      "dates": [],
+      "actions": [
+        {
+          "instruction": "The patient will need a complete colonoscopy exam because of her age",
+          "quote": "the patient will need to have a complete colonoscopy exam"
+        },
+        {
+          "instruction": "The patient will need a CBC (complete blood count) check and monitoring",
+          "quote": "The patient will also need to have a CBC check and monitor."
+        },
+        {
+          "instruction": "The colonoscopy will be scheduled at Sample Hospital (the letter says the patient 'will be scheduled'; who schedules it is not stated)",
+          "quote": "The patient will be scheduled for the colonoscopy at Sample Hospital"
+        },
+        {
+          "instruction": "The specialist will forward the full colonoscopy report to the referring doctor's office",
+          "quote": "the full report will be forwarded to your office"
+        }
+      ],
+      "negatives": [
+        {
+          "instruction": "No weight loss, no nausea, no vomiting",
+          "quote": "The patient denies any weight loss, does have a good appetite, no nausea and no vomiting."
+        },
+        {
+          "instruction": "No night sweats, fevers or chills",
+          "quote": "any night sweats, any fevers or any chills"
+        },
+        {
+          "instruction": "No allergies",
+          "quote": "The patient denies any allergies."
+        }
+      ],
+      "warning_signs": [],
+      "unclear": [
+        "The letter gives no date or time for the colonoscopy or the CBC.",
+        "The letter says glaucoma in the opening and diabetes in the past medical history; the two lists differ.",
+        "The eye drops are not named."
+      ]
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\nA specialist saw you because you have had bleeding from the rectum (rectal bleeding) that comes and goes. The letter went to your doctor.\n\nThe bleeding is painless. You have not lost weight. You are often constipated.\n\nThe specialist wants to rule out three things. This means checking if they are the cause:\n- colon cancer (possible, not known)\n- colon polyps (possible, not known)\n- hemorrhoids (possible). The letter says this is the most likely cause.\n\nThe letter also says:\n- Your blood pressure was 130/70. Your heart rate was 75. Your breathing rate was 16.\n- Your belly was soft and not tender. You were not in distress.\n- You have no weight loss, no nausea and no vomiting. Your appetite is good.\n- You have no night sweats, no fevers and no chills.\n- You have no allergies.\n- You smoke about a pack a day. You have done this for more than 25 years.\n\n## What you need to do\n1. You will need a full colonoscopy because of your age.\n2. You will need a CBC (complete blood count) check and monitoring. A CBC is a blood test that counts blood cells.\n3. You will be scheduled for the colonoscopy at Sample Hospital. The letter does not say who will book it.\n\nThe specialist will send the full colonoscopy report to your doctor's office.\n\n## Dates and medicines\nDates: The letter gives no date or time for the colonoscopy or the CBC.\n\nMedicines:\n- Cardizem CD, 240 milligrams. It is listed as a medicine you take now. The letter does not say how often.\n- Eye drops. The letter does not name them or say how often.\n\n## Questions to ask your doctor\n1. When will my colonoscopy and CBC be?\n2. What is a colonoscopy?\n3. Who will book my colonoscopy at Sample Hospital?\n4. The letter lists glaucoma in one place and diabetes in another. Which is right for me?\n\n## When to get urgent help\nThe letter does not list specific warning signs.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 86.0,
+          "reading_ease_target": 70,
+          "grade_level": 3.4,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [
+            {
+              "kind": "dropped",
+              "severity": "minor",
+              "explanation_says": "The explanation does not mention the patient's history of hypertension in the main summary (only a question about glaucoma vs diabetes).",
+              "letter_says": "Past history of hypertension, glaucoma and diabetes; family history of hypertension and strokes.",
+              "why": "Background history omitted; not essential for the patient's actions.",
+              "real_difference": false
+            },
+            {
+              "kind": "changed",
+              "severity": "minor",
+              "explanation_says": "The specialist wants to rule out three things; 'hemorrhoids (possible)'. 'You are often constipated.'",
+              "letter_says": "The patient is chronically constipated.",
+              "why": "'Often' is slightly weaker than 'chronically', a wording difference.",
+              "real_difference": false
+            },
+            {
+              "kind": "added",
+              "severity": "minor",
+              "explanation_says": "The letter went to your doctor.",
+              "letter_says": "The letter is addressed to the referring doctor ('Dear Sample Doctor').",
+              "why": "Matches the letter; no real difference.",
+              "real_difference": false
+            }
+          ],
+          "summary": "The explanation matches the letter closely. Diagnoses, tests, vitals, medicines and the lack of dates or warning signs are all accurately reported. The only differences are minor wording ('often' for 'chronically') and background history that was left out (hypertension, family history). None of these would change what the patient understands or does."
+        },
+        "blocking_problems": [],
+        "attempt": 1
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 3937,
+        "output_tokens": 1371,
+        "cost_usd": 0.01586,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 13726,
+        "output_tokens": 1635,
+        "cost_usd": 0.03332,
+        "turns": 6
+      },
+      {
+        "step": "verify",
+        "input_tokens": 4049,
+        "output_tokens": 511,
+        "cost_usd": 0.01551,
+        "turns": 2
+      }
+    ],
+    "cost_usd": 0.06469,
+    "latency_s": 30.1
+  },
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "diagnoses",
+        "fact": "Intermittent painless bleeding from the back passage (rectal bleeding)",
+        "status": "kept",
+        "note": "Says the rectal bleeding comes and goes and is painless."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Chronic constipation",
+        "status": "kept",
+        "note": "Says 'You are often constipated.'"
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Haemorrhoids are the most likely diagnosis",
+        "status": "kept",
+        "note": "Says hemorrhoids are the most likely cause."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Colon cancer and colon polyps need to be ruled out (not diagnosed)",
+        "status": "kept",
+        "note": "Lists colon cancer and polyps as things to rule out, 'possible, not known'."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "History of high blood pressure, glaucoma and diabetes",
+        "status": "changed",
+        "note": "Never mentions the history of high blood pressure. Glaucoma and diabetes appear only in a question that treats them as either/or ('Which is right for me?'), but the letter lists both."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Smokes about a pack a day for more than 25 years",
+        "status": "kept",
+        "note": "Says she smokes about a pack a day and has for more than 25 years."
+      },
+      {
+        "category": "medicines",
+        "fact": "Cardizem CD 240 mg",
+        "status": "kept",
+        "note": "Lists Cardizem CD, 240 milligrams."
+      },
+      {
+        "category": "medicines",
+        "fact": "Eye drops",
+        "status": "kept",
+        "note": "Lists eye drops."
+      },
+      {
+        "category": "actions",
+        "fact": "Needs a complete colonoscopy because of her age",
+        "status": "kept",
+        "note": "Says she needs a full colonoscopy because of her age."
+      },
+      {
+        "category": "actions",
+        "fact": "Blood count (CBC) to check and monitor",
+        "status": "kept",
+        "note": "Says she needs a CBC check and monitoring."
+      },
+      {
+        "category": "actions",
+        "fact": "Colonoscopy to be booked at Sample Hospital; the report will go to the referring doctor",
+        "status": "kept",
+        "note": "Says the colonoscopy will be scheduled at Sample Hospital and the full report will go to her doctor's office."
+      },
+      {
+        "category": "negatives",
+        "fact": "No weight loss",
+        "status": "kept",
+        "note": "Says she has not lost weight."
+      },
+      {
+        "category": "negatives",
+        "fact": "No nausea or vomiting",
+        "status": "kept",
+        "note": "Says she has no nausea and no vomiting."
+      }
+    ],
+    "added": [],
+    "gold_reviewer": "claude-draft"
+  }
+}

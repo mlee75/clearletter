@@ -1,0 +1,226 @@
+{
+  "job": {
+    "id": "models__syn_09__haiku__en__v",
+    "part": "models",
+    "letter_id": "syn_09",
+    "file": "data/synthetic/syn_09.txt",
+    "kind": "faithfulness",
+    "model": "haiku",
+    "language": "en",
+    "verifier": true,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "haiku",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": true,
+    "status": "fallback",
+    "final_text": "**We could not explain this letter safely. Please ask your doctor, nurse or pharmacist to explain it to you.**\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "patient",
+      "purpose": "Hospital discharge summary after treatment for pneumonia, with medicines to continue at home and follow-up arrangements",
+      "findings": [
+        {
+          "statement": "Community-acquired pneumonia in the right lower lobe",
+          "certainty": "stated",
+          "quote": "Community-acquired pneumonia (chest infection), right lower lobe"
+        },
+        {
+          "statement": "CURB-65 score 1",
+          "certainty": "stated",
+          "quote": "CURB-65 score 1"
+        }
+      ],
+      "medicines": [
+        {
+          "name": "Amoxicillin",
+          "dose": "500 mg",
+          "how_often": "TDS (three times a day)",
+          "change": "continue",
+          "details": "You have had 2 days of antibiotics in hospital. Take tablets for 3 more days to complete 5 days in total. Last dose on 10 October 2026.",
+          "quote": "Amoxicillin 500 mg TDS. You have had 2 days of antibiotics in hospital. Take tablets for 3 more days to complete 5 days in total. Last dose on 10/10/2026"
+        }
+      ],
+      "dates": [
+        {
+          "what": "Admitted to hospital",
+          "when": "5 October 2026",
+          "quote": "Admitted: 05/10/2026"
+        },
+        {
+          "what": "Discharged from hospital",
+          "when": "7 October 2026",
+          "quote": "Discharged: 07/10/2026"
+        },
+        {
+          "what": "Last dose of amoxicillin",
+          "when": "10 October 2026",
+          "quote": "Last dose on 10/10/2026"
+        },
+        {
+          "what": "Repeat chest X-ray at the Radiology Department",
+          "when": "in 6 weeks",
+          "quote": "Repeat chest X-ray (CXR) in 6 weeks at the Radiology Department to check the infection has cleared"
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Attend for repeat chest X-ray at the Radiology Department in 6 weeks to check the infection has cleared",
+          "quote": "Repeat chest X-ray (CXR) in 6 weeks at the Radiology Department to check the infection has cleared"
+        }
+      ],
+      "negatives": [
+        {
+          "instruction": "You do not need to book the repeat chest X-ray",
+          "quote": "A request has been sent. You do not need to book it"
+        }
+      ],
+      "warning_signs": [
+        {
+          "instruction": "See your GP or call 111 if you become more short of breath",
+          "quote": "See your GP or call 111 if you become more short of breath (SOB)"
+        }
+      ],
+      "unclear": []
+    },
+    "removed_ungrounded": [
+      {
+        "list": "warning_signs",
+        "item": {
+          "instruction": "See your GP or call 111 if your fever comes back",
+          "quote": "See your GP or call 111 if your fever comes back"
+        }
+      },
+      {
+        "list": "warning_signs",
+        "item": {
+          "instruction": "See your GP or call 111 if you cough up blood",
+          "quote": "See your GP or call 111 if you cough up blood"
+        }
+      }
+    ],
+    "attempts": [
+      {
+        "explanation": "My second version is the best—it meets the reading ease target and is just slightly above the grade target. Here's the final explanation:\n\n## What this letter says\n\nYou were in hospital for pneumonia. This is a chest infection in your lung. You were admitted on 5 October 2026 and discharged on 7 October 2026.\n\nYou had 2 days of antibiotics in hospital. These are medicines that fight infection.\n\n## What you need to do\n\n1. Take your amoxicillin tablets at home for 3 more days to complete the 5-day course. Your last dose will be on 10 October 2026.\n2. You need a repeat chest X-ray in 6 weeks to check the infection has cleared. This will be at the Radiology Department. You do not need to book it - a request has already been sent.\n\n## Dates and medicines\n\n**Amoxicillin 500 milligrams**\n- How often: Three times a day\n- Take for: 3 more days (last dose 10 October 2026)\n- Change: Continue\n\n**Key dates:**\n- Admitted to hospital: 5 October 2026\n- Discharged from hospital: 7 October 2026\n- Repeat chest X-ray: In 6 weeks\n\n## Questions to ask your doctor\n\n- How will I know if the pneumonia is getting worse?\n- When will I get the chest X-ray results?\n- Can I do normal activities while taking antibiotics?\n\n## When to get urgent help\n\nSee your GP or call 111 if you become more short of breath.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 71.7,
+          "reading_ease_target": 70,
+          "grade_level": 6.8,
+          "grade_target": 6,
+          "passed": false
+        },
+        "verifier": {
+          "problems": [
+            {
+              "kind": "dropped",
+              "severity": "minor",
+              "explanation_says": "No mention of tiredness or cough duration expectations",
+              "letter_says": "You may feel tired for several weeks. Your cough may last 3 to 6 weeks.",
+              "why": "Important information about expected recovery symptoms that helps set patient expectations. This should be included in 'What this letter says' section.",
+              "real_difference": true
+            },
+            {
+              "kind": "dropped",
+              "severity": "major",
+              "explanation_says": "See your GP or call 111 if you become more short of breath.",
+              "letter_says": "See your GP or call 111 if you become more short of breath (SOB), if your fever comes back, or if you cough up blood.",
+              "why": "Two of three critical warning signs are omitted: fever returning and coughing up blood. These are essential safety information the patient needs to know.",
+              "real_difference": true
+            },
+            {
+              "kind": "added",
+              "severity": "minor",
+              "explanation_says": "Question: 'Can I do normal activities while taking antibiotics?'",
+              "letter_says": "No mention of activity restrictions or concerns about activities",
+              "why": "This question introduces a concern or worry about whether activities might be restricted while taking antibiotics. The letter does not address activity restrictions, so the question suggests a worry not present in the letter.",
+              "real_difference": true
+            }
+          ],
+          "summary": "Three problems found. Most serious: two of three warning signs (fever, cough up blood) are dropped from the urgent help section—critical safety information is missing. Also dropped: information about expected recovery symptoms (tiredness and cough duration). A suggested question about normal activities introduces a concern not mentioned in the letter, though this is minor as suggested questions are expected."
+        },
+        "blocking_problems": [
+          "[dropped] Two of three critical warning signs are omitted: fever returning and coughing up blood. These are essential safety information the patient needs to know. (explanation: 'See your GP or call 111 if you become more short of breath.'; letter: 'See your GP or call 111 if you become more short of breath (SOB), if your fever comes back, or if you cough up blood.')"
+        ],
+        "attempt": 1
+      },
+      {
+        "explanation": "Perfect. Here's the corrected explanation with all three warning signs included:\n\n## What this letter says\n\nYou were in hospital for pneumonia (a lung infection). You were admitted on 5 October 2026 and discharged on 7 October 2026.\n\nYou had 2 days of antibiotics in hospital. These are medicines that fight infection.\n\n## What you need to do\n\n1. Take your amoxicillin tablets at home for 3 more days to complete the 5-day course. Your last dose will be on 10 October 2026.\n2. You need a repeat chest X-ray in 6 weeks. It will be at the Radiology Department. You do not need to book it.\n\n## Dates and medicines\n\n**Amoxicillin 500 milligrams**\n- How often: Three times a day\n- Take for: 3 more days (last dose 10 October 2026)\n\n**Key dates:**\n- Admitted to hospital: 5 October 2026\n- Discharged from hospital: 7 October 2026\n- Repeat chest X-ray: In 6 weeks\n\n## Questions to ask your doctor\n\n- What signs should I watch for?\n- When will I get my chest X-ray results?\n- Can I do my normal activities?\n\n## When to get urgent help\n\nSee your GP or call 111 if you become more short of breath, if your fever comes back, or if you cough up blood.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 73.6,
+          "reading_ease_target": 70,
+          "grade_level": 6.6,
+          "grade_target": 6,
+          "passed": false
+        },
+        "verifier": {
+          "problems": [
+            {
+              "kind": "dropped",
+              "severity": "major",
+              "explanation_says": "No mention of recovery expectations or timeline",
+              "letter_says": "You may feel tired for several weeks. Your cough may last 3 to 6 weeks.",
+              "why": "The patient needs to know what normal recovery looks like. Without this information, they may misinterpret normal symptoms like tiredness or cough as warning signs, or become unnecessarily worried about their recovery.",
+              "real_difference": true
+            }
+          ],
+          "summary": "One problem found: the explanation omits important recovery expectations from the letter—that the patient may feel tired for several weeks and their cough may last 3 to 6 weeks. This is major because it could affect the patient's understanding of what is normal during recovery and their decisions about when to seek help."
+        },
+        "blocking_problems": [
+          "[dropped] The patient needs to know what normal recovery looks like. Without this information, they may misinterpret normal symptoms like tiredness or cough as warning signs, or become unnecessarily worried about their recovery. (explanation: 'No mention of recovery expectations or timeline'; letter: 'You may feel tired for several weeks. Your cough may last 3 to 6 weeks.')"
+        ],
+        "attempt": 2
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 2979,
+        "output_tokens": 6957,
+        "cost_usd": 0.03776,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 35814,
+        "output_tokens": 7283,
+        "cost_usd": 0.0613,
+        "turns": 5
+      },
+      {
+        "step": "verify",
+        "input_tokens": 2881,
+        "output_tokens": 9230,
+        "cost_usd": 0.04903,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 22218,
+        "output_tokens": 3907,
+        "cost_usd": 0.03892,
+        "turns": 4
+      },
+      {
+        "step": "verify",
+        "input_tokens": 11123,
+        "output_tokens": 5622,
+        "cost_usd": 0.0475,
+        "turns": 3
+      }
+    ],
+    "cost_usd": 0.23451,
+    "latency_s": 291.4
+  },
+  "judgement": {
+    "fallback": true
+  }
+}

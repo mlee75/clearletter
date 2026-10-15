@@ -1,0 +1,347 @@
+{
+  "job": {
+    "id": "mtsamples__mts_3898__sonnet__en__v",
+    "part": "mtsamples",
+    "letter_id": "mts_3898",
+    "file": "data/mtsamples/mts_3898.txt",
+    "kind": "faithfulness",
+    "model": "sonnet",
+    "language": "en",
+    "verifier": true,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "sonnet",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": true,
+    "status": "ok",
+    "final_text": "## What this letter says\nYou were in hospital with pneumonia (a lung illness). Treatment at home did not make it better. Your oxygen levels were low (hypoxia).\n\nThe doctors think the cause may be a virus. They call it atypical pneumonia. The lung doctor was not sure of the exact cause. He thought a virus was the most likely.\n\nYour first x-ray showed some mild patchy marks (infiltrates). A CT scan found no specific focal pathology.\n\nDoctors also think you may have mild adrenal insufficiency. This may be from the stress of the pneumonia, because you take prednisone all the time. This is not certain.\n\nYou also have rheumatoid arthritis. Methotrexate is known to cause pneumonitis on some occasions.\n\nYour fever broke 18 hours before you left hospital. Your oxygen levels got better. Your strength got better too.\n\nOne test is not back yet. This is the C. difficile toxin test. The result is pending. The letter does not say who will tell you the result.\n\n## What you need to do\n1. Finish your azithromycin. You have two pills left at home.\n2. Keep taking prednisone at the higher dose of 20 mg.\n3. See Dr. X in two to three days.\n\n## Dates and medicines\n- Follow-up with Dr. X: in two to three days.\n- Azithromycin: keep taking it until it is finished. The letter gives no dose.\n- Prednisone: 20 mg per day. Before, it was 5 mg per day. Keep the higher dose.\n- Methotrexate: 20 mg every week. It was held this past Friday. The hospital team will ask your rheumatologist whether to continue it. That decision is still waiting.\n- Remicade: every eight weeks. Your last dose was in June.\n- Rocephin (ceftriaxone): you had it by IV in hospital. Before hospital it was 1 g daily, starting three days before you were admitted. The letter does not say what happens with it after you leave.\n- Avelox: you had a reaction to it. It was stopped and changed to Augmentin.\n- Augmentin: it caused loose stools. It was stopped and changed to Rocephin and azithromycin.\n\n## Questions to ask your doctor\n- When will I get the C. difficile test result, and who will tell me?\n- What does adrenal insufficiency mean for me?\n- Should I take methotrexate again? When will I know?\n- What happens with the Rocephin now?\n\n## When to get urgent help\nThe letter does not list specific warning signs.\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "doctor_copy_to_patient",
+      "purpose": "Hospital discharge summary for a 79-year-old woman admitted with pneumonia that did not improve with outpatient treatment, with low oxygen levels; describes her treatment, pending test, and follow-up plans.",
+      "findings": [
+        {
+          "statement": "Atypical pneumonia, suspected to be viral",
+          "certainty": "possible",
+          "quote": "Atypical pneumonia, suspected viral."
+        },
+        {
+          "statement": "Hypoxia (low oxygen levels)",
+          "certainty": "stated",
+          "quote": "Hypoxia."
+        },
+        {
+          "statement": "Rheumatoid arthritis",
+          "certainty": "stated",
+          "quote": "Rheumatoid arthritis."
+        },
+        {
+          "statement": "Suspected mild stress-induced adrenal insufficiency",
+          "certainty": "possible",
+          "quote": "Suspected mild stress-induced adrenal insufficiency."
+        },
+        {
+          "statement": "Initial x-ray showed some mild diffuse patchy infiltrates",
+          "certainty": "stated",
+          "quote": "Initial x-ray showed some mild diffuse patchy infiltrates."
+        },
+        {
+          "statement": "CT scan showed no specific focal pathology",
+          "certainty": "stated",
+          "quote": "CT scan was performed and no specific focal pathology was seen."
+        },
+        {
+          "statement": "The pulmonologist was uncertain of the exact cause, but a viral cause was most highly suspected",
+          "certainty": "possible",
+          "quote": "He also was uncertain as to the exact etiology, but viral etiology was most highly suspected."
+        },
+        {
+          "statement": "C. difficile toxin test result is pending at the time of discharge",
+          "certainty": "pending",
+          "quote": "C. difficile toxin was ordered, although that is pending at the time of discharge."
+        },
+        {
+          "statement": "Fever broke 18 hours before discharge; oxygen saturations, strength and clinical status improved",
+          "certainty": "stated",
+          "quote": "Her fever broke 18 hours prior to discharge, and O2 saturations improved, as did her overall strength and clinical status."
+        },
+        {
+          "statement": "She was thought to be mildly adrenal insufficient from the stress of pneumonia because she is on chronic prednisone",
+          "certainty": "possible",
+          "quote": "it was suspected that she was mildly adrenal insufficient from the stress of her pneumonia"
+        },
+        {
+          "statement": "Methotrexate is known on some occasions to cause pneumonitis",
+          "certainty": "stated",
+          "quote": "Methotrexate is known on some occasions to cause pneumonitis."
+        }
+      ],
+      "medicines": [
+        {
+          "name": "Azithromycin",
+          "dose": "",
+          "how_often": "",
+          "change": "continue",
+          "details": "Continued in hospital; she was instructed to finish it. She has two pills left at home.",
+          "quote": "She was instructed to finish azithromycin.  She has two pills left at home."
+        },
+        {
+          "name": "Rocephin (ceftriaxone)",
+          "dose": "",
+          "how_often": "",
+          "change": "continue",
+          "details": "Continued IV in hospital. Before admission it was given as 1 g daily starting three days prior to admission. Not stated as part of discharge medicines.",
+          "quote": "She was continued on Rocephin IV and azithromycin."
+        },
+        {
+          "name": "Prednisone",
+          "dose": "20 mg",
+          "how_often": "per day",
+          "change": "continue",
+          "details": "Continue the increased dose; previously 5 mg per day.",
+          "quote": "She is to continue the increased dose of prednisone at 20 mg (up from 5 mg per day)."
+        },
+        {
+          "name": "Methotrexate",
+          "dose": "20 mg",
+          "how_often": "every week",
+          "change": "other",
+          "details": "Held this past Friday. The team will consult her rheumatologist about whether to continue it.",
+          "quote": "We will consult her rheumatologist as to whether to continue her methotrexate, which we held this past Friday."
+        },
+        {
+          "name": "Remicade",
+          "dose": "",
+          "how_often": "every eight weeks",
+          "change": "not_stated",
+          "details": "Last dose was in June.",
+          "quote": "Remicade every eight weeks.  Her last dose of Remicade was in the month of June."
+        },
+        {
+          "name": "Avelox",
+          "dose": "",
+          "how_often": "",
+          "change": "stop",
+          "details": "Started before admission but she had a reaction, so it was switched to Augmentin.",
+          "quote": "She was first started on Avelox, but had a reaction, switched to Augmentin"
+        },
+        {
+          "name": "Augmentin",
+          "dose": "",
+          "how_often": "",
+          "change": "stop",
+          "details": "Caused loose stools; then switched to Rocephin and azithromycin.",
+          "quote": "Augmentin, which caused loose stools"
+        }
+      ],
+      "dates": [
+        {
+          "what": "Follow-up with Dr. X",
+          "when": "in two to three days",
+          "quote": "She is to follow up with Dr. X in two to three days."
+        },
+        {
+          "what": "Last dose of Remicade",
+          "when": "June",
+          "quote": "Her last dose of Remicade was in the month of June."
+        },
+        {
+          "what": "Methotrexate held",
+          "when": "this past Friday",
+          "quote": "which we held this past Friday"
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Finish the azithromycin",
+          "quote": "She was instructed to finish azithromycin."
+        },
+        {
+          "instruction": "Follow up with Dr. X in two to three days",
+          "quote": "She is to follow up with Dr. X in two to three days."
+        },
+        {
+          "instruction": "Continue prednisone at the increased dose of 20 mg",
+          "quote": "She is to continue the increased dose of prednisone at 20 mg"
+        }
+      ],
+      "negatives": [
+        {
+          "instruction": "CT scan found no specific focal pathology",
+          "quote": "no specific focal pathology was seen"
+        }
+      ],
+      "warning_signs": [],
+      "unclear": [
+        "The letter does not say what happens with the Rocephin after discharge.",
+        "The letter does not say whether to restart methotrexate; the hospital will consult her rheumatologist.",
+        "The letter does not say who will tell her the C. difficile result.",
+        "Decision to admit: the sentence 'Decision was made because of failed outpatient treatment of pneumonia' is incomplete (presumably admission)."
+      ]
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\nYou were in hospital with pneumonia (a lung illness). Treatment at home did not make it better. Your oxygen levels were low (hypoxia).\n\nThe doctors think the cause may be a virus. They call it atypical pneumonia. The lung doctor was not sure of the exact cause. He thought a virus was the most likely.\n\nYour first x-ray showed some mild patchy marks (infiltrates). A CT scan found no specific focal pathology.\n\nDoctors also think you may have mild adrenal insufficiency. This may be from the stress of the pneumonia, because you take prednisone all the time. This is not certain.\n\nYou also have rheumatoid arthritis. Methotrexate is known to cause pneumonitis on some occasions.\n\nYour fever broke 18 hours before you left hospital. Your oxygen levels got better. Your strength got better too.\n\nOne test is not back yet. This is the C. difficile toxin test. The result is pending. The letter does not say who will tell you the result.\n\n## What you need to do\n1. Finish your azithromycin. You have two pills left at home.\n2. Keep taking prednisone at the higher dose of 20 mg.\n3. See Dr. X in two to three days.\n\n## Dates and medicines\n- Follow-up with Dr. X: in two to three days.\n- Azithromycin: keep taking it until it is finished. The letter gives no dose.\n- Prednisone: 20 mg per day. Before, it was 5 mg per day. Keep the higher dose.\n- Methotrexate: 20 mg every week. It was held this past Friday. The hospital team will ask your rheumatologist whether to continue it. That decision is still waiting.\n- Remicade: every eight weeks. Your last dose was in June.\n- Rocephin (ceftriaxone): you had it by IV in hospital. Before hospital it was 1 g daily, starting three days before you were admitted. The letter does not say what happens with it after you leave.\n- Avelox: you had a reaction to it. It was stopped and changed to Augmentin.\n- Augmentin: it caused loose stools. It was stopped and changed to Rocephin and azithromycin.\n\n## Questions to ask your doctor\n- When will I get the C. difficile test result, and who will tell me?\n- What does adrenal insufficiency mean for me?\n- Should I take methotrexate again? When will I know?\n- What happens with the Rocephin now?\n\n## When to get urgent help\nThe letter does not list specific warning signs.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 79.2,
+          "reading_ease_target": 70,
+          "grade_level": 4.0,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [
+            {
+              "kind": "changed",
+              "severity": "minor",
+              "explanation_says": "Treatment at home did not make it better; Rocephin 'Before hospital it was 1 g daily, starting three days before you were admitted'; Augmentin 'stopped and changed to Rocephin and azithromycin'",
+              "letter_says": "Three days prior to admission given daily 1 g Rocephin and started on azithromycin",
+              "why": "Matches the letter broadly; the sequence is consistent. Not a real difference.",
+              "real_difference": false
+            },
+            {
+              "kind": "added",
+              "severity": "minor",
+              "explanation_says": "Avelox: 'It was stopped and changed to Augmentin.'",
+              "letter_says": "First started on Avelox, but had a reaction, switched to Augmentin",
+              "why": "Consistent with the letter; wording only.",
+              "real_difference": false
+            },
+            {
+              "kind": "dosage",
+              "severity": "minor",
+              "explanation_says": "Prednisone: 20 mg per day. Before, it was 5 mg per day.",
+              "letter_says": "Continue the increased dose of prednisone at 20 mg (up from 5 mg per day)",
+              "why": "Matches the letter. The letter does not state '20 mg per day' explicitly for the new dose, but it is implied by 'up from 5 mg per day'.",
+              "real_difference": false
+            },
+            {
+              "kind": "added",
+              "severity": "minor",
+              "explanation_says": "The letter does not say who will tell you the result. / The letter does not say what happens with Rocephin after you leave.",
+              "letter_says": "C. difficile toxin pending at discharge; no mention of who informs the patient or of Rocephin after discharge",
+              "why": "These are accurate statements about gaps in the letter, not added facts.",
+              "real_difference": false
+            },
+            {
+              "kind": "advice",
+              "severity": "minor",
+              "explanation_says": "Methotrexate: 'It was held this past Friday.' under the dates, with no instruction on whether to take it now",
+              "letter_says": "We will consult her rheumatologist as to whether to continue her methotrexate, which we held this past Friday.",
+              "why": "The explanation says the decision is pending, which matches the letter. Not a real difference.",
+              "real_difference": false
+            }
+          ],
+          "summary": "The explanation matches the letter. All the items I checked turned out to be wording only or accurate statements about gaps in the letter. I found no real differences in diagnoses, doses, dates, certainty or advice."
+        },
+        "blocking_problems": [],
+        "attempt": 1
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 3763,
+        "output_tokens": 2108,
+        "cost_usd": 0.02319,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 17289,
+        "output_tokens": 2432,
+        "cost_usd": 0.04753,
+        "turns": 7
+      },
+      {
+        "step": "verify",
+        "input_tokens": 4008,
+        "output_tokens": 827,
+        "cost_usd": 0.01851,
+        "turns": 2
+      }
+    ],
+    "cost_usd": 0.08923,
+    "latency_s": 42.7
+  },
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "diagnoses",
+        "fact": "Atypical pneumonia, suspected viral",
+        "status": "kept",
+        "note": "Says atypical pneumonia, likely caused by a virus."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Low oxygen levels (hypoxia)",
+        "status": "kept",
+        "note": "Says oxygen levels were low (hypoxia)."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Rheumatoid arthritis",
+        "status": "kept",
+        "note": "Says 'You also have rheumatoid arthritis.'"
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Suspected mild adrenal insufficiency caused by the stress of the pneumonia",
+        "status": "kept",
+        "note": "Says mild adrenal insufficiency may be from the stress of the pneumonia and is not certain."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "C. difficile stool test result still pending",
+        "status": "kept",
+        "note": "Says the C. difficile toxin test result is pending."
+      },
+      {
+        "category": "medicines",
+        "fact": "Finish azithromycin (two pills left at home)",
+        "status": "kept",
+        "note": "Says to finish azithromycin, with two pills left at home."
+      },
+      {
+        "category": "medicines",
+        "fact": "Continue prednisone at the increased dose of 20 mg (up from 5 mg per day)",
+        "status": "kept",
+        "note": "Says to keep prednisone at 20 mg per day, up from 5 mg."
+      },
+      {
+        "category": "medicines",
+        "fact": "Methotrexate 20 mg weekly is on hold; the rheumatologist will be asked whether to continue it",
+        "status": "kept",
+        "note": "Says methotrexate 20 mg weekly was held and the rheumatologist will be asked whether to continue it."
+      },
+      {
+        "category": "medicines",
+        "fact": "Remicade every eight weeks (last dose in June)",
+        "status": "kept",
+        "note": "Says Remicade every eight weeks, last dose in June."
+      },
+      {
+        "category": "dates",
+        "fact": "Follow up with Dr. X in two to three days",
+        "status": "kept",
+        "note": "Says to see Dr. X in two to three days."
+      },
+      {
+        "category": "negatives",
+        "fact": "CT scan showed no specific focal problem",
+        "status": "kept",
+        "note": "Says the CT scan found no specific focal pathology."
+      }
+    ],
+    "added": [],
+    "gold_reviewer": "claude-draft"
+  }
+}

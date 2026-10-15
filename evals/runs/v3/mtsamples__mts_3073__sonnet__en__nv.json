@@ -1,0 +1,199 @@
+{
+  "job": {
+    "id": "mtsamples__mts_3073__sonnet__en__nv",
+    "part": "mtsamples",
+    "letter_id": "mts_3073",
+    "file": "data/mtsamples/mts_3073.txt",
+    "kind": "faithfulness",
+    "model": "sonnet",
+    "language": "en",
+    "verifier": false,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "sonnet",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": false,
+    "status": "not_verified",
+    "final_text": "## What this letter says\nThis letter is from your doctor to another doctor. It introduces you.\n\nYour doctor says you have bulbar cerebral palsy and hypotonia.\n\nYou had trouble breathing through your mouth. This was adding to some of your speech problems.\n\nYour tonsils are very enlarged (tonsillar hypertrophy).\n\nYour doctor asks the other doctor a question. Could surgery to remove your tonsils help? It might help your mouth breathing, swallowing and speech. This is not yet known.\n\nYou also have long-term allergy symptoms in your nose (chronic allergic rhinitis). Your treatment gives only some relief.\n\nYou have an allergy to penicillin.\n\n## What you need to do\n1. The letter does not ask you to do anything.\n2. Your doctor asks the other doctor for an opinion on tonsil surgery.\n3. The other doctor can call your doctor's office with any questions.\n\n## Dates and medicines\n**Date:** The other doctor will see you in the near future. The letter gives no exact date.\n\n**Medicines:**\n- Flonase: 2 sprays to each nostril, once a day. It is for your nose allergy symptoms. You are on it now.\n- Zyrtec: 10 milligrams a day. It gives only some relief of your symptoms.\n\n## Questions to ask your doctor\n1. Could surgery to remove my tonsils help my breathing, swallowing and speech?\n2. When will I see the other doctor?\n3. Is there anything I should know before I see the other doctor?\n\n## When to get urgent help\nThe letter does not list specific warning signs.\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "doctor_copy_to_patient",
+      "purpose": "Referral letter introducing the patient to another doctor, asking for an opinion on whether surgery to remove his tonsils might help his mouth breathing, swallowing and speech.",
+      "findings": [
+        {
+          "statement": "Diagnosis of bulbar cerebral palsy and hypotonia",
+          "certainty": "stated",
+          "quote": "has a diagnosis of bulbar cerebral palsy and hypotonia"
+        },
+        {
+          "statement": "Difficulty with mouth breathing, which was contributing to some of his speech problems",
+          "certainty": "stated",
+          "quote": "he was having difficulty with mouth breathing, which was contributing to some of his speech problems"
+        },
+        {
+          "statement": "Significant tonsillar hypertrophy (enlarged tonsils), noted and confirmed",
+          "certainty": "stated",
+          "quote": "he has significant tonsillar hypertrophy"
+        },
+        {
+          "statement": "Whether he may benefit from surgery to remove his tonsils to improve mouth breathing, swallowing and speech is the question being asked",
+          "certainty": "possible",
+          "quote": "whether he may benefit from surgery to remove his tonsils and improve his mouth breathing and his swallowing and speech"
+        },
+        {
+          "statement": "Chronic allergic rhinitis symptoms, with only partial relief from current treatment",
+          "certainty": "stated",
+          "quote": "He also has been taking Zyrtec 10 mg a day with only partial relief of the symptoms."
+        },
+        {
+          "statement": "Allergy to penicillin",
+          "certainty": "stated",
+          "quote": "He does have an allergy to penicillin."
+        }
+      ],
+      "medicines": [
+        {
+          "name": "Flonase",
+          "dose": "two sprays to each nostril",
+          "how_often": "once a day",
+          "change": "not_stated",
+          "details": "For chronic allergic rhinitis symptoms; currently on it",
+          "quote": "he is currently on Flonase two sprays to each nostril once a day"
+        },
+        {
+          "name": "Zyrtec",
+          "dose": "10 mg",
+          "how_often": "a day",
+          "change": "not_stated",
+          "details": "Only partial relief of symptoms",
+          "quote": "He also has been taking Zyrtec 10 mg a day with only partial relief of the symptoms."
+        }
+      ],
+      "dates": [
+        {
+          "what": "Patient will see the receiving doctor (no specific date given)",
+          "when": "in the near future",
+          "quote": "who will be seeing you in the near future"
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "The referring doctor asks the receiving doctor for an opinion on whether tonsil surgery may help.",
+          "quote": "I ask for your opinion on this matter."
+        },
+        {
+          "instruction": "The receiving doctor can call the referring doctor's office through the office with any questions.",
+          "quote": "If you have any questions regarding, please feel free to call me through my office."
+        }
+      ],
+      "negatives": [],
+      "warning_signs": [],
+      "unclear": [
+        "The letter does not give the date of the appointment with the receiving doctor.",
+        "The names of the patient (A) and neurologist (Dr. X) are given only as placeholders."
+      ]
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\nThis letter is from your doctor to another doctor. It introduces you.\n\nYour doctor says you have bulbar cerebral palsy and hypotonia.\n\nYou had trouble breathing through your mouth. This was adding to some of your speech problems.\n\nYour tonsils are very enlarged (tonsillar hypertrophy).\n\nYour doctor asks the other doctor a question. Could surgery to remove your tonsils help? It might help your mouth breathing, swallowing and speech. This is not yet known.\n\nYou also have long-term allergy symptoms in your nose (chronic allergic rhinitis). Your treatment gives only some relief.\n\nYou have an allergy to penicillin.\n\n## What you need to do\n1. The letter does not ask you to do anything.\n2. Your doctor asks the other doctor for an opinion on tonsil surgery.\n3. The other doctor can call your doctor's office with any questions.\n\n## Dates and medicines\n**Date:** The other doctor will see you in the near future. The letter gives no exact date.\n\n**Medicines:**\n- Flonase: 2 sprays to each nostril, once a day. It is for your nose allergy symptoms. You are on it now.\n- Zyrtec: 10 milligrams a day. It gives only some relief of your symptoms.\n\n## Questions to ask your doctor\n1. Could surgery to remove my tonsils help my breathing, swallowing and speech?\n2. When will I see the other doctor?\n3. Is there anything I should know before I see the other doctor?\n\n## When to get urgent help\nThe letter does not list specific warning signs.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 74.8,
+          "reading_ease_target": 70,
+          "grade_level": 5.0,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": null,
+        "blocking_problems": [],
+        "attempt": 1
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 3117,
+        "output_tokens": 1146,
+        "cost_usd": 0.01338,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 7954,
+        "output_tokens": 1682,
+        "cost_usd": 0.03142,
+        "turns": 2
+      }
+    ],
+    "cost_usd": 0.0448,
+    "latency_s": 22.0
+  },
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "diagnoses",
+        "fact": "Bulbar cerebral palsy and low muscle tone (hypotonia)",
+        "status": "kept",
+        "note": "States bulbar cerebral palsy and hypotonia (hypotonia not explained, but the diagnosis is there)."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Significantly enlarged tonsils",
+        "status": "kept",
+        "note": "'Your tonsils are very enlarged (tonsillar hypertrophy).'"
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Mouth breathing contributing to speech problems",
+        "status": "changed",
+        "note": "Explanation says 'You had trouble breathing through your mouth'. That suggests he can't breathe through his mouth. The letter means the problem is that he breathes through his mouth, and that this adds to his speech problems. The past tense also loses that this is ongoing."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Chronic allergic rhinitis with only partial relief",
+        "status": "kept",
+        "note": "Long-term allergy symptoms in the nose with only some relief from treatment."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Allergy to penicillin",
+        "status": "kept",
+        "note": "'You have an allergy to penicillin.'"
+      },
+      {
+        "category": "medicines",
+        "fact": "Flonase two sprays in each nostril once a day",
+        "status": "kept",
+        "note": "Flonase 2 sprays to each nostril, once a day."
+      },
+      {
+        "category": "medicines",
+        "fact": "Zyrtec 10 mg a day",
+        "status": "kept",
+        "note": "Zyrtec 10 milligrams a day."
+      },
+      {
+        "category": "actions",
+        "fact": "Referred to ENT for an opinion on whether removing the tonsils would help mouth breathing, swallowing and speech",
+        "status": "kept",
+        "note": "Doctor asks the other doctor for an opinion on whether removing the tonsils would help mouth breathing, swallowing and speech. The letter itself doesn't name ENT."
+      },
+      {
+        "category": "negatives",
+        "fact": "No decision on surgery yet (an opinion is being asked for)",
+        "status": "kept",
+        "note": "'This is not yet known' and the request for an opinion show that no decision has been made."
+      }
+    ],
+    "added": [],
+    "gold_reviewer": "claude-draft"
+  },
+  "reused_from": "v2"
+}

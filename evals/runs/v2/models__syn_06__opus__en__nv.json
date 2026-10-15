@@ -1,0 +1,246 @@
+{
+  "job": {
+    "id": "models__syn_06__opus__en__nv",
+    "part": "models",
+    "letter_id": "syn_06",
+    "file": "data/synthetic/syn_06.txt",
+    "kind": "faithfulness",
+    "model": "opus",
+    "language": "en",
+    "verifier": false,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "opus",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": false,
+    "status": "not_verified",
+    "final_text": "## What this letter says\n\nThis is a letter from the hospital. You can go home now.\n\nYou had acute appendicitis. You can ask your doctor what this word means.\n\nOn 24 September 2026, you had a keyhole operation. The doctors took out your appendix (laparoscopic appendicectomy).\n\nThere were no complications.\n\nYou have 3 small wounds. They are closed with clips.\n\nA lab is looking at your appendix (histology). The result is not known yet. The result will be sent to you and your GP. You do not need to do anything more about it, unless the result is abnormal.\n\n## What you need to do\n\n1. Book an appointment with the practice nurse at your GP surgery. The nurse will take out your clips on 6 October 2026.\n2. Do not lift heavy things for 4 weeks.\n3. You may have a shower from 28 September 2026.\n\n## Dates and medicines\n\n**Dates**\n- 24 September 2026: you came into hospital.\n- 24 September 2026: you had your operation.\n- 26 September 2026: you left hospital.\n- 28 September 2026: you may shower from this day.\n- 6 October 2026: the practice nurse at your GP surgery will take out your clips.\n\n**Medicines**\n- Paracetamol, 1 gram. Take it 4 times a day, only when you need it for pain. Do not take more than 4 grams in 24 hours.\n- Ibuprofen, 400 milligrams. Take it 3 times a day with food. Take it for 5 days.\n\n## Questions to ask your doctor\n\n- What does acute appendicitis mean?\n- When will I get the lab result (histology)?\n- What counts as heavy lifting?\n\n## When to get urgent help\n\nContact your GP or call 111 if:\n- you have a temperature above 38°C.\n- a wound becomes red, swollen or leaks pus.\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "patient",
+      "purpose": "Discharge letter after keyhole operation to remove the appendix for acute appendicitis",
+      "findings": [
+        {
+          "statement": "Diagnosis: acute appendicitis",
+          "certainty": "stated",
+          "quote": "Diagnosis: Acute appendicitis"
+        },
+        {
+          "statement": "Keyhole operation to remove the appendix (laparoscopic appendicectomy) done on 24 September 2026",
+          "certainty": "stated",
+          "quote": "Laparoscopic appendicectomy (keyhole operation to remove the appendix) on 24/09/2026"
+        },
+        {
+          "statement": "There were no complications",
+          "certainty": "stated",
+          "quote": "No complications."
+        },
+        {
+          "statement": "3 small wounds closed with clips",
+          "certainty": "stated",
+          "quote": "3 small wounds closed with clips"
+        },
+        {
+          "statement": "Lab examination of the appendix (histology) result is still awaited",
+          "certainty": "pending",
+          "quote": "Histology (lab examination of the appendix) is pending."
+        }
+      ],
+      "medicines": [
+        {
+          "name": "Paracetamol",
+          "dose": "1 g",
+          "how_often": "four times a day, only when needed, for pain (maximum 4 g in 24 hours)",
+          "change": "not_stated",
+          "details": "Maximum 4 g in 24 hours",
+          "quote": "Paracetamol 1 g QDS PRN for pain (maximum 4 g in 24 hours)"
+        },
+        {
+          "name": "Ibuprofen",
+          "dose": "400 mg",
+          "how_often": "three times a day with food",
+          "change": "not_stated",
+          "details": "For 5 days, take with food",
+          "quote": "Ibuprofen 400 mg TDS with food for 5 days"
+        }
+      ],
+      "dates": [
+        {
+          "what": "Admitted to hospital",
+          "when": "24 September 2026",
+          "quote": "Admitted: 24/09/2026"
+        },
+        {
+          "what": "Operation",
+          "when": "24 September 2026",
+          "quote": "on 24/09/2026"
+        },
+        {
+          "what": "Discharged from hospital",
+          "when": "26 September 2026",
+          "quote": "Discharged: 26/09/2026"
+        },
+        {
+          "what": "You may shower from this date",
+          "when": "28 September 2026",
+          "quote": "You may shower from 28/09/2026"
+        },
+        {
+          "what": "Clips removed by the practice nurse at your GP surgery",
+          "when": "6 October 2026",
+          "quote": "Clips to be removed by the practice nurse at your GP surgery on 06/10/2026"
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Book an appointment with the practice nurse at your GP surgery for clip removal on 6 October 2026",
+          "quote": "Please book this appointment."
+        },
+        {
+          "instruction": "No heavy lifting for 4 weeks",
+          "quote": "No heavy lifting for 4 weeks."
+        }
+      ],
+      "negatives": [
+        {
+          "instruction": "No further action is needed about the lab result unless it is abnormal; the result will be sent to you and your GP",
+          "quote": "No further action is needed unless the result is abnormal."
+        },
+        {
+          "instruction": "There were no complications from the operation",
+          "quote": "No complications."
+        }
+      ],
+      "warning_signs": [
+        {
+          "instruction": "Contact your GP or call 111 if you have a temperature above 38°C",
+          "quote": "Contact your GP or call 111 if you have a temperature above 38°C"
+        },
+        {
+          "instruction": "Contact your GP or call 111 if a wound becomes red, swollen or leaks pus",
+          "quote": "if a wound becomes red, swollen or leaks pus"
+        }
+      ],
+      "unclear": []
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\n\nThis is a letter from the hospital. You can go home now.\n\nYou had acute appendicitis. You can ask your doctor what this word means.\n\nOn 24 September 2026, you had a keyhole operation. The doctors took out your appendix (laparoscopic appendicectomy).\n\nThere were no complications.\n\nYou have 3 small wounds. They are closed with clips.\n\nA lab is looking at your appendix (histology). The result is not known yet. The result will be sent to you and your GP. You do not need to do anything more about it, unless the result is abnormal.\n\n## What you need to do\n\n1. Book an appointment with the practice nurse at your GP surgery. The nurse will take out your clips on 6 October 2026.\n2. Do not lift heavy things for 4 weeks.\n3. You may have a shower from 28 September 2026.\n\n## Dates and medicines\n\n**Dates**\n- 24 September 2026: you came into hospital.\n- 24 September 2026: you had your operation.\n- 26 September 2026: you left hospital.\n- 28 September 2026: you may shower from this day.\n- 6 October 2026: the practice nurse at your GP surgery will take out your clips.\n\n**Medicines**\n- Paracetamol, 1 gram. Take it 4 times a day, only when you need it for pain. Do not take more than 4 grams in 24 hours.\n- Ibuprofen, 400 milligrams. Take it 3 times a day with food. Take it for 5 days.\n\n## Questions to ask your doctor\n\n- What does acute appendicitis mean?\n- When will I get the lab result (histology)?\n- What counts as heavy lifting?\n\n## When to get urgent help\n\nContact your GP or call 111 if:\n- you have a temperature above 38°C.\n- a wound becomes red, swollen or leaks pus.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 81.8,
+          "reading_ease_target": 70,
+          "grade_level": 3.9,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": null,
+        "blocking_problems": [],
+        "attempt": 1
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 3449,
+        "output_tokens": 1279,
+        "cost_usd": 0.03684,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 13654,
+        "output_tokens": 1678,
+        "cost_usd": 0.06453,
+        "turns": 5
+      }
+    ],
+    "cost_usd": 0.10136,
+    "latency_s": 29.7
+  },
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "diagnoses",
+        "fact": "Acute appendicitis",
+        "status": "kept",
+        "note": "States 'You had acute appendicitis.'"
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Keyhole operation to remove the appendix (laparoscopic appendicectomy) on 24 September 2026",
+        "status": "kept",
+        "note": "Keyhole operation to remove the appendix on 24 September 2026, with the medical term given."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Lab result on the appendix (histology) is still pending",
+        "status": "kept",
+        "note": "Says the lab is looking at the appendix and the result is not known yet."
+      },
+      {
+        "category": "medicines",
+        "fact": "Paracetamol 1 g four times a day when needed for pain, maximum 4 g in 24 hours",
+        "status": "kept",
+        "note": "1 g, 4 times a day, only when needed for pain, no more than 4 g in 24 hours."
+      },
+      {
+        "category": "medicines",
+        "fact": "Ibuprofen 400 mg three times a day with food, for 5 days",
+        "status": "kept",
+        "note": "400 mg, 3 times a day with food, for 5 days."
+      },
+      {
+        "category": "dates",
+        "fact": "Clips removed by the practice nurse at the GP surgery on 6 October 2026",
+        "status": "kept",
+        "note": "The practice nurse at the GP surgery will take out the clips on 6 October 2026."
+      },
+      {
+        "category": "dates",
+        "fact": "No heavy lifting for 4 weeks",
+        "status": "kept",
+        "note": "Do not lift heavy things for 4 weeks."
+      },
+      {
+        "category": "dates",
+        "fact": "You may shower from 28 September 2026",
+        "status": "kept",
+        "note": "May shower from 28 September 2026."
+      },
+      {
+        "category": "actions",
+        "fact": "Book the clip-removal appointment",
+        "status": "kept",
+        "note": "Tells the patient to book the appointment with the practice nurse."
+      },
+      {
+        "category": "actions",
+        "fact": "Contact your GP or call 111 if temperature above 38°C, or a wound becomes red, swollen or leaks pus",
+        "status": "kept",
+        "note": "Contact GP or call 111 if temperature is above 38°C or a wound becomes red, swollen or leaks pus."
+      },
+      {
+        "category": "negatives",
+        "fact": "There were no complications",
+        "status": "kept",
+        "note": "States 'There were no complications.'"
+      },
+      {
+        "category": "negatives",
+        "fact": "No further action is needed unless the histology result is abnormal",
+        "status": "kept",
+        "note": "Says the patient does not need to do anything more unless the result is abnormal."
+      }
+    ],
+    "added": [],
+    "gold_reviewer": "claude-draft"
+  }
+}

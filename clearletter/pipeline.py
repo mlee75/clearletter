@@ -22,6 +22,13 @@ from .tools import find_terms_in_letter, readability
 
 LANGUAGE_NAMES = {"en": "English", "fr": "French", "es": "Spanish"}
 
+# Problem kinds that always block, even when the verifier calls them "minor".
+# v1 blocked only "major" problems, and the eval showed that let added advice
+# through (evals/ANALYSIS.md, section 2). Minor "added", "dropped" and "changed"
+# problems are still recorded but do not block. Since v3, a problem only blocks
+# if the verifier also marks it as a real difference from the letter.
+ALWAYS_BLOCKING = {"advice", "urgency", "dosage", "date", "negation", "certainty"}
+
 
 class Refused(Exception):
     """Claude declined to answer (stop_reason "refusal"). We show the fallback."""
@@ -160,7 +167,8 @@ class Pipeline:
             record["verifier"] = report.model_dump()
             problems += [
                 f"[{p.kind}] {p.why} (explanation: {p.explanation_says!r}; letter: {p.letter_says!r})"
-                for p in report.problems if p.severity == "major"
+                for p in report.problems
+                if p.real_difference and (p.severity == "major" or p.kind in ALWAYS_BLOCKING)
             ]
         record["blocking_problems"] = problems
         return problems, record

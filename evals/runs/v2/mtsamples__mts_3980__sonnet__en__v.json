@@ -1,0 +1,356 @@
+{
+  "job": {
+    "id": "mtsamples__mts_3980__sonnet__en__v",
+    "part": "mtsamples",
+    "letter_id": "mts_3980",
+    "file": "data/mtsamples/mts_3980.txt",
+    "kind": "faithfulness",
+    "model": "sonnet",
+    "language": "en",
+    "verifier": true,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "sonnet",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": true,
+    "status": "ok_after_retry",
+    "final_text": "## What this letter says\nThis letter is about your stay in hospital. You came in on 26 March. The letter writes this as 03/26/08. You had an open wound on your right leg. The wound also had an infection called MRSA cellulitis.\n\nMRSA grew in a moderate amount. You were treated with vancomycin through a vein (IV).\n\nBy 3 April your leg was much better. The letter writes this as 04/03/08. There was very little redness. The swelling went down with compression.\n\nAn ultrasound of your belly showed just mild cirrhosis.\n\nThe doctors thought your leg swelling was due to chronic venostasis. They thought your liver likely played some part too.\n\nThe letter also lists these health problems: chronic pain, tobacco use, and a history of hepatitis C.\n\nWhen you left hospital, your condition was stable.\n\n## What you need to do\n1. Do daily wound care.\n2. Wrap your leg with an Ace wrap.\n3. Go to your follow-up visit. It was arranged for in a couple of weeks.\n\n## Dates and medicines\n- 26 March (03/26/08 in the letter): you were admitted to hospital.\n- 3 April (04/03/08 in the letter): your leg was much better. You were thought safe to go home.\n- Follow-up: in a couple of weeks. The letter does not say the exact date. It does not say who you will see.\n\nMedicines:\n- Doxycycline 100 milligrams, by mouth, twice a day, for 10 days.\n- Percocet. You were given a prescription. You picked it up at the doctor's office. The letter does not say the dose or how often.\n- OxyContin. You were given a prescription. You picked it up at the doctor's office. The letter does not say the dose or how often.\n\n## Questions to ask your doctor\n- What are MRSA and cellulitis?\n- What does mild cirrhosis mean for me?\n- How much Percocet and OxyContin should I take, and how often?\n- Who is my follow-up with, and on what date?\n\n## When to get urgent help\nThe letter does not list specific warning signs.\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "doctor_copy_to_patient",
+      "purpose": "Discharge summary after hospital admission for a right leg open wound complicated by MRSA cellulitis, with discharge medicines and follow-up.",
+      "findings": [
+        {
+          "statement": "Complex open wound of the right lower extremity complicated by a methicillin-resistant staphylococcus aureus (MRSA) cellulitis.",
+          "certainty": "stated",
+          "quote": "Complex open wound right lower extremity complicated by a methicillin-resistant staphylococcus aureus cellulitis."
+        },
+        {
+          "statement": "Additional diagnosis: chronic pain.",
+          "certainty": "stated",
+          "quote": "Chronic pain."
+        },
+        {
+          "statement": "Additional diagnosis: tobacco use.",
+          "certainty": "stated",
+          "quote": "Tobacco use."
+        },
+        {
+          "statement": "Additional diagnosis: history of hepatitis C.",
+          "certainty": "stated",
+          "quote": "History of hepatitis C."
+        },
+        {
+          "statement": "Abdominal ultrasound showed just mild cirrhosis.",
+          "certainty": "stated",
+          "quote": "This included an ultrasound of his abdomen, which showed just mild cirrhosis."
+        },
+        {
+          "statement": "Leg swelling was thought to be due to chronic venostasis, with likely some contribution from the liver.",
+          "certainty": "possible",
+          "quote": "His leg swelling was thought to be secondary to chronic venostasis and with likely some contribution from his liver as well."
+        },
+        {
+          "statement": "MRSA grew in a moderate amount and was treated with IV vancomycin.",
+          "certainty": "stated",
+          "quote": "The patient eventually grew MRSA in a moderate amount.  He was treated with IV vancomycin."
+        },
+        {
+          "statement": "By 3 April 2008 the leg was much improved, with minimal redness and swelling down with compression.",
+          "certainty": "stated",
+          "quote": "by 04/03/08 his leg got much improved, minimal redness and swelling was down with compression."
+        },
+        {
+          "statement": "Condition at discharge was stable.",
+          "certainty": "stated",
+          "quote": "Stable."
+        }
+      ],
+      "medicines": [
+        {
+          "name": "Doxycycline",
+          "dose": "100 mg",
+          "how_often": "twice a day (b.i.d.), by mouth (p.o.), for 10 days",
+          "change": "not_stated",
+          "details": "",
+          "quote": "doxycycline 100 mg p.o. b.i.d. x10 days"
+        },
+        {
+          "name": "Percocet",
+          "dose": "",
+          "how_often": "",
+          "change": "not_stated",
+          "details": "Prescription given, picked up at the doctor's office. Dose not stated.",
+          "quote": "He was also given prescription for Percocet and OxyContin, picked up at my office."
+        },
+        {
+          "name": "OxyContin",
+          "dose": "",
+          "how_often": "",
+          "change": "not_stated",
+          "details": "Prescription given, picked up at the doctor's office. Dose not stated.",
+          "quote": "He was also given prescription for Percocet and OxyContin, picked up at my office."
+        }
+      ],
+      "dates": [
+        {
+          "what": "Admitted to hospital",
+          "when": "26 March 2008",
+          "quote": "The patient was admitted on 03/26/08"
+        },
+        {
+          "what": "Leg much improved; thought safe to discharge home",
+          "when": "3 April 2008",
+          "quote": "by 04/03/08 his leg got much improved"
+        },
+        {
+          "what": "Follow-up arranged",
+          "when": "in a couple of weeks",
+          "quote": "Followup was arranged in a couple of weeks."
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Do daily wound care.",
+          "quote": "He is instructed to do daily wound care"
+        },
+        {
+          "instruction": "Wrap the leg with an Ace wrap.",
+          "quote": "also wrap his leg with an Ace wrap"
+        }
+      ],
+      "negatives": [],
+      "warning_signs": [],
+      "unclear": [
+        "The letter gives dates as 03/26/08 and 04/03/08. 03/26/08 can only be month/day/year (26 March 2008), so 04/03/08 is read the same way as 3 April 2008, but this is inferred.",
+        "Doses and how often to take Percocet and OxyContin are not stated.",
+        "Exact follow-up date and who the follow-up is with are not stated.",
+        "The letter does not list any warning signs."
+      ]
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\nThis letter is about your stay in hospital. You came in on 26 March 2008. You had an open wound on your right leg. The wound also had an infection called MRSA cellulitis.\n\nMRSA grew in a moderate amount. You were treated with vancomycin through a vein (IV).\n\nBy 3 April 2008 your leg was much better. There was very little redness. The swelling went down with compression.\n\nAn ultrasound of your belly showed just mild cirrhosis.\n\nThe doctors thought your leg swelling was possibly from chronic venostasis. Your liver likely played some part too.\n\nThe letter also lists these health problems: chronic pain, tobacco use, and a history of hepatitis C.\n\nWhen you left hospital, your condition was stable.\n\n## What you need to do\n1. Do daily wound care.\n2. Wrap your leg with an Ace wrap.\n3. Go to your follow-up visit. It was arranged for in a couple of weeks.\n\n## Dates and medicines\n- 26 March 2008: you were admitted to hospital.\n- 3 April 2008: your leg was much better. You were thought safe to go home.\n- Follow-up: in a couple of weeks. The letter does not say the exact date. It does not say who you will see.\n\nMedicines:\n- Doxycycline 100 mg, by mouth, twice a day, for 10 days.\n- Percocet. You were given a prescription. You picked it up at the doctor's office. The letter does not say the dose or how often.\n- OxyContin. You were given a prescription. You picked it up at the doctor's office. The letter does not say the dose or how often.\n\n## Questions to ask your doctor\n- What are MRSA and cellulitis?\n- What does mild cirrhosis mean for me?\n- How much Percocet and OxyContin should I take, and how often?\n- Who is my follow-up with, and on what date?\n\n## When to get urgent help\nThe letter does not list specific warning signs.",
+        "missing_headings": [],
+        "unknown_numbers": [
+          "2008"
+        ],
+        "readability": {
+          "language": "en",
+          "reading_ease": 82.4,
+          "reading_ease_target": 70,
+          "grade_level": 3.9,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [
+            {
+              "kind": "certainty",
+              "severity": "minor",
+              "explanation_says": "The doctors thought your leg swelling was possibly from chronic venostasis. Your liver likely played some part too.",
+              "letter_says": "His leg swelling was thought to be secondary to chronic venostasis and with likely some contribution from his liver as well.",
+              "why": "Venostasis was the thought cause, not just 'possibly'; this weakens certainty."
+            },
+            {
+              "kind": "dropped",
+              "severity": "minor",
+              "explanation_says": "Does not mention that he was admitted because of a swollen, red, tender leg, or the recent prior discharge.",
+              "letter_says": "He was recently discharged when he was noted to develop as an outpatient swollen, red tender leg.",
+              "why": "Reason for admission omitted; minor context."
+            },
+            {
+              "kind": "added",
+              "severity": "minor",
+              "explanation_says": "You picked it up at the doctor's office. (Percocet and OxyContin)",
+              "letter_says": "He was also given prescription for Percocet and OxyContin, picked up at my office.",
+              "why": "Largely consistent; but explanation states the dose is not given, which is fine. No real issue beyond wording."
+            },
+            {
+              "kind": "dropped",
+              "severity": "minor",
+              "explanation_says": "Treatment summary mentions only IV vancomycin; no mention of elevation, local wound care or smoking reduction counselling.",
+              "letter_says": "Local wound care and elevation... counseled to minimizing the cigarette smoking.",
+              "why": "Smoking-reduction advice is omitted from the actions."
+            }
+          ],
+          "summary": "The explanation is mostly faithful. Minor issues: it weakens certainty about venostasis, and it omits the smoking-reduction counselling and the reason for admission. No major problems found."
+        },
+        "blocking_problems": [
+          "The number 2008 is not in the letter",
+          "[certainty] Venostasis was the thought cause, not just 'possibly'; this weakens certainty. (explanation: 'The doctors thought your leg swelling was possibly from chronic venostasis. Your liver likely played some part too.'; letter: 'His leg swelling was thought to be secondary to chronic venostasis and with likely some contribution from his liver as well.')"
+        ],
+        "attempt": 1
+      },
+      {
+        "explanation": "## What this letter says\nThis letter is about your stay in hospital. You came in on 26 March. The letter writes this as 03/26/08. You had an open wound on your right leg. The wound also had an infection called MRSA cellulitis.\n\nMRSA grew in a moderate amount. You were treated with vancomycin through a vein (IV).\n\nBy 3 April your leg was much better. The letter writes this as 04/03/08. There was very little redness. The swelling went down with compression.\n\nAn ultrasound of your belly showed just mild cirrhosis.\n\nThe doctors thought your leg swelling was due to chronic venostasis. They thought your liver likely played some part too.\n\nThe letter also lists these health problems: chronic pain, tobacco use, and a history of hepatitis C.\n\nWhen you left hospital, your condition was stable.\n\n## What you need to do\n1. Do daily wound care.\n2. Wrap your leg with an Ace wrap.\n3. Go to your follow-up visit. It was arranged for in a couple of weeks.\n\n## Dates and medicines\n- 26 March (03/26/08 in the letter): you were admitted to hospital.\n- 3 April (04/03/08 in the letter): your leg was much better. You were thought safe to go home.\n- Follow-up: in a couple of weeks. The letter does not say the exact date. It does not say who you will see.\n\nMedicines:\n- Doxycycline 100 milligrams, by mouth, twice a day, for 10 days.\n- Percocet. You were given a prescription. You picked it up at the doctor's office. The letter does not say the dose or how often.\n- OxyContin. You were given a prescription. You picked it up at the doctor's office. The letter does not say the dose or how often.\n\n## Questions to ask your doctor\n- What are MRSA and cellulitis?\n- What does mild cirrhosis mean for me?\n- How much Percocet and OxyContin should I take, and how often?\n- Who is my follow-up with, and on what date?\n\n## When to get urgent help\nThe letter does not list specific warning signs.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 83.1,
+          "reading_ease_target": 70,
+          "grade_level": 3.8,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [
+            {
+              "kind": "dropped",
+              "severity": "minor",
+              "explanation_says": "Tobacco use is only listed as a health problem. Nothing about cutting down smoking.",
+              "letter_says": "The patient was counseled on minimizing cigarette smoking.",
+              "why": "The patient loses the smoking-reduction advice given in hospital."
+            },
+            {
+              "kind": "dropped",
+              "severity": "minor",
+              "explanation_says": "Elevation is not mentioned. Only IV vancomycin, wound care and compression are described.",
+              "letter_says": "Treatment included IV antibiotics, elevation, local wound care and compression.",
+              "why": "Leg elevation was part of the treatment and is missing."
+            },
+            {
+              "kind": "changed",
+              "severity": "minor",
+              "explanation_says": "You picked it up at the doctor's office (Percocet and OxyContin).",
+              "letter_says": "He was given a prescription for Percocet and OxyContin, picked up at my office.",
+              "why": "The letter is ambiguous about whether the patient has already collected them. The explanation states it as done."
+            }
+          ],
+          "summary": "The explanation is mostly faithful, with correct dates, the doxycycline dose and the diagnoses. It leaves out the smoking-reduction counseling and leg elevation, and it states that the opioid prescriptions were already picked up, which the letter doesn't clearly say."
+        },
+        "blocking_problems": [],
+        "attempt": 2
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 3483,
+        "output_tokens": 1526,
+        "cost_usd": 0.02314,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 14161,
+        "output_tokens": 1686,
+        "cost_usd": 0.03701,
+        "turns": 7
+      },
+      {
+        "step": "verify",
+        "input_tokens": 3437,
+        "output_tokens": 630,
+        "cost_usd": 0.01665,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 10730,
+        "output_tokens": 1864,
+        "cost_usd": 0.04047,
+        "turns": 2
+      },
+      {
+        "step": "verify",
+        "input_tokens": 3476,
+        "output_tokens": 851,
+        "cost_usd": 0.01904,
+        "turns": 2
+      }
+    ],
+    "cost_usd": 0.13631,
+    "latency_s": 52.3
+  },
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "diagnoses",
+        "fact": "Complex open wound of the right leg with an MRSA skin infection (cellulitis)",
+        "status": "kept",
+        "note": "Open wound on right leg with MRSA cellulitis infection."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Chronic pain",
+        "status": "kept",
+        "note": "Chronic pain listed."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Smoking",
+        "status": "kept",
+        "note": "Tobacco use listed."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "History of hepatitis C",
+        "status": "kept",
+        "note": "History of hepatitis C listed."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Mild cirrhosis on abdominal ultrasound",
+        "status": "kept",
+        "note": "Belly ultrasound showed just mild cirrhosis."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Leg swelling thought to be from poor vein circulation (chronic venostasis), likely partly from the liver",
+        "status": "kept",
+        "note": "Swelling due to chronic venostasis, with the liver likely playing some part."
+      },
+      {
+        "category": "medicines",
+        "fact": "Doxycycline 100 mg by mouth twice a day for 10 days",
+        "status": "kept",
+        "note": "Doxycycline 100 mg by mouth twice a day for 10 days."
+      },
+      {
+        "category": "medicines",
+        "fact": "Prescriptions for Percocet and OxyContin, to pick up at the office",
+        "status": "changed",
+        "note": "The explanation says the patient already picked up the Percocet and OxyContin prescriptions ('You picked it up'). The fact says they are still to be picked up at the office."
+      },
+      {
+        "category": "dates",
+        "fact": "In hospital from 03/26/08; much better by 04/03/08",
+        "status": "kept",
+        "note": "Admitted 03/26/08; much better by 04/03/08."
+      },
+      {
+        "category": "dates",
+        "fact": "Follow-up in a couple of weeks",
+        "status": "kept",
+        "note": "Follow-up in a couple of weeks."
+      },
+      {
+        "category": "actions",
+        "fact": "Daily wound care",
+        "status": "kept",
+        "note": "Do daily wound care."
+      },
+      {
+        "category": "actions",
+        "fact": "Wrap the leg with an Ace bandage (compression)",
+        "status": "kept",
+        "note": "Wrap the leg with an Ace wrap; compression is also mentioned."
+      },
+      {
+        "category": "actions",
+        "fact": "Advised to cut down smoking",
+        "status": "dropped",
+        "note": "The advice to cut down on smoking is not mentioned."
+      }
+    ],
+    "added": [],
+    "gold_reviewer": "claude-draft"
+  }
+}

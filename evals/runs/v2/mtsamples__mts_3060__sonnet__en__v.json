@@ -1,0 +1,272 @@
+{
+  "job": {
+    "id": "mtsamples__mts_3060__sonnet__en__v",
+    "part": "mtsamples",
+    "letter_id": "mts_3060",
+    "file": "data/mtsamples/mts_3060.txt",
+    "kind": "faithfulness",
+    "model": "sonnet",
+    "language": "en",
+    "verifier": true,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "sonnet",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": true,
+    "status": "fallback",
+    "final_text": "**We could not explain this letter safely. Please ask your doctor, nurse or pharmacist to explain it to you.**\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "doctor_only",
+      "purpose": "Referral letter from one doctor to another introducing the patient, who had an episode of atrial fibrillation, and asking for advice on long-term anticoagulation and rhythm control.",
+      "findings": [
+        {
+          "statement": "Patient has a history of Wilson's disease, treated with penicillamine, diagnosed at age 14.",
+          "certainty": "stated",
+          "quote": "a history of Wilson's disease.  It has been treated with penicillamine.  He was diagnosed with this at age 14."
+        },
+        {
+          "statement": "He developed shortness of breath, palpitations and chest discomfort on a trip.",
+          "certainty": "stated",
+          "quote": "he developed shortness of breath, palpitations, and chest discomfort"
+        },
+        {
+          "statement": "He was found to be in atrial fibrillation with rapid rate at a hospital in Randolph, North Carolina, and was admitted and observed.",
+          "certainty": "stated",
+          "quote": "he was found to be in atrial fibrillation with rapid rate."
+        },
+        {
+          "statement": "He converted to normal sinus rhythm spontaneously and needed no further interventions.",
+          "certainty": "stated",
+          "quote": "He converted to normal sinus rhythm spontaneously and so he required no further interventions."
+        },
+        {
+          "statement": "Echocardiogram showed mild-to-moderate left atrial enlargement.",
+          "certainty": "stated",
+          "quote": "mild-to-moderate left atrial enlargement."
+        },
+        {
+          "statement": "Ejection fraction was normal.",
+          "certainty": "stated",
+          "quote": "Normal ejection fraction."
+        },
+        {
+          "statement": "No other significant valvular abnormality on echocardiogram.",
+          "certainty": "ruled_out",
+          "quote": "No other significant valvular abnormality."
+        },
+        {
+          "statement": "He told physicians in North Carolina he had cirrhosis related to Wilson's disease; a hepatologist was consulted.",
+          "certainty": "stated",
+          "quote": "He reported to physicians there that he had cirrhosis related to his Wilson's disease."
+        },
+        {
+          "statement": "The status of his liver disease is unclear; the cirrhosis diagnosis is in doubt because he has never had a liver biopsy.",
+          "certainty": "possible",
+          "quote": "it is unclear as to the status of his liver disease, however, he has never had a liver biopsy, so his diagnosis of cirrhosis that they were concerned about in North Carolina is in doubt."
+        },
+        {
+          "statement": "His liver function tests have remained normal.",
+          "certainty": "stated",
+          "quote": "His LFTs have remained normal"
+        },
+        {
+          "statement": "His copper level has been undetectable on his current dose of penicillamine.",
+          "certainty": "stated",
+          "quote": "his copper level has been undetectable on his current dose of penicillamine."
+        },
+        {
+          "statement": "He is in normal sinus rhythm as of the evaluation, and tolerating metoprolol and aspirin without difficulty.",
+          "certainty": "stated",
+          "quote": "He is in normal sinus rhythm as of my evaluation of him on 06/12/2008.  He is tolerating his metoprolol and aspirin without any difficulty."
+        },
+        {
+          "statement": "His atrial fibrillation is potentially paroxysmal, and left atrial enlargement places him at increased risk of recurrent episodes.",
+          "certainty": "possible",
+          "quote": "potentially paroxysmal atrial fibrillation and evidence of left atrial enlargement that would place him in increased risk of recurrent episodes"
+        }
+      ],
+      "medicines": [
+        {
+          "name": "Penicillamine",
+          "dose": "250 mg",
+          "how_often": "four times a day",
+          "change": "not_stated",
+          "details": "Taken by mouth (p.o.).",
+          "quote": "penicillamine 250 mg p.o. four times a day"
+        },
+        {
+          "name": "Metoprolol",
+          "dose": "12.5 mg",
+          "how_often": "twice a day",
+          "change": "not_stated",
+          "details": "The letter says he was started on Lopressor in hospital, which he tolerated well. Lopressor is a brand name of metoprolol, but the letter does not say so.",
+          "quote": "metoprolol 12.5 mg twice a day"
+        },
+        {
+          "name": "Aspirin",
+          "dose": "325 mg",
+          "how_often": "once a day",
+          "change": "start",
+          "details": "Placed on aspirin in hospital in place of Coumadin because of questionable significant liver disease.",
+          "quote": "he was placed on aspirin 325 mg once a day"
+        }
+      ],
+      "dates": [
+        {
+          "what": "Date the referring doctor evaluated the patient (he was in normal sinus rhythm)",
+          "when": "6 December 2008",
+          "quote": "as of my evaluation of him on 06/12/2008"
+        }
+      ],
+      "actions": [],
+      "negatives": [
+        {
+          "instruction": "Coumadin was recommended to be avoided in hospital because of his questionable significant liver disease.",
+          "quote": "There was a recommendation to avoid Coumadin secondary to his questionable significant liver disease"
+        },
+        {
+          "instruction": "He has never had a liver biopsy.",
+          "quote": "he has never had a liver biopsy"
+        },
+        {
+          "instruction": "No further interventions were needed for the atrial fibrillation in hospital.",
+          "quote": "he required no further interventions"
+        }
+      ],
+      "warning_signs": [],
+      "unclear": [
+        "The date 06/12/2008 is numeric and the letter does not say whether it is UK (6 December 2008) or US (12 June 2008) format. The letter mentions South Carolina and North Carolina, which suggests US, but this is not confirmed. It is listed as 6 December 2008 above, so check it.",
+        "The letter does not give the name of the doctor it is addressed to or the date of the appointment: it says only 'in the near future'.",
+        "Whether he will be started on Coumadin is not decided. The referring doctor is asking for advice on this and on rhythm control."
+      ]
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\nOne doctor wrote this letter to another doctor. It introduces you. It asks for advice on two things. One is long-term treatment with Coumadin. The other is control of your heart rhythm.\n\nYou have Wilson's disease. You were diagnosed at age 14. You take penicillamine for it.\n\nOn a trip, you had shortness of breath, a racing heartbeat (palpitations) and chest discomfort. At a hospital in Randolph, North Carolina, you were found to have atrial fibrillation with a fast rate. You were admitted and watched. Your heart went back to normal rhythm by itself. You needed no more treatment.\n\nA heart scan (echocardiogram) showed:\n- mild-to-moderate left atrial enlargement\n- a normal ejection fraction\n- no other significant valve problem\n\nIn North Carolina, you told doctors you have cirrhosis from Wilson's disease. A liver specialist (hepatologist) was asked to see you. The state of your liver disease is unclear. You have never had a liver biopsy. So the cirrhosis diagnosis is in doubt.\n\nYour liver function tests (LFTs) have stayed normal. Your copper level has been undetectable on your current penicillamine dose.\n\nAt the doctor's check on 06/12/2008, your heart was in normal rhythm. You were taking metoprolol and aspirin without any trouble. The letter does not say if this date is 6 December or 12 June.\n\nYour atrial fibrillation may come and go (paroxysmal). The enlarged left atrium puts you at higher risk of more episodes.\n\n## What you need to do\n1. The letter does not list any actions for you.\n\n## Dates and medicines\n- Doctor's check: 06/12/2008. The letter does not say if this is 6 December or 12 June.\n- The other doctor will see you \"in the near future\". The letter gives no date.\n\nMedicines:\n- Penicillamine: 250 mg, by mouth, four times a day.\n- Metoprolol: 12.5 mg, twice a day.\n- Aspirin: 325 mg, once a day. This is new. You were given it in hospital instead of Coumadin. This is because of possible serious liver disease.\n\nCoumadin was advised to be avoided in hospital. Whether you will start Coumadin is not decided yet. The doctor is asking for advice.\n\n## Questions to ask your doctor\n- Will I need Coumadin in the long term?\n- What are the choices for controlling my heart rhythm?\n- Do I need a test to check my liver?\n\n## When to get urgent help\nThe letter does not list specific warning signs.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 71.0,
+          "reading_ease_target": 70,
+          "grade_level": 5.6,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [
+            {
+              "kind": "added",
+              "severity": "major",
+              "explanation_says": "Aspirin: 325 mg, once a day. This is new.",
+              "letter_says": "Aspirin 325 mg once a day was started in hospital; the letter does not call it new.",
+              "why": "Calling a medicine new is not stated in the letter; also it was started in North Carolina, not newly."
+            }
+          ],
+          "summary": "One problem found: the explanation calls aspirin \"new\", which the letter does not say. The rest matches the letter. That includes the ambiguous date, the metoprolol dose and the absence of listed actions or warning signs."
+        },
+        "blocking_problems": [
+          "[added] Calling a medicine new is not stated in the letter; also it was started in North Carolina, not newly. (explanation: 'Aspirin: 325 mg, once a day. This is new.'; letter: 'Aspirin 325 mg once a day was started in hospital; the letter does not call it new.')"
+        ],
+        "attempt": 1
+      },
+      {
+        "explanation": "## What this letter says\nOne doctor wrote this letter to another doctor. It introduces you. It asks for advice on two things. One is long-term treatment with Coumadin. The other is control of your heart rhythm.\n\nYou have Wilson's disease. You were diagnosed at age 14. You take penicillamine for it.\n\nOn a trip, you had shortness of breath, a racing heartbeat (palpitations) and chest discomfort. At a hospital in Randolph, North Carolina, you were found to have atrial fibrillation with a fast rate. You were admitted and watched. Your heart went back to normal rhythm by itself. You needed no more treatment.\n\nA heart scan (echocardiogram) showed:\n- mild-to-moderate left atrial enlargement\n- a normal ejection fraction\n- no other significant valve problem\n\nIn North Carolina, you told doctors you have cirrhosis from Wilson's disease. A liver specialist (hepatologist) was asked to see you. The state of your liver disease is unclear. You have never had a liver biopsy. So the cirrhosis diagnosis is in doubt.\n\nYour liver function tests (LFTs) have stayed normal. Your copper level has been undetectable on your current penicillamine dose.\n\nAt the doctor's check, your heart was in normal rhythm. You were taking metoprolol and aspirin without any trouble.\n\nYour atrial fibrillation may come and go (paroxysmal). The enlarged left atrium puts you at higher risk of more episodes.\n\n## What you need to do\n1. The letter does not list any actions for you.\n\n## Dates and medicines\n- Doctor's check: the letter writes 06/12/2008. It may mean 6 December 2008 or 12 June 2008. The letter does not say which.\n- The other doctor will see you \"in the near future\". The letter gives no date.\n\nMedicines:\n- Penicillamine: 250 mg, by mouth, four times a day.\n- Metoprolol: 12.5 mg, twice a day.\n- Aspirin: 325 mg, once a day. It was started in hospital instead of Coumadin. This is because serious liver disease is in question.\n\nCoumadin was advised to be avoided in hospital. Whether you will start Coumadin is not decided yet. The doctor is asking for advice.\n\n## Questions to ask your doctor\n- Will I need Coumadin in the long term?\n- What are the choices for controlling my heart rhythm?\n- What is the state of my liver disease?\n\n## When to get urgent help\nThe letter does not list specific warning signs.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 70.0,
+          "reading_ease_target": 70,
+          "grade_level": 5.7,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [
+            {
+              "kind": "dropped",
+              "severity": "minor",
+              "explanation_says": "Metoprolol: 12.5 mg, twice a day (no mention of Lopressor start in hospital)",
+              "letter_says": "He was started on Lopressor, which he has tolerated well; current medicine is metoprolol",
+              "why": "The explanation omits that metoprolol (Lopressor) was started after the hospital stay. Minor, since the medicine and dose are listed."
+            },
+            {
+              "kind": "added",
+              "severity": "minor",
+              "explanation_says": "The other doctor will see you \"in the near future\". The letter gives no date.",
+              "letter_says": "my patient, A, who you will be seeing in the near future",
+              "why": "This is consistent with the letter; no real problem. Noted only because the explanation says the letter gives no date, which is accurate."
+            },
+            {
+              "kind": "certainty",
+              "severity": "minor",
+              "explanation_says": "Your atrial fibrillation may come and go (paroxysmal).",
+              "letter_says": "potentially paroxysmal atrial fibrillation",
+              "why": "This is hedged appropriately. No real issue."
+            },
+            {
+              "kind": "changed",
+              "severity": "minor",
+              "explanation_says": "The state of your liver disease is unclear... In North Carolina, you told doctors you have cirrhosis",
+              "letter_says": "He reported to physicians there that he had cirrhosis related to his Wilson's disease",
+              "why": "This matches the letter. No real issue."
+            }
+          ],
+          "summary": "The explanation is faithful to the letter. The only items are trivial, and most of them are not real discrepancies. It keeps the doses, the dates, the uncertain cirrhosis diagnosis and the undecided Coumadin question. The one minor omission is that metoprolol was started in hospital."
+        },
+        "blocking_problems": [
+          "[certainty] This is hedged appropriately. No real issue. (explanation: 'Your atrial fibrillation may come and go (paroxysmal).'; letter: 'potentially paroxysmal atrial fibrillation')"
+        ],
+        "attempt": 2
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 3575,
+        "output_tokens": 2030,
+        "cost_usd": 0.03623,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 16775,
+        "output_tokens": 2494,
+        "cost_usd": 0.05027,
+        "turns": 7
+      },
+      {
+        "step": "verify",
+        "input_tokens": 3781,
+        "output_tokens": 257,
+        "cost_usd": 0.01457,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 12269,
+        "output_tokens": 2130,
+        "cost_usd": 0.04705,
+        "turns": 2
+      },
+      {
+        "step": "verify",
+        "input_tokens": 3762,
+        "output_tokens": 624,
+        "cost_usd": 0.01812,
+        "turns": 2
+      }
+    ],
+    "cost_usd": 0.16624,
+    "latency_s": 98.6
+  },
+  "judgement": {
+    "fallback": true
+  }
+}

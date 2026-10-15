@@ -80,7 +80,8 @@ def test_every_language_and_country_has_fixed_texts():
 
 GOOD_DRAFT = "\n".join(f"## {h}\nText." for h in fixed_text.HEADINGS["en"]) + "\nTake 4 mg from 6 October 2026."
 BAD_DRAFT = GOOD_DRAFT + "\nTake 5 mg."  # 5 mg is the OLD dose: wrong
-MAJOR = Problem(kind="dosage", severity="major", explanation_says="5 mg", letter_says="4 mg", why="wrong dose")
+MAJOR = Problem(kind="dosage", severity="major", explanation_says="5 mg", letter_says="4 mg", why="wrong dose",
+                real_difference=True)
 
 
 def make_facts():
@@ -147,7 +148,8 @@ def test_falls_back_when_problems_remain():
 
 
 def test_minor_problems_do_not_block():
-    minor = Problem(kind="dropped", severity="minor", explanation_says="", letter_says="ward name", why="not needed")
+    minor = Problem(kind="dropped", severity="minor", explanation_says="", letter_says="ward name", why="not needed",
+                    real_difference=True)
     result = run_fake([GOOD_DRAFT], [VerifierReport(problems=[minor], summary="fine")])
     assert result.status == "ok"
 
@@ -249,3 +251,20 @@ def test_scoring_counts_dosage_and_date_errors_separately():
     assert (s["runs"], s["fallback"], s["facts"]) == (2, 1, 4)
     assert (s["dosage_errors"], s["date_errors"], s["dropped"], s["changed"]) == (1, 1, 1, 2)
     assert s["kept_pct"] == 25.0 and s["added"] == 1 and s["runs_with_added"] == 1
+
+
+def test_minor_advice_now_blocks():
+    # v2: added advice blocks even when the verifier grades it "minor".
+    advice = Problem(kind="advice", severity="minor", explanation_says="do not fast",
+                     letter_says="you do not need to fast", why="permission turned into an order", real_difference=True)
+    result = run_fake([GOOD_DRAFT, GOOD_DRAFT], [VerifierReport(problems=[advice], summary="x")] * 2)
+    assert result.status == "fallback"
+
+
+def test_item_the_verifier_calls_fine_does_not_block():
+    # v3: in v2, notes like "no real issue" still blocked when tagged "advice".
+    note = Problem(kind="advice", severity="minor", explanation_says="return in 2 weeks",
+                   letter_says="she will return in two weeks", why="Same meaning; no real issue.",
+                   real_difference=False)
+    result = run_fake([GOOD_DRAFT], [VerifierReport(problems=[note], summary="fine")])
+    assert result.status == "ok"

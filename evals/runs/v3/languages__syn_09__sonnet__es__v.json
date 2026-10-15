@@ -1,0 +1,204 @@
+{
+  "job": {
+    "id": "languages__syn_09__sonnet__es__v",
+    "part": "languages",
+    "letter_id": "syn_09",
+    "file": "data/synthetic/syn_09.txt",
+    "kind": "faithfulness",
+    "model": "sonnet",
+    "language": "es",
+    "verifier": true,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "sonnet",
+    "backend": "claude-code",
+    "language": "es",
+    "country": "uk",
+    "use_verifier": true,
+    "status": "ok",
+    "final_text": "## Qué dice esta carta\nUsted estuvo en el hospital por una infección del pecho (neumonía adquirida en la comunidad). Estaba en la parte baja del pulmón derecho.\nSu puntuación CURB-65 fue 1. Los médicos usan esta puntuación para ver qué tan seria es una infección del pecho.\nEn el hospital le dieron antibióticos por la vena (IV) durante 1 día. Después le dieron pastillas de amoxicilina.\nPuede sentirse cansado durante varias semanas.\nSu tos puede durar de 3 a 6 semanas.\n\n## Qué tiene que hacer\n1. Tome las pastillas de amoxicilina 3 días más. Así completa 5 días de antibióticos.\n2. Hágase otra radiografía de pecho en 6 semanas. Es en el Departamento de Radiología. Sirve para ver si la infección ya se curó.\n3. No necesita pedir cita para la radiografía. Ya enviaron la solicitud.\n\n## Fechas y medicamentos\n- 5 de octubre de 2026: entró al hospital.\n- 7 de octubre de 2026: salió del hospital.\n- 10 de octubre de 2026: su última dosis de amoxicilina.\n- En 6 semanas: radiografía de pecho en el Departamento de Radiología.\n\nMedicamento:\n- Amoxicilina, 500 miligramos, 3 veces al día (TDS).\n- Ya tuvo 2 días de antibióticos en el hospital. Le faltan 3 días para completar 5 días en total.\n\n## Preguntas para su médico\n- ¿Cómo sabré cuándo es la fecha de mi radiografía?\n- ¿Qué significa mi puntuación CURB-65 de 1?\n- ¿Cuánto tiempo puede durar mi cansancio?\n\n## Cuándo pedir ayuda urgente\nVaya a su médico de cabecera o llame al 111 si:\n- Le falta más el aire.\n- Le vuelve la fiebre.\n- Tose con sangre.\n\nSi le preocupa algo y no es una emergencia, llame al NHS 111. En caso de emergencia, llame al 999.\n\n---\n*Esta explicación la ha hecho un programa informático para ayudarle a leer su carta. Puede contener errores. No sustituye a su médico, enfermero o farmacéutico. Siga siempre lo que dice la carta y pregúnteles si algo no está claro.*\n",
+    "facts": {
+      "reader": "patient",
+      "purpose": "Discharge summary after a hospital stay for pneumonia, explaining the antibiotic course to finish, the follow-up chest X-ray, what to expect, and when to get help.",
+      "findings": [
+        {
+          "statement": "Diagnosis: community-acquired pneumonia (chest infection) in the right lower lobe",
+          "certainty": "stated",
+          "quote": "Community-acquired pneumonia (chest infection), right lower lobe."
+        },
+        {
+          "statement": "CURB-65 score was 1",
+          "certainty": "stated",
+          "quote": "CURB-65 score 1."
+        },
+        {
+          "statement": "Treated in hospital with IV antibiotics for 1 day, then amoxicillin tablets",
+          "certainty": "stated",
+          "quote": "IV antibiotics for 1 day, then amoxicillin tablets."
+        },
+        {
+          "statement": "You may feel tired for several weeks",
+          "certainty": "possible",
+          "quote": "You may feel tired for several weeks."
+        },
+        {
+          "statement": "Your cough may last 3 to 6 weeks",
+          "certainty": "possible",
+          "quote": "Your cough may last 3 to 6 weeks."
+        }
+      ],
+      "medicines": [
+        {
+          "name": "Amoxicillin",
+          "dose": "500 mg",
+          "how_often": "TDS (three times a day)",
+          "change": "not_stated",
+          "details": "2 days of antibiotics already had in hospital. Take tablets for 3 more days to complete 5 days in total. Last dose on 10 October 2026.",
+          "quote": "Amoxicillin 500 mg TDS. You have had 2 days of antibiotics in hospital. Take tablets for 3 more days to complete 5 days in total."
+        }
+      ],
+      "dates": [
+        {
+          "what": "Admitted to hospital",
+          "when": "5 October 2026",
+          "quote": "Admitted: 05/10/2026"
+        },
+        {
+          "what": "Discharged from hospital",
+          "when": "7 October 2026",
+          "quote": "Discharged: 07/10/2026"
+        },
+        {
+          "what": "Last dose of amoxicillin",
+          "when": "10 October 2026",
+          "quote": "Last dose on 10/10/2026."
+        },
+        {
+          "what": "Repeat chest X-ray at the Radiology Department",
+          "when": "in 6 weeks",
+          "quote": "Repeat chest X-ray (CXR) in 6 weeks at the Radiology Department"
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Take amoxicillin tablets for 3 more days to complete 5 days of antibiotics in total",
+          "quote": "Take tablets for 3 more days to complete 5 days in total."
+        },
+        {
+          "instruction": "Have a repeat chest X-ray in 6 weeks at the Radiology Department to check the infection has cleared (a request has been sent)",
+          "quote": "Repeat chest X-ray (CXR) in 6 weeks at the Radiology Department to check the infection has cleared. A request has been sent."
+        }
+      ],
+      "negatives": [
+        {
+          "instruction": "You do not need to book the chest X-ray",
+          "quote": "You do not need to book it."
+        }
+      ],
+      "warning_signs": [
+        {
+          "instruction": "See your GP or call 111 if you become more short of breath, if your fever comes back, or if you cough up blood",
+          "quote": "See your GP or call 111 if you become more short of breath (SOB), if your fever comes back, or if you cough up blood."
+        }
+      ],
+      "unclear": []
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## Qué dice esta carta\nUsted estuvo en el hospital por una infección del pecho (neumonía adquirida en la comunidad). Estaba en la parte baja del pulmón derecho.\nSu puntuación CURB-65 fue 1. Los médicos usan esta puntuación para ver qué tan seria es una infección del pecho.\nEn el hospital le dieron antibióticos por la vena (IV) durante 1 día. Después le dieron pastillas de amoxicilina.\nPuede sentirse cansado durante varias semanas.\nSu tos puede durar de 3 a 6 semanas.\n\n## Qué tiene que hacer\n1. Tome las pastillas de amoxicilina 3 días más. Así completa 5 días de antibióticos.\n2. Hágase otra radiografía de pecho en 6 semanas. Es en el Departamento de Radiología. Sirve para ver si la infección ya se curó.\n3. No necesita pedir cita para la radiografía. Ya enviaron la solicitud.\n\n## Fechas y medicamentos\n- 5 de octubre de 2026: entró al hospital.\n- 7 de octubre de 2026: salió del hospital.\n- 10 de octubre de 2026: su última dosis de amoxicilina.\n- En 6 semanas: radiografía de pecho en el Departamento de Radiología.\n\nMedicamento:\n- Amoxicilina, 500 miligramos, 3 veces al día (TDS).\n- Ya tuvo 2 días de antibióticos en el hospital. Le faltan 3 días para completar 5 días en total.\n\n## Preguntas para su médico\n- ¿Cómo sabré cuándo es la fecha de mi radiografía?\n- ¿Qué significa mi puntuación CURB-65 de 1?\n- ¿Cuánto tiempo puede durar mi cansancio?\n\n## Cuándo pedir ayuda urgente\nVaya a su médico de cabecera o llame al 111 si:\n- Le falta más el aire.\n- Le vuelve la fiebre.\n- Tose con sangre.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "es",
+          "reading_ease": 85.7,
+          "reading_ease_target": 70,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [],
+          "summary": "The explanation matches the letter. The diagnosis, CURB-65 score, IV and oral antibiotics, amoxicillin 500 mg three times a day, the 3 more days (5 in total), the dates, the 6-week chest X-ray (no booking needed), and the tiredness and cough durations all agree. The three warning signs and the GP/111 advice also match. The short note on what CURB-65 is for only defines a term that is in the letter, so it is allowed."
+        },
+        "blocking_problems": [],
+        "attempt": 1
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 3355,
+        "output_tokens": 1570,
+        "cost_usd": 0.01773,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 13221,
+        "output_tokens": 1813,
+        "cost_usd": 0.03427,
+        "turns": 6
+      },
+      {
+        "step": "verify",
+        "input_tokens": 3454,
+        "output_tokens": 506,
+        "cost_usd": 0.01307,
+        "turns": 2
+      }
+    ],
+    "cost_usd": 0.06508,
+    "latency_s": 32.3
+  },
+  "back_translation": "## What this letter says\nYou were in the hospital for a chest infection (community-acquired pneumonia). It was in the lower part of the right lung.\nYour CURB-65 score was 1. Doctors use this score to see how serious a chest infection is.\nIn the hospital they gave you antibiotics through the vein (IV) for 1 day. After that they gave you amoxicillin pills.\nYou may feel tired for several weeks.\nYour cough may last from 3 to 6 weeks.\n\n## What you have to do\n1. Take the amoxicillin pills 3 more days. That way you complete 5 days of antibiotics.\n2. Get another chest X-ray in 6 weeks. It is in the Radiology Department. It is to see if the infection is already cured.\n3. You do not need to make an appointment for the X-ray. They already sent the request.\n\n## Dates and medicines\n- 5 October 2026: you entered the hospital.\n- 7 October 2026: you left the hospital.\n- 10 October 2026: your last dose of amoxicillin.\n- In 6 weeks: chest X-ray in the Radiology Department.\n\nMedicine:\n- Amoxicillin, 500 milligrams, 3 times a day (TDS).\n- You already had 2 days of antibiotics in the hospital. You have 3 days left to complete 5 days in total.\n\n## Questions for your doctor\n- How will I know when the date of my X-ray is?\n- What does my CURB-65 score of 1 mean?\n- How long can my tiredness last?\n\n## When to ask for urgent help\nGo to your GP (family doctor) or call 111 if:\n- You are more short of breath.\n- Your fever comes back.\n- You cough up blood.",
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "diagnoses",
+        "fact": "Community-acquired pneumonia (chest infection) in the right lower lung",
+        "status": "kept",
+        "note": "Chest infection (community-acquired pneumonia) in the lower part of the right lung."
+      },
+      {
+        "category": "medicines",
+        "fact": "Amoxicillin 500 mg three times a day for 3 more days (5 days in total, including 2 in hospital)",
+        "status": "kept",
+        "note": "Amoxicillin 500 mg, 3 times a day, 3 more days, 5 days in total including 2 in hospital."
+      },
+      {
+        "category": "dates",
+        "fact": "Last amoxicillin dose on 10 October 2026",
+        "status": "kept",
+        "note": "Last amoxicillin dose on 10 October 2026."
+      },
+      {
+        "category": "dates",
+        "fact": "Repeat chest X-ray in 6 weeks to check the infection has cleared",
+        "status": "kept",
+        "note": "Another chest X-ray in 6 weeks to check the infection has cleared."
+      },
+      {
+        "category": "dates",
+        "fact": "Tiredness may last several weeks; cough may last 3 to 6 weeks",
+        "status": "kept",
+        "note": "Tired for several weeks; cough may last 3 to 6 weeks."
+      },
+      {
+        "category": "actions",
+        "fact": "See your GP or call 111 if more short of breath, if the fever comes back, or if you cough up blood",
+        "status": "kept",
+        "note": "GP or 111 if more short of breath, fever comes back, or coughing up blood."
+      },
+      {
+        "category": "negatives",
+        "fact": "You do not need to book the chest X-ray (the request has been sent)",
+        "status": "kept",
+        "note": "No need to make an X-ray appointment because the request has already been sent."
+      }
+    ],
+    "added": [],
+    "gold_reviewer": "claude-draft"
+  }
+}

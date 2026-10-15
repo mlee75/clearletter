@@ -169,3 +169,48 @@ nothing but time.
 **Dosage and date errors** are counted as gold facts in the "medicines" or "dates" category
 that the judge marks as *changed*. A dropped medicine is counted as dropped, not as a dosage
 error, so the two are reported separately.
+
+## D13. Pipeline v2: fixes driven by the v1 evaluation
+
+**Why:** the v1 evaluation (`evals/ANALYSIS.md`) kept 99.5% of facts but added unsupported
+claims in 4 of 20 letters with Sonnet, against a target of zero. Reading the 128 added claims
+showed four causes. v2 changes one thing per cause, and nothing else, so the v1 → v2 comparison
+measures these changes only.
+
+| v1 cause | v2 change |
+|---|---|
+| The schema had no "letter does not say" option, so medicines were labelled "new" and findings "confirmed" | `change` gains `not_stated`; `certainty` loses `confirmed` and gains `stated` |
+| Permissions turned into orders ("you do not need to fast" → "do not fast") | Writer rule 7, and the verifier is told to flag it as advice |
+| Tasks moved from clinician to patient; dates calculated | Writer rules 8 and 9 |
+| Protective advice not in the letter ("do not stop Dilantin on your own") | Writer rule 11, and the verifier flags it as advice |
+| The verifier called added advice "minor", so it never blocked | Code: advice, urgency, dosage, date, negation and certainty problems always block (`ALWAYS_BLOCKING`), whatever severity the verifier gives |
+
+This replaces the "only major problems block" rule from D6 for those six kinds.
+
+**Versioning:** `PIPELINE_VERSION` in `clearletter/__init__.py` names the folder the eval writes
+to (`evals/runs/v1/`, `evals/runs/v2/`), so results from different versions never mix, and
+`evals/results.md` shows v1 → v2 side by side.
+
+**Risk being watched:** stricter blocking could turn more letters into "please ask your doctor".
+That is safe but unhelpful, so the fallback count is reported next to every other number.
+
+## D14. Pipeline v3: only real differences can block
+
+**What v2 got wrong:** D13 made six kinds of problem block whatever severity the verifier gave
+them. On the MTSamples letters the fallback rate jumped. The cause: the verifier often lists an
+item, checks it, and writes "no real issue" or "this is consistent with the letter", but still
+tags it "advice" or "certainty". Under the v2 rule those notes blocked the explanation. Of the 24
+blocking items behind the first 9 v2 fallbacks, 20 were graded "minor" and most said in words
+that nothing was wrong.
+
+**Change:** each verifier problem gets a `real_difference` true/false field, placed last in the
+schema so the verifier decides after writing its reasoning. A problem blocks only if it is a
+real difference **and** (major, or one of the always-blocking kinds). Nothing else changed.
+
+**Reuse:** because only the verifier changed, runs without the verifier go through identical
+code in v2 and v3. The v3 eval copies those results from v2 (each file marked
+`"reused_from": "v2"`) instead of spending usage to repeat them.
+
+**Lesson worth keeping:** a model's structured output can contradict its own free-text
+reasoning. Rules in code should act on an explicit decision field, not on a label the model
+may attach to a note that says "fine".

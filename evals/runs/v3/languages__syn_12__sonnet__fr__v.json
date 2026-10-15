@@ -1,0 +1,235 @@
+{
+  "job": {
+    "id": "languages__syn_12__sonnet__fr__v",
+    "part": "languages",
+    "letter_id": "syn_12",
+    "file": "data/synthetic/syn_12.txt",
+    "kind": "faithfulness",
+    "model": "sonnet",
+    "language": "fr",
+    "verifier": true,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "sonnet",
+    "backend": "claude-code",
+    "language": "fr",
+    "country": "uk",
+    "use_verifier": true,
+    "status": "ok",
+    "final_text": "## Ce que dit cette lettre\nCette lettre donne les résultats de votre gastroscopie. Elle donne aussi les résultats des biopsies de l'estomac. Les biopsies ont été faites le 8 septembre 2026.\n\n- Les biopsies ne montrent pas de cancer.\n- Il n'y a pas de signe d'infection à Helicobacter pylori.\n- Les biopsies montrent des changements dans la paroi de l'estomac (métaplasie intestinale). Ce n'est pas un cancer.\n- Chez un petit nombre de personnes, ces changements peuvent évoluer sur de nombreuses années. C'est pourquoi on les surveille.\n\n## Ce que vous devez faire\n1. Arrêtez de prendre l'ibuprofène et les autres anti-inflammatoires. La lettre dit qu'ils peuvent irriter l'estomac.\n2. Continuez l'oméprazole, 20 milligrammes, une fois par jour.\n3. Vous pouvez prendre du paracétamol à la place, si vous le souhaitez.\n4. Vous n'avez rien à faire maintenant pour la gastroscopie de contrôle. L'hôpital vous enverra un rendez-vous.\n\n## Dates et médicaments\n- 8 septembre 2026 : gastroscopie et biopsies.\n- Septembre 2029 environ : nouvelle gastroscopie, dans 3 ans. L'hôpital vous envoie le rendez-vous.\n\nMédicaments :\n- Oméprazole : 20 milligrammes, une fois par jour. À continuer.\n- Ibuprofène et autres anti-inflammatoires : à arrêter.\n- Paracétamol : vous pouvez en prendre à la place de l'ibuprofène.\n\n## Questions à poser à votre médecin\n- Qu'est-ce que la métaplasie intestinale veut dire pour moi ?\n- Qu'est-ce qu'une gastroscopie de contrôle ?\n- Quels médicaments contre la douleur puis-je prendre ?\n\n## Quand obtenir de l'aide en urgence\nLa lettre ne donne pas de signes d'alerte particuliers.\n\nSi vous êtes inquiet et que ce n'est pas une urgence, appelez le NHS 111. En cas d'urgence, appelez le 999.\n\n---\n*Cette explication a été faite par un programme informatique pour vous aider à lire votre lettre. Elle peut contenir des erreurs. Elle ne remplace pas votre médecin, votre infirmier ou votre pharmacien. Suivez toujours la lettre et posez-leur vos questions si quelque chose n'est pas clair.*\n",
+    "facts": {
+      "reader": "patient",
+      "purpose": "To give the results of the gastroscopy and stomach biopsies and set out the follow-up plan.",
+      "findings": [
+        {
+          "statement": "Stomach biopsies show no evidence of malignancy (no cancer).",
+          "certainty": "ruled_out",
+          "quote": "The biopsies from your stomach show no evidence of malignancy (no cancer)."
+        },
+        {
+          "statement": "There is no sign of Helicobacter pylori infection.",
+          "certainty": "ruled_out",
+          "quote": "There is no sign of Helicobacter pylori infection."
+        },
+        {
+          "statement": "The biopsies showed changes called intestinal metaplasia, a change in the lining of the stomach. This is not cancer.",
+          "certainty": "stated",
+          "quote": "The biopsies did show some changes called intestinal metaplasia."
+        },
+        {
+          "statement": "In a small number of people intestinal metaplasia can develop further over many years, so it is being monitored.",
+          "certainty": "stated",
+          "quote": "In a small number of people it can develop further over many years, so we keep an eye on it."
+        }
+      ],
+      "medicines": [
+        {
+          "name": "omeprazole",
+          "dose": "20 mg",
+          "how_often": "once daily",
+          "change": "continue",
+          "details": "",
+          "quote": "Continue omeprazole 20 mg once daily."
+        },
+        {
+          "name": "ibuprofen and other anti-inflammatory painkillers",
+          "dose": "",
+          "how_often": "",
+          "change": "stop",
+          "details": "The letter says they can irritate the stomach.",
+          "quote": "Stop taking ibuprofen and other anti-inflammatory painkillers."
+        },
+        {
+          "name": "paracetamol",
+          "dose": "",
+          "how_often": "",
+          "change": "not_stated",
+          "details": "Offered as an option to use instead of ibuprofen and other anti-inflammatory painkillers.",
+          "quote": "You can use paracetamol instead."
+        }
+      ],
+      "dates": [
+        {
+          "what": "Gastroscopy and biopsies were taken",
+          "when": "8 September 2026",
+          "quote": "biopsies taken on 08/09/2026"
+        },
+        {
+          "what": "Repeat gastroscopy planned in 3 years; the hospital will send an appointment",
+          "when": "September 2029",
+          "quote": "Repeat gastroscopy in 3 years (around September 2029)."
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "The hospital will send you an appointment for the repeat gastroscopy.",
+          "quote": "We will send you an appointment."
+        },
+        {
+          "instruction": "Stop taking ibuprofen and other anti-inflammatory painkillers.",
+          "quote": "Stop taking ibuprofen and other anti-inflammatory painkillers."
+        },
+        {
+          "instruction": "Continue omeprazole 20 mg once daily.",
+          "quote": "Continue omeprazole 20 mg once daily."
+        }
+      ],
+      "negatives": [
+        {
+          "instruction": "You do not need to do anything now about the repeat gastroscopy.",
+          "quote": "You do not need to do anything now."
+        },
+        {
+          "instruction": "Intestinal metaplasia is not cancer.",
+          "quote": "This is not cancer."
+        }
+      ],
+      "warning_signs": [],
+      "unclear": []
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## Ce que dit cette lettre\nCette lettre donne les résultats de votre gastroscopie. Elle donne aussi les résultats des biopsies de l'estomac. Les biopsies ont été faites le 8 septembre 2026.\n\n- Les biopsies ne montrent pas de cancer.\n- Il n'y a pas de signe d'infection à Helicobacter pylori.\n- Les biopsies montrent des changements dans la paroi de l'estomac (métaplasie intestinale). Ce n'est pas un cancer.\n- Chez un petit nombre de personnes, ces changements peuvent évoluer sur de nombreuses années. C'est pourquoi on les surveille.\n\n## Ce que vous devez faire\n1. Arrêtez de prendre l'ibuprofène et les autres anti-inflammatoires. La lettre dit qu'ils peuvent irriter l'estomac.\n2. Continuez l'oméprazole, 20 milligrammes, une fois par jour.\n3. Vous pouvez prendre du paracétamol à la place, si vous le souhaitez.\n4. Vous n'avez rien à faire maintenant pour la gastroscopie de contrôle. L'hôpital vous enverra un rendez-vous.\n\n## Dates et médicaments\n- 8 septembre 2026 : gastroscopie et biopsies.\n- Septembre 2029 environ : nouvelle gastroscopie, dans 3 ans. L'hôpital vous envoie le rendez-vous.\n\nMédicaments :\n- Oméprazole : 20 milligrammes, une fois par jour. À continuer.\n- Ibuprofène et autres anti-inflammatoires : à arrêter.\n- Paracétamol : vous pouvez en prendre à la place de l'ibuprofène.\n\n## Questions à poser à votre médecin\n- Qu'est-ce que la métaplasie intestinale veut dire pour moi ?\n- Qu'est-ce qu'une gastroscopie de contrôle ?\n- Quels médicaments contre la douleur puis-je prendre ?\n\n## Quand obtenir de l'aide en urgence\nLa lettre ne donne pas de signes d'alerte particuliers.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "fr",
+          "reading_ease": 76.5,
+          "reading_ease_target": 70,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [
+            {
+              "kind": "advice",
+              "severity": "minor",
+              "explanation_says": "Vous pouvez prendre du paracétamol à la place, si vous le souhaitez.",
+              "letter_says": "You can use paracetamol instead.",
+              "why": "Permission preserved as permission; wording 'si vous le souhaitez' is a mild addition but does not change meaning.",
+              "real_difference": false
+            }
+          ],
+          "summary": "The explanation matches the letter: diagnosis, negative cancer and H. pylori results, metaplasia, omeprazole 20 mg daily, stopping ibuprofen/NSAIDs, paracetamol permitted, repeat gastroscopy around September 2029 with appointment sent, and no warning signs listed. No real differences found."
+        },
+        "blocking_problems": [],
+        "attempt": 1
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 3244,
+        "output_tokens": 1269,
+        "cost_usd": 0.01471,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 13295,
+        "output_tokens": 1882,
+        "cost_usd": 0.03542,
+        "turns": 6
+      },
+      {
+        "step": "verify",
+        "input_tokens": 3441,
+        "output_tokens": 306,
+        "cost_usd": 0.01103,
+        "turns": 2
+      }
+    ],
+    "cost_usd": 0.06116,
+    "latency_s": 29.1
+  },
+  "back_translation": "## What this letter says\nThis letter gives the results of your gastroscopy. It also gives the results of the biopsies of the stomach. The biopsies were done on 8 September 2026.\n\n- The biopsies do not show cancer.\n- There is no sign of Helicobacter pylori infection.\n- The biopsies show changes in the wall of the stomach (intestinal metaplasia). This is not a cancer.\n- In a small number of people, these changes can progress over many years. That is why they are monitored.\n\n## What you must do\n1. Stop taking ibuprofen and the other anti-inflammatories. The letter says that they can irritate the stomach.\n2. Continue omeprazole, 20 milligrams, once a day.\n3. You can take paracetamol instead, if you wish.\n4. You have nothing to do now for the follow-up gastroscopy. The hospital will send you an appointment.\n\n## Dates and medicines\n- 8 September 2026: gastroscopy and biopsies.\n- September 2029 approximately: new gastroscopy, in 3 years. The hospital sends you the appointment.\n\nMedicines:\n- Omeprazole: 20 milligrams, once a day. To continue.\n- Ibuprofen and other anti-inflammatories: to stop.\n- Paracetamol: you can take it instead of ibuprofen.\n\n## Questions to ask your doctor\n- What does intestinal metaplasia mean for me?\n- What is a follow-up gastroscopy?\n- Which medicines for pain can I take?\n\n## When to get emergency help\nThe letter does not give any particular warning signs.",
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "diagnoses",
+        "fact": "Intestinal metaplasia: a change in the stomach lining; in a small number of people it can develop further over many years, so it is monitored",
+        "status": "kept",
+        "note": "Says the stomach lining changed ('wall'), that the change can progress over many years in a small number of people, and that this is why it is monitored."
+      },
+      {
+        "category": "medicines",
+        "fact": "Continue omeprazole 20 mg once daily",
+        "status": "kept",
+        "note": "Continue omeprazole 20 milligrams once a day."
+      },
+      {
+        "category": "medicines",
+        "fact": "Stop ibuprofen and other anti-inflammatory painkillers",
+        "status": "kept",
+        "note": "Stop ibuprofen and other anti-inflammatories."
+      },
+      {
+        "category": "medicines",
+        "fact": "Paracetamol can be used instead",
+        "status": "kept",
+        "note": "Can take paracetamol instead."
+      },
+      {
+        "category": "dates",
+        "fact": "Gastroscopy and biopsies on 8 September 2026",
+        "status": "kept",
+        "note": "8 September 2026, gastroscopy and biopsies."
+      },
+      {
+        "category": "dates",
+        "fact": "Repeat gastroscopy in 3 years (around September 2029); the hospital will send the appointment",
+        "status": "kept",
+        "note": "Around September 2029, in 3 years; the hospital will send the appointment."
+      },
+      {
+        "category": "negatives",
+        "fact": "No cancer (no evidence of malignancy)",
+        "status": "kept",
+        "note": "The biopsies do not show cancer."
+      },
+      {
+        "category": "negatives",
+        "fact": "Intestinal metaplasia is not cancer",
+        "status": "kept",
+        "note": "Intestinal metaplasia is not a cancer."
+      },
+      {
+        "category": "negatives",
+        "fact": "No Helicobacter pylori infection",
+        "status": "kept",
+        "note": "No sign of Helicobacter pylori infection."
+      },
+      {
+        "category": "negatives",
+        "fact": "You do not need to do anything now about the repeat test",
+        "status": "kept",
+        "note": "Nothing to do now for the follow-up gastroscopy."
+      }
+    ],
+    "added": [],
+    "gold_reviewer": "claude-draft"
+  }
+}

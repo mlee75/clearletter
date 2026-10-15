@@ -1,0 +1,265 @@
+{
+  "job": {
+    "id": "models__syn_19__sonnet__en__v",
+    "part": "models",
+    "letter_id": "syn_19",
+    "file": "data/synthetic/syn_19.txt",
+    "kind": "faithfulness",
+    "model": "sonnet",
+    "language": "en",
+    "verifier": true,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "sonnet",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": true,
+    "status": "ok_after_retry",
+    "final_text": "## What this letter says\nThis letter is about your visit to the clinic on 2 October 2026. It tells you about changes to your diabetes medicines.\n\nYou told the clinic you have had several hypos (low blood sugar).\n\nYour HbA1c is 46 mmol/mol.\n\n## What you need to do\n1. Keep checking your blood sugar for the next 2 weeks.\n2. Bring your blood sugar readings to your next appointment.\n3. Stop taking gliclazide. It can cause hypos.\n4. Sick day rules: if you are vomiting, have diarrhoea, or cannot eat or drink normally, stop taking metformin.\n5. Restart metformin 24 to 48 hours after you are eating and drinking normally again.\n\n## Dates and medicines\n**Dates**\n- Clinic visit: 2 October 2026.\n- Next appointment: Friday 13 November 2026 at 10:00.\n\n**Medicines**\n- Gliclazide 80 mg, twice daily. Stopped. It can cause hypos.\n- Metformin 1 g, twice daily with meals. Continue.\n- Sitagliptin 100 mg, once daily. New. It does not usually cause hypos.\n\n## Questions to ask your doctor\n- What does my HbA1c of 46 mmol/mol mean?\n- What do my blood sugar readings mean?\n- Why was sitagliptin chosen to start?\n\n## When to get urgent help\nThe letter does not list specific warning signs.\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "patient",
+      "purpose": "To tell the patient about changes to his diabetes medicines after his clinic visit, including sick day rules and the next appointment.",
+      "findings": [
+        {
+          "statement": "You have had several hypos (low blood sugar).",
+          "certainty": "stated",
+          "quote": "You told us you have had several hypos (low blood sugar)"
+        },
+        {
+          "statement": "Your HbA1c is 46 mmol/mol.",
+          "certainty": "stated",
+          "quote": "your HbA1c is 46 mmol/mol"
+        }
+      ],
+      "medicines": [
+        {
+          "name": "gliclazide",
+          "dose": "80 mg",
+          "how_often": "twice daily",
+          "change": "stop",
+          "details": "It can cause hypos.",
+          "quote": "STOP gliclazide 80 mg twice daily. It can cause hypos."
+        },
+        {
+          "name": "metformin",
+          "dose": "1 g",
+          "how_often": "twice daily with meals",
+          "change": "continue",
+          "details": "Sick day rules: stop taking metformin if you are vomiting, have diarrhoea, or cannot eat or drink normally; restart 24 to 48 hours after you are eating and drinking normally again.",
+          "quote": "CONTINUE metformin 1 g twice daily with meals."
+        },
+        {
+          "name": "sitagliptin",
+          "dose": "100 mg",
+          "how_often": "once daily",
+          "change": "start",
+          "details": "This does not usually cause hypos.",
+          "quote": "START sitagliptin 100 mg once daily. This does not usually cause hypos."
+        }
+      ],
+      "dates": [
+        {
+          "what": "Clinic visit",
+          "when": "2 October 2026",
+          "quote": "after your clinic visit on 02/10/2026"
+        },
+        {
+          "what": "Next appointment at 10:00",
+          "when": "13 November 2026",
+          "quote": "your next appointment on Friday 13 November 2026 at 10:00"
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Keep checking your blood sugar for the next 2 weeks.",
+          "quote": "Please keep checking your blood sugar for the next 2 weeks"
+        },
+        {
+          "instruction": "Bring your blood sugar readings to your next appointment.",
+          "quote": "bring your readings to your next appointment"
+        },
+        {
+          "instruction": "If you are vomiting, have diarrhoea, or cannot eat or drink normally, stop taking metformin. Restart it 24 to 48 hours after you are eating and drinking normally again.",
+          "quote": "if you are vomiting, have diarrhoea, or cannot eat or drink normally, stop taking metformin. Restart it 24 to 48 hours after you are eating and drinking normally again."
+        }
+      ],
+      "negatives": [],
+      "warning_signs": [],
+      "unclear": []
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\nThis letter is about your visit to the clinic on 2 October 2026. It tells you about changes to your diabetes medicines.\n\nYou told the clinic you have had several hypos (low blood sugar).\n\nYour HbA1c is 46 mmol/mol. This is a blood test. It shows your average blood sugar over the last 2 to 3 months.\n\n## What you need to do\n1. Keep checking your blood sugar for the next 2 weeks.\n2. Bring your blood sugar readings to your next appointment.\n3. Stop gliclazide. It can cause hypos.\n4. Sick day rules: you may be vomiting, have diarrhoea, or cannot eat or drink normally. If so, stop taking metformin.\n5. Restart metformin 24 to 48 hours after you are eating and drinking normally again.\n\n## Dates and medicines\n**Dates**\n- Clinic visit: 2 October 2026.\n- Next appointment: Friday 13 November 2026 at 10:00.\n\n**Medicines**\n- Gliclazide 80 mg, twice daily. STOP. It can cause hypos.\n- Metformin 1 g, twice daily with meals. CONTINUE.\n- Sitagliptin 100 mg, once daily. START. It does not usually cause hypos.\n\n## Questions to ask your doctor\n- What is a hypo, and what does it feel like?\n- What do my blood sugar readings mean?\n- What should I do with my readings at my next appointment?\n\n## When to get urgent help\nThe letter does not list specific warning signs.",
+        "missing_headings": [],
+        "unknown_numbers": [
+          "3"
+        ],
+        "readability": {
+          "language": "en",
+          "reading_ease": 78.8,
+          "reading_ease_target": 70,
+          "grade_level": 4.6,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [
+            {
+              "kind": "dropped",
+              "severity": "minor",
+              "explanation_says": "The 'What you need to do' list covers checking sugar, bringing readings, stopping gliclazide and the sick day rules. It does not mention starting sitagliptin or continuing metformin.",
+              "letter_says": "START sitagliptin 100 mg once daily. CONTINUE metformin 1 g twice daily with meals.",
+              "why": "The start and continue actions are missing from the action list. They do appear correctly in the Medicines section, so the patient is still told.",
+              "real_difference": true
+            },
+            {
+              "kind": "certainty",
+              "severity": "minor",
+              "explanation_says": "Sick day rules: 'you may be vomiting, have diarrhoea, or cannot eat or drink normally. If so, stop taking metformin.' Step 5 then says to restart metformin, listed as a separate step.",
+              "letter_says": "If you are vomiting, have diarrhoea, or cannot eat or drink normally, stop taking metformin. Restart it 24 to 48 hours after you are eating and drinking normally again.",
+              "why": "The wording is slightly looser, and the restart step is not clearly tied to the sick day situation. The meaning is mostly kept.",
+              "real_difference": false
+            }
+          ],
+          "summary": "The explanation is largely accurate. Doses, dates, the HbA1c value and the sick day rules match the letter. The only real gap is minor: the action list leaves out starting sitagliptin and continuing metformin, though the Medicines section includes both. The sick day wording is also slightly looser than the letter, but the meaning holds."
+        },
+        "blocking_problems": [
+          "The number 3 is not in the letter"
+        ],
+        "attempt": 1
+      },
+      {
+        "explanation": "## What this letter says\nThis letter is about your visit to the clinic on 2 October 2026. It tells you about changes to your diabetes medicines.\n\nYou told the clinic you have had several hypos (low blood sugar).\n\nYour HbA1c is 46 mmol/mol.\n\n## What you need to do\n1. Keep checking your blood sugar for the next 2 weeks.\n2. Bring your blood sugar readings to your next appointment.\n3. Stop taking gliclazide. It can cause hypos.\n4. Sick day rules: if you are vomiting, have diarrhoea, or cannot eat or drink normally, stop taking metformin.\n5. Restart metformin 24 to 48 hours after you are eating and drinking normally again.\n\n## Dates and medicines\n**Dates**\n- Clinic visit: 2 October 2026.\n- Next appointment: Friday 13 November 2026 at 10:00.\n\n**Medicines**\n- Gliclazide 80 mg, twice daily. Stopped. It can cause hypos.\n- Metformin 1 g, twice daily with meals. Continue.\n- Sitagliptin 100 mg, once daily. New. It does not usually cause hypos.\n\n## Questions to ask your doctor\n- What does my HbA1c of 46 mmol/mol mean?\n- What do my blood sugar readings mean?\n- Why was sitagliptin chosen to start?\n\n## When to get urgent help\nThe letter does not list specific warning signs.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 76.4,
+          "reading_ease_target": 70,
+          "grade_level": 4.8,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [
+            {
+              "kind": "dropped",
+              "severity": "minor",
+              "explanation_says": "The 'What you need to do' list covers checking sugars, bringing readings, stopping gliclazide and the sick day rules. It does not say to start sitagliptin or to continue metformin. The medicines section lists sitagliptin as 'New' and metformin as 'Continue'.",
+              "letter_says": "START sitagliptin 100 mg once daily. CONTINUE metformin 1 g twice daily with meals.",
+              "why": "The start and continue instructions appear only as labels in the medicines section, not as actions. The information is still there, so the patient is unlikely to be misled.",
+              "real_difference": false
+            }
+          ],
+          "summary": "The explanation matches the letter on all doses, dates, the stop/continue/start decisions, the sick day rules and the monitoring advice. It adds no unsupported facts. The only issue is minor: starting sitagliptin and continuing metformin are not in the action list, but both are clear in the medicines section."
+        },
+        "blocking_problems": [],
+        "attempt": 2
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 3279,
+        "output_tokens": 1273,
+        "cost_usd": 0.01475,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 11684,
+        "output_tokens": 1239,
+        "cost_usd": 0.02565,
+        "turns": 4
+      },
+      {
+        "step": "verify",
+        "input_tokens": 3199,
+        "output_tokens": 1032,
+        "cost_usd": 0.01732,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 8883,
+        "output_tokens": 1207,
+        "cost_usd": 0.02622,
+        "turns": 2
+      },
+      {
+        "step": "verify",
+        "input_tokens": 3173,
+        "output_tokens": 869,
+        "cost_usd": 0.01559,
+        "turns": 2
+      }
+    ],
+    "cost_usd": 0.09954,
+    "latency_s": 53.3
+  },
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "diagnoses",
+        "fact": "Several hypos (low blood sugar)",
+        "status": "kept",
+        "note": "States several hypos (low blood sugar)."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "HbA1c 46 mmol/mol",
+        "status": "kept",
+        "note": "HbA1c 46 mmol/mol stated."
+      },
+      {
+        "category": "medicines",
+        "fact": "STOP gliclazide 80 mg twice daily (it can cause hypos)",
+        "status": "kept",
+        "note": "Gliclazide 80 mg twice daily, stopped, can cause hypos."
+      },
+      {
+        "category": "medicines",
+        "fact": "CONTINUE metformin 1 g twice daily with meals",
+        "status": "kept",
+        "note": "Metformin 1 g twice daily with meals, continue."
+      },
+      {
+        "category": "medicines",
+        "fact": "START sitagliptin 100 mg once daily",
+        "status": "kept",
+        "note": "Sitagliptin 100 mg once daily listed as new."
+      },
+      {
+        "category": "medicines",
+        "fact": "Sick day rule: if vomiting, diarrhoea, or cannot eat or drink normally, stop metformin; restart 24 to 48 hours after eating and drinking normally again",
+        "status": "kept",
+        "note": "Sick day rule and 24-48 hour restart both stated correctly."
+      },
+      {
+        "category": "dates",
+        "fact": "Clinic visit on 2 October 2026",
+        "status": "kept",
+        "note": "Clinic visit 2 October 2026 (UK date format matches 02/10/2026)."
+      },
+      {
+        "category": "dates",
+        "fact": "Next appointment on Friday 13 November 2026 at 10:00",
+        "status": "kept",
+        "note": "Friday 13 November 2026 at 10:00."
+      },
+      {
+        "category": "actions",
+        "fact": "Keep checking your blood sugar for the next 2 weeks and bring the readings to the next appointment",
+        "status": "kept",
+        "note": "Check blood sugar for 2 weeks and bring readings to next appointment."
+      }
+    ],
+    "added": [],
+    "gold_reviewer": "claude-draft"
+  }
+}

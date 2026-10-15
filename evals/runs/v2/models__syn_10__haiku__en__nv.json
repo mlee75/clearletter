@@ -1,0 +1,243 @@
+{
+  "job": {
+    "id": "models__syn_10__haiku__en__nv",
+    "part": "models",
+    "letter_id": "syn_10",
+    "file": "data/synthetic/syn_10.txt",
+    "kind": "faithfulness",
+    "model": "haiku",
+    "language": "en",
+    "verifier": false,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "haiku",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": false,
+    "status": "not_verified",
+    "final_text": "## What this letter says\n\nLina was seen at Northbridge Children's Assessment Unit on 20 October 2026. She has gastroenteritis (a tummy bug). She also has mild dehydration (her body does not have enough fluid). While she was in hospital, Lina drank well. She passed urine before going home. No blood tests were needed.\n\nDiarrhoea (runny poo) usually stops within 5 to 7 days. Vomiting (being sick) usually stops within 3 days.\n\n## What you need to do\n\n1. Give Lina small amounts of fluid often. If she is vomiting, give 5 millilitres every 5 minutes. Then give more as she keeps it down.\n2. Keep breastfeeding or giving her usual milk.\n3. Do not give anti-diarrhoea medicines to your child.\n\n## Dates and medicines\n\n**Appointment**\n- Northbridge Children's Assessment Unit: 20 October 2026\n\n**Medicines**\n- Paracetamol oral suspension 120 mg/5 ml: Give 7.5 millilitres up to 4 times in 24 hours. Leave at least 4 hours between doses. Use for fever or discomfort.\n- Oral rehydration solution (Dioralyte): Can be used as one of the options for providing fluids.\n\n## Questions to ask your doctor\n\n- When should I switch from small amounts of fluid to normal amounts?\n- What should I do if Lina cannot keep any fluid down?\n- What are the signs that Lina is getting better?\n\n## When to get urgent help\n\n- Bring Lina back or call 111 if she has fewer than 4 wet nappies in 24 hours.\n- Call 999 if she is hard to wake up.\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "parent_or_carer",
+      "purpose": "Discharge advice for home care of a 2-year-old with gastroenteritis and mild dehydration",
+      "findings": [
+        {
+          "statement": "Gastroenteritis (tummy bug) with mild dehydration",
+          "certainty": "stated",
+          "quote": "Gastroenteritis (tummy bug) with mild dehydration"
+        },
+        {
+          "statement": "Lina drank well on the unit",
+          "certainty": "stated",
+          "quote": "Lina drank well on the unit"
+        },
+        {
+          "statement": "Lina passed urine before going home",
+          "certainty": "stated",
+          "quote": "passed urine before going home"
+        },
+        {
+          "statement": "No blood tests were needed",
+          "certainty": "stated",
+          "quote": "No blood tests were needed"
+        },
+        {
+          "statement": "Diarrhoea usually stops within 5 to 7 days",
+          "certainty": "stated",
+          "quote": "Diarrhoea usually stops within 5 to 7 days"
+        },
+        {
+          "statement": "Vomiting usually stops within 3 days",
+          "certainty": "stated",
+          "quote": "Vomiting usually stops within 3 days"
+        }
+      ],
+      "medicines": [
+        {
+          "name": "Oral rehydration solution (Dioralyte)",
+          "dose": "not specified",
+          "how_often": "not specified",
+          "change": "not_stated",
+          "details": "Can be used as one of the options for providing fluids",
+          "quote": "Oral rehydration solution (Dioralyte) can be used"
+        },
+        {
+          "name": "paracetamol oral suspension",
+          "dose": "7.5 ml",
+          "how_often": "up to 4 times in 24 hours",
+          "change": "not_stated",
+          "details": "Strength 120 mg/5 ml. For fever or discomfort. Leave at least 4 hours between doses",
+          "quote": "paracetamol oral suspension 120 mg/5 ml. Give 7.5 ml, up to 4 times in 24 hours. Leave at least 4 hours between doses"
+        }
+      ],
+      "dates": [
+        {
+          "what": "Assessment at Northbridge Children's Assessment Unit",
+          "when": "20 October 2026",
+          "quote": "Seen: 20/10/2026"
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Give small amounts of fluid often: 5 ml every 5 minutes if she is vomiting, then more as she keeps it down",
+          "quote": "Give small amounts of fluid often: 5 ml every 5 minutes if she is vomiting, then more as she keeps it down"
+        },
+        {
+          "instruction": "Keep breastfeeding or giving her usual milk",
+          "quote": "Keep breastfeeding or giving her usual milk"
+        }
+      ],
+      "negatives": [
+        {
+          "instruction": "Do not give anti-diarrhoea medicines to your child",
+          "quote": "Do not give anti-diarrhoea medicines to your child"
+        }
+      ],
+      "warning_signs": [
+        {
+          "instruction": "Bring Lina back or call 111 if she has fewer than 4 wet nappies in 24 hours",
+          "quote": "Bring Lina back or call 111 if she has fewer than 4 wet nappies in 24 hours"
+        },
+        {
+          "instruction": "Call 999 if she is hard to wake up",
+          "quote": "Call 999 if she is hard to wake up"
+        }
+      ],
+      "unclear": []
+    },
+    "removed_ungrounded": [
+      {
+        "list": "warning_signs",
+        "item": {
+          "instruction": "Bring Lina back or call 111 if she is very sleepy",
+          "quote": "Bring Lina back or call 111 if she is very sleepy"
+        }
+      },
+      {
+        "list": "warning_signs",
+        "item": {
+          "instruction": "Bring Lina back or call 111 if she has blood in her poo",
+          "quote": "Bring Lina back or call 111 if she has blood in her poo"
+        }
+      },
+      {
+        "list": "warning_signs",
+        "item": {
+          "instruction": "Bring Lina back or call 111 if she cannot keep any fluids down",
+          "quote": "Bring Lina back or call 111 if she cannot keep any fluids down"
+        }
+      }
+    ],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\n\nLina was seen at Northbridge Children's Assessment Unit on 20 October 2026. She has gastroenteritis (a tummy bug). She also has mild dehydration (her body does not have enough fluid). While she was in hospital, Lina drank well. She passed urine before going home. No blood tests were needed.\n\nDiarrhoea (runny poo) usually stops within 5 to 7 days. Vomiting (being sick) usually stops within 3 days.\n\n## What you need to do\n\n1. Give Lina small amounts of fluid often. If she is vomiting, give 5 millilitres every 5 minutes. Then give more as she keeps it down.\n2. Keep breastfeeding or giving her usual milk.\n3. Do not give anti-diarrhoea medicines to your child.\n\n## Dates and medicines\n\n**Appointment**\n- Northbridge Children's Assessment Unit: 20 October 2026\n\n**Medicines**\n- Paracetamol oral suspension 120 mg/5 ml: Give 7.5 millilitres up to 4 times in 24 hours. Leave at least 4 hours between doses. Use for fever or discomfort.\n- Oral rehydration solution (Dioralyte): Can be used as one of the options for providing fluids.\n\n## Questions to ask your doctor\n\n- When should I switch from small amounts of fluid to normal amounts?\n- What should I do if Lina cannot keep any fluid down?\n- What are the signs that Lina is getting better?\n\n## When to get urgent help\n\n- Bring Lina back or call 111 if she has fewer than 4 wet nappies in 24 hours.\n- Call 999 if she is hard to wake up.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 70.4,
+          "reading_ease_target": 70,
+          "grade_level": 5.9,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": null,
+        "blocking_problems": [],
+        "attempt": 1
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 2967,
+        "output_tokens": 9000,
+        "cost_usd": 0.04797,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 12147,
+        "output_tokens": 5967,
+        "cost_usd": 0.05082,
+        "turns": 2
+      }
+    ],
+    "cost_usd": 0.09879,
+    "latency_s": 116.0
+  },
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "diagnoses",
+        "fact": "Gastroenteritis (tummy bug) with mild dehydration",
+        "status": "kept",
+        "note": "Says gastroenteritis (tummy bug) with mild dehydration."
+      },
+      {
+        "category": "medicines",
+        "fact": "Paracetamol oral suspension 120 mg/5 ml: give 7.5 ml, up to 4 times in 24 hours, at least 4 hours between doses",
+        "status": "kept",
+        "note": "120 mg/5 ml, 7.5 ml, up to 4 times in 24 hours, at least 4 hours apart. All match."
+      },
+      {
+        "category": "medicines",
+        "fact": "Oral rehydration solution (Dioralyte) can be used",
+        "status": "kept",
+        "note": "Says Dioralyte can be used."
+      },
+      {
+        "category": "dates",
+        "fact": "Diarrhoea usually stops within 5 to 7 days",
+        "status": "kept",
+        "note": "Says diarrhoea usually stops within 5 to 7 days."
+      },
+      {
+        "category": "dates",
+        "fact": "Vomiting usually stops within 3 days",
+        "status": "kept",
+        "note": "Says vomiting usually stops within 3 days."
+      },
+      {
+        "category": "actions",
+        "fact": "Give small amounts of fluid often: 5 ml every 5 minutes if vomiting, then more as she keeps it down",
+        "status": "kept",
+        "note": "Says 5 ml every 5 minutes if vomiting, then more as she keeps it down."
+      },
+      {
+        "category": "actions",
+        "fact": "Keep breastfeeding or giving her usual milk",
+        "status": "kept",
+        "note": "Says to keep breastfeeding or giving her usual milk."
+      },
+      {
+        "category": "actions",
+        "fact": "Bring Lina back or call 111 if fewer than 4 wet nappies in 24 hours, very sleepy, blood in her poo, or cannot keep any fluids down",
+        "status": "changed",
+        "note": "Only 'fewer than 4 wet nappies in 24 hours' is listed as a reason to come back or call 111. 'Very sleepy', 'blood in her poo' and 'cannot keep any fluids down' are left out, so the warning list looks complete when it is not. A suggested question even asks what to do if she cannot keep fluids down, but the letter already answers that."
+      },
+      {
+        "category": "actions",
+        "fact": "Call 999 if she is hard to wake up",
+        "status": "kept",
+        "note": "Says to call 999 if she is hard to wake up."
+      },
+      {
+        "category": "negatives",
+        "fact": "Do not give anti-diarrhoea medicines to your child",
+        "status": "kept",
+        "note": "Says not to give anti-diarrhoea medicines."
+      },
+      {
+        "category": "negatives",
+        "fact": "No blood tests were needed",
+        "status": "kept",
+        "note": "Says no blood tests were needed."
+      }
+    ],
+    "added": [],
+    "gold_reviewer": "claude-draft"
+  }
+}

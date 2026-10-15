@@ -15,7 +15,9 @@ from pydantic import BaseModel
 
 class Finding(BaseModel):
     statement: str  # e.g. "Possible small tear of the meniscus in the left knee"
-    certainty: Literal["confirmed", "possible", "ruled_out", "pending", "not_stated"]
+    # "stated": the letter simply says it. There is no "confirmed" on purpose: in v1 that
+    # label made the writer add "this is confirmed" to letters that never said so.
+    certainty: Literal["stated", "possible", "ruled_out", "pending"]
     quote: str
 
 
@@ -23,7 +25,9 @@ class Medicine(BaseModel):
     name: str
     dose: str  # exactly as written, e.g. "90 mg"
     how_often: str  # in plain words, e.g. "twice a day"
-    change: Literal["start", "stop", "continue", "increase", "decrease", "skip_dose", "other"]
+    # "not_stated" added in v2: without it the model labelled medicines "new" or
+    # "no change" when the letter said neither (about 40% of v1's added claims).
+    change: Literal["not_stated", "start", "stop", "continue", "increase", "decrease", "skip_dose", "other"]
     details: str  # duration, timing, "was 5 mg", tablets to use; "" if none
     quote: str
 
@@ -58,6 +62,10 @@ class Problem(BaseModel):
     explanation_says: str  # "" if the problem is something dropped
     letter_says: str  # "" if the problem is something added
     why: str
+    # Added in v3, and placed last so the verifier decides AFTER writing its reasoning.
+    # In v2 the verifier often listed an item, concluded "no real issue", and the item
+    # still blocked the explanation. Only real differences can block now.
+    real_difference: bool
 
 
 class VerifierReport(BaseModel):

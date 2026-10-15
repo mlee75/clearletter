@@ -1,0 +1,353 @@
+{
+  "job": {
+    "id": "mtsamples__mts_3918__sonnet__en__v",
+    "part": "mtsamples",
+    "letter_id": "mts_3918",
+    "file": "data/mtsamples/mts_3918.txt",
+    "kind": "faithfulness",
+    "model": "sonnet",
+    "language": "en",
+    "verifier": true,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "sonnet",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": true,
+    "status": "fallback",
+    "final_text": "**We could not explain this letter safely. Please ask your doctor, nurse or pharmacist to explain it to you.**\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "doctor_copy_to_patient",
+      "purpose": "Discharge summary after admission for a gastrointestinal bleed with anaemia, describing tests, treatment, discharge medicines and follow-up.",
+      "findings": [
+        {
+          "statement": "Admitted with GI bleed",
+          "certainty": "stated",
+          "quote": "GI bleed."
+        },
+        {
+          "statement": "Blood count showed microcytic anemia with hemoglobin of 8.9",
+          "certainty": "stated",
+          "quote": "CBC revealed microcytic anemia with hemoglobin of 8.9."
+        },
+        {
+          "statement": "Stool was dark brown and strongly occult blood positive",
+          "certainty": "stated",
+          "quote": "Stool dark brown, strongly OB positive."
+        },
+        {
+          "statement": "Upper endoscopy showed erosive gastritis",
+          "certainty": "stated",
+          "quote": "which revealed erosive gastritis"
+        },
+        {
+          "statement": "Colonoscopy showed diverticulosis and a polyp, which was resected",
+          "certainty": "stated",
+          "quote": "Colonoscopy did reveal diverticulosis as well as polyp, which was resected."
+        },
+        {
+          "statement": "She was transfused and hemoglobin was stable at 10.7 before discharge",
+          "certainty": "stated",
+          "quote": "She was transfused, and prior to discharge hemoglobin was stable at 10.7."
+        },
+        {
+          "statement": "Condition on discharge is stable",
+          "certainty": "stated",
+          "quote": "CONDITION UPON DISCHARGE: , Stable."
+        },
+        {
+          "statement": "No shortness of breath, no chest pain, no GI complaints at presentation",
+          "certainty": "ruled_out",
+          "quote": "The patient denied any shortness of breath.  No chest pain.  No GI complaints."
+        },
+        {
+          "statement": "Discharge diagnoses: upper gastrointestinal bleed, anemia, atrial fibrillation, non-insulin-dependent diabetes mellitus, hypertension, hypothyroidism, asthma",
+          "certainty": "stated",
+          "quote": "Upper gastrointestinal bleed.\n2.  Anemia.\n3.  Atrial fibrillation."
+        },
+        {
+          "statement": "No allergies",
+          "certainty": "stated",
+          "quote": "ALLERGIES:\n  None."
+        }
+      ],
+      "medicines": [
+        {
+          "name": "Coumadin",
+          "dose": "not stated",
+          "how_often": "not stated",
+          "change": "other",
+          "details": "Held during hospital stay; GI recommended holding for an additional three days after discharge, then resume. Hold through the weekend.",
+          "quote": "hold Coumadin for an additional three days after discharge then resume"
+        },
+        {
+          "name": "Feosol",
+          "dose": "325 mg",
+          "how_often": "daily",
+          "change": "not_stated",
+          "details": "",
+          "quote": "Feosol 325 mg daily"
+        },
+        {
+          "name": "Multivitamins",
+          "dose": "one",
+          "how_often": "daily",
+          "change": "not_stated",
+          "details": "",
+          "quote": "multivitamins one daily"
+        },
+        {
+          "name": "Protonix",
+          "dose": "40 mg",
+          "how_often": "b.i.d. (twice a day)",
+          "change": "not_stated",
+          "details": "",
+          "quote": "Protonix 40 mg b.i.d."
+        },
+        {
+          "name": "KCl",
+          "dose": "20 mEq",
+          "how_often": "daily",
+          "change": "not_stated",
+          "details": "",
+          "quote": "KCl 20 mEq daily"
+        },
+        {
+          "name": "Lasix",
+          "dose": "40 mg",
+          "how_often": "b.i.d. (twice a day)",
+          "change": "not_stated",
+          "details": "",
+          "quote": "Lasix 40 mg b.i.d."
+        },
+        {
+          "name": "Atenolol",
+          "dose": "50 mg",
+          "how_often": "daily",
+          "change": "not_stated",
+          "details": "",
+          "quote": "atenolol 50 mg daily"
+        },
+        {
+          "name": "Synthroid",
+          "dose": "80 mcg",
+          "how_often": "daily",
+          "change": "not_stated",
+          "details": "",
+          "quote": "Synthroid 80 mcg daily"
+        },
+        {
+          "name": "Actos",
+          "dose": "30 mg",
+          "how_often": "daily",
+          "change": "not_stated",
+          "details": "",
+          "quote": "Actos 30 mg daily"
+        },
+        {
+          "name": "Mevacor",
+          "dose": "40 mg",
+          "how_often": "daily",
+          "change": "not_stated",
+          "details": "",
+          "quote": "Mevacor 40 mg daily"
+        },
+        {
+          "name": "Lisinopril",
+          "dose": "20 mg",
+          "how_often": "daily",
+          "change": "not_stated",
+          "details": "",
+          "quote": "lisinopril 20 mg daily"
+        }
+      ],
+      "dates": [],
+      "actions": [
+        {
+          "instruction": "Hold Coumadin through the weekend, then resume (per GI recommendation of three more days after discharge)",
+          "quote": "The patient to hold Coumadin through weekend."
+        },
+        {
+          "instruction": "Follow a 1800-calorie ADA diet",
+          "quote": "1800-calorie ADA."
+        },
+        {
+          "instruction": "Activity as tolerated",
+          "quote": "As tolerated."
+        },
+        {
+          "instruction": "Outpatient follow-up with PMD, GI, and Cardiology",
+          "quote": "The patient was discharged with outpatient PMD, GI, and Cardiology followup."
+        },
+        {
+          "instruction": "Follow-up CBC and INR blood tests were ordered",
+          "quote": "Followup CBC and INR were ordered."
+        }
+      ],
+      "negatives": [],
+      "warning_signs": [],
+      "unclear": [
+        "Abbreviations not in glossary: OB (likely occult blood, not confirmed), PMD, ADA, KCl, mEq, ABCD",
+        "No specific follow-up appointment dates given; 'through weekend' has no exact date",
+        "Coumadin dose not stated",
+        "Letter does not say whether any discharge medicines are new or changed"
+      ]
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\nYou were in hospital for bleeding in your gut (GI bleed). This letter sums up your stay.\n\nYour blood count (CBC) showed anemia. Your hemoglobin was 8.9. Your stool was dark brown. It was strongly positive for hidden blood (occult blood).\n\nA camera test of the upper gut (upper endoscopy) showed erosive gastritis. A camera test of the bowel (colonoscopy) showed diverticulosis and a polyp. The polyp was taken out.\n\nYou were given blood (transfusion). Before you left, your hemoglobin was stable at 10.7. You were stable when you left.\n\nWhen you came in, you had no shortness of breath. You had no chest pain. You had no GI complaints.\n\nYour diagnoses at discharge are:\n- upper gastrointestinal bleed\n- anemia\n- atrial fibrillation\n- non-insulin-dependent diabetes mellitus\n- hypertension\n- hypothyroidism\n- asthma\n\nYou have no allergies.\n\n## What you need to do\n1. Hold your Coumadin through the weekend. Then restart it. The GI doctors said to hold it 3 more days after discharge.\n2. Follow an 1800-calorie ADA diet.\n3. Be active as you are able (activity as tolerated).\n4. Go to your follow-up visits. They are with your PMD, GI and Cardiology.\n5. Blood tests (CBC and INR) were ordered for follow-up.\n\n## Dates and medicines\nThe letter gives no exact dates for your visits.\n\n- Coumadin: dose and how often are not stated. It was held in hospital. Hold it 3 more days after discharge, then restart.\n- Feosol: 325 mg, daily.\n- Multivitamins: 1, daily.\n- Protonix: 40 mg, twice a day.\n- KCl: 20 mEq, daily.\n- Lasix: 40 mg, twice a day.\n- Atenolol: 50 mg, daily.\n- Synthroid: 80 micrograms, daily.\n- Actos: 30 mg, daily.\n- Mevacor: 40 mg, daily.\n- Lisinopril: 20 mg, daily.\n\nThe letter does not say if any medicine is new or changed.\n\n## Questions to ask your doctor\n- What do erosive gastritis and diverticulosis mean?\n- What is my Coumadin dose?\n- Which day do I restart it?\n- When are my visits and blood tests?\n\n## When to get urgent help\nThe letter does not list specific warning signs.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 70.1,
+          "reading_ease_target": 70,
+          "grade_level": 5.3,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [
+            {
+              "kind": "changed",
+              "severity": "minor",
+              "explanation_says": "Your stool was dark brown. It was strongly positive for hidden blood.",
+              "letter_says": "Stool dark brown, strongly OB positive (at presentation as outpatient).",
+              "why": "Minor; fine overall. Not a real discrepancy but timing context (before admission) is omitted."
+            },
+            {
+              "kind": "dropped",
+              "severity": "minor",
+              "explanation_says": "Hemoglobin 8.9 and 'anemia' without noting it was microcytic; no mention of fatigue as the reason for presentation.",
+              "letter_says": "Presented with increasing fatigue; microcytic anemia.",
+              "why": "Minor omission of the presenting symptom and anemia type."
+            },
+            {
+              "kind": "dropped",
+              "severity": "minor",
+              "explanation_says": "Does not mention the patient has atrial fibrillation as the reason Coumadin is taken or other history.",
+              "letter_says": "History of atrial fibrillation on Coumadin; other past history.",
+              "why": "Minor omission of background."
+            },
+            {
+              "kind": "certainty",
+              "severity": "minor",
+              "explanation_says": "Hold it 3 more days after discharge, then restart. / Hold your Coumadin through the weekend. Then restart it.",
+              "letter_says": "GI recommended holding Coumadin an additional three days after discharge then resume; follow-up says hold through weekend.",
+              "why": "Explanation presents both as one consistent instruction; letter's two timeframes may not coincide, and 'restart' is a firm order though the letter says resume per GI. Largely accurate."
+            }
+          ],
+          "summary": "The explanation is largely faithful. It covers the diagnoses, procedures, medicines and doses, and the Coumadin hold. Only minor omissions remain: the presenting fatigue and the type of anemia. It also merges the \"three days\" and \"through the weekend\" instructions without noting they could differ."
+        },
+        "blocking_problems": [
+          "[certainty] Explanation presents both as one consistent instruction; letter's two timeframes may not coincide, and 'restart' is a firm order though the letter says resume per GI. Largely accurate. (explanation: 'Hold it 3 more days after discharge, then restart. / Hold your Coumadin through the weekend. Then restart it.'; letter: 'GI recommended holding Coumadin an additional three days after discharge then resume; follow-up says hold through weekend.')"
+        ],
+        "attempt": 1
+      },
+      {
+        "explanation": "## What this letter says\nYou were in hospital for bleeding in your gut (GI bleed). This letter sums up your stay.\n\nYour blood count (CBC) showed anemia. Your hemoglobin was 8.9. Your stool was dark brown. It was strongly positive for hidden blood (occult blood).\n\nA camera test of the upper gut (upper endoscopy) showed erosive gastritis. A camera test of the bowel (colonoscopy) showed diverticulosis and a polyp. The polyp was taken out.\n\nYou were given blood (transfusion). Before you left, your hemoglobin was stable at 10.7. You were stable when you left.\n\nWhen you came in, you had no shortness of breath. You had no chest pain. You had no GI complaints.\n\nYour diagnoses at discharge are:\n- upper gastrointestinal bleed\n- anemia\n- atrial fibrillation\n- non-insulin-dependent diabetes mellitus\n- hypertension\n- hypothyroidism\n- asthma\n\nYou have no allergies.\n\n## What you need to do\n1. Hold your Coumadin. The letter gives two timings. One says to hold it through the weekend. The other says the GI doctors advised holding it 3 more days after discharge. The letter then says to resume it. It does not say the exact day.\n2. Follow an 1800-calorie ADA diet.\n3. Be active as you are able (activity as tolerated).\n4. Go to your follow-up visits. They are with your PMD, GI and Cardiology.\n5. Blood tests (CBC and INR) were ordered for follow-up.\n\n## Dates and medicines\nThe letter gives no exact dates for your visits.\n\n- Coumadin: dose and how often are not stated. It was held in hospital. The letter says to hold it through the weekend. It also says the GI doctors advised 3 more days after discharge, then resume.\n- Feosol: 325 mg, daily.\n- Multivitamins: 1, daily.\n- Protonix: 40 mg, twice a day.\n- KCl: 20 mEq, daily.\n- Lasix: 40 mg, twice a day.\n- Atenolol: 50 mg, daily.\n- Synthroid: 80 micrograms, daily.\n- Actos: 30 mg, daily.\n- Mevacor: 40 mg, daily.\n- Lisinopril: 20 mg, daily.\n\nThe letter does not say if any medicine is new or changed.\n\n## Questions to ask your doctor\n- What do erosive gastritis and diverticulosis mean?\n- What is my Coumadin dose?\n- Which day exactly do I resume Coumadin?\n- When are my visits and blood tests?\n\n## When to get urgent help\nThe letter does not list specific warning signs.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 70.9,
+          "reading_ease_target": 70,
+          "grade_level": 5.3,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [
+            {
+              "kind": "changed",
+              "severity": "minor",
+              "explanation_says": "Your stool was dark brown. It was strongly positive for hidden blood.",
+              "letter_says": "Stool dark brown, strongly OB positive.",
+              "why": "Consistent; no real issue."
+            },
+            {
+              "kind": "dropped",
+              "severity": "minor",
+              "explanation_says": "Does not mention that the patient has atrial fibrillation as the reason for Coumadin, or the 80-year-old history details.",
+              "letter_says": "History of atrial fibrillation, on Coumadin; presented with increasing fatigue.",
+              "why": "Presenting symptom of fatigue is omitted; minor."
+            },
+            {
+              "kind": "certainty",
+              "severity": "minor",
+              "explanation_says": "The letter gives two timings... It does not say the exact day.",
+              "letter_says": "Hold Coumadin additional three days after discharge then resume; hold through weekend.",
+              "why": "Explanation frames the two instructions as conflicting, which the letter does not; they may be consistent."
+            },
+            {
+              "kind": "advice",
+              "severity": "minor",
+              "explanation_says": "Be active as you are able (activity as tolerated).",
+              "letter_says": "Activity: as tolerated.",
+              "why": "Equivalent; no real issue."
+            },
+            {
+              "kind": "dropped",
+              "severity": "minor",
+              "explanation_says": "Blood tests (CBC and INR) were ordered for follow-up.",
+              "letter_says": "Followup CBC and INR were ordered.",
+              "why": "Equivalent; no real issue."
+            }
+          ],
+          "summary": "The explanation is largely faithful. The one real concern is that it presents the \"through the weekend\" and \"three more days\" Coumadin instructions as two conflicting timings, which the letter doesn't say. The fatigue symptom is also left out. The other items I listed are equivalent to the letter and aren't real problems."
+        },
+        "blocking_problems": [
+          "[certainty] Explanation frames the two instructions as conflicting, which the letter does not; they may be consistent. (explanation: 'The letter gives two timings... It does not say the exact day.'; letter: 'Hold Coumadin additional three days after discharge then resume; hold through weekend.')",
+          "[advice] Equivalent; no real issue. (explanation: 'Be active as you are able (activity as tolerated).'; letter: 'Activity: as tolerated.')"
+        ],
+        "attempt": 2
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 3896,
+        "output_tokens": 1988,
+        "cost_usd": 0.02972,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 43220,
+        "output_tokens": 5533,
+        "cost_usd": 0.09935,
+        "turns": 11
+      },
+      {
+        "step": "verify",
+        "input_tokens": 3974,
+        "output_tokens": 678,
+        "cost_usd": 0.01967,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 12410,
+        "output_tokens": 2059,
+        "cost_usd": 0.04656,
+        "turns": 2
+      },
+      {
+        "step": "verify",
+        "input_tokens": 4034,
+        "output_tokens": 650,
+        "cost_usd": 0.01967,
+        "turns": 2
+      }
+    ],
+    "cost_usd": 0.21496,
+    "latency_s": 77.0
+  },
+  "judgement": {
+    "fallback": true
+  }
+}

@@ -1,0 +1,297 @@
+{
+  "job": {
+    "id": "mtsamples__mts_3066__sonnet__en__v",
+    "part": "mtsamples",
+    "letter_id": "mts_3066",
+    "file": "data/mtsamples/mts_3066.txt",
+    "kind": "faithfulness",
+    "model": "sonnet",
+    "language": "en",
+    "verifier": true,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "sonnet",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": true,
+    "status": "ok_after_retry",
+    "final_text": "## What this letter says\nThis letter is from a vision clinic (vision rehabilitation office). It was sent to your doctor. It is about your low vision check.\n\n- You have a history of macular degeneration.\n- You say you had PDT (photodynamic therapy) in the last year. The letter does not say which eye. It does not say when.\n- You use a small handheld magnifier. It gives you only limited help.\n- The clinic found a mild change in your distance correction (glasses for seeing far).\n- With the distance correction, you could see 20/70 in the right eye. You could see 20/200 in the left eye.\n- With +4 reading glasses, you could read 0.5M print quite nicely.\n- The doctor thinks you are an excellent candidate for low vision help.\n\n## What you need to do\n1. The clinic has loaned you a pair of +4 reading glasses.\n2. The clinic has started fine-detailed reading therapy with you.\n3. Come back to the clinic in two weeks.\n\n## Dates and medicines\n- Return visit to the vision rehabilitation office: in two weeks. At this visit, the clinic will decide which near reading glasses to prescribe for you.\n- The letter does not list any medicines.\n- The date of your visit is not known. The letter shows only a placeholder.\n\n## Questions to ask your doctor\n- What does macular degeneration mean for me?\n- How will the loaned +4 reading glasses help me?\n- What will happen at my visit in two weeks?\n\n## When to get urgent help\nThe letter does not list specific warning signs.\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "doctor_copy_to_patient",
+      "purpose": "Letter from a vision rehabilitation clinic to the referring doctor, reporting a low vision assessment of an 87-year-old woman with macular degeneration and the plan to follow up in two weeks.",
+      "findings": [
+        {
+          "statement": "She has a history of macular degeneration.",
+          "certainty": "stated",
+          "quote": "history of macular degeneration"
+        },
+        {
+          "statement": "She reports having PDT (photodynamic therapy) within the last year.",
+          "certainty": "stated",
+          "quote": "admits to having PDT therapy within the last year"
+        },
+        {
+          "statement": "She uses a small handheld magnifier, which gives only limited help.",
+          "certainty": "stated",
+          "quote": "she uses a small handheld magnifier, which is providing her with only limited help"
+        },
+        {
+          "statement": "A mild change in her distance correction was found.",
+          "certainty": "stated",
+          "quote": "we found a mild change in her distance correction"
+        },
+        {
+          "statement": "With the distance correction she could see 20/70 in the right eye and 20/200 in the left eye.",
+          "certainty": "stated",
+          "quote": "see 20/70 in the right eye and 20/200 in the left eye"
+        },
+        {
+          "statement": "With +4 reading glasses she was able to read 0.5M print quite nicely.",
+          "certainty": "stated",
+          "quote": "With a pair of +4 reading glasses, she was able to read 0.5M print quite nicely."
+        },
+        {
+          "statement": "The doctor thinks she is an excellent candidate for low vision help.",
+          "certainty": "stated",
+          "quote": "I think that she is an excellent candidate for low vision help."
+        }
+      ],
+      "medicines": [],
+      "dates": [
+        {
+          "what": "Return visit to the vision rehabilitation office",
+          "when": "in two weeks",
+          "quote": "She will return to our office in a matter of two weeks"
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "She has been loaned a pair of +4 reading glasses.",
+          "quote": "I have loaned her a pair of +4 reading glasses at this time"
+        },
+        {
+          "instruction": "Fine-detailed reading therapy has been started.",
+          "quote": "we have started her with fine-detailed reading"
+        },
+        {
+          "instruction": "She will return to the office in about two weeks, when the clinic will decide which near reading glasses to prescribe.",
+          "quote": "we will make a better determination on what near reading glasses to prescribe for her"
+        }
+      ],
+      "negatives": [],
+      "warning_signs": [],
+      "unclear": [
+        "The visit date is given as a placeholder ('Month DD, YYYY'), so the actual date is not known.",
+        "The letter does not say which eye had PDT or exactly when."
+      ]
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\nThis letter is from a vision clinic (vision rehabilitation office). It was sent to your doctor. It is about your low vision check.\n\n- You have a history of macular degeneration. Ask your doctor what this means.\n- You say you had PDT (photodynamic therapy, a light-activated treatment) in the last year. The letter does not say which eye. It does not say when.\n- You use a small handheld magnifier. It gives you only limited help.\n- The clinic found a mild change in your distance correction (glasses for seeing far).\n- With the distance correction, you could see 20/70 in the right eye. You could see 20/200 in the left eye.\n- With +4 reading glasses, you could read 0.5M print quite nicely.\n- The doctor thinks you are an excellent candidate for low vision help.\n\n## What you need to do\n1. The clinic has loaned you a pair of +4 reading glasses.\n2. The clinic has started fine-detailed reading therapy with you.\n3. Come back to the clinic in two weeks.\n\n## Dates and medicines\n- Return visit to the vision rehabilitation office: in two weeks. At this visit, the clinic will decide which near reading glasses to prescribe for you.\n- The letter does not list any medicines.\n- The date of your visit is not known. The letter shows only a placeholder.\n\n## Questions to ask your doctor\n- What does macular degeneration mean for me?\n- How will the loaned +4 reading glasses help me?\n- What will happen at my visit in two weeks?\n\n## When to get urgent help\nThe letter does not list specific warning signs.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 77.3,
+          "reading_ease_target": 70,
+          "grade_level": 4.7,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [
+            {
+              "kind": "changed",
+              "severity": "major",
+              "explanation_says": "With the distance correction, you could see 20/70 in the right eye and 20/200 in the left eye.",
+              "letter_says": "A mild change in her distance correction allowed her the ability to see 20/70 in the right eye and 20/200 in the left eye.",
+              "why": "Letter says the new correction allowed those results; explanation is roughly the same. Minor wording only.",
+              "real_difference": false
+            },
+            {
+              "kind": "added",
+              "severity": "minor",
+              "explanation_says": "The letter does not say which eye. It does not say when.",
+              "letter_says": "Letter says 'admits to having PDT therapy within the last year' with no eye specified.",
+              "why": "Statement about missing eye detail is accurate; 'does not say when' is slightly off since the letter says within the last year, but the explanation already states last year.",
+              "real_difference": false
+            },
+            {
+              "kind": "advice",
+              "severity": "minor",
+              "explanation_says": "Ask your doctor what this means (macular degeneration).",
+              "letter_says": "The letter gives no instruction to ask the doctor about macular degeneration.",
+              "why": "Moves a task to the patient in the main body, though it is a mild suggestion; questions section is allowed but this is in the summary.",
+              "real_difference": true
+            },
+            {
+              "kind": "changed",
+              "severity": "minor",
+              "explanation_says": "The letter was sent to your doctor and is about your low vision check; 'The clinic has started fine-detailed reading therapy with you.'",
+              "letter_says": "We have started her with fine-detailed reading.",
+              "why": "'Therapy' is a slight embellishment, but the letter also mentions vision therapy; wording only.",
+              "real_difference": false
+            },
+            {
+              "kind": "dropped",
+              "severity": "minor",
+              "explanation_says": "Does not mention that she wants to do household chores and read small print.",
+              "letter_says": "She would like to get started with vision therapy so she can do household chores and read small print.",
+              "why": "Patient goals omitted; does not affect actions.",
+              "real_difference": true
+            }
+          ],
+          "summary": "The explanation is largely faithful. It has no dosage, date, negation or urgency errors. The +4 glasses, the 20/70 and 20/200 figures, the two-week return and the loan are all correct. Two small real differences: it tells the patient to ask the doctor about macular degeneration, which the letter does not say, and it leaves out the patient's goals (chores and reading small print). Both are minor. Other items I checked were only wording differences."
+        },
+        "blocking_problems": [
+          "[advice] Moves a task to the patient in the main body, though it is a mild suggestion; questions section is allowed but this is in the summary. (explanation: 'Ask your doctor what this means (macular degeneration).'; letter: 'The letter gives no instruction to ask the doctor about macular degeneration.')"
+        ],
+        "attempt": 1
+      },
+      {
+        "explanation": "## What this letter says\nThis letter is from a vision clinic (vision rehabilitation office). It was sent to your doctor. It is about your low vision check.\n\n- You have a history of macular degeneration.\n- You say you had PDT (photodynamic therapy) in the last year. The letter does not say which eye. It does not say when.\n- You use a small handheld magnifier. It gives you only limited help.\n- The clinic found a mild change in your distance correction (glasses for seeing far).\n- With the distance correction, you could see 20/70 in the right eye. You could see 20/200 in the left eye.\n- With +4 reading glasses, you could read 0.5M print quite nicely.\n- The doctor thinks you are an excellent candidate for low vision help.\n\n## What you need to do\n1. The clinic has loaned you a pair of +4 reading glasses.\n2. The clinic has started fine-detailed reading therapy with you.\n3. Come back to the clinic in two weeks.\n\n## Dates and medicines\n- Return visit to the vision rehabilitation office: in two weeks. At this visit, the clinic will decide which near reading glasses to prescribe for you.\n- The letter does not list any medicines.\n- The date of your visit is not known. The letter shows only a placeholder.\n\n## Questions to ask your doctor\n- What does macular degeneration mean for me?\n- How will the loaned +4 reading glasses help me?\n- What will happen at my visit in two weeks?\n\n## When to get urgent help\nThe letter does not list specific warning signs.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 77.1,
+          "reading_ease_target": 70,
+          "grade_level": 4.8,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [
+            {
+              "kind": "changed",
+              "severity": "minor",
+              "explanation_says": "With the distance correction, you could see 20/70 in the right eye and 20/200 in the left eye.",
+              "letter_says": "A mild change in her distance correction allowed her to see 20/70 in the right eye and 20/200 in the left eye.",
+              "why": "Essentially matches; the letter says the change allowed this vision. Wording difference only.",
+              "real_difference": false
+            },
+            {
+              "kind": "added",
+              "severity": "minor",
+              "explanation_says": "The letter does not say which eye. It does not say when.",
+              "letter_says": "She admits to having PDT therapy within the last year.",
+              "why": "The letter does say 'within the last year', so 'does not say when' is slightly inaccurate, though the explanation also says 'in the last year' just before. Minor inconsistency, not a real change.",
+              "real_difference": false
+            },
+            {
+              "kind": "changed",
+              "severity": "minor",
+              "explanation_says": "The clinic has started fine-detailed reading therapy with you.",
+              "letter_says": "We have started her with fine-detailed reading.",
+              "why": "The letter says fine-detailed reading, not 'therapy'. Close in meaning; the letter mentions vision therapy as a goal.",
+              "real_difference": false
+            },
+            {
+              "kind": "advice",
+              "severity": "minor",
+              "explanation_says": "Come back to the clinic in two weeks. (listed under 'What you need to do')",
+              "letter_says": "She will return to our office in a matter of two weeks.",
+              "why": "The letter states a plan; the explanation phrases it as an instruction. This is a reasonable restatement of the planned return.",
+              "real_difference": false
+            }
+          ],
+          "summary": "The explanation matches the letter. Every difference found is wording only: the return visit in two weeks, the loaned +4 glasses, the visual acuities and the 0.5M print are all correct, and nothing was added, dropped or changed in a way that matters to the patient."
+        },
+        "blocking_problems": [],
+        "attempt": 2
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 3304,
+        "output_tokens": 1008,
+        "cost_usd": 0.01209,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 11615,
+        "output_tokens": 1231,
+        "cost_usd": 0.02542,
+        "turns": 4
+      },
+      {
+        "step": "verify",
+        "input_tokens": 3301,
+        "output_tokens": 851,
+        "cost_usd": 0.01592,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 8888,
+        "output_tokens": 1067,
+        "cost_usd": 0.02453,
+        "turns": 2
+      },
+      {
+        "step": "verify",
+        "input_tokens": 3281,
+        "output_tokens": 673,
+        "cost_usd": 0.01406,
+        "turns": 2
+      }
+    ],
+    "cost_usd": 0.09203,
+    "latency_s": 43.8
+  },
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "diagnoses",
+        "fact": "Macular degeneration; photodynamic therapy (PDT) within the last year",
+        "status": "kept",
+        "note": "States history of macular degeneration and PDT (photodynamic therapy) in the last year. The extra line 'It does not say when' is a little confusing, but it doesn't change the 'within the last year' timeframe."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "With a small change to distance glasses: 20/70 right eye, 20/200 left eye",
+        "status": "kept",
+        "note": "Mild change in distance correction; 20/70 right eye, 20/200 left eye."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "With +4 reading glasses she could read 0.5M (small) print",
+        "status": "kept",
+        "note": "With +4 reading glasses could read 0.5M print quite nicely."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Excellent candidate for low vision help",
+        "status": "kept",
+        "note": "Excellent candidate for low vision help."
+      },
+      {
+        "category": "dates",
+        "fact": "Return in two weeks to decide which reading glasses to prescribe",
+        "status": "kept",
+        "note": "Return in two weeks; clinic will decide which near reading glasses to prescribe."
+      },
+      {
+        "category": "actions",
+        "fact": "Lent a pair of +4 reading glasses",
+        "status": "kept",
+        "note": "Clinic loaned a pair of +4 reading glasses."
+      },
+      {
+        "category": "actions",
+        "fact": "Started fine-detailed reading practice",
+        "status": "kept",
+        "note": "Started fine-detailed reading therapy."
+      }
+    ],
+    "added": [],
+    "gold_reviewer": "claude-draft"
+  }
+}

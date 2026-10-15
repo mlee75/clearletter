@@ -1,0 +1,243 @@
+{
+  "job": {
+    "id": "mtsamples__mts_3068__sonnet__en__v",
+    "part": "mtsamples",
+    "letter_id": "mts_3068",
+    "file": "data/mtsamples/mts_3068.txt",
+    "kind": "faithfulness",
+    "model": "sonnet",
+    "language": "en",
+    "verifier": true,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "sonnet",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": true,
+    "status": "ok",
+    "final_text": "## What this letter says\nThis letter is from a clinic doctor. It is about your son Abc. He is 9 months old. He was born in a twin pregnancy. He was born a little early. The letter says this was very mild.\n\nHe has had wheezing, cough and shortness of breath for several months. He still has a cough. This is after treatment with inhaled steroids and a bronchodilator.\n\nThere is no smoke exposure. His father, uncle and older sister have asthma.\n\nThe parents live in separate homes. The letter says there is a question about how steadily his medicine is given at his father's house.\n\nThe doctor examined Abc. Some scattered rhonchi were heard. They cleared when he coughed. He was otherwise healthy.\n\nThe doctor thinks Abc probably has fairly severe childhood asthma. This is not certain. Luckily, he has not had to go to hospital.\n\nThe letter says his mother knows the basics of asthma care quite well.\n\n## What you need to do\n1. The letter says to continue his alternate day steroids. Continue until he has no symptoms at all on the days off steroids.\n2. The letter says it would be reasonable to keep lowering (weaning) the dose. It can go down to as low as 1.5 milligrams (0.5 milliliters) on alternate days.\n3. The letter says his mother is encouraged to contact the clinic office. Questions can be answered by phone if needed.\n\n## Dates and medicines\nThe letter has no date.\n\n- Inhaled steroids: dose and how often are not stated. He has a cough even with this.\n- Bronchodilator: dose and how often are not stated. He has a cough even with this.\n- Prednisolone, short burst: recently started. Dose and how often are not stated.\n- Prednisolone, alternate day course: the dose is being lowered. The letter says it is reasonable to go down to as low as 1.5 milligrams (0.5 milliliters) on alternate days. His current dose is not stated.\n\n## Questions to ask your doctor\n- What dose of prednisolone is Abc taking now?\n- What are the doses of the inhaled steroids and the bronchodilator?\n- How will we know he has no symptoms on the days off steroids?\n\n## When to get urgent help\nThe letter does not list specific warning signs.\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "doctor_copy_to_patient",
+      "purpose": "Clinic letter to the referring doctor about a 9-month-old boy with wheezing, cough and shortness of breath, who is probably has fairly severe childhood asthma, and advice on weaning his alternate day steroids.",
+      "findings": [
+        {
+          "statement": "Abc is a 9-month-old boy, born from a twin pregnancy with some very mild prematurity.",
+          "certainty": "stated",
+          "quote": "he is now a 9-month-old male product of a twin gestation complicated by some very mild prematurity"
+        },
+        {
+          "statement": "He has had problems with wheezing, cough and shortness of breath over the last several months.",
+          "certainty": "stated",
+          "quote": "He has been having problems with wheezing, cough and shortness of breath over the last several months."
+        },
+        {
+          "statement": "Despite treatment with inhaled steroids and a bronchodilator, he has had persistent problems with cough.",
+          "certainty": "stated",
+          "quote": "he has had persistent problems with a cough"
+        },
+        {
+          "statement": "There is no smoke exposure.",
+          "certainty": "stated",
+          "quote": "there is no smoke exposure"
+        },
+        {
+          "statement": "There is a significant family history of asthma: his father, uncle and older sister.",
+          "certainty": "stated",
+          "quote": "both Abc's father and uncle having problems with asthma as well as his older sister"
+        },
+        {
+          "statement": "There is a question about how consistently his medication is given at his father's house, as the parents live in separate households.",
+          "certainty": "stated",
+          "quote": "there has been a question about the consistency of his medication administration at his father's house"
+        },
+        {
+          "statement": "On examination he had some scattered rhonchi that cleared with coughing, but was otherwise healthy.",
+          "certainty": "stated",
+          "quote": "Abc had some scattered rhonchi which cleared with coughing but was otherwise healthy"
+        },
+        {
+          "statement": "Abc probably has fairly severe childhood asthma and has fortunately avoided hospitalization.",
+          "certainty": "possible",
+          "quote": "Abc probably does have fairly severe childhood asthma and fortunately has avoided hospitalization"
+        },
+        {
+          "statement": "His mother is fairly well versed in basic asthma management principles.",
+          "certainty": "stated",
+          "quote": "I believe that Abc's mother is fairly well versed in this"
+        }
+      ],
+      "medicines": [
+        {
+          "name": "Inhaled steroids",
+          "dose": "not stated",
+          "how_often": "not stated",
+          "change": "not_stated",
+          "details": "Used by the referring doctor and partners to treat him, with persistent cough despite this.",
+          "quote": "You and your partners have treated him aggressively with inhaled steroids and bronchodilator."
+        },
+        {
+          "name": "Bronchodilator",
+          "dose": "not stated",
+          "how_often": "not stated",
+          "change": "not_stated",
+          "details": "Used by the referring doctor and partners to treat him, with persistent cough despite this.",
+          "quote": "You and your partners have treated him aggressively with inhaled steroids and bronchodilator."
+        },
+        {
+          "name": "Prednisolone (short burst)",
+          "dose": "not stated",
+          "how_often": "not stated",
+          "change": "start",
+          "details": "Recently started as a short burst.",
+          "quote": "has been more recently started on both a short burst of prednisolone"
+        },
+        {
+          "name": "Prednisolone (alternating day course)",
+          "dose": "1.5 milligrams (0.5 milliliters on alternate days)",
+          "how_often": "alternate days",
+          "change": "decrease",
+          "details": "Letter says it would be reasonable to continue weaning down to as low as this dose. Current dose is not stated. Alternate day steroids should continue until he is completely symptom free on the days off steroids.",
+          "quote": "it would be reasonable to continue to wean him down to as low as 1.5 milligrams (0.5 milliliters on alternate days)"
+        }
+      ],
+      "dates": [],
+      "actions": [
+        {
+          "instruction": "Continue his alternate day steroids until he is completely symptom free on the days off steroids.",
+          "quote": "I think it would be prudent to continue his alternate day steroids until he is completely symptom free on the days off steroids"
+        },
+        {
+          "instruction": "It would be reasonable to continue to wean him down to as low as 1.5 milligrams (0.5 milliliters on alternate days).",
+          "quote": "it would be reasonable to continue to wean him down to as low as 1.5 milligrams (0.5 milliliters on alternate days)"
+        },
+        {
+          "instruction": "His mother has been encouraged to contact the clinic office, so questions can be answered by phone if necessary.",
+          "quote": "I have encouraged his mother to contact our office so that we can answer questions if necessary by phone."
+        }
+      ],
+      "negatives": [
+        {
+          "instruction": "There is no smoke exposure.",
+          "quote": "there is no smoke exposure"
+        }
+      ],
+      "warning_signs": [],
+      "unclear": [
+        "The current prednisolone dose and the doses of the inhaled steroid and bronchodilator are not stated.",
+        "The letter has no date, so no dates could be extracted.",
+        "It is unclear whether 'continue to wean him down' means he is currently on a higher dose than 1.5 milligrams."
+      ]
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\nThis letter is from a clinic doctor. It is about your son Abc. He is 9 months old. He was born in a twin pregnancy. He was born a little early. The letter says this was very mild.\n\nHe has had wheezing, cough and shortness of breath for several months. He still has a cough. This is after treatment with inhaled steroids and a bronchodilator.\n\nThere is no smoke exposure. His father, uncle and older sister have asthma.\n\nThe parents live in separate homes. The letter says there is a question about how steadily his medicine is given at his father's house.\n\nThe doctor examined Abc. Some scattered rhonchi were heard. They cleared when he coughed. He was otherwise healthy.\n\nThe doctor thinks Abc probably has fairly severe childhood asthma. This is not certain. Luckily, he has not had to go to hospital.\n\nThe letter says his mother knows the basics of asthma care quite well.\n\n## What you need to do\n1. The letter says to continue his alternate day steroids. Continue until he has no symptoms at all on the days off steroids.\n2. The letter says it would be reasonable to keep lowering (weaning) the dose. It can go down to as low as 1.5 milligrams (0.5 milliliters) on alternate days.\n3. The letter says his mother is encouraged to contact the clinic office. Questions can be answered by phone if needed.\n\n## Dates and medicines\nThe letter has no date.\n\n- Inhaled steroids: dose and how often are not stated. He has a cough even with this.\n- Bronchodilator: dose and how often are not stated. He has a cough even with this.\n- Prednisolone, short burst: recently started. Dose and how often are not stated.\n- Prednisolone, alternate day course: the dose is being lowered. The letter says it is reasonable to go down to as low as 1.5 milligrams (0.5 milliliters) on alternate days. His current dose is not stated.\n\n## Questions to ask your doctor\n- What dose of prednisolone is Abc taking now?\n- What are the doses of the inhaled steroids and the bronchodilator?\n- How will we know he has no symptoms on the days off steroids?\n\n## When to get urgent help\nThe letter does not list specific warning signs.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 79.1,
+          "reading_ease_target": 70,
+          "grade_level": 4.2,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [],
+          "summary": "The explanation matches the letter. It keeps the key facts: the probable fairly severe childhood asthma, the continued alternate-day steroids, and the weaning to as low as 1.5 mg (0.5 mL) on alternate days. It also keeps the family history, the question about medicine consistency at the father's house, and the advice for the mother to phone the clinic. It adds no unsupported facts or advice and correctly states that no warning signs are listed."
+        },
+        "blocking_problems": [],
+        "attempt": 1
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 3436,
+        "output_tokens": 1801,
+        "cost_usd": 0.02005,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 15408,
+        "output_tokens": 1916,
+        "cost_usd": 0.03892,
+        "turns": 6
+      },
+      {
+        "step": "verify",
+        "input_tokens": 3657,
+        "output_tokens": 740,
+        "cost_usd": 0.01624,
+        "turns": 2
+      }
+    ],
+    "cost_usd": 0.0752,
+    "latency_s": 39.7
+  },
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "diagnoses",
+        "fact": "9-month-old twin, born very slightly early",
+        "status": "kept",
+        "note": "States 9 months old, twin pregnancy, born a little early (very mild)."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Probably fairly severe childhood asthma",
+        "status": "kept",
+        "note": "Says the doctor thinks he probably has fairly severe childhood asthma, and that this is not certain."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "On exam: some chest noises (scattered rhonchi) that cleared with coughing; otherwise healthy",
+        "status": "kept",
+        "note": "Says scattered rhonchi were heard, they cleared with coughing, and he was otherwise healthy."
+      },
+      {
+        "category": "medicines",
+        "fact": "Continue alternate-day steroids until completely free of symptoms on the days without steroids",
+        "status": "kept",
+        "note": "Says to continue alternate-day steroids until he has no symptoms at all on the days off steroids."
+      },
+      {
+        "category": "medicines",
+        "fact": "Can be weaned down to as low as 1.5 milligrams (0.5 milliliters) on alternate days",
+        "status": "kept",
+        "note": "Says the dose can be weaned down to as low as 1.5 mg (0.5 mL) on alternate days."
+      },
+      {
+        "category": "medicines",
+        "fact": "Has used inhaled steroids and a bronchodilator; short burst of prednisolone then an alternate-day course",
+        "status": "kept",
+        "note": "Lists inhaled steroids, bronchodilator, a short burst of prednisolone and an alternate-day course."
+      },
+      {
+        "category": "actions",
+        "fact": "Mother encouraged to call the office with questions",
+        "status": "kept",
+        "note": "Says his mother is encouraged to contact the clinic office, with questions answered by phone."
+      },
+      {
+        "category": "negatives",
+        "fact": "No smoke exposure",
+        "status": "kept",
+        "note": "Says there is no smoke exposure."
+      },
+      {
+        "category": "negatives",
+        "fact": "He has avoided going into hospital",
+        "status": "kept",
+        "note": "Says he has not had to go to hospital."
+      }
+    ],
+    "added": [],
+    "gold_reviewer": "claude-draft"
+  }
+}

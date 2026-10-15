@@ -1,0 +1,225 @@
+{
+  "job": {
+    "id": "models__syn_08__opus__en__v",
+    "part": "models",
+    "letter_id": "syn_08",
+    "file": "data/synthetic/syn_08.txt",
+    "kind": "faithfulness",
+    "model": "opus",
+    "language": "en",
+    "verifier": true,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "opus",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": true,
+    "status": "fallback",
+    "final_text": "**We could not explain this letter safely. Please ask your doctor, nurse or pharmacist to explain it to you.**\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "patient",
+      "purpose": "Summary of an Emergency Department visit after a fall at home where you hit your head, with test results and the plan.",
+      "findings": [
+        {
+          "statement": "You fell at home and hit your head. You did not lose consciousness.",
+          "certainty": "stated",
+          "quote": "Fall at home. Hit head. No loss of consciousness."
+        },
+        {
+          "statement": "X-ray of the right hip showed no fracture.",
+          "certainty": "ruled_out",
+          "quote": "X-ray of the right hip: no fracture."
+        },
+        {
+          "statement": "CT head scan showed no bleeding inside the head.",
+          "certainty": "ruled_out",
+          "quote": "CT head: no evidence of intracranial haemorrhage (no bleeding inside the head)."
+        },
+        {
+          "statement": "Blood pressure was 142/80 lying down and 108/66 standing. This shows postural hypotension (blood pressure drops when you stand up).",
+          "certainty": "stated",
+          "quote": "142/80 lying, 108/66 standing. This shows postural hypotension (blood pressure drops when standing up)."
+        }
+      ],
+      "medicines": [
+        {
+          "name": "amlodipine",
+          "dose": "10 mg",
+          "how_often": "",
+          "change": "stop",
+          "details": "Stopped because it may be making your blood pressure drop when you stand.",
+          "quote": "STOP amlodipine 10 mg. It may be making your blood pressure drop when you stand."
+        },
+        {
+          "name": "All other medicines",
+          "dose": "",
+          "how_often": "",
+          "change": "continue",
+          "details": "Keep taking all your other medicines.",
+          "quote": "Continue all other medicines."
+        }
+      ],
+      "dates": [
+        {
+          "what": "Seen in hospital",
+          "when": "14 October 2026",
+          "quote": "Seen: 14/10/2026"
+        },
+        {
+          "what": "Your GP will recheck your lying and standing blood pressure",
+          "when": "In 4 weeks",
+          "quote": "GP to recheck lying and standing blood pressure in 4 weeks."
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Stop taking amlodipine 10 mg.",
+          "quote": "STOP amlodipine 10 mg."
+        },
+        {
+          "instruction": "Keep taking all your other medicines.",
+          "quote": "Continue all other medicines."
+        },
+        {
+          "instruction": "You have been referred to the Falls Prevention Clinic. They will write to you with an appointment.",
+          "quote": "Referred to the Falls Prevention Clinic. They will write to you with an appointment."
+        },
+        {
+          "instruction": "Your GP will recheck your lying and standing blood pressure in 4 weeks.",
+          "quote": "GP to recheck lying and standing blood pressure in 4 weeks."
+        },
+        {
+          "instruction": "Stand up slowly. Sit on the edge of the bed for a minute before standing.",
+          "quote": "Stand up slowly. Sit on the edge of the bed for a minute before standing."
+        }
+      ],
+      "negatives": [
+        {
+          "instruction": "No broken bone in the right hip.",
+          "quote": "no fracture"
+        },
+        {
+          "instruction": "No bleeding inside the head on the CT scan.",
+          "quote": "no evidence of intracranial haemorrhage"
+        },
+        {
+          "instruction": "You did not lose consciousness.",
+          "quote": "No loss of consciousness."
+        }
+      ],
+      "warning_signs": [
+        {
+          "instruction": "If you get a worsening headache, vomiting, confusion or drowsiness in the next few days, call 999 or go to A&E.",
+          "quote": "If you develop a worsening headache, vomiting, confusion or drowsiness in the next few days, call 999 or go to A&E."
+        }
+      ],
+      "unclear": []
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\n\nYou went to the hospital emergency department. You fell at home and hit your head. You did not lose consciousness.\n\nThe hospital did some tests.\n\n- An X-ray of your right hip showed no broken bone (no fracture).\n- A detailed X-ray scan of your head (CT scan) showed no bleeding inside the head.\n- Your blood pressure was 142/80 lying down. It was 108/66 standing up. This shows your blood pressure drops when you stand up (postural hypotension).\n\n## What you need to do\n\n1. Stop taking amlodipine 10 milligrams.\n2. Keep taking all your other medicines.\n3. Stand up slowly. Sit on the edge of the bed for a minute before you stand.\n4. The hospital has sent you to the Falls Prevention Clinic. The clinic will write to you with an appointment.\n5. Your family doctor (GP) will check your blood pressure again in 4 weeks. They will check it lying down and standing up.\n\n## Dates and medicines\n\n**Dates**\n- 14 October 2026: you were seen in hospital.\n- In 4 weeks: your family doctor (GP) will check your lying and standing blood pressure again.\n\n**Medicines**\n- Amlodipine 10 milligrams: stop. It may be making your blood pressure drop when you stand.\n- All your other medicines: keep taking them.\n\n## Questions to ask your doctor\n\n- What does \"postural hypotension\" mean for me?\n- When will the Falls Prevention Clinic write to me?\n- Who should I contact about my blood pressure check in 4 weeks?\n\n## When to get urgent help\n\nCall 999 or go to A&E (the hospital emergency department) if you get any of these in the next few days:\n\n- a headache that gets worse\n- being sick (vomiting)\n- confusion\n- feeling very sleepy (drowsiness)",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 78.9,
+          "reading_ease_target": 70,
+          "grade_level": 4.8,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [
+            {
+              "kind": "urgency",
+              "severity": "minor",
+              "explanation_says": "feeling very sleepy (drowsiness)",
+              "letter_says": "drowsiness",
+              "why": "Adding 'very' may make the patient think mild drowsiness isn't a warning sign, which slightly weakens the warning."
+            }
+          ],
+          "summary": "The explanation matches the letter closely. It correctly covers the test results (no hip fracture and no bleeding in the head on CT), the postural hypotension finding, stopping amlodipine 10 mg, continuing all other medicines, the Falls Prevention Clinic referral, the GP blood pressure recheck in 4 weeks, the advice to stand up slowly, and the urgent warning signs. The only issue is minor: 'drowsiness' is rendered as 'feeling very sleepy', which slightly raises the threshold for a warning sign."
+        },
+        "blocking_problems": [
+          "[urgency] Adding 'very' may make the patient think mild drowsiness isn't a warning sign, which slightly weakens the warning. (explanation: 'feeling very sleepy (drowsiness)'; letter: 'drowsiness')"
+        ],
+        "attempt": 1
+      },
+      {
+        "explanation": "## What this letter says\n\nYou went to the hospital emergency department. You fell at home and hit your head. You did not lose consciousness.\n\nThe hospital did some tests.\n\n- An X-ray of your right hip showed no broken bone (no fracture).\n- A detailed X-ray scan of your head (CT scan) showed no bleeding inside the head.\n- Your blood pressure was 142/80 lying down. It was 108/66 standing up. This shows your blood pressure drops when you stand up (postural hypotension).\n\n## What you need to do\n\n1. Stop taking amlodipine 10 milligrams.\n2. Keep taking all your other medicines.\n3. Stand up slowly. Sit on the edge of the bed for a minute before you stand.\n4. The hospital has sent you to the Falls Prevention Clinic. The clinic will write to you with an appointment.\n5. Your family doctor (GP) will check your blood pressure again in 4 weeks. They will check it lying down and standing up.\n\n## Dates and medicines\n\n**Dates**\n- 14 October 2026: you were seen in hospital.\n- In 4 weeks: your family doctor (GP) will check your lying and standing blood pressure again.\n\n**Medicines**\n- Amlodipine 10 milligrams: stop. It may be making your blood pressure drop when you stand.\n- All your other medicines: keep taking them.\n\n## Questions to ask your doctor\n\n- What does \"postural hypotension\" mean for me?\n- When will the Falls Prevention Clinic write to me?\n- Who should I contact about my blood pressure check in 4 weeks?\n\n## When to get urgent help\n\nCall 999 or go to A&E (the hospital emergency department) if you get any of these in the next few days:\n\n- a headache that gets worse\n- being sick (vomiting)\n- confusion\n- feeling sleepy (drowsiness)",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 79.1,
+          "reading_ease_target": 70,
+          "grade_level": 4.8,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [
+            {
+              "kind": "urgency",
+              "severity": "minor",
+              "explanation_says": "feeling sleepy (drowsiness)",
+              "letter_says": "drowsiness",
+              "why": "'Feeling sleepy' is an everyday phrase that could make this warning sign sound less serious than clinical drowsiness after a head injury. The word 'drowsiness' is kept in brackets, so the change in meaning is small."
+            }
+          ],
+          "summary": "The explanation matches the letter closely. The diagnosis, test results, stopping amlodipine 10 mg, continuing other medicines, the Falls Clinic referral, the GP blood pressure recheck in 4 weeks, the advice on standing up and the urgent warning signs are all correct. The only issue is a small wording change: 'drowsiness' is also described as 'feeling sleepy', which may make it sound slightly less serious."
+        },
+        "blocking_problems": [
+          "[urgency] 'Feeling sleepy' is an everyday phrase that could make this warning sign sound less serious than clinical drowsiness after a head injury. The word 'drowsiness' is kept in brackets, so the change in meaning is small. (explanation: 'feeling sleepy (drowsiness)'; letter: 'drowsiness')"
+        ],
+        "attempt": 2
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 3432,
+        "output_tokens": 1305,
+        "cost_usd": 0.03722,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 14064,
+        "output_tokens": 1739,
+        "cost_usd": 0.06747,
+        "turns": 7
+      },
+      {
+        "step": "verify",
+        "input_tokens": 3343,
+        "output_tokens": 555,
+        "cost_usd": 0.0261,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 10205,
+        "output_tokens": 1443,
+        "cost_usd": 0.06116,
+        "turns": 2
+      },
+      {
+        "step": "verify",
+        "input_tokens": 3341,
+        "output_tokens": 505,
+        "cost_usd": 0.02508,
+        "turns": 2
+      }
+    ],
+    "cost_usd": 0.21703,
+    "latency_s": 58.7
+  },
+  "judgement": {
+    "fallback": true
+  }
+}

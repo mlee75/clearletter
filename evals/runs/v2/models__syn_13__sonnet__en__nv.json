@@ -1,0 +1,185 @@
+{
+  "job": {
+    "id": "models__syn_13__sonnet__en__nv",
+    "part": "models",
+    "letter_id": "syn_13",
+    "file": "data/synthetic/syn_13.txt",
+    "kind": "faithfulness",
+    "model": "sonnet",
+    "language": "en",
+    "verifier": false,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "sonnet",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": false,
+    "status": "not_verified",
+    "final_text": "## What this letter says\nYour blood sugar test (HbA1c) was done. The result is from 29 September 2026. It is 52 mmol/mol.\n\nAn HbA1c test shows your average blood sugar over the last 2 to 3 months.\n\nA result of 48 mmol/mol or above is in the range for type 2 diabetes.\n\nYou need a second test to confirm whether you have diabetes. The result of that test is not known yet.\n\nYou have not been given a diagnosis of diabetes yet. You do not have symptoms.\n\n## What you need to do\n1. Book a repeat blood test with the practice nurse. Book it within the next 2 weeks.\n2. Book an appointment with Dr Thompson after the second test. You will talk about the result.\n3. You do not need to fast for the repeat blood test.\n4. Do not start any new medicine for diabetes before you have spoken to the doctor.\n\n## Dates and medicines\n- 29 September 2026: date of your HbA1c result. The result is 52 mmol/mol.\n- Within the next 2 weeks: book the repeat blood test with the practice nurse.\n- Medicines: the letter does not list any medicines.\n\n## Questions to ask your doctor\n- What does type 2 diabetes mean?\n- What will the second test show?\n- What happens after the second test?\n\n## When to get urgent help\nThe letter does not list specific warning signs.\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "patient",
+      "purpose": "To tell the patient his HbA1c result, that a repeat blood test is needed to confirm whether he has diabetes, and what to book.",
+      "findings": [
+        {
+          "statement": "HbA1c result from 29 September 2026 is 52 mmol/mol.",
+          "certainty": "stated",
+          "quote": "Your HbA1c result from 29/09/2026 is 52 mmol/mol."
+        },
+        {
+          "statement": "A result of 48 mmol/mol or above is in the range for type 2 diabetes.",
+          "certainty": "stated",
+          "quote": "A result of 48 mmol/mol or above is in the range for type 2 diabetes."
+        },
+        {
+          "statement": "A second test is needed to confirm whether the patient has diabetes.",
+          "certainty": "pending",
+          "quote": "we need a second test to confirm whether you have diabetes"
+        },
+        {
+          "statement": "No diagnosis of diabetes has been made yet.",
+          "certainty": "stated",
+          "quote": "We have not made a diagnosis yet."
+        },
+        {
+          "statement": "The patient does not have symptoms.",
+          "certainty": "stated",
+          "quote": "Because you do not have symptoms"
+        }
+      ],
+      "medicines": [],
+      "dates": [
+        {
+          "what": "Date of HbA1c blood test result",
+          "when": "29 September 2026",
+          "quote": "Your HbA1c result from 29/09/2026 is 52 mmol/mol."
+        },
+        {
+          "what": "Repeat blood test with the practice nurse to be booked within this time",
+          "when": "within the next 2 weeks",
+          "quote": "within the next 2 weeks"
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Book a repeat blood test with the practice nurse within the next 2 weeks.",
+          "quote": "Please book a repeat blood test with the practice nurse within the next 2 weeks."
+        },
+        {
+          "instruction": "Book an appointment with Dr Thompson after the second test to discuss the result.",
+          "quote": "Please also book an appointment with Dr Thompson after the second test to discuss the result."
+        }
+      ],
+      "negatives": [
+        {
+          "instruction": "You do not need to fast for the repeat blood test.",
+          "quote": "You do not need to fast for this test."
+        },
+        {
+          "instruction": "Do not start any new medicine for diabetes before you have spoken to the doctor.",
+          "quote": "Do not start any new medicine for diabetes before you have spoken to the doctor."
+        },
+        {
+          "instruction": "A diagnosis of diabetes has not been made yet.",
+          "quote": "We have not made a diagnosis yet."
+        }
+      ],
+      "warning_signs": [],
+      "unclear": []
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\nYour blood sugar test (HbA1c) was done. The result is from 29 September 2026. It is 52 mmol/mol.\n\nAn HbA1c test shows your average blood sugar over the last 2 to 3 months.\n\nA result of 48 mmol/mol or above is in the range for type 2 diabetes.\n\nYou need a second test to confirm whether you have diabetes. The result of that test is not known yet.\n\nYou have not been given a diagnosis of diabetes yet. You do not have symptoms.\n\n## What you need to do\n1. Book a repeat blood test with the practice nurse. Book it within the next 2 weeks.\n2. Book an appointment with Dr Thompson after the second test. You will talk about the result.\n3. You do not need to fast for the repeat blood test.\n4. Do not start any new medicine for diabetes before you have spoken to the doctor.\n\n## Dates and medicines\n- 29 September 2026: date of your HbA1c result. The result is 52 mmol/mol.\n- Within the next 2 weeks: book the repeat blood test with the practice nurse.\n- Medicines: the letter does not list any medicines.\n\n## Questions to ask your doctor\n- What does type 2 diabetes mean?\n- What will the second test show?\n- What happens after the second test?\n\n## When to get urgent help\nThe letter does not list specific warning signs.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 82.5,
+          "reading_ease_target": 70,
+          "grade_level": 4.1,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": null,
+        "blocking_problems": [],
+        "attempt": 1
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 3255,
+        "output_tokens": 982,
+        "cost_usd": 0.02935,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 11915,
+        "output_tokens": 1153,
+        "cost_usd": 0.04765,
+        "turns": 5
+      }
+    ],
+    "cost_usd": 0.077,
+    "latency_s": 19.8
+  },
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "diagnoses",
+        "fact": "HbA1c 52 mmol/mol, which is in the range for type 2 diabetes (48 or above)",
+        "status": "kept",
+        "note": "52 mmol/mol and the 48-or-above type 2 diabetes range are both stated."
+      },
+      {
+        "category": "dates",
+        "fact": "HbA1c test on 29 September 2026",
+        "status": "kept",
+        "note": "Date given as 29 September 2026."
+      },
+      {
+        "category": "dates",
+        "fact": "Repeat blood test with the practice nurse within the next 2 weeks",
+        "status": "kept",
+        "note": "Repeat test with the practice nurse within the next 2 weeks."
+      },
+      {
+        "category": "actions",
+        "fact": "Book the repeat blood test",
+        "status": "kept",
+        "note": "Tells the reader to book the repeat blood test."
+      },
+      {
+        "category": "actions",
+        "fact": "Book an appointment with Dr Thompson after the second test",
+        "status": "kept",
+        "note": "Book an appointment with Dr Thompson after the second test."
+      },
+      {
+        "category": "negatives",
+        "fact": "Diabetes has NOT been diagnosed yet; a second test is needed to confirm",
+        "status": "kept",
+        "note": "Says no diagnosis has been made yet and a second test is needed to confirm."
+      },
+      {
+        "category": "negatives",
+        "fact": "You do not need to fast for the repeat test",
+        "status": "kept",
+        "note": "Says there is no need to fast for the repeat test."
+      },
+      {
+        "category": "negatives",
+        "fact": "Do not start any new diabetes medicine before speaking to the doctor",
+        "status": "kept",
+        "note": "Says not to start new diabetes medicine before speaking to the doctor."
+      }
+    ],
+    "added": [],
+    "gold_reviewer": "claude-draft"
+  }
+}

@@ -1,0 +1,13 @@
+group,section,added,changed,cost,date_errors,dosage_errors,dropped,facts,fallback,grade,kept_pct,latency,passed,readability_pass_pct,reading_ease,runs,runs_with_added
+Haiku · verifier,"1. Models, with and without the verifier (20 synthetic letters, English)",9,4,0.163131,0,1,7,178,1,5.421052631578948,93.82022471910112,246.41,,89.47368421052632,77.15789473684211,20,7
+Haiku · no verifier,"1. Models, with and without the verifier (20 synthetic letters, English)",8,4,0.0919145,1,0,6,187,0,5.585,94.6524064171123,118.285,,95.0,75.575,20,6
+Sonnet · verifier,"1. Models, with and without the verifier (20 synthetic letters, English)",0,1,0.126325,1,0,4,187,0,4.565,97.32620320855615,29.705,,95.0,79.04,20,0
+Sonnet · no verifier,"1. Models, with and without the verifier (20 synthetic letters, English)",1,1,0.0902245,1,0,1,187,0,4.515,98.93048128342247,21.765,,95.0,79.0,20,1
+Opus · verifier,"1. Models, with and without the verifier (20 synthetic letters, English)",1,0,0.14774,0,0,2,176,1,4.278947368421052,98.86363636363636,42.985,,100,80.47368421052632,20,1
+Opus · no verifier,"1. Models, with and without the verifier (20 synthetic letters, English)",3,0,0.100357,0,0,2,187,0,4.4,98.93048128342247,44.065,,95.0,79.99,20,2
+MTSamples · verifier,"2. Real-world documents (20 MTSamples, Sonnet, English)",1,1,0.126915,0,1,5,114,9,4.463636363636364,94.73684210526316,54.73,,100,78.06363636363636,20,1
+MTSamples · no verifier,"2. Real-world documents (20 MTSamples, Sonnet, English)",5,4,0.0628215,0,0,5,219,0,4.645,95.89041095890411,26.855,,85.0,77.26,20,4
+fr,"3. French and Spanish (Sonnet, with verifier; scored on the English back-translation)",1,1,0.0792485,0,0,1,176,1,,98.86363636363636,33.965,,100,86.61578947368422,20,1
+es,"3. French and Spanish (Sonnet, with verifier; scored on the English back-translation)",1,0,0.069647,0,0,1,95,0,,98.94736842105263,33.269999999999996,,100,88.5,10,1
+verifier,redteam,,,,,,,,0,,,,15,,,15,
+no verifier,redteam,,,,,,,,0,,,,15,,,15,

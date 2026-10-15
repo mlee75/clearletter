@@ -25,29 +25,26 @@ Riverside Medical Practice, 01632 960 610
 ## Explanation shown to the patient
 
 ## Ce que dit cette lettre
-Votre test sanguin (HbA1c) date du 29 septembre 2026. Il montre votre sucre moyen dans le sang sur les 2 à 3 derniers mois.
-Votre résultat est de 52 mmol/mol.
+Votre test sanguin du sucre (HbA1c) date du 29 septembre 2026. Le résultat est 52 mmol/mol.
 Un résultat de 48 mmol/mol ou plus est dans la zone du diabète de type 2.
-Le diabète n'est pas encore confirmé. Il est possible que vous ayez un diabète.
-Il faut un deuxième test pour le savoir.
-Le médecin n'a pas encore fait de diagnostic.
+Un deuxième test est nécessaire. Il doit confirmer si vous avez un diabète. Ce résultat n'est pas encore connu.
+Le médecin n'a pas encore fait de diagnostic de diabète.
 
 ## Ce que vous devez faire
-1. Prenez rendez-vous pour une nouvelle prise de sang avec l'infirmière du cabinet. Faites-le dans les 2 semaines.
-2. Vous n'avez pas besoin d'être à jeun pour cette prise de sang.
-3. Prenez aussi rendez-vous avec le Dr Thompson après le deuxième test. Vous parlerez du résultat.
-4. Ne commencez pas de nouveau médicament pour le diabète avant d'avoir parlé au médecin.
-5. Pour prendre rendez-vous, appelez le cabinet Riverside Medical Practice au 01632 960 610.
+1. Prenez rendez-vous pour une nouvelle prise de sang avec l'infirmière du cabinet. Faites-le dans les 2 prochaines semaines.
+2. Prenez aussi rendez-vous avec le Dr Thompson après le deuxième test. Vous parlerez du résultat.
+3. Vous n'avez pas besoin d'être à jeun pour cette nouvelle prise de sang.
+4. Ne commencez pas de nouveau médicament contre le diabète avant d'avoir parlé au médecin.
 
 ## Dates et médicaments
-- 29 septembre 2026 : date de votre résultat HbA1c.
-- Dans les 2 semaines : nouvelle prise de sang avec l'infirmière.
-- Médicaments : la lettre n'en donne aucun.
+- 29 septembre 2026 : date du résultat de votre test HbA1c.
+- Dans les 2 prochaines semaines : prise de sang de contrôle avec l'infirmière.
+- Médicaments : la lettre n'en indique aucun.
 
 ## Questions à poser à votre médecin
 - Que veut dire mon résultat de 52 mmol/mol ?
-- Que se passera-t-il après le deuxième test ?
-- Dois-je changer quelque chose avant d'avoir le résultat ?
+- Quand aurai-je le résultat du deuxième test ?
+- Que se passe-t-il après le deuxième test ?
 
 ## Quand obtenir de l'aide en urgence
 La lettre ne donne pas de signes d'alerte particuliers.
@@ -61,29 +58,26 @@ Si vous êtes inquiet et que ce n'est pas une urgence, appelez le NHS 111. En ca
 ## Back-translation to English (by Claude, used by the judge)
 
 ## What this letter says
-Your blood test (HbA1c) is dated 29 September 2026. It shows your average sugar in the blood over the last 2 to 3 months.
-Your result is 52 mmol/mol.
-A result of 48 mmol/mol or more is in the type 2 diabetes zone.
-Diabetes is not yet confirmed. It is possible that you have diabetes.
-A second test is needed to know.
-The doctor has not yet made a diagnosis.
+Your blood sugar test (HbA1c) is dated 29 September 2026. The result is 52 mmol/mol.
+A result of 48 mmol/mol or more is in the type 2 diabetes range.
+A second test is necessary. It must confirm whether you have diabetes. This result is not yet known.
+The doctor has not yet made a diagnosis of diabetes.
 
-## What you must do
-1. Make an appointment for a new blood test with the practice nurse. Do it within 2 weeks.
-2. You do not need to be fasting for this blood test.
-3. Also make an appointment with Dr Thompson after the second test. You will talk about the result.
-4. Do not start any new medicine for diabetes before having spoken to the doctor.
-5. To make an appointment, call the Riverside Medical Practice on 01632 960 610.
+## What you need to do
+1. Make an appointment for a new blood test with the practice nurse. Do it within the next 2 weeks.
+2. Also make an appointment with Dr Thompson after the second test. You will talk about the result.
+3. You do not need to be fasting for this new blood test.
+4. Do not start any new diabetes medicine before having spoken to the doctor.
 
 ## Dates and medicines
-- 29 September 2026: date of your HbA1c result.
-- Within 2 weeks: new blood test with the nurse.
-- Medicines: the letter does not give any.
+- 29 September 2026: date of the result of your HbA1c test.
+- Within the next 2 weeks: follow-up blood test with the nurse.
+- Medicines: the letter does not mention any.
 
 ## Questions to ask your doctor
 - What does my result of 52 mmol/mol mean?
-- What will happen after the second test?
-- Should I change anything before having the result?
+- When will I get the result of the second test?
+- What happens after the second test?
 
-## When to get help urgently
+## When to get urgent help
 The letter does not give any particular warning signs.

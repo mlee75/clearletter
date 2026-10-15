@@ -1,0 +1,236 @@
+{
+  "job": {
+    "id": "mtsamples__mts_3068__sonnet__en__nv",
+    "part": "mtsamples",
+    "letter_id": "mts_3068",
+    "file": "data/mtsamples/mts_3068.txt",
+    "kind": "faithfulness",
+    "model": "sonnet",
+    "language": "en",
+    "verifier": false,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "sonnet",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": false,
+    "status": "not_verified",
+    "final_text": "## What this letter says\nA specialist saw Abc and his mother in the clinic today. The specialist wrote this letter to your family doctor.\n\nAbc is 9 months old. He is one of twins. He was born a little early. The letter says this was very mild.\n\nHe has had wheezing, cough and shortness of breath for several months. He has a cough that does not go away. He has had inhaled steroids and a bronchodilator.\n\nThere is no smoke exposure. His father, uncle and older sister have asthma. His parents live in separate homes. There has been a question about how often his medicine is given at his father's home.\n\nThe doctor listened to his chest. There were some scattered rhonchi. They cleared when he coughed. He was otherwise healthy.\n\nThe doctor thinks Abc probably has fairly severe childhood asthma. He has not had to go to hospital. The doctor believes his mother knows a fair amount about asthma care.\n\n## What you need to do\n1. Continue his alternate day steroids until he is completely symptom free on the days off steroids.\n2. The doctor encouraged Abc's mother to contact the clinic office. Questions can be answered by phone if needed.\n\n## Dates and medicines\n- Clinic visit: today. The letter does not give the date.\n- Inhaled steroids: dose and how often are not stated. Used before by your family doctor and partners.\n- Bronchodilator: dose and how often are not stated. Used before by your family doctor and partners.\n- Prednisolone, short burst: dose and how often are not stated. It was started recently.\n- Alternate day steroids (prednisolone course): every second day. Continue this. The doctor says it is reasonable to lower the dose slowly to as low as 1.5 milligrams (0.5 milliliters on alternate days). The letter does not say how long this will last.\n\n## Questions to ask your doctor\n1. How long should the alternate day steroids go on?\n2. What is the dose now?\n3. What does asthma mean for Abc?\n4. How can we give his medicine the same way at both homes?\n\n## When to get urgent help\nThe letter does not list specific warning signs.\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "doctor_copy_to_patient",
+      "purpose": "Letter from a specialist to the referring doctor after seeing a 9-month-old boy and his mother in clinic for wheezing, cough and shortness of breath, with a plan for his steroid medicine.",
+      "findings": [
+        {
+          "statement": "Abc is a 9-month-old boy, one of twins, born with some very mild prematurity.",
+          "certainty": "stated",
+          "quote": "he is now a 9-month-old male product of a twin gestation complicated by some very mild prematurity"
+        },
+        {
+          "statement": "He has had problems with wheezing, cough and shortness of breath over the last several months.",
+          "certainty": "stated",
+          "quote": "He has been having problems with wheezing, cough and shortness of breath over the last several months."
+        },
+        {
+          "statement": "Despite treatment with inhaled steroids and a bronchodilator, he has had a persistent cough.",
+          "certainty": "stated",
+          "quote": "Despite this, however; he has had persistent problems with a cough"
+        },
+        {
+          "statement": "There is no smoke exposure.",
+          "certainty": "stated",
+          "quote": "there is no smoke exposure"
+        },
+        {
+          "statement": "There is a significant family history of asthma: his father, uncle and older sister.",
+          "certainty": "stated",
+          "quote": "Abc's father and uncle having problems with asthma as well as his older sister"
+        },
+        {
+          "statement": "There has been a question about how consistently his medicine is given at his father's house, as the parents live in separate households.",
+          "certainty": "stated",
+          "quote": "there has been a question about the consistency of his medication administration at his father's house"
+        },
+        {
+          "statement": "On examination he had some scattered rhonchi that cleared with coughing, and was otherwise healthy.",
+          "certainty": "stated",
+          "quote": "Abc had some scattered rhonchi which cleared with coughing but was otherwise healthy"
+        },
+        {
+          "statement": "The doctor believes Abc probably has fairly severe childhood asthma and has avoided hospitalization.",
+          "certainty": "possible",
+          "quote": "Abc probably does have fairly severe childhood asthma and fortunately has avoided hospitalization"
+        },
+        {
+          "statement": "The doctor believes his mother is fairly well versed in asthma management.",
+          "certainty": "stated",
+          "quote": "I believe that Abc's mother is fairly well versed in this"
+        }
+      ],
+      "medicines": [
+        {
+          "name": "Inhaled steroids",
+          "dose": "not stated",
+          "how_often": "not stated",
+          "change": "not_stated",
+          "details": "Previously used by the referring doctor and partners.",
+          "quote": "treated him aggressively with inhaled steroids and bronchodilator"
+        },
+        {
+          "name": "Bronchodilator",
+          "dose": "not stated",
+          "how_often": "not stated",
+          "change": "not_stated",
+          "details": "Previously used by the referring doctor and partners.",
+          "quote": "treated him aggressively with inhaled steroids and bronchodilator"
+        },
+        {
+          "name": "Prednisolone (short burst)",
+          "dose": "not stated",
+          "how_often": "not stated",
+          "change": "not_stated",
+          "details": "Recently started as a short burst.",
+          "quote": "more recently started on both a short burst of prednisolone"
+        },
+        {
+          "name": "Prednisolone (alternating day course)",
+          "dose": "as low as 1.5 milligrams (0.5 milliliters on alternate days)",
+          "how_often": "alternate days",
+          "change": "continue",
+          "details": "Continue alternate day steroids until completely symptom free on the days off steroids. It would be reasonable to continue to wean down to as low as 1.5 milligrams. The letter does not name the drug for this course; it says 'alternate day steroids' after the prednisolone course was mentioned.",
+          "quote": "continue his alternate day steroids until he is completely symptom free on the days off steroids but it would be reasonable to continue to wean him down to as low as 1.5 milligrams (0.5 milliliters on alternate days)"
+        }
+      ],
+      "dates": [
+        {
+          "what": "Clinic visit (the date is not given; the letter says 'today')",
+          "when": "today (date not stated)",
+          "quote": "We had the pleasure of seeing Abc and his mother in the clinic today."
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Continue alternate day steroids until Abc is completely symptom free on the days off steroids.",
+          "quote": "continue his alternate day steroids until he is completely symptom free on the days off steroids"
+        },
+        {
+          "instruction": "The doctor encouraged Abc's mother to contact the clinic office, so questions can be answered by phone if needed.",
+          "quote": "I have encouraged his mother to contact our office so that we can answer questions if necessary by phone."
+        }
+      ],
+      "negatives": [
+        {
+          "instruction": "No smoke exposure.",
+          "quote": "there is no smoke exposure"
+        }
+      ],
+      "warning_signs": [],
+      "unclear": [
+        "The letter has no date, and no patient or address details beyond placeholders.",
+        "'Rhonchi' is not in the glossary; the letter only says they cleared with coughing.",
+        "The letter does not say how long the alternate day course should last or the current dose; it only says weaning could go as low as 1.5 milligrams (0.5 milliliters on alternate days).",
+        "The letter says '45-minute' without a unit; it probably means a 45-minute visit, but this is not certain."
+      ]
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\nA specialist saw Abc and his mother in the clinic today. The specialist wrote this letter to your family doctor.\n\nAbc is 9 months old. He is one of twins. He was born a little early. The letter says this was very mild.\n\nHe has had wheezing, cough and shortness of breath for several months. He has a cough that does not go away. He has had inhaled steroids and a bronchodilator.\n\nThere is no smoke exposure. His father, uncle and older sister have asthma. His parents live in separate homes. There has been a question about how often his medicine is given at his father's home.\n\nThe doctor listened to his chest. There were some scattered rhonchi. They cleared when he coughed. He was otherwise healthy.\n\nThe doctor thinks Abc probably has fairly severe childhood asthma. He has not had to go to hospital. The doctor believes his mother knows a fair amount about asthma care.\n\n## What you need to do\n1. Continue his alternate day steroids until he is completely symptom free on the days off steroids.\n2. The doctor encouraged Abc's mother to contact the clinic office. Questions can be answered by phone if needed.\n\n## Dates and medicines\n- Clinic visit: today. The letter does not give the date.\n- Inhaled steroids: dose and how often are not stated. Used before by your family doctor and partners.\n- Bronchodilator: dose and how often are not stated. Used before by your family doctor and partners.\n- Prednisolone, short burst: dose and how often are not stated. It was started recently.\n- Alternate day steroids (prednisolone course): every second day. Continue this. The doctor says it is reasonable to lower the dose slowly to as low as 1.5 milligrams (0.5 milliliters on alternate days). The letter does not say how long this will last.\n\n## Questions to ask your doctor\n1. How long should the alternate day steroids go on?\n2. What is the dose now?\n3. What does asthma mean for Abc?\n4. How can we give his medicine the same way at both homes?\n\n## When to get urgent help\nThe letter does not list specific warning signs.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 77.9,
+          "reading_ease_target": 70,
+          "grade_level": 4.5,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": null,
+        "blocking_problems": [],
+        "attempt": 1
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 3269,
+        "output_tokens": 1841,
+        "cost_usd": 0.02048,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 14990,
+        "output_tokens": 1765,
+        "cost_usd": 0.03915,
+        "turns": 6
+      }
+    ],
+    "cost_usd": 0.05964,
+    "latency_s": 26.4
+  },
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "diagnoses",
+        "fact": "9-month-old twin, born very slightly early",
+        "status": "kept",
+        "note": "9 months old, one of twins, born a little early (very mild)."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Probably fairly severe childhood asthma",
+        "status": "kept",
+        "note": "Probably has fairly severe childhood asthma."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "On exam: some chest noises (scattered rhonchi) that cleared with coughing; otherwise healthy",
+        "status": "kept",
+        "note": "Scattered rhonchi that cleared with coughing; otherwise healthy."
+      },
+      {
+        "category": "medicines",
+        "fact": "Continue alternate-day steroids until completely free of symptoms on the days without steroids",
+        "status": "kept",
+        "note": "Continue alternate-day steroids until completely symptom free on days off."
+      },
+      {
+        "category": "medicines",
+        "fact": "Can be weaned down to as low as 1.5 milligrams (0.5 milliliters) on alternate days",
+        "status": "kept",
+        "note": "Wean to as low as 1.5 mg (0.5 mL on alternate days)."
+      },
+      {
+        "category": "medicines",
+        "fact": "Has used inhaled steroids and a bronchodilator; short burst of prednisolone then an alternate-day course",
+        "status": "kept",
+        "note": "Inhaled steroids, bronchodilator, short burst of prednisolone and alternate-day course all mentioned."
+      },
+      {
+        "category": "actions",
+        "fact": "Mother encouraged to call the office with questions",
+        "status": "kept",
+        "note": "Mother encouraged to contact the office; questions answered by phone."
+      },
+      {
+        "category": "negatives",
+        "fact": "No smoke exposure",
+        "status": "kept",
+        "note": "No smoke exposure stated."
+      },
+      {
+        "category": "negatives",
+        "fact": "He has avoided going into hospital",
+        "status": "kept",
+        "note": "Has not had to go to hospital."
+      }
+    ],
+    "added": [],
+    "gold_reviewer": "claude-draft"
+  }
+}

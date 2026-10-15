@@ -1,0 +1,215 @@
+{
+  "job": {
+    "id": "models__syn_09__opus__en__v",
+    "part": "models",
+    "letter_id": "syn_09",
+    "file": "data/synthetic/syn_09.txt",
+    "kind": "faithfulness",
+    "model": "opus",
+    "language": "en",
+    "verifier": true,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "opus",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": true,
+    "status": "ok",
+    "final_text": "## What this letter says\n\nThis letter is from the hospital. It is about your stay on the breathing ward.\n\nYou were in hospital with a chest infection (community-acquired pneumonia). It was in the lower part of your right lung (right lower lobe).\n\nYour CURB-65 score was 1. This is a score doctors use to judge how serious a chest infection is.\n\nIn hospital, you had antibiotics into a vein (IV) for 1 day. Then you had amoxicillin tablets.\n\n## What you need to do\n\n1. Keep taking amoxicillin tablets for 3 more days. This will finish 5 days of antibiotics in total.\n2. Have a repeat chest X-ray (CXR) in 6 weeks at the Radiology Department. This is to check the infection has cleared.\n3. The hospital has already sent the request for the X-ray. You do not need to book it yourself.\n\n## Dates and medicines\n\n**Dates**\n- You went into hospital on 5 October 2026.\n- You left hospital on 7 October 2026.\n- Your last dose of amoxicillin is on 10 October 2026.\n- Your repeat chest X-ray is in 6 weeks. The letter gives no exact date.\n\n**Medicines**\n- Amoxicillin, 500 milligrams, three times a day (TDS).\n- Keep taking it. You had 2 days of antibiotics in hospital. Take the tablets for 3 more days. This makes 5 days in total.\n\n## Questions to ask your doctor\n\n- When do the 6 weeks for my chest X-ray start?\n- How will I get the date for my X-ray?\n- How many days did I have antibiotics into a vein, and how many days of tablets?\n- What does pneumonia mean for me?\n\n## When to get urgent help\n\nSee your GP or call 111 if:\n- you become more short of breath (SOB)\n- your fever comes back\n- you cough up blood\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "patient",
+      "purpose": "Hospital discharge summary after a stay on the respiratory ward for a chest infection (pneumonia), with your antibiotic plan and follow-up chest X-ray.",
+      "findings": [
+        {
+          "statement": "You had community-acquired pneumonia (a chest infection) in the right lower lobe of the lung.",
+          "certainty": "stated",
+          "quote": "Community-acquired pneumonia (chest infection), right lower lobe."
+        },
+        {
+          "statement": "Your CURB-65 score was 1. This is a score doctors use to judge how serious a chest infection is.",
+          "certainty": "stated",
+          "quote": "CURB-65 score 1."
+        },
+        {
+          "statement": "In hospital you had antibiotics into a vein (IV) for 1 day, then amoxicillin tablets.",
+          "certainty": "stated",
+          "quote": "IV antibiotics for 1 day, then amoxicillin tablets."
+        }
+      ],
+      "medicines": [
+        {
+          "name": "Amoxicillin",
+          "dose": "500 mg",
+          "how_often": "three times a day (TDS)",
+          "change": "continue",
+          "details": "You had 2 days of antibiotics in hospital. Take the tablets for 3 more days so you finish 5 days in total. Last dose on 10 October 2026.",
+          "quote": "Amoxicillin 500 mg TDS. You have had 2 days of antibiotics in hospital. Take tablets for 3 more days to complete 5 days in total. Last dose on 10/10/2026."
+        }
+      ],
+      "dates": [
+        {
+          "what": "Admitted to hospital",
+          "when": "5 October 2026",
+          "quote": "Admitted: 05/10/2026"
+        },
+        {
+          "what": "Discharged from hospital",
+          "when": "7 October 2026",
+          "quote": "Discharged: 07/10/2026"
+        },
+        {
+          "what": "Last dose of amoxicillin",
+          "when": "10 October 2026",
+          "quote": "Last dose on 10/10/2026."
+        },
+        {
+          "what": "Repeat chest X-ray at the Radiology Department",
+          "when": "In 6 weeks (the letter gives no exact date)",
+          "quote": "Repeat chest X-ray (CXR) in 6 weeks at the Radiology Department"
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Take amoxicillin tablets for 3 more days to finish 5 days of antibiotics in total.",
+          "quote": "Take tablets for 3 more days to complete 5 days in total."
+        },
+        {
+          "instruction": "Have a repeat chest X-ray in 6 weeks at the Radiology Department to check the infection has cleared. The hospital has already sent the request.",
+          "quote": "Repeat chest X-ray (CXR) in 6 weeks at the Radiology Department to check the infection has cleared. A request has been sent."
+        }
+      ],
+      "negatives": [
+        {
+          "instruction": "You do not need to book the repeat chest X-ray yourself.",
+          "quote": "You do not need to book it."
+        }
+      ],
+      "warning_signs": [
+        {
+          "instruction": "See your GP or call 111 if you become more short of breath.",
+          "quote": "See your GP or call 111 if you become more short of breath (SOB)"
+        },
+        {
+          "instruction": "See your GP or call 111 if your fever comes back.",
+          "quote": "if your fever comes back"
+        },
+        {
+          "instruction": "See your GP or call 111 if you cough up blood.",
+          "quote": "if you cough up blood"
+        }
+      ],
+      "unclear": [
+        "The letter does not say exactly when the 6 weeks for the repeat chest X-ray start (for example, from discharge on 7 October 2026), and it gives no appointment date.",
+        "The letter says you had IV antibiotics for 1 day and also says you had 2 days of antibiotics in hospital. This presumably means 1 day IV and 1 day of tablets, but the letter does not say so directly."
+      ]
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\n\nThis letter is from the hospital. It is about your stay on the breathing ward.\n\nYou were in hospital with a chest infection (community-acquired pneumonia). It was in the lower part of your right lung (right lower lobe).\n\nYour CURB-65 score was 1. This is a score doctors use to judge how serious a chest infection is.\n\nIn hospital, you had antibiotics into a vein (IV) for 1 day. Then you had amoxicillin tablets.\n\n## What you need to do\n\n1. Keep taking amoxicillin tablets for 3 more days. This will finish 5 days of antibiotics in total.\n2. Have a repeat chest X-ray (CXR) in 6 weeks at the Radiology Department. This is to check the infection has cleared.\n3. The hospital has already sent the request for the X-ray. You do not need to book it yourself.\n\n## Dates and medicines\n\n**Dates**\n- You went into hospital on 5 October 2026.\n- You left hospital on 7 October 2026.\n- Your last dose of amoxicillin is on 10 October 2026.\n- Your repeat chest X-ray is in 6 weeks. The letter gives no exact date.\n\n**Medicines**\n- Amoxicillin, 500 milligrams, three times a day (TDS).\n- Keep taking it. You had 2 days of antibiotics in hospital. Take the tablets for 3 more days. This makes 5 days in total.\n\n## Questions to ask your doctor\n\n- When do the 6 weeks for my chest X-ray start?\n- How will I get the date for my X-ray?\n- How many days did I have antibiotics into a vein, and how many days of tablets?\n- What does pneumonia mean for me?\n\n## When to get urgent help\n\nSee your GP or call 111 if:\n- you become more short of breath (SOB)\n- your fever comes back\n- you cough up blood",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 79.2,
+          "reading_ease_target": 70,
+          "grade_level": 4.6,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [
+            {
+              "kind": "dropped",
+              "severity": "minor",
+              "explanation_says": "Nothing about how long tiredness or cough may last.",
+              "letter_says": "You may feel tired for several weeks. Your cough may last 3 to 6 weeks.",
+              "why": "Without this, the patient may not expect tiredness and a cough that lasts weeks. They may worry that the infection is not getting better, or not know what recovery normally looks like.",
+              "real_difference": true
+            }
+          ],
+          "summary": "The explanation matches the letter on the diagnosis, the treatment in hospital and the amoxicillin dose (500 mg three times a day for 3 more days, with the last dose on 10/10/2026). It also gets the X-ray plan right (in 6 weeks, already requested, no need to book) and the admission and discharge dates. All three warning signs are included at the right urgency. The one problem is a dropped line: the letter says tiredness may last several weeks and the cough may last 3 to 6 weeks, and the explanation leaves this out."
+        },
+        "blocking_problems": [],
+        "attempt": 1
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 3442,
+        "output_tokens": 1778,
+        "cost_usd": 0.04676,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 14450,
+        "output_tokens": 1942,
+        "cost_usd": 0.07285,
+        "turns": 8
+      },
+      {
+        "step": "verify",
+        "input_tokens": 3448,
+        "output_tokens": 664,
+        "cost_usd": 0.02825,
+        "turns": 2
+      }
+    ],
+    "cost_usd": 0.14787,
+    "latency_s": 43.9
+  },
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "diagnoses",
+        "fact": "Community-acquired pneumonia (chest infection) in the right lower lung",
+        "status": "kept",
+        "note": "Chest infection (community-acquired pneumonia) in the lower part of the right lung."
+      },
+      {
+        "category": "medicines",
+        "fact": "Amoxicillin 500 mg three times a day for 3 more days (5 days in total, including 2 in hospital)",
+        "status": "kept",
+        "note": "Amoxicillin 500 mg three times a day (TDS) for 3 more days, 5 days in total including 2 in hospital."
+      },
+      {
+        "category": "dates",
+        "fact": "Last amoxicillin dose on 10 October 2026",
+        "status": "kept",
+        "note": "Last dose on 10 October 2026."
+      },
+      {
+        "category": "dates",
+        "fact": "Repeat chest X-ray in 6 weeks to check the infection has cleared",
+        "status": "kept",
+        "note": "Repeat chest X-ray in 6 weeks to check the infection has cleared."
+      },
+      {
+        "category": "dates",
+        "fact": "Tiredness may last several weeks; cough may last 3 to 6 weeks",
+        "status": "dropped",
+        "note": "The explanation never says tiredness may last several weeks or that the cough may last 3 to 6 weeks."
+      },
+      {
+        "category": "actions",
+        "fact": "See your GP or call 111 if more short of breath, if the fever comes back, or if you cough up blood",
+        "status": "kept",
+        "note": "See GP or call 111 if more short of breath, fever comes back, or coughing up blood."
+      },
+      {
+        "category": "negatives",
+        "fact": "You do not need to book the chest X-ray (the request has been sent)",
+        "status": "kept",
+        "note": "Request already sent; no need to book it."
+      }
+    ],
+    "added": [],
+    "gold_reviewer": "claude-draft"
+  }
+}

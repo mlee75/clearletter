@@ -1,0 +1,287 @@
+{
+  "job": {
+    "id": "models__syn_07__opus__en__v",
+    "part": "models",
+    "letter_id": "syn_07",
+    "file": "data/synthetic/syn_07.txt",
+    "kind": "faithfulness",
+    "model": "opus",
+    "language": "en",
+    "verifier": true,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "opus",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": true,
+    "status": "ok",
+    "final_text": "## What this letter says\n\nThis letter is from the heart team at the hospital. You had a heart attack (NSTEMI). NSTEMI is a type of heart attack.\n\nYou had a test called a coronary angiogram. It showed 1 narrowed artery. The doctors treated it with 1 stent.\n\nYou left hospital on 2 October 2026. You have some new medicines. 1 old medicine has been stopped.\n\n## What you need to do\n\n1. Do not stop ticagrelor or aspirin without speaking to your heart doctor (cardiologist) first. The letter says stopping them early can cause the stent to block.\n2. Simvastatin has been stopped. Atorvastatin replaces it.\n3. Your GP will check your kidney blood tests (U&Es) in 2 weeks. This is because you started ramipril.\n4. You have been sent to cardiac rehabilitation. The team will contact you within 4 weeks.\n\n## Dates and medicines\n\n**Dates**\n- 29 September 2026: you had the coronary angiogram and stent.\n- 2 October 2026: you left hospital.\n- In 2 weeks: your GP will check your kidney blood tests (U&Es).\n- Within 4 weeks: the cardiac rehabilitation team will contact you.\n\n**New medicines**\n- Aspirin: 75 milligrams, once a day. This is long term.\n- Ticagrelor: 90 milligrams, twice a day, for 12 months.\n- Atorvastatin: 80 milligrams, every night at bedtime. It replaces simvastatin.\n- Ramipril: 2.5 milligrams, once a day.\n- Bisoprolol: 1.25 milligrams, once a day.\n- GTN spray (glyceryl trinitrate): 400 micrograms. Use 1 to 2 sprays under the tongue. Use it only when needed, for chest pain. GTN is a medicine for chest pain from the heart.\n\n**Stopped medicine**\n- Simvastatin: 20 milligrams. This has been stopped. Atorvastatin replaces it.\n\n## Questions to ask your doctor\n\n- What is a stent?\n- What is a coronary angiogram?\n- What will happen at cardiac rehabilitation?\n- How long will I take ramipril and bisoprolol?\n\n## When to get urgent help\n\n- If you have chest pain, use your GTN spray.\n- If the pain has not gone 5 minutes after the second dose, call 999.\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "patient",
+      "purpose": "Cardiology discharge summary after a heart attack (NSTEMI) treated with a stent, listing new and stopped medicines and follow-up.",
+      "findings": [
+        {
+          "statement": "Diagnosis: NSTEMI, a type of heart attack.",
+          "certainty": "stated",
+          "quote": "Diagnosis: NSTEMI (a type of heart attack)."
+        },
+        {
+          "statement": "The coronary angiogram showed one narrowed artery, which was treated with 1 stent.",
+          "certainty": "stated",
+          "quote": "one narrowed artery, treated with 1 stent"
+        }
+      ],
+      "medicines": [
+        {
+          "name": "Aspirin",
+          "dose": "75 mg",
+          "how_often": "once a day (OD)",
+          "change": "start",
+          "details": "Long term.",
+          "quote": "Aspirin 75 mg OD (long term)"
+        },
+        {
+          "name": "Ticagrelor",
+          "dose": "90 mg",
+          "how_often": "twice a day (BD)",
+          "change": "start",
+          "details": "For 12 months.",
+          "quote": "Ticagrelor 90 mg BD for 12 months"
+        },
+        {
+          "name": "Atorvastatin",
+          "dose": "80 mg",
+          "how_often": "every night at bedtime (ON)",
+          "change": "start",
+          "details": "Replaces simvastatin.",
+          "quote": "Atorvastatin 80 mg ON"
+        },
+        {
+          "name": "Ramipril",
+          "dose": "2.5 mg",
+          "how_often": "once a day (OD)",
+          "change": "start",
+          "details": "",
+          "quote": "Ramipril 2.5 mg OD"
+        },
+        {
+          "name": "Bisoprolol",
+          "dose": "1.25 mg",
+          "how_often": "once a day (OD)",
+          "change": "start",
+          "details": "",
+          "quote": "Bisoprolol 1.25 mg OD"
+        },
+        {
+          "name": "GTN (glyceryl trinitrate) spray",
+          "dose": "400 micrograms, 1-2 sprays under the tongue",
+          "how_often": "only when needed (PRN) for chest pain",
+          "change": "start",
+          "details": "",
+          "quote": "GTN spray 400 micrograms, 1-2 sprays under the tongue PRN for chest pain"
+        },
+        {
+          "name": "Simvastatin",
+          "dose": "20 mg",
+          "how_often": "not stated",
+          "change": "stop",
+          "details": "Replaced by atorvastatin.",
+          "quote": "Simvastatin 20 mg (replaced by atorvastatin)"
+        }
+      ],
+      "dates": [
+        {
+          "what": "Discharged from hospital",
+          "when": "2 October 2026",
+          "quote": "Discharged: 02/10/2026"
+        },
+        {
+          "what": "Coronary angiogram and stent",
+          "when": "29 September 2026",
+          "quote": "Coronary angiogram on 29/09/2026"
+        },
+        {
+          "what": "GP to check kidney blood tests (U&Es)",
+          "when": "In 2 weeks",
+          "quote": "GP to check U&Es (kidney blood tests) in 2 weeks"
+        },
+        {
+          "what": "Cardiac rehabilitation team will contact you",
+          "when": "Within 4 weeks",
+          "quote": "The team will contact you within 4 weeks."
+        },
+        {
+          "what": "Ticagrelor course length",
+          "when": "12 months",
+          "quote": "Ticagrelor 90 mg BD for 12 months"
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Your GP will check your kidney blood tests (U&Es) in 2 weeks because ramipril has been started.",
+          "quote": "GP to check U&Es (kidney blood tests) in 2 weeks because ramipril has been started."
+        },
+        {
+          "instruction": "You have been referred to cardiac rehabilitation; the team will contact you within 4 weeks.",
+          "quote": "Referred to cardiac rehabilitation. The team will contact you within 4 weeks."
+        }
+      ],
+      "negatives": [
+        {
+          "instruction": "Do not stop ticagrelor or aspirin without speaking to your cardiologist first. Stopping them early can cause the stent to block.",
+          "quote": "Do not stop ticagrelor or aspirin without speaking to your cardiologist first. Stopping them early can cause the stent to block."
+        },
+        {
+          "instruction": "Simvastatin has been stopped (replaced by atorvastatin).",
+          "quote": "Simvastatin 20 mg (replaced by atorvastatin)"
+        }
+      ],
+      "warning_signs": [
+        {
+          "instruction": "If you have chest pain, use your GTN spray.",
+          "quote": "If you have chest pain, use your GTN spray."
+        },
+        {
+          "instruction": "If the pain has not gone 5 minutes after the second dose, call 999.",
+          "quote": "If the pain has not gone 5 minutes after the second dose, call 999."
+        }
+      ],
+      "unclear": []
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\n\nThis letter is from the heart team at the hospital. You had a heart attack (NSTEMI). NSTEMI is a type of heart attack.\n\nYou had a test called a coronary angiogram. It showed 1 narrowed artery. The doctors treated it with 1 stent.\n\nYou left hospital on 2 October 2026. You have some new medicines. 1 old medicine has been stopped.\n\n## What you need to do\n\n1. Do not stop ticagrelor or aspirin without speaking to your heart doctor (cardiologist) first. The letter says stopping them early can cause the stent to block.\n2. Simvastatin has been stopped. Atorvastatin replaces it.\n3. Your GP will check your kidney blood tests (U&Es) in 2 weeks. This is because you started ramipril.\n4. You have been sent to cardiac rehabilitation. The team will contact you within 4 weeks.\n\n## Dates and medicines\n\n**Dates**\n- 29 September 2026: you had the coronary angiogram and stent.\n- 2 October 2026: you left hospital.\n- In 2 weeks: your GP will check your kidney blood tests (U&Es).\n- Within 4 weeks: the cardiac rehabilitation team will contact you.\n\n**New medicines**\n- Aspirin: 75 milligrams, once a day. This is long term.\n- Ticagrelor: 90 milligrams, twice a day, for 12 months.\n- Atorvastatin: 80 milligrams, every night at bedtime. It replaces simvastatin.\n- Ramipril: 2.5 milligrams, once a day.\n- Bisoprolol: 1.25 milligrams, once a day.\n- GTN spray (glyceryl trinitrate): 400 micrograms. Use 1 to 2 sprays under the tongue. Use it only when needed, for chest pain. GTN is a medicine for chest pain from the heart.\n\n**Stopped medicine**\n- Simvastatin: 20 milligrams. This has been stopped. Atorvastatin replaces it.\n\n## Questions to ask your doctor\n\n- What is a stent?\n- What is a coronary angiogram?\n- What will happen at cardiac rehabilitation?\n- How long will I take ramipril and bisoprolol?\n\n## When to get urgent help\n\n- If you have chest pain, use your GTN spray.\n- If the pain has not gone 5 minutes after the second dose, call 999.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 74.6,
+          "reading_ease_target": 70,
+          "grade_level": 4.8,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [],
+          "summary": "I found no problems: the explanation matches the letter. It correctly covers the diagnosis (NSTEMI), the angiogram and stent on 29/09/2026, and the discharge date of 02/10/2026. All six new medicines have the right doses and how often to take them (aspirin long term, ticagrelor for 12 months). It also says simvastatin was stopped and replaced by atorvastatin. The warning not to stop ticagrelor or aspirin is included. The kidney tests are correctly left as a job for the GP in 2 weeks, not moved to the patient. It says cardiac rehab will make contact within 4 weeks, and the GTN and 999 instructions are unchanged. \"Every night at bedtime\" for ON and the short note on what GTN is are simple wording or definitions of words already in the letter. The suggested questions do not raise any new diagnosis or worry."
+        },
+        "blocking_problems": [],
+        "attempt": 1
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 3555,
+        "output_tokens": 1867,
+        "cost_usd": 0.04945,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 16000,
+        "output_tokens": 2347,
+        "cost_usd": 0.08648,
+        "turns": 8
+      },
+      {
+        "step": "verify",
+        "input_tokens": 3708,
+        "output_tokens": 552,
+        "cost_usd": 0.02809,
+        "turns": 2
+      }
+    ],
+    "cost_usd": 0.16402,
+    "latency_s": 44.8
+  },
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "diagnoses",
+        "fact": "NSTEMI (a type of heart attack)",
+        "status": "kept",
+        "note": "States NSTEMI is a type of heart attack."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "One narrowed artery treated with 1 stent (angiogram on 29 September 2026)",
+        "status": "kept",
+        "note": "1 narrowed artery treated with 1 stent; angiogram dated 29 September 2026."
+      },
+      {
+        "category": "medicines",
+        "fact": "NEW: aspirin 75 mg once a day, long term",
+        "status": "kept",
+        "note": "Aspirin 75 mg once a day, long term."
+      },
+      {
+        "category": "medicines",
+        "fact": "NEW: ticagrelor 90 mg twice a day for 12 months",
+        "status": "kept",
+        "note": "Ticagrelor 90 mg twice a day for 12 months."
+      },
+      {
+        "category": "medicines",
+        "fact": "NEW: atorvastatin 80 mg at night",
+        "status": "kept",
+        "note": "Atorvastatin 80 mg every night at bedtime matches ON."
+      },
+      {
+        "category": "medicines",
+        "fact": "NEW: ramipril 2.5 mg once a day",
+        "status": "kept",
+        "note": "Ramipril 2.5 mg once a day."
+      },
+      {
+        "category": "medicines",
+        "fact": "NEW: bisoprolol 1.25 mg once a day",
+        "status": "kept",
+        "note": "Bisoprolol 1.25 mg once a day."
+      },
+      {
+        "category": "medicines",
+        "fact": "NEW: GTN spray 400 micrograms, 1-2 sprays under the tongue when needed for chest pain",
+        "status": "kept",
+        "note": "GTN 400 micrograms, 1-2 sprays under the tongue when needed for chest pain."
+      },
+      {
+        "category": "medicines",
+        "fact": "STOPPED: simvastatin 20 mg (replaced by atorvastatin)",
+        "status": "kept",
+        "note": "Simvastatin 20 mg stopped, replaced by atorvastatin."
+      },
+      {
+        "category": "dates",
+        "fact": "GP to check kidney blood tests (U&Es) in 2 weeks because ramipril was started",
+        "status": "kept",
+        "note": "GP to check U&Es in 2 weeks because ramipril started."
+      },
+      {
+        "category": "dates",
+        "fact": "Cardiac rehabilitation team will contact you within 4 weeks",
+        "status": "kept",
+        "note": "Rehab team will contact within 4 weeks."
+      },
+      {
+        "category": "actions",
+        "fact": "Do not stop ticagrelor or aspirin without speaking to your cardiologist first (stopping early can cause the stent to block)",
+        "status": "kept",
+        "note": "Do not stop ticagrelor or aspirin without speaking to cardiologist; stent may block."
+      },
+      {
+        "category": "actions",
+        "fact": "Chest pain: use the GTN spray; if the pain has not gone 5 minutes after the second dose, call 999",
+        "status": "kept",
+        "note": "Use GTN; call 999 if pain not gone 5 minutes after second dose."
+      }
+    ],
+    "added": [],
+    "gold_reviewer": "claude-draft"
+  }
+}

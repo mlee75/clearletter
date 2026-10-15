@@ -10,10 +10,12 @@ showing that the explanation adds nothing, drops nothing and changes nothing.
 **Status:** Phases 1–3 of 5 are done (spec and gold set, pipeline, evaluation). Next: the
 Claude Skill (Phase 4), then the demo and the full README (Phase 5).
 
-**First evaluation (220 runs):** with Sonnet and the verifier, 99.5% of must-keep facts were
-preserved, with no dosage or date errors, at a reading age of about 9 to 10. But it still
-**added** unsupported claims in 4 of 20 letters (target: 0), and the causes are traced to
-the design. [What the evaluation found](evals/ANALYSIS.md) · [all results](evals/results.md)
+**Evaluation (3 versions × 220 runs):** with Sonnet and the verifier, the current pipeline
+(v3) keeps 100% of the must-keep facts on the synthetic letters and 97.3% on real-world ones,
+with no dosage or date errors and no "ask your doctor" fallbacks. Unsupported added claims fell
+from 26 (in 13 of 40 letters) in v1 to 3 in v3. Each version fixed what the previous
+evaluation found, including one fix that over-corrected and had to be fixed again.
+[What the evaluation found](evals/ANALYSIS.md) · [results](evals/results.md)
 
 ## How it works
 
@@ -67,7 +69,7 @@ is logged in `outputs/spend_log.csv`. Why two backends: [D10](docs/DECISIONS.md)
 | `clearletter/` | The pipeline: `pipeline.py` (the 3 steps), `prompts.py`, `schemas.py`, `checks.py`, `tools.py`, `fixed_text.py`, `config.py` |
 | `clearletter/backends.py` | Two ways to reach Claude: the API, or Claude Code on a subscription |
 | `run.py` | Explain one letter from the command line |
-| `evals/` | Evaluation: judge, runner, report, 220 saved runs, [results](evals/results.md) and [analysis](evals/ANALYSIS.md) |
+| `evals/` | Evaluation: judge, runner, report, 660 saved runs across 3 pipeline versions, [results](evals/results.md) and [analysis](evals/ANALYSIS.md) |
 | `data/redteam/` | 15 letters designed to tempt unsafe behaviour, with pass criteria |
 | `tests/` | Offline tests using a fake Claude |
 

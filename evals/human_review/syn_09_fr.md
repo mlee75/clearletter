@@ -27,35 +27,28 @@ Dr A. Mwangi, Respiratory Medicine
 ## Explanation shown to the patient
 
 ## Ce que dit cette lettre
-Vous avez été à l'hôpital pour une infection des poumons (pneumonie). Elle est confirmée. Elle touche le lobe inférieur droit du poumon.
-Votre score CURB-65 était de 1.
-Vous étiez à l'hôpital du 5 octobre 2026 au 7 octobre 2026.
-Vous pouvez être fatigué(e) pendant plusieurs semaines. Votre toux peut durer de 3 à 6 semaines.
+Vous avez eu une infection des poumons (pneumonie communautaire). Elle est en bas du poumon droit.
+Votre score CURB-65 est de 1.
+À l'hôpital, on vous a donné des antibiotiques par la veine pendant 1 jour. Ensuite, vous avez eu des comprimés d'amoxicilline.
+Vous pourriez vous sentir fatigué(e) pendant plusieurs semaines.
+Votre toux pourrait durer de 3 à 6 semaines.
 
 ## Ce que vous devez faire
-1. Prenez vos comprimés d'amoxicilline pendant 3 jours de plus.
-2. Prenez la dernière dose le 10 octobre 2026.
-3. Faites une nouvelle radio des poumons (radiographie thoracique) dans 6 semaines. Elle a lieu au service de radiologie. Elle sert à voir si l'infection est partie.
-4. Ne prenez pas de rendez-vous pour la radio. La demande est déjà envoyée.
+1. Prenez les comprimés d'amoxicilline pendant 3 jours de plus. Cela fera 5 jours d'antibiotiques en tout.
+2. Passez une nouvelle radio des poumons dans 6 semaines, au service de radiologie. Elle sert à vérifier que l'infection est partie.
+3. Vous n'avez pas besoin de réserver cette radio. Une demande a déjà été envoyée.
 
 ## Dates et médicaments
 - 5 octobre 2026 : vous êtes entré(e) à l'hôpital.
 - 7 octobre 2026 : vous êtes sorti(e) de l'hôpital.
 - 10 octobre 2026 : dernière dose d'amoxicilline.
-- Radio des poumons : dans 6 semaines. La date exacte n'est pas donnée.
-
-Médicament : amoxicilline (antibiotique)
-- Dose : 500 milligrammes.
-- Combien de fois : 3 fois par jour.
-- Ce qui change : rien. Vous continuez.
-- Vous avez pris 1 jour d'antibiotique par perfusion. Puis les comprimés ont commencé à l'hôpital.
-- Vous avez déjà pris 2 jours d'antibiotiques à l'hôpital.
-- Encore 3 jours de comprimés pour finir 5 jours en tout.
+- Dans 6 semaines : radio des poumons au service de radiologie. Il n'y a pas de date exacte.
+- Amoxicilline : 500 milligrammes, 3 fois par jour. Vous avez déjà pris 2 jours d'antibiotiques à l'hôpital. Il reste 3 jours de comprimés.
 
 ## Questions à poser à votre médecin
-- Quand aura lieu ma radio des poumons ?
-- Comment saurai-je la date de la radio ?
-- Que faire si j'oublie une dose d'amoxicilline ?
+- Quand aurai-je la date de ma radio des poumons ?
+- Combien de temps puis-je rester fatigué(e) ?
+- Que signifie mon score CURB-65 de 1 ?
 
 ## Quand obtenir de l'aide en urgence
 Voyez votre médecin généraliste ou appelez le 111 dans ces cas :
@@ -72,38 +65,31 @@ Si vous êtes inquiet et que ce n'est pas une urgence, appelez le NHS 111. En ca
 ## Back-translation to English (by Claude, used by the judge)
 
 ## What this letter says
-You were in hospital for an infection of the lungs (pneumonia). It is confirmed. It affects the lower right lobe of the lung.
-Your CURB-65 score was 1.
-You were in hospital from 5 October 2026 to 7 October 2026.
-You may be tired for several weeks. Your cough may last 3 to 6 weeks.
+You had an infection of the lungs (community-acquired pneumonia). It is at the bottom of the right lung.
+Your CURB-65 score is 1.
+At the hospital, you were given antibiotics through the vein for 1 day. Then, you had amoxicillin tablets.
+You might feel tired for several weeks.
+Your cough might last from 3 to 6 weeks.
 
 ## What you must do
-1. Take your amoxicillin tablets for 3 more days.
-2. Take the last dose on 10 October 2026.
-3. Have a new X-ray of the lungs (chest X-ray) in 6 weeks. It takes place in the radiology department. It is to see if the infection has gone.
-4. Do not make an appointment for the X-ray. The request has already been sent.
+1. Take the amoxicillin tablets for 3 more days. That will make 5 days of antibiotics in total.
+2. Have a new X-ray of the lungs in 6 weeks, at the radiology department. It is used to check that the infection has gone.
+3. You do not need to book this X-ray. A request has already been sent.
 
 ## Dates and medicines
-- 5 October 2026: you were admitted to hospital.
-- 7 October 2026: you left hospital.
+- 5 October 2026: you were admitted to the hospital.
+- 7 October 2026: you left the hospital.
 - 10 October 2026: last dose of amoxicillin.
-- X-ray of the lungs: in 6 weeks. The exact date is not given.
-
-Medicine: amoxicillin (antibiotic)
-- Dose: 500 milligrams.
-- How often: 3 times a day.
-- What changes: nothing. You continue.
-- You took 1 day of antibiotic by infusion (drip). Then the tablets started in hospital.
-- You have already taken 2 days of antibiotics in hospital.
-- 3 more days of tablets to finish 5 days in total.
+- In 6 weeks: X-ray of the lungs at the radiology department. There is no exact date.
+- Amoxicillin: 500 milligrams, 3 times a day. You have already taken 2 days of antibiotics at the hospital. There are 3 days of tablets left.
 
 ## Questions to ask your doctor
-- When will my lung X-ray take place?
-- How will I know the date of the X-ray?
-- What to do if I forget a dose of amoxicillin?
+- When will I get the date of my lung X-ray?
+- How long can I stay tired?
+- What does my CURB-65 score of 1 mean?
 
-## When to get urgent help
+## When to get help urgently
 See your general practitioner or call 111 in these cases:
-- you have more difficulty breathing;
+- you have more trouble breathing;
 - your fever comes back;
 - you cough up blood.

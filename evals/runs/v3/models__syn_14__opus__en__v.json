@@ -1,0 +1,243 @@
+{
+  "job": {
+    "id": "models__syn_14__opus__en__v",
+    "part": "models",
+    "letter_id": "syn_14",
+    "file": "data/synthetic/syn_14.txt",
+    "kind": "faithfulness",
+    "model": "opus",
+    "language": "en",
+    "verifier": true,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "opus",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": true,
+    "status": "ok_after_retry",
+    "final_text": "## What this letter says\nYou had a breast X-ray (mammogram) on 16 September 2026.\n\nYou need to come back for more tests. This is called a recall.\n\nBeing called back does not mean that you have cancer. About 4 in 5 women who are called back do not have breast cancer.\n\nThe letter does not say why you were called back. It does not say what the X-ray showed.\n\n## What you need to do\n1. The hospital booked a visit for you. It is at the Breast Assessment Clinic, Eastmoor Hospital.\n2. At the visit, you may have more breast X-rays (mammograms). You may also have an ultrasound scan.\n3. In some cases, you may also have a biopsy. This means they take a small sample of tissue.\n4. Allow plenty of time. The visit may take up to 4 hours.\n5. If you cannot come, call 01632 960 733 as soon as possible.\n\nYou will usually get most of your results on the same day.\n\nYou can bring a friend or family member with you if you want to.\n\n## Dates and medicines\n- **16 September 2026:** your breast X-ray (mammogram).\n- **Wednesday 7 October 2026 at 11:00:** your recall visit at the Breast Assessment Clinic, Eastmoor Hospital.\n- **Medicines:** the letter does not list any medicines.\n\n## Questions to ask your doctor\n- Why was I called back for more tests?\n- What did my breast X-ray (mammogram) show?\n- What happens during an ultrasound scan?\n- Is my visit still booked for the same date and time?\n\n## When to get urgent help\nThe letter does not list specific warning signs.\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "patient",
+      "purpose": "To tell you that you need to come back for more tests after your breast screening mammogram (a recall), and to give you your appointment details.",
+      "findings": [
+        {
+          "statement": "After your screening mammogram, you need to come back for more tests. This is called a recall.",
+          "certainty": "stated",
+          "quote": "We need you to come back for more tests. This is called a recall."
+        },
+        {
+          "statement": "About 4 in 5 women who are called back do not have breast cancer.",
+          "certainty": "stated",
+          "quote": "About 4 in 5 women who are called back do not have breast cancer."
+        }
+      ],
+      "medicines": [],
+      "dates": [
+        {
+          "what": "Your breast screening mammogram (breast X-ray)",
+          "when": "16 September 2026",
+          "quote": "Your recent breast screening mammogram (breast X-ray) on 16/09/2026"
+        },
+        {
+          "what": "Recall appointment at the Breast Assessment Clinic, Eastmoor Hospital",
+          "when": "Wednesday 7 October 2026 at 11:00",
+          "quote": "We have booked an appointment for you on Wednesday 7 October 2026 at 11:00 at the Breast Assessment Clinic, Eastmoor Hospital."
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Go to your booked appointment at the Breast Assessment Clinic, Eastmoor Hospital. At the appointment you may have more mammograms and an ultrasound scan. In some cases you may also have a biopsy (a small sample of tissue).",
+          "quote": "At the appointment you may have more mammograms, an ultrasound scan and, in some cases, a biopsy (a small sample of tissue)."
+        },
+        {
+          "instruction": "Allow plenty of time. The visit may take up to 4 hours.",
+          "quote": "The visit may take up to 4 hours."
+        },
+        {
+          "instruction": "You will usually get most of your results on the same day.",
+          "quote": "You will usually get most of your results on the same day."
+        },
+        {
+          "instruction": "You can bring a friend or family member with you if you want to.",
+          "quote": "You can bring a friend or family member with you."
+        },
+        {
+          "instruction": "If you cannot come, call 01632 960 733 as soon as possible.",
+          "quote": "If you cannot come, please call 01632 960 733 as soon as possible."
+        }
+      ],
+      "negatives": [
+        {
+          "instruction": "Being called back does not mean that you have cancer.",
+          "quote": "Being called back does not mean that you have cancer."
+        }
+      ],
+      "warning_signs": [],
+      "unclear": [
+        "The letter does not say why you were called back or what the mammogram showed.",
+        "The appointment on 7 October 2026 is already in the past, as today is 15 October 2026. If you did not go, call 01632 960 733."
+      ]
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\nYou had a breast X-ray (mammogram) on 16 September 2026.\n\nYou need to come back for more tests. This is called a recall.\n\nBeing called back does not mean that you have cancer. About 4 in 5 women who are called back do not have breast cancer.\n\nThe letter does not say why you were called back. It does not say what the X-ray showed.\n\n**Please note:** The letter booked a visit for 7 October 2026. Today is 15 October 2026, so that date has passed.\n\n## What you need to do\n1. Go to your booked visit at the Breast Assessment Clinic, Eastmoor Hospital.\n2. At the visit, you may have more breast X-rays (mammograms). You may also have an ultrasound scan.\n3. In some cases, you may also have a biopsy. This means they take a small sample of tissue.\n4. Allow plenty of time. The visit may take up to 4 hours.\n5. If you cannot come, call 01632 960 733 as soon as possible.\n6. If you did not go to the visit on 7 October 2026, call 01632 960 733.\n\nYou will usually get most of your results on the same day.\n\nYou can bring a friend or family member with you if you want to.\n\n## Dates and medicines\n- **16 September 2026:** your breast X-ray (mammogram).\n- **Wednesday 7 October 2026 at 11:00:** your recall visit at the Breast Assessment Clinic, Eastmoor Hospital. This date has now passed.\n- **Medicines:** the letter does not list any medicines.\n\n## Questions to ask your doctor\n- Why was I called back for more tests?\n- What did my breast X-ray (mammogram) show?\n- What is an ultrasound scan, and what happens during it?\n- When can I have a new visit?\n\n## When to get urgent help\nThe letter does not list specific warning signs.",
+        "missing_headings": [],
+        "unknown_numbers": [
+          "15"
+        ],
+        "readability": {
+          "language": "en",
+          "reading_ease": 86.3,
+          "reading_ease_target": 70,
+          "grade_level": 3.7,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [
+            {
+              "kind": "advice",
+              "severity": "minor",
+              "explanation_says": "If you did not go to the visit on 7 October 2026, call 01632 960 733.",
+              "letter_says": "If you cannot come, please call 01632 960 733 as soon as possible.",
+              "why": "The letter does not tell the patient what to do after missing the appointment. This instruction is a reasonable step beyond what the letter says, but it is not in the letter.",
+              "real_difference": true
+            },
+            {
+              "kind": "date",
+              "severity": "minor",
+              "explanation_says": "Go to your booked visit at the Breast Assessment Clinic, Eastmoor Hospital. (Elsewhere: this date has now passed.)",
+              "letter_says": "We have booked an appointment for you on Wednesday 7 October 2026 at 11:00.",
+              "why": "Telling the patient to go to a booked visit while also saying the date has passed mixes the past appointment with what to do now. This could confuse the patient about whether an appointment is still booked.",
+              "real_difference": true
+            }
+          ],
+          "summary": "The explanation matches the letter closely. It correctly gives the mammogram date, the recall appointment (Wednesday 7 October 2026 at 11:00, Breast Assessment Clinic, Eastmoor Hospital), the reassurance that 4 in 5 recalled women do not have cancer, the possible tests, the same-day results, the visit length of up to 4 hours, bringing a companion, and the phone number. The explanation points out that the appointment date has already passed, which is true given today's date. This creates two small problems. First, it adds an instruction to call if the visit was missed, which the letter does not say. Second, step 1 still tells the patient to go to the booked visit even though that date has passed, which is confusing."
+        },
+        "blocking_problems": [
+          "The number 15 is not in the letter",
+          "[advice] The letter does not tell the patient what to do after missing the appointment. This instruction is a reasonable step beyond what the letter says, but it is not in the letter. (explanation: 'If you did not go to the visit on 7 October 2026, call 01632 960 733.'; letter: 'If you cannot come, please call 01632 960 733 as soon as possible.')",
+          "[date] Telling the patient to go to a booked visit while also saying the date has passed mixes the past appointment with what to do now. This could confuse the patient about whether an appointment is still booked. (explanation: 'Go to your booked visit at the Breast Assessment Clinic, Eastmoor Hospital. (Elsewhere: this date has now passed.)'; letter: 'We have booked an appointment for you on Wednesday 7 October 2026 at 11:00.')"
+        ],
+        "attempt": 1
+      },
+      {
+        "explanation": "## What this letter says\nYou had a breast X-ray (mammogram) on 16 September 2026.\n\nYou need to come back for more tests. This is called a recall.\n\nBeing called back does not mean that you have cancer. About 4 in 5 women who are called back do not have breast cancer.\n\nThe letter does not say why you were called back. It does not say what the X-ray showed.\n\n## What you need to do\n1. The hospital booked a visit for you. It is at the Breast Assessment Clinic, Eastmoor Hospital.\n2. At the visit, you may have more breast X-rays (mammograms). You may also have an ultrasound scan.\n3. In some cases, you may also have a biopsy. This means they take a small sample of tissue.\n4. Allow plenty of time. The visit may take up to 4 hours.\n5. If you cannot come, call 01632 960 733 as soon as possible.\n\nYou will usually get most of your results on the same day.\n\nYou can bring a friend or family member with you if you want to.\n\n## Dates and medicines\n- **16 September 2026:** your breast X-ray (mammogram).\n- **Wednesday 7 October 2026 at 11:00:** your recall visit at the Breast Assessment Clinic, Eastmoor Hospital.\n- **Medicines:** the letter does not list any medicines.\n\n## Questions to ask your doctor\n- Why was I called back for more tests?\n- What did my breast X-ray (mammogram) show?\n- What happens during an ultrasound scan?\n- Is my visit still booked for the same date and time?\n\n## When to get urgent help\nThe letter does not list specific warning signs.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 85.4,
+          "reading_ease_target": 70,
+          "grade_level": 3.8,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [],
+          "summary": "I found no problems. The explanation matches the letter. The dates are correct: the mammogram on 16 September 2026 and the recall visit on Wednesday 7 October 2026 at 11:00. The place and phone number are right. The reassurance that 4 in 5 women called back do not have breast cancer is kept as written. The possible tests (more mammograms, an ultrasound scan, and a biopsy in some cases) are still described as possible. The visit length of up to 4 hours, same-day results, and the option to bring someone are all correct. \"Allow plenty of time\" is a fair rewording of the 4-hour visit. The suggested questions do not raise any diagnosis or worry that is not in the letter."
+        },
+        "blocking_problems": [],
+        "attempt": 2
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 3255,
+        "output_tokens": 1168,
+        "cost_usd": 0.03307,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 12497,
+        "output_tokens": 1406,
+        "cost_usd": 0.05453,
+        "turns": 5
+      },
+      {
+        "step": "verify",
+        "input_tokens": 3347,
+        "output_tokens": 869,
+        "cost_usd": 0.03154,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 9977,
+        "output_tokens": 1461,
+        "cost_usd": 0.06098,
+        "turns": 2
+      },
+      {
+        "step": "verify",
+        "input_tokens": 3273,
+        "output_tokens": 513,
+        "cost_usd": 0.02383,
+        "turns": 2
+      }
+    ],
+    "cost_usd": 0.20395,
+    "latency_s": 62.8
+  },
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "diagnoses",
+        "fact": "Recall after the screening mammogram on 16 September 2026: more tests are needed",
+        "status": "kept",
+        "note": "States the mammogram on 16 September 2026 and that more tests are needed (a recall)."
+      },
+      {
+        "category": "dates",
+        "fact": "Appointment on Wednesday 7 October 2026 at 11:00, Breast Assessment Clinic, Eastmoor Hospital",
+        "status": "kept",
+        "note": "Wednesday 7 October 2026 at 11:00, Breast Assessment Clinic, Eastmoor Hospital, all appear in the dates section."
+      },
+      {
+        "category": "dates",
+        "fact": "The visit may take up to 4 hours",
+        "status": "kept",
+        "note": "Says the visit may take up to 4 hours."
+      },
+      {
+        "category": "actions",
+        "fact": "You may have more mammograms, an ultrasound scan and, in some cases, a biopsy",
+        "status": "kept",
+        "note": "Says more mammograms, an ultrasound scan and, in some cases, a biopsy."
+      },
+      {
+        "category": "actions",
+        "fact": "Most results usually on the same day",
+        "status": "kept",
+        "note": "Says you will usually get most of your results on the same day."
+      },
+      {
+        "category": "actions",
+        "fact": "You can bring a friend or family member",
+        "status": "kept",
+        "note": "Says you can bring a friend or family member."
+      },
+      {
+        "category": "actions",
+        "fact": "If you cannot come, call 01632 960 733 as soon as possible",
+        "status": "kept",
+        "note": "Says if you cannot come, call 01632 960 733 as soon as possible."
+      },
+      {
+        "category": "negatives",
+        "fact": "Being called back does not mean you have cancer: about 4 in 5 women called back do not have breast cancer",
+        "status": "kept",
+        "note": "Uses the letter's exact wording, including the 4 in 5 figure."
+      }
+    ],
+    "added": [],
+    "gold_reviewer": "claude-draft"
+  }
+}

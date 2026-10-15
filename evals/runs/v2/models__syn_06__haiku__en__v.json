@@ -1,0 +1,314 @@
+{
+  "job": {
+    "id": "models__syn_06__haiku__en__v",
+    "part": "models",
+    "letter_id": "syn_06",
+    "file": "data/synthetic/syn_06.txt",
+    "kind": "faithfulness",
+    "model": "haiku",
+    "language": "en",
+    "verifier": true,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "haiku",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": true,
+    "status": "ok_after_retry",
+    "final_text": "## What this letter says\n\nYou had a keyhole operation to remove your appendix on 24 September 2026. Your appendix was sore and swollen. The operation went well and there were no problems.\n\nYou left hospital on 26 September 2026.\n\nThe hospital looked at a piece of your appendix in the lab. The results are still not back yet. You don't need to do anything unless the result is not normal.\n\n## What you need to do\n\n1. Book an appointment at your GP surgery. You need your wound clips removed on 6 October 2026.\n2. Take paracetamol 1 gram only when you have pain. You can take it up to 4 times a day. Do not take more than 4 grams in 24 hours.\n3. Take ibuprofen 400 milligrams 3 times a day. Take it with food for 5 days.\n4. You can start to shower from 28 September 2026.\n5. Do not lift heavy things for 4 weeks.\n\n## Dates and medicines\n\n**Dates:**\n- Admitted to hospital: 24 September 2026\n- Operation: 24 September 2026\n- Discharged: 26 September 2026\n- You can shower from: 28 September 2026\n- Wound clips removed at GP: 6 October 2026\n\n**Medicines:**\n- Paracetamol 1 gram. Take only when you have pain. Up to 4 times a day. Do not take more than 4 grams in 24 hours.\n- Ibuprofen 400 milligrams. Take 3 times a day with food for 5 days.\n\n## Questions to ask your doctor\n\n1. When will I get the histology results from my appendix?\n2. How should I look after my wound at home?\n3. When can I go back to work or my normal activities?\n\n## When to get urgent help\n\nContact your GP or call 111 if:\n- You have a temperature above 38°C\n- Your wound turns red\n- Your wound gets swollen\n- Your wound leaks pus (thick yellow liquid)\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "patient",
+      "purpose": "Discharge instructions following laparoscopic appendicectomy, including medicines, wound care, activity restrictions, and follow-up information",
+      "findings": [
+        {
+          "statement": "Diagnosis: Acute appendicitis",
+          "certainty": "stated",
+          "quote": "Diagnosis: Acute appendicitis"
+        },
+        {
+          "statement": "Laparoscopic appendicectomy performed on 24 September 2026",
+          "certainty": "stated",
+          "quote": "Procedure: Laparoscopic appendicectomy (keyhole operation to remove the appendix) on 24/09/2026"
+        },
+        {
+          "statement": "No complications from the procedure",
+          "certainty": "stated",
+          "quote": "No complications"
+        },
+        {
+          "statement": "Histology examination of the appendix is pending",
+          "certainty": "pending",
+          "quote": "Histology (lab examination of the appendix) is pending"
+        }
+      ],
+      "medicines": [
+        {
+          "name": "Paracetamol",
+          "dose": "1 g",
+          "how_often": "QDS PRN",
+          "change": "not_stated",
+          "details": "For pain, maximum 4 g in 24 hours",
+          "quote": "Paracetamol 1 g QDS PRN for pain (maximum 4 g in 24 hours)"
+        },
+        {
+          "name": "Ibuprofen",
+          "dose": "400 mg",
+          "how_often": "TDS",
+          "change": "not_stated",
+          "details": "With food for 5 days",
+          "quote": "Ibuprofen 400 mg TDS with food for 5 days"
+        }
+      ],
+      "dates": [
+        {
+          "what": "Admitted to hospital",
+          "when": "24 September 2026",
+          "quote": "Admitted: 24/09/2026"
+        },
+        {
+          "what": "Laparoscopic appendicectomy performed",
+          "when": "24 September 2026",
+          "quote": "Laparoscopic appendicectomy (keyhole operation to remove the appendix) on 24/09/2026"
+        },
+        {
+          "what": "Discharged from hospital",
+          "when": "26 September 2026",
+          "quote": "Discharged: 26/09/2026"
+        },
+        {
+          "what": "Can start showering",
+          "when": "28 September 2026",
+          "quote": "You may shower from 28/09/2026"
+        },
+        {
+          "what": "Wound clips to be removed by practice nurse at GP surgery",
+          "when": "6 October 2026",
+          "quote": "Clips to be removed by the practice nurse at your GP surgery on 06/10/2026"
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Book an appointment for wound clip removal at your GP surgery on 6 October 2026",
+          "quote": "Clips to be removed by the practice nurse at your GP surgery on 06/10/2026. Please book this appointment."
+        }
+      ],
+      "negatives": [
+        {
+          "instruction": "No complications occurred",
+          "quote": "No complications"
+        },
+        {
+          "instruction": "No heavy lifting for 4 weeks",
+          "quote": "No heavy lifting for 4 weeks"
+        },
+        {
+          "instruction": "No further action is needed unless the histology result is abnormal",
+          "quote": "No further action is needed unless the result is abnormal"
+        }
+      ],
+      "warning_signs": [
+        {
+          "instruction": "Contact your GP or call 111 if you have a temperature above 38°C, or if a wound becomes red, swollen or leaks pus",
+          "quote": "Contact your GP or call 111 if you have a temperature above 38°C, or if a wound becomes red, swollen or leaks pus"
+        }
+      ],
+      "unclear": []
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\n\nYou had a keyhole operation to remove your appendix on 24 September 2026. Your appendix was sore and swollen. The operation went well and there were no problems.\n\nYou left hospital on 26 September 2026.\n\nThe hospital looked at a piece of your appendix in the lab. The results are still not back yet. You don't need to do anything unless the result is not normal.\n\n## What you need to do\n\n1. Book an appointment at your GP surgery. You need your wound clips removed on 6 October 2026.\n2. Take paracetamol 1 gram only when you have pain. You can take it up to 4 times a day. Do not take more than 4 grams in 24 hours.\n3. Take ibuprofen 400 milligrams 3 times a day. Take it with food for 5 days.\n4. You can start to shower from 28 September 2026.\n5. Do not lift heavy things for 4 weeks.\n\n## Dates and medicines\n\n**Dates:**\n- Admitted to hospital: 24 September 2026\n- Operation: 24 September 2026\n- Discharged: 26 September 2026\n- You can shower from: 28 September 2026\n- Wound clips removed at GP: 6 October 2026\n\n**Medicines:**\n- Paracetamol 1 gram. Take only when you have pain. Up to 4 times a day. Do not take more than 4 grams in 24 hours.\n- Ibuprofen 400 milligrams. Take 3 times a day with food for 5 days.\n\n## Questions to ask your doctor\n\n1. When will I get the lab results from my appendix?\n2. How should I care for my wound?\n3. When can I do exercise or sports?\n4. What should I do if the medicine does not help my pain?\n\n## When to get urgent help\n\nContact your GP or call 111 if:\n- You have a temperature above 38°C\n- Your wound turns red\n- Your wound gets swollen\n- Your wound leaks pus (thick yellow liquid)",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 84.8,
+          "reading_ease_target": 70,
+          "grade_level": 4.1,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [
+            {
+              "kind": "added",
+              "severity": "minor",
+              "explanation_says": "Question suggests asking: 'When can I do exercise or sports?'",
+              "letter_says": "No heavy lifting for 4 weeks. (No mention of exercise or sports.)",
+              "why": "The letter discusses activity restrictions (heavy lifting only) but does not address exercise or sports specifically. This question suggests there is a risk with these activities during recovery, which is not discussed in the letter."
+            },
+            {
+              "kind": "added",
+              "severity": "major",
+              "explanation_says": "Question suggests asking: 'What should I do if the medicine does not help my pain?'",
+              "letter_says": "Pain medicines are provided. No discussion of inadequate pain relief.",
+              "why": "The letter provides paracetamol and ibuprofen but does not discuss what to do if they are inadequate. This question introduces a worry (that pain relief might fail) that could concern the patient, but is not addressed in the letter."
+            }
+          ],
+          "summary": "The explanation is mostly accurate but introduces two new medical concerns in the questions section not addressed in the letter: the possibility that exercise/sports might not be safe (minor issue), and more significantly, the worry that pain medicines might not work adequately (major issue that could unnecessarily concern the patient)."
+        },
+        "blocking_problems": [
+          "[added] The letter provides paracetamol and ibuprofen but does not discuss what to do if they are inadequate. This question introduces a worry (that pain relief might fail) that could concern the patient, but is not addressed in the letter. (explanation: \"Question suggests asking: 'What should I do if the medicine does not help my pain?'\"; letter: 'Pain medicines are provided. No discussion of inadequate pain relief.')"
+        ],
+        "attempt": 1
+      },
+      {
+        "explanation": "## What this letter says\n\nYou had a keyhole operation to remove your appendix on 24 September 2026. Your appendix was sore and swollen. The operation went well and there were no problems.\n\nYou left hospital on 26 September 2026.\n\nThe hospital looked at a piece of your appendix in the lab. The results are still not back yet. You don't need to do anything unless the result is not normal.\n\n## What you need to do\n\n1. Book an appointment at your GP surgery. You need your wound clips removed on 6 October 2026.\n2. Take paracetamol 1 gram only when you have pain. You can take it up to 4 times a day. Do not take more than 4 grams in 24 hours.\n3. Take ibuprofen 400 milligrams 3 times a day. Take it with food for 5 days.\n4. You can start to shower from 28 September 2026.\n5. Do not lift heavy things for 4 weeks.\n\n## Dates and medicines\n\n**Dates:**\n- Admitted to hospital: 24 September 2026\n- Operation: 24 September 2026\n- Discharged: 26 September 2026\n- You can shower from: 28 September 2026\n- Wound clips removed at GP: 6 October 2026\n\n**Medicines:**\n- Paracetamol 1 gram. Take only when you have pain. Up to 4 times a day. Do not take more than 4 grams in 24 hours.\n- Ibuprofen 400 milligrams. Take 3 times a day with food for 5 days.\n\n## Questions to ask your doctor\n\n1. When will I get the histology results from my appendix?\n2. How should I look after my wound at home?\n3. When can I go back to work or my normal activities?\n\n## When to get urgent help\n\nContact your GP or call 111 if:\n- You have a temperature above 38°C\n- Your wound turns red\n- Your wound gets swollen\n- Your wound leaks pus (thick yellow liquid)",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 82.9,
+          "reading_ease_target": 70,
+          "grade_level": 4.4,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [
+            {
+              "kind": "dropped",
+              "severity": "minor",
+              "explanation_says": "The hospital looked at a piece of your appendix in the lab. The results are still not back yet. You don't need to do anything unless the result is not normal.",
+              "letter_says": "The result will be sent to you and your GP. No further action is needed unless the result is abnormal.",
+              "why": "The explanation omits that histology results will be sent to the patient. While the key point (no action needed) is preserved, the reassurance about receiving results is missing, which could leave the patient uncertain about how they will be informed."
+            }
+          ],
+          "summary": "One minor problem found: the explanation omits the information that histology results will be sent to the patient. This is reassurance about follow-up communication that is explicitly in the letter but missing from the explanation."
+        },
+        "blocking_problems": [],
+        "attempt": 2
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 2981,
+        "output_tokens": 11239,
+        "cost_usd": 0.05918,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 22469,
+        "output_tokens": 4655,
+        "cost_usd": 0.04338,
+        "turns": 6
+      },
+      {
+        "step": "verify",
+        "input_tokens": 12446,
+        "output_tokens": 6852,
+        "cost_usd": 0.05618,
+        "turns": 3
+      },
+      {
+        "step": "explain",
+        "input_tokens": 10103,
+        "output_tokens": 2664,
+        "cost_usd": 0.02951,
+        "turns": 2
+      },
+      {
+        "step": "verify",
+        "input_tokens": 19326,
+        "output_tokens": 13630,
+        "cost_usd": 0.10384,
+        "turns": 3
+      }
+    ],
+    "cost_usd": 0.29208,
+    "latency_s": 377.4
+  },
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "diagnoses",
+        "fact": "Acute appendicitis",
+        "status": "kept",
+        "note": "'Your appendix was sore and swollen' is a plain-language version of acute appendicitis, though the term itself isn't named."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Keyhole operation to remove the appendix (laparoscopic appendicectomy) on 24 September 2026",
+        "status": "kept",
+        "note": "Keyhole operation to remove the appendix on 24 September 2026."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Lab result on the appendix (histology) is still pending",
+        "status": "kept",
+        "note": "Lab results on the appendix are 'still not back yet'."
+      },
+      {
+        "category": "medicines",
+        "fact": "Paracetamol 1 g four times a day when needed for pain, maximum 4 g in 24 hours",
+        "status": "kept",
+        "note": "1 g only when in pain, up to 4 times a day, max 4 g in 24 hours."
+      },
+      {
+        "category": "medicines",
+        "fact": "Ibuprofen 400 mg three times a day with food, for 5 days",
+        "status": "kept",
+        "note": "400 mg 3 times a day with food for 5 days."
+      },
+      {
+        "category": "dates",
+        "fact": "Clips removed by the practice nurse at the GP surgery on 6 October 2026",
+        "status": "kept",
+        "note": "Clips removed at the GP surgery on 6 October 2026. It doesn't say the practice nurse does it, but the date and place match."
+      },
+      {
+        "category": "dates",
+        "fact": "No heavy lifting for 4 weeks",
+        "status": "kept",
+        "note": "'Do not lift heavy things for 4 weeks.'"
+      },
+      {
+        "category": "dates",
+        "fact": "You may shower from 28 September 2026",
+        "status": "kept",
+        "note": "Shower from 28 September 2026."
+      },
+      {
+        "category": "actions",
+        "fact": "Book the clip-removal appointment",
+        "status": "kept",
+        "note": "'Book an appointment at your GP surgery' for clip removal."
+      },
+      {
+        "category": "actions",
+        "fact": "Contact your GP or call 111 if temperature above 38°C, or a wound becomes red, swollen or leaks pus",
+        "status": "kept",
+        "note": "Temperature above 38°C, and wound red, swollen or leaking pus, each listed; contact GP or call 111."
+      },
+      {
+        "category": "negatives",
+        "fact": "There were no complications",
+        "status": "kept",
+        "note": "'there were no problems'."
+      },
+      {
+        "category": "negatives",
+        "fact": "No further action is needed unless the histology result is abnormal",
+        "status": "kept",
+        "note": "'You don't need to do anything unless the result is not normal.'"
+      }
+    ],
+    "added": [
+      {
+        "text": "The hospital looked at a piece of your appendix in the lab (the letter says the appendix was examined, not a piece of it).",
+        "kind": "medical_fact"
+      },
+      {
+        "text": "The heading 'When to get urgent help' frames the GP/111 advice as urgent, which the letter does not.",
+        "kind": "urgency"
+      }
+    ],
+    "gold_reviewer": "claude-draft"
+  }
+}

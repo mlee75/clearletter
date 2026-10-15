@@ -23,30 +23,25 @@ Screening Programme Office
 ## Explanation shown to the patient
 
 ## Ce que dit cette lettre
-Cette lettre vous invite à prendre rendez-vous pour un examen des yeux. C'est le dépistage des yeux pour les personnes diabétiques.
-Cet examen regarde le fond de l'œil. Il cherche des dégâts causés par le diabète (rétinopathie diabétique).
-Cet examen est proposé chaque année à toutes les personnes diabétiques de 12 ans et plus.
-Cet examen ne détecte pas les autres problèmes des yeux.
+Cette lettre vous invite à un examen des yeux pour les personnes diabétiques (dépistage oculaire du diabète).
+Elle vous demande de prendre rendez-vous.
+C'est un examen de dépistage. Il ne sert pas à trouver d'autres problèmes des yeux.
 Il ne remplace pas votre examen des yeux habituel chez l'opticien.
 
 ## Ce que vous devez faire
 1. Prenez rendez-vous en appelant le 01632 960 377.
-2. Faites-le avant le 15 janvier 2027.
-3. Apportez des lunettes de soleil si vous en avez.
-4. Apportez vos lunettes ou vos lentilles de contact.
-5. Apportez aussi la liste de vos médicaments.
-6. Ne conduisez pas tant que votre vue n'est pas redevenue normale.
+2. Apportez des lunettes de soleil, si vous en avez.
+3. Apportez vos lunettes ou vos lentilles de contact. Apportez aussi la liste de vos médicaments.
+4. Ne conduisez pas tant que votre vue n'est pas redevenue normale. Les gouttes rendent la vue floue pendant 4 à 6 heures.
 
 ## Dates et médicaments
-- Date limite pour prendre rendez-vous : 15 janvier 2027.
-- La lettre ne donne pas de date ni d'heure de rendez-vous. Vous devez le prendre vous-même.
-- Des gouttes rendent votre vue floue pendant 4 à 6 heures.
-- Médicaments : la lettre n'en cite aucun.
+- Date limite pour prendre rendez-vous : le 15 janvier 2027.
+- Médicaments : la lettre n'en donne aucun.
 
 ## Questions à poser à votre médecin
-- Que se passe-t-il si je ne peux pas prendre rendez-vous avant le 15 janvier 2027 ?
-- Comment rentrer chez moi si ma vue est floue après les gouttes ?
-- Dois-je garder mon examen habituel chez l'opticien ?
+- Que se passe-t-il pendant l'examen ?
+- Combien de temps dure le rendez-vous ?
+- Quand vais-je avoir les résultats ?
 
 ## Quand obtenir de l'aide en urgence
 La lettre ne donne pas de signes d'alerte particuliers.
@@ -60,30 +55,25 @@ Si vous êtes inquiet et que ce n'est pas une urgence, appelez le NHS 111. En ca
 ## Back-translation to English (by Claude, used by the judge)
 
 ## What this letter says
-This letter invites you to make an appointment for an eye examination. It is the eye screening for people with diabetes.
-This examination looks at the back of the eye. It looks for damage caused by diabetes (diabetic retinopathy).
-This examination is offered every year to all people with diabetes aged 12 and over.
-This examination does not detect other eye problems.
+This letter invites you to an eye examination for people with diabetes (diabetic eye screening).
+It asks you to make an appointment.
+It is a screening examination. It is not used to find other eye problems.
 It does not replace your usual eye examination at the optician.
 
-## What you need to do
+## What you must do
 1. Make an appointment by calling 01632 960 377.
-2. Do it before 15 January 2027.
-3. Bring sunglasses if you have any.
-4. Bring your glasses or your contact lenses.
-5. Also bring the list of your medicines.
-6. Do not drive until your vision has returned to normal.
+2. Bring sunglasses, if you have any.
+3. Bring your glasses or your contact lenses. Also bring the list of your medicines.
+4. Do not drive until your vision has become normal again. The drops make vision blurry for 4 to 6 hours.
 
 ## Dates and medicines
-- Deadline for making an appointment: 15 January 2027.
-- The letter does not give an appointment date or time. You must make it yourself.
-- Drops make your vision blurry for 4 to 6 hours.
-- Medicines: the letter does not mention any.
+- Deadline to make an appointment: 15 January 2027.
+- Medicines: the letter does not give any.
 
 ## Questions to ask your doctor
-- What happens if I cannot make an appointment before 15 January 2027?
-- How do I get home if my vision is blurry after the drops?
-- Should I keep my usual examination at the optician?
+- What happens during the examination?
+- How long does the appointment last?
+- When will I get the results?
 
-## When to get urgent help
+## When to get help urgently
 The letter does not give any particular warning signs.

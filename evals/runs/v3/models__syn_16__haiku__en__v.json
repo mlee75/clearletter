@@ -1,0 +1,196 @@
+{
+  "job": {
+    "id": "models__syn_16__haiku__en__v",
+    "part": "models",
+    "letter_id": "syn_16",
+    "file": "data/synthetic/syn_16.txt",
+    "kind": "faithfulness",
+    "model": "haiku",
+    "language": "en",
+    "verifier": true,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "haiku",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": true,
+    "status": "ok",
+    "final_text": "## What this letter says\nYour blood test on Monday 5 October 2026 shows your INR is 4.1. The target is 2.0 to 3.0. Your blood is taking too long to clot. Your warfarin dose needs to go down.\n\n## What you need to do\n1. Do not take warfarin on Monday 5 October 2026.\n2. From Tuesday 6 October 2026, take 4 mg warfarin each evening.\n3. Your 4 mg dose is: one 3 mg blue tablet plus one 1 mg brown tablet.\n4. Go for your blood test on Monday 12 October 2026 at the Anticoagulation Clinic.\n5. Bring your yellow warfarin book to the clinic.\n\n## Dates and medicines\nMonday 5 October 2026: Blood test shows INR 4.1; do not take warfarin tonight.\nTuesday 6 October 2026: Start warfarin 4 mg each evening.\nMonday 12 October 2026: Blood test at Anticoagulation Clinic.\n\nWarfarin:\n- Dose decreased from 5 mg to 4 mg each evening\n- 4 mg = one 3 mg blue tablet + one 1 mg brown tablet\n\n## Questions to ask your doctor\n- Why does my blood take too long to clot?\n- How long will I stay on this lower warfarin dose?\n- What should I do if I accidentally took warfarin on Monday?\n\n## When to get urgent help\nGo to A&E (the emergency department) or call 999 if you have:\n- Heavy bleeding\n- Blood in your urine or stools\n- Black stools\n- Vomiting blood\n- Severe headache\n\nContact the Anticoagulation Clinic on 01632 960 842 if you have minor bleeding, like nosebleeds or bleeding gums.\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "patient",
+      "purpose": "Warfarin dose adjustment due to elevated INR",
+      "findings": [
+        {
+          "statement": "INR is 4.1",
+          "certainty": "stated",
+          "quote": "Your INR today (Monday 5 October 2026) is 4.1."
+        },
+        {
+          "statement": "Blood is taking too long to clot",
+          "certainty": "stated",
+          "quote": "Your blood is taking too long to clot."
+        },
+        {
+          "statement": "Target INR range is 2.0 to 3.0",
+          "certainty": "stated",
+          "quote": "Target INR range: 2.0 to 3.0"
+        }
+      ],
+      "medicines": [
+        {
+          "name": "Warfarin",
+          "dose": "4 mg",
+          "how_often": "each evening",
+          "change": "decrease",
+          "details": "Previous dose was 5 mg each evening. Do not take on Monday 5 October 2026. Tablets: one 3 mg tablet (blue) + one 1 mg tablet (brown).",
+          "quote": "Do NOT take warfarin tonight (Monday 5 October 2026). From Tuesday 6 October 2026, take 4 mg each evening. (Your previous dose was 5 mg each evening.) 4 mg = one 3 mg tablet (blue) + one 1 mg tablet (brown)."
+        }
+      ],
+      "dates": [
+        {
+          "what": "INR blood test",
+          "when": "Monday 5 October 2026",
+          "quote": "Your INR today (Monday 5 October 2026) is 4.1."
+        },
+        {
+          "what": "Start new warfarin dose",
+          "when": "Tuesday 6 October 2026",
+          "quote": "From Tuesday 6 October 2026, take 4 mg each evening."
+        },
+        {
+          "what": "Next INR blood test at Anticoagulation Clinic",
+          "when": "Monday 12 October 2026",
+          "quote": "Your next INR blood test is on Monday 12 October 2026 at the Anticoagulation Clinic."
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Bring your yellow warfarin book to the Anticoagulation Clinic",
+          "quote": "Please bring your yellow warfarin book."
+        }
+      ],
+      "negatives": [
+        {
+          "instruction": "Do not take warfarin on Monday 5 October 2026 (skip this dose)",
+          "quote": "Do NOT take warfarin tonight (Monday 5 October 2026)."
+        }
+      ],
+      "warning_signs": [
+        {
+          "instruction": "Go to A&E or call 999 if you have heavy bleeding, blood in your urine or stools, black stools, vomiting blood, or a severe headache",
+          "quote": "Go to A&E or call 999 if you have any heavy bleeding, blood in your urine or stools, black stools, vomiting blood, or a severe headache."
+        },
+        {
+          "instruction": "Contact the clinic on 01632 960 842 if you have minor bleeding, such as nosebleeds or bleeding gums",
+          "quote": "Contact the clinic on 01632 960 842 if you have minor bleeding, such as nosebleeds or bleeding gums."
+        }
+      ],
+      "unclear": []
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\nYour blood test on Monday 5 October 2026 shows your INR is 4.1. The target is 2.0 to 3.0. Your blood is taking too long to clot. Your warfarin dose needs to go down.\n\n## What you need to do\n1. Do not take warfarin on Monday 5 October 2026.\n2. From Tuesday 6 October 2026, take 4 mg warfarin each evening.\n3. Your 4 mg dose is: one 3 mg blue tablet plus one 1 mg brown tablet.\n4. Go for your blood test on Monday 12 October 2026 at the Anticoagulation Clinic.\n5. Bring your yellow warfarin book to the clinic.\n\n## Dates and medicines\nMonday 5 October 2026: Blood test shows INR 4.1; do not take warfarin tonight.\nTuesday 6 October 2026: Start warfarin 4 mg each evening.\nMonday 12 October 2026: Blood test at Anticoagulation Clinic.\n\nWarfarin:\n- Dose decreased from 5 mg to 4 mg each evening\n- 4 mg = one 3 mg blue tablet + one 1 mg brown tablet\n\n## Questions to ask your doctor\n- Why does my blood take too long to clot?\n- How long will I stay on this lower warfarin dose?\n- What should I do if I accidentally took warfarin on Monday?\n\n## When to get urgent help\nGo to A&E (the emergency department) or call 999 if you have:\n- Heavy bleeding\n- Blood in your urine or stools\n- Black stools\n- Vomiting blood\n- Severe headache\n\nContact the Anticoagulation Clinic on 01632 960 842 if you have minor bleeding, like nosebleeds or bleeding gums.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 75.6,
+          "reading_ease_target": 70,
+          "grade_level": 6.0,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [],
+          "summary": "The explanation accurately and faithfully conveys the warfarin dose adjustment letter. All instructions, dates, doses, and warning signs match the original. The questions section includes reasonable clarification questions that do not suggest diagnoses or risks beyond those in the letter. No problems found."
+        },
+        "blocking_problems": [],
+        "attempt": 1
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 2953,
+        "output_tokens": 11432,
+        "cost_usd": 0.06011,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 12170,
+        "output_tokens": 6181,
+        "cost_usd": 0.05203,
+        "turns": 2
+      },
+      {
+        "step": "verify",
+        "input_tokens": 2966,
+        "output_tokens": 4420,
+        "cost_usd": 0.02507,
+        "turns": 2
+      }
+    ],
+    "cost_usd": 0.13721,
+    "latency_s": 166.1
+  },
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "diagnoses",
+        "fact": "INR 4.1 today (target 2.0 to 3.0): too high, blood is taking too long to clot",
+        "status": "kept",
+        "note": "INR 4.1, target 2.0 to 3.0, blood taking too long to clot are all stated."
+      },
+      {
+        "category": "medicines",
+        "fact": "Do NOT take warfarin tonight (Monday 5 October 2026)",
+        "status": "kept",
+        "note": "'Do not take warfarin on Monday 5 October 2026' and 'do not take warfarin tonight'."
+      },
+      {
+        "category": "medicines",
+        "fact": "From Tuesday 6 October 2026: warfarin 4 mg each evening (previous dose 5 mg)",
+        "status": "kept",
+        "note": "4 mg each evening from Tuesday 6 October 2026; 'decreased from 5 mg to 4 mg' keeps the previous dose."
+      },
+      {
+        "category": "medicines",
+        "fact": "4 mg = one 3 mg tablet (blue) + one 1 mg tablet (brown)",
+        "status": "kept",
+        "note": "One 3 mg blue tablet plus one 1 mg brown tablet."
+      },
+      {
+        "category": "dates",
+        "fact": "Next INR blood test on Monday 12 October 2026 at the Anticoagulation Clinic",
+        "status": "kept",
+        "note": "Blood test on Monday 12 October 2026 at the Anticoagulation Clinic."
+      },
+      {
+        "category": "actions",
+        "fact": "Bring your yellow warfarin book",
+        "status": "kept",
+        "note": "Bring your yellow warfarin book to the clinic."
+      },
+      {
+        "category": "actions",
+        "fact": "Go to A&E or call 999 for heavy bleeding, blood in urine or stools, black stools, vomiting blood, or a severe headache",
+        "status": "kept",
+        "note": "All five warning signs are listed with A&E or 999."
+      },
+      {
+        "category": "actions",
+        "fact": "Contact the clinic on 01632 960 842 for minor bleeding such as nosebleeds or bleeding gums",
+        "status": "kept",
+        "note": "Clinic number 01632 960 842 for minor bleeding such as nosebleeds or bleeding gums."
+      }
+    ],
+    "added": [],
+    "gold_reviewer": "claude-draft"
+  }
+}

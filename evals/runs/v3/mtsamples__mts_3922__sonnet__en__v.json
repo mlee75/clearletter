@@ -1,0 +1,343 @@
+{
+  "job": {
+    "id": "mtsamples__mts_3922__sonnet__en__v",
+    "part": "mtsamples",
+    "letter_id": "mts_3922",
+    "file": "data/mtsamples/mts_3922.txt",
+    "kind": "faithfulness",
+    "model": "sonnet",
+    "language": "en",
+    "verifier": true,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "sonnet",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": true,
+    "status": "ok",
+    "final_text": "## What this letter says\nYou were in hospital. You had a stomach and bowel infection (acute gastroenteritis). It is resolved.\n\nYou also had bleeding in your gut (gastrointestinal bleed). You have long-term swelling in a part of your belly called the mesentery (chronic inflammation). The cause is not known.\n\nYour sickness and loose stools (nausea, vomiting and diarrhea) got better in hospital. You had no belly pain on the day you went home.\n\nYour stool still tested positive for blood (guaiac positive) when you left.\n\nTest results:\n- Your hemoglobin was 13.1 when you arrived. It was 10.9 at discharge.\n- Your hematocrit was 38.6 when you arrived. It was 31.3 at discharge.\n- Your white blood cell count was not high.\n- One troponin blood test was negative. Your heart tracing (ECG) showed a normal rhythm.\n- Your stool test was negative for Clostridium difficile. It showed a few white blood cells. It also showed a moderate amount of hidden (occult) blood and red blood cells.\n- Amylase, lipase, LDH, CRP and liver tests (LFTs) were normal.\n- A small calcified spot in the lower left lung (granuloma) apparently is stable. This is not certain.\n\n## What you need to do\n1. Take prednisone for 4 weeks, using the plan below. Your gut doctors (GI) asked for this.\n2. You can start taking your home medicines again.\n\n## Dates and medicines\nThe letter gives no dates.\n\n- Prednisone, in hospital: 60 mg by mouth. It was started in hospital.\n- Prednisone, week 1: 15 mg by mouth for 7 days.\n- Prednisone, week 2: 40 mg for 1 week.\n- Prednisone, week 3: 30 mg for 1 week.\n- Prednisone, week 4: 20 mg for 1 week. Then the prednisone stops.\n- The letter does not say how often to take prednisone.\n- The doses are not in a clear order. Week 1 may be a mistake. Please ask your doctor to check.\n\nYou can start these home medicines again. The letter gives no dose or timing:\n- Prandin\n- Actos\n- Lipitor\n- Glucophage\n- Benicar\n- Advair\n\n## Questions to ask your doctor\n- Are my prednisone doses right? Week 1 says 15 mg.\n- How often do I take prednisone each day?\n- What dose and timing do I use for my home medicines?\n- Will I have a follow-up visit?\n\n## When to get urgent help\nThe letter does not list specific warning signs.\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "doctor_copy_to_patient",
+      "purpose": "Discharge summary after a hospital stay for gastroenteritis and a gastrointestinal bleed, with home medicines and a tapering prednisone plan.",
+      "findings": [
+        {
+          "statement": "Acute gastroenteritis, resolved.",
+          "certainty": "stated",
+          "quote": "Acute gastroenteritis, resolved."
+        },
+        {
+          "statement": "Gastrointestinal bleed and chronic inflammation of the mesentery of unknown cause.",
+          "certainty": "stated",
+          "quote": "Gastrointestinal bleed and chronic inflammation of the mesentery of unknown etiology."
+        },
+        {
+          "statement": "Troponin test (done once) was negative and ECG showed normal sinus rhythm.",
+          "certainty": "stated",
+          "quote": "had trop x1 done, which was negative and ECG showed to be of normal sinus rhythm"
+        },
+        {
+          "statement": "Hemoglobin was 13.1 and hematocrit 38.6 on arrival, with no elevation of white count.",
+          "certainty": "stated",
+          "quote": "hemoglobin of 13.1, hematocrit of 38.6 with no elevation of white count"
+        },
+        {
+          "statement": "Hemoglobin and hematocrit were 10.9 and 31.3 at discharge, and stool was still guaiac positive for blood.",
+          "certainty": "stated",
+          "quote": "his hemoglobin and hematocrit stayed at 10.9 and 31.3 and he was still having stool guaiac positive blood"
+        },
+        {
+          "statement": "Stool study showed few white blood cells, negative for Clostridium difficile, moderate occult blood and moderate RBCs.",
+          "certainty": "stated",
+          "quote": "few white blood cells, negative for Clostridium difficile and moderate amount of occult blood and moderate amount of RBCs"
+        },
+        {
+          "statement": "Nausea, vomiting and diarrhea resolved during the hospital stay.",
+          "certainty": "stated",
+          "quote": "The patient's nausea, vomiting, and diarrhea did resolve during his hospital course."
+        },
+        {
+          "statement": "No abdominal pain on the day of discharge.",
+          "certainty": "stated",
+          "quote": "The patient also denied any abdominal pain upon day of discharge."
+        },
+        {
+          "statement": "Amylase, lipase, LDH, CRP and LFTs were normal.",
+          "certainty": "stated",
+          "quote": "Amylase and lipase were also done which were normal and LDH and CRP was also done which are also normal and LFTs were done which were also normal as well."
+        },
+        {
+          "statement": "Left lower lobe calcified granuloma that apparently is stable.",
+          "certainty": "possible",
+          "quote": "a left lower lobe calcified granuloma that apparently is stable at this time"
+        }
+      ],
+      "medicines": [
+        {
+          "name": "Prandin",
+          "dose": "",
+          "how_often": "",
+          "change": "continue",
+          "details": "Can resume home medication.",
+          "quote": "He can resume his home medications of Prandin, Actos, Lipitor, Glucophage, Benicar, and Advair."
+        },
+        {
+          "name": "Actos",
+          "dose": "",
+          "how_often": "",
+          "change": "continue",
+          "details": "Can resume home medication.",
+          "quote": "He can resume his home medications of Prandin, Actos, Lipitor, Glucophage, Benicar, and Advair."
+        },
+        {
+          "name": "Lipitor",
+          "dose": "",
+          "how_often": "",
+          "change": "continue",
+          "details": "Can resume home medication.",
+          "quote": "He can resume his home medications of Prandin, Actos, Lipitor, Glucophage, Benicar, and Advair."
+        },
+        {
+          "name": "Glucophage",
+          "dose": "",
+          "how_often": "",
+          "change": "continue",
+          "details": "Can resume home medication.",
+          "quote": "He can resume his home medications of Prandin, Actos, Lipitor, Glucophage, Benicar, and Advair."
+        },
+        {
+          "name": "Benicar",
+          "dose": "",
+          "how_often": "",
+          "change": "continue",
+          "details": "Can resume home medication.",
+          "quote": "He can resume his home medications of Prandin, Actos, Lipitor, Glucophage, Benicar, and Advair."
+        },
+        {
+          "name": "Advair",
+          "dose": "",
+          "how_often": "",
+          "change": "continue",
+          "details": "Can resume home medication.",
+          "quote": "He can resume his home medications of Prandin, Actos, Lipitor, Glucophage, Benicar, and Advair."
+        },
+        {
+          "name": "Prednisone (in hospital)",
+          "dose": "60 mg",
+          "how_often": "",
+          "change": "start",
+          "details": "Started in hospital on GI recommendation, by mouth.",
+          "quote": "The patient was also started on prednisone as per GI recommendations.  He was started on 60 mg p.o."
+        },
+        {
+          "name": "Prednisone (tapering, week 1)",
+          "dose": "15 mg",
+          "how_often": "",
+          "change": "start",
+          "details": "By mouth for seven days. Part of 4-week taper. Letter states 15 mg for week 1 (hospital dose was 60 mg).",
+          "quote": "We will start him on 15 mg p.o. for seven days."
+        },
+        {
+          "name": "Prednisone (tapering, week 2)",
+          "dose": "40 mg",
+          "how_often": "",
+          "change": "other",
+          "details": "For 1 week.",
+          "quote": "week #2, we will start him on 40 mg for 1 week"
+        },
+        {
+          "name": "Prednisone (tapering, week 3)",
+          "dose": "30 mg",
+          "how_often": "",
+          "change": "other",
+          "details": "For 1 week.",
+          "quote": "week #3, we will start him on 30 mg for 1 week"
+        },
+        {
+          "name": "Prednisone (tapering, week 4)",
+          "dose": "20 mg",
+          "how_often": "",
+          "change": "other",
+          "details": "For 1 week, then stop.",
+          "quote": "and then, 20 mg for 1 week, and then finally we will stop"
+        }
+      ],
+      "dates": [],
+      "actions": [
+        {
+          "instruction": "Take the tapered dose of prednisone for 4 weeks as per GI recommendations.",
+          "quote": "He was instructed to take tapered dose of prednisone for 4 weeks as per the GI recommendations."
+        },
+        {
+          "instruction": "Discharged home; can resume home medications.",
+          "quote": "The plan is to discharge the patient home."
+        }
+      ],
+      "negatives": [],
+      "warning_signs": [],
+      "unclear": [
+        "The prednisone taper doses are not in a clear descending order (15 mg week 1, then 40 mg, 30 mg, 20 mg); week 1 may be a typo, so confirm with the doctor.",
+        "Doses and frequency of the home medicines (Prandin, Actos, Lipitor, Glucophage, Benicar, Advair) are not given.",
+        "How often prednisone is taken (daily) is not stated.",
+        "No follow-up appointment or warning signs are given.",
+        "H&P (history and physical) abbreviation not in glossary; 'trop' presumed troponin; LDH, LFTs, RBCs not in glossary."
+      ]
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\nYou were in hospital. You had a stomach and bowel infection (acute gastroenteritis). It is resolved.\n\nYou also had bleeding in your gut (gastrointestinal bleed). You have long-term swelling in a part of your belly called the mesentery (chronic inflammation). The cause is not known.\n\nYour sickness and loose stools (nausea, vomiting and diarrhea) got better in hospital. You had no belly pain on the day you went home.\n\nYour stool still tested positive for blood (guaiac positive) when you left.\n\nTest results:\n- Your hemoglobin was 13.1 when you arrived. It was 10.9 at discharge.\n- Your hematocrit was 38.6 when you arrived. It was 31.3 at discharge.\n- Your white blood cell count was not high.\n- One troponin blood test was negative. Your heart tracing (ECG) showed a normal rhythm.\n- Your stool test was negative for Clostridium difficile. It showed a few white blood cells. It also showed a moderate amount of hidden (occult) blood and red blood cells.\n- Amylase, lipase, LDH, CRP and liver tests (LFTs) were normal.\n- A small calcified spot in the lower left lung (granuloma) apparently is stable. This is not certain.\n\n## What you need to do\n1. Take prednisone for 4 weeks, using the plan below. Your gut doctors (GI) asked for this.\n2. You can start taking your home medicines again.\n\n## Dates and medicines\nThe letter gives no dates.\n\n- Prednisone, in hospital: 60 mg by mouth. It was started in hospital.\n- Prednisone, week 1: 15 mg by mouth for 7 days.\n- Prednisone, week 2: 40 mg for 1 week.\n- Prednisone, week 3: 30 mg for 1 week.\n- Prednisone, week 4: 20 mg for 1 week. Then the prednisone stops.\n- The letter does not say how often to take prednisone.\n- The doses are not in a clear order. Week 1 may be a mistake. Please ask your doctor to check.\n\nYou can start these home medicines again. The letter gives no dose or timing:\n- Prandin\n- Actos\n- Lipitor\n- Glucophage\n- Benicar\n- Advair\n\n## Questions to ask your doctor\n- Are my prednisone doses right? Week 1 says 15 mg.\n- How often do I take prednisone each day?\n- What dose and timing do I use for my home medicines?\n- Will I have a follow-up visit?\n\n## When to get urgent help\nThe letter does not list specific warning signs.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 81.9,
+          "reading_ease_target": 70,
+          "grade_level": 3.8,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [
+            {
+              "kind": "added",
+              "severity": "minor",
+              "explanation_says": "The doses are not in a clear order. Week 1 may be a mistake. Please ask your doctor to check. (also the question 'Are my prednisone doses right? Week 1 says 15 mg.')",
+              "letter_says": "We will start him on 15 mg p.o. for seven days. Then week 2 40 mg, week 3 30 mg, then 20 mg, then stop. The letter does not suggest an error.",
+              "why": "The explanation suggests that the week 1 dose may be an error. The letter does not say this. It may make the patient doubt or delay the prescribed taper. The doses do match the letter, so this is added commentary.",
+              "real_difference": true
+            },
+            {
+              "kind": "added",
+              "severity": "minor",
+              "explanation_says": "You had a stomach and bowel infection (acute gastroenteritis).",
+              "letter_says": "Acute gastroenteritis, resolved. The stool test was negative for C. difficile. No cause is given.",
+              "why": "The letter does not say gastroenteritis was an infection. Calling it one is an added cause. The effect on the patient is small.",
+              "real_difference": true
+            }
+          ],
+          "summary": "The explanation matches the letter on the main facts: diagnoses, lab values, the prednisone taper doses, and the home medicines. It adds an unsupported suggestion that the week 1 prednisone dose may be a mistake. It also calls the gastroenteritis an infection, which the letter does not say. I found no dropped warnings and no dose or date errors."
+        },
+        "blocking_problems": [],
+        "attempt": 1
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 3983,
+        "output_tokens": 2374,
+        "cost_usd": 0.0259,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 11290,
+        "output_tokens": 2278,
+        "cost_usd": 0.04266,
+        "turns": 2
+      },
+      {
+        "step": "verify",
+        "input_tokens": 4194,
+        "output_tokens": 1306,
+        "cost_usd": 0.02404,
+        "turns": 2
+      }
+    ],
+    "cost_usd": 0.09261,
+    "latency_s": 45.2
+  },
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "diagnoses",
+        "fact": "Acute gastroenteritis, now resolved",
+        "status": "kept",
+        "note": "Says acute gastroenteritis is resolved."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Bleeding in the gut and long-term inflammation of the mesentery; cause unknown",
+        "status": "kept",
+        "note": "Covers the gut bleed and the long-term inflammation of the mesentery, and says the cause is not known."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Haemoglobin fell from 13.1 to 10.9; still blood in the stool at discharge",
+        "status": "kept",
+        "note": "Gives haemoglobin as 13.1 on arrival and 10.9 at discharge, and says the stool still tested positive for blood when he left."
+      },
+      {
+        "category": "medicines",
+        "fact": "Restart home medicines: Prandin, Actos, Lipitor, Glucophage, Benicar and Advair",
+        "status": "kept",
+        "note": "Names all six home medicines and says he can start them again."
+      },
+      {
+        "category": "medicines",
+        "fact": "Prednisone taper over 4 weeks (GI recommendation)",
+        "status": "kept",
+        "note": "Says to take prednisone for 4 weeks and that the gut doctors (GI) asked for this."
+      },
+      {
+        "category": "medicines",
+        "fact": "Week 1: 15 mg by mouth for seven days (as written in the letter)",
+        "status": "kept",
+        "note": "Week 1 is 15 mg by mouth for 7 days, as written in the letter; the explanation also flags this dose as possibly wrong."
+      },
+      {
+        "category": "medicines",
+        "fact": "Week 2: 40 mg for 1 week",
+        "status": "kept",
+        "note": "Week 2 is 40 mg for 1 week."
+      },
+      {
+        "category": "medicines",
+        "fact": "Week 3: 30 mg for 1 week",
+        "status": "kept",
+        "note": "Week 3 is 30 mg for 1 week."
+      },
+      {
+        "category": "medicines",
+        "fact": "Then 20 mg for 1 week, then stop",
+        "status": "kept",
+        "note": "Gives 20 mg for 1 week (labelled week 4), then stop."
+      },
+      {
+        "category": "negatives",
+        "fact": "Stool test negative for Clostridium difficile",
+        "status": "kept",
+        "note": "Says the stool test was negative for Clostridium difficile."
+      },
+      {
+        "category": "negatives",
+        "fact": "Amylase, lipase, LDH, CRP and liver tests normal",
+        "status": "kept",
+        "note": "Says amylase, lipase, LDH, CRP and liver tests were normal."
+      },
+      {
+        "category": "negatives",
+        "fact": "Heart test (troponin) negative and ECG normal rhythm",
+        "status": "kept",
+        "note": "Says the troponin test was negative and the ECG showed a normal rhythm."
+      },
+      {
+        "category": "negatives",
+        "fact": "No abdominal pain on the day of discharge",
+        "status": "kept",
+        "note": "Says he had no belly pain on the day he went home."
+      }
+    ],
+    "added": [
+      {
+        "text": "The doses are not in a clear order. Week 1 may be a mistake. Please ask your doctor to check.",
+        "kind": "advice"
+      }
+    ],
+    "gold_reviewer": "claude-draft"
+  }
+}

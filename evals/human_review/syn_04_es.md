@@ -23,26 +23,26 @@ Screening Programme Office
 ## Explanation shown to the patient
 
 ## Qué dice esta carta
-La carta le invita a pedir una cita para una revisión de los ojos por diabetes (diabetic eye screening).
-La carta explica qué esperar y qué llevar.
-Esta revisión no diagnostica otros problemas de los ojos.
-Esta revisión no sustituye su revisión de la vista habitual en la óptica.
+Le invitan a una revisión de los ojos para personas con diabetes (diabetic eye screening).
+Esta prueba se ofrece cada año a todas las personas con diabetes de 12 años o más.
+Mira el fondo de los ojos. Busca daños causados por la diabetes (retinopatía diabética).
+La prueba no diagnostica otros problemas de los ojos. No sustituye su revisión normal de la vista en la óptica.
+Las gotas le dejarán la vista borrosa de 4 a 6 horas.
 
 ## Qué tiene que hacer
-1. Pida su cita llamando al 01632 960 377.
-2. Lleve sus gafas o sus lentes de contacto.
-3. Lleve una lista de sus medicamentos.
-4. Lleve gafas de sol, si las tiene.
-5. No conduzca hasta que su vista vuelva a la normalidad. Las gotas ponen la vista borrosa de 4 a 6 horas.
+1. Pida su cita antes del 15 de enero de 2027. Llame al 01632 960 377.
+2. Lleve gafas de sol, si las tiene.
+3. Lleve sus gafas o lentes de contacto, y una lista de sus medicinas.
+4. No conduzca hasta que su vista vuelva a la normalidad.
 
 ## Fechas y medicamentos
-- Pida su cita antes del 15 de enero de 2027.
+- Fecha límite para pedir la cita: 15 de enero de 2027.
 - La carta no menciona medicamentos.
 
 ## Preguntas para su médico
 - ¿Cuánto dura la cita?
-- ¿Puedo ir acompañado a la cita?
-- ¿Qué pasa si no puedo pedir la cita antes del 15 de enero de 2027?
+- ¿Cuándo sabré el resultado de la prueba?
+- ¿Cuándo podré volver a conducir después de las gotas?
 
 ## Cuándo pedir ayuda urgente
 La carta no menciona señales de alarma concretas.
@@ -56,26 +56,26 @@ Si le preocupa algo y no es una emergencia, llame al NHS 111. En caso de emergen
 ## Back-translation to English (by Claude, used by the judge)
 
 ## What this letter says
-The letter invites you to book an appointment for an eye check for diabetes (diabetic eye screening).
-The letter explains what to expect and what to bring.
-This check does not diagnose other eye problems.
-This check does not replace your usual eye test at the optician.
+You are invited to an eye check for people with diabetes (diabetic eye screening).
+This test is offered every year to all people with diabetes aged 12 or over.
+It looks at the back of the eyes. It looks for damage caused by diabetes (diabetic retinopathy).
+The test does not diagnose other eye problems. It does not replace your normal eye test at the optician.
+The drops will leave your vision blurry for 4 to 6 hours.
 
 ## What you need to do
-1. Book your appointment by calling 01632 960 377.
-2. Bring your glasses or your contact lenses.
-3. Bring a list of your medicines.
-4. Bring sunglasses, if you have them.
-5. Do not drive until your eyesight returns to normal. The drops make your eyesight blurry for 4 to 6 hours.
+1. Book your appointment before 15 January 2027. Call 01632 960 377.
+2. Bring sunglasses, if you have them.
+3. Bring your glasses or contact lenses, and a list of your medicines.
+4. Do not drive until your vision returns to normal.
 
 ## Dates and medicines
-- Book your appointment before 15 January 2027.
+- Deadline to book the appointment: 15 January 2027.
 - The letter does not mention medicines.
 
 ## Questions for your doctor
 - How long does the appointment last?
-- Can I bring someone with me to the appointment?
-- What happens if I cannot book the appointment before 15 January 2027?
+- When will I know the result of the test?
+- When will I be able to drive again after the drops?
 
 ## When to get urgent help
 The letter does not mention specific warning signs.

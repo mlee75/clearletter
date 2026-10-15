@@ -1,0 +1,181 @@
+{
+  "job": {
+    "id": "models__syn_13__haiku__en__v",
+    "part": "models",
+    "letter_id": "syn_13",
+    "file": "data/synthetic/syn_13.txt",
+    "kind": "faithfulness",
+    "model": "haiku",
+    "language": "en",
+    "verifier": true,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "haiku",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": true,
+    "status": "ok",
+    "final_text": "## What this letter says\n\nYour blood test on 29 September 2026 showed a result of 52 mmol/mol for your HbA1c (a blood test showing average blood sugar over the last 2 to 3 months). This result is higher than normal. You might have type 2 diabetes. But we cannot be sure yet. You do not have any symptoms right now. So the doctor needs a second test to check if you have diabetes.\n\nA diagnosis has not been made yet.\n\n## What you need to do\n\n1. Book a repeat blood test with the practice nurse within the next 2 weeks.\n2. You do not need to fast for this test.\n3. Book an appointment with Dr Thompson after the second test to discuss the result.\n4. Do not start any new medicine for diabetes before you have spoken to the doctor.\n\n## Dates and medicines\n\nBlood test done: 29 September 2026\nHbA1c result: 52 mmol/mol\n\nNo medicines are mentioned in this letter.\n\n## Questions to ask your doctor\n\n1. What does my HbA1c result mean?\n2. What is type 2 diabetes?\n3. What will happen at my appointment with Dr Thompson?\n\n## When to get urgent help\n\nThe letter does not list specific warning signs.\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "patient",
+      "purpose": "To inform the patient of their HbA1c result (52 mmol/mol) and the need for a second test to confirm or rule out type 2 diabetes",
+      "findings": [
+        {
+          "statement": "HbA1c is 52 mmol/mol from 29 September 2026",
+          "certainty": "stated",
+          "quote": "Your HbA1c result from 29/09/2026 is 52 mmol/mol"
+        },
+        {
+          "statement": "Possible type 2 diabetes (needs confirmation with second test)",
+          "certainty": "possible",
+          "quote": "Because you do not have symptoms, we need a second test to confirm whether you have diabetes"
+        },
+        {
+          "statement": "No diagnosis of type 2 diabetes has been made yet",
+          "certainty": "stated",
+          "quote": "We have not made a diagnosis yet"
+        }
+      ],
+      "medicines": [],
+      "dates": [
+        {
+          "what": "HbA1c blood test",
+          "when": "29 September 2026",
+          "quote": "Your HbA1c result from 29/09/2026"
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Book a repeat blood test with the practice nurse within the next 2 weeks",
+          "quote": "Please book a repeat blood test with the practice nurse within the next 2 weeks"
+        },
+        {
+          "instruction": "Book an appointment with Dr Thompson after the second test to discuss the result",
+          "quote": "Please also book an appointment with Dr Thompson after the second test to discuss the result"
+        }
+      ],
+      "negatives": [
+        {
+          "instruction": "You do not need to fast for this test",
+          "quote": "You do not need to fast for this test"
+        },
+        {
+          "instruction": "Do not start any new medicine for diabetes before you have spoken to the doctor",
+          "quote": "Do not start any new medicine for diabetes before you have spoken to the doctor"
+        }
+      ],
+      "warning_signs": [],
+      "unclear": []
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\n\nYour blood test on 29 September 2026 showed a result of 52 mmol/mol for your HbA1c (a blood test showing average blood sugar over the last 2 to 3 months). This result is higher than normal. You might have type 2 diabetes. But we cannot be sure yet. You do not have any symptoms right now. So the doctor needs a second test to check if you have diabetes.\n\nA diagnosis has not been made yet.\n\n## What you need to do\n\n1. Book a repeat blood test with the practice nurse within the next 2 weeks.\n2. You do not need to fast for this test.\n3. Book an appointment with Dr Thompson after the second test to discuss the result.\n4. Do not start any new medicine for diabetes before you have spoken to the doctor.\n\n## Dates and medicines\n\nBlood test done: 29 September 2026\nHbA1c result: 52 mmol/mol\n\nNo medicines are mentioned in this letter.\n\n## Questions to ask your doctor\n\n1. What does my HbA1c result mean?\n2. What is type 2 diabetes?\n3. What will happen at my appointment with Dr Thompson?\n\n## When to get urgent help\n\nThe letter does not list specific warning signs.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 81.1,
+          "reading_ease_target": 70,
+          "grade_level": 4.7,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [],
+          "summary": "The explanation accurately conveys all information from the letter. All action items are present and correct, dates match, no new medical facts or worries are introduced, and the questions section appropriately seeks clarification about what is already mentioned. No problems detected."
+        },
+        "blocking_problems": [],
+        "attempt": 1
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 2863,
+        "output_tokens": 6612,
+        "cost_usd": 0.03592,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 15290,
+        "output_tokens": 3893,
+        "cost_usd": 0.03623,
+        "turns": 4
+      },
+      {
+        "step": "verify",
+        "input_tokens": 2728,
+        "output_tokens": 2028,
+        "cost_usd": 0.01287,
+        "turns": 2
+      }
+    ],
+    "cost_usd": 0.08502,
+    "latency_s": 105.6
+  },
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "diagnoses",
+        "fact": "HbA1c 52 mmol/mol, which is in the range for type 2 diabetes (48 or above)",
+        "status": "changed",
+        "note": "The result of 52 mmol/mol is kept. But the 48 mmol/mol threshold is missing, and 'in the range for type 2 diabetes' has become the vaguer 'higher than normal… you might have type 2 diabetes'."
+      },
+      {
+        "category": "dates",
+        "fact": "HbA1c test on 29 September 2026",
+        "status": "kept",
+        "note": "Says the blood test was on 29 September 2026."
+      },
+      {
+        "category": "dates",
+        "fact": "Repeat blood test with the practice nurse within the next 2 weeks",
+        "status": "kept",
+        "note": "Says to book a repeat test with the practice nurse within the next 2 weeks."
+      },
+      {
+        "category": "actions",
+        "fact": "Book the repeat blood test",
+        "status": "kept",
+        "note": "Action 1 tells the patient to book the repeat blood test."
+      },
+      {
+        "category": "actions",
+        "fact": "Book an appointment with Dr Thompson after the second test",
+        "status": "kept",
+        "note": "Action 3 tells the patient to book with Dr Thompson after the second test."
+      },
+      {
+        "category": "negatives",
+        "fact": "Diabetes has NOT been diagnosed yet; a second test is needed to confirm",
+        "status": "kept",
+        "note": "Says 'A diagnosis has not been made yet' and that a second test is needed to check."
+      },
+      {
+        "category": "negatives",
+        "fact": "You do not need to fast for the repeat test",
+        "status": "kept",
+        "note": "Says 'You do not need to fast for this test.'"
+      },
+      {
+        "category": "negatives",
+        "fact": "Do not start any new diabetes medicine before speaking to the doctor",
+        "status": "kept",
+        "note": "Says not to start any new diabetes medicine before speaking to the doctor."
+      }
+    ],
+    "added": [
+      {
+        "text": "This result is higher than normal.",
+        "kind": "medical_fact"
+      }
+    ],
+    "gold_reviewer": "claude-draft"
+  }
+}

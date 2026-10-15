@@ -1,0 +1,210 @@
+{
+  "job": {
+    "id": "mtsamples__mts_3069__sonnet__en__nv",
+    "part": "mtsamples",
+    "letter_id": "mts_3069",
+    "file": "data/mtsamples/mts_3069.txt",
+    "kind": "faithfulness",
+    "model": "sonnet",
+    "language": "en",
+    "verifier": false,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "sonnet",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": false,
+    "status": "not_verified",
+    "final_text": "## What this letter says\nAn eye specialist wrote this letter to your eye doctor (optometrist). You were sent for a check of cataracts in both eyes.\n\n- Your vision is 20/40 in the right eye. It is 20/50 in the left eye.\n- Your eye pressure is 12 mmHg in both eyes.\n- Your eye muscles were intact. Your side vision was full in both eyes.\n- There is no relative afferent pupillary defect.\n- You have a dense 3 to 4+ nuclear sclerotic cataract in each eye.\n- The front of your eye (cornea) shows 1+ guttata in both eyes.\n- The cup-to-disc ratio is 0.1 in both eyes.\n- The vitreous, macula, vessels and edge of the eye (periphery) all look normal.\n\nYour drop in vision seems to be caused by cataracts in both eyes.\n\nThe mild guttata in both eyes may mean early Fuchs dystrophy. This is only possible.\n\nThe specialist says you should do well with cataract surgery.\n\n## What you need to do\n1. The specialist recommended cataract surgery. You agreed to have the first eye done.\n2. The letter does not list any other tasks for you.\n\n## Dates and medicines\n- Surgery on the first eye: expected \"shortly\". No exact date is given.\n- The specialist will keep your eye doctor updated as surgery is done on each eye.\n- Medicines: the letter lists none.\n\n## Questions to ask your doctor\n- When will my first eye surgery be?\n- What does \"guttata\" mean for me?\n- What does \"possible early Fuchs dystrophy\" mean for me?\n\n## When to get urgent help\nThe letter does not list specific warning signs.\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "doctor_copy_to_patient",
+      "purpose": "Letter from an eye specialist to the referring optometrist reporting the results of an eye examination for cataracts and recommending cataract surgery.",
+      "findings": [
+        {
+          "statement": "The patient was referred for evaluation of cataracts in both eyes.",
+          "certainty": "stated",
+          "quote": "The patient was referred for evaluation of cataracts bilaterally."
+        },
+        {
+          "statement": "Vision is 20/40 in the right eye and 20/50 in the left eye.",
+          "certainty": "stated",
+          "quote": "the patient was seeing 20/40 in her right eye and 20/50 in the left eye"
+        },
+        {
+          "statement": "Eye pressures (applanation) are 12 mmHg in both eyes.",
+          "certainty": "stated",
+          "quote": "applanations are 12 mmHg bilaterally"
+        },
+        {
+          "statement": "Eye muscles were intact and visual fields were full to confrontation in both eyes.",
+          "certainty": "stated",
+          "quote": "Extraocular muscles were intact, visual fields were full to confrontation OU"
+        },
+        {
+          "statement": "There is no relative afferent pupillary defect.",
+          "certainty": "ruled_out",
+          "quote": "There is no relative afferent pupillary defect."
+        },
+        {
+          "statement": "There is a dense 3 to 4+ nuclear sclerotic cataract in each eye.",
+          "certainty": "stated",
+          "quote": "There is a dense 3 to 4+ nuclear sclerotic cataract in each eye."
+        },
+        {
+          "statement": "The cornea shows 1+ guttata in both eyes.",
+          "certainty": "stated",
+          "quote": "The cornea shows 1+ guttata bilaterally."
+        },
+        {
+          "statement": "Cup-to-disc ratio is 0.1 in both eyes. The vitreous, macula, vessels and periphery all appear within normal limits.",
+          "certainty": "stated",
+          "quote": "cup-to-disc ratio is 0.1 OU.  The vitreous, macula, vessels, and periphery all appear within normal limits."
+        },
+        {
+          "statement": "The visual decline appears to be caused by cataracts in both eyes.",
+          "certainty": "stated",
+          "quote": "It appears that Ms. ABC' visual decline is caused by bilateral cataracts."
+        },
+        {
+          "statement": "Mild guttata in both eyes may indicate early Fuchs dystrophy.",
+          "certainty": "possible",
+          "quote": "The patient also showed some mild guttata OU indicating possible early Fuchs dystrophy."
+        },
+        {
+          "statement": "The patient should do well with cataract surgery.",
+          "certainty": "stated",
+          "quote": "The patient should do well with cataract surgery"
+        }
+      ],
+      "medicines": [],
+      "dates": [
+        {
+          "what": "Surgery on the first eye is expected, with no exact date given.",
+          "when": "shortly (no date given)",
+          "quote": "she agreed to proceed with the first eye here shortly"
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "The eye specialist has recommended cataract surgery and the patient agreed to proceed with the first eye.",
+          "quote": "I have recommended this and she agreed to proceed with the first eye here shortly."
+        },
+        {
+          "instruction": "The eye specialist will keep the referring doctor updated on her progress and any new findings as surgery is done in each eye.",
+          "quote": "I will keep you up to date of her progress and any new findings as we perform her surgery in each eye."
+        }
+      ],
+      "negatives": [
+        {
+          "instruction": "No relative afferent pupillary defect was found.",
+          "quote": "There is no relative afferent pupillary defect."
+        }
+      ],
+      "warning_signs": [],
+      "unclear": [
+        "The letter says she \"would benefit from having removed\" with a word missing (presumably the cataracts, but the letter does not say).",
+        "The date of birth is a placeholder (MM/DD/YYYY).",
+        "The patient's name and the doctors' names are placeholders (ABC, XYZ).",
+        "Abbreviations OU, AC and conj are not in the glossary. They appear to mean both eyes, anterior chamber and conjunctiva, but the letter does not define them."
+      ]
+    },
+    "removed_ungrounded": [
+      {
+        "list": "findings",
+        "item": {
+          "statement": "Lids and lashes are within normal limits; the conjunctiva is quiet; the anterior chamber is deep and quiet; irises are within normal limits in both eyes.",
+          "certainty": "stated",
+          "quote": "lids and lashes were within normal limits.  The conj is quiet.  The AC is deep and quiet and irises are within normal limits bilaterally."
+        }
+      }
+    ],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\nAn eye specialist wrote this letter to your eye doctor (optometrist). You were sent for a check of cataracts in both eyes.\n\n- Your vision is 20/40 in the right eye. It is 20/50 in the left eye.\n- Your eye pressure is 12 mmHg in both eyes.\n- Your eye muscles were intact. Your side vision was full in both eyes.\n- There is no relative afferent pupillary defect.\n- You have a dense 3 to 4+ nuclear sclerotic cataract in each eye.\n- The front of your eye (cornea) shows 1+ guttata in both eyes.\n- The cup-to-disc ratio is 0.1 in both eyes.\n- The vitreous, macula, vessels and edge of the eye (periphery) all look normal.\n\nYour drop in vision seems to be caused by cataracts in both eyes.\n\nThe mild guttata in both eyes may mean early Fuchs dystrophy. This is only possible.\n\nThe specialist says you should do well with cataract surgery.\n\n## What you need to do\n1. The specialist recommended cataract surgery. You agreed to have the first eye done.\n2. The letter does not list any other tasks for you.\n\n## Dates and medicines\n- Surgery on the first eye: expected \"shortly\". No exact date is given.\n- The specialist will keep your eye doctor updated as surgery is done on each eye.\n- Medicines: the letter lists none.\n\n## Questions to ask your doctor\n- When will my first eye surgery be?\n- What does \"guttata\" mean for me?\n- What does \"possible early Fuchs dystrophy\" mean for me?\n\n## When to get urgent help\nThe letter does not list specific warning signs.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 78.9,
+          "reading_ease_target": 70,
+          "grade_level": 4.5,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": null,
+        "blocking_problems": [],
+        "attempt": 1
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 3239,
+        "output_tokens": 1599,
+        "cost_usd": 0.01803,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 14088,
+        "output_tokens": 1763,
+        "cost_usd": 0.03766,
+        "turns": 7
+      }
+    ],
+    "cost_usd": 0.0557,
+    "latency_s": 25.1
+  },
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "diagnoses",
+        "fact": "Dense cataracts in both eyes, causing the drop in vision",
+        "status": "kept",
+        "note": "Dense 3 to 4+ cataract in each eye; vision drop seems caused by cataracts in both eyes."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Vision 20/40 right eye, 20/50 left eye",
+        "status": "kept",
+        "note": "20/40 right eye, 20/50 left eye."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Possible early Fuchs dystrophy (mild guttata)",
+        "status": "kept",
+        "note": "Mild guttata may mean early Fuchs dystrophy; says it is only possible."
+      },
+      {
+        "category": "actions",
+        "fact": "Cataract surgery recommended and she agreed",
+        "status": "kept",
+        "note": "Specialist recommended cataract surgery and she agreed."
+      },
+      {
+        "category": "actions",
+        "fact": "First eye to be operated soon, then the other eye",
+        "status": "kept",
+        "note": "First eye expected 'shortly'; updates will be given as surgery is done on each eye."
+      },
+      {
+        "category": "negatives",
+        "fact": "No relative afferent pupillary defect",
+        "status": "kept",
+        "note": "States there is no relative afferent pupillary defect."
+      },
+      {
+        "category": "negatives",
+        "fact": "Back of the eye (vitreous, macula, vessels, periphery) normal",
+        "status": "kept",
+        "note": "Vitreous, macula, vessels and periphery all look normal."
+      }
+    ],
+    "added": [],
+    "gold_reviewer": "claude-draft"
+  }
+}

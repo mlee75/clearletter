@@ -1,0 +1,206 @@
+{
+  "job": {
+    "id": "languages__syn_04__sonnet__fr__v",
+    "part": "languages",
+    "letter_id": "syn_04",
+    "file": "data/synthetic/syn_04.txt",
+    "kind": "faithfulness",
+    "model": "sonnet",
+    "language": "fr",
+    "verifier": true,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "sonnet",
+    "backend": "claude-code",
+    "language": "fr",
+    "country": "uk",
+    "use_verifier": true,
+    "status": "ok",
+    "final_text": "## Ce que dit cette lettre\nCette lettre vous invite à un examen des yeux pour les personnes diabétiques (dépistage oculaire du diabète).\nElle vous demande de prendre rendez-vous.\nC'est un examen de dépistage. Il ne sert pas à trouver d'autres problèmes des yeux.\nIl ne remplace pas votre examen des yeux habituel chez l'opticien.\n\n## Ce que vous devez faire\n1. Prenez rendez-vous en appelant le 01632 960 377.\n2. Apportez des lunettes de soleil, si vous en avez.\n3. Apportez vos lunettes ou vos lentilles de contact. Apportez aussi la liste de vos médicaments.\n4. Ne conduisez pas tant que votre vue n'est pas redevenue normale. Les gouttes rendent la vue floue pendant 4 à 6 heures.\n\n## Dates et médicaments\n- Date limite pour prendre rendez-vous : le 15 janvier 2027.\n- Médicaments : la lettre n'en donne aucun.\n\n## Questions à poser à votre médecin\n- Que se passe-t-il pendant l'examen ?\n- Combien de temps dure le rendez-vous ?\n- Quand vais-je avoir les résultats ?\n\n## Quand obtenir de l'aide en urgence\nLa lettre ne donne pas de signes d'alerte particuliers.\n\nSi vous êtes inquiet et que ce n'est pas une urgence, appelez le NHS 111. En cas d'urgence, appelez le 999.\n\n---\n*Cette explication a été faite par un programme informatique pour vous aider à lire votre lettre. Elle peut contenir des erreurs. Elle ne remplace pas votre médecin, votre infirmier ou votre pharmacien. Suivez toujours la lettre et posez-leur vos questions si quelque chose n'est pas clair.*\n",
+    "facts": {
+      "reader": "patient",
+      "purpose": "Invitation to diabetic eye screening, asking the patient to book an appointment.",
+      "findings": [],
+      "medicines": [],
+      "dates": [
+        {
+          "what": "Deadline to book your diabetic eye screening appointment",
+          "when": "15 January 2027",
+          "quote": "Please book your appointment by 15 January 2027 by calling 01632 960 377."
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Book your appointment by calling 01632 960 377.",
+          "quote": "Please book your appointment by 15 January 2027 by calling 01632 960 377."
+        },
+        {
+          "instruction": "Bring sunglasses if you have them.",
+          "quote": "Bring sunglasses if you have them."
+        },
+        {
+          "instruction": "Bring your glasses or contact lenses and a list of your medicines.",
+          "quote": "Bring your glasses or contact lenses and a list of your medicines."
+        }
+      ],
+      "negatives": [
+        {
+          "instruction": "This is a screening test. It does not diagnose other eye problems.",
+          "quote": "It does not diagnose other eye problems"
+        },
+        {
+          "instruction": "The screening does not replace your regular eye test at an optician.",
+          "quote": "it does not replace your regular eye test at an optician"
+        },
+        {
+          "instruction": "You must not drive until your vision is back to normal (drops blur vision for 4 to 6 hours).",
+          "quote": "You must not drive until your vision is back to normal."
+        }
+      ],
+      "warning_signs": [],
+      "unclear": []
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## Ce que dit cette lettre\nCette lettre vous invite à un examen des yeux pour les personnes diabétiques (dépistage oculaire du diabète).\nElle vous demande de prendre rendez-vous.\nC'est un examen de dépistage. Il ne sert pas à trouver d'autres problèmes des yeux.\nIl ne remplace pas votre examen des yeux habituel chez l'opticien.\n\n## Ce que vous devez faire\n1. Prenez rendez-vous en appelant le 01632 960 377.\n2. Apportez des lunettes de soleil, si vous en avez.\n3. Apportez vos lunettes ou vos lentilles de contact. Apportez aussi la liste de vos médicaments.\n4. Ne conduisez pas tant que votre vue n'est pas redevenue normale. Les gouttes rendent la vue floue pendant 4 à 6 heures.\n\n## Dates et médicaments\n- Date limite pour prendre rendez-vous : le 15 janvier 2027.\n- Médicaments : la lettre n'en donne aucun.\n\n## Questions à poser à votre médecin\n- Que se passe-t-il pendant l'examen ?\n- Combien de temps dure le rendez-vous ?\n- Quand vais-je avoir les résultats ?\n\n## Quand obtenir de l'aide en urgence\nLa lettre ne donne pas de signes d'alerte particuliers.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "fr",
+          "reading_ease": 89.5,
+          "reading_ease_target": 70,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [
+            {
+              "kind": "changed",
+              "severity": "minor",
+              "explanation_says": "C'est un examen de dépistage. Il ne sert pas à trouver d'autres problèmes des yeux.",
+              "letter_says": "It is a screening test. It does not diagnose other eye problems.",
+              "why": "Letter says it does not diagnose other eye problems; 'ne sert pas à trouver' is close but slightly broader/different (screening vs diagnose). Essentially the same meaning.",
+              "real_difference": false
+            },
+            {
+              "kind": "dropped",
+              "severity": "minor",
+              "explanation_says": "Cette lettre vous invite à un examen des yeux pour les personnes diabétiques (dépistage oculaire du diabète).",
+              "letter_says": "It checks the back of the eyes for damage caused by diabetes (diabetic retinopathy). Offered every year to everyone with diabetes aged 12 and over.",
+              "why": "The explanation omits that the test looks for diabetes damage at the back of the eyes (retinopathy) and that it is offered yearly. Also 'dépistage oculaire du diabète' could suggest screening for diabetes itself rather than eye damage from diabetes.",
+              "real_difference": true
+            },
+            {
+              "kind": "dropped",
+              "severity": "minor",
+              "explanation_says": "Elle vous demande de prendre rendez-vous.",
+              "letter_says": "We will put drops in your eyes.",
+              "why": "The explanation mentions the drops only in passing within the driving instruction and never says drops will be put in the eyes at the appointment.",
+              "real_difference": true
+            },
+            {
+              "kind": "advice",
+              "severity": "minor",
+              "explanation_says": "Questions à poser à votre médecin",
+              "letter_says": "Letter is from the Screening Programme Office; no doctor mentioned.",
+              "why": "Questions section is expected; not added advice.",
+              "real_difference": false
+            }
+          ],
+          "summary": "The explanation is largely faithful. The date (15 January 2027), phone number, the 4 to 6 hours of blurred vision, the driving ban, and the items to bring all match the letter. The minor differences are that it doesn't clearly say the test looks for eye damage from diabetes (retinopathy) and that it doesn't say drops will be put in the eyes at the appointment. 'Dépistage oculaire du diabète' could also be read as screening for diabetes itself."
+        },
+        "blocking_problems": [],
+        "attempt": 1
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 3145,
+        "output_tokens": 640,
+        "cost_usd": 0.00839,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 6857,
+        "output_tokens": 1213,
+        "cost_usd": 0.02186,
+        "turns": 2
+      },
+      {
+        "step": "verify",
+        "input_tokens": 3120,
+        "output_tokens": 813,
+        "cost_usd": 0.01482,
+        "turns": 2
+      }
+    ],
+    "cost_usd": 0.04508,
+    "latency_s": 25.5
+  },
+  "back_translation": "## What this letter says\nThis letter invites you to an eye examination for people with diabetes (diabetic eye screening).\nIt asks you to make an appointment.\nIt is a screening examination. It is not used to find other eye problems.\nIt does not replace your usual eye examination at the optician.\n\n## What you must do\n1. Make an appointment by calling 01632 960 377.\n2. Bring sunglasses, if you have any.\n3. Bring your glasses or your contact lenses. Also bring the list of your medicines.\n4. Do not drive until your vision has become normal again. The drops make vision blurry for 4 to 6 hours.\n\n## Dates and medicines\n- Deadline to make an appointment: 15 January 2027.\n- Medicines: the letter does not give any.\n\n## Questions to ask your doctor\n- What happens during the examination?\n- How long does the appointment last?\n- When will I get the results?\n\n## When to get help urgently\nThe letter does not give any particular warning signs.",
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "diagnoses",
+        "fact": "Invited to diabetic eye screening, which checks the back of the eyes for damage from diabetes (diabetic retinopathy)",
+        "status": "dropped",
+        "note": "The invitation to diabetic eye screening is kept, but the explanation never says the test checks the back of the eyes for damage from diabetes (diabetic retinopathy). That is the main point of this fact, so it counts as dropped."
+      },
+      {
+        "category": "dates",
+        "fact": "Book the appointment by 15 January 2027",
+        "status": "kept",
+        "note": "'Deadline to make an appointment: 15 January 2027.'"
+      },
+      {
+        "category": "dates",
+        "fact": "The eye drops blur vision for 4 to 6 hours",
+        "status": "kept",
+        "note": "'The drops make vision blurry for 4 to 6 hours.'"
+      },
+      {
+        "category": "actions",
+        "fact": "Call 01632 960 377 to book",
+        "status": "kept",
+        "note": "'Make an appointment by calling 01632 960 377.'"
+      },
+      {
+        "category": "actions",
+        "fact": "Do not drive until your vision is back to normal",
+        "status": "kept",
+        "note": "'Do not drive until your vision has become normal again.'"
+      },
+      {
+        "category": "actions",
+        "fact": "Bring sunglasses if you have them",
+        "status": "kept",
+        "note": "'Bring sunglasses, if you have any.'"
+      },
+      {
+        "category": "actions",
+        "fact": "Bring your glasses or contact lenses and a list of your medicines",
+        "status": "kept",
+        "note": "Says to bring glasses or contact lenses and the list of medicines."
+      },
+      {
+        "category": "negatives",
+        "fact": "This screening does not diagnose other eye problems",
+        "status": "kept",
+        "note": "'It is not used to find other eye problems.' This keeps the 'not'."
+      },
+      {
+        "category": "negatives",
+        "fact": "It does not replace the regular eye test at an optician",
+        "status": "kept",
+        "note": "'It does not replace your usual eye examination at the optician.'"
+      }
+    ],
+    "added": [],
+    "gold_reviewer": "claude-draft"
+  }
+}

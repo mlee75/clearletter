@@ -1,0 +1,176 @@
+{
+  "job": {
+    "id": "models__syn_04__sonnet__en__nv",
+    "part": "models",
+    "letter_id": "syn_04",
+    "file": "data/synthetic/syn_04.txt",
+    "kind": "faithfulness",
+    "model": "sonnet",
+    "language": "en",
+    "verifier": false,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "sonnet",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": false,
+    "status": "not_verified",
+    "final_text": "## What this letter says\nYou are invited to an eye screening test for people with diabetes.\nThe test checks the back of your eyes for damage caused by diabetes (diabetic retinopathy).\nIt does not diagnose other eye problems.\nDrops will make your vision blurred for 4 to 6 hours.\n\n## What you need to do\n1. Book your appointment by 15 January 2027. Call 01632 960 377.\n2. Bring your glasses or contact lenses.\n3. Bring a list of your medicines.\n4. Bring sunglasses if you have them.\n5. Do not drive until your vision is back to normal.\n6. The screening does not replace your regular eye test at an optician.\n\n## Dates and medicines\n- Book your appointment by 15 January 2027.\n- The letter lists no medicines.\n\n## Questions to ask your doctor\n- What does diabetic retinopathy mean?\n- How long will the appointment take?\n- Who will tell me the results?\n\n## When to get urgent help\nThe letter does not list specific warning signs.\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "patient",
+      "purpose": "Invitation to diabetic eye screening; the patient needs to book an appointment by 15 January 2027.",
+      "findings": [
+        {
+          "statement": "This is a screening test for damage to the back of the eyes caused by diabetes (diabetic retinopathy).",
+          "certainty": "stated",
+          "quote": "It checks the back of the eyes for damage caused by diabetes (diabetic retinopathy)."
+        },
+        {
+          "statement": "The screening test does not diagnose other eye problems.",
+          "certainty": "stated",
+          "quote": "It does not diagnose other eye problems"
+        },
+        {
+          "statement": "Drops will make vision blurred for 4 to 6 hours.",
+          "certainty": "stated",
+          "quote": "The drops will make your vision blurred for 4 to 6 hours."
+        }
+      ],
+      "medicines": [],
+      "dates": [
+        {
+          "what": "Deadline to book the screening appointment",
+          "when": "15 January 2027",
+          "quote": "Please book your appointment by 15 January 2027 by calling 01632 960 377."
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Book your appointment by 15 January 2027 by calling 01632 960 377.",
+          "quote": "Please book your appointment by 15 January 2027 by calling 01632 960 377."
+        },
+        {
+          "instruction": "Bring sunglasses if you have them.",
+          "quote": "Bring sunglasses if you have them."
+        },
+        {
+          "instruction": "Bring your glasses or contact lenses and a list of your medicines.",
+          "quote": "Bring your glasses or contact lenses and a list of your medicines."
+        }
+      ],
+      "negatives": [
+        {
+          "instruction": "Do not drive until your vision is back to normal.",
+          "quote": "You must not drive until your vision is back to normal."
+        },
+        {
+          "instruction": "The screening does not replace your regular eye test at an optician.",
+          "quote": "it does not replace your regular eye test at an optician."
+        }
+      ],
+      "warning_signs": [],
+      "unclear": []
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\nYou are invited to an eye screening test for people with diabetes.\nThe test checks the back of your eyes for damage caused by diabetes (diabetic retinopathy).\nIt does not diagnose other eye problems.\nDrops will make your vision blurred for 4 to 6 hours.\n\n## What you need to do\n1. Book your appointment by 15 January 2027. Call 01632 960 377.\n2. Bring your glasses or contact lenses.\n3. Bring a list of your medicines.\n4. Bring sunglasses if you have them.\n5. Do not drive until your vision is back to normal.\n6. The screening does not replace your regular eye test at an optician.\n\n## Dates and medicines\n- Book your appointment by 15 January 2027.\n- The letter lists no medicines.\n\n## Questions to ask your doctor\n- What does diabetic retinopathy mean?\n- How long will the appointment take?\n- Who will tell me the results?\n\n## When to get urgent help\nThe letter does not list specific warning signs.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 76.9,
+          "reading_ease_target": 70,
+          "grade_level": 4.8,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": null,
+        "blocking_problems": [],
+        "attempt": 1
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 3195,
+        "output_tokens": 787,
+        "cost_usd": 0.02497,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 7158,
+        "output_tokens": 800,
+        "cost_usd": 0.0349,
+        "turns": 3
+      }
+    ],
+    "cost_usd": 0.05987,
+    "latency_s": 15.0
+  },
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "diagnoses",
+        "fact": "Invited to diabetic eye screening, which checks the back of the eyes for damage from diabetes (diabetic retinopathy)",
+        "status": "kept",
+        "note": "Invited to eye screening that checks the back of the eyes for damage caused by diabetes (diabetic retinopathy)."
+      },
+      {
+        "category": "dates",
+        "fact": "Book the appointment by 15 January 2027",
+        "status": "kept",
+        "note": "Book your appointment by 15 January 2027."
+      },
+      {
+        "category": "dates",
+        "fact": "The eye drops blur vision for 4 to 6 hours",
+        "status": "kept",
+        "note": "Drops will make your vision blurred for 4 to 6 hours."
+      },
+      {
+        "category": "actions",
+        "fact": "Call 01632 960 377 to book",
+        "status": "kept",
+        "note": "Call 01632 960 377."
+      },
+      {
+        "category": "actions",
+        "fact": "Do not drive until your vision is back to normal",
+        "status": "kept",
+        "note": "Do not drive until your vision is back to normal."
+      },
+      {
+        "category": "actions",
+        "fact": "Bring sunglasses if you have them",
+        "status": "kept",
+        "note": "Bring sunglasses if you have them."
+      },
+      {
+        "category": "actions",
+        "fact": "Bring your glasses or contact lenses and a list of your medicines",
+        "status": "kept",
+        "note": "Glasses or contact lenses and a list of medicines are listed as separate items."
+      },
+      {
+        "category": "negatives",
+        "fact": "This screening does not diagnose other eye problems",
+        "status": "kept",
+        "note": "It does not diagnose other eye problems."
+      },
+      {
+        "category": "negatives",
+        "fact": "It does not replace the regular eye test at an optician",
+        "status": "kept",
+        "note": "Does not replace your regular eye test at an optician. It sits under the action list, but the meaning is the same."
+      }
+    ],
+    "added": [],
+    "gold_reviewer": "claude-draft"
+  }
+}

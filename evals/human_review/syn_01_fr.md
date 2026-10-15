@@ -27,25 +27,24 @@ Cardiology Booking Team
 ## Explanation shown to the patient
 
 ## Ce que dit cette lettre
-Vous avez un rendez-vous pour un échocardiogramme (echocardiogram). La lettre ne donne pas d'autres détails sur cet examen.
+Vous avez un rendez-vous pour une échographie du cœur (échocardiogramme). Le test dure environ 45 minutes. Il a lieu à l'unité d'investigations cardiaques, au niveau 2.
 
 ## Ce que vous devez faire
-1. Apportez une liste de tous les médicaments que vous prenez.
+1. Apportez la liste de tous les médicaments que vous prenez.
 2. Arrivez 15 minutes avant l'heure du rendez-vous.
-3. Si vous ne pouvez pas venir, appelez le 01632 960 123. Appelez au moins 48 heures avant le rendez-vous. Votre place sera donnée à un autre patient.
-4. Vous n'avez pas besoin d'être à jeun (fast) avant l'examen.
-5. Vous n'avez pas besoin d'arrêter vos médicaments. N'arrêtez aucun de vos médicaments.
+3. Si vous ne pouvez pas venir, appelez le 01632 960 123 au moins 48 heures avant. Une autre personne pourra alors avoir votre place.
+4. Vous n'avez pas besoin d'être à jeun avant le test.
+5. Vous n'avez pas besoin d'arrêter vos médicaments.
 
 ## Dates et médicaments
-- Date : mardi 17 novembre 2026.
-- Heure : 10:40.
-- Lieu : Cardiac Investigations Unit, niveau 2.
-- Médicaments : la lettre ne change aucun médicament.
+- Rendez-vous : mardi 17 novembre 2026 à 10:40.
+- Lieu : unité d'investigations cardiaques, niveau 2.
+- La lettre ne donne aucun médicament.
 
 ## Questions à poser à votre médecin
-- Qu'est-ce qu'un échocardiogramme ?
-- Que veut dire « être à jeun » ?
-- Combien de temps dure l'examen ?
+- Que va-t-on regarder pendant cette échographie du cœur ?
+- Quand aurai-je les résultats ?
+- Dois-je apporter autre chose que ma liste de médicaments ?
 
 ## Quand obtenir de l'aide en urgence
 La lettre ne donne pas de signes d'alerte particuliers.
@@ -59,25 +58,24 @@ Si vous êtes inquiet et que ce n'est pas une urgence, appelez le NHS 111. En ca
 ## Back-translation to English (by Claude, used by the judge)
 
 ## What this letter says
-You have an appointment for an echocardiogram (echocardiogram). The letter does not give other details about this test.
+You have an appointment for an ultrasound of the heart (echocardiogram). The test lasts about 45 minutes. It takes place at the cardiac investigations unit, on level 2.
 
-## What you must do
-1. Bring a list of all the medicines you take.
+## What you need to do
+1. Bring the list of all the medicines you take.
 2. Arrive 15 minutes before the time of the appointment.
-3. If you cannot come, call 01632 960 123. Call at least 48 hours before the appointment. Your place will be given to another patient.
-4. You do not need to be fasting (fast) before the test.
-5. You do not need to stop your medicines. Do not stop any of your medicines.
+3. If you cannot come, call 01632 960 123 at least 48 hours before. Another person will then be able to have your place.
+4. You do not need to be fasting before the test.
+5. You do not need to stop your medicines.
 
 ## Dates and medicines
-- Date: Tuesday 17 November 2026.
-- Time: 10:40.
-- Place: Cardiac Investigations Unit, level 2.
-- Medicines: the letter does not change any medicine.
+- Appointment: Tuesday 17 November 2026 at 10:40.
+- Place: cardiac investigations unit, level 2.
+- The letter does not give any medicine.
 
 ## Questions to ask your doctor
-- What is an echocardiogram?
-- What does "being fasting" mean?
-- How long does the test last?
+- What will be looked at during this ultrasound of the heart?
+- When will I get the results?
+- Should I bring anything other than my list of medicines?
 
 ## When to get urgent help
 The letter does not give any particular warning signs.

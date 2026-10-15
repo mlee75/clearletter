@@ -1,0 +1,264 @@
+{
+  "job": {
+    "id": "models__syn_06__sonnet__en__v",
+    "part": "models",
+    "letter_id": "syn_06",
+    "file": "data/synthetic/syn_06.txt",
+    "kind": "faithfulness",
+    "model": "sonnet",
+    "language": "en",
+    "verifier": true,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "sonnet",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": true,
+    "status": "ok",
+    "final_text": "## What this letter says\nYou had acute appendicitis (a sore, inflamed appendix). On 24 September 2026 you had a keyhole operation to remove your appendix (laparoscopic appendicectomy). There were no complications.\n\nYou have 3 small wounds. They are closed with clips.\n\nThe lab test of your appendix (histology) is pending. The result is not known yet. It will be sent to you and your GP. The letter gives no date for this.\n\n## What you need to do\n1. Book the appointment at your GP surgery. The practice nurse will remove the clips on 6 October 2026.\n2. Do not do heavy lifting for 4 weeks.\n3. You do not need to do anything about the histology result unless the result is abnormal.\n\n## Dates and medicines\n**Dates**\n- 24 September 2026: you were admitted.\n- 24 September 2026: you had the operation.\n- 26 September 2026: you went home (discharged).\n- 28 September 2026: you may shower from this date.\n- 6 October 2026: the practice nurse at your GP surgery removes the clips.\n\nThe letter does not say if this clips appointment was booked or done. The date has already passed.\n\n**Medicines**\n- Paracetamol 1 g, up to four times a day (QDS), only when you need it for pain. The most is 4 g in 24 hours.\n- Ibuprofen 400 mg, three times a day (TDS), with food, for 5 days.\n\n## Questions to ask your doctor\n- My clips date has passed. What should I do about it?\n- When will I get my histology result?\n- What does an abnormal histology result mean?\n\n## When to get urgent help\nContact your GP or call 111 if:\n- you have a temperature above 38°C.\n- a wound becomes red, swollen or leaks pus.\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "patient",
+      "purpose": "Discharge letter after keyhole surgery to remove the appendix, with medicines, wound care and follow-up.",
+      "findings": [
+        {
+          "statement": "Diagnosis: acute appendicitis",
+          "certainty": "stated",
+          "quote": "Diagnosis: Acute appendicitis"
+        },
+        {
+          "statement": "Laparoscopic appendicectomy (keyhole operation to remove the appendix) done on 24 September 2026, with no complications",
+          "certainty": "stated",
+          "quote": "Laparoscopic appendicectomy (keyhole operation to remove the appendix) on 24/09/2026. No complications."
+        },
+        {
+          "statement": "3 small wounds closed with clips",
+          "certainty": "stated",
+          "quote": "3 small wounds closed with clips."
+        },
+        {
+          "statement": "Histology (lab examination of the appendix) result is pending",
+          "certainty": "pending",
+          "quote": "Histology (lab examination of the appendix) is pending."
+        }
+      ],
+      "medicines": [
+        {
+          "name": "Paracetamol",
+          "dose": "1 g",
+          "how_often": "QDS (four times a day) only when needed (PRN) for pain; maximum 4 g in 24 hours",
+          "change": "not_stated",
+          "details": "For pain. Maximum 4 g in 24 hours.",
+          "quote": "Paracetamol 1 g QDS PRN for pain (maximum 4 g in 24 hours)"
+        },
+        {
+          "name": "Ibuprofen",
+          "dose": "400 mg",
+          "how_often": "TDS (three times a day) with food for 5 days",
+          "change": "not_stated",
+          "details": "Take with food, for 5 days.",
+          "quote": "Ibuprofen 400 mg TDS with food for 5 days"
+        }
+      ],
+      "dates": [
+        {
+          "what": "Admitted",
+          "when": "24 September 2026",
+          "quote": "Admitted: 24/09/2026"
+        },
+        {
+          "what": "Operation (laparoscopic appendicectomy)",
+          "when": "24 September 2026",
+          "quote": "on 24/09/2026"
+        },
+        {
+          "what": "Discharged",
+          "when": "26 September 2026",
+          "quote": "Discharged: 26/09/2026"
+        },
+        {
+          "what": "You may shower from this date",
+          "when": "28 September 2026",
+          "quote": "You may shower from 28/09/2026."
+        },
+        {
+          "what": "Clips removed by the practice nurse at your GP surgery",
+          "when": "6 October 2026",
+          "quote": "Clips to be removed by the practice nurse at your GP surgery on 06/10/2026."
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Book the appointment at your GP surgery for the practice nurse to remove the clips on 6 October 2026",
+          "quote": "Please book this appointment."
+        }
+      ],
+      "negatives": [
+        {
+          "instruction": "No heavy lifting for 4 weeks",
+          "quote": "No heavy lifting for 4 weeks."
+        },
+        {
+          "instruction": "No further action is needed about the histology result unless the result is abnormal",
+          "quote": "No further action is needed unless the result is abnormal."
+        }
+      ],
+      "warning_signs": [
+        {
+          "instruction": "Contact your GP or call 111 if you have a temperature above 38°C",
+          "quote": "Contact your GP or call 111 if you have a temperature above 38°C"
+        },
+        {
+          "instruction": "Contact your GP or call 111 if a wound becomes red, swollen or leaks pus",
+          "quote": "or if a wound becomes red, swollen or leaks pus."
+        }
+      ],
+      "unclear": [
+        "The histology result will be sent to you and your GP, but no date is given.",
+        "The letter does not say when the clips appointment is relative to today's date (15 October 2026); the appointment date of 6 October 2026 has already passed, and the letter does not say whether it was booked or attended."
+      ]
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\nYou had acute appendicitis (a sore, inflamed appendix). On 24 September 2026 you had a keyhole operation to remove your appendix (laparoscopic appendicectomy). There were no complications.\n\nYou have 3 small wounds. They are closed with clips.\n\nThe lab test of your appendix (histology) is pending. The result is not known yet. It will be sent to you and your GP. The letter gives no date for this.\n\n## What you need to do\n1. Book the appointment at your GP surgery. The practice nurse will remove the clips on 6 October 2026.\n2. Do not do heavy lifting for 4 weeks.\n3. You do not need to do anything about the histology result unless the result is abnormal.\n\n## Dates and medicines\n**Dates**\n- 24 September 2026: you were admitted.\n- 24 September 2026: you had the operation.\n- 26 September 2026: you went home (discharged).\n- 28 September 2026: you may shower from this date.\n- 6 October 2026: the practice nurse at your GP surgery removes the clips.\n\nThe letter does not say if this clips appointment was booked or done. The date has already passed.\n\n**Medicines**\n- Paracetamol 1 g, up to four times a day (QDS), only when you need it for pain. The most is 4 g in 24 hours.\n- Ibuprofen 400 mg, three times a day (TDS), with food, for 5 days.\n\n## Questions to ask your doctor\n- My clips date has passed. What should I do about it?\n- When will I get my histology result?\n- What does an abnormal histology result mean?\n\n## When to get urgent help\nContact your GP or call 111 if:\n- you have a temperature above 38°C.\n- a wound becomes red, swollen or leaks pus.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 79.0,
+          "reading_ease_target": 70,
+          "grade_level": 4.6,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [
+            {
+              "kind": "added",
+              "severity": "minor",
+              "explanation_says": "The letter does not say if this clips appointment was booked or done. The date has already passed.",
+              "letter_says": "Clips to be removed by the practice nurse at your GP surgery on 06/10/2026. Please book this appointment.",
+              "why": "The letter does not say the date has passed. The explanation works this out from today's date. It is probably true, but it is not in the letter. The question about the passed date also depends on this.",
+              "real_difference": false
+            }
+          ],
+          "summary": "The explanation matches the letter on the diagnosis, procedure, doses, dates, the pending histology result and the warning signs. The only point is a minor inference that the clips date has passed. That is not stated in the letter, but it is consistent with today's date."
+        },
+        "blocking_problems": [],
+        "attempt": 1
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 3361,
+        "output_tokens": 1345,
+        "cost_usd": 0.01547,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 8618,
+        "output_tokens": 1402,
+        "cost_usd": 0.0278,
+        "turns": 2
+      },
+      {
+        "step": "verify",
+        "input_tokens": 3350,
+        "output_tokens": 745,
+        "cost_usd": 0.01506,
+        "turns": 2
+      }
+    ],
+    "cost_usd": 0.05834,
+    "latency_s": 29.9
+  },
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "diagnoses",
+        "fact": "Acute appendicitis",
+        "status": "kept",
+        "note": "States acute appendicitis."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Keyhole operation to remove the appendix (laparoscopic appendicectomy) on 24 September 2026",
+        "status": "kept",
+        "note": "Keyhole operation to remove appendix on 24 September 2026."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Lab result on the appendix (histology) is still pending",
+        "status": "kept",
+        "note": "Histology is pending; result not known yet."
+      },
+      {
+        "category": "medicines",
+        "fact": "Paracetamol 1 g four times a day when needed for pain, maximum 4 g in 24 hours",
+        "status": "kept",
+        "note": "1 g up to four times a day, only when needed for pain, max 4 g in 24 hours."
+      },
+      {
+        "category": "medicines",
+        "fact": "Ibuprofen 400 mg three times a day with food, for 5 days",
+        "status": "kept",
+        "note": "400 mg three times a day with food for 5 days."
+      },
+      {
+        "category": "dates",
+        "fact": "Clips removed by the practice nurse at the GP surgery on 6 October 2026",
+        "status": "kept",
+        "note": "Practice nurse at GP surgery removes clips on 6 October 2026."
+      },
+      {
+        "category": "dates",
+        "fact": "No heavy lifting for 4 weeks",
+        "status": "kept",
+        "note": "No heavy lifting for 4 weeks."
+      },
+      {
+        "category": "dates",
+        "fact": "You may shower from 28 September 2026",
+        "status": "kept",
+        "note": "May shower from 28 September 2026."
+      },
+      {
+        "category": "actions",
+        "fact": "Book the clip-removal appointment",
+        "status": "kept",
+        "note": "Step 1 says to book the appointment."
+      },
+      {
+        "category": "actions",
+        "fact": "Contact your GP or call 111 if temperature above 38°C, or a wound becomes red, swollen or leaks pus",
+        "status": "kept",
+        "note": "Contact GP or call 111 for temperature above 38°C, or a wound that is red, swollen or leaking pus."
+      },
+      {
+        "category": "negatives",
+        "fact": "There were no complications",
+        "status": "kept",
+        "note": "Says there were no complications."
+      },
+      {
+        "category": "negatives",
+        "fact": "No further action is needed unless the histology result is abnormal",
+        "status": "kept",
+        "note": "Nothing to do about histology unless the result is abnormal."
+      }
+    ],
+    "added": [
+      {
+        "text": "The date has already passed (the 6 October 2026 clip-removal date), which suggests something may need doing about the clips. The letter does not say this.",
+        "kind": "urgency"
+      }
+    ],
+    "gold_reviewer": "claude-draft"
+  }
+}

@@ -27,32 +27,30 @@ Riverside Medical Practice Reception Team
 ## Explanation shown to the patient
 
 ## Ce que dit cette lettre
-Cette lettre vous donne les résultats de vos analyses de sang. Elles ont été faites le 22 septembre 2026.
-- Votre numération sanguine (FBC) est normale.
-- Votre fonction des reins (U&E) est normale.
-- Votre fonction du foie (LFT) est normale.
-- Votre fonction de la thyroïde (TFT) est normale.
-- Votre vitamine D est à 38 nmol/L. C'est un peu bas (insuffisant).
+Le médecin a regardé vos résultats de prises de sang.
+Votre numération sanguine (FBC) est normale.
+Votre fonction des reins (U&E) est normale.
+Votre fonction du foie (LFT) est normale.
+Votre fonction de la thyroïde (TFT) est normale.
+Votre vitamine D est à 38 nmol/L. C'est un peu bas (insuffisant).
+Aucun autre examen n'est nécessaire.
 
 ## Ce que vous devez faire
-1. Achetez de la vitamine D3 en pharmacie ou au supermarché.
+1. Le cabinet vous conseille d'acheter de la vitamine D3 : 1 000 unités (25 microgrammes).
 2. Prenez 1 comprimé par jour.
-3. Si vous avez des questions, appelez le cabinet au 01632 960 610.
-
-Vous n'avez pas besoin d'ordonnance. Vous n'avez pas besoin de prendre rendez-vous. Aucun autre examen n'est nécessaire.
+3. Vous pouvez l'acheter en pharmacie ou au supermarché.
+4. Vous n'avez pas besoin d'ordonnance.
+5. Vous n'avez pas besoin de prendre rendez-vous.
+6. Si vous avez des questions, appelez le cabinet au 01632 960 610.
 
 ## Dates et médicaments
-- Date des analyses de sang : 22 septembre 2026.
-- Médicament : vitamine D3.
-- Dose : 1 000 unités (25 microgrammes).
-- Combien : 1 comprimé par jour.
-- Changement : c'est un nouveau traitement à commencer.
-- Où l'obtenir : vous l'achetez vous-même en pharmacie ou au supermarché.
+- Prises de sang faites le 22 septembre 2026.
+- Vitamine D3 : 1 000 unités (25 microgrammes), 1 comprimé par jour.
 
 ## Questions à poser à votre médecin
-- Combien de temps dois-je prendre la vitamine D3 ?
-- Quelle marque de vitamine D3 dois-je acheter ?
-- Que veut dire mon résultat de vitamine D ?
+- Pendant combien de temps dois-je prendre la vitamine D3 ?
+- Quelle marque de vitamine D3 dois-je choisir ?
+- Mon taux de vitamine D sera-t-il revérifié ?
 
 ## Quand obtenir de l'aide en urgence
 La lettre ne donne pas de signes d'alerte particuliers.
@@ -66,32 +64,30 @@ Si vous êtes inquiet et que ce n'est pas une urgence, appelez le NHS 111. En ca
 ## Back-translation to English (by Claude, used by the judge)
 
 ## What this letter says
-This letter gives you the results of your blood tests. They were done on 22 September 2026.
-- Your blood count (FBC) is normal.
-- Your kidney function (U&E) is normal.
-- Your liver function (LFT) is normal.
-- Your thyroid function (TFT) is normal.
-- Your vitamin D is at 38 nmol/L. This is a little low (insufficient).
+The doctor has looked at your blood test results.
+Your blood count (FBC) is normal.
+Your kidney function (U&E) is normal.
+Your liver function (LFT) is normal.
+Your thyroid function (TFT) is normal.
+Your vitamin D is at 38 nmol/L. This is a little low (insufficient).
+No other tests are needed.
 
 ## What you need to do
-1. Buy vitamin D3 at the pharmacy or at the supermarket.
+1. The practice advises you to buy vitamin D3: 1,000 units (25 micrograms).
 2. Take 1 tablet per day.
-3. If you have any questions, call the practice on 01632 960 610.
-
-You do not need a prescription. You do not need to make an appointment. No other test is needed.
+3. You can buy it at a pharmacy or at the supermarket.
+4. You do not need a prescription.
+5. You do not need to make an appointment.
+6. If you have any questions, call the practice on 01632 960 610.
 
 ## Dates and medicines
-- Date of the blood tests: 22 September 2026.
-- Medicine: vitamin D3.
-- Dose: 1,000 units (25 micrograms).
-- How much: 1 tablet per day.
-- Change: this is a new treatment to start.
-- Where to get it: you buy it yourself at the pharmacy or at the supermarket.
+- Blood tests done on 22 September 2026.
+- Vitamin D3: 1,000 units (25 micrograms), 1 tablet per day.
 
 ## Questions to ask your doctor
-- How long should I take vitamin D3 for?
-- Which brand of vitamin D3 should I buy?
-- What does my vitamin D result mean?
+- For how long should I take the vitamin D3?
+- Which brand of vitamin D3 should I choose?
+- Will my vitamin D level be checked again?
 
 ## When to get help urgently
 The letter does not give any particular warning signs.

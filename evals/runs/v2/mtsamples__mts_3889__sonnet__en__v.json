@@ -1,0 +1,309 @@
+{
+  "job": {
+    "id": "mtsamples__mts_3889__sonnet__en__v",
+    "part": "mtsamples",
+    "letter_id": "mts_3889",
+    "file": "data/mtsamples/mts_3889.txt",
+    "kind": "faithfulness",
+    "model": "sonnet",
+    "language": "en",
+    "verifier": true,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "sonnet",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": true,
+    "status": "fallback",
+    "final_text": "**We could not explain this letter safely. Please ask your doctor, nurse or pharmacist to explain it to you.**\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "doctor_copy_to_patient",
+      "purpose": "Hospital discharge summary describing a stay for a kidney infection (pyelonephritis), the treatment given, discharge medicine and follow-up.",
+      "findings": [
+        {
+          "statement": "Pyelonephritis, likely secondary to mucous plugging of the indwelling Foley in the ileal conduit",
+          "certainty": "possible",
+          "quote": "Pyelonephritis likely secondary to mucous plugging of indwelling Foley in the ileal conduit."
+        },
+        {
+          "statement": "A thick mucous plug in the Foley in the ileal conduit was thought to be present and was irrigated by Dr. X",
+          "certainty": "possible",
+          "quote": "It was thought that there was a thick mucous plug in the Foley in the ileal conduit that was irrigated by Dr. X."
+        },
+        {
+          "statement": "Symptoms responded to IV antibiotics and she remained clinically stable",
+          "certainty": "stated",
+          "quote": "Her symptoms responded to IV antibiotics and she remained clinically stable."
+        },
+        {
+          "statement": "Klebsiella was isolated in the urine, sensitive to Bactrim",
+          "certainty": "stated",
+          "quote": "Klebsiella was isolated in this urine, which was sensitive to Bactrim"
+        },
+        {
+          "statement": "Hypertension",
+          "certainty": "stated",
+          "quote": "Hypertension."
+        },
+        {
+          "statement": "Mild renal insufficiency",
+          "certainty": "stated",
+          "quote": "Mild renal insufficiency."
+        },
+        {
+          "statement": "Anemia, present chronically over the past year",
+          "certainty": "stated",
+          "quote": "Anemia, which has been present chronically over the past year."
+        },
+        {
+          "statement": "History of uterine cancer and ileal conduit urinary diversion",
+          "certainty": "stated",
+          "quote": "History of uterine cancer and ileal conduit urinary diversion."
+        },
+        {
+          "statement": "Right knee pain with no sign of effusion; exquisitely tender to touch of the patellar tendon",
+          "certainty": "stated",
+          "quote": "She also complained of right knee pain and the right knee showed no sign of effusion.  She was exquisitely tender to touch of the patellar tendon."
+        },
+        {
+          "statement": "The knee pain was thought not to represent an intraarticular process",
+          "certainty": "possible",
+          "quote": "It was thought that this did not represent intraarticular process."
+        }
+      ],
+      "medicines": [
+        {
+          "name": "Bactrim",
+          "dose": "",
+          "how_often": "",
+          "change": "not_stated",
+          "details": "Dose and frequency not given. Taken by mouth (p.o.) on discharge.",
+          "quote": "she was discharged on p.o.  Bactrim"
+        },
+        {
+          "name": "Ibuprofen (over-the-counter)",
+          "dose": "two to three tabs",
+          "how_often": "t.i.d. (three times a day)",
+          "change": "start",
+          "details": "Advised to use; tablet strength not stated.",
+          "quote": "She was advised to use ibuprofen over-the-counter two to three tabs t.i.d."
+        }
+      ],
+      "dates": [
+        {
+          "what": "Scheduled for further surgery",
+          "when": "8 July 2007 or 7 August 2007 (unclear)",
+          "quote": "She was scheduled on 08/07/2007 for further surgery."
+        },
+        {
+          "what": "Follow up with Dr. Y",
+          "when": "in 7-10 days",
+          "quote": "She is to follow up with Dr. Y in 7-10 days."
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Follow up with Dr. Y in 7-10 days",
+          "quote": "She is to follow up with Dr. Y in 7-10 days."
+        },
+        {
+          "instruction": "Use over-the-counter ibuprofen, two to three tablets three times a day, for the knee pain",
+          "quote": "She was advised to use ibuprofen over-the-counter two to three tabs t.i.d."
+        }
+      ],
+      "negatives": [
+        {
+          "instruction": "The right knee showed no sign of effusion",
+          "quote": "the right knee showed no sign of effusion"
+        }
+      ],
+      "warning_signs": [],
+      "unclear": [
+        "The date 08/07/2007 could be 8 July 2007 (UK) or 7 August 2007 (US); the letter does not say which format it uses.",
+        "The Bactrim dose, frequency and duration are not stated.",
+        "The ibuprofen tablet strength is not stated.",
+        "The type of further surgery scheduled is not stated.",
+        "Who Dr. X and Dr. Y are is not stated."
+      ]
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\nThis letter is about your hospital stay. You had a kidney infection (pyelonephritis).\n\n- The infection was possibly caused by a thick plug of mucus. It was in the Foley tube in your ileal conduit.\n- A plug was thought to be there. Dr. X flushed the tube (irrigated it).\n- Your symptoms got better with antibiotics into the vein (IV). You stayed stable.\n- A germ called Klebsiella was found in your urine. It was sensitive to Bactrim.\n- You also have high blood pressure (hypertension).\n- You also have mild renal insufficiency.\n- You have had anemia for the past year.\n- You had uterine cancer in the past. You have an ileal conduit for urine.\n- You had right knee pain. The knee showed no sign of effusion. It was very sore when the doctor touched the patellar tendon.\n- The doctors thought the knee pain was not from inside the joint (intraarticular).\n\n## What you need to do\n1. See Dr. Y in 7-10 days.\n2. You were advised to use ibuprofen from the pharmacy for the knee pain. The advice was two to three tablets, three times a day.\n\n## Dates and medicines\n- Follow-up with Dr. Y: in 7-10 days.\n- Further surgery: scheduled on 8 July 2007 or 7 August 2007. The letter is not clear which date. It does not say what surgery.\n- Bactrim: taken by mouth when you left hospital. The letter does not give the dose or how often.\n- Ibuprofen (from the pharmacy): two to three tablets, three times a day. This is new. The letter does not give the tablet strength.\n\n## Questions to ask your doctor\n- What is the date of my further surgery, and what will it be?\n- How much Bactrim should I take, how often, and for how long?\n- What strength of ibuprofen tablet should I use?\n- Who are Dr. X and Dr. Y?\n\n## When to get urgent help\nThe letter does not list specific warning signs.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 82.2,
+          "reading_ease_target": 70,
+          "grade_level": 3.8,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [
+            {
+              "kind": "date",
+              "severity": "major",
+              "explanation_says": "Further surgery: scheduled on 8 July 2007 or 7 August 2007. The letter is not clear which date.",
+              "letter_says": "She was scheduled on 08/07/2007 for further surgery.",
+              "why": "The letter gives one date, 08/07/2007. The explanation invents an ambiguity and offers a July date. The date format is ambiguous, but the explanation presents two dates as options instead of the one the letter gives."
+            },
+            {
+              "kind": "certainty",
+              "severity": "major",
+              "explanation_says": "The infection was possibly caused by a thick plug of mucus.",
+              "letter_says": "Pyelonephritis likely secondary to mucous plugging of indwelling Foley in the ileal conduit.",
+              "why": "The letter says 'likely'. 'Possibly' weakens the certainty a little."
+            },
+            {
+              "kind": "changed",
+              "severity": "minor",
+              "explanation_says": "A plug was thought to be there. Dr. X flushed the tube (irrigated it).",
+              "letter_says": "It was thought that there was a thick mucous plug in the Foley ... that was irrigated by Dr. X.",
+              "why": "The wording is mostly consistent. The sentences are split in a way that makes the plug sound separate from the cause."
+            },
+            {
+              "kind": "added",
+              "severity": "minor",
+              "explanation_says": "Ibuprofen (from the pharmacy): two to three tablets, three times a day. This is new.",
+              "letter_says": "She was advised to use ibuprofen over-the-counter two to three tabs t.i.d.",
+              "why": "The letter does not say ibuprofen is new, so the explanation adds this."
+            },
+            {
+              "kind": "added",
+              "severity": "minor",
+              "explanation_says": "Bactrim: taken by mouth when you left hospital.",
+              "letter_says": "she was discharged on p.o. Bactrim.",
+              "why": "The letter does not say Bactrim is new, but the explanation does not call it new, so this is faithful. It does not tell the patient to continue it, and no duration is given."
+            },
+            {
+              "kind": "dropped",
+              "severity": "minor",
+              "explanation_says": "Not mentioned in the 'What you need to do' section.",
+              "letter_says": "She was discharged on p.o. Bactrim.",
+              "why": "The action list leaves out taking the Bactrim, which is the discharge medicine."
+            },
+            {
+              "kind": "added",
+              "severity": "minor",
+              "explanation_says": "You had right knee pain ... The doctors thought the knee pain was not from inside the joint.",
+              "letter_says": "She also complained of right knee pain ... It was thought that this did not represent intraarticular process.",
+              "why": "This is consistent with the letter. The explanation says 'for the knee pain' for ibuprofen, which the letter implies but does not state."
+            }
+          ],
+          "summary": "The main problem is the surgery date. The letter gives 08/07/2007, and the explanation offers two dates (8 July or 7 August) and tells the patient to ask which is right. It also weakens 'likely' to 'possibly' for the cause of the infection. It adds that ibuprofen is new. The Bactrim is missing from the action list. The other content matches the letter."
+        },
+        "blocking_problems": [
+          "[date] The letter gives one date, 08/07/2007. The explanation invents an ambiguity and offers a July date. The date format is ambiguous, but the explanation presents two dates as options instead of the one the letter gives. (explanation: 'Further surgery: scheduled on 8 July 2007 or 7 August 2007. The letter is not clear which date.'; letter: 'She was scheduled on 08/07/2007 for further surgery.')",
+          "[certainty] The letter says 'likely'. 'Possibly' weakens the certainty a little. (explanation: 'The infection was possibly caused by a thick plug of mucus.'; letter: 'Pyelonephritis likely secondary to mucous plugging of indwelling Foley in the ileal conduit.')"
+        ],
+        "attempt": 1
+      },
+      {
+        "explanation": "## What this letter says\nThis letter is about your hospital stay. You had a kidney infection (pyelonephritis).\n\n- The infection was likely caused by a thick plug of mucus. It was in the Foley tube in your ileal conduit.\n- A plug was thought to be there. Dr. X flushed the tube (irrigated it).\n- Your symptoms got better with antibiotics into the vein (IV). You stayed stable.\n- A germ called Klebsiella was found in your urine. It was sensitive to Bactrim.\n- You also have high blood pressure (hypertension).\n- You also have mild renal insufficiency.\n- You have had anemia for the past year.\n- You had uterine cancer in the past. You have an ileal conduit for urine.\n- You had right knee pain. The knee showed no sign of effusion. It was very sore when the doctor touched the patellar tendon.\n- The doctors thought the knee pain was not from inside the joint (intraarticular).\n\n## What you need to do\n1. See Dr. Y in 7-10 days.\n2. You were advised to use ibuprofen from the pharmacy for the knee pain. The advice was two to three tablets, three times a day.\n\n## Dates and medicines\n- Follow-up with Dr. Y: in 7-10 days.\n- Further surgery: the letter says you were scheduled on 08/07/2007. It does not say what surgery.\n- Bactrim: taken by mouth when you left hospital. The letter does not give the dose or how often.\n- Ibuprofen (from the pharmacy): two to three tablets, three times a day. This is new. The letter does not give the tablet strength.\n\n## Questions to ask your doctor\n- What is the date of my further surgery, and what will it be?\n- How much Bactrim should I take, how often, and for how long?\n- What strength of ibuprofen tablet should I use?\n- Who are Dr. X and Dr. Y?\n\n## When to get urgent help\nThe letter does not list specific warning signs.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 82.2,
+          "reading_ease_target": 70,
+          "grade_level": 3.8,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [
+            {
+              "kind": "added",
+              "severity": "major",
+              "explanation_says": "Ibuprofen ... This is new.",
+              "letter_says": "Letter only says she was advised to use over-the-counter ibuprofen; it does not call it new.",
+              "why": "Calling a medicine new is not in the letter."
+            },
+            {
+              "kind": "changed",
+              "severity": "minor",
+              "explanation_says": "A plug was thought to be there. Dr. X flushed the tube.",
+              "letter_says": "Thick mucous plug was thought present and was irrigated by Dr. X.",
+              "why": "Slightly muddled wording but meaning is close; the explanation's separate lines make the plug sound less certain as a cause. Minor."
+            },
+            {
+              "kind": "dropped",
+              "severity": "minor",
+              "explanation_says": "Bactrim: taken by mouth when you left hospital.",
+              "letter_says": "Discharged on p.o. Bactrim.",
+              "why": "Explanation does not clearly tell the patient to continue taking Bactrim; letter gives no duration, which the explanation notes only as a question."
+            },
+            {
+              "kind": "advice",
+              "severity": "minor",
+              "explanation_says": "You were advised to use ibuprofen ... The advice was two to three tablets, three times a day. What you need to do: listed as an action.",
+              "letter_says": "She was advised to use ibuprofen over-the-counter two to three tabs t.i.d.",
+              "why": "Matches the letter; no issue beyond placement. Dose is faithful."
+            },
+            {
+              "kind": "certainty",
+              "severity": "minor",
+              "explanation_says": "You have had anemia for the past year.",
+              "letter_says": "Anemia, which has been present chronically over the past year.",
+              "why": "Close, but 'chronically' is lost; minor."
+            }
+          ],
+          "summary": "The explanation is mostly faithful. The main problem is that it calls ibuprofen \"new\", which the letter does not say. The other items are minor wording or omission issues. The ibuprofen dose and the follow-up and surgery dates match the letter."
+        },
+        "blocking_problems": [
+          "[added] Calling a medicine new is not in the letter. (explanation: 'Ibuprofen ... This is new.'; letter: 'Letter only says she was advised to use over-the-counter ibuprofen; it does not call it new.')",
+          "[advice] Matches the letter; no issue beyond placement. Dose is faithful. (explanation: 'You were advised to use ibuprofen ... The advice was two to three tablets, three times a day. What you need to do: listed as an action.'; letter: 'She was advised to use ibuprofen over-the-counter two to three tabs t.i.d.')",
+          "[certainty] Close, but 'chronically' is lost; minor. (explanation: 'You have had anemia for the past year.'; letter: 'Anemia, which has been present chronically over the past year.')"
+        ],
+        "attempt": 2
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 3233,
+        "output_tokens": 1584,
+        "cost_usd": 0.02259,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 15233,
+        "output_tokens": 2285,
+        "cost_usd": 0.04542,
+        "turns": 9
+      },
+      {
+        "step": "verify",
+        "input_tokens": 3240,
+        "output_tokens": 1077,
+        "cost_usd": 0.02023,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 10961,
+        "output_tokens": 1676,
+        "cost_usd": 0.03887,
+        "turns": 2
+      },
+      {
+        "step": "verify",
+        "input_tokens": 3226,
+        "output_tokens": 696,
+        "cost_usd": 0.01634,
+        "turns": 2
+      }
+    ],
+    "cost_usd": 0.14345,
+    "latency_s": 58.8
+  },
+  "judgement": {
+    "fallback": true
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "job": {
+    "id": "models__syn_01__opus__en__v",
+    "part": "models",
+    "letter_id": "syn_01",
+    "file": "data/synthetic/syn_01.txt",
+    "kind": "faithfulness",
+    "model": "opus",
+    "language": "en",
+    "verifier": true,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "opus",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": true,
+    "status": "ok",
+    "final_text": "## What this letter says\n\nThis letter is about an appointment for you. You will have a scan of your heart. The letter calls it an echocardiogram. It is an ultrasound scan of the heart. The scan takes about 45 minutes.\n\n## What you need to do\n\n1. Arrive 15 minutes before your appointment time.\n2. Bring a list of all the medicines you take.\n3. If you cannot come, call 01632 960 123. Call at least 48 hours before the appointment.\n\nYou do not need to fast before this test.\n\nYou do not need to stop any of your medicines.\n\n## Dates and medicines\n\n- Tuesday 17 November 2026, at 10:40: heart scan (echocardiogram).\n- Place: Cardiac Investigations Unit, Level 2.\n- The letter does not list any medicines.\n\n## Questions to ask your doctor\n\n- What happens during the heart scan?\n- What does \"fast\" mean for this test?\n- Who will tell me the results of the scan?\n\n## When to get urgent help\n\nThe letter does not list specific warning signs.\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "patient",
+      "purpose": "Appointment letter for an echocardiogram (ultrasound scan of the heart).",
+      "findings": [],
+      "medicines": [],
+      "dates": [
+        {
+          "what": "Echocardiogram appointment at 10:40 in the Cardiac Investigations Unit, Level 2",
+          "when": "Tuesday 17 November 2026, 10:40",
+          "quote": "You have been booked for an echocardiogram on Tuesday 17 November 2026 at 10:40 in the Cardiac Investigations Unit, Level 2."
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Bring a list of all the medicines you take.",
+          "quote": "Please bring a list of all the medicines you take."
+        },
+        {
+          "instruction": "Arrive 15 minutes before your appointment time.",
+          "quote": "Please arrive 15 minutes before your appointment time."
+        },
+        {
+          "instruction": "If you cannot attend, call 01632 960 123 at least 48 hours before the appointment.",
+          "quote": "If you cannot attend, please call 01632 960 123 at least 48 hours before"
+        },
+        {
+          "instruction": "The scan takes about 45 minutes.",
+          "quote": "It takes about 45 minutes."
+        }
+      ],
+      "negatives": [
+        {
+          "instruction": "You do not need to fast before this test.",
+          "quote": "You do not need to fast before this test."
+        },
+        {
+          "instruction": "You do not need to stop any of your medicines.",
+          "quote": "You do not need to stop any of your medicines."
+        }
+      ],
+      "warning_signs": [],
+      "unclear": []
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\n\nThis letter is about an appointment for you. You will have a scan of your heart. The letter calls it an echocardiogram. It is an ultrasound scan of the heart. The scan takes about 45 minutes.\n\n## What you need to do\n\n1. Arrive 15 minutes before your appointment time.\n2. Bring a list of all the medicines you take.\n3. If you cannot come, call 01632 960 123. Call at least 48 hours before the appointment.\n\nYou do not need to fast before this test.\n\nYou do not need to stop any of your medicines.\n\n## Dates and medicines\n\n- Tuesday 17 November 2026, at 10:40: heart scan (echocardiogram).\n- Place: Cardiac Investigations Unit, Level 2.\n- The letter does not list any medicines.\n\n## Questions to ask your doctor\n\n- What happens during the heart scan?\n- What does \"fast\" mean for this test?\n- Who will tell me the results of the scan?\n\n## When to get urgent help\n\nThe letter does not list specific warning signs.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 82.0,
+          "reading_ease_target": 70,
+          "grade_level": 4.0,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [],
+          "summary": "I found no problems. The explanation matches the letter on every point that matters to the patient: the test and how long it takes, the date, time and place, arriving 15 minutes early, and bringing a list of medicines. It also gets the phone number and the 48-hour cancellation notice right, and keeps both \"do not need to\" statements (fasting and stopping medicines). The suggested questions don't add any new diagnosis or worry. Leaving out the reason for cancelling early (so the slot can go to another patient) is a harmless simplification."
+        },
+        "blocking_problems": [],
+        "attempt": 1
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 3277,
+        "output_tokens": 674,
+        "cost_usd": 0.03969,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 10697,
+        "output_tokens": 1014,
+        "cost_usd": 0.05444,
+        "turns": 4
+      },
+      {
+        "step": "verify",
+        "input_tokens": 3063,
+        "output_tokens": 328,
+        "cost_usd": 0.03106,
+        "turns": 2
+      }
+    ],
+    "cost_usd": 0.12518,
+    "latency_s": 26.4
+  },
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "dates",
+        "fact": "Echocardiogram on Tuesday 17 November 2026 at 10:40, Cardiac Investigations Unit, Level 2",
+        "status": "kept",
+        "note": "Date, time and place all match: Tuesday 17 November 2026 at 10:40, Cardiac Investigations Unit, Level 2."
+      },
+      {
+        "category": "dates",
+        "fact": "The test takes about 45 minutes",
+        "status": "kept",
+        "note": "Says 'about 45 minutes'."
+      },
+      {
+        "category": "actions",
+        "fact": "Bring a list of all the medicines you take",
+        "status": "kept",
+        "note": "Bring a list of all medicines, stated word for word."
+      },
+      {
+        "category": "actions",
+        "fact": "Arrive 15 minutes before the appointment time",
+        "status": "kept",
+        "note": "Arrive 15 minutes before."
+      },
+      {
+        "category": "actions",
+        "fact": "If you cannot attend, call 01632 960 123 at least 48 hours before",
+        "status": "kept",
+        "note": "Phone number and 'at least 48 hours before' both kept."
+      },
+      {
+        "category": "negatives",
+        "fact": "You do not need to fast before the test",
+        "status": "kept",
+        "note": "'You do not need to fast' kept, including the 'not'."
+      },
+      {
+        "category": "negatives",
+        "fact": "You do not need to stop any of your medicines",
+        "status": "kept",
+        "note": "'You do not need to stop any of your medicines' kept, including the 'not'."
+      }
+    ],
+    "added": [],
+    "gold_reviewer": "claude-draft"
+  }
+}

@@ -1,0 +1,299 @@
+{
+  "job": {
+    "id": "mtsamples__mts_3912__sonnet__en__v",
+    "part": "mtsamples",
+    "letter_id": "mts_3912",
+    "file": "data/mtsamples/mts_3912.txt",
+    "kind": "faithfulness",
+    "model": "sonnet",
+    "language": "en",
+    "verifier": true,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "sonnet",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": true,
+    "status": "fallback",
+    "final_text": "**We could not explain this letter safely. Please ask your doctor, nurse or pharmacist to explain it to you.**\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "doctor_copy_to_patient",
+      "purpose": "Discharge summary after a poly exchange of the right total knee replacement, with home care instructions, medicines and follow-up.",
+      "findings": [
+        {
+          "statement": "Painful right knee after a total knee replacement many years ago, with gradual worsening soreness and pain.",
+          "certainty": "stated",
+          "quote": "Painful right knee status post total knee arthroplasty many years ago."
+        },
+        {
+          "statement": "X-ray showed the poly (plastic part) seems to be significantly worn out.",
+          "certainty": "stated",
+          "quote": "X-ray showed that the poly seems to be worn out significantly in this area."
+        },
+        {
+          "statement": "Procedure performed: poly exchange of the right total knee (revision with replacement of patellar and tibial poly components).",
+          "certainty": "stated",
+          "quote": "Poly exchange total knee, right."
+        },
+        {
+          "statement": "Condition on discharge is stable.",
+          "certainty": "stated",
+          "quote": "CONDITION ON DISCHARGE:\n  Stable."
+        },
+        {
+          "statement": "She recovered well, walked with minimal assistance with physical therapy, and did well on oral pain medicines.",
+          "certainty": "stated",
+          "quote": "Working with PT, she was able to ambulate with minimal assistance."
+        },
+        {
+          "statement": "The femoral nerve block was removed by anesthesia.",
+          "certainty": "stated",
+          "quote": "Nerve block was removed by anesthesia."
+        },
+        {
+          "statement": "INR was 1.9 on discharge.",
+          "certainty": "stated",
+          "quote": "the INR was 1.9 on discharge"
+        },
+        {
+          "statement": "She is going home with her son, who will help and look after her.",
+          "certainty": "stated",
+          "quote": "She is actually going to home with her son who will be able to assist her and look after her for anything she might need."
+        }
+      ],
+      "medicines": [
+        {
+          "name": "Coumadin",
+          "dose": "4 mg",
+          "how_often": "a day",
+          "change": "not_stated",
+          "details": "INR was 1.9 on discharge, with twice weekly lab checks.",
+          "quote": "The patient will be discharged home on Coumadin 4 mg a day"
+        },
+        {
+          "name": "Vicodin 5/500 mg",
+          "dose": "one to two tablets",
+          "how_often": "every 4 to 6 hours, by mouth",
+          "change": "not_stated",
+          "details": "Written as 'take one to two tablets p.o. q.4-6h'.",
+          "quote": "Vicodin 5/500 mg take one to two tablets p.o. q.4-6h."
+        },
+        {
+          "name": "Home medications",
+          "dose": "not stated",
+          "how_often": "not stated",
+          "change": "continue",
+          "details": "The letter says to resume home medications; they are not named.",
+          "quote": "Resume home medications."
+        }
+      ],
+      "dates": [
+        {
+          "what": "Follow up with Dr. ABC",
+          "when": "in two weeks",
+          "quote": "The patient is to follow up with Dr. ABC in two weeks."
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Diet is regular.",
+          "quote": "Diet is regular."
+        },
+        {
+          "instruction": "Put weight on the right leg as tolerated.",
+          "quote": "weight bear as tolerated right lower extremity"
+        },
+        {
+          "instruction": "Continue to do physical therapy exercises.",
+          "quote": "Continue to do physical therapy exercises."
+        },
+        {
+          "instruction": "Have lab checks twice weekly (for INR while on Coumadin).",
+          "quote": "with twice weekly lab checks"
+        },
+        {
+          "instruction": "Follow up with Dr. ABC in two weeks.",
+          "quote": "The patient is to follow up with Dr. ABC in two weeks."
+        },
+        {
+          "instruction": "Go home to the care of her son.",
+          "quote": "The patient is to be discharged home to the care of the son."
+        }
+      ],
+      "negatives": [],
+      "warning_signs": [
+        {
+          "instruction": "Call the office or return to the emergency room for any concerns, including increased redness, swelling, drainage, fever, or any concerns about the operation or incision site.",
+          "quote": "Call the office or return to the emergency room for any concerns including increased redness, swelling, drainage, fever, or any concerns regarding operation or site of incision."
+        }
+      ],
+      "unclear": [
+        "The letter does not say whether Coumadin or Vicodin are new or were already being taken.",
+        "The home medicines to resume are not named.",
+        "Dr. ABC's identity and the exact follow-up date are not given."
+      ]
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\nYou had a painful right knee. You had a knee replacement many years ago. The pain and soreness slowly got worse.\nAn X-ray showed the plastic part (poly) seems to be very worn out.\nYou had an operation called a poly exchange of the right total knee.\nYou are stable now. You did well. You walked with little help during physical therapy (PT). Your pain pills by mouth worked well.\nAnesthesia took out the nerve block in your leg (femoral nerve block).\nYour INR was 1.9 when you left. INR is a blood test.\nYou are going home with your son. He will help and look after you.\n\n## What you need to do\n1. Eat your regular diet.\n2. Put weight on your right leg as much as you can manage.\n3. Keep doing your physical therapy exercises.\n4. Have lab checks twice a week. They check your INR while you take Coumadin.\n5. See Dr. ABC in two weeks.\n6. Go home to the care of your son.\n7. Call the office or go back to the emergency room if you have any concerns. See the last section.\n\n## Dates and medicines\n- Follow up with Dr. ABC: in two weeks. The letter does not give the exact date.\n- Coumadin: 4 milligrams a day.\n- Vicodin 5/500 milligrams: take one to two tablets by mouth every 4 to 6 hours.\n- Home medicines: the letter says to resume them. It does not name them.\n\n## Questions to ask your doctor\n1. What is the exact date of my visit with Dr. ABC?\n2. Which home medicines should I take again?\n3. Were Coumadin and Vicodin new for me, or ones I took before?\n\n## When to get urgent help\nCall the office or go back to the emergency room for any concerns. This includes:\n- more redness\n- swelling\n- drainage\n- fever\n- any concern about the operation or the cut (incision) site",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 86.3,
+          "reading_ease_target": 70,
+          "grade_level": 3.3,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [
+            {
+              "kind": "advice",
+              "severity": "minor",
+              "explanation_says": "Put weight on your right leg as much as you can manage.",
+              "letter_says": "Weight bear as tolerated right lower extremity.",
+              "why": "Mostly equivalent, but the wording is slightly looser. Low concern."
+            },
+            {
+              "kind": "dropped",
+              "severity": "minor",
+              "explanation_says": "Twice-weekly lab checks are listed without saying who arranges them.",
+              "letter_says": "Discharged on Coumadin 4 mg a day as the INR was 1.9 on discharge, with twice weekly lab checks.",
+              "why": "The explanation does not say the Coumadin dose is linked to the low INR. This is a minor loss of reasoning."
+            },
+            {
+              "kind": "added",
+              "severity": "minor",
+              "explanation_says": "They check your INR while you take Coumadin.",
+              "letter_says": "Twice weekly lab checks (purpose not stated).",
+              "why": "The letter does not say what the lab checks test. Linking them to INR is an inference."
+            },
+            {
+              "kind": "added",
+              "severity": "minor",
+              "explanation_says": "INR is a blood test.",
+              "letter_says": "INR was 1.9 on discharge.",
+              "why": "This is a general definition of a term that is in the letter, so it is allowed."
+            },
+            {
+              "kind": "changed",
+              "severity": "minor",
+              "explanation_says": "Anesthesia took out the nerve block in your leg.",
+              "letter_says": "Nerve block was removed by anesthesia.",
+              "why": "This matches the letter. No problem."
+            },
+            {
+              "kind": "added",
+              "severity": "minor",
+              "explanation_says": "Go home to the care of your son (listed as an action).",
+              "letter_says": "Discharged home to the care of the son.",
+              "why": "This matches the letter. It is turned into a task, but the meaning is the same."
+            }
+          ],
+          "summary": "The explanation is largely faithful. The doses (Coumadin 4 mg a day, Vicodin 5/500 one to two tablets every 4 to 6 hours), the two-week follow-up, the INR of 1.9, and the warning signs all match the letter. The only real issue is the minor inference that the lab checks test INR, which the letter does not state. The other entries are low-concern or match the letter."
+        },
+        "blocking_problems": [
+          "[advice] Mostly equivalent, but the wording is slightly looser. Low concern. (explanation: 'Put weight on your right leg as much as you can manage.'; letter: 'Weight bear as tolerated right lower extremity.')"
+        ],
+        "attempt": 1
+      },
+      {
+        "explanation": "## What this letter says\nYou had a painful right knee. You had a knee replacement many years ago. The pain and soreness slowly got worse.\nAn X-ray showed the plastic part (poly) seems to be very worn out.\nYou had an operation called a poly exchange of the right total knee.\nYour condition is stable as you leave. You did well. You walked with little help during physical therapy (PT). Your pain pills by mouth worked well.\nAnesthesia took out the nerve block in your leg (femoral nerve block).\nYour INR was 1.9 when you left. INR is a blood test.\nYou are going home with your son. He will help and look after you.\n\n## What you need to do\n1. Eat your regular diet.\n2. Put weight on your right leg as tolerated (weight bear as tolerated).\n3. Keep doing your physical therapy exercises.\n4. Have lab checks twice a week. They check your INR while you take Coumadin.\n5. See Dr. ABC in two weeks.\n6. Go home to the care of your son.\n7. Call the office or go back to the emergency room if you have any concerns. See the last section.\n\n## Dates and medicines\n- Follow up with Dr. ABC: in two weeks. The letter does not give the exact date.\n- Coumadin: 4 milligrams a day.\n- Vicodin 5/500 milligrams: take one to two tablets by mouth every 4 to 6 hours.\n- Home medicines: the letter says to resume them. It does not name them.\n\n## Questions to ask your doctor\n1. What is the exact date of my visit with Dr. ABC?\n2. Which home medicines should I take again?\n3. Were Coumadin and Vicodin new for me, or ones I took before?\n\n## When to get urgent help\nCall the office or go back to the emergency room for any concerns. This includes:\n- more redness\n- swelling\n- drainage\n- fever\n- any concern about the operation or the cut (incision) site",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 84.7,
+          "reading_ease_target": 70,
+          "grade_level": 3.5,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [
+            {
+              "kind": "added",
+              "severity": "minor",
+              "explanation_says": "INR is a blood test.",
+              "letter_says": "INR was 1.9 on discharge with twice weekly lab checks.",
+              "why": "General definition of a word in the letter; allowed, not a problem."
+            },
+            {
+              "kind": "changed",
+              "severity": "minor",
+              "explanation_says": "Anesthesia took out the nerve block in your leg.",
+              "letter_says": "Nerve block was removed by anesthesia.",
+              "why": "Consistent; no real problem."
+            },
+            {
+              "kind": "dropped",
+              "severity": "minor",
+              "explanation_says": "Revision surgery described only as a 'poly exchange'.",
+              "letter_says": "Revision right total knee arthroplasty with replacement of patellar and tibial poly components.",
+              "why": "The patellar and tibial component detail is omitted; minor since it does not change what the patient does."
+            },
+            {
+              "kind": "advice",
+              "severity": "minor",
+              "explanation_says": "Go home to the care of your son.",
+              "letter_says": "The patient is to be discharged home to the care of the son.",
+              "why": "A statement about discharge is turned into an instruction for the patient; wording only."
+            }
+          ],
+          "summary": "The explanation is faithful. Doses (Coumadin 4 mg a day, Vicodin 5/500 one to two tablets every 4-6 hours), the INR of 1.9, twice-weekly labs, the two-week follow-up and the warning signs all match the letter. The listed items are only minor wording or omission notes, and none would change what the patient does."
+        },
+        "blocking_problems": [
+          "[advice] A statement about discharge is turned into an instruction for the patient; wording only. (explanation: 'Go home to the care of your son.'; letter: 'The patient is to be discharged home to the care of the son.')"
+        ],
+        "attempt": 2
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 3436,
+        "output_tokens": 1559,
+        "cost_usd": 0.02322,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 8855,
+        "output_tokens": 1505,
+        "cost_usd": 0.03171,
+        "turns": 2
+      },
+      {
+        "step": "verify",
+        "input_tokens": 3361,
+        "output_tokens": 771,
+        "cost_usd": 0.01767,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 10326,
+        "output_tokens": 1484,
+        "cost_usd": 0.03509,
+        "turns": 2
+      },
+      {
+        "step": "verify",
+        "input_tokens": 3375,
+        "output_tokens": 551,
+        "cost_usd": 0.01553,
+        "turns": 2
+      }
+    ],
+    "cost_usd": 0.12322,
+    "latency_s": 48.6
+  },
+  "judgement": {
+    "fallback": true
+  }
+}

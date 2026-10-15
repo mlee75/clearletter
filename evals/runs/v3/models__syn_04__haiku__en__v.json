@@ -1,0 +1,246 @@
+{
+  "job": {
+    "id": "models__syn_04__haiku__en__v",
+    "part": "models",
+    "letter_id": "syn_04",
+    "file": "data/synthetic/syn_04.txt",
+    "kind": "faithfulness",
+    "model": "haiku",
+    "language": "en",
+    "verifier": true,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "haiku",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": true,
+    "status": "fallback",
+    "final_text": "**We could not explain this letter safely. Please ask your doctor, nurse or pharmacist to explain it to you.**\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "patient",
+      "purpose": "Invitation for your annual diabetic eye screening",
+      "findings": [
+        {
+          "statement": "You have diabetes",
+          "certainty": "stated",
+          "quote": "You are invited for your diabetic eye screening"
+        }
+      ],
+      "medicines": [],
+      "dates": [
+        {
+          "what": "Book your appointment by",
+          "when": "15 January 2027",
+          "quote": "Please book your appointment by 15 January 2027"
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Call 01632 960 377 to book your appointment by 15 January 2027",
+          "quote": "Please book your appointment by 15 January 2027 by calling 01632 960 377"
+        },
+        {
+          "instruction": "Bring your glasses or contact lenses",
+          "quote": "Bring your glasses or contact lenses"
+        },
+        {
+          "instruction": "Bring a list of your medicines",
+          "quote": "a list of your medicines"
+        },
+        {
+          "instruction": "Bring sunglasses if you have them",
+          "quote": "Bring sunglasses if you have them"
+        }
+      ],
+      "negatives": [
+        {
+          "instruction": "You must not drive until your vision is back to normal",
+          "quote": "You must not drive until your vision is back to normal"
+        },
+        {
+          "instruction": "This screening does not diagnose other eye problems",
+          "quote": "It does not diagnose other eye problems"
+        },
+        {
+          "instruction": "This screening does not replace your regular eye test at an optician",
+          "quote": "it does not replace your regular eye test at an optician"
+        }
+      ],
+      "warning_signs": [],
+      "unclear": []
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\nYour doctor is inviting you for an eye screening (diabetic eye screening). This is to check your eyes because you have diabetes. It does not find other eye problems. It does not replace your regular eye test at the optician.\n\n## What you need to do\n1. Call 01632 960 377 to book your appointment.\n2. Book your appointment by 15 January 2027.\n3. Bring your glasses or contact lenses.\n4. Bring a list of your medicines.\n5. Bring sunglasses if you have them.\n6. Do not drive until your vision is back to normal.\n\n## Dates and medicines\n**Appointment booking deadline:** 15 January 2027\n**Medicines:** None mentioned in this letter.\n\n## Questions to ask your doctor\n- What happens during this eye screening?\n- How long will it take?\n- When will I get the results?\n- Why should I bring sunglasses?\n\n## When to get urgent help\nThe letter does not list specific warning signs.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 78.3,
+          "reading_ease_target": 70,
+          "grade_level": 4.6,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [
+            {
+              "kind": "dropped",
+              "severity": "major",
+              "explanation_says": "The explanation mentions 'Do not drive until your vision is back to normal' but does not explain why or for how long.",
+              "letter_says": "We will put drops in your eyes. The drops will make your vision blurred for 4 to 6 hours. You must not drive until your vision is back to normal.",
+              "why": "The patient needs to know what will happen during the appointment (eye drops), how long they will be affected (4-6 hours), and why they cannot drive. Without this information, they cannot plan their day properly or arrange alternative transport. This also explains why sunglasses should be brought.",
+              "real_difference": true
+            }
+          ],
+          "summary": "The explanation omits critical procedural information: it does not mention that eye drops will be put in the patient's eyes, or that these will cause vision to be blurred for 4 to 6 hours. While the explanation correctly states the patient must not drive until vision is normal, it fails to explain why (due to the drops) or for how long (4-6 hours). This is a major gap because patients need this information to plan their day and arrange alternative transport."
+        },
+        "blocking_problems": [
+          "[dropped] The patient needs to know what will happen during the appointment (eye drops), how long they will be affected (4-6 hours), and why they cannot drive. Without this information, they cannot plan their day properly or arrange alternative transport. This also explains why sunglasses should be brought. (explanation: \"The explanation mentions 'Do not drive until your vision is back to normal' but does not explain why or for how long.\"; letter: 'We will put drops in your eyes. The drops will make your vision blurred for 4 to 6 hours. You must not drive until your vision is back to normal.')"
+        ],
+        "attempt": 1
+      },
+      {
+        "explanation": "I see the problem. The safety check shows that the letter contains important information about **eye drops** and **blurred vision for 4 to 6 hours**, which explains why the patient cannot drive. However, this information is **not included in the JSON facts** you've provided.\n\nThe facts I was given mention the driving restriction (\"You must not drive until your vision is back to normal\") but don't include:\n- That the appointment involves putting drops in the eyes\n- That the vision will be blurred for 4 to 6 hours\n- Why this makes driving unsafe\n\nI can only write from the facts I'm given. To fix this properly, I need you to provide the **complete JSON facts** that includes the eye drops and blurred vision information. \n\nCould you update the facts to include:\n- What happens during the appointment (the drops)\n- How long the vision will be blurred (4 to 6 hours)\n- Where in the letter these details appear (which sections)?\n\nOnce you provide the complete facts, I'll rewrite the explanation with all necessary information included.",
+        "missing_headings": [
+          "What this letter says",
+          "What you need to do",
+          "Dates and medicines",
+          "Questions to ask your doctor",
+          "When to get urgent help"
+        ],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 58.9,
+          "reading_ease_target": 70,
+          "grade_level": 11.1,
+          "grade_target": 6,
+          "passed": false
+        },
+        "verifier": {
+          "problems": [
+            {
+              "kind": "changed",
+              "severity": "major",
+              "explanation_says": "The explanation contains meta-commentary about JSON facts and safety checks, complaining that required medical information was not provided to the writer.",
+              "letter_says": "The letter is an invitation for diabetic eye screening with practical instructions about the appointment, eye drops, and driving restrictions.",
+              "why": "The explanation is not a patient-friendly summary of the letter at all. Instead of explaining the screening to the patient, it complains about how it was written. A patient would not understand references to 'JSON facts' or 'safety checks'.",
+              "real_difference": true
+            },
+            {
+              "kind": "dropped",
+              "severity": "major",
+              "explanation_says": "No explanation of what diabetic eye screening is or why the patient needs it.",
+              "letter_says": "The letter explains this is a test for everyone with diabetes aged 12+, offered every year, to check the back of the eyes for damage caused by diabetes (diabetic retinopathy).",
+              "why": "A patient needs to understand what the appointment is for. This is missing entirely.",
+              "real_difference": true
+            },
+            {
+              "kind": "dropped",
+              "severity": "major",
+              "explanation_says": "No 'what to do' section explaining how to book the appointment.",
+              "letter_says": "The letter clearly states: 'Please book your appointment by 15 January 2027 by calling 01632 960 377'.",
+              "why": "The patient needs to know how and when to book. This is the key action required.",
+              "real_difference": true
+            },
+            {
+              "kind": "dropped",
+              "severity": "major",
+              "explanation_says": "No section on dates and medicines. No mention of eye drops, blurred vision duration (4-6 hours), or driving restriction timeline.",
+              "letter_says": "The letter states: eye drops will be used, vision will be blurred for 4 to 6 hours, must not drive until vision is back to normal, bring sunglasses and glasses/contact lenses.",
+              "why": "Critical practical information for the appointment is completely missing.",
+              "real_difference": true
+            },
+            {
+              "kind": "dropped",
+              "severity": "major",
+              "explanation_says": "No 'questions to ask your doctor' section.",
+              "letter_says": "The letter does not list warning signs, which is appropriate and should be noted as expected.",
+              "why": "While no suggested questions are required, the explanation should at least acknowledge this section exists in the structure.",
+              "real_difference": true
+            },
+            {
+              "kind": "dropped",
+              "severity": "major",
+              "explanation_says": "No 'when to get urgent help' section.",
+              "letter_says": "The letter does not mention warning signs or urgent help, which is appropriate.",
+              "why": "The explanation should follow the five-section structure, even if a section says there are no warning signs listed.",
+              "real_difference": true
+            },
+            {
+              "kind": "added",
+              "severity": "major",
+              "explanation_says": "References to 'JSON facts', 'safety check', 'facts I was given', and technical project processes.",
+              "letter_says": "The letter contains no such references; it is a straightforward appointment invitation.",
+              "why": "These are meta-commentary about how the explanation was created, not information from or about the medical letter. Patients should never see this.",
+              "real_difference": true
+            }
+          ],
+          "summary": "The provided 'explanation' is not a patient-friendly explanation of the letter. Instead of summarizing the diabetic eye screening invitation in plain language, it contains technical meta-commentary complaining about incomplete information from a previous writing attempt. It is missing the entire five-section structure (what the letter says, what to do, dates and medicines, questions to ask, when to get urgent help), has no patient-facing content, and includes references to 'JSON facts' and 'safety checks' that belong in a project workflow, not in patient communication. This explanation would not help a patient understand or act on their screening appointment invitation.\""
+        },
+        "blocking_problems": [
+          "Missing heading: What this letter says",
+          "Missing heading: What you need to do",
+          "Missing heading: Dates and medicines",
+          "Missing heading: Questions to ask your doctor",
+          "Missing heading: When to get urgent help",
+          "[changed] The explanation is not a patient-friendly summary of the letter at all. Instead of explaining the screening to the patient, it complains about how it was written. A patient would not understand references to 'JSON facts' or 'safety checks'. (explanation: 'The explanation contains meta-commentary about JSON facts and safety checks, complaining that required medical information was not provided to the writer.'; letter: 'The letter is an invitation for diabetic eye screening with practical instructions about the appointment, eye drops, and driving restrictions.')",
+          "[dropped] A patient needs to understand what the appointment is for. This is missing entirely. (explanation: 'No explanation of what diabetic eye screening is or why the patient needs it.'; letter: 'The letter explains this is a test for everyone with diabetes aged 12+, offered every year, to check the back of the eyes for damage caused by diabetes (diabetic retinopathy).')",
+          "[dropped] The patient needs to know how and when to book. This is the key action required. (explanation: \"No 'what to do' section explaining how to book the appointment.\"; letter: \"The letter clearly states: 'Please book your appointment by 15 January 2027 by calling 01632 960 377'.\")",
+          "[dropped] Critical practical information for the appointment is completely missing. (explanation: 'No section on dates and medicines. No mention of eye drops, blurred vision duration (4-6 hours), or driving restriction timeline.'; letter: 'The letter states: eye drops will be used, vision will be blurred for 4 to 6 hours, must not drive until vision is back to normal, bring sunglasses and glasses/contact lenses.')",
+          "[dropped] While no suggested questions are required, the explanation should at least acknowledge this section exists in the structure. (explanation: \"No 'questions to ask your doctor' section.\"; letter: 'The letter does not list warning signs, which is appropriate and should be noted as expected.')",
+          "[dropped] The explanation should follow the five-section structure, even if a section says there are no warning signs listed. (explanation: \"No 'when to get urgent help' section.\"; letter: 'The letter does not mention warning signs or urgent help, which is appropriate.')",
+          "[added] These are meta-commentary about how the explanation was created, not information from or about the medical letter. Patients should never see this. (explanation: \"References to 'JSON facts', 'safety check', 'facts I was given', and technical project processes.\"; letter: 'The letter contains no such references; it is a straightforward appointment invitation.')"
+        ],
+        "attempt": 2
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 2818,
+        "output_tokens": 9123,
+        "cost_usd": 0.04843,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 9736,
+        "output_tokens": 4594,
+        "cost_usd": 0.03966,
+        "turns": 2
+      },
+      {
+        "step": "verify",
+        "input_tokens": 10515,
+        "output_tokens": 5482,
+        "cost_usd": 0.04576,
+        "turns": 3
+      },
+      {
+        "step": "explain",
+        "input_tokens": 3192,
+        "output_tokens": 1118,
+        "cost_usd": 0.00878,
+        "turns": 1
+      },
+      {
+        "step": "verify",
+        "input_tokens": 6456,
+        "output_tokens": 2718,
+        "cost_usd": 0.02005,
+        "turns": 3
+      }
+    ],
+    "cost_usd": 0.16268,
+    "latency_s": 214.2
+  },
+  "judgement": {
+    "fallback": true
+  }
+}

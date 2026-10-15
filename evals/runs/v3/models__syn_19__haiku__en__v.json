@@ -1,0 +1,203 @@
+{
+  "job": {
+    "id": "models__syn_19__haiku__en__v",
+    "part": "models",
+    "letter_id": "syn_19",
+    "file": "data/synthetic/syn_19.txt",
+    "kind": "faithfulness",
+    "model": "haiku",
+    "language": "en",
+    "verifier": true,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "haiku",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": true,
+    "status": "ok",
+    "final_text": "Perfect! Here's your plain-language explanation:\n\n## What this letter says\n\nYou had a clinic visit on 2 October 2026. You told us you have had several hypos (low blood sugar). Your blood sugar test result is 46 mmol/mol.\n\nWe are changing your diabetes medicines.\n\n## What you need to do\n\n1. Stop taking gliclazide 80 mg twice daily. It can cause hypos.\n2. Keep taking metformin 1 g twice daily with meals.\n3. Start taking sitagliptin 100 mg once daily.\n4. Check your blood sugar for the next 2 weeks.\n5. Bring your blood sugar readings to your next appointment.\n6. If you are vomiting, have diarrhoea, or cannot eat or drink normally, stop taking metformin. Start it again 24 to 48 hours after you eat and drink normally.\n\n## Dates and medicines\n\n**Medicines:**\n- Stop gliclazide 80 mg twice daily (it can cause hypos)\n- Continue metformin 1 g twice daily with meals\n- Start sitagliptin 100 mg once daily (this does not usually cause hypos)\n\n**Dates:**\n- Clinic visit: 2 October 2026\n- Next appointment: 13 November 2026 at 10:00\n\n## Questions to ask your doctor\n\n- How should I check my blood sugar each day?\n- What should I do if I have a hypo before my next appointment?\n- What else should I do before my next appointment?\n\n## When to get urgent help\n\nThe letter does not list specific warning signs.\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "patient",
+      "purpose": "Changes to your diabetes medicines after your clinic visit",
+      "findings": [
+        {
+          "statement": "You have had several hypos (low blood sugar)",
+          "certainty": "stated",
+          "quote": "You told us you have had several hypos (low blood sugar)"
+        },
+        {
+          "statement": "Your HbA1c is 46 mmol/mol",
+          "certainty": "stated",
+          "quote": "your HbA1c is 46 mmol/mol"
+        }
+      ],
+      "medicines": [
+        {
+          "name": "gliclazide",
+          "dose": "80 mg",
+          "how_often": "twice daily",
+          "change": "stop",
+          "details": "It can cause hypos",
+          "quote": "STOP gliclazide 80 mg twice daily. It can cause hypos."
+        },
+        {
+          "name": "metformin",
+          "dose": "1 g",
+          "how_often": "twice daily",
+          "change": "continue",
+          "details": "with meals",
+          "quote": "CONTINUE metformin 1 g twice daily with meals."
+        },
+        {
+          "name": "sitagliptin",
+          "dose": "100 mg",
+          "how_often": "once daily",
+          "change": "start",
+          "details": "This does not usually cause hypos",
+          "quote": "START sitagliptin 100 mg once daily. This does not usually cause hypos."
+        }
+      ],
+      "dates": [
+        {
+          "what": "Clinic visit",
+          "when": "2 October 2026",
+          "quote": "after your clinic visit on 02/10/2026"
+        },
+        {
+          "what": "Next appointment",
+          "when": "13 November 2026 at 10:00",
+          "quote": "your next appointment on Friday 13 November 2026 at 10:00"
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Keep checking your blood sugar for the next 2 weeks",
+          "quote": "Please keep checking your blood sugar for the next 2 weeks"
+        },
+        {
+          "instruction": "Bring your readings to your next appointment on Friday 13 November 2026 at 10:00",
+          "quote": "bring your readings to your next appointment on Friday 13 November 2026 at 10:00"
+        }
+      ],
+      "negatives": [
+        {
+          "instruction": "If you are vomiting, have diarrhoea, or cannot eat or drink normally, stop taking metformin. Restart it 24 to 48 hours after you are eating and drinking normally again.",
+          "quote": "if you are vomiting, have diarrhoea, or cannot eat or drink normally, stop taking metformin. Restart it 24 to 48 hours after you are eating and drinking normally again."
+        }
+      ],
+      "warning_signs": [],
+      "unclear": []
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "Perfect! Here's your plain-language explanation:\n\n## What this letter says\n\nYou had a clinic visit on 2 October 2026. You told us you have had several hypos (low blood sugar). Your blood sugar test result is 46 mmol/mol.\n\nWe are changing your diabetes medicines.\n\n## What you need to do\n\n1. Stop taking gliclazide 80 mg twice daily. It can cause hypos.\n2. Keep taking metformin 1 g twice daily with meals.\n3. Start taking sitagliptin 100 mg once daily.\n4. Check your blood sugar for the next 2 weeks.\n5. Bring your blood sugar readings to your next appointment.\n6. If you are vomiting, have diarrhoea, or cannot eat or drink normally, stop taking metformin. Start it again 24 to 48 hours after you eat and drink normally.\n\n## Dates and medicines\n\n**Medicines:**\n- Stop gliclazide 80 mg twice daily (it can cause hypos)\n- Continue metformin 1 g twice daily with meals\n- Start sitagliptin 100 mg once daily (this does not usually cause hypos)\n\n**Dates:**\n- Clinic visit: 2 October 2026\n- Next appointment: 13 November 2026 at 10:00\n\n## Questions to ask your doctor\n\n- How should I check my blood sugar each day?\n- What should I do if I have a hypo before my next appointment?\n- What else should I do before my next appointment?\n\n## When to get urgent help\n\nThe letter does not list specific warning signs.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 73.3,
+          "reading_ease_target": 70,
+          "grade_level": 6.3,
+          "grade_target": 6,
+          "passed": false
+        },
+        "verifier": {
+          "problems": [],
+          "summary": "The explanation accurately and appropriately simplifies the letter for a patient. All key clinical facts, dosages, dates, and instructions match the original letter. The five-section format is well-structured for patient understanding. No medical facts are added, dropped, or misrepresented. The suggested questions appropriately address topics mentioned in the letter without inventing new diagnoses or worries. No dosages, dates, or urgent information differ from the letter."
+        },
+        "blocking_problems": [],
+        "attempt": 1
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 2923,
+        "output_tokens": 6382,
+        "cost_usd": 0.03483,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 16130,
+        "output_tokens": 5061,
+        "cost_usd": 0.04387,
+        "turns": 3
+      },
+      {
+        "step": "verify",
+        "input_tokens": 2852,
+        "output_tokens": 7945,
+        "cost_usd": 0.04258,
+        "turns": 2
+      }
+    ],
+    "cost_usd": 0.12128,
+    "latency_s": 167.8
+  },
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "diagnoses",
+        "fact": "Several hypos (low blood sugar)",
+        "status": "kept",
+        "note": "\"You told us you have had several hypos (low blood sugar).\""
+      },
+      {
+        "category": "diagnoses",
+        "fact": "HbA1c 46 mmol/mol",
+        "status": "kept",
+        "note": "Value 46 mmol/mol kept. HbA1c is called a \"blood sugar test result\", which is simpler but not wrong."
+      },
+      {
+        "category": "medicines",
+        "fact": "STOP gliclazide 80 mg twice daily (it can cause hypos)",
+        "status": "kept",
+        "note": "Stop gliclazide 80 mg twice daily; it can cause hypos."
+      },
+      {
+        "category": "medicines",
+        "fact": "CONTINUE metformin 1 g twice daily with meals",
+        "status": "kept",
+        "note": "Keep taking metformin 1 g twice daily with meals."
+      },
+      {
+        "category": "medicines",
+        "fact": "START sitagliptin 100 mg once daily",
+        "status": "kept",
+        "note": "Start sitagliptin 100 mg once daily."
+      },
+      {
+        "category": "medicines",
+        "fact": "Sick day rule: if vomiting, diarrhoea, or cannot eat or drink normally, stop metformin; restart 24 to 48 hours after eating and drinking normally again",
+        "status": "kept",
+        "note": "Same triggers (vomiting, diarrhoea, cannot eat or drink normally). Stop metformin and restart 24 to 48 hours after eating and drinking normally."
+      },
+      {
+        "category": "dates",
+        "fact": "Clinic visit on 2 October 2026",
+        "status": "kept",
+        "note": "Clinic visit on 2 October 2026."
+      },
+      {
+        "category": "dates",
+        "fact": "Next appointment on Friday 13 November 2026 at 10:00",
+        "status": "kept",
+        "note": "13 November 2026 at 10:00. The weekday \"Friday\" is left out, but the date and time match."
+      },
+      {
+        "category": "actions",
+        "fact": "Keep checking your blood sugar for the next 2 weeks and bring the readings to the next appointment",
+        "status": "kept",
+        "note": "Check blood sugar for the next 2 weeks and bring the readings to the next appointment."
+      }
+    ],
+    "added": [],
+    "gold_reviewer": "claude-draft"
+  }
+}

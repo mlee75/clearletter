@@ -1,0 +1,303 @@
+{
+  "job": {
+    "id": "mtsamples__mts_3889__sonnet__en__v",
+    "part": "mtsamples",
+    "letter_id": "mts_3889",
+    "file": "data/mtsamples/mts_3889.txt",
+    "kind": "faithfulness",
+    "model": "sonnet",
+    "language": "en",
+    "verifier": true,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "sonnet",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": true,
+    "status": "ok",
+    "final_text": "## What this letter says\nThis letter is about your stay in hospital.\n\n- You came in with a possible kidney infection (pyelonephritis).\n- The infection was likely caused by a plug of thick mucus in your Foley tube. The tube is in your ileal conduit. This is possible, not certain.\n- Dr. X flushed the tube (irrigated it).\n- Your symptoms got better with antibiotics given into a vein (IV). You stayed stable.\n- A germ called Klebsiella was found in your urine. It was sensitive to Bactrim.\n- You also had right knee pain. There was no sign of fluid in the knee (no effusion).\n- Your knee was very sore when the tendon below the kneecap (patellar tendon) was touched.\n- The doctors thought the knee problem was not inside the joint (intraarticular). This is possible, not certain.\n- Other problems in the letter: high blood pressure (hypertension), mild kidney weakness (mild renal insufficiency), and long-term low blood count (anemia) for the past year.\n- The letter also notes your past uterine cancer and ileal conduit urinary diversion.\n\n## What you need to do\n1. Go to your follow-up visit with Dr. Y in 7-10 days.\n2. For your right knee pain, you were advised to use ibuprofen. You can buy it without a prescription. Take two to three tablets, three times a day.\n\n## Dates and medicines\n- Follow-up with Dr. Y: in 7-10 days.\n- The letter has a date for more surgery: 08/07/2007. It is not clear which date this is. It does not say what surgery.\n- Bactrim, by mouth. The letter does not give the dose, how often, or for how long.\n- Ibuprofen, from a shop without prescription. Two to three tablets, three times a day. The letter does not give the tablet strength.\n\n## Questions to ask your doctor\n- How much Bactrim should I take, how often, and for how long?\n- What strength of ibuprofen tablet should I buy?\n- What is the date for more surgery, and what surgery is it?\n- What do my kidney infection and knee results mean for me?\n\n## When to get urgent help\nThe letter does not list specific warning signs.\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "doctor_copy_to_patient",
+      "purpose": "Discharge summary describing a hospital stay for a kidney infection (pyelonephritis), the treatment given, the antibiotic she went home on, follow-up, and advice for right knee pain.",
+      "findings": [
+        {
+          "statement": "Pyelonephritis (kidney infection) was suspected when she was admitted.",
+          "certainty": "possible",
+          "quote": "The patient was admitted with suspected pyelonephritis."
+        },
+        {
+          "statement": "Pyelonephritis is likely secondary to mucous plugging of the indwelling Foley in the ileal conduit.",
+          "certainty": "possible",
+          "quote": "Pyelonephritis likely secondary to mucous plugging of indwelling Foley in the ileal conduit."
+        },
+        {
+          "statement": "A thick mucous plug in the Foley in the ileal conduit was thought to be present and was irrigated by Dr. X.",
+          "certainty": "possible",
+          "quote": "It was thought that there was a thick mucous plug in the Foley in the ileal conduit that was irrigated by Dr. X."
+        },
+        {
+          "statement": "Her symptoms responded to IV antibiotics and she remained clinically stable.",
+          "certainty": "stated",
+          "quote": "Her symptoms responded to IV antibiotics and she remained clinically stable."
+        },
+        {
+          "statement": "Klebsiella was isolated in the urine and was sensitive to Bactrim.",
+          "certainty": "stated",
+          "quote": "Klebsiella was isolated in this urine, which was sensitive to Bactrim"
+        },
+        {
+          "statement": "Hypertension is listed as a discharge diagnosis.",
+          "certainty": "stated",
+          "quote": "Hypertension."
+        },
+        {
+          "statement": "Mild renal insufficiency is listed as a discharge diagnosis.",
+          "certainty": "stated",
+          "quote": "Mild renal insufficiency."
+        },
+        {
+          "statement": "Anemia has been present chronically over the past year.",
+          "certainty": "stated",
+          "quote": "Anemia, which has been present chronically over the past year."
+        },
+        {
+          "statement": "History of uterine cancer and ileal conduit urinary diversion.",
+          "certainty": "stated",
+          "quote": "History of uterine cancer and ileal conduit urinary diversion."
+        },
+        {
+          "statement": "She complained of right knee pain.",
+          "certainty": "stated",
+          "quote": "She also complained of right knee pain"
+        },
+        {
+          "statement": "The right knee showed no sign of effusion.",
+          "certainty": "ruled_out",
+          "quote": "the right knee showed no sign of effusion"
+        },
+        {
+          "statement": "She was exquisitely tender to touch of the patellar tendon.",
+          "certainty": "stated",
+          "quote": "She was exquisitely tender to touch of the patellar tendon."
+        },
+        {
+          "statement": "The knee problem was thought not to represent an intraarticular (inside the joint) process.",
+          "certainty": "possible",
+          "quote": "It was thought that this did not represent intraarticular process."
+        }
+      ],
+      "medicines": [
+        {
+          "name": "Bactrim",
+          "dose": "",
+          "how_often": "",
+          "change": "not_stated",
+          "details": "Discharged on Bactrim by mouth (p.o.). Dose and frequency not stated in the letter.",
+          "quote": "she was discharged on p.o.  Bactrim"
+        },
+        {
+          "name": "Ibuprofen (over-the-counter)",
+          "dose": "two to three tabs",
+          "how_often": "three times a day (t.i.d.)",
+          "change": "not_stated",
+          "details": "She was advised to use it for right knee pain. Tablet strength not stated.",
+          "quote": "She was advised to use ibuprofen over-the-counter two to three tabs t.i.d."
+        }
+      ],
+      "dates": [
+        {
+          "what": "Follow-up with Dr. Y",
+          "when": "in 7-10 days",
+          "quote": "She is to follow up with Dr. Y in 7-10 days."
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "She is to follow up with Dr. Y in 7-10 days.",
+          "quote": "She is to follow up with Dr. Y in 7-10 days."
+        },
+        {
+          "instruction": "She was advised to use over-the-counter ibuprofen, two to three tablets three times a day, for the right knee pain.",
+          "quote": "She was advised to use ibuprofen over-the-counter two to three tabs t.i.d."
+        }
+      ],
+      "negatives": [
+        {
+          "instruction": "The right knee showed no sign of effusion.",
+          "quote": "the right knee showed no sign of effusion"
+        }
+      ],
+      "warning_signs": [],
+      "unclear": [
+        "The date \"08/07/2007\" for further surgery could be 8 July 2007 or 7 August 2007; the letter does not make clear which. The letter does not say what kind of surgery.",
+        "Dose and frequency of Bactrim, and how long to take it, are not stated.",
+        "Ibuprofen tablet strength is not stated.",
+        "The letter does not say whether Bactrim is a new medicine."
+      ]
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\nThis letter is about your stay in hospital.\n\n- You came in with a possible kidney infection (pyelonephritis).\n- The infection was likely caused by a plug of thick mucus in your Foley tube. The tube is in your ileal conduit. This is possible, not certain.\n- Dr. X flushed the tube (irrigated it).\n- Your symptoms got better with antibiotics given into a vein (IV). You stayed stable.\n- A germ called Klebsiella was found in your urine. It was sensitive to Bactrim.\n- You also had right knee pain. There was no sign of fluid in the knee (no effusion).\n- Your knee was very sore when the tendon below the kneecap (patellar tendon) was touched.\n- The doctors thought the knee problem was not inside the joint (intraarticular). This is possible, not certain.\n- Other problems in the letter: high blood pressure (hypertension), mild kidney weakness (mild renal insufficiency), and long-term low blood count (anemia) for the past year.\n- The letter also notes your past uterine cancer and ileal conduit urinary diversion.\n\n## What you need to do\n1. Go to your follow-up visit with Dr. Y in 7-10 days.\n2. For your right knee pain, you were advised to use ibuprofen. You can buy it without a prescription. Take two to three tablets, three times a day.\n\n## Dates and medicines\n- Follow-up with Dr. Y: in 7-10 days.\n- The letter has a date for more surgery: 08/07/2007. It is not clear which date this is. It does not say what surgery.\n- Bactrim, by mouth. The letter does not give the dose, how often, or for how long.\n- Ibuprofen, from a shop without prescription. Two to three tablets, three times a day. The letter does not give the tablet strength.\n\n## Questions to ask your doctor\n- How much Bactrim should I take, how often, and for how long?\n- What strength of ibuprofen tablet should I buy?\n- What is the date for more surgery, and what surgery is it?\n- What do my kidney infection and knee results mean for me?\n\n## When to get urgent help\nThe letter does not list specific warning signs.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 77.6,
+          "reading_ease_target": 70,
+          "grade_level": 4.7,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [
+            {
+              "kind": "certainty",
+              "severity": "minor",
+              "explanation_says": "The doctors thought the knee problem was not inside the joint (intraarticular). This is possible, not certain.",
+              "letter_says": "It was thought that this did not represent intraarticular process.",
+              "why": "Letter states the clinicians' thinking; adding 'possible, not certain' is roughly consistent but slightly reframes. Essentially matches.",
+              "real_difference": false
+            },
+            {
+              "kind": "changed",
+              "severity": "minor",
+              "explanation_says": "The letter has a date for more surgery: 08/07/2007. It is not clear which date this is.",
+              "letter_says": "She was scheduled on 08/07/2007 for further surgery.",
+              "why": "Explanation says the date is unclear (format ambiguity), which is a reasonable note, but the letter gives the date plainly; also the 'Questions' section asks for the date, implying it's unknown. The 'it does not say what surgery' is accurate.",
+              "real_difference": false
+            },
+            {
+              "kind": "advice",
+              "severity": "minor",
+              "explanation_says": "Take two to three tablets, three times a day. You can buy it without a prescription.",
+              "letter_says": "She was advised to use ibuprofen over-the-counter two to three tabs t.i.d.",
+              "why": "Matches the letter (t.i.d. = three times a day).",
+              "real_difference": false
+            },
+            {
+              "kind": "added",
+              "severity": "minor",
+              "explanation_says": "mild kidney weakness (mild renal insufficiency)",
+              "letter_says": "Mild renal insufficiency",
+              "why": "Plain-language gloss of a term in the letter; allowed.",
+              "real_difference": false
+            },
+            {
+              "kind": "dropped",
+              "severity": "minor",
+              "explanation_says": "Dr. X flushed the tube (irrigated it).",
+              "letter_says": "Renal was consulted. ... thick mucous plug ... irrigated by Dr. X.",
+              "why": "Renal consult omitted, which does not matter to the patient.",
+              "real_difference": false
+            }
+          ],
+          "summary": "The explanation matches the letter. I found no real differences. The five items listed are wording or gloss differences only (real_difference=false). The diagnoses, the Klebsiella and Bactrim finding, the follow-up in 7-10 days, the surgery date, the ibuprofen instructions and the absence of warning signs all agree with the letter."
+        },
+        "blocking_problems": [],
+        "attempt": 1
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 3397,
+        "output_tokens": 2185,
+        "cost_usd": 0.02387,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 15774,
+        "output_tokens": 2125,
+        "cost_usd": 0.04225,
+        "turns": 7
+      },
+      {
+        "step": "verify",
+        "input_tokens": 3574,
+        "output_tokens": 813,
+        "cost_usd": 0.01663,
+        "turns": 2
+      }
+    ],
+    "cost_usd": 0.08276,
+    "latency_s": 41.4
+  },
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "diagnoses",
+        "fact": "Kidney infection (pyelonephritis), likely caused by a mucus plug blocking the Foley catheter in the ileal conduit",
+        "status": "kept",
+        "note": "Kidney infection likely caused by a mucus plug in the Foley tube in the ileal conduit; 'likely' is shown as 'possible, not certain'."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "High blood pressure (hypertension)",
+        "status": "kept",
+        "note": "High blood pressure (hypertension) is listed."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Mild kidney impairment (renal insufficiency)",
+        "status": "kept",
+        "note": "Mild kidney weakness (mild renal insufficiency) is listed."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Anaemia, present for the past year",
+        "status": "kept",
+        "note": "Long-term low blood count (anemia) for the past year is listed."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "History of uterine cancer and an ileal conduit (urinary diversion)",
+        "status": "kept",
+        "note": "Past uterine cancer and ileal conduit urinary diversion are mentioned."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Klebsiella bacteria in the urine, treatable with Bactrim",
+        "status": "kept",
+        "note": "Klebsiella found in the urine and sensitive to Bactrim."
+      },
+      {
+        "category": "medicines",
+        "fact": "Bactrim by mouth",
+        "status": "kept",
+        "note": "Bactrim by mouth."
+      },
+      {
+        "category": "medicines",
+        "fact": "Ibuprofen from the pharmacy, two to three tablets three times a day, for the knee pain",
+        "status": "kept",
+        "note": "Ibuprofen without a prescription, two to three tablets three times a day, for the right knee pain."
+      },
+      {
+        "category": "dates",
+        "fact": "Further surgery scheduled on 08/07/2007",
+        "status": "kept",
+        "note": "Further surgery dated 08/07/2007 is kept. The explanation also says the date is unclear, which reflects the ambiguous wording or date format in the letter. The date itself is not changed."
+      },
+      {
+        "category": "dates",
+        "fact": "Follow up with Dr. Y in 7-10 days",
+        "status": "kept",
+        "note": "Follow up with Dr. Y in 7-10 days."
+      },
+      {
+        "category": "negatives",
+        "fact": "Right knee: no swelling in the joint (no effusion); the pain is not thought to come from inside the joint",
+        "status": "kept",
+        "note": "No fluid in the knee (no effusion), and the problem is thought not to be inside the joint."
+      }
+    ],
+    "added": [],
+    "gold_reviewer": "claude-draft"
+  }
+}

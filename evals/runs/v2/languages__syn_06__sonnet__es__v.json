@@ -1,0 +1,259 @@
+{
+  "job": {
+    "id": "languages__syn_06__sonnet__es__v",
+    "part": "languages",
+    "letter_id": "syn_06",
+    "file": "data/synthetic/syn_06.txt",
+    "kind": "faithfulness",
+    "model": "sonnet",
+    "language": "es",
+    "verifier": true,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "sonnet",
+    "backend": "claude-code",
+    "language": "es",
+    "country": "uk",
+    "use_verifier": true,
+    "status": "ok",
+    "final_text": "## Qué dice esta carta\nEsta carta es de cuando salió del hospital.\nTuvo apendicitis aguda (acute appendicitis).\nLe hicieron una operación con cámara, por agujeros pequeños, para quitar el apéndice (laparoscopic appendicectomy). Fue el 24 de septiembre de 2026.\nNo hubo complicaciones.\nTiene 3 heridas pequeñas. Están cerradas con grapas.\nEl resultado del examen del apéndice en el laboratorio (histology) aún no se sabe.\nSe lo enviarán a usted y a su médico de cabecera. La carta no da fecha.\nNo hace falta hacer nada sobre este resultado, salvo que sea anormal.\n\n## Qué tiene que hacer\n1. Pida cita con la enfermera de su centro de salud (GP surgery). Es para quitar las grapas el 6 de octubre de 2026.\n2. No levante cosas pesadas durante 4 semanas.\n3. Puede ducharse desde el 28 de septiembre de 2026.\n\n## Fechas y medicamentos\nFechas:\n- 24 de septiembre de 2026: ingreso y operación.\n- 26 de septiembre de 2026: salida del hospital.\n- 28 de septiembre de 2026: puede ducharse desde este día.\n- 6 de octubre de 2026: la enfermera le quita las grapas.\n\nMedicamentos:\n- Paracetamol (Paracetamol): 1 g, hasta 4 veces al día, solo cuando lo necesite, para el dolor. Máximo 4 g en 24 horas.\n- Ibuprofeno (Ibuprofen): 400 mg, 3 veces al día, con comida, durante 5 días.\n\n## Preguntas para su médico\n- ¿Cuándo sabré el resultado del examen del apéndice (histology)?\n- ¿Cómo me avisarán del resultado?\n- ¿Qué cuidados necesitan mis heridas?\n\n## Cuándo pedir ayuda urgente\nLlame a su médico de cabecera o al 111 si tiene temperatura de más de 38°C.\nTambién si una herida se pone roja, se hincha o suelta pus.\n\nSi le preocupa algo y no es una emergencia, llame al NHS 111. En caso de emergencia, llame al 999.\n\n---\n*Esta explicación la ha hecho un programa informático para ayudarle a leer su carta. Puede contener errores. No sustituye a su médico, enfermero o farmacéutico. Siga siempre lo que dice la carta y pregúnteles si algo no está claro.*\n",
+    "facts": {
+      "reader": "patient",
+      "purpose": "Discharge letter after laparoscopic appendicectomy for acute appendicitis, with medicines, wound care and follow-up.",
+      "findings": [
+        {
+          "statement": "Diagnosis: acute appendicitis",
+          "certainty": "stated",
+          "quote": "Diagnosis: Acute appendicitis"
+        },
+        {
+          "statement": "Laparoscopic appendicectomy (keyhole operation to remove the appendix) done on 24 September 2026, with no complications",
+          "certainty": "stated",
+          "quote": "Laparoscopic appendicectomy (keyhole operation to remove the appendix) on 24/09/2026. No complications."
+        },
+        {
+          "statement": "3 small wounds closed with clips",
+          "certainty": "stated",
+          "quote": "3 small wounds closed with clips."
+        },
+        {
+          "statement": "Histology (lab examination of the appendix) result is pending",
+          "certainty": "pending",
+          "quote": "Histology (lab examination of the appendix) is pending."
+        }
+      ],
+      "medicines": [
+        {
+          "name": "Paracetamol",
+          "dose": "1 g",
+          "how_often": "QDS PRN (four times a day, only when needed) for pain",
+          "change": "not_stated",
+          "details": "Maximum 4 g in 24 hours",
+          "quote": "Paracetamol 1 g QDS PRN for pain (maximum 4 g in 24 hours)"
+        },
+        {
+          "name": "Ibuprofen",
+          "dose": "400 mg",
+          "how_often": "TDS (three times a day) with food",
+          "change": "not_stated",
+          "details": "For 5 days",
+          "quote": "Ibuprofen 400 mg TDS with food for 5 days"
+        }
+      ],
+      "dates": [
+        {
+          "what": "Admitted",
+          "when": "24 September 2026",
+          "quote": "Admitted: 24/09/2026"
+        },
+        {
+          "what": "Operation (laparoscopic appendicectomy)",
+          "when": "24 September 2026",
+          "quote": "on 24/09/2026"
+        },
+        {
+          "what": "Discharged",
+          "when": "26 September 2026",
+          "quote": "Discharged: 26/09/2026"
+        },
+        {
+          "what": "May shower from this date",
+          "when": "28 September 2026",
+          "quote": "You may shower from 28/09/2026."
+        },
+        {
+          "what": "Clips removed by practice nurse at GP surgery",
+          "when": "6 October 2026",
+          "quote": "Clips to be removed by the practice nurse at your GP surgery on 06/10/2026."
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Book the appointment with the practice nurse at your GP surgery for clip removal on 6 October 2026",
+          "quote": "Please book this appointment."
+        }
+      ],
+      "negatives": [
+        {
+          "instruction": "No heavy lifting for 4 weeks",
+          "quote": "No heavy lifting for 4 weeks."
+        },
+        {
+          "instruction": "No further action is needed about the histology result unless it is abnormal",
+          "quote": "No further action is needed unless the result is abnormal."
+        }
+      ],
+      "warning_signs": [
+        {
+          "instruction": "Contact your GP or call 111 if you have a temperature above 38°C, or if a wound becomes red, swollen or leaks pus",
+          "quote": "Contact your GP or call 111 if you have a temperature above 38°C, or if a wound becomes red, swollen or leaks pus."
+        }
+      ],
+      "unclear": [
+        "The histology result will be sent to you and your GP, but no date is given."
+      ]
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## Qué dice esta carta\nEsta carta es de cuando salió del hospital.\nTuvo apendicitis aguda (acute appendicitis).\nLe hicieron una operación con cámara, por agujeros pequeños, para quitar el apéndice (laparoscopic appendicectomy). Fue el 24 de septiembre de 2026.\nNo hubo complicaciones.\nTiene 3 heridas pequeñas. Están cerradas con grapas.\nEl resultado del examen del apéndice en el laboratorio (histology) aún no se sabe.\nSe lo enviarán a usted y a su médico de cabecera. La carta no da fecha.\nNo hace falta hacer nada sobre este resultado, salvo que sea anormal.\n\n## Qué tiene que hacer\n1. Pida cita con la enfermera de su centro de salud (GP surgery). Es para quitar las grapas el 6 de octubre de 2026.\n2. No levante cosas pesadas durante 4 semanas.\n3. Puede ducharse desde el 28 de septiembre de 2026.\n\n## Fechas y medicamentos\nFechas:\n- 24 de septiembre de 2026: ingreso y operación.\n- 26 de septiembre de 2026: salida del hospital.\n- 28 de septiembre de 2026: puede ducharse desde este día.\n- 6 de octubre de 2026: la enfermera le quita las grapas.\n\nMedicamentos:\n- Paracetamol (Paracetamol): 1 g, hasta 4 veces al día, solo cuando lo necesite, para el dolor. Máximo 4 g en 24 horas.\n- Ibuprofeno (Ibuprofen): 400 mg, 3 veces al día, con comida, durante 5 días.\n\n## Preguntas para su médico\n- ¿Cuándo sabré el resultado del examen del apéndice (histology)?\n- ¿Cómo me avisarán del resultado?\n- ¿Qué cuidados necesitan mis heridas?\n\n## Cuándo pedir ayuda urgente\nLlame a su médico de cabecera o al 111 si tiene temperatura de más de 38°C.\nTambién si una herida se pone roja, se hincha o suelta pus.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "es",
+          "reading_ease": 84.8,
+          "reading_ease_target": 70,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [
+            {
+              "kind": "added",
+              "severity": "minor",
+              "explanation_says": "La carta no da fecha.",
+              "letter_says": "The result will be sent to you and your GP (no mention of a date)",
+              "why": "Statement about the letter lacking a date is an extra comment; mostly accurate, but not a letter fact."
+            },
+            {
+              "kind": "added",
+              "severity": "minor",
+              "explanation_says": "Por agujeros pequeños / con cámara",
+              "letter_says": "keyhole operation",
+              "why": "Camera detail is a definition of keyhole surgery; acceptable, minor."
+            }
+          ],
+          "summary": "The explanation matches the letter on diagnosis, procedure, medicines, doses, dates, restrictions, pending histology and warning signs. Only minor wording additions, which do not change meaning."
+        },
+        "blocking_problems": [],
+        "attempt": 1
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 3194,
+        "output_tokens": 1228,
+        "cost_usd": 0.0143,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 12908,
+        "output_tokens": 1868,
+        "cost_usd": 0.03665,
+        "turns": 6
+      },
+      {
+        "step": "verify",
+        "input_tokens": 3255,
+        "output_tokens": 314,
+        "cost_usd": 0.01266,
+        "turns": 2
+      }
+    ],
+    "cost_usd": 0.06361,
+    "latency_s": 31.9
+  },
+  "back_translation": "## What this letter says\nThis letter is from when you left the hospital.\nYou had acute appendicitis (acute appendicitis).\nThey did an operation with a camera, through small holes, to remove the appendix (laparoscopic appendicectomy). It was on 24 September 2026.\nThere were no complications.\nYou have 3 small wounds. They are closed with staples.\nThe result of the laboratory examination of the appendix (histology) is not yet known.\nIt will be sent to you and to your family doctor. The letter does not give a date.\nNothing needs to be done about this result, unless it is abnormal.\n\n## What you have to do\n1. Make an appointment with the nurse at your health centre (GP surgery). It is to remove the staples on 6 October 2026.\n2. Do not lift heavy things for 4 weeks.\n3. You can shower from 28 September 2026.\n\n## Dates and medicines\nDates:\n- 24 September 2026: admission and operation.\n- 26 September 2026: discharge from hospital.\n- 28 September 2026: you can shower from this day.\n- 6 October 2026: the nurse removes your staples.\n\nMedicines:\n- Paracetamol (Paracetamol): 1 g, up to 4 times a day, only when you need it, for pain. Maximum 4 g in 24 hours.\n- Ibuprofen (Ibuprofen): 400 mg, 3 times a day, with food, for 5 days.\n\n## Questions for your doctor\n- When will I know the result of the examination of the appendix (histology)?\n- How will they let me know the result?\n- What care do my wounds need?\n\n## When to ask for urgent help\nCall your family doctor or 111 if you have a temperature of more than 38°C.\nAlso if a wound becomes red, swells or releases pus.",
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "diagnoses",
+        "fact": "Acute appendicitis",
+        "status": "kept",
+        "note": "Acute appendicitis stated."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Keyhole operation to remove the appendix (laparoscopic appendicectomy) on 24 September 2026",
+        "status": "kept",
+        "note": "Operation with a camera through small holes to remove the appendix, on 24 September 2026."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Lab result on the appendix (histology) is still pending",
+        "status": "kept",
+        "note": "Histology result 'not yet known'."
+      },
+      {
+        "category": "medicines",
+        "fact": "Paracetamol 1 g four times a day when needed for pain, maximum 4 g in 24 hours",
+        "status": "kept",
+        "note": "1 g, up to 4 times a day when needed for pain, max 4 g in 24 hours."
+      },
+      {
+        "category": "medicines",
+        "fact": "Ibuprofen 400 mg three times a day with food, for 5 days",
+        "status": "kept",
+        "note": "400 mg, 3 times a day, with food, for 5 days."
+      },
+      {
+        "category": "dates",
+        "fact": "Clips removed by the practice nurse at the GP surgery on 6 October 2026",
+        "status": "kept",
+        "note": "Nurse at GP surgery removes staples (clips) on 6 October 2026."
+      },
+      {
+        "category": "dates",
+        "fact": "No heavy lifting for 4 weeks",
+        "status": "kept",
+        "note": "Do not lift heavy things for 4 weeks."
+      },
+      {
+        "category": "dates",
+        "fact": "You may shower from 28 September 2026",
+        "status": "kept",
+        "note": "Can shower from 28 September 2026."
+      },
+      {
+        "category": "actions",
+        "fact": "Book the clip-removal appointment",
+        "status": "kept",
+        "note": "Make an appointment with the nurse to remove the staples."
+      },
+      {
+        "category": "actions",
+        "fact": "Contact your GP or call 111 if temperature above 38°C, or a wound becomes red, swollen or leaks pus",
+        "status": "kept",
+        "note": "Call GP or 111 if temperature above 38°C, or a wound is red, swollen or releases pus."
+      },
+      {
+        "category": "negatives",
+        "fact": "There were no complications",
+        "status": "kept",
+        "note": "'There were no complications.'"
+      },
+      {
+        "category": "negatives",
+        "fact": "No further action is needed unless the histology result is abnormal",
+        "status": "kept",
+        "note": "Nothing needs to be done unless the result is abnormal."
+      }
+    ],
+    "added": [],
+    "gold_reviewer": "claude-draft"
+  }
+}

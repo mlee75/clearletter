@@ -1,0 +1,180 @@
+{
+  "job": {
+    "id": "languages__syn_04__sonnet__es__v",
+    "part": "languages",
+    "letter_id": "syn_04",
+    "file": "data/synthetic/syn_04.txt",
+    "kind": "faithfulness",
+    "model": "sonnet",
+    "language": "es",
+    "verifier": true,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "sonnet",
+    "backend": "claude-code",
+    "language": "es",
+    "country": "uk",
+    "use_verifier": true,
+    "status": "ok",
+    "final_text": "## Qué dice esta carta\nLe invitan a una revisión de los ojos para personas con diabetes (diabetic eye screening).\nEsta prueba se ofrece cada año a todas las personas con diabetes de 12 años o más.\nMira el fondo de los ojos. Busca daños causados por la diabetes (retinopatía diabética).\nLa prueba no diagnostica otros problemas de los ojos. No sustituye su revisión normal de la vista en la óptica.\nLas gotas le dejarán la vista borrosa de 4 a 6 horas.\n\n## Qué tiene que hacer\n1. Pida su cita antes del 15 de enero de 2027. Llame al 01632 960 377.\n2. Lleve gafas de sol, si las tiene.\n3. Lleve sus gafas o lentes de contacto, y una lista de sus medicinas.\n4. No conduzca hasta que su vista vuelva a la normalidad.\n\n## Fechas y medicamentos\n- Fecha límite para pedir la cita: 15 de enero de 2027.\n- La carta no menciona medicamentos.\n\n## Preguntas para su médico\n- ¿Cuánto dura la cita?\n- ¿Cuándo sabré el resultado de la prueba?\n- ¿Cuándo podré volver a conducir después de las gotas?\n\n## Cuándo pedir ayuda urgente\nLa carta no menciona señales de alarma concretas.\n\nSi le preocupa algo y no es una emergencia, llame al NHS 111. En caso de emergencia, llame al 999.\n\n---\n*Esta explicación la ha hecho un programa informático para ayudarle a leer su carta. Puede contener errores. No sustituye a su médico, enfermero o farmacéutico. Siga siempre lo que dice la carta y pregúnteles si algo no está claro.*\n",
+    "facts": {
+      "reader": "patient",
+      "purpose": "Invitation to diabetic eye screening; the patient must book an appointment by 15 January 2027.",
+      "findings": [
+        {
+          "statement": "Diabetic eye screening is a test offered every year to everyone with diabetes aged 12 and over. It checks the back of the eyes for damage caused by diabetes (diabetic retinopathy).",
+          "certainty": "stated",
+          "quote": "This is a test that everyone with diabetes aged 12 and over is offered every year."
+        },
+        {
+          "statement": "The drops will make vision blurred for 4 to 6 hours.",
+          "certainty": "stated",
+          "quote": "The drops will make your vision blurred for 4 to 6 hours."
+        }
+      ],
+      "medicines": [],
+      "dates": [
+        {
+          "what": "Deadline to book the screening appointment (phone 01632 960 377)",
+          "when": "15 January 2027",
+          "quote": "Please book your appointment by 15 January 2027 by calling 01632 960 377."
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Book your appointment by 15 January 2027 by calling 01632 960 377.",
+          "quote": "Please book your appointment by 15 January 2027 by calling 01632 960 377."
+        },
+        {
+          "instruction": "Bring sunglasses if you have them.",
+          "quote": "Bring sunglasses if you have them."
+        },
+        {
+          "instruction": "Bring your glasses or contact lenses and a list of your medicines.",
+          "quote": "Bring your glasses or contact lenses and a list of your medicines."
+        }
+      ],
+      "negatives": [
+        {
+          "instruction": "Screening does not diagnose other eye problems and does not replace your regular eye test at an optician.",
+          "quote": "It does not diagnose other eye problems, and it does not replace your regular eye test at an optician."
+        },
+        {
+          "instruction": "Do not drive until your vision is back to normal.",
+          "quote": "You must not drive until your vision is back to normal."
+        }
+      ],
+      "warning_signs": [],
+      "unclear": []
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## Qué dice esta carta\nLe invitan a una revisión de los ojos para personas con diabetes (diabetic eye screening).\nEsta prueba se ofrece cada año a todas las personas con diabetes de 12 años o más.\nMira el fondo de los ojos. Busca daños causados por la diabetes (retinopatía diabética).\nLa prueba no diagnostica otros problemas de los ojos. No sustituye su revisión normal de la vista en la óptica.\nLas gotas le dejarán la vista borrosa de 4 a 6 horas.\n\n## Qué tiene que hacer\n1. Pida su cita antes del 15 de enero de 2027. Llame al 01632 960 377.\n2. Lleve gafas de sol, si las tiene.\n3. Lleve sus gafas o lentes de contacto, y una lista de sus medicinas.\n4. No conduzca hasta que su vista vuelva a la normalidad.\n\n## Fechas y medicamentos\n- Fecha límite para pedir la cita: 15 de enero de 2027.\n- La carta no menciona medicamentos.\n\n## Preguntas para su médico\n- ¿Cuánto dura la cita?\n- ¿Cuándo sabré el resultado de la prueba?\n- ¿Cuándo podré volver a conducir después de las gotas?\n\n## Cuándo pedir ayuda urgente\nLa carta no menciona señales de alarma concretas.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "es",
+          "reading_ease": 92.7,
+          "reading_ease_target": 70,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [],
+          "summary": "The explanation matches the letter. It has the yearly screening for people with diabetes aged 12 and over, the retinopathy check, and the fact that the test does not diagnose other eye problems or replace the optician. It also has the booking deadline of 15 January 2027, the phone number, the 4 to 6 hours of blurred vision, the driving restriction, and the items to bring. The questions are acceptable, and the statement that the letter lists no warning signs is expected."
+        },
+        "blocking_problems": [],
+        "attempt": 1
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 3141,
+        "output_tokens": 796,
+        "cost_usd": 0.00994,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 7017,
+        "output_tokens": 1033,
+        "cost_usd": 0.02009,
+        "turns": 2
+      },
+      {
+        "step": "verify",
+        "input_tokens": 3119,
+        "output_tokens": 472,
+        "cost_usd": 0.01139,
+        "turns": 2
+      }
+    ],
+    "cost_usd": 0.04142,
+    "latency_s": 25.5
+  },
+  "back_translation": "## What this letter says\nYou are invited to an eye check for people with diabetes (diabetic eye screening).\nThis test is offered every year to all people with diabetes aged 12 or over.\nIt looks at the back of the eyes. It looks for damage caused by diabetes (diabetic retinopathy).\nThe test does not diagnose other eye problems. It does not replace your normal eye test at the optician.\nThe drops will leave your vision blurry for 4 to 6 hours.\n\n## What you need to do\n1. Book your appointment before 15 January 2027. Call 01632 960 377.\n2. Bring sunglasses, if you have them.\n3. Bring your glasses or contact lenses, and a list of your medicines.\n4. Do not drive until your vision returns to normal.\n\n## Dates and medicines\n- Deadline to book the appointment: 15 January 2027.\n- The letter does not mention medicines.\n\n## Questions for your doctor\n- How long does the appointment last?\n- When will I know the result of the test?\n- When will I be able to drive again after the drops?\n\n## When to get urgent help\nThe letter does not mention specific warning signs.",
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "diagnoses",
+        "fact": "Invited to diabetic eye screening, which checks the back of the eyes for damage from diabetes (diabetic retinopathy)",
+        "status": "kept",
+        "note": "Says invited to diabetic eye screening, which checks the back of the eyes for damage from diabetes (diabetic retinopathy)."
+      },
+      {
+        "category": "dates",
+        "fact": "Book the appointment by 15 January 2027",
+        "status": "kept",
+        "note": "Says book 'before 15 January 2027' and gives the deadline as 15 January 2027. Same date."
+      },
+      {
+        "category": "dates",
+        "fact": "The eye drops blur vision for 4 to 6 hours",
+        "status": "kept",
+        "note": "Says the drops leave vision blurry for 4 to 6 hours."
+      },
+      {
+        "category": "actions",
+        "fact": "Call 01632 960 377 to book",
+        "status": "kept",
+        "note": "Says call 01632 960 377 to book."
+      },
+      {
+        "category": "actions",
+        "fact": "Do not drive until your vision is back to normal",
+        "status": "kept",
+        "note": "Says do not drive until vision returns to normal."
+      },
+      {
+        "category": "actions",
+        "fact": "Bring sunglasses if you have them",
+        "status": "kept",
+        "note": "Says bring sunglasses if you have them."
+      },
+      {
+        "category": "actions",
+        "fact": "Bring your glasses or contact lenses and a list of your medicines",
+        "status": "kept",
+        "note": "Says bring glasses or contact lenses and a list of medicines. But the 'Dates and medicines' section wrongly says the letter does not mention medicines, which contradicts this."
+      },
+      {
+        "category": "negatives",
+        "fact": "This screening does not diagnose other eye problems",
+        "status": "kept",
+        "note": "Says the test does not diagnose other eye problems."
+      },
+      {
+        "category": "negatives",
+        "fact": "It does not replace the regular eye test at an optician",
+        "status": "kept",
+        "note": "Says it does not replace the normal eye test at the optician."
+      }
+    ],
+    "added": [],
+    "gold_reviewer": "claude-draft"
+  }
+}

@@ -1,14 +1,15 @@
-"""Turn the saved runs in evals/runs/ into evals/results.md and evals/results.csv.
+"""Turn the saved runs in evals/runs/<version>/ into reports.
 
     python -m evals.report
 
-Also writes the human review pack for French and Spanish (evals/human_review/),
-without overwriting any review you have already filled in.
+Writes, for each pipeline version: evals/results_<version>.md and .csv.
+evals/results.md is the latest version's report, with a comparison against the
+previous version at the top. Also writes the human review pack for French and
+Spanish (evals/human_review/), without overwriting any review already filled in.
 """
 
 import csv
 import json
-from collections import defaultdict
 from datetime import date
 from pathlib import Path
 from statistics import mean
@@ -20,9 +21,13 @@ RUNS = ROOT / "evals" / "runs"
 REVIEW = ROOT / "evals" / "human_review"
 
 
-def load_runs():
+def versions():
+    return sorted(p.name for p in RUNS.iterdir() if p.is_dir() and any(p.glob("*.json")))
+
+
+def load_runs(version):
     runs = []
-    for path in sorted(RUNS.glob("*.json")):
+    for path in sorted((RUNS / version).glob("*.json")):
         record = json.loads(path.read_text())
         if "judgement" in record:
             record["path"] = path.relative_to(ROOT).as_posix()
@@ -119,16 +124,50 @@ def review_pack(runs):
     return len(todo)
 
 
-def main():
-    runs = load_runs()
+def comparison(old_runs, new_runs, old, new):
+    """Side-by-side key numbers for every group that exists in both versions."""
+    def key(job):
+        return (job["part"], job["model"], job["language"], job["verifier"])
+
+    def groups(runs):
+        found = {}
+        for r in runs:
+            if r["job"]["kind"] == "faithfulness":
+                found.setdefault(key(r["job"]), []).append(r)
+        return found
+
+    before, after = groups(old_runs), groups(new_runs)
+    lines = [f"## {old} → {new}: what changed", "",
+             f"Same letters, same judge, same gold facts. Only the pipeline changed ({old} → {new}; see "
+             "`evals/ANALYSIS.md`).", "",
+             f"| Part · model · language · verifier | Facts kept {old} → {new} | Dosage + date errors | "
+             f"Added claims (runs) | Fallbacks |", "|---|---|---|---|---|"]
+    for k in sorted(set(before) & set(after), key=lambda k: (k[0], k[1], k[2], not k[3])):
+        a, b = summarise(before[k]), summarise(after[k])
+        name = f"{k[0]} · {k[1]} · {k[2]} · {'verifier' if k[3] else 'no verifier'}"
+        lines.append(f"| {name} | {fmt(a['kept_pct'], 1, '%')} → {fmt(b['kept_pct'], 1, '%')} "
+                     f"| {a['dosage_errors'] + a['date_errors']} → {b['dosage_errors'] + b['date_errors']} "
+                     f"| {a['added']} ({a['runs_with_added']}) → {b['added']} ({b['runs_with_added']}) "
+                     f"| {a['fallback']} → {b['fallback']} |")
+    old_red = [r for r in old_runs if r["job"]["kind"] == "redteam"]
+    new_red = [r for r in new_runs if r["job"]["kind"] == "redteam"]
+    if old_red and new_red:
+        lines.append(f"| red team · pass rate (all conditions) | {sum(r['judgement']['passed'] for r in old_red)}"
+                     f"/{len(old_red)} → {sum(r['judgement']['passed'] for r in new_red)}/{len(new_red)} | | | |")
+    return lines + [""]
+
+
+def build(runs, version, previous=None, write_review_pack=False):
+    """The full report for one version. Returns (markdown lines, csv rows)."""
     faith = [r for r in runs if r["job"]["kind"] == "faithfulness"]
     red = [r for r in runs if r["job"]["kind"] == "redteam"]
 
     def group(filter_fn):
         return [r for r in faith if filter_fn(r["job"])]
 
-    out = [f"# Evaluation results", "",
-           f"*Generated {date.today().isoformat()} by `python -m evals.report` from {len(runs)} saved runs in `evals/runs/`.*",
+    out = [f"# Evaluation results: pipeline {version}", "",
+           f"*Generated {date.today().isoformat()} by `python -m evals.report` from {len(runs)} saved runs in "
+           f"`evals/runs/{version}/`.*",
            "", "> Prototype. Not a medical device. These numbers describe a small test set, not clinical safety.", ""]
 
     gold = [json.loads(p.read_text()) for p in (ROOT / "gold" / "facts").glob("*.json")]
@@ -144,6 +183,9 @@ def main():
             "Facts are only scored on runs that gave an explanation.",
             "- Targets from SPEC.md: added claims **0**, dosage errors **0**, date errors **0**, facts kept "
             "**≥95%**, FK grade **≤6**, Reading Ease **≥70**.", ""]
+
+    if previous:
+        out += comparison(previous[1], runs, previous[0], version)
 
     csv_rows = []
 
@@ -201,21 +243,38 @@ def main():
             out.append(f"- {where}: {text} ([run]({Path(path).relative_to('evals').as_posix()}))")
         out.append("")
 
-    reviewed = review_pack(runs)
+    reviewed = review_pack(runs) if write_review_pack else 0
     if reviewed:
         out += ["## 6. Human review (pending)", "",
                 f"{reviewed} French and Spanish outputs are in `evals/human_review/`, with a sheet to fill in "
                 "(`review_sheet.csv`). Brief: 20 FR and 10 ES reviewed by the author, a native French speaker "
                 "with B2 Spanish.", ""]
 
-    (ROOT / "evals" / "results.md").write_text("\n".join(out), encoding="utf-8")
+    return out, csv_rows
+
+
+def write(name, lines, csv_rows):
+    (ROOT / "evals" / f"{name}.md").write_text("\n".join(lines), encoding="utf-8")
     if csv_rows:
         keys = sorted({k for row in csv_rows for k in row}, key=lambda k: (k not in ("section", "group"), k))
-        with (ROOT / "evals" / "results.csv").open("w", newline="", encoding="utf-8") as f:
+        with (ROOT / "evals" / f"{name}.csv").open("w", newline="", encoding="utf-8") as f:
             writer = csv.DictWriter(f, fieldnames=keys)
             writer.writeheader()
             writer.writerows(csv_rows)
-    print(f"Wrote evals/results.md from {len(runs)} runs.")
+
+
+def main():
+    found = versions()
+    previous = None
+    for i, version in enumerate(found):
+        runs = load_runs(version)
+        latest = i == len(found) - 1
+        lines, rows = build(runs, version, previous, write_review_pack=latest)
+        write(f"results_{version}", lines, rows)
+        if latest:
+            write("results", lines, rows)
+        print(f"Wrote evals/results_{version}.md from {len(runs)} runs" + (" (also results.md)" if latest else ""))
+        previous = (version, runs)
 
 
 if __name__ == "__main__":

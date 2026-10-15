@@ -1,0 +1,361 @@
+{
+  "job": {
+    "id": "mtsamples__mts_3918__sonnet__en__nv",
+    "part": "mtsamples",
+    "letter_id": "mts_3918",
+    "file": "data/mtsamples/mts_3918.txt",
+    "kind": "faithfulness",
+    "model": "sonnet",
+    "language": "en",
+    "verifier": false,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "sonnet",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": false,
+    "status": "not_verified",
+    "final_text": "## What this letter says\nYou were in hospital because of bleeding in your stomach or bowel (GI bleed).\n\n- Your blood test (CBC) showed anemia. Your hemoglobin was 8.9.\n- Your stool was dark brown. It had a lot of hidden blood in it.\n- A camera test of the upper gut (upper endoscopy) showed erosive gastritis.\n- A camera test of the bowel (colonoscopy) showed diverticulosis and a polyp. The polyp was removed.\n- You were given blood (a transfusion). Before you left, your hemoglobin was stable at 10.7.\n- Your condition when you left was stable.\n- You have no allergies.\n- Your other health problems are atrial fibrillation, diabetes (not on insulin), high blood pressure (hypertension), low thyroid (hypothyroidism) and asthma.\n\n## What you need to do\n1. Hold your Coumadin through the weekend. Then restart it. The GI doctors said to hold it 3 more days after you leave hospital, then restart.\n2. Follow an 1800-calorie ADA diet.\n3. Be active as much as you can manage.\n4. Go to your follow-up visits with your PMD (main doctor), the GI doctor and the heart doctor (Cardiology). These were arranged.\n\n## Dates and medicines\nNo dates are given in the letter.\n\n- Coumadin: on hold. It was held in hospital. Hold it through the weekend, then restart. No dose is given.\n- Feosol: 325 mg, once a day.\n- Multivitamin: 1, once a day.\n- Protonix: 40 mg, twice a day.\n- KCl: 20 mEq, once a day.\n- Lasix: 40 mg, twice a day.\n- Atenolol: 50 mg, once a day.\n- Synthroid: 80 micrograms, once a day.\n- Actos: 30 mg, once a day.\n- Mevacor: 40 mg, once a day.\n- Lisinopril: 20 mg, once a day.\n\nBlood tests (CBC and INR) were ordered for later. The letter does not say when. It does not say who arranges them.\n\n## Questions to ask your doctor\n- Which day exactly do I restart my Coumadin?\n- When will I have my follow-up blood tests (CBC and INR)? Who will arrange them?\n- What do anemia and erosive gastritis mean for me?\n\n## When to get urgent help\nThe letter does not list specific warning signs.\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "doctor_copy_to_patient",
+      "purpose": "Discharge summary after admission for a gastrointestinal bleed with anemia, describing findings, medicines and follow-up.",
+      "findings": [
+        {
+          "statement": "Admitted with a GI bleed",
+          "certainty": "stated",
+          "quote": "GI bleed."
+        },
+        {
+          "statement": "Blood count showed microcytic anemia with hemoglobin of 8.9",
+          "certainty": "stated",
+          "quote": "CBC revealed microcytic anemia with hemoglobin of 8.9."
+        },
+        {
+          "statement": "Stool was dark brown and strongly occult blood positive",
+          "certainty": "stated",
+          "quote": "Stool dark brown, strongly OB positive."
+        },
+        {
+          "statement": "Upper endoscopy showed erosive gastritis",
+          "certainty": "stated",
+          "quote": "which revealed erosive gastritis"
+        },
+        {
+          "statement": "Colonoscopy showed diverticulosis and a polyp, which was resected",
+          "certainty": "stated",
+          "quote": "Colonoscopy did reveal diverticulosis as well as polyp, which was resected."
+        },
+        {
+          "statement": "Patient was transfused and hemoglobin was stable at 10.7 before discharge",
+          "certainty": "stated",
+          "quote": "She was transfused, and prior to discharge hemoglobin was stable at 10.7."
+        },
+        {
+          "statement": "Discharge diagnoses: upper gastrointestinal bleed, anemia, atrial fibrillation, non-insulin-dependent diabetes mellitus, hypertension, hypothyroidism, asthma",
+          "certainty": "stated",
+          "quote": "Upper gastrointestinal bleed."
+        },
+        {
+          "statement": "Condition on discharge was stable",
+          "certainty": "stated",
+          "quote": "CONDITION UPON DISCHARGE: , Stable."
+        },
+        {
+          "statement": "No allergies",
+          "certainty": "stated",
+          "quote": "ALLERGIES:\n  None."
+        }
+      ],
+      "medicines": [
+        {
+          "name": "Coumadin",
+          "dose": "",
+          "how_often": "",
+          "change": "stop",
+          "details": "Held during hospital stay; GI recommended holding for an additional three days after discharge, then resume. Patient to hold through weekend.",
+          "quote": "hold Coumadin for an additional three days after discharge then resume"
+        },
+        {
+          "name": "Feosol",
+          "dose": "325 mg",
+          "how_often": "daily",
+          "change": "not_stated",
+          "details": "",
+          "quote": "Feosol 325 mg daily"
+        },
+        {
+          "name": "multivitamins",
+          "dose": "one",
+          "how_often": "daily",
+          "change": "not_stated",
+          "details": "",
+          "quote": "multivitamins one daily"
+        },
+        {
+          "name": "Protonix",
+          "dose": "40 mg",
+          "how_often": "b.i.d. (twice a day)",
+          "change": "not_stated",
+          "details": "",
+          "quote": "Protonix 40 mg b.i.d."
+        },
+        {
+          "name": "KCl",
+          "dose": "20 mEq",
+          "how_often": "daily",
+          "change": "not_stated",
+          "details": "",
+          "quote": "KCl 20 mEq daily"
+        },
+        {
+          "name": "Lasix",
+          "dose": "40 mg",
+          "how_often": "b.i.d. (twice a day)",
+          "change": "not_stated",
+          "details": "",
+          "quote": "Lasix 40 mg b.i.d."
+        },
+        {
+          "name": "atenolol",
+          "dose": "50 mg",
+          "how_often": "daily",
+          "change": "not_stated",
+          "details": "",
+          "quote": "atenolol 50 mg daily"
+        },
+        {
+          "name": "Synthroid",
+          "dose": "80 mcg",
+          "how_often": "daily",
+          "change": "not_stated",
+          "details": "",
+          "quote": "Synthroid 80 mcg daily"
+        },
+        {
+          "name": "Actos",
+          "dose": "30 mg",
+          "how_often": "daily",
+          "change": "not_stated",
+          "details": "",
+          "quote": "Actos 30 mg daily"
+        },
+        {
+          "name": "Mevacor",
+          "dose": "40 mg",
+          "how_often": "daily",
+          "change": "not_stated",
+          "details": "",
+          "quote": "Mevacor 40 mg daily"
+        },
+        {
+          "name": "lisinopril",
+          "dose": "20 mg",
+          "how_often": "daily",
+          "change": "not_stated",
+          "details": "",
+          "quote": "lisinopril 20 mg daily"
+        }
+      ],
+      "dates": [],
+      "actions": [
+        {
+          "instruction": "Hold Coumadin through the weekend, then resume",
+          "quote": "The patient to hold Coumadin through weekend."
+        },
+        {
+          "instruction": "Follow a 1800-calorie ADA diet",
+          "quote": "1800-calorie ADA."
+        },
+        {
+          "instruction": "Activity as tolerated",
+          "quote": "As tolerated."
+        },
+        {
+          "instruction": "Attend outpatient follow-up with PMD, GI and Cardiology as arranged",
+          "quote": "The patient was discharged with outpatient PMD, GI, and Cardiology followup."
+        }
+      ],
+      "negatives": [],
+      "warning_signs": [],
+      "unclear": [
+        "Follow-up CBC and INR were ordered, but no dates or who arranges them are given.",
+        "Exact day Coumadin restarts is not stated beyond 'through weekend' / 'additional three days after discharge'.",
+        "Abbreviations not in glossary: PMD, OB, ADA, KCl, mEq, ABCD, HEENT."
+      ]
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\nYou were in hospital because of bleeding in your stomach or bowel (GI bleed).\n\n- Your blood test (CBC) showed anemia. Your hemoglobin was 8.9.\n- Your stool was dark brown. It had a lot of hidden blood in it.\n- A camera test of the upper gut (upper endoscopy) showed erosive gastritis.\n- A camera test of the bowel (colonoscopy) showed diverticulosis and a polyp. The polyp was removed.\n- You were given blood (a transfusion). Before you left, your hemoglobin was stable at 10.7.\n- Your condition when you left was stable.\n- You have no allergies.\n- Your other health problems are atrial fibrillation, diabetes (not on insulin), high blood pressure (hypertension), low thyroid (hypothyroidism) and asthma.\n\n## What you need to do\n1. Hold your Coumadin through the weekend. Then restart it. The GI doctors said to hold it 3 more days after you leave hospital, then restart.\n2. Follow an 1800-calorie ADA diet.\n3. Be active as much as you can manage.\n4. Go to your follow-up visits with your PMD (main doctor), the GI doctor and the heart doctor (Cardiology). These were arranged.\n\n## Dates and medicines\nNo dates are given in the letter.\n\n- Coumadin: on hold. It was held in hospital. Hold it through the weekend, then restart. No dose is given.\n- Feosol: 325 mg, once a day.\n- Multivitamin: 1, once a day.\n- Protonix: 40 mg, twice a day.\n- KCl: 20 mEq, once a day.\n- Lasix: 40 mg, twice a day.\n- Atenolol: 50 mg, once a day.\n- Synthroid: 80 micrograms, once a day.\n- Actos: 30 mg, once a day.\n- Mevacor: 40 mg, once a day.\n- Lisinopril: 20 mg, once a day.\n\nBlood tests (CBC and INR) were ordered for later. The letter does not say when. It does not say who arranges them.\n\n## Questions to ask your doctor\n- Which day exactly do I restart my Coumadin?\n- When will I have my follow-up blood tests (CBC and INR)? Who will arrange them?\n- What do anemia and erosive gastritis mean for me?\n\n## When to get urgent help\nThe letter does not list specific warning signs.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 77.2,
+          "reading_ease_target": 70,
+          "grade_level": 4.4,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": null,
+        "blocking_problems": [],
+        "attempt": 1
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 3896,
+        "output_tokens": 1822,
+        "cost_usd": 0.02086,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 16896,
+        "output_tokens": 2543,
+        "cost_usd": 0.05153,
+        "turns": 10
+      }
+    ],
+    "cost_usd": 0.07239,
+    "latency_s": 29.3
+  },
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "diagnoses",
+        "fact": "Bleeding from the upper gut (upper gastrointestinal bleed)",
+        "status": "changed",
+        "note": "Says 'bleeding in your stomach or bowel (GI bleed)'. It never says the bleed was in the upper gut, which is the discharge diagnosis, and 'bowel' widens it."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Anaemia: haemoglobin 8.9, stable at 10.7 after a blood transfusion",
+        "status": "kept",
+        "note": "Hemoglobin 8.9, then a transfusion, then stable at 10.7."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Upper endoscopy: erosive gastritis",
+        "status": "kept",
+        "note": "Upper endoscopy showed erosive gastritis."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Colonoscopy: diverticulosis and a polyp, which was removed",
+        "status": "kept",
+        "note": "Colonoscopy showed diverticulosis and a polyp, which was removed."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Also: atrial fibrillation, diabetes (not on insulin), high blood pressure, underactive thyroid, asthma",
+        "status": "kept",
+        "note": "Lists all five other conditions, including diabetes not on insulin."
+      },
+      {
+        "category": "medicines",
+        "fact": "Do not take Coumadin for an extra three days after discharge (through the weekend), then restart",
+        "status": "kept",
+        "note": "Hold Coumadin through the weekend, or 3 more days after discharge, then restart."
+      },
+      {
+        "category": "medicines",
+        "fact": "Feosol 325 mg daily",
+        "status": "kept",
+        "note": "Feosol 325 mg once a day."
+      },
+      {
+        "category": "medicines",
+        "fact": "Multivitamin one daily",
+        "status": "kept",
+        "note": "Multivitamin, 1 once a day."
+      },
+      {
+        "category": "medicines",
+        "fact": "Protonix 40 mg twice a day",
+        "status": "kept",
+        "note": "Protonix 40 mg twice a day."
+      },
+      {
+        "category": "medicines",
+        "fact": "KCl 20 mEq daily",
+        "status": "kept",
+        "note": "KCl 20 mEq once a day."
+      },
+      {
+        "category": "medicines",
+        "fact": "Lasix 40 mg twice a day",
+        "status": "kept",
+        "note": "Lasix 40 mg twice a day."
+      },
+      {
+        "category": "medicines",
+        "fact": "Atenolol 50 mg daily",
+        "status": "kept",
+        "note": "Atenolol 50 mg once a day."
+      },
+      {
+        "category": "medicines",
+        "fact": "Synthroid 80 mcg daily",
+        "status": "kept",
+        "note": "Synthroid 80 micrograms once a day."
+      },
+      {
+        "category": "medicines",
+        "fact": "Actos 30 mg daily",
+        "status": "kept",
+        "note": "Actos 30 mg once a day."
+      },
+      {
+        "category": "medicines",
+        "fact": "Mevacor 40 mg daily",
+        "status": "kept",
+        "note": "Mevacor 40 mg once a day."
+      },
+      {
+        "category": "medicines",
+        "fact": "Lisinopril 20 mg daily",
+        "status": "kept",
+        "note": "Lisinopril 20 mg once a day."
+      },
+      {
+        "category": "actions",
+        "fact": "Follow-up blood tests (CBC and INR) have been ordered",
+        "status": "kept",
+        "note": "CBC and INR blood tests were ordered."
+      },
+      {
+        "category": "actions",
+        "fact": "Follow-up with the primary doctor, GI and Cardiology",
+        "status": "kept",
+        "note": "Follow-up with the PMD (main doctor), GI and Cardiology."
+      },
+      {
+        "category": "actions",
+        "fact": "1800-calorie diabetic (ADA) diet",
+        "status": "kept",
+        "note": "1800-calorie ADA diet."
+      },
+      {
+        "category": "actions",
+        "fact": "Activity as tolerated",
+        "status": "kept",
+        "note": "'Be active as much as you can manage' means activity as tolerated."
+      },
+      {
+        "category": "negatives",
+        "fact": "No allergies",
+        "status": "kept",
+        "note": "No allergies."
+      }
+    ],
+    "added": [],
+    "gold_reviewer": "claude-draft"
+  },
+  "reused_from": "v2"
+}

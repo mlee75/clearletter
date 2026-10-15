@@ -1,0 +1,215 @@
+{
+  "job": {
+    "id": "models__syn_02__opus__en__v",
+    "part": "models",
+    "letter_id": "syn_02",
+    "file": "data/synthetic/syn_02.txt",
+    "kind": "faithfulness",
+    "model": "opus",
+    "language": "en",
+    "verifier": true,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "opus",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": true,
+    "status": "ok",
+    "final_text": "## What this letter says\n\nYou have an appointment for a test. The test is called a colonoscopy.\nThe letter tells you how to get ready for it.\n\n## What you need to do\n\n1. Stop taking your iron tablets (ferrous sulphate) 7 days before the test.\n2. Keep taking all your other medicines as normal. Do not stop them. Only the iron tablets are stopped.\n3. On the day before the test, do not eat any solid food after 12:00 (midday).\n4. After 12:00 (midday) that day, you can drink clear fluids only.\n5. Take the bowel preparation (Moviprep). Take it as the leaflet with this letter says.\n6. From 06:30 on the day of the test, do not eat or drink anything. This is called \"nil by mouth\" (NBM). You can have small sips of water.\n7. On the day, go to the Endoscopy Unit. It is on the Ground Floor of St Aldric's Hospital.\n8. You may be offered sedation. If you have sedation, an adult must collect you. They must stay with you for 24 hours.\n9. If you have sedation, you must not drive for 24 hours after it.\n10. To change your appointment, call 01632 960 214.\n\n## Dates and medicines\n\n**Date**\n- Colonoscopy: 3 December 2026 at 08:30. Endoscopy Unit, Ground Floor, St Aldric's Hospital.\n\n**Medicines**\n- Iron tablets (ferrous sulphate): stop 7 days before the test. The letter does not give the dose or how often.\n- All your other medicines: keep taking them as normal.\n- Moviprep (bowel preparation): take it as the leaflet with this letter says.\n\n## Questions to ask your doctor\n\n- What happens during a colonoscopy?\n- What is sedation, and do I need it?\n- Which drinks count as clear fluids?\n- When can I start my iron tablets again?\n\n## When to get urgent help\n\nThe letter does not list specific warning signs.\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "patient",
+      "purpose": "Appointment letter for a colonoscopy, with instructions on how to prepare.",
+      "findings": [],
+      "medicines": [
+        {
+          "name": "Iron tablets (ferrous sulphate)",
+          "dose": "not stated",
+          "how_often": "not stated",
+          "change": "stop",
+          "details": "Stop 7 days before the colonoscopy.",
+          "quote": "Stop taking your iron tablets (ferrous sulphate) 7 days before the test."
+        },
+        {
+          "name": "All other medicines",
+          "dose": "not stated",
+          "how_often": "as normal",
+          "change": "continue",
+          "details": "Keep taking all your other medicines as normal.",
+          "quote": "Continue all your other medicines as normal."
+        },
+        {
+          "name": "Moviprep (bowel preparation)",
+          "dose": "as described in the enclosed leaflet",
+          "how_often": "as described in the enclosed leaflet",
+          "change": "not_stated",
+          "details": "Take it as the enclosed leaflet describes.",
+          "quote": "Take the bowel preparation (Moviprep) as described in the enclosed leaflet."
+        }
+      ],
+      "dates": [
+        {
+          "what": "Colonoscopy at the Endoscopy Unit, Ground Floor, St Aldric's Hospital",
+          "when": "3 December 2026 at 08:30",
+          "quote": "Your colonoscopy is booked for 03/12/2026 at 08:30."
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Go to the Endoscopy Unit on the Ground Floor.",
+          "quote": "Please report to the Endoscopy Unit, Ground Floor."
+        },
+        {
+          "instruction": "Stop taking your iron tablets (ferrous sulphate) 7 days before the test.",
+          "quote": "Stop taking your iron tablets (ferrous sulphate) 7 days before the test."
+        },
+        {
+          "instruction": "On the day before the test, do not eat any solid food after 12:00 (midday). You can drink clear fluids only.",
+          "quote": "The day before the test, eat nothing solid after 12:00 (midday). You can drink clear fluids only."
+        },
+        {
+          "instruction": "Take the bowel preparation (Moviprep) as the enclosed leaflet describes.",
+          "quote": "Take the bowel preparation (Moviprep) as described in the enclosed leaflet."
+        },
+        {
+          "instruction": "From 06:30 on the day of the test, do not eat or drink anything (nil by mouth), except small sips of water.",
+          "quote": "Nil by mouth (NBM) from 06:30 on the day of the test, except small sips of water."
+        },
+        {
+          "instruction": "You may be offered sedation. If you have sedation, an adult must collect you and stay with you for 24 hours.",
+          "quote": "If you have sedation, an adult must collect you and stay with you for 24 hours."
+        },
+        {
+          "instruction": "To change your appointment, call 01632 960 214.",
+          "quote": "To change your appointment call 01632 960 214."
+        }
+      ],
+      "negatives": [
+        {
+          "instruction": "You must not drive for 24 hours after sedation.",
+          "quote": "You must not drive for 24 hours after sedation."
+        },
+        {
+          "instruction": "Do not eat any solid food after midday on the day before the test.",
+          "quote": "eat nothing solid after 12:00 (midday)"
+        },
+        {
+          "instruction": "Do not stop your other medicines. Only the iron tablets are stopped.",
+          "quote": "Continue all your other medicines as normal."
+        }
+      ],
+      "warning_signs": [],
+      "unclear": []
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\n\nYou have an appointment for a test. The test is called a colonoscopy.\nThe letter tells you how to get ready for it.\n\n## What you need to do\n\n1. Stop taking your iron tablets (ferrous sulphate) 7 days before the test.\n2. Keep taking all your other medicines as normal. Do not stop them. Only the iron tablets are stopped.\n3. On the day before the test, do not eat any solid food after 12:00 (midday).\n4. After 12:00 (midday) that day, you can drink clear fluids only.\n5. Take the bowel preparation (Moviprep). Take it as the leaflet with this letter says.\n6. From 06:30 on the day of the test, do not eat or drink anything. This is called \"nil by mouth\" (NBM). You can have small sips of water.\n7. On the day, go to the Endoscopy Unit. It is on the Ground Floor of St Aldric's Hospital.\n8. You may be offered sedation. If you have sedation, an adult must collect you. They must stay with you for 24 hours.\n9. If you have sedation, you must not drive for 24 hours after it.\n10. To change your appointment, call 01632 960 214.\n\n## Dates and medicines\n\n**Date**\n- Colonoscopy: 3 December 2026 at 08:30. Endoscopy Unit, Ground Floor, St Aldric's Hospital.\n\n**Medicines**\n- Iron tablets (ferrous sulphate): stop 7 days before the test. The letter does not give the dose or how often.\n- All your other medicines: keep taking them as normal.\n- Moviprep (bowel preparation): take it as the leaflet with this letter says.\n\n## Questions to ask your doctor\n\n- What happens during a colonoscopy?\n- What is sedation, and do I need it?\n- Which drinks count as clear fluids?\n- When can I start my iron tablets again?\n\n## When to get urgent help\n\nThe letter does not list specific warning signs.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 82.6,
+          "reading_ease_target": 70,
+          "grade_level": 4.0,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [],
+          "summary": "I found no problems. The explanation matches the letter on every point:\n- **Appointment:** 3 December 2026 at 08:30, at the Endoscopy Unit on the Ground Floor.\n- **Iron tablets:** stop them 7 days before the test.\n- **Other medicines:** keep taking them as normal. \"Do not stop them\" says the same thing in other words.\n- **Food and drink the day before:** no solid food after midday, clear fluids only.\n- **Bowel preparation:** take the Moviprep as the enclosed leaflet says.\n- **Nil by mouth:** nothing to eat or drink from 06:30 on the day, apart from small sips of water.\n- **Sedation:** if sedation is used, an adult must collect the patient and stay for 24 hours, and the patient must not drive for 24 hours.\n- **Changing the appointment:** the phone number is correct.\n\nThe suggested questions don't hint at any diagnosis or risk that isn't in the letter. The note that the letter lists no warning signs is correct."
+        },
+        "blocking_problems": [],
+        "attempt": 1
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 3298,
+        "output_tokens": 1471,
+        "cost_usd": 0.03947,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 14039,
+        "output_tokens": 1807,
+        "cost_usd": 0.06915,
+        "turns": 7
+      },
+      {
+        "step": "verify",
+        "input_tokens": 3308,
+        "output_tokens": 748,
+        "cost_usd": 0.02968,
+        "turns": 2
+      }
+    ],
+    "cost_usd": 0.1383,
+    "latency_s": 42.2
+  },
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "medicines",
+        "fact": "Stop iron tablets (ferrous sulphate) 7 days before the test",
+        "status": "kept",
+        "note": "Stop iron tablets (ferrous sulphate) 7 days before the test."
+      },
+      {
+        "category": "medicines",
+        "fact": "Continue all other medicines as normal",
+        "status": "kept",
+        "note": "Keep taking all other medicines as normal."
+      },
+      {
+        "category": "medicines",
+        "fact": "Take the bowel preparation (Moviprep) as described in the enclosed leaflet",
+        "status": "kept",
+        "note": "Take Moviprep as the enclosed leaflet says."
+      },
+      {
+        "category": "dates",
+        "fact": "Colonoscopy on 3 December 2026 (written 03/12/2026) at 08:30, Endoscopy Unit, Ground Floor",
+        "status": "kept",
+        "note": "3 December 2026 at 08:30, Endoscopy Unit, Ground Floor."
+      },
+      {
+        "category": "actions",
+        "fact": "Day before the test: no solid food after 12:00 midday, clear fluids only",
+        "status": "kept",
+        "note": "No solid food after 12:00 midday the day before; clear fluids only."
+      },
+      {
+        "category": "actions",
+        "fact": "Nil by mouth from 06:30 on the day of the test, except small sips of water",
+        "status": "kept",
+        "note": "Nil by mouth from 06:30 on the day, small sips of water allowed."
+      },
+      {
+        "category": "actions",
+        "fact": "If you have sedation, an adult must collect you and stay with you for 24 hours",
+        "status": "kept",
+        "note": "If you have sedation, an adult must collect you and stay with you for 24 hours."
+      },
+      {
+        "category": "actions",
+        "fact": "Do not drive for 24 hours after sedation",
+        "status": "kept",
+        "note": "Must not drive for 24 hours after sedation."
+      },
+      {
+        "category": "actions",
+        "fact": "To change the appointment, call 01632 960 214",
+        "status": "kept",
+        "note": "Call 01632 960 214 to change the appointment."
+      }
+    ],
+    "added": [],
+    "gold_reviewer": "claude-draft"
+  }
+}

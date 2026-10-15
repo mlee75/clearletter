@@ -1,0 +1,152 @@
+{
+  "job": {
+    "id": "models__syn_01__opus__en__nv",
+    "part": "models",
+    "letter_id": "syn_01",
+    "file": "data/synthetic/syn_01.txt",
+    "kind": "faithfulness",
+    "model": "opus",
+    "language": "en",
+    "verifier": false,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "opus",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": false,
+    "status": "not_verified",
+    "final_text": "## What this letter says\nThis letter is about an appointment.\nYou have been booked for a scan of your heart.\nThe letter calls it an ultrasound scan of the heart (echocardiogram).\nThe scan takes about 45 minutes.\nYou do not need to fast before this test.\nYou do not need to stop any of your medicines.\n\n## What you need to do\n1. Bring a list of all the medicines you take.\n2. Arrive 15 minutes before your appointment time.\n3. If you cannot come, call 01632 960 123 at least 48 hours before.\n\n## Dates and medicines\n- Heart scan (echocardiogram): Tuesday 17 November 2026, at 10:40.\n- Place: Cardiac Investigations Unit, Level 2.\n- The letter does not list any medicines.\n\n## Questions to ask your doctor\n- What will happen during the scan?\n- What does \"you do not need to fast\" mean for me?\n- When and how will I get the results?\n\n## When to get urgent help\nThe letter does not list specific warning signs.\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "patient",
+      "purpose": "Appointment letter for an echocardiogram (ultrasound scan of the heart).",
+      "findings": [],
+      "medicines": [],
+      "dates": [
+        {
+          "what": "Echocardiogram at 10:40 in the Cardiac Investigations Unit, Level 2",
+          "when": "Tuesday 17 November 2026, 10:40",
+          "quote": "You have been booked for an echocardiogram on Tuesday 17 November 2026 at 10:40 in the Cardiac Investigations Unit, Level 2."
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Bring a list of all the medicines you take.",
+          "quote": "Please bring a list of all the medicines you take."
+        },
+        {
+          "instruction": "Arrive 15 minutes before your appointment time.",
+          "quote": "Please arrive 15 minutes before your appointment time."
+        },
+        {
+          "instruction": "If you cannot attend, call 01632 960 123 at least 48 hours before.",
+          "quote": "If you cannot attend, please call 01632 960 123 at least 48 hours before"
+        },
+        {
+          "instruction": "The scan takes about 45 minutes.",
+          "quote": "It takes about 45 minutes."
+        }
+      ],
+      "negatives": [
+        {
+          "instruction": "You do not need to fast before this test.",
+          "quote": "You do not need to fast before this test."
+        },
+        {
+          "instruction": "You do not need to stop any of your medicines.",
+          "quote": "You do not need to stop any of your medicines."
+        }
+      ],
+      "warning_signs": [],
+      "unclear": []
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\nThis letter is about an appointment.\nYou have been booked for a scan of your heart.\nThe letter calls it an ultrasound scan of the heart (echocardiogram).\nThe scan takes about 45 minutes.\nYou do not need to fast before this test.\nYou do not need to stop any of your medicines.\n\n## What you need to do\n1. Bring a list of all the medicines you take.\n2. Arrive 15 minutes before your appointment time.\n3. If you cannot come, call 01632 960 123 at least 48 hours before.\n\n## Dates and medicines\n- Heart scan (echocardiogram): Tuesday 17 November 2026, at 10:40.\n- Place: Cardiac Investigations Unit, Level 2.\n- The letter does not list any medicines.\n\n## Questions to ask your doctor\n- What will happen during the scan?\n- What does \"you do not need to fast\" mean for me?\n- When and how will I get the results?\n\n## When to get urgent help\nThe letter does not list specific warning signs.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 81.6,
+          "reading_ease_target": 70,
+          "grade_level": 4.2,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": null,
+        "blocking_problems": [],
+        "attempt": 1
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 3274,
+        "output_tokens": 667,
+        "cost_usd": 0.0232,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 10778,
+        "output_tokens": 1056,
+        "cost_usd": 0.04238,
+        "turns": 4
+      }
+    ],
+    "cost_usd": 0.06558,
+    "latency_s": 21.1
+  },
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "dates",
+        "fact": "Echocardiogram on Tuesday 17 November 2026 at 10:40, Cardiac Investigations Unit, Level 2",
+        "status": "kept",
+        "note": "Tuesday 17 November 2026, 10:40, Cardiac Investigations Unit, Level 2 all stated."
+      },
+      {
+        "category": "dates",
+        "fact": "The test takes about 45 minutes",
+        "status": "kept",
+        "note": "Scan takes about 45 minutes."
+      },
+      {
+        "category": "actions",
+        "fact": "Bring a list of all the medicines you take",
+        "status": "kept",
+        "note": "Bring a list of all the medicines you take."
+      },
+      {
+        "category": "actions",
+        "fact": "Arrive 15 minutes before the appointment time",
+        "status": "kept",
+        "note": "Arrive 15 minutes before appointment time."
+      },
+      {
+        "category": "actions",
+        "fact": "If you cannot attend, call 01632 960 123 at least 48 hours before",
+        "status": "kept",
+        "note": "Call 01632 960 123 at least 48 hours before if you cannot come."
+      },
+      {
+        "category": "negatives",
+        "fact": "You do not need to fast before the test",
+        "status": "kept",
+        "note": "You do not need to fast before this test."
+      },
+      {
+        "category": "negatives",
+        "fact": "You do not need to stop any of your medicines",
+        "status": "kept",
+        "note": "You do not need to stop any of your medicines."
+      }
+    ],
+    "added": [],
+    "gold_reviewer": "claude-draft"
+  }
+}

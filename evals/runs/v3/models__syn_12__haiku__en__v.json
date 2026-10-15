@@ -1,0 +1,201 @@
+{
+  "job": {
+    "id": "models__syn_12__haiku__en__v",
+    "part": "models",
+    "letter_id": "syn_12",
+    "file": "data/synthetic/syn_12.txt",
+    "kind": "faithfulness",
+    "model": "haiku",
+    "language": "en",
+    "verifier": true,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "haiku",
+    "backend": "claude-code",
+    "language": "en",
+    "country": "uk",
+    "use_verifier": true,
+    "status": "fallback",
+    "final_text": "**We could not explain this letter safely. Please ask your doctor, nurse or pharmacist to explain it to you.**\n\nIf you are worried and it is not an emergency, call NHS 111. In an emergency, call 999.\n\n---\n*This explanation was made by a computer program to help you read your letter. It may contain mistakes. It does not replace your doctor, nurse or pharmacist. Always follow the letter and ask them if anything is unclear.*\n",
+    "facts": {
+      "reader": "patient",
+      "purpose": "Results of gastroscopy (camera test) and biopsies performed on 8 September 2026",
+      "findings": [
+        {
+          "statement": "No cancer found in stomach biopsies",
+          "certainty": "ruled_out",
+          "quote": "show no evidence of malignancy (no cancer)"
+        },
+        {
+          "statement": "No Helicobacter pylori infection detected",
+          "certainty": "ruled_out",
+          "quote": "There is no sign of Helicobacter pylori infection"
+        },
+        {
+          "statement": "Intestinal metaplasia found in stomach lining (a change in the stomach lining, but not cancer)",
+          "certainty": "stated",
+          "quote": "The biopsies did show some changes called intestinal metaplasia. This is not cancer. It is a change in the lining of the stomach."
+        },
+        {
+          "statement": "Intestinal metaplasia can develop further over many years in a small number of people",
+          "certainty": "possible",
+          "quote": "In a small number of people it can develop further over many years"
+        }
+      ],
+      "medicines": [
+        {
+          "name": "omeprazole",
+          "dose": "20 mg",
+          "how_often": "once daily",
+          "change": "continue",
+          "details": "",
+          "quote": "Continue omeprazole 20 mg once daily"
+        },
+        {
+          "name": "ibuprofen",
+          "dose": "not specified",
+          "how_often": "not specified",
+          "change": "stop",
+          "details": "They can irritate the stomach",
+          "quote": "Stop taking ibuprofen and other anti-inflammatory painkillers"
+        },
+        {
+          "name": "paracetamol",
+          "dose": "not specified",
+          "how_often": "not specified",
+          "change": "not_stated",
+          "details": "",
+          "quote": "You can use paracetamol instead"
+        }
+      ],
+      "dates": [
+        {
+          "what": "Gastroscopy (camera test) and biopsies",
+          "when": "8 September 2026",
+          "quote": "gastroscopy (camera test) and biopsies taken on 08/09/2026"
+        },
+        {
+          "what": "Repeat gastroscopy appointment",
+          "when": "September 2029",
+          "quote": "Repeat gastroscopy in 3 years (around September 2029)"
+        }
+      ],
+      "actions": [],
+      "negatives": [
+        {
+          "instruction": "You do not need to do anything now",
+          "quote": "You do not need to do anything now"
+        }
+      ],
+      "warning_signs": [],
+      "unclear": []
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## What this letter says\n\nYou had a camera test of your stomach on 8 September 2026. The doctor took small samples to test. The results show:\n\n- No cancer found.\n- No Helicobacter pylori (stomach bacteria).\n- A change in your stomach lining called intestinal metaplasia. This is not cancer.\n- In some people, this change can develop further over many years.\n\n## What you need to do\n\n1. You do not need to do anything now.\n2. Keep taking omeprazole 20 mg once daily.\n3. Stop taking ibuprofen. It can hurt your stomach.\n4. You can use paracetamol instead.\n\n## Dates and medicines\n\n**Test you had:**\n- Camera test: 8 September 2026\n\n**Test you will have:**\n- Camera test again: September 2029 (in 3 years)\n\n**Medicines:**\n- Omeprazole 20 mg, once daily (keep taking)\n- Ibuprofen: stop\n- Paracetamol: you can use instead\n\n## Questions to ask your doctor\n\n1. What does intestinal metaplasia mean?\n2. Why do I need another camera test in 3 years?\n3. What painkillers can I use instead?\n\n## When to get urgent help\n\nThe letter does not list specific warning signs.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 74.7,
+          "reading_ease_target": 70,
+          "grade_level": 5.3,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [
+            {
+              "kind": "dropped",
+              "severity": "major",
+              "explanation_says": "The explanation instructs the patient to stop ibuprofen and use paracetamol instead. In the medicines section it only lists 'Ibuprofen: stop', with no mention of other anti-inflammatory painkillers.",
+              "letter_says": "The letter states 'Stop taking ibuprofen and other anti-inflammatory painkillers. They can irritate the stomach.'",
+              "why": "The explanation omits the explicit instruction to stop all anti-inflammatory painkillers, not just ibuprofen. A patient might conclude they only need to avoid ibuprofen and continue taking other NSAIDs (such as aspirin or naproxen), which contradicts the clear directive in the letter.",
+              "real_difference": true
+            }
+          ],
+          "summary": "One major problem found: the explanation omits the instruction to stop other anti-inflammatory painkillers besides ibuprofen. The letter explicitly states 'Stop taking ibuprofen and other anti-inflammatory painkillers,' but the explanation only mentions stopping ibuprofen, which could lead the patient to incorrectly believe other NSAIDs are permitted."
+        },
+        "blocking_problems": [
+          "[dropped] The explanation omits the explicit instruction to stop all anti-inflammatory painkillers, not just ibuprofen. A patient might conclude they only need to avoid ibuprofen and continue taking other NSAIDs (such as aspirin or naproxen), which contradicts the clear directive in the letter. (explanation: \"The explanation instructs the patient to stop ibuprofen and use paracetamol instead. In the medicines section it only lists 'Ibuprofen: stop', with no mention of other anti-inflammatory painkillers.\"; letter: \"The letter states 'Stop taking ibuprofen and other anti-inflammatory painkillers. They can irritate the stomach.'\")"
+        ],
+        "attempt": 1
+      },
+      {
+        "explanation": "## What this letter says\n\nYou had a camera test of your stomach on 8 September 2026. The doctor took small samples. The results show:\n\n- No cancer found.\n- No stomach bacteria.\n- A change in your stomach lining. This is called intestinal metaplasia. It is not cancer.\n- In some people, this can change more over many years.\n\n## What you need to do\n\n1. You do not need to do anything now.\n2. Keep taking omeprazole 20 mg once daily.\n3. Stop all anti-inflammatory painkillers like ibuprofen. They can hurt your stomach.\n4. Use paracetamol instead.\n\n## Dates and medicines\n\n**Test you had:**\n- Camera test: 8 September 2026\n\n**Test you will have:**\n- Camera test again: September 2029 (in 3 years)\n\n**Medicines:**\n- Omeprazole 20 mg, once daily (keep taking)\n- Anti-inflammatory painkillers like ibuprofen: stop\n- Paracetamol: you can use instead\n\n## Questions to ask your doctor\n\n1. What is intestinal metaplasia?\n2. Why do I need another camera test in 3 years?\n3. What painkillers can I use instead?\n\n## When to get urgent help\n\nThe letter does not list specific warning signs.",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "en",
+          "reading_ease": 72.3,
+          "reading_ease_target": 70,
+          "grade_level": 5.5,
+          "grade_target": 6,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [
+            {
+              "kind": "advice",
+              "severity": "minor",
+              "explanation_says": "Use paracetamol instead.",
+              "letter_says": "You can use paracetamol instead.",
+              "why": "A permission ('can use') is converted into a directive ('use'), implying a mandatory action rather than an optional alternative.",
+              "real_difference": true
+            }
+          ],
+          "summary": "The explanation is accurate and appropriately simplified. One minor issue: in the \"What you need to do\" section, paracetamol is presented as a directive ('Use paracetamol') rather than as a permission ('You can use paracetamol'), as stated in the letter. This changes the tone from optional to mandatory, though the practical action remains the same. The explanation otherwise matches the letter well, including dates, diagnoses, medicines, and the appropriate questions to ask. The statement about warning signs is correct."
+        },
+        "blocking_problems": [
+          "[advice] A permission ('can use') is converted into a directive ('use'), implying a mandatory action rather than an optional alternative. (explanation: 'Use paracetamol instead.'; letter: 'You can use paracetamol instead.')"
+        ],
+        "attempt": 2
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 2893,
+        "output_tokens": 11695,
+        "cost_usd": 0.06137,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 12694,
+        "output_tokens": 2751,
+        "cost_usd": 0.02778,
+        "turns": 3
+      },
+      {
+        "step": "verify",
+        "input_tokens": 9545,
+        "output_tokens": 4253,
+        "cost_usd": 0.03755,
+        "turns": 3
+      },
+      {
+        "step": "explain",
+        "input_tokens": 13856,
+        "output_tokens": 2372,
+        "cost_usd": 0.0271,
+        "turns": 3
+      },
+      {
+        "step": "verify",
+        "input_tokens": 12959,
+        "output_tokens": 7601,
+        "cost_usd": 0.06112,
+        "turns": 3
+      }
+    ],
+    "cost_usd": 0.21493,
+    "latency_s": 235.8
+  },
+  "judgement": {
+    "fallback": true
+  }
+}

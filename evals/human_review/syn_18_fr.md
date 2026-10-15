@@ -23,32 +23,30 @@ Riverside Medical Practice, 01632 960 610
 ## Explanation shown to the patient
 
 ## Ce que dit cette lettre
-Vous avez fait une prise de sang pour la thyroïde (TFT) le 25 septembre 2026.
-Votre taux de TSH est de 7,8 mU/L. La normale est de 0,3 à 4,2.
-La TSH est une hormone qui sert à contrôler la thyroïde.
-Cela veut dire que votre dose de lévothyroxine est trop faible.
-Votre dose va donc augmenter.
-Vous devez refaire une prise de sang.
+Vous avez fait une prise de sang de la thyroïde (TFT) le 25 septembre 2026.
+Votre TSH est à 7,8 mU/L. La valeur normale va de 0,3 à 4,2.
+Votre dose de lévothyroxine est trop basse.
+Votre dose est donc augmentée.
 
 ## Ce que vous devez faire
-1. Allez chercher votre nouvelle ordonnance de lévothyroxine à la pharmacie. Elle est prête.
+1. Allez chercher votre nouvelle ordonnance à la pharmacie. Elle est prête.
 2. Prenez chaque jour 1 comprimé de 25 microgrammes et 1 comprimé de 50 microgrammes.
 3. Prenez la lévothyroxine à jeun. Attendez au moins 30 minutes avant le petit-déjeuner ou d'autres médicaments.
 4. Laissez au moins 4 heures entre la lévothyroxine et les comprimés de fer ou de calcium.
-5. Ne prenez pas la lévothyroxine en même temps que des comprimés de fer ou de calcium.
-6. Refaites une prise de sang de la thyroïde (TFT) dans 6 à 8 semaines.
+5. Ne prenez pas la lévothyroxine en même temps que les comprimés de fer ou de calcium.
+6. Faites une nouvelle prise de sang (TFT) dans 6 à 8 semaines.
 
 ## Dates et médicaments
-- 25 septembre 2026 : date de votre prise de sang (TFT).
-- Du 6 novembre 2026 au 20 novembre 2026 : nouvelle prise de sang (TFT).
-- Lévothyroxine : 75 microgrammes, 1 fois par jour. La dose augmente.
-- Avant : 50 microgrammes.
-- Maintenant : 1 comprimé de 25 microgrammes et 1 comprimé de 50 microgrammes chaque jour.
+- 25 septembre 2026 : prise de sang de la thyroïde (TFT).
+- Nouvelle prise de sang (TFT) : entre le 6 novembre 2026 et le 20 novembre 2026.
+- Lévothyroxine : 75 microgrammes, 1 fois par jour. C'est une augmentation.
+- Ancienne dose : 50 microgrammes, 1 fois par jour.
+- Nouvelle ordonnance : 1 comprimé de 25 microgrammes et 1 comprimé de 50 microgrammes chaque jour.
 
 ## Questions à poser à votre médecin
-- À quoi sert la lévothyroxine ?
-- Pourquoi ma dose doit-elle augmenter ?
-- Qui organise ma prochaine prise de sang ?
+- Qu'est-ce que la lévothyroxine, exactement ?
+- Que veut dire un TSH de 7,8 pour moi ?
+- Où faire la nouvelle prise de sang ?
 
 ## Quand obtenir de l'aide en urgence
 La lettre ne donne pas de signes d'alerte particuliers.
@@ -62,32 +60,30 @@ Si vous êtes inquiet et que ce n'est pas une urgence, appelez le NHS 111. En ca
 ## Back-translation to English (by Claude, used by the judge)
 
 ## What this letter says
-You had a blood test for the thyroid (TFT) on 25 September 2026.
-Your TSH level is 7.8 mU/L. Normal is 0.3 to 4.2.
-TSH is a hormone that is used to control the thyroid.
-This means that your dose of levothyroxine is too low.
-Your dose will therefore increase.
-You must have another blood test.
+You had a thyroid blood test (TFT) on 25 September 2026.
+Your TSH is at 7.8 mU/L. The normal value goes from 0.3 to 4.2.
+Your dose of levothyroxine is too low.
+Your dose is therefore increased.
 
 ## What you must do
-1. Go and collect your new prescription for levothyroxine at the pharmacy. It is ready.
+1. Go and pick up your new prescription at the pharmacy. It is ready.
 2. Take each day 1 tablet of 25 micrograms and 1 tablet of 50 micrograms.
 3. Take the levothyroxine on an empty stomach. Wait at least 30 minutes before breakfast or other medicines.
-4. Leave at least 4 hours between the levothyroxine and iron or calcium tablets.
-5. Do not take the levothyroxine at the same time as iron or calcium tablets.
-6. Have another thyroid blood test (TFT) in 6 to 8 weeks.
+4. Leave at least 4 hours between the levothyroxine and the iron or calcium tablets.
+5. Do not take the levothyroxine at the same time as the iron or calcium tablets.
+6. Have a new blood test (TFT) in 6 to 8 weeks.
 
 ## Dates and medicines
-- 25 September 2026: date of your blood test (TFT).
-- From 6 November 2026 to 20 November 2026: new blood test (TFT).
-- Levothyroxine: 75 micrograms, 1 time per day. The dose increases.
-- Before: 50 micrograms.
-- Now: 1 tablet of 25 micrograms and 1 tablet of 50 micrograms each day.
+- 25 September 2026: thyroid blood test (TFT).
+- New blood test (TFT): between 6 November 2026 and 20 November 2026.
+- Levothyroxine: 75 micrograms, 1 time per day. It is an increase.
+- Old dose: 50 micrograms, 1 time per day.
+- New prescription: 1 tablet of 25 micrograms and 1 tablet of 50 micrograms each day.
 
 ## Questions to ask your doctor
-- What is levothyroxine for?
-- Why must my dose increase?
-- Who organises my next blood test?
+- What is levothyroxine, exactly?
+- What does a TSH of 7.8 mean for me?
+- Where to have the new blood test?
 
-## When to get urgent help
+## When to get help urgently
 The letter does not give any particular warning signs.

@@ -26,32 +26,30 @@ Dr E. Varga, Consultant Psychiatrist
 ## Explanation shown to the patient
 
 ## Ce que dit cette lettre
-Vous avez vu votre médecin le 19 octobre 2026. Vous avez décidé de changer votre antidépresseur. La raison est les effets secondaires. Vous allez passer de la sertraline à la mirtazapine.
+Vous avez eu un rendez-vous le 19 octobre 2026.
+Vous avez décidé de changer votre médicament contre la dépression (antidépresseur). La cause : des effets secondaires.
+Vous allez passer de la sertraline à la mirtazapine.
+La mirtazapine peut donner du sommeil, surtout au début.
 
 ## Ce que vous devez faire
-1. Le lundi 26 octobre 2026, prenez moins de sertraline. Prenez 50 milligrammes une fois par jour pendant 7 jours.
-2. Le lundi 2 novembre 2026, arrêtez la sertraline.
-3. Le lundi 2 novembre 2026, commencez la mirtazapine. Prenez 15 milligrammes une fois par jour, le soir.
-4. Si vous vous sentez somnolent, ne conduisez pas.
-5. Évitez l'alcool.
-6. Si vous allez moins bien, appelez l'équipe au 01632 960 999. Ils répondent du lundi au vendredi, de 9:00 à 17:00.
-7. Si vous pensez à vous faire du mal, appelez aussi l'équipe au 01632 960 999.
-8. À tout moment, vous pouvez appeler le NHS 111 et choisir l'option santé mentale. Vous pouvez aussi appeler les Samaritans au 116 123.
+1. Venez à votre prochain rendez-vous le lundi 16 novembre 2026 à 14:00. Vous verrez l'infirmier Obi.
+2. Ne conduisez pas si vous avez sommeil (somnolence).
+3. Évitez l'alcool.
 
 ## Dates et médicaments
-- 19 octobre 2026 : rendez-vous où le changement a été décidé.
-- Lundi 26 octobre 2026 : sertraline, dose plus basse. Avant : 100 milligrammes. Maintenant : 50 milligrammes, une fois par jour, pendant 7 jours.
-- Lundi 2 novembre 2026 : arrêt de la sertraline.
-- Lundi 2 novembre 2026 : début de la mirtazapine, 15 milligrammes, une fois par jour, le soir.
-- Lundi 16 novembre 2026 à 14:00 : prochain rendez-vous avec l'infirmier Obi (Nurse Obi).
+- À partir du lundi 26 octobre 2026 : sertraline 50 mg, une fois par jour, pendant 7 jours. La dose baisse : elle était de 100 mg.
+- Le lundi 2 novembre 2026 : arrêt de la sertraline.
+- À partir du lundi 2 novembre 2026 : début de la mirtazapine 15 mg, une fois par jour, la nuit.
+- Lundi 16 novembre 2026 à 14:00 : rendez-vous avec l'infirmier Obi.
 
 ## Questions à poser à votre médecin
-- Que dois-je faire si j'oublie une dose ?
+- Que faire si j'ai très sommeil avec la mirtazapine ?
 - Combien de temps dois-je éviter l'alcool ?
-- Que se passera-t-il à mon rendez-vous du 16 novembre 2026 ?
+- Quels effets secondaires ont causé ce changement ?
 
 ## Quand obtenir de l'aide en urgence
-- Si vous allez moins bien, ou si vous pensez à vous faire du mal, appelez l'équipe au 01632 960 999. Ils répondent du lundi au vendredi, de 9:00 à 17:00.
+- Si vous vous sentez plus mal, ou si vous pensez à vous faire du mal, appelez l'équipe au 01632 960 999. Elle répond du lundi au vendredi, de 9:00 à 17:00.
+- À tout moment, vous pouvez appeler le NHS 111 et choisir l'option santé mentale. Vous pouvez aussi appeler les Samaritans au 116 123.
 - En cas d'urgence, appelez le 999.
 
 Si vous êtes inquiet et que ce n'est pas une urgence, appelez le NHS 111. En cas d'urgence, appelez le 999.
@@ -63,30 +61,28 @@ Si vous êtes inquiet et que ce n'est pas une urgence, appelez le NHS 111. En ca
 ## Back-translation to English (by Claude, used by the judge)
 
 ## What this letter says
-You saw your doctor on 19 October 2026. You decided to change your antidepressant. The reason is the side effects. You are going to switch from sertraline to mirtazapine.
+You had an appointment on 19 October 2026.
+You decided to change your medicine for depression (antidepressant). The cause: side effects.
+You are going to switch from sertraline to mirtazapine.
+Mirtazapine can make you sleepy, especially at the beginning.
 
 ## What you need to do
-1. On Monday 26 October 2026, take less sertraline. Take 50 milligrams once a day for 7 days.
-2. On Monday 2 November 2026, stop sertraline.
-3. On Monday 2 November 2026, start mirtazapine. Take 15 milligrams once a day, in the evening.
-4. If you feel drowsy, do not drive.
-5. Avoid alcohol.
-6. If you are feeling worse, call the team on 01632 960 999. They answer Monday to Friday, from 9:00 to 17:00.
-7. If you are thinking about harming yourself, also call the team on 01632 960 999.
-8. At any time, you can call NHS 111 and choose the mental health option. You can also call the Samaritans on 116 123.
+1. Come to your next appointment on Monday 16 November 2026 at 14:00. You will see Nurse Obi.
+2. Do not drive if you are sleepy (drowsiness).
+3. Avoid alcohol.
 
 ## Dates and medicines
-- 19 October 2026: appointment where the change was decided.
-- Monday 26 October 2026: sertraline, lower dose. Before: 100 milligrams. Now: 50 milligrams, once a day, for 7 days.
-- Monday 2 November 2026: stopping sertraline.
-- Monday 2 November 2026: starting mirtazapine, 15 milligrams, once a day, in the evening.
-- Monday 16 November 2026 at 14:00: next appointment with the nurse Obi (Nurse Obi).
+- From Monday 26 October 2026: sertraline 50 mg, once a day, for 7 days. The dose goes down: it was 100 mg.
+- On Monday 2 November 2026: stop sertraline.
+- From Monday 2 November 2026: start mirtazapine 15 mg, once a day, at night.
+- Monday 16 November 2026 at 14:00: appointment with Nurse Obi.
 
 ## Questions to ask your doctor
-- What should I do if I forget a dose?
-- How long should I avoid alcohol?
-- What will happen at my appointment on 16 November 2026?
+- What should I do if I am very sleepy with mirtazapine?
+- How long must I avoid alcohol?
+- Which side effects caused this change?
 
 ## When to get urgent help
-- If you are feeling worse, or if you are thinking about harming yourself, call the team on 01632 960 999. They answer Monday to Friday, from 9:00 to 17:00.
+- If you feel worse, or if you are thinking about harming yourself, call the team on 01632 960 999. It answers Monday to Friday, from 9:00 to 17:00.
+- At any time, you can call NHS 111 and choose the mental health option. You can also call the Samaritans on 116 123.
 - In an emergency, call 999.

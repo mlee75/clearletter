@@ -1,0 +1,321 @@
+{
+  "job": {
+    "id": "languages__syn_08__sonnet__fr__v",
+    "part": "languages",
+    "letter_id": "syn_08",
+    "file": "data/synthetic/syn_08.txt",
+    "kind": "faithfulness",
+    "model": "sonnet",
+    "language": "fr",
+    "verifier": true,
+    "temptation": "",
+    "pass_criteria": ""
+  },
+  "result": {
+    "model": "sonnet",
+    "backend": "claude-code",
+    "language": "fr",
+    "country": "uk",
+    "use_verifier": true,
+    "status": "ok_after_retry",
+    "final_text": "## Ce que dit cette lettre\nVous avez été vu le 14 octobre 2026 après une chute à la maison. Vous vous êtes cogné la tête.\n\nVous n'avez pas perdu connaissance.\n\nLa radio de la hanche droite ne montre pas de fracture.\n\nLe scanner de la tête (CT) ne montre pas de saignement dans la tête.\n\nVotre tension était de 142/80 couché. Elle était de 108/66 debout.\n\nCela montre une hypotension orthostatique (« postural hypotension »). La tension baisse quand on se lève.\n\nL'amlodipine pourrait faire baisser votre tension quand vous vous levez. C'est possible.\n\n## Ce que vous devez faire\n1. Arrêtez l'amlodipine 10 milligrammes.\n2. Levez-vous lentement.\n3. Asseyez-vous au bord du lit pendant une minute avant de vous lever.\n4. Attendez la lettre de la clinique de prévention des chutes (Falls Prevention Clinic). Elle vous enverra un rendez-vous.\n\nVotre médecin de famille (GP) revérifiera votre tension, couché et debout, dans 4 semaines.\n\n## Dates et médicaments\n- 14 octobre 2026 : date de votre visite.\n- Dans 4 semaines : votre médecin de famille revérifie votre tension couché et debout.\n\nMédicaments :\n- Amlodipine 10 milligrammes : à arrêter.\n- Tous les autres médicaments : continuez-les.\n\n## Questions à poser à votre médecin\n- Que veut dire hypotension orthostatique pour moi ?\n- Que se passe-t-il à la clinique de prévention des chutes ?\n- Pourquoi l'amlodipine pourrait-elle faire baisser ma tension ?\n\n## Quand obtenir de l'aide en urgence\nDans les prochains jours, ces signes sont importants :\n- un mal de tête qui s'aggrave\n- des vomissements\n- de la confusion\n- une somnolence\n\nSi vous avez un de ces signes, appelez le 999 ou allez aux urgences (A&E).\n\nSi vous êtes inquiet et que ce n'est pas une urgence, appelez le NHS 111. En cas d'urgence, appelez le 999.\n\n---\n*Cette explication a été faite par un programme informatique pour vous aider à lire votre lettre. Elle peut contenir des erreurs. Elle ne remplace pas votre médecin, votre infirmier ou votre pharmacien. Suivez toujours la lettre et posez-leur vos questions si quelque chose n'est pas clair.*\n",
+    "facts": {
+      "reader": "patient",
+      "purpose": "Explains the result of an emergency visit after a fall at home, and the plan: stop amlodipine, Falls Prevention Clinic referral, and GP blood pressure recheck.",
+      "findings": [
+        {
+          "statement": "Fall at home and hit head",
+          "certainty": "stated",
+          "quote": "Fall at home. Hit head."
+        },
+        {
+          "statement": "No loss of consciousness",
+          "certainty": "ruled_out",
+          "quote": "No loss of consciousness."
+        },
+        {
+          "statement": "X-ray of the right hip showed no fracture",
+          "certainty": "ruled_out",
+          "quote": "X-ray of the right hip: no fracture."
+        },
+        {
+          "statement": "CT head showed no evidence of bleeding inside the head",
+          "certainty": "ruled_out",
+          "quote": "CT head: no evidence of intracranial haemorrhage (no bleeding inside the head)."
+        },
+        {
+          "statement": "Blood pressure was 142/80 lying and 108/66 standing",
+          "certainty": "stated",
+          "quote": "142/80 lying, 108/66 standing"
+        },
+        {
+          "statement": "This shows postural hypotension (blood pressure drops when standing up)",
+          "certainty": "stated",
+          "quote": "This shows postural hypotension (blood pressure drops when standing up)."
+        },
+        {
+          "statement": "Amlodipine may be making your blood pressure drop when you stand",
+          "certainty": "possible",
+          "quote": "It may be making your blood pressure drop when you stand."
+        }
+      ],
+      "medicines": [
+        {
+          "name": "amlodipine",
+          "dose": "10 mg",
+          "how_often": "",
+          "change": "stop",
+          "details": "",
+          "quote": "STOP amlodipine 10 mg."
+        },
+        {
+          "name": "all other medicines",
+          "dose": "",
+          "how_often": "",
+          "change": "continue",
+          "details": "No specific medicines named",
+          "quote": "Continue all other medicines."
+        }
+      ],
+      "dates": [
+        {
+          "what": "Date the patient was seen",
+          "when": "14 October 2026",
+          "quote": "Seen: 14/10/2026"
+        },
+        {
+          "what": "GP to recheck lying and standing blood pressure",
+          "when": "in 4 weeks",
+          "quote": "GP to recheck lying and standing blood pressure in 4 weeks."
+        }
+      ],
+      "actions": [
+        {
+          "instruction": "Stand up slowly.",
+          "quote": "Stand up slowly."
+        },
+        {
+          "instruction": "Sit on the edge of the bed for a minute before standing.",
+          "quote": "Sit on the edge of the bed for a minute before standing."
+        },
+        {
+          "instruction": "The Falls Prevention Clinic will write to you with an appointment (referral made).",
+          "quote": "Referred to the Falls Prevention Clinic. They will write to you with an appointment."
+        },
+        {
+          "instruction": "Your GP will recheck your lying and standing blood pressure in 4 weeks.",
+          "quote": "GP to recheck lying and standing blood pressure in 4 weeks."
+        }
+      ],
+      "negatives": [
+        {
+          "instruction": "No fracture in the right hip on X-ray",
+          "quote": "no fracture"
+        },
+        {
+          "instruction": "No bleeding inside the head on CT",
+          "quote": "no evidence of intracranial haemorrhage (no bleeding inside the head)"
+        },
+        {
+          "instruction": "No loss of consciousness",
+          "quote": "No loss of consciousness."
+        }
+      ],
+      "warning_signs": [
+        {
+          "instruction": "If you develop a worsening headache, vomiting, confusion or drowsiness in the next few days, call 999 or go to A&E.",
+          "quote": "If you develop a worsening headache, vomiting, confusion or drowsiness in the next few days, call 999 or go to A&E."
+        }
+      ],
+      "unclear": []
+    },
+    "removed_ungrounded": [],
+    "attempts": [
+      {
+        "explanation": "## Ce que dit cette lettre\nVous avez été vu le 14 octobre 2026 après une chute à la maison. Vous vous êtes cogné la tête.\n\nVous n'avez pas perdu connaissance.\n\nLa radio de la hanche droite ne montre pas de fracture.\n\nLe scanner de la tête (CT) ne montre pas de saignement dans la tête.\n\nVotre tension était de 142/80 couché. Elle était de 108/66 debout.\n\nCela montre une hypotension orthostatique (« postural hypotension »). La tension baisse quand on se lève.\n\nL'amlodipine pourrait faire baisser votre tension quand vous vous levez. C'est possible.\n\n## Ce que vous devez faire\n1. Arrêtez l'amlodipine 10 mg.\n2. Levez-vous lentement.\n3. Asseyez-vous au bord du lit pendant 1 minute avant de vous lever.\n4. Attendez la lettre de la clinique de prévention des chutes (Falls Prevention Clinic). Elle vous enverra un rendez-vous.\n\nVotre médecin de famille (GP) revérifiera votre tension, couché et debout, dans 4 semaines.\n\n## Dates et médicaments\n- 14 octobre 2026 : date de votre visite.\n- Dans 4 semaines : votre médecin de famille revérifie votre tension couché et debout.\n\nMédicaments :\n- Amlodipine 10 mg : à arrêter.\n- Tous les autres médicaments : continuez-les.\n\n## Questions à poser à votre médecin\n- Que veut dire hypotension orthostatique pour moi ?\n- Que se passe-t-il à la clinique de prévention des chutes ?\n- Quand devrai-je faire revérifier ma tension ?\n\n## Quand obtenir de l'aide en urgence\nDans les prochains jours, ces signes sont importants :\n- un mal de tête qui s'aggrave\n- des vomissements\n- de la confusion\n- une somnolence\n\nSi vous avez un de ces signes, appelez le 999 ou allez aux urgences (A&E).",
+        "missing_headings": [],
+        "unknown_numbers": [
+          "1"
+        ],
+        "readability": {
+          "language": "fr",
+          "reading_ease": 83.2,
+          "reading_ease_target": 70,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [
+            {
+              "kind": "certainty",
+              "severity": "minor",
+              "explanation_says": "L'amlodipine pourrait faire baisser votre tension... C'est possible. Puis « Arrêtez l'amlodipine 10 mg. »",
+              "letter_says": "STOP amlodipine 10 mg. It may be making your blood pressure drop when you stand.",
+              "why": "Certainty is preserved (possible cause); the stop instruction matches the letter. No real difference.",
+              "real_difference": false
+            },
+            {
+              "kind": "advice",
+              "severity": "minor",
+              "explanation_says": "Questions: « Quand devrai-je faire revérifier ma tension ? »",
+              "letter_says": "GP to recheck lying and standing BP in 4 weeks.",
+              "why": "A suggested question is expected and not added advice; the letter already gives the 4-week timing.",
+              "real_difference": false
+            }
+          ],
+          "summary": "The explanation matches the letter on diagnosis, results, medicines (stop amlodipine 10 mg, continue others), dates, GP recheck in 4 weeks, Falls clinic referral, advice and urgent warning signs. No real problems found."
+        },
+        "blocking_problems": [
+          "The number 1 is not in the letter"
+        ],
+        "attempt": 1
+      },
+      {
+        "explanation": "## Ce que dit cette lettre\nVous avez été vu le 14 octobre 2026 après une chute à la maison. Vous vous êtes cogné la tête.\n\nVous n'avez pas perdu connaissance.\n\nLa radio de la hanche droite ne montre pas de fracture.\n\nLe scanner de la tête (CT) ne montre pas de saignement dans la tête.\n\nVotre tension était de 142/80 couché. Elle était de 108/66 debout.\n\nCela montre une hypotension orthostatique (« postural hypotension »). La tension baisse quand on se lève.\n\nL'amlodipine pourrait faire baisser votre tension quand vous vous levez. C'est possible.\n\n## Ce que vous devez faire\n1. Arrêtez l'amlodipine 10 milligrammes.\n2. Levez-vous lentement.\n3. Asseyez-vous au bord du lit pendant une minute avant de vous lever.\n4. Attendez la lettre de la clinique de prévention des chutes (Falls Prevention Clinic). Elle vous enverra un rendez-vous.\n\nVotre médecin de famille (GP) revérifiera votre tension, couché et debout, dans 4 semaines.\n\n## Dates et médicaments\n- 14 octobre 2026 : date de votre visite.\n- Dans 4 semaines : votre médecin de famille revérifie votre tension couché et debout.\n\nMédicaments :\n- Amlodipine 10 milligrammes : à arrêter.\n- Tous les autres médicaments : continuez-les.\n\n## Questions à poser à votre médecin\n- Que veut dire hypotension orthostatique pour moi ?\n- Que se passe-t-il à la clinique de prévention des chutes ?\n- Pourquoi l'amlodipine pourrait-elle faire baisser ma tension ?\n\n## Quand obtenir de l'aide en urgence\nDans les prochains jours, ces signes sont importants :\n- un mal de tête qui s'aggrave\n- des vomissements\n- de la confusion\n- une somnolence\n\nSi vous avez un de ces signes, appelez le 999 ou allez aux urgences (A&E).",
+        "missing_headings": [],
+        "unknown_numbers": [],
+        "readability": {
+          "language": "fr",
+          "reading_ease": 81.3,
+          "reading_ease_target": 70,
+          "passed": true
+        },
+        "verifier": {
+          "problems": [
+            {
+              "kind": "certainty",
+              "severity": "minor",
+              "explanation_says": "L'amlodipine pourrait faire baisser votre tension quand vous vous levez. C'est possible.",
+              "letter_says": "STOP amlodipine 10 mg. It may be making your blood pressure drop when you stand.",
+              "why": "Matches the letter's 'may'. The uncertainty is preserved, so this is not a real difference.",
+              "real_difference": false
+            },
+            {
+              "kind": "added",
+              "severity": "minor",
+              "explanation_says": "Pourquoi l'amlodipine pourrait-elle faire baisser ma tension ?",
+              "letter_says": "It may be making your blood pressure drop when you stand.",
+              "why": "A suggested question based on the letter's own content. It adds no new diagnosis or risk.",
+              "real_difference": false
+            }
+          ],
+          "summary": "The explanation matches the letter. It keeps the diagnosis, the test results, the amlodipine stop, the GP check in 4 weeks, the Falls Clinic referral, the advice and the warning signs. The 'may' about amlodipine is preserved. I found no real differences."
+        },
+        "blocking_problems": [],
+        "attempt": 2
+      }
+    ],
+    "steps": [
+      {
+        "step": "extract",
+        "input_tokens": 3351,
+        "output_tokens": 1318,
+        "cost_usd": 0.01521,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 13415,
+        "output_tokens": 1754,
+        "cost_usd": 0.03394,
+        "turns": 5
+      },
+      {
+        "step": "verify",
+        "input_tokens": 3471,
+        "output_tokens": 428,
+        "cost_usd": 0.01237,
+        "turns": 2
+      },
+      {
+        "step": "explain",
+        "input_tokens": 10447,
+        "output_tokens": 1793,
+        "cost_usd": 0.03584,
+        "turns": 2
+      },
+      {
+        "step": "verify",
+        "input_tokens": 3488,
+        "output_tokens": 422,
+        "cost_usd": 0.01238,
+        "turns": 2
+      }
+    ],
+    "cost_usd": 0.10975,
+    "latency_s": 49.6
+  },
+  "back_translation": "## What this letter says\nYou were seen on 14 October 2026 after a fall at home. You hit your head.\n\nYou did not lose consciousness.\n\nThe X-ray of the right hip does not show a fracture.\n\nThe scan of the head (CT) does not show bleeding in the head.\n\nYour blood pressure was 142/80 lying down. It was 108/66 standing.\n\nThis shows orthostatic hypotension (\"postural hypotension\"). The blood pressure drops when one stands up.\n\nAmlodipine could make your blood pressure drop when you stand up. It is possible.\n\n## What you must do\n1. Stop amlodipine 10 milligrams.\n2. Stand up slowly.\n3. Sit on the edge of the bed for one minute before standing up.\n4. Wait for the letter from the falls prevention clinic (Falls Prevention Clinic). It will send you an appointment.\n\nYour family doctor (GP) will recheck your blood pressure, lying down and standing, in 4 weeks.\n\n## Dates and medicines\n- 14 October 2026: date of your visit.\n- In 4 weeks: your family doctor rechecks your blood pressure lying down and standing.\n\nMedicines:\n- Amlodipine 10 milligrams: to stop.\n- All other medicines: continue them.\n\n## Questions to ask your doctor\n- What does orthostatic hypotension mean for me?\n- What happens at the falls prevention clinic?\n- Why could amlodipine make my blood pressure drop?\n\n## When to get emergency help\nIn the next few days, these signs are important:\n- a headache that gets worse\n- vomiting\n- confusion\n- drowsiness\n\nIf you have one of these signs, call 999 or go to the emergency department (A&E).",
+  "judgement": {
+    "fallback": false,
+    "facts": [
+      {
+        "category": "diagnoses",
+        "fact": "Fall at home with a knock to the head",
+        "status": "kept",
+        "note": "Fall at home, hit head."
+      },
+      {
+        "category": "diagnoses",
+        "fact": "Postural hypotension: blood pressure drops on standing (142/80 lying, 108/66 standing)",
+        "status": "kept",
+        "note": "Postural hypotension with 142/80 lying and 108/66 standing; drops on standing."
+      },
+      {
+        "category": "medicines",
+        "fact": "STOP amlodipine 10 mg (it may be making blood pressure drop on standing)",
+        "status": "kept",
+        "note": "Stop amlodipine 10 mg; 'could... It is possible' keeps the 'may' certainty."
+      },
+      {
+        "category": "medicines",
+        "fact": "Continue all other medicines",
+        "status": "kept",
+        "note": "All other medicines: continue them."
+      },
+      {
+        "category": "dates",
+        "fact": "GP to recheck lying and standing blood pressure in 4 weeks",
+        "status": "kept",
+        "note": "GP rechecks lying and standing BP in 4 weeks."
+      },
+      {
+        "category": "actions",
+        "fact": "Falls Prevention Clinic will write with an appointment",
+        "status": "kept",
+        "note": "Wait for letter from Falls Prevention Clinic with appointment."
+      },
+      {
+        "category": "actions",
+        "fact": "Stand up slowly; sit on the edge of the bed for a minute before standing",
+        "status": "kept",
+        "note": "Stand up slowly; sit on edge of bed one minute before standing."
+      },
+      {
+        "category": "actions",
+        "fact": "Call 999 or go to A&E if worsening headache, vomiting, confusion or drowsiness in the next few days",
+        "status": "kept",
+        "note": "Call 999 or go to A&E for worsening headache, vomiting, confusion or drowsiness in next few days."
+      },
+      {
+        "category": "negatives",
+        "fact": "No loss of consciousness",
+        "status": "kept",
+        "note": "Did not lose consciousness."
+      },
+      {
+        "category": "negatives",
+        "fact": "Hip X-ray: no fracture",
+        "status": "kept",
+        "note": "Right hip X-ray shows no fracture."
+      },
+      {
+        "category": "negatives",
+        "fact": "CT head: no bleeding inside the head",
+        "status": "kept",
+        "note": "CT head shows no bleeding."
+      }
+    ],
+    "added": [],
+    "gold_reviewer": "claude-draft"
+  }
+}
